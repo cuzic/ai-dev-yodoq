@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1170">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .section-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
+      .doc-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="700" y="40" class="title" text-anchor="middle">ドキュメント自動生成 Before/After（生産性革命）</text>
+
+  <!-- Before (Traditional) -->
+  <rect x="50" y="80" width="650" height="380" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
+  <text x="375" y="115" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+    ✗ Before：手動ドキュメント管理
+  </text>
+
+  <!-- Manual Process -->
+  <rect x="70" y="130" width="290" height="315" fill="#CC0000" rx="8"/>
+  <text x="215" y="155" class="section-title" text-anchor="middle">手動作業プロセス</text>
+
+  <text x="90" y="180" class="doc-text" font-weight="bold">1. 要件定義書（Word）</text>
+  <text x="100" y="198" class="doc-text">• 作成時間: 4時間</text>
+  <text x="100" y="213" class="doc-text">• 更新時間: 2時間/回</text>
+
+  <text x="90" y="238" class="doc-text" font-weight="bold">2. 仕様書（Excel）</text>
+  <text x="100" y="256" class="doc-text">• テーブル定義: 3時間</text>
+  <text x="100" y="271" class="doc-text">• API仕様: 4時間</text>
+  <text x="100" y="286" class="doc-text">• 更新時間: 2時間/回</text>
+
+  <text x="90" y="311" class="doc-text" font-weight="bold">3. README（手動作成）</text>
+  <text x="100" y="329" class="doc-text">• 作成時間: 2時間</text>
+  <text x="100" y="344" class="doc-text">• 更新時間: 1時間/回</text>
+
+  <text x="90" y="369" class="doc-text" font-weight="bold">4. Confluence更新</text>
+  <text x="100" y="387" class="doc-text">• 作成時間: 2時間</text>
+  <text x="100" y="402" class="doc-text">• 更新時間: 1時間/回</text>
+
+  <text x="90" y="427" class="doc-text" font-size="12px" font-weight="bold">
+    合計: 15時間（初回）+ 6時間/回（更新）
+  </text>
+
+  <!-- Problems -->
+  <rect x="380" y="130" width="290" height="315" fill="#990000" rx="8"/>
+  <text x="525" y="155" class="section-title" text-anchor="middle">問題点</text>
+
+  <text x="400" y="185" class="doc-text" font-weight="bold">❌ 更新忘れが頻発</text>
+  <text x="410" y="203" class="doc-text">コード変更後、ドキュメント更新を</text>
+  <text x="410" y="218" class="doc-text">忘れる → 3ヶ月後に乖離発覚</text>
+
+  <text x="400" y="243" class="doc-text" font-weight="bold">❌ コードとの乖離</text>
+  <text x="410" y="261" class="doc-text">実装は変更済み、仕様書は古いまま</text>
+  <text x="410" y="276" class="doc-text">→ 新メンバーが古い仕様で誤実装</text>
+
+  <text x="400" y="301" class="doc-text" font-weight="bold">❌ メンテナンスコスト高</text>
+  <text x="410" y="319" class="doc-text">1機能追加に6時間のドキュメント更新</text>
+  <text x="410" y="334" class="doc-text">→ 開発時間の40%がドキュメント作業</text>
+
+  <text x="400" y="359" class="doc-text" font-weight="bold">❌ 信頼性低下</text>
+  <text x="410" y="377" class="doc-text">「ドキュメントは当てにならない」</text>
+  <text x="410" y="392" class="doc-text">→ 結局コードを読む羽目に</text>
+
+  <text x="400" y="417" class="doc-text" font-weight="bold">❌ 属人化</text>
+  <text x="410" y="435" class="doc-text">担当者しか更新方法がわからない</text>
+
+  <!-- After (Automated) -->
+  <rect x="720" y="80" width="650" height="380" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
+  <text x="1045" y="115" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+    ✓ After：自動生成（Living Documentation）
+  </text>
+
+  <!-- Automated Process -->
+  <rect x="740" y="130" width="290" height="315" fill="#00AA00" rx="8"/>
+  <text x="885" y="155" class="section-title" text-anchor="middle">自動生成プロセス</text>
+
+  <text x="760" y="180" class="doc-text" font-weight="bold">1. ER図（Mermaid）</text>
+  <text x="770" y="198" class="doc-text">• 作成: AI生成（5分）</text>
+  <text x="770" y="213" class="doc-text">• 更新: JPA Entity変更で自動</text>
+
+  <text x="760" y="238" class="doc-text" font-weight="bold">2. API仕様書（Swagger）</text>
+  <text x="770" y="256" class="doc-text">• 作成: @ApiOperation で自動</text>
+  <text x="770" y="271" class="doc-text">• 更新: コード変更で自動反映</text>
+
+  <text x="760" y="296" class="doc-text" font-weight="bold">3. README（AI生成）</text>
+  <text x="770" y="314" class="doc-text">• 作成: AI生成（10分）</text>
+  <text x="770" y="329" class="doc-text">• 更新: AIに依頼（5分）</text>
+
+  <text x="760" y="354" class="doc-text" font-weight="bold">4. テストレポート（JaCoCo）</text>
+  <text x="770" y="372" class="doc-text">• 作成: CI/CDで自動生成</text>
+  <text x="770" y="387" class="doc-text">• 更新: テスト実行時に自動</text>
+
+  <text x="760" y="412" class="doc-text" font-weight="bold">5. JavaDoc（HTML）</text>
+  <text x="770" y="430" class="doc-text">• 作成: コメントから自動生成</text>
+
+  <text x="760" y="455" class="doc-text" font-size="12px" font-weight="bold">
+    合計: 15分（初回）+ 0-5分（更新）
+  </text>
+
+  <!-- Benefits -->
+  <rect x="1050" y="130" width="290" height="315" fill="#006600" rx="8"/>
+  <text x="1195" y="155" class="section-title" text-anchor="middle">メリット</text>
+
+  <text x="1070" y="185" class="doc-text" font-weight="bold">✅ 常に最新</text>
+  <text x="1080" y="203" class="doc-text">コード変更 = ドキュメント更新</text>
+  <text x="1080" y="218" class="doc-text">→ 乖離が発生しない</text>
+
+  <text x="1070" y="243" class="doc-text" font-weight="bold">✅ メンテナンスコストゼロ</text>
+  <text x="1080" y="261" class="doc-text">手動更新不要</text>
+  <text x="1080" y="276" class="doc-text">→ 開発者は実装に集中できる</text>
+
+  <text x="1070" y="301" class="doc-text" font-weight="bold">✅ 信頼性向上</text>
+  <text x="1080" y="319" class="doc-text">「Swagger見れば最新のAPI仕様」</text>
+  <text x="1080" y="334" class="doc-text">→ チーム全員が信頼して使用</text>
+
+  <text x="1070" y="359" class="doc-text" font-weight="bold">✅ 生産性向上</text>
+  <text x="1080" y="377" class="doc-text">年間数百時間の削減</text>
+  <text x="1080" y="392" class="doc-text">→ 新機能開発に時間を使える</text>
+
+  <text x="1070" y="417" class="doc-text" font-weight="bold">✅ 民主化</text>
+  <text x="1080" y="435" class="doc-text">誰でも簡単にドキュメント確認可能</text>
+
+  <!-- Comparison -->
+  <rect x="50" y="490" width="1300" height="380" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="700" y="525" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    コスト比較（1年間、10機能追加の場合）
+  </text>
+
+  <!-- Before Costs -->
+  <rect x="70" y="545" width="620" height="305" fill="#CC0000" rx="8"/>
+  <text x="380" y="570" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: white; text-anchor: middle; font-weight: bold;">
+    Before：手動管理のコスト
+  </text>
+
+  <text x="90" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    初回作成: 15時間
+  </text>
+  <text x="100" y="618" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    要件定義書 + 仕様書 + README + Confluence
+  </text>
+
+  <text x="90" y="648" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    更新コスト: 6時間/回 × 10回 = 60時間
+  </text>
+  <text x="100" y="666" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    10機能追加 → 毎回ドキュメント更新
+  </text>
+
+  <text x="90" y="696" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    乖離修正: 20時間
+  </text>
+  <text x="100" y="714" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    3ヶ月に1回、乖離を発見して大規模修正
+  </text>
+
+  <text x="90" y="744" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    誤実装対応: 40時間
+  </text>
+  <text x="100" y="762" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    古い仕様書を見て誤実装 → 作り直し（年2回）
+  </text>
+
+  <rect x="90" y="785" width="560" height="45" fill="#990000" rx="5"/>
+  <text x="370" y="808" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: white; text-anchor: middle; font-weight: bold;">
+    合計: 135時間/年（約17営業日）
+  </text>
+
+  <!-- After Costs -->
+  <rect x="710" y="545" width="620" height="305" fill="#00AA00" rx="8"/>
+  <text x="1020" y="570" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: white; text-anchor: middle; font-weight: bold;">
+    After：自動生成のコスト
+  </text>
+
+  <text x="730" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    初回設定: 2時間
+  </text>
+  <text x="740" y="618" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    Swagger設定、CI/CD設定、AIに依頼してREADME生成
+  </text>
+
+  <text x="730" y="648" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    更新コスト: 0時間/回 × 10回 = 0時間
+  </text>
+  <text x="740" y="666" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    コード変更で自動反映 → 手動作業なし
+  </text>
+
+  <text x="730" y="696" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    乖離修正: 0時間
+  </text>
+  <text x="740" y="714" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    自動生成なので乖離が発生しない
+  </text>
+
+  <text x="730" y="744" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    誤実装対応: 0時間
+  </text>
+  <text x="740" y="762" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    常に最新の仕様書なので誤実装が発生しない
+  </text>
+
+  <rect x="730" y="785" width="560" height="45" fill="#006600" rx="5"/>
+  <text x="1010" y="808" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: white; text-anchor: middle; font-weight: bold;">
+    合計: 2時間/年（98.5%削減！）
+  </text>
+
+  <!-- Bottom Summary -->
+  <rect x="70" y="865" width="1240" height="20" fill="#00AFF0" rx="3"/>
+  <text x="690" y="880" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    → 年間133時間削減（約17営業日）→ 新機能開発に集中可能！
+  </text>
+</svg>

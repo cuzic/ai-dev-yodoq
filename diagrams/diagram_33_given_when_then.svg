@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1170">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 50px; fill: white; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="700" y="40" class="title" text-anchor="middle">Given-When-Then 構造（BDD形式テストの書き方）</text>
+
+  <!-- Structure explanation -->
+  <rect x="50" y="80" width="1300" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="700" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    Given（前提条件）→ When（実行）→ Then（検証）の3ステップでテストを構造化
+  </text>
+
+  <!-- Given Phase -->
+  <rect x="50" y="170" width="400" height="280" fill="#00AFF0" rx="10"/>
+  <text x="250" y="200" class="phase-title" text-anchor="middle">1. Given（前提条件）</text>
+  <text x="250" y="225" class="phase-title" text-anchor="middle" font-size="28">テスト実行前の状態をセットアップ</text>
+
+  <text x="70" y="255" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    何をセットアップするか:
+  </text>
+  <text x="80" y="278" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • テストデータ準備
+  </text>
+  <text x="80" y="296" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • モックオブジェクト設定
+  </text>
+  <text x="80" y="314" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • 依存サービスの振る舞い定義
+  </text>
+  <text x="80" y="332" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • データベース初期状態
+  </text>
+
+  <text x="70" y="362" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    コード例:
+  </text>
+  <rect x="80" y="370" width="350" height="65" fill="#003399" rx="5"/>
+  <text x="90" y="388" class="code-text">// Given: ユーザーが存在する</text>
+  <text x="90" y="403" class="code-text">User user = new User("test@example.com");</text>
+  <text x="90" y="418" class="code-text">userRepository.save(user);</text>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="450" y1="310" x2="500" y2="310" stroke="#00AFF0" stroke-width="6"/>
+  <polygon points="500,310 490,305 490,315" fill="#00AFF0"/>
+
+  <!-- When Phase -->
+  <rect x="500" y="170" width="400" height="280" fill="#00146E" rx="10"/>
+  <text x="700" y="200" class="phase-title" text-anchor="middle">2. When（実行）</text>
+  <text x="700" y="225" class="phase-title" text-anchor="middle" font-size="28">テスト対象のアクションを実行</text>
+
+  <text x="520" y="255" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    何を実行するか:
+  </text>
+  <text x="530" y="278" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • テストしたいメソッド呼び出し
+  </text>
+  <text x="530" y="296" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • APIエンドポイントリクエスト
+  </text>
+  <text x="530" y="314" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • ユーザーアクションのシミュレート
+  </text>
+  <text x="530" y="332" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • 1つのアクションのみ（複数禁止）
+  </text>
+
+  <text x="520" y="362" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    コード例:
+  </text>
+  <rect x="530" y="370" width="350" height="65" fill="#003399" rx="5"/>
+  <text x="540" y="388" class="code-text">// When: ログイン試行</text>
+  <text x="540" y="403" class="code-text">LoginResponse response =</text>
+  <text x="550" y="418" class="code-text">authService.login(email, password);</text>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="900" y1="310" x2="950" y2="310" stroke="#00146E" stroke-width="6"/>
+  <polygon points="950,310 940,305 940,315" fill="#00146E"/>
+
+  <!-- Then Phase -->
+  <rect x="950" y="170" width="400" height="280" fill="#003399" rx="10"/>
+  <text x="1150" y="200" class="phase-title" text-anchor="middle">3. Then（検証）</text>
+  <text x="1150" y="225" class="phase-title" text-anchor="middle" font-size="28">期待する結果を検証</text>
+
+  <text x="970" y="255" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    何を検証するか:
+  </text>
+  <text x="980" y="278" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • 戻り値の検証
+  </text>
+  <text x="980" y="296" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • 状態変化の確認
+  </text>
+  <text x="980" y="314" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • 依存サービス呼び出し検証
+  </text>
+  <text x="980" y="332" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • 例外発生の確認
+  </text>
+
+  <text x="970" y="362" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    コード例:
+  </text>
+  <rect x="980" y="370" width="350" height="65" fill="#66D9FF" rx="5"/>
+  <text x="990" y="388" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #00146E;">// Then: JWTトークンが返される</text>
+  <text x="990" y="403" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #00146E;">assertNotNull(response.getToken());</text>
+  <text x="990" y="418" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #00146E;">assertEquals(user.getId(), response.getUserId());</text>
+
+  <!-- Real example -->
+  <rect x="50" y="480" width="1300" height="380" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="700" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    実践例：ログイン機能のテスト
+  </text>
+
+  <!-- Bad example -->
+  <rect x="70" y="540" width="610" height="300" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
+  <text x="375" y="570" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+    ✗ 悪い例（構造不明確）
+  </text>
+
+  <rect x="90" y="585" width="570" height="240" fill="#CC0000" rx="8"/>
+  <text x="110" y="608" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">@Test</text>
+  <text x="110" y="623" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">void testLogin() {</text>
+  <text x="120" y="643" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">User user = new User("test@example.com");</text>
+  <text x="120" y="658" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">userRepository.save(user);</text>
+  <text x="120" y="673" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">LoginResponse response = authService.login(email, password);</text>
+  <text x="120" y="688" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">assertNotNull(response.getToken());</text>
+  <text x="120" y="703" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">assertEquals(user.getId(), response.getUserId());</text>
+  <text x="110" y="718" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">}</text>
+
+  <text x="110" y="750" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    問題点:
+  </text>
+  <text x="120" y="770" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • Given/When/Then が不明瞭
+  </text>
+  <text x="120" y="788" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • テストの意図が読み取りにくい
+  </text>
+  <text x="120" y="806" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • 保守性が低い
+  </text>
+
+  <!-- Good example -->
+  <rect x="720" y="540" width="610" height="300" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
+  <text x="1025" y="570" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+    ✓ 良い例（Given-When-Then明確）
+  </text>
+
+  <rect x="740" y="585" width="570" height="240" fill="#00AA00" rx="8"/>
+  <text x="760" y="608" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">@Test</text>
+  <text x="760" y="623" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">void ユーザー登録済みの場合_ログイン成功() {</text>
+  <text x="770" y="643" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">// Given: ユーザーが登録済み</text>
+  <text x="770" y="658" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">User user = new User("test@example.com", hashedPassword);</text>
+  <text x="770" y="673" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">userRepository.save(user);</text>
+  <text x="770" y="693" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">// When: ログイン試行</text>
+  <text x="770" y="708" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">LoginResponse response = authService.login(email, password);</text>
+  <text x="770" y="728" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">// Then: JWTトークンが発行される</text>
+  <text x="770" y="743" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">assertNotNull(response.getToken());</text>
+  <text x="770" y="758" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">assertEquals(user.getId(), response.getUserId());</text>
+  <text x="760" y="773" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">}</text>
+
+  <text x="760" y="805" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    メリット:
+  </text>
+  <text x="770" y="825" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    ✓ 日本語メソッド名で意図明確、✓ コメントで段階明示、✓ 可読性・保守性高
+  </text>
+</svg>

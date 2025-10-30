@@ -1,0 +1,701 @@
+---
+marp: true
+theme: default
+paginate: true
+style: |
+  /* デフォルト：上下レイアウト（図が大きい） */
+  section img {
+    max-width: 95%;
+    max-height: 60vh;
+    display: block;
+    margin: 10px auto;
+    object-fit: contain;
+  }
+
+  /* 左右レイアウト：図を左に */
+  section.layout-horizontal-left {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 20px;
+    align-items: start;
+  }
+  section.layout-horizontal-left h1 {
+    grid-column: 1 / -1;
+  }
+  section.layout-horizontal-left img {
+    max-width: 100%;
+    max-height: 75vh;
+    margin: 0;
+  }
+  section.layout-horizontal-left > :not(h1):not(img) {
+    font-size: 22px;
+  }
+
+  /* 左右レイアウト：図を右に */
+  section.layout-horizontal-right {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 20px;
+    align-items: start;
+  }
+  section.layout-horizontal-right h1 {
+    grid-column: 1 / -1;
+  }
+  section.layout-horizontal-right img {
+    max-width: 100%;
+    max-height: 75vh;
+    margin: 0;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  section.layout-horizontal-right > :not(h1):not(img) {
+    font-size: 22px;
+    grid-column: 1;
+  }
+
+  /* 図のみレイアウト：図を最大化 */
+  section.layout-diagram-only img {
+    max-width: 98%;
+    max-height: 85vh;
+  }
+
+  /* 2カラムレイアウト：テキストのみのスライド向け */
+  section.two-column {
+    columns: 2;
+    column-gap: 40px;
+  }
+  section.two-column h1, section.two-column h2, section.two-column h3 {
+    column-span: all;
+  }
+  section.two-column ul, section.two-column ol {
+    break-inside: avoid-column;
+  }
+
+  /* 3カラムレイアウト：チェックリスト、比較表など */
+  section.three-column {
+    columns: 3;
+    column-gap: 30px;
+  }
+  section.three-column h1, section.three-column h2, section.three-column h3 {
+    column-span: all;
+  }
+  section.three-column ul, section.three-column ol {
+    break-inside: avoid-column;
+  }
+
+  /* 画像2枚横並び：Before/After、比較用 */
+  section.two-images-horizontal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  section.two-images-horizontal h1 {
+    grid-column: 1 / -1;
+  }
+  section.two-images-horizontal img {
+    max-width: 100%;
+    max-height: 70vh;
+    margin: 0;
+  }
+
+  /* 画像上、テキスト下（コンパクト）：図の下に詳細説明を書く場合 */
+  section.image-top-compact img {
+    max-width: 95%;
+    max-height: 40vh;
+    display: block;
+    margin: 10px auto;
+    object-fit: contain;
+  }
+
+  /* カード型グリッド：選択肢、ツール比較、ユースケース並列表示 */
+  section.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+  }
+  section.card-grid h1 {
+    grid-column: 1 / -1;
+  }
+  section.card-grid > :not(h1) {
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  section.card-grid h3 {
+    margin-top: 0;
+    color: #0066cc;
+  }
+
+  section {
+    font-size: 24px;
+    padding: 40px 60px;
+  }
+  h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  ul, ol {
+    margin: 8px 0;
+  }
+  li {
+    margin: 6px 0;
+    line-height: 1.4;
+  }
+---
+
+# Day 1-2: タスク分解 + 実装 + 品質担保 + リファクタリング (13:00-14:50)
+
+---
+
+<!-- _class: lead -->
+
+## STEP3: タスク分解（35分）
+
+---
+
+# STEP3 タスク分解とは
+- 大きな機能を実装可能な小さなタスクに分解
+- **なぜタスク分解が必要か（AIの思考を言語化）**
+  - AIは忘れっぽい→全体像を把握しづらい
+  - Reward Hacking→いきなり実装すると手抜きしがち
+  - 計画書＝AIの思考を可視化、人間が軌道修正できる
+- **効果:** 実装前に「あっ、そっちじゃない」が言える
+
+---
+
+# タスク分解 = AIの思考を言語化（重要）
+- **AIに計画を立てさせる理由**
+  - Trust but Verify→エラー率10-60%、実装前に確認必須
+  - AIが「何をしようとしているか」を事前に把握
+  - 人間の頭の中を整理するのと同じく、AIの思考も整理が必要
+- **プロンプト例:** 「この設計書に基づいて、タスク一覧を作成して」
+
+---
+
+# 計画書作成による可視化（重要）
+- **早い段階での軌道修正が可能**
+  - 実装後に修正するより、計画段階で修正する方が効率的
+  - コスト削減・時間短縮の効果
+- **Guardrailsとしての計画書**
+  - AIが道を外れたら、計画書で元に戻せる
+  - 手戻りコストを大幅に削減
+
+---
+
+<!-- _class: layout-horizontal-left -->
+
+# Phase分け戦略（Phase 1-4）
+
+![Phase分け戦略](diagrams/diagram_10_phase_breakdown.svg)
+
+- **なぜPhase分けが必要か**
+  - 全部一度に作ると依存関係が複雑化→AIが混乱（忘れっぽい）
+  - 段階的に作れば各Phaseで動作確認→早期問題発見
+- **Phase 1（基盤）:** DB接続・認証基盤・基本CRUD
+- **Phase 2（コア機能）:** ビジネスロジック・主要API
+- **Phase 3（拡張機能）:** 検索・フィルタ・通知
+- **Phase 4（仕上げ）:** パフォーマンス最適化・E2Eテスト
+- **効果:** リスク最小化、確実な進捗
+
+---
+
+# タスク粒度（30分〜2時間）
+- **なぜ適切な粒度が重要か**
+  - 大きすぎるタスク：進捗が見えない、AIが全体像を見失う
+  - 小さすぎるタスク：管理コストが増大、オーバーヘッド
+- **適切な粒度:** 30分〜2時間、1日で3-5タスク程度
+- **粒度の判断基準:** 1回のコミットで完結できるか？
+- **例:** 「ユーザー登録API実装」は適切、「バックエンド全部」は大きすぎ
+- **効果:** モチベーション維持、問題の早期発見
+
+---
+
+<!-- _class: layout-horizontal-right -->
+
+# 依存関係の可視化
+
+![タスク依存関係グラフ](diagrams/diagram_35_dependency_graph.svg)
+
+- **なぜ依存関係の可視化が必要か**
+  - 順序を間違えると手戻りが発生（DB未作成でAPI実装できない）
+  - AIは依存関係の判断が苦手（Jagged Intelligence）
+- **並行作業可能なタスク:** フロントとバックを同時進行
+- **順序が必要なタスク:** DB設計→マイグレーション→API実装
+- **AIへの指示:** 「依存関係を明示してタスク一覧を作成して」
+- **効果:** 効率的なスケジューリング、手戻り防止
+
+---
+
+<!-- _class: layout-horizontal-left -->
+
+# タスク一覧テンプレート
+
+![タスク一覧テンプレート](diagrams/diagram_34_task_list_template.svg)
+
+- **必須項目:** Phase・タスク名・所要時間・依存関係・完了条件
+- **なぜテンプレート化が必要か**
+  - 曖昧な計画→AIが勝手に解釈（Jagged Intelligence）
+  - 明確なフォーマット→AIが一貫した出力
+- **進捗管理:** 一覧表でステータス可視化（未着手・進行中・完了）
+- **チーム共有:** Markdown形式でGit管理、誰でも参照可能
+- **AIへの指示:** 「このテンプレートでタスク一覧を作成して」
+
+---
+
+# AI活用でタスク自動生成
+- **プロンプト例:** 「この設計書に基づいて、タスク一覧を作成して。Phase分けして、各タスクは30分〜2時間で完了できるようにして」
+- **AIが自動生成する項目:** Phase・タスク名・所要時間・依存関係・完了条件
+- **人間の役割:** レビュー・調整・優先順位づけ
+- **生産性向上:** 計画作成時間が数時間→数分に短縮
+- **Trust but Verify:** AI生成後、必ず人間が確認・調整
+
+---
+
+# STEP3のまとめ
+- **タスク分解＝AIの思考を言語化:** 計画を可視化、人間が軌道修正できる
+- **Phase分け戦略:** 段階的な開発でリスク最小化
+- **適切な粒度:** 30分〜2時間で1タスク、進捗が見える
+- **依存関係の明示:** 手戻り防止、効率的なスケジューリング
+- **AI活用:** 計画作成時間を大幅短縮、人間はレビューに集中
+
+---
+
+---
+
+<!-- _class: lead -->
+
+## STEP4: 実装（40分）
+
+---
+
+<!-- _class: card-grid -->
+
+# 実装の3原則（AIの制約に対応）
+
+### ①小さく作る（Increment）
+- **理由:** AIは忘れっぽいので小刻みに
+- **方法:** 1タスク30分〜2時間で完了
+- **効果:** 常に動く状態を維持、問題を早期発見
+
+### ②テスト駆動（TDD/BDD）
+- **理由:** Trust but Verify、AIが自己完結
+- **方法:** Red-Green-Refactorサイクル
+- **効果:** AIが自動でテスト→修正を繰り返す
+
+### ③AI自己レビュー必須
+- **理由:** Reward Hacking対策、手抜き検出
+- **方法:** 「このコードをレビューして」と毎回指示
+- **効果:** 40-60%のバグを自動検出
+
+---
+
+# 実装の標準ワークフロー
+- **1タスクごとのサイクル:**
+  1. タスク選択（タスク一覧から次のタスクを選ぶ）
+  2. テスト作成（Red：失敗するテストを書く）
+  3. 実装（Green：最小実装でテストを通す）
+  4. AI自己レビュー（「このコードをレビューして」）
+  5. 修正（レビュー指摘事項を修正）
+  6. 動作確認（実際に動かして確認）
+  7. コミット（Git管理）
+- **このサイクルを繰り返す:** 1タスク完了→次のタスク
+
+---
+
+<!-- _class: layout-horizontal-right -->
+
+# TDD/BDD統合ワークフロー
+
+![TDD Red-Green-Refactorサイクル](diagrams/diagram_11_tdd_cycle.svg)
+
+- **なぜTDD/BDDが必要か**
+  - テストなし→AIが作る→人間が手動テスト→エラー→修正（無限ループ）
+  - テストあり→AIが作る→自動テスト→エラー→AI自己修正（自己完結）
+- **Red（失敗するテストを書く）:** テストが仕様を定義
+- **Green（最小実装）:** テストを通す最小コード
+- **Refactor（改善）:** テストが保証するから安心してリファクタリング
+- **BDD形式（Given-When-Then）:** 人間が読める仕様書になる
+
+---
+
+<!-- _class: layout-horizontal-left -->
+
+# AIにTDD/BDDで実装させる
+
+![Given-When-Then構造](diagrams/diagram_33_given_when_then.svg)
+
+- **プロンプト例:** 「POST /api/register を TDD で実装して。Given-When-Then形式のテストを書き、正常系・異常系をカバー」
+- **AIが自動で行うこと:**
+  1. Given-When-Thenテストを先に書く
+  2. 実装コードを書く
+  3. テストを実行→失敗→修正→成功を繰り返す
+- **人間の役割:** プロンプトで方向性を指示、結果をレビュー
+- **効果:** バグが少なく設計が良くなる、AIが自己完結
+
+---
+
+<!-- _class: layout-horizontal-right -->
+
+# セキュリティベストプラクティス（重要）
+
+![セキュリティベストプラクティス](diagrams/diagram_23_security_best_practices.svg)
+
+- **なぜセキュリティが後回しになるか（Reward Hacking）**
+  - AIは「タスク完了」を最優先→セキュリティは二の次
+  - 平文保存、ハードコーディングで「とりあえず動く」を選ぶ
+  - Jagged Intelligence→セキュリティ判断が苦手
+- **対策：明確な制約を設定（Guardrails）**
+  - パスワード→BCrypt、APIキー→環境変数
+  - JWT秘密鍵→環境変数、入力値→@Valid必須
+  - .env作成、.gitignore追加、.env.example用意
+
+---
+
+# パスワード・JWT認証の実装
+- **❌NG例（Reward Hacking）:** 平文保存、ハードコーディング、「とりあえず動く」
+- **✅ベストプラクティス:** BCryptハッシュ化、環境変数管理
+- **登録時:** passwordEncoder.encode() でハッシュ化して保存
+- **ログイン時:** passwordEncoder.matches() で比較
+- **JWT発行:** @Value("${jwt.secret}") で環境変数から秘密鍵取得
+- **プロンプトに明記:** 「BCryptとJWT環境変数必須」と指定しないとAIは手抜き
+
+---
+
+# セキュアなコードの指示方法（重要）
+- **なぜ明確な指示が必要か**
+  - AIは暗黙の前提を理解できない（Jagged Intelligence）
+  - セキュリティ要件は明示しないと実装されない
+- **プロンプト例:** 「ユーザー登録APIを実装。BCrypt、環境変数、@Valid、レート制限、Spring Security、HTTPS、エラーメッセージ一般化」
+- 明確な制約＝AIが安全な実装を行う
+
+---
+
+<!-- _class: layout-horizontal-left -->
+
+# インクリメンタル開発とは
+
+![インクリメンタル開発タイムライン](diagrams/diagram_24_incremental_timeline.svg)
+
+- **なぜ小さく作るべきか（AIは忘れっぽい対策）**
+  - 全部一度に作る→完成まで動かない→問題発見が遅れる
+  - 小さく作る→動かす→確認→早期発見
+- **効果:** 進捗が見える、モチベーション維持、リスク低減
+
+---
+
+# インクリメンタル実装の実例
+- **Increment 1: 一覧表示**
+  - タスク一覧取得API実装→テスト→動作確認→コミット
+- **Increment 2: 新規作成**
+  - タスク作成API実装→テスト→動作確認→コミット
+- **Increment 3: 完了チェック**
+  - タスク完了API実装→テスト→動作確認→コミット
+- **各Incrementで:** 動作確認→テスト実行→AI自己レビュー→コミット
+- **効果:** 常に動く状態を維持、問題を早期発見
+
+---
+
+<!-- _class: layout-horizontal-right -->
+
+# AI自己レビュー必須化（重要）
+
+![AI自己レビューフロー](diagrams/diagram_25_ai_self_review_flow.svg)
+
+- **なぜAI自己レビューが重要か（Trust but Verify）**
+  - AIのエラー率10-60%→自己レビューで40-60%検出
+  - Reward Hacking→実装後に手抜きチェック
+  - Jagged Intelligence→セキュリティ判断が苦手なので必須
+- 実装後必ず：「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」
+- 追加コストほぼゼロで品質大幅向上
+
+---
+
+# STEP4のまとめ
+- **実装の3原則（AIの制約への対応）**
+  - ①小さく作る→AIは忘れっぽい対策
+  - ②テスト駆動→Trust but Verify自動化、AIが自己完結
+  - ③AI自己レビュー必須→Reward Hacking対策、手抜き検出
+- **セキュリティファースト:** BCrypt・環境変数・@Valid必須
+- **インクリメンタル開発:** 常に動く状態を維持、早期問題発見
+
+---
+
+---
+
+<!-- _class: lead -->
+
+## STEP5: 品質担保（30分）
+
+---
+
+# STEP5 品質担保とは
+- **なぜ品質担保が必要か（Trust but Verify）**
+  - AIのエラー率10-60%→検証なしでは本番投入不可
+  - 人間が全部検証するのは非効率→自動化が鍵
+- **TDDとAI活用の相乗効果**
+  - テストがあれば→AIが自分でバグに気づき→自分で修正→自己完結
+  - テストなし→人間が手動確認→エラー報告→修正依頼（非効率）
+- **効果:** AIが自分で品質を保証できる、人間の負担が劇的に軽減
+
+---
+
+# テスト駆動開発とAI活用の相乗効果（重要）
+- **なぜTDDとAIが相性抜群か**
+  - テストがあれば、AIが自分でバグに気づき自分で修正
+  - Trust（AI実装）→ Verify（テスト実行）→ 修正を自動化
+- **TDDなし:** 人間が実行→エラー確認→コピペ→AI伝達の無限ループ
+- **TDDあり:** AIが自動でテスト実行→エラー検知→修正
+- 生産性が飛躍的に向上
+
+---
+
+# E2Eテスト重視の戦略
+- **なぜE2Eテストを重視すべきか**
+  - 実装詳細のテスト→リファクタリングで壊れる
+  - E2Eテスト→ユーザー体験を検証、リファクタリングに強い
+- 本当の価値（ユーザー体験）を保証
+
+---
+
+# Playwright によるE2Eテスト
+- **なぜPlaywrightか**
+  - ユーザー視点のテスト自動化、実ブラウザで動作確認
+  - AIが自動でテストコード生成可能
+- **プロンプト例:** 「ログイン→ダッシュボード表示のPlaywrightテストを作成して」
+- **AIが生成:** ブラウザ起動→ログインフォーム入力→送信→画面遷移確認
+- **本番環境と同じ条件:** 実際のユーザー体験を検証
+- **効果:** UIバグ・統合問題を自動検出
+
+---
+
+# ビジュアルリグレッションテスト
+- **なぜビジュアルテストが必要か**
+  - コードは正しくても見た目が崩れる場合がある
+  - 人間の目視確認は漏れが発生しやすい
+- スクリーンショット比較で自動検出、差分があれば警告
+
+---
+
+# MCP関連ツール
+- **なぜMCPが必要か**
+  - AIのカットオフ問題→古いライブラリ情報で実装してしまう
+  - Context 7：2万以上の最新公式ドキュメントを参照
+- Serena：大規模プロジェクト高速検索、Browser DevTools：コンソールエラー自動キャプチャ
+
+---
+
+<!-- _class: three-column -->
+
+# AI自己レビュー4種類の使い分け
+
+**なぜ観点別レビューが必要か**
+- 一般レビューだけでは専門的な問題を見落とす
+- 観点別で検出率60%→90%に向上
+
+**①一般**
+- 実装直後（毎回必須）
+- ロジックエラー、エッジケース、命名規則
+
+**②セキュリティ**
+- 認証・データ処理時
+- SQL injection、XSS、CSRF、平文パスワード
+
+**③パフォーマンス**
+- DB操作・大量データ処理時
+- N+1問題、インデックス欠如、メモリリーク
+
+**④テスト**
+- テストコード作成後
+- テストカバレッジ、境界値、モック不備
+
+---
+
+# AI自己レビュー①一般レビュー
+- **プロンプト:** 「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」
+- **検出:** ロジックエラー、エッジケース見落とし（null、空配列）、命名規則違反
+- **効果:** バグ検出率40-60%向上
+
+---
+
+# AI自己レビュー②セキュリティ特化
+- **プロンプト:** 「OWASP Top 10でセキュリティレビュー。SQL injection・XSS・CSRF・機密情報・認証認可・バリデーションをチェック」
+- **検出:** SQL injection、XSS、CSRF、平文パスワード、ハードコーディングされたAPIキー
+- **効果:** 脆弱性を80%削減
+
+---
+
+# AI自己レビュー③パフォーマンス特化
+- **プロンプト:** 「パフォーマンスレビュー。N+1クエリ・メモリリーク・キャッシュ・インデックス・非同期処理をチェック」
+- **検出:** N+1クエリ、無駄な全件取得、キャッシュ未活用
+- **効果:** レスポンス時間50-80%改善
+
+---
+
+<!-- _class: layout-horizontal-left -->
+
+# AI自己レビュー④テストカバレッジ
+
+![テストカバレッジ80%ルール](diagrams/diagram_26_test_coverage_80_rule.svg)
+
+- **プロンプト:** 「テストレビュー。エッジケース・異常系・境界値・独立性・Given-When-Thenをチェック」
+- **検出:** テストケース漏れ（null、空文字、MAX値）、異常系不足
+- **効果:** カバレッジ80%→95%
+
+---
+
+# 自己レビューの実例
+- **Before（AIの初回実装）:**
+  - 平文パスワード比較（セキュリティ脆弱）
+  - APIキーハードコーディング（Git漏洩リスク）
+  - バリデーションなし（不正入力で例外）
+- **After（AI自己レビュー後）:**
+  - BCrypt比較、環境変数管理、@Valid入力値検証
+  - レート制限、@ControllerAdviceエラーハンドリング
+- **改善率:** 40-60%のバグ検出、追加コストほぼゼロ
+
+---
+
+# STEP5のまとめ
+- **TDDとAI活用の相乗効果:** AIが自己完結、人間の負担が劇的に軽減
+- **E2Eテスト重視:** Playwright・ビジュアルリグレッション
+- **AI自己レビュー4種類:** 一般・セキュリティ・パフォーマンス・テスト
+- **観点別レビュー:** 検出率60%→90%に向上
+- **Trust but Verify自動化:** テストとレビューでAIの品質を保証
+
+---
+
+---
+
+<!-- _class: lead -->
+
+## STEP6: リファクタリングとドキュメント反映（5分）
+
+---
+
+# STEP6 リファクタリングとドキュメント反映とは
+- **なぜこのステップが必要か**
+  - Reward Hacking→動くコード≠良いコード、粗い実装になりがち
+  - AIは忘れっぽい→ドキュメント化しないと次のセッションで全て忘れる
+- **リファクタリング（内部品質向上）:**
+  - 重複削除・デザインパターン適用・ライブラリ活用
+- **Living Documentation（AIの外部メモリ）:**
+  - 実装と同期したドキュメント、AIが過去の知見を参照できる
+- **効果:** 保守性向上、技術的負債の早期解消、知見の蓄積
+
+---
+
+<!-- _class: layout-horizontal-right -->
+
+# AIによるリファクタリング①重複コード削除
+
+![TDDでのリファクタリングタイミング](diagrams/diagram_27_refactoring_timing_in_tdd.svg)
+
+- **なぜリファクタリングが必要か（Reward Hacking対策）**
+  - AIは「とりあえず動く」を優先→コピペで重複コード生成
+  - Jagged Intelligence→最適化判断が苦手
+- **AIへの指示:** 「不要・冗長・重複コードを指摘して」
+- **効果:** 保守コスト削減、バグリスク低減
+
+---
+
+# AIによるリファクタリング②デザインパターン適用
+- **なぜデザインパターンが重要か**
+  - 巨大なif-else文→拡張困難、テスト困難
+  - パターン適用→各処理が独立、拡張容易
+- **AIが提案:** if-else→Strategy、オブジェクト生成→Factory
+- **効果:** プロが設計したような構造に
+
+---
+
+# AIによるリファクタリング③ライブラリ活用
+- **なぜ車輪の再発明を避けるべきか**
+  - 自前実装→バグリスク、メンテナンスコスト
+  - ライブラリ→エッジケーステスト済み、セキュリティパッチ自動適用
+- **AIへの指示:** 「既存ライブラリを使ってリファクタリングして」
+- **効果:** 実装時間短縮、品質向上
+
+---
+
+<!-- _class: layout-horizontal-left -->
+
+# Living Documentation
+
+![Living Documentation構造](diagrams/diagram_36_living_documentation.svg)
+
+- **なぜLiving Documentationが必要か（AIは忘れっぽい）**
+  - AIはセッション超えると全て忘れる→ドキュメント＝AIの外部メモリ
+  - 従来：実装と乖離→誰も信用しない
+  - Living：実装と同期→常に信頼できる
+- **効果:** 次のセッションのAIが過去の知見を参照、同じ失敗を繰り返さない
+
+---
+
+# 計画図面 vs 完成図面（重要）
+- **なぜ両方が必要か**
+  - 計画図面（設計書）：作る前の理想
+  - 完成図面（as-built）：実際に作った結果
+  - 必ず差分が生まれる（実装中の発見・変更）
+- **実装で得られた知見を記録:** 判断理由、ハマった点、回避策
+- **効果:** AIが正確にメンテナンス・拡張できる
+
+---
+
+# ドキュメント種類
+- **①architecture.md:** システム全体像（構成・ディレクトリ・設計判断）
+- **②README.md:** セットアップ手順・使い方
+- **③CLAUDE.md:** 成功したプロンプトパターン蓄積
+- **なぜ3種類必要か:** 全体像・導入・再現性の3軸でAIを支援
+- **活用:** 「architecture.mdを生成して」でAI自動生成
+
+---
+
+# 頻繁なコミット（重要）
+- **なぜ頻繁なコミットが必要か**
+  - AIの暴走対策：間違った方向に進んだらすぐに戻れる
+  - 実験の安全性：失敗してもリスクゼロ
+  - 引き継ぎ可能性：履歴があれば誰でも状況を把握できる
+- **コミット頻度:** 1機能完了→コミット、テスト通過→コミット
+
+---
+
+# STEP6のまとめ
+- **リファクタリング3つの観点:** 重複削除・デザインパターン・ライブラリ活用
+- **Living Documentation:** 実装と同期、AIの外部メモリとして機能
+- **3種類のドキュメント:** architecture.md・README.md・CLAUDE.md
+- **計画図面vs完成図面:** 実装で得られた知見を記録
+- **頻繁なコミット:** AIの暴走対策、実験の安全性、引き継ぎ可能性
+
+---
+
+---
+
+<!-- _class: lead -->
+
+## Part 2 全体のまとめ
+
+---
+
+<!-- _class: card-grid -->
+
+# Part 2のキーポイント
+
+### ①計画の可視化（STEP3）
+タスク分解でAIの思考を言語化、早期軌道修正
+
+### ②セキュリティファースト（STEP4）
+BCrypt・環境変数・@Valid、明示しないとAIは手抜き
+
+### ③TDDでAI自己完結（STEP4-5）
+テストがあれば、AIが自分でデバッグ・修正
+
+### ④AI自己レビュー必須（STEP5）
+観点別レビューで検出率60%→90%
+
+### ⑤リファクタリング＆ドキュメント（STEP6）
+技術的負債の早期解消、Living Documentationで知見蓄積
