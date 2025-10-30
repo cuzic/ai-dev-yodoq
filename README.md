@@ -1,15 +1,54 @@
-# AI活用研修 スライド資料（Marp版）
+# AI活用開発セミナー：生産性を劇的に向上させる体系的アプローチ
 
-このディレクトリには、Marp形式に変換されたセミナースライドが含まれています。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Marp](https://img.shields.io/badge/Made%20with-Marp-orange)](https://marp.app/)
 
-## ファイル構成
+2日間で学ぶ実践的AI駆動開発手法のセミナー資料（YODOQ版）です。全5部構成、約160枚のMarpスライドと43種類のSVG図表を含みます。
 
-- `day1_1.md` - 1日目 Part 1（10:00-12:00）：イントロダクション、Claude Code、要件定義、設計
-- `day1_2.md` - 1日目 Part 2（13:00-14:50）：タスク分解、実装、品質担保、リファクタリング
-- `day1_3.md` - 1日目 Part 3（15:00-17:00）：振り返り、演習
-- `day2_1.md` - 2日目 Part 1（10:00-12:00）：リバースエンジニアリング、テストシナリオ
-- `day2_2.md` - 2日目 Part 2（13:00-17:00）：実践演習、成果発表、まとめ
-- `diagram_prompts.md` - 図表作成用プロンプト集（21個）
+## 📚 コンテンツ概要
+
+このセミナーでは、AIを活用した体系的な開発手法を学びます：
+
+- **5-STEPフロー**: 要件定義 → 設計 → タスク分解 → 実装 → 品質担保 → リファクタリング
+- **AI活用の3原則**: Jagged Intelligence、Trust but Verify、Guardrails
+- **TDD/BDD**: AI自己完結型の開発サイクル
+- **Living Documentation**: AIの外部メモリとしてのドキュメント戦略
+
+## 📂 ファイル構成
+
+### スライド（Marp形式）
+
+| ファイル | 内容 | スライド数 |
+|---------|------|-----------|
+| `day1_1.md` | 1日目 Part 1（10:00-12:00）：イントロダクション、Claude Code、要件定義、設計 | 約45枚 |
+| `day1_2.md` | 1日目 Part 2（13:00-14:50）：タスク分解、実装、品質担保、リファクタリング | 約40枚 |
+| `day1_3.md` | 1日目 Part 3（15:00-17:00）：振り返り、演習 | 約33枚 |
+| `day2_1.md` | 2日目 Part 1（10:00-12:00）：リバースエンジニアリング、テストシナリオ | 約40枚 |
+| `day2_2.md` | 2日目 Part 2（13:00-17:00）：実践演習、成果発表、まとめ | 約42枚 |
+
+### その他ファイル
+
+- `LAYOUT_GUIDE.md` - 10種類のレイアウト完全ガイド
+- `diagram_prompts.md` - 図表作成用プロンプト集（43個）
+- `diagrams/` - 全43種類のSVG図表
+- `V4_NEW_TOPICS.md` - トピック一覧と概要
+
+## ✨ レイアウト機能
+
+このスライドは10種類のカスタムレイアウトに対応しています：
+
+1. **デフォルト** - 通常のテキストスライド（最大12行）
+2. **lead** - セクション区切り、タイトルページ
+3. **layout-horizontal-left** - 画像左、テキスト右（8行）
+4. **layout-horizontal-right** - テキスト左、画像右（8行）
+5. **layout-diagram-only** - 図のみ最大化
+6. **two-column** - 2カラムテキスト（25行）
+7. **three-column** ⭐ - 3カラムテキスト（35行）
+8. **card-grid** ⭐ - カード型グリッド（30行）
+9. **image-top-compact** ⭐ - 画像コンパクト＋詳細説明（15行）
+10. **two-images-horizontal** ⭐ - 画像2枚横並び（10行）
+
+詳細は [LAYOUT_GUIDE.md](./LAYOUT_GUIDE.md) をご覧ください。
 
 ## Marpについて
 
