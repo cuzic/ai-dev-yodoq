@@ -38,12 +38,12 @@ run = "npm run watch"
 
 [tasks.clean]
 description = "Remove build artifacts"
-run = "rm -f *.pdf *.html *.pptx"
+run = "rm -rf build/*"
 
 [tasks.verify]
 description = "Verify slide layouts"
-run = "python verify_layout.py"
+run = "python scripts/verify_layout.py"
 
 [tasks.list]
 description = "List all available slides"
-run = "ls -lh day*.md"
+run = "ls -lh slides/*.md"

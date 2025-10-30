@@ -14,33 +14,35 @@
 - **TDD/BDD**: AI自己完結型の開発サイクル
 - **Living Documentation**: AIの外部メモリとしてのドキュメント戦略
 
-## 📂 ファイル構成
+## 📂 ディレクトリ構造
 
-### スライド（Marp形式）
-
-| ファイル | 内容 | スライド数 |
-|---------|------|-----------|
-| `day1_1.md` | 1日目 Part 1（10:00-12:00）：イントロダクション、Claude Code、要件定義、設計 | 約45枚 |
-| `day1_2.md` | 1日目 Part 2（13:00-14:50）：タスク分解、実装、品質担保、リファクタリング | 約40枚 |
-| `day1_3.md` | 1日目 Part 3（15:00-17:00）：振り返り、演習 | 約33枚 |
-| `day2_1.md` | 2日目 Part 1（10:00-12:00）：リバースエンジニアリング、テストシナリオ | 約40枚 |
-| `day2_2.md` | 2日目 Part 2（13:00-17:00）：実践演習、成果発表、まとめ | 約42枚 |
-
-### ドキュメント・設定ファイル
-
-| ファイル | 説明 |
-|---------|------|
-| `LAYOUT_GUIDE.md` | 10種類のレイアウト完全ガイド |
-| `diagram_prompts.md` | 図表作成用プロンプト集（43個） |
-| `V4_NEW_TOPICS.md` | トピック一覧と概要 |
-| `verify_layout.py` | スライドレイアウト検証スクリプト |
-| `.mise.toml` | mise設定（Python 3.12, Node.js 22） |
-| `pyproject.toml` | Python/uv プロジェクト設定 |
-| `package.json` | npm設定とMarp CLIスクリプト |
-
-### ディレクトリ
-
-- `diagrams/` - 全43種類のSVG図表
+```
+ai-dev-yodoq/
+├── slides/              # スライドファイル（Marp形式）
+│   ├── day1_1.md       # 1日目 Part 1（イントロダクション、Claude Code、要件・設計）
+│   ├── day1_2.md       # 1日目 Part 2（タスク分解、実装、品質担保）
+│   ├── day1_3.md       # 1日目 Part 3（振り返り、演習）
+│   ├── day2_1.md       # 2日目 Part 1（リバースエンジニアリング、テストシナリオ）
+│   └── day2_2.md       # 2日目 Part 2（実践演習、成果発表、まとめ）
+├── diagrams/            # SVG図表（43種類）
+├── docs/                # ドキュメント
+│   ├── LAYOUT_GUIDE.md       # 10種類のレイアウト完全ガイド
+│   ├── V4_NEW_TOPICS.md      # トピック一覧と概要
+│   └── diagram_prompts.md    # 図表作成用プロンプト集
+├── scripts/             # ユーティリティスクリプト
+│   └── verify_layout.py      # スライドレイアウト検証
+├── build/               # ビルド成果物（gitignore対象）
+│   ├── *.pdf           # PDF出力
+│   ├── *.html          # HTML出力
+│   └── *.pptx          # PowerPoint出力
+├── .mise.toml           # mise設定（Python 3.12, Node.js 22, タスク定義）
+├── .python-version      # Python 3.12指定
+├── .nvmrc               # Node.js 22指定
+├── pyproject.toml       # Python/uv プロジェクト設定
+├── package.json         # npm設定とMarp CLIスクリプト
+├── .gitignore           # Git除外設定
+└── README.md            # このファイル
+```
 
 ## ✨ レイアウト機能
 
@@ -57,7 +59,7 @@
 9. **image-top-compact** ⭐ - 画像コンパクト＋詳細説明（15行）
 10. **two-images-horizontal** ⭐ - 画像2枚横並び（10行）
 
-詳細は [LAYOUT_GUIDE.md](./LAYOUT_GUIDE.md) をご覧ください。
+詳細は [LAYOUT_GUIDE.md](./docs/LAYOUT_GUIDE.md) をご覧ください。
 
 ## 🚀 クイックスタート
 
@@ -113,7 +115,7 @@ mise run verify
 
 または直接実行：
 ```bash
-python verify_layout.py
+python scripts/verify_layout.py
 ```
 
 このスクリプトは各スライドを解析し、以下をチェックします：
@@ -254,19 +256,21 @@ paginate: true  # ページ番号を表示
 
 ## 図表の挿入
 
-図表を挿入する場合は、`diagram_prompts.md`のプロンプトを使ってSVGを生成し、以下のように挿入してください：
+図表を挿入する場合は、`docs/diagram_prompts.md`のプロンプトを使ってSVGを生成し、以下のように挿入してください：
 
 ```markdown
 ---
 
 # 5-STEPフロー全体像
 
-![w:1000](./diagrams/diagram_03_5step_flow.svg)
+![w:1000](../diagrams/diagram_03_5step_flow.svg)
 
 - STEP1: 要件定義
 - STEP2: 設計
 ...
 ```
+
+**注意**: スライドは`slides/`ディレクトリにあるため、画像パスは`../diagrams/`となります。
 
 ## トラブルシューティング
 

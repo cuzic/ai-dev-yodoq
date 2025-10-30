@@ -10,7 +10,7 @@ from pathlib import Path
 from datetime import datetime
 
 # スライドディレクトリ
-SLIDE_DIR = Path(__file__).parent
+SLIDE_DIR = Path(__file__).parent.parent / "slides"
 
 # レイアウトごとの推奨行数
 MAX_LINES = {

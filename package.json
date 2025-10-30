@@ -5,11 +5,11 @@
   "private": true,
   "scripts": {
     "build": "npm run build:pdf && npm run build:html",
-    "build:pdf": "marp day*.md --pdf --allow-local-files",
-    "build:html": "marp day*.md --html --allow-local-files",
-    "build:pptx": "marp day*.md --pptx --allow-local-files",
-    "preview": "marp -s .",
-    "watch": "marp -w day1_1.md"
+    "build:pdf": "marp slides/*.md --pdf --allow-local-files -o build/",
+    "build:html": "marp slides/*.md --html --allow-local-files -o build/",
+    "build:pptx": "marp slides/*.md --pptx --allow-local-files -o build/",
+    "preview": "marp -s slides/",
+    "watch": "marp -w slides/day1_1.md"
   },
   "keywords": [
     "marp",

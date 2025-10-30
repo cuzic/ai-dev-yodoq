@@ -39,8 +39,7 @@ node_modules/
 package-lock.json
 
 # Build outputs
-*.pdf
-*.html
+build/
 
 # mise
 .mise.local.toml
