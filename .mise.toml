@@ -4,3 +4,46 @@ node = "22"
 
 [env]
 _.python.venv = { path = ".venv", create = true }
+
+[tasks.setup]
+description = "Install all dependencies"
+run = [
+  "npm install",
+  "echo 'Setup complete! Run `mise run build` to generate slides.'"
+]
+
+[tasks.build]
+description = "Build all slides (PDF + HTML)"
+run = "npm run build"
+
+[tasks."build:pdf"]
+description = "Build PDF slides only"
+run = "npm run build:pdf"
+
+[tasks."build:html"]
+description = "Build HTML slides only"
+run = "npm run build:html"
+
+[tasks."build:pptx"]
+description = "Build PowerPoint slides"
+run = "npm run build:pptx"
+
+[tasks.preview]
+description = "Start preview server"
+run = "npm run preview"
+
+[tasks.watch]
+description = "Watch mode for day1_1.md"
+run = "npm run watch"
+
+[tasks.clean]
+description = "Remove build artifacts"
+run = "rm -f *.pdf *.html *.pptx"
+
+[tasks.verify]
+description = "Verify slide layouts"
+run = "python verify_layout.py"
+
+[tasks.list]
+description = "List all available slides"
+run = "ls -lh day*.md"
