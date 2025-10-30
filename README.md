@@ -26,12 +26,21 @@
 | `day2_1.md` | 2日目 Part 1（10:00-12:00）：リバースエンジニアリング、テストシナリオ | 約40枚 |
 | `day2_2.md` | 2日目 Part 2（13:00-17:00）：実践演習、成果発表、まとめ | 約42枚 |
 
-### その他ファイル
+### ドキュメント・設定ファイル
 
-- `LAYOUT_GUIDE.md` - 10種類のレイアウト完全ガイド
-- `diagram_prompts.md` - 図表作成用プロンプト集（43個）
+| ファイル | 説明 |
+|---------|------|
+| `LAYOUT_GUIDE.md` | 10種類のレイアウト完全ガイド |
+| `diagram_prompts.md` | 図表作成用プロンプト集（43個） |
+| `V4_NEW_TOPICS.md` | トピック一覧と概要 |
+| `verify_layout.py` | スライドレイアウト検証スクリプト |
+| `.mise.toml` | mise設定（Python 3.12, Node.js 22） |
+| `pyproject.toml` | Python/uv プロジェクト設定 |
+| `package.json` | npm設定とMarp CLIスクリプト |
+
+### ディレクトリ
+
 - `diagrams/` - 全43種類のSVG図表
-- `V4_NEW_TOPICS.md` - トピック一覧と概要
 
 ## ✨ レイアウト機能
 
@@ -50,9 +59,69 @@
 
 詳細は [LAYOUT_GUIDE.md](./LAYOUT_GUIDE.md) をご覧ください。
 
-## Marpについて
+## 🚀 クイックスタート
 
-Marp（Markdown Presentation Ecosystem）は、Markdownからスライドを生成するツールです。
+### 必要なツール
+
+- [mise](https://mise.jdx.dev/) - Python・Node.jsのバージョン管理
+- [uv](https://github.com/astral-sh/uv) - 高速なPythonパッケージマネージャー（オプション）
+
+### セットアップ
+
+```bash
+# リポジトリをクローン
+git clone https://github.com/cuzic/ai-dev-yodoq.git
+cd ai-dev-yodoq
+
+# mise で Python 3.12 と Node.js 22 をインストール
+mise install
+
+# 依存関係をインストール
+mise run setup
+
+# スライドをビルド（PDF + HTML）
+mise run build
+```
+
+### mise タスク一覧
+
+| コマンド | 説明 |
+|---------|------|
+| `mise run setup` | 依存関係をインストール |
+| `mise run build` | PDF + HTML を生成 |
+| `mise run build:pdf` | PDFのみ生成 |
+| `mise run build:html` | HTMLのみ生成 |
+| `mise run build:pptx` | PowerPointを生成 |
+| `mise run preview` | プレビューサーバー起動 |
+| `mise run watch` | ウォッチモードで開発 |
+| `mise run clean` | ビルド成果物を削除 |
+| `mise run verify` | スライドレイアウトを検証 |
+| `mise run list` | 利用可能なスライド一覧 |
+
+タスク一覧を表示するには：
+```bash
+mise tasks
+```
+
+## 🔍 スライドレイアウトの検証
+
+レイアウトの問題（テキストのオーバーフローなど）を検証するには：
+
+```bash
+mise run verify
+```
+
+または直接実行：
+```bash
+python verify_layout.py
+```
+
+このスクリプトは各スライドを解析し、以下をチェックします：
+- 各レイアウトの推奨行数を超えていないか
+- 画像とテキストのバランスは適切か
+- オーバーフローが発生していないか
+
+## 📦 従来の方法（mise不使用）
 
 ### インストール
 
@@ -228,8 +297,36 @@ section { font-size: 22px; }
 </style>
 ```
 
-## 参考リンク
+## 🛠️ 開発環境
 
+このプロジェクトは以下のツールとバージョンを使用します：
+
+| ツール | バージョン | 用途 |
+|-------|-----------|------|
+| Python | 3.12 | スクリプト実行 |
+| Node.js | 22 | Marp CLI実行 |
+| mise | latest | バージョン管理 |
+| uv | latest | Pythonパッケージ管理（オプション） |
+| Marp CLI | 4.x | スライド生成 |
+
+設定ファイル：
+- `.mise.toml` - mise設定とタスク定義
+- `.python-version` - Python 3.12を指定
+- `.nvmrc` - Node.js 22を指定
+- `pyproject.toml` - uv/Python設定
+- `package.json` - npm/Marp CLI設定
+
+## 📖 参考リンク
+
+### Marp関連
 - [Marp公式サイト](https://marp.app/)
 - [Marp CLI ドキュメント](https://github.com/marp-team/marp-cli)
 - [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
+
+### 開発ツール
+- [mise](https://mise.jdx.dev/) - Python・Node.jsバージョン管理
+- [uv](https://github.com/astral-sh/uv) - 高速Pythonパッケージマネージャー
+
+## 📄 ライセンス
+
+MIT License - 詳細は [LICENSE](LICENSE) をご覧ください。
