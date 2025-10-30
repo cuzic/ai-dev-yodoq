@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "build": "npm run build:pdf && npm run build:html",
-    "build:pdf": "marp slides/*.md --pdf --allow-local-files -o build/",
-    "build:html": "marp slides/*.md --html --allow-local-files -o build/",
-    "build:pptx": "marp slides/*.md --pptx --allow-local-files -o build/",
+    "build:pdf": "mkdir -p build && marp slides/*.md --pdf --allow-local-files && mv slides/*.pdf build/",
+    "build:html": "mkdir -p build && marp slides/*.md --html --allow-local-files && mv slides/*.html build/",
+    "build:pptx": "mkdir -p build && marp slides/*.md --pptx --allow-local-files && mv slides/*.pptx build/",
     "preview": "marp -s slides/",
     "watch": "marp -w slides/day1_1.md"
   },
