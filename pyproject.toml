@@ -1,0 +1,23 @@
+[project]
+name = "ai-dev-yodoq"
+version = "1.0.0"
+description = "AI活用開発セミナー：生産性を劇的に向上させる体系的アプローチ"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "marp-cli>=3.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
+
+[tool.uv.sources]

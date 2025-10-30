@@ -24,3 +24,23 @@ __pycache__/
 
 # Logs
 *.log
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# uv
+.uv/
+uv.lock
+
+# Node modules
+node_modules/
+package-lock.json
+
+# Build outputs
+*.pdf
+*.html
+
+# mise
+.mise.local.toml

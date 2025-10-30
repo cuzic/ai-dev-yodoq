@@ -1,0 +1,31 @@
+{
+  "name": "ai-dev-yodoq",
+  "version": "1.0.0",
+  "description": "AI活用開発セミナー：生産性を劇的に向上させる体系的アプローチ",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:pdf && npm run build:html",
+    "build:pdf": "marp day*.md --pdf --allow-local-files",
+    "build:html": "marp day*.md --html --allow-local-files",
+    "build:pptx": "marp day*.md --pptx --allow-local-files",
+    "preview": "marp -s .",
+    "watch": "marp -w day1_1.md"
+  },
+  "keywords": [
+    "marp",
+    "presentation",
+    "slides",
+    "ai",
+    "development",
+    "seminar"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  }
+}
