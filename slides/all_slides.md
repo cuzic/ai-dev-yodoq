@@ -2011,7 +2011,7 @@ DATABASE_PASSWORD=secure-password
 
 <!-- _class: two-column -->
 
-# STEP5のまとめ
+# STEP5のまとめ（1/3）
 
 ## 🎯 品質担保の核心
 
@@ -2039,6 +2039,12 @@ DATABASE_PASSWORD=secure-password
 - Serena: 高速検索
 - Browser DevTools: エラー自動キャプチャ
 
+---
+
+<!-- _class: two-column -->
+
+# STEP5のまとめ（2/3）
+
 ## 🔍 AI自己レビュー4種類
 
 **①一般レビュー**
@@ -2051,11 +2057,11 @@ DATABASE_PASSWORD=secure-password
 
 **③パフォーマンス特化**
 - N+1問題・メモリリーク
-- レスポンス大幅改善（N+1解消など）
+- レスポンス大幅改善
 
 **④テストカバレッジ**
 - エッジケース・異常系
-- テストカバレッジ向上
+- カバレッジ向上
 
 ## 🔧 リファクタリング3つの観点
 
@@ -2072,6 +2078,12 @@ DATABASE_PASSWORD=secure-password
 - 車輪の再発明を避ける
 - エッジケーステスト済み
 - セキュリティパッチ自動適用
+
+---
+
+<!-- _class: two-column -->
+
+# STEP5のまとめ（3/3）
 
 ## 📚 Living Documentation
 
