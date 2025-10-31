@@ -11,7 +11,7 @@
   </defs>
 
   <rect width="800" height="600" fill="#FFFFFF"/>
-  <text x="400" y="30" class="title">Jagged Intelligence（でこぼこな知能）の例</text>
+  <text x="400" y="30" class="title" style="font-size: 18px;">Jagged Intelligence（でこぼこな知能）</text>
 
   <!-- Expert Level (Good) -->
   <g transform="translate(40, 70)">

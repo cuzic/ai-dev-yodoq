@@ -32,7 +32,7 @@
   
   <!-- API Spec -->
   <rect x="520" y="140" width="180" height="100" rx="5" class="file"/>
-  <text x="610" y="165" class="box-title" text-anchor="middle">api-spec.yaml</text>
+  <text x="600" y="165" class="box-title" text-anchor="middle" style="font-size: 14px;">api-spec.yaml</text>
   <text x="530" y="185" class="box-text">• OpenAPI 3.0</text>
   <text x="530" y="205" class="box-text">• エンドポイント定義</text>
   <text x="530" y="225" class="box-text">• レスポンス例</text>
@@ -53,7 +53,7 @@
   
   <!-- ADR -->
   <rect x="520" y="270" width="180" height="100" rx="5" class="file"/>
-  <text x="610" y="295" class="box-title" text-anchor="middle">decisions/</text>
+  <text x="600" y="295" class="box-title" text-anchor="middle" style="font-size: 14px;">decisions/</text>
   <text x="530" y="315" class="box-text">• ADR記録</text>
   <text x="530" y="335" class="box-text">• 技術選定理由</text>
   <text x="530" y="355" class="box-text">• トレードオフ</text>

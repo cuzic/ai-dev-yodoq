@@ -29,7 +29,7 @@
   
   <!-- Solution Section -->
   <rect x="420" y="70" width="330" height="280" rx="8" class="box-solution"/>
-  <text x="585" y="105" class="section-title">✅ 解決策：Guardrails設定</text>
+  <text x="585" y="105" class="section-title" style="font-size: 14px;">✅ 解決策：Guardrails設定</text>
   
   <text x="440" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: white;">• architecture.md：常に参照</text>
   <text x="440" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: white;">• requirements.md：優先順位明記</text>

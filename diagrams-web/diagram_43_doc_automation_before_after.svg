@@ -15,7 +15,7 @@
   <rect width="900" height="500" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="450" y="35" class="title">ドキュメント自動化：Before / After</text>
+  <text x="450" y="35" class="title" style="font-size: 21px;">ドキュメント自動化：Before / After</text>
 
   <!-- BEFORE (Left side) -->
   <g transform="translate(50, 70)">

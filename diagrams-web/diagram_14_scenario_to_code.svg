@@ -13,7 +13,7 @@
   <rect width="800" height="600" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="400" y="30" class="title">シナリオ→コード変換（Given-When-Then）</text>
+  <text x="400" y="30" class="title" style="font-size: 18px;">シナリオ→コード変換（Given-When-Then）</text>
 
   <!-- User actor -->
   <rect x="80" y="70" width="120" height="40" rx="20" fill="#3498DB"/>

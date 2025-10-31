@@ -16,7 +16,7 @@
   <rect width="800" height="600" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="400" y="30" class="title">Fit &amp; Gap分析：要件と現状の差</text>
+  <text x="400" y="30" class="title" style="font-size: 18px;">Fit &amp; Gap分析：要件と現状の差</text>
 
   <!-- FIT (Top Left) -->
   <g transform="translate(40, 70)">
