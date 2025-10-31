@@ -578,11 +578,9 @@ build/
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: two-column -->
 
 # 要件の引き出し方（文字起こしアプローチ）
-
-![文字起こし→AI抽出フロー](diagrams-web/diagram_33_transcription_flow.svg)
 
 ## 🎯 なぜこの手法が強力か
 
@@ -710,11 +708,9 @@ build/
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: two-column -->
 
 # 非機能要件
-
-![非機能要件チェックリスト](diagrams-web/diagram_32_nonfunctional_requirements.svg)
 
 ## 🎯 なぜ非機能要件が重要か
 
@@ -2110,11 +2106,9 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: two-column -->
 
 # STEP5 チェックリスト
-
-![STEP5チェックリスト](diagrams-web/diagram_39_step5_checklist.svg)
 
 **品質担保:**
 - [ ] ユニットテストカバレッジ80%以上
