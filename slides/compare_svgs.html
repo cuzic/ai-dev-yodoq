@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Original vs Web-Optimized SVG Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .comparison {
+            background: white;
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #00146E;
+        }
+        .split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .side {
+            border: 2px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .side h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #666;
+        }
+        .side.original {
+            border-color: #e74c3c;
+        }
+        .side.optimized {
+            border-color: #27ae60;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .stats {
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+            padding: 8px;
+            background: #f8f8f8;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Original vs Web-Optimized SVG Comparison</h1>
+    <p style="text-align: center; color: #666;">Compare side-by-side to verify readability and improvements</p>
+
+    <div id="comparisons"></div>
+
+    <script>
+        const diagrams = [
+            'diagram_01_ai_principles',
+            'diagram_02_role_change',
+            'diagram_03_5step_flow',
+            'diagram_04_ai_memory',
+            'diagram_05_moscow',
+            'diagram_06_spec_structure',
+            'diagram_07_er_diagram',
+            'diagram_08_er_to_code',
+            'diagram_09_sequence_login',
+            'diagram_10_phase_breakdown'
+        ];
+
+        const container = document.getElementById('comparisons');
+
+        diagrams.forEach((name, index) => {
+            const div = document.createElement('div');
+            div.className = 'comparison';
+            div.innerHTML = `
+                <div class="title">${index + 1}. ${name.replace(/_/g, ' ').replace(/diagram \d+ /, '')}</div>
+                <div class="split">
+                    <div class="side original">
+                        <h3>❌ Original (PPTX-style)</h3>
+                        <img src="../diagrams/${name}.svg" alt="${name} original">
+                        <div class="stats" id="stats-orig-${index}">Loading...</div>
+                    </div>
+                    <div class="side optimized">
+                        <h3>✅ Web-Optimized</h3>
+                        <img src="../diagrams-web/${name}.svg" alt="${name} optimized">
+                        <div class="stats" id="stats-opt-${index}">Loading...</div>
+                    </div>
+                </div>
+            `;
+            container.appendChild(div);
+
+            // Load file sizes
+            fetch(`../diagrams/${name}.svg`)
+                .then(r => r.text())
+                .then(text => {
+                    const size = (text.length / 1024).toFixed(1);
+                    const fonts = text.match(/font-size:\s*(\d+)px/g) || [];
+                    const maxFont = Math.max(...fonts.map(f => parseInt(f.match(/\d+/)[0])));
+                    document.getElementById(`stats-orig-${index}`).innerHTML = 
+                        `Size: ${size}KB | Max font: ${maxFont}px`;
+                });
+
+            fetch(`../diagrams-web/${name}.svg`)
+                .then(r => r.text())
+                .then(text => {
+                    const size = (text.length / 1024).toFixed(1);
+                    const fonts = text.match(/font-size:\s*(\d+)px/g) || [];
+                    const maxFont = Math.max(...fonts.map(f => parseInt(f.match(/\d+/)[0])));
+                    document.getElementById(`stats-opt-${index}`).innerHTML = 
+                        `Size: ${size}KB | Max font: ${maxFont}px`;
+                });
+        });
+    </script>
+
+    <div style="margin-top: 50px; padding: 20px; background: #e8f4f8; border-radius: 8px;">
+        <h2>✅ Validation Checklist</h2>
+        <p>For each diagram, verify:</p>
+        <ul>
+            <li>✓ Text is readable at normal zoom</li>
+            <li>✓ No text overlap or clipping</li>
+            <li>✓ Colors have good contrast</li>
+            <li>✓ Layout makes sense</li>
+            <li>✓ File size is smaller or similar</li>
+            <li>✓ Japanese characters render properly</li>
+        </ul>
+    </div>
+</body>
+</html>
