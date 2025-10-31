@@ -22,7 +22,7 @@
   <text x="85" y="70" class="step-subtitle">要件定義</text>
   <text x="85" y="88" class="step-time">半日</text>
   <text x="85" y="115" class="step-point">Guardrails設定</text>
-  <text x="85" y="128" class="step-point">曖昧さ排除</text>
+  <text x="85" y="133" class="step-point">曖昧さ排除</text>
 
   <!-- Arrow 1 -->
   <line x1="160" y1="70" x2="190" y2="70" stroke="#00146E" stroke-width="2"/>
@@ -34,7 +34,7 @@
   <text x="265" y="70" class="step-subtitle">設計</text>
   <text x="265" y="88" class="step-time">半日</text>
   <text x="265" y="115" class="step-point">Spec-First</text>
-  <text x="265" y="128" class="step-point">AIの道しるべ</text>
+  <text x="265" y="133" class="step-point">AIの道しるべ</text>
 
   <!-- Arrow 2 -->
   <line x1="340" y1="70" x2="370" y2="70" stroke="#00AFF0" stroke-width="2"/>
@@ -46,7 +46,7 @@
   <text x="445" y="70" class="step-subtitle">タスク分解</text>
   <text x="445" y="88" class="step-time">1時間</text>
   <text x="445" y="115" class="step-point">AIの思考を</text>
-  <text x="445" y="128" class="step-point">言語化</text>
+  <text x="445" y="133" class="step-point">言語化</text>
 
   <!-- Arrow 3 -->
   <line x1="520" y1="70" x2="550" y2="70" stroke="#00AFF0" stroke-width="2"/>
@@ -58,7 +58,7 @@
   <text x="625" y="70" class="step-subtitle">実装</text>
   <text x="625" y="88" class="step-time">3日</text>
   <text x="625" y="115" class="step-point">TDD</text>
-  <text x="625" y="128" class="step-point">AI自己レビュー必須</text>
+  <text x="625" y="133" class="step-point">AI自己レビュー必須</text>
 
   <!-- Arrow 4 -->
   <line x1="700" y1="70" x2="730" y2="70" stroke="#003399" stroke-width="2"/>
@@ -68,10 +68,10 @@
   <rect x="735" y="30" width="190" height="80" rx="5" class="step-box-cyan"/>
   <text x="830" y="48" class="step-title" font-size="16px">STEP5</text>
   <text x="830" y="64" class="step-subtitle" font-size="12px">品質担保＆</text>
-  <text x="830" y="78" class="step-subtitle" font-size="12px">ドキュメント反映</text>
-  <text x="830" y="93" class="step-time">1日</text>
+  <text x="830" y="82" class="step-subtitle" font-size="12px">ドキュメント反映</text>
+  <text x="830" y="98" class="step-time">1日</text>
   <text x="830" y="118" class="step-point" font-size="9px">Trust but Verify</text>
-  <text x="830" y="130" class="step-point" font-size="9px">Living Documentation</text>
+  <text x="830" y="136" class="step-point" font-size="9px">Living Documentation</text>
 
   <!-- Timeline bar -->
   <rect x="15" y="160" width="910" height="30" fill="#E6E6E6" rx="5"/>
