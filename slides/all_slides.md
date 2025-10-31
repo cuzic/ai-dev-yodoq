@@ -131,6 +131,190 @@ style: |
     color: #0066cc;
   }
 
+
+  /* 比較レイアウト：2つの概念を左右で対比 */
+  section.layout-comparison {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 40px;
+  }
+  section.layout-comparison h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  section.layout-comparison > div:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 2;
+    background: #e3f2fd;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  section.layout-comparison > div:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #666;
+  }
+  section.layout-comparison > div:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 2;
+    background: #fff3e0;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  section.layout-comparison h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+
+  /* 強調メッセージレイアウト：重要ポイントを大きく表示 */
+  section.layout-callout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+  section.layout-callout h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  section.layout-callout .icon {
+    font-size: 80px;
+    margin-bottom: 30px;
+  }
+  section.layout-callout .message {
+    font-size: 28px;
+    line-height: 1.6;
+    max-width: 900px;
+    background: rgba(255,255,255,0.15);
+    padding: 30px 40px;
+    border-radius: 15px;
+    border: 3px solid rgba(255,255,255,0.3);
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  section.layout-callout ul {
+    text-align: left;
+    font-size: 18px;
+    max-width: 800px;
+    background: rgba(255,255,255,0.1);
+    padding: 25px 40px;
+    border-radius: 10px;
+    line-height: 1.8;
+  }
+
+  /* タイムラインレイアウト：手順・フローを横並びで表示 */
+  section.layout-timeline {
+    padding: 40px 50px;
+  }
+  section.layout-timeline h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  section.layout-timeline .timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 40px;
+    gap: 15px;
+  }
+  section.layout-timeline .timeline::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 8%;
+    right: 8%;
+    height: 4px;
+    background: linear-gradient(to right, #2196F3, #4CAF50);
+    z-index: 0;
+  }
+  section.layout-timeline .step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  section.layout-timeline .step-number {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #2196F3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  section.layout-timeline .step h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  section.layout-timeline .step p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  /* コード重視レイアウト：コードを大きく表示 */
+  section.layout-code-focus {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 30px;
+    gap: 20px;
+  }
+  section.layout-code-focus h1 {
+    grid-row: 1;
+    margin-bottom: 10px;
+  }
+  section.layout-code-focus pre {
+    grid-row: 2;
+    font-size: 16px;
+    padding: 25px;
+    border-radius: 10px;
+    background: #1e1e1e;
+    color: #d4d4d4;
+    overflow: auto;
+    max-height: 450px;
+    margin: 0;
+  }
+  section.layout-code-focus .notes {
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 15px;
+  }
+  section.layout-code-focus .notes > div {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #2196F3;
+  }
+  section.layout-code-focus .notes h3 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
   section {
     font-size: 18px;
     padding: 30px 50px;

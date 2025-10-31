@@ -691,3 +691,180 @@ For issues or questions:
 - Run analysis scripts
 - Check `LAYOUT_REVIEW_SUMMARY.md`
 - See `OVERFLOW_DETECTION_BUGS_FIXED.md` for common pitfalls
+
+---
+
+## NEW: 4つの特殊レイアウト（2025-10-31追加）
+
+### layout-comparison（比較レイアウト）
+
+**用途:** 2つの概念を左右で対比表示
+
+**最適:** Before/After、vs比較、アプローチ比較
+
+**仕様:**
+- 左右に色分け（青/オレンジ）
+- 中央に「VS」表示
+- 各側に独立した背景色
+
+**使用例:**
+```markdown
+<!-- _class: layout-comparison -->
+
+# タイトル
+
+<div>
+### 左側の内容
+- Point 1
+- Point 2
+</div>
+
+<div>VS</div>
+
+<div>
+### 右側の内容  
+- Point 1
+- Point 2
+</div>
+```
+
+**Character limits:**
+- 各側: ~30-40 chars per line
+- 5-8 bullets per side
+
+---
+
+### layout-callout（強調メッセージレイアウト）
+
+**用途:** 重要な原則・警告を大きく強調
+
+**最適:** キーメッセージ、注意事項、重要原則
+
+**仕様:**
+- グラデーション背景（紫系）
+- 大きなアイコン
+- 白文字で視認性高
+
+**使用例:**
+```markdown
+<!-- _class: layout-callout -->
+
+<div class="icon">💡</div>
+
+# タイトル
+
+<div class="message">
+重要なメッセージ
+</div>
+
+- Point 1
+- Point 2
+- Point 3
+```
+
+**Character limits:**
+- Message: ~40-60 chars
+- 最大6 bullets
+
+---
+
+### layout-timeline（タイムラインレイアウト）
+
+**用途:** 手順・フローを横並びで表示
+
+**最適:** 3-7ステップの手順、プロセス説明
+
+**仕様:**
+- ステップを円形番号で表示
+- 横一列に矢印ラインで接続
+- 各ステップに説明追加可能
+
+**使用例:**
+```markdown
+<!-- _class: layout-timeline -->
+
+# タイトル
+
+<div class="timeline">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>ステップ名</h3>
+<p>説明</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>ステップ名</h3>
+<p>説明</p>
+</div>
+
+<!-- 3-7ステップ -->
+
+</div>
+```
+
+**Step limits:**
+- 最適: 3-7 steps
+- 各ステップ: ~20 chars title + ~40 chars description
+
+---
+
+### layout-code-focus（コード重視レイアウト）
+
+**用途:** コードを大きく表示し説明を添える
+
+**最適:** コード例、プロンプト例、実装パターン
+
+**仕様:**
+- コードが画面の60%
+- 下部に2列で説明
+- シンタックスハイライト対応
+
+**使用例:**
+```markdown
+<!-- _class: layout-code-focus -->
+
+# タイトル
+
+\`\`\`
+コード例
+\`\`\`
+
+<div class="notes">
+
+<div>
+### 左側の説明
+- Point 1
+- Point 2
+</div>
+
+<div>
+### 右側の説明
+- Point 1
+- Point 2
+</div>
+
+</div>
+```
+
+**Content limits:**
+- Code: 最大20-30行
+- 各説明側: 3-5 bullets
+
+---
+
+## 新レイアウト使い分けガイド
+
+| 状況 | 推奨レイアウト |
+|------|--------------|
+| 2つの概念を対比したい | `layout-comparison` |
+| 重要メッセージを印象的に | `layout-callout` |
+| 3-7ステップの手順を示したい | `layout-timeline` |
+| コード例を大きく見せたい | `layout-code-focus` |
+| 2つ+画像を対比したい | `layout-horizontal-*` |
+| 8-18 bullets | `two-column` |
+| 15-27 bullets | `three-column` |
+
+詳細な使用例は `NEW_LAYOUT_EXAMPLES.md` を参照してください。
+
