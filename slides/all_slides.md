@@ -30,7 +30,7 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -51,7 +51,7 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 18px;
+    font-size: 16px;
     grid-column: 1;
   }
 
@@ -132,15 +132,15 @@ style: |
   }
 
   section {
-    font-size: 20px;
+    font-size: 18px;
     padding: 30px 50px;
   }
   h1 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 12px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
   ul, ol {
     margin: 6px 0;
@@ -1192,7 +1192,7 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -1213,7 +1213,7 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 18px;
+    font-size: 16px;
     grid-column: 1;
   }
 
@@ -1294,15 +1294,15 @@ style: |
   }
 
   section {
-    font-size: 20px;
+    font-size: 18px;
     padding: 30px 50px;
   }
   h1 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 12px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
   ul, ol {
     margin: 6px 0;
@@ -2240,7 +2240,7 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -2261,7 +2261,7 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 18px;
+    font-size: 16px;
     grid-column: 1;
   }
 
@@ -2342,15 +2342,15 @@ style: |
   }
 
   section {
-    font-size: 20px;
+    font-size: 18px;
     padding: 30px 50px;
   }
   h1 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 12px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
   ul, ol {
     margin: 6px 0;
@@ -2895,7 +2895,7 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -2916,7 +2916,7 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 18px;
+    font-size: 16px;
     grid-column: 1;
   }
 
@@ -2997,15 +2997,15 @@ style: |
   }
 
   section {
-    font-size: 20px;
+    font-size: 18px;
     padding: 30px 50px;
   }
   h1 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 12px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
   ul, ol {
     margin: 6px 0;
@@ -3436,7 +3436,7 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -3457,7 +3457,7 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 18px;
+    font-size: 16px;
     grid-column: 1;
   }
 
@@ -3538,15 +3538,15 @@ style: |
   }
 
   section {
-    font-size: 20px;
+    font-size: 18px;
     padding: 30px 50px;
   }
   h1 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 12px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
   ul, ol {
     margin: 6px 0;
