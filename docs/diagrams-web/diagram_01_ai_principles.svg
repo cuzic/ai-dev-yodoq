@@ -1,0 +1,43 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #333333; text-anchor: middle; }
+      .principle-box { fill: #00146E; }
+      .principle-text { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: white; text-anchor: middle; }
+      .principle-number { font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #00AFF0; font-weight: bold; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="400" y="40" class="title">AI開発の3原則</text>
+
+  <!-- Principle 1 -->
+  <rect x="50" y="80" width="200" height="120" rx="8" class="principle-box"/>
+  <text x="150" y="110" class="principle-number">原則1</text>
+  <text x="150" y="140" class="principle-text">Guardrailsを</text>
+  <text x="150" y="165" class="principle-text">設定する</text>
+
+  <!-- Principle 2 -->
+  <rect x="300" y="80" width="200" height="120" rx="8" class="principle-box"/>
+  <text x="400" y="110" class="principle-number">原則2</text>
+  <text x="400" y="140" class="principle-text">段階的に</text>
+  <text x="400" y="165" class="principle-text">進める</text>
+
+  <!-- Principle 3 -->
+  <rect x="550" y="80" width="200" height="120" rx="8" class="principle-box"/>
+  <text x="650" y="110" class="principle-number">原則3</text>
+  <text x="650" y="140" class="principle-text">Trust but</text>
+  <text x="650" y="165" class="principle-text">Verify</text>
+
+  <!-- Bottom note -->
+  <rect x="100" y="240" width="600" height="100" fill="#F6F8FA" stroke="#00146E" stroke-width="2" rx="5"/>
+  <text x="400" y="275" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    この3原則を守ることで、AI開発の成功率が向上する
+  </text>
+  <text x="400" y="305" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666; text-anchor: middle;">
+    設計→分解→実装→検証のサイクルを回す
+  </text>
+</svg>

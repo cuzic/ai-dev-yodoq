@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
+      .good { fill: #27AE60; }
+      .bad { fill: #E74C3C; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <text x="400" y="30" class="title" style="font-size: 18px;">Jagged Intelligence（でこぼこな知能）</text>
+
+  <!-- Expert Level (Good) -->
+  <g transform="translate(40, 70)">
+    <rect x="0" y="0" width="340" height="45" rx="5" class="good"/>
+    <text x="170" y="30" class="subtitle">✅ 得意なこと</text>
+
+    <rect x="0" y="55" width="340" height="430" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 80)">
+      <text x="0" y="0" class="item" font-weight="bold">コード生成</text>
+      <text x="10" y="20" class="desc">「TypeScriptでlogin関数を書いて」</text>
+      <text x="10" y="38" class="desc">→ 完璧な実装を数秒で生成</text>
+
+      <text x="0" y="70" class="item" font-weight="bold">リファクタリング</text>
+      <text x="10" y="90" class="desc">複雑なコードを即座に綺麗に</text>
+
+      <text x="0" y="120" class="item" font-weight="bold">エラー解決</text>
+      <text x="10" y="140" class="desc">スタックトレースから原因特定</text>
+
+      <text x="0" y="170" class="item" font-weight="bold">テスト生成</text>
+      <text x="10" y="190" class="desc">網羅的なテストケースを作成</text>
+
+      <text x="0" y="220" class="item" font-weight="bold">ドキュメント作成</text>
+      <text x="10" y="240" class="desc">README・仕様書を自動生成</text>
+
+      <text x="0" y="270" class="item" font-weight="bold">パターン認識</text>
+      <text x="10" y="290" class="desc">既存コードから設計パターン抽出</text>
+
+      <text x="0" y="320" class="item" font-weight="bold">複数言語変換</text>
+      <text x="10" y="340" class="desc">Python → TypeScript瞬時変換</text>
+
+      <text x="0" y="370" class="item" font-weight="bold">数学と論理</text>
+      <text x="10" y="390" class="desc">複雑なアルゴリズムも理解</text>
+    </g>
+  </g>
+
+  <!-- Beginner Level (Bad) -->
+  <g transform="translate(420, 70)">
+    <rect x="0" y="0" width="340" height="45" rx="5" class="bad"/>
+    <text x="170" y="30" class="subtitle">❌ 苦手なこと</text>
+
+    <rect x="0" y="55" width="340" height="430" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(20, 80)">
+      <text x="0" y="0" class="item" font-weight="bold">数を数える</text>
+      <text x="10" y="20" class="desc">「Eが何個？」→ 間違えることも</text>
+      <text x="10" y="38" class="desc">Strawberryのrの数（3個）を誤認識</text>
+
+      <text x="0" y="70" class="item" font-weight="bold">視覚的パズル</text>
+      <text x="10" y="90" class="desc">図形の回転・鏡像問題が苦手</text>
+
+      <text x="0" y="120" class="item" font-weight="bold">ファイル操作</text>
+      <text x="10" y="140" class="desc">「削除して」→ 実際には削除できない</text>
+
+      <text x="0" y="170" class="item" font-weight="bold">リアルタイム情報</text>
+      <text x="10" y="190" class="desc">今日の天気・株価は分からない</text>
+
+      <text x="0" y="220" class="item" font-weight="bold">常識的判断</text>
+      <text x="10" y="240" class="desc">「コーヒーに塩を入れる」も実行</text>
+
+      <text x="0" y="270" class="item" font-weight="bold">長期記憶</text>
+      <text x="10" y="290" class="desc">100行前の会話を忘れる</text>
+
+      <text x="0" y="320" class="item" font-weight="bold">曖昧な指示</text>
+      <text x="10" y="340" class="desc">「いい感じに」→ 意図と違う実装</text>
+
+      <text x="0" y="370" class="item" font-weight="bold">創造性</text>
+      <text x="10" y="390" class="desc">革新的アイデアは出にくい</text>
+    </g>
+  </g>
+
+  <!-- Bottom tip -->
+  <rect x="40" y="530" width="720" height="50" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+  <text x="400" y="560" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #F39C12; text-anchor: middle; font-weight: bold;">
+    得意分野を活用し、苦手分野は人間が補う = 最強のペアプログラミング
+  </text>
+</svg>

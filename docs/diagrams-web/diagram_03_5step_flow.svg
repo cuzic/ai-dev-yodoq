@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 450">
+  <defs>
+    <style>
+      .step-box { fill: #00146E; }
+      .step-box-cyan { fill: #00AFF0; }
+      .step-box-blue { fill: #003399; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .step-subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: white; text-anchor: middle; }
+      .step-time { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #E6E6E6; text-anchor: middle; }
+      .step-point { font-family: 'Noto Sans JP', sans-serif; font-size: 10px; fill: white; text-anchor: middle; }
+      .summary-text { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; text-anchor: middle; }
+      .summary-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #00146E; text-anchor: middle; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="450" fill="#FFFFFF"/>
+
+  <!-- STEP1 -->
+  <rect x="15" y="30" width="140" height="80" rx="5" class="step-box"/>
+  <text x="85" y="52" class="step-title">STEP1</text>
+  <text x="85" y="70" class="step-subtitle">要件定義</text>
+  <text x="85" y="88" class="step-time">半日</text>
+  <text x="85" y="115" class="step-point">Guardrails設定</text>
+  <text x="85" y="133" class="step-point">曖昧さ排除</text>
+
+  <!-- Arrow 1 -->
+  <line x1="160" y1="70" x2="190" y2="70" stroke="#00146E" stroke-width="2"/>
+  <polygon points="190,70 185,67 185,73" fill="#00146E"/>
+
+  <!-- STEP2 -->
+  <rect x="195" y="30" width="140" height="80" rx="5" class="step-box"/>
+  <text x="265" y="52" class="step-title">STEP2</text>
+  <text x="265" y="70" class="step-subtitle">設計</text>
+  <text x="265" y="88" class="step-time">半日</text>
+  <text x="265" y="115" class="step-point">Spec-First</text>
+  <text x="265" y="133" class="step-point">AIの道しるべ</text>
+
+  <!-- Arrow 2 -->
+  <line x1="340" y1="70" x2="370" y2="70" stroke="#00AFF0" stroke-width="2"/>
+  <polygon points="370,70 365,67 365,73" fill="#00AFF0"/>
+
+  <!-- STEP3 -->
+  <rect x="375" y="30" width="140" height="80" rx="5" class="step-box-cyan"/>
+  <text x="445" y="52" class="step-title">STEP3</text>
+  <text x="445" y="70" class="step-subtitle">タスク分解</text>
+  <text x="445" y="88" class="step-time">1時間</text>
+  <text x="445" y="115" class="step-point">AIの思考を</text>
+  <text x="445" y="133" class="step-point">言語化</text>
+
+  <!-- Arrow 3 -->
+  <line x1="520" y1="70" x2="550" y2="70" stroke="#00AFF0" stroke-width="2"/>
+  <polygon points="550,70 545,67 545,73" fill="#00AFF0"/>
+
+  <!-- STEP4 -->
+  <rect x="555" y="30" width="140" height="80" rx="5" class="step-box-blue"/>
+  <text x="625" y="52" class="step-title">STEP4</text>
+  <text x="625" y="70" class="step-subtitle">実装</text>
+  <text x="625" y="88" class="step-time">3日</text>
+  <text x="625" y="115" class="step-point">TDD</text>
+  <text x="625" y="133" class="step-point">AI自己レビュー必須</text>
+
+  <!-- Arrow 4 -->
+  <line x1="700" y1="70" x2="730" y2="70" stroke="#003399" stroke-width="2"/>
+  <polygon points="730,70 725,67 725,73" fill="#003399"/>
+
+  <!-- STEP5 -->
+  <rect x="735" y="30" width="190" height="80" rx="5" class="step-box-cyan"/>
+  <text x="830" y="48" class="step-title" font-size="16px">STEP5</text>
+  <text x="830" y="64" class="step-subtitle" font-size="12px">品質担保＆</text>
+  <text x="830" y="82" class="step-subtitle" font-size="12px">ドキュメント反映</text>
+  <text x="830" y="98" class="step-time">1日</text>
+  <text x="830" y="118" class="step-point" font-size="9px">Trust but Verify</text>
+  <text x="830" y="136" class="step-point" font-size="9px">Living Documentation</text>
+
+  <!-- Timeline bar -->
+  <rect x="15" y="160" width="910" height="30" fill="#E6E6E6" rx="5"/>
+  <text x="470" y="180" class="summary-text" font-size="13px">
+    合計所要時間（小規模プロジェクト1週間の場合）
+  </text>
+
+  <!-- Bottom notes -->
+  <rect x="15" y="210" width="910" height="220" fill="#FFFFFF" stroke="#00146E" stroke-width="2" rx="5"/>
+
+  <text x="470" y="240" class="summary-title">
+    効果：手戻りなし、品質保証、持続可能な開発
+  </text>
+
+  <text x="470" y="275" class="summary-text" font-size="12px">
+    前工程（STEP1-2）を丁寧にすることで、後工程がスムーズに進む
+  </text>
+
+  <text x="470" y="310" class="summary-text" font-size="12px">
+    AIの制約（忘れっぽい・Reward Hacking・Jagged Intelligence）に対応した構造
+  </text>
+
+  <!-- Key Benefits -->
+  <g transform="translate(50, 330)">
+    <text x="0" y="0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; font-weight: bold;">主な成果物:</text>
+    <text x="0" y="20" style="font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #333;">• STEP1: 要件定義書（MoSCoW優先順位付き）</text>
+    <text x="0" y="38" style="font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #333;">• STEP2: 設計書（architecture.md + ER図 + API仕様）</text>
+    <text x="0" y="56" style="font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #333;">• STEP3: タスクリスト（Phase分け、依存関係明記）</text>
+    <text x="0" y="74" style="font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #333;">• STEP4: テスト付き実装コード（TDD、カバレッジ80%以上）</text>
+    <text x="0" y="92" style="font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #333;">• STEP5: 品質レポート + 更新されたドキュメント</text>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
+      .s1 { fill: #3498DB; }
+      .s2 { fill: #27AE60; }
+      .s3 { fill: #E67E22; }
+      .s4 { fill: #9B59B6; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+  <text x="500" y="40" class="title">トランスクリプトアプローチ：議事録駆動開発</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="430" height="50" rx="5" class="s1"/>
+    <text x="215" y="33" class="step-title">STEP 1：ヒアリング</text>
+
+    <rect x="0" y="60" width="430" height="140" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">クライアントとミーティング</text>
+      <text x="0" y="25" class="item">• 「どんなシステムが欲しいか」ヒアリング</text>
+      <text x="0" y="47" class="item">• 録音 or メモを取る</text>
+      <text x="0" y="69" class="item">• 質問を重ねて曖昧さを排除</text>
+
+      <text x="0" y="100" class="item" font-weight="bold">所要時間: 30分〜1時間</text>
+    </g>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(520, 80)">
+    <rect x="0" y="0" width="430" height="50" rx="5" class="s2"/>
+    <text x="215" y="33" class="step-title">STEP 2：トランスクリプト化</text>
+
+    <rect x="0" y="60" width="430" height="140" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">会話内容をテキストに起こす</text>
+      <text x="0" y="25" class="item">• AIに音声→テキスト変換させる</text>
+      <text x="0" y="47" class="item">• または手書きメモを整形</text>
+      <text x="0" y="69" class="item">• 「〇〇さん: △△」形式で記録</text>
+
+      <text x="0" y="100" class="item" font-weight="bold">所要時間: 5分（AI使用時）</text>
+    </g>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(50, 270)">
+    <rect x="0" y="0" width="430" height="50" rx="5" class="s3"/>
+    <text x="215" y="33" class="step-title">STEP 3：AIに要件抽出依頼</text>
+
+    <rect x="0" y="60" width="430" height="200" rx="5" fill="#FEF5E7" stroke="#E67E22" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">プロンプト例：</text>
+      <text x="0" y="22" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #666;">
+        「この議事録から要件を抽出して、
+      </text>
+      <text x="0" y="40" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #666;">
+        MoSCoW形式でまとめてください」
+      </text>
+
+      <text x="0" y="70" class="item" font-weight="bold">AIが生成するもの：</text>
+      <text x="0" y="92" class="item">• Must機能一覧</text>
+      <text x="0" y="112" class="item">• Should機能一覧</text>
+      <text x="0" y="132" class="item">• Could/Won't機能</text>
+      <text x="0" y="152" class="item">• 曖昧な点のリスト</text>
+
+      <text x="0" y="180" class="item" font-weight="bold">所要時間: 1分</text>
+    </g>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(520, 270)">
+    <rect x="0" y="0" width="430" height="50" rx="5" class="s4"/>
+    <text x="215" y="33" class="step-title">STEP 4：要件確認＆設計へ</text>
+
+    <rect x="0" y="60" width="430" height="200" rx="5" fill="#F4ECF7" stroke="#9B59B6" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">AIが生成した要件をレビュー</text>
+      <text x="0" y="25" class="item">• 抜け漏れがないか確認</text>
+      <text x="0" y="47" class="item">• クライアントと再確認</text>
+      <text x="0" y="69" class="item">• 優先順位を調整</text>
+
+      <text x="0" y="100" class="item" font-weight="bold">確定後：</text>
+      <text x="0" y="122" class="item">• requirements.mdとして保存</text>
+      <text x="0" y="142" class="item">• STEP 2（設計）へ進む</text>
+
+      <text x="0" y="175" class="item" font-weight="bold">所要時間: 15分</text>
+    </g>
+  </g>
+
+  <!-- Bottom benefit -->
+  <rect x="50" y="530" width="900" height="140" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="500" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    トランスクリプトアプローチのメリット
+  </text>
+  <g transform="translate(80, 585)">
+    <text x="0" y="0" class="item">✅ ヒアリング漏れを防げる（議事録に全て記録）</text>
+    <text x="0" y="25" class="item">✅ 要件定義が超高速（AIが自動生成）</text>
+    <text x="0" y="50" class="item">✅ クライアントとの認識齟齬を早期発見</text>
+    <text x="0" y="75" class="item">✅ 議事録が仕様書の一部になる（Living Documentation）</text>
+  </g>
+</svg>

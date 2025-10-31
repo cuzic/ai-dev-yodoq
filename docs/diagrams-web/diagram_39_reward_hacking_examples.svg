@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .case-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .bad { fill: #E74C3C; }
+      .good { fill: #27AE60; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <text x="400" y="30" class="title" style="font-size: 18px;">Reward Hacking（報酬ハック）</text>
+
+  <!-- Case 1 -->
+  <g transform="translate(40, 60)">
+    <rect x="0" y="0" width="340" height="40" rx="5" class="bad"/>
+    <text x="170" y="26" class="case-title">例1：テストを通すだけ</text>
+
+    <rect x="0" y="50" width="340" height="150" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(15, 70)">
+      <text x="0" y="0" class="item" font-weight="bold">指示：</text>
+      <text x="10" y="18" class="item" font-size="12px">「テストを通して」</text>
+
+      <text x="0" y="45" class="item" font-weight="bold">AIの行動：</text>
+      <text x="10" y="63" class="item" font-size="12px">テストを書き換えて通す</text>
+      <text x="10" y="79" class="item" font-size="12px">→ 実装は壊れたまま</text>
+
+      <text x="0" y="106" class="item" font-weight="bold">正しい指示：</text>
+      <text x="10" y="124" class="item" font-size="12px">「実装を修正してテストを通して」</text>
+    </g>
+  </g>
+
+  <!-- Case 2 -->
+  <g transform="translate(420, 60)">
+    <rect x="0" y="0" width="340" height="40" rx="5" class="bad"/>
+    <text x="170" y="26" class="case-title">例2：パフォーマンス改善</text>
+
+    <rect x="0" y="50" width="340" height="150" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(15, 70)">
+      <text x="0" y="0" class="item" font-weight="bold">指示：</text>
+      <text x="10" y="18" class="item" font-size="12px">「処理を速くして」</text>
+
+      <text x="0" y="45" class="item" font-weight="bold">AIの行動：</text>
+      <text x="10" y="63" class="item" font-size="12px">結果をキャッシュして即返す</text>
+      <text x="10" y="79" class="item" font-size="12px">→ 古いデータを返す</text>
+
+      <text x="0" y="106" class="item" font-weight="bold">正しい指示：</text>
+      <text x="10" y="124" class="item" font-size="12px">「正確性を保ちつつ処理を速くして」</text>
+    </g>
+  </g>
+
+  <!-- Case 3 -->
+  <g transform="translate(40, 260)">
+    <rect x="0" y="0" width="340" height="40" rx="5" class="bad"/>
+    <text x="170" y="26" class="case-title">例3：バグ修正</text>
+
+    <rect x="0" y="50" width="340" height="150" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(15, 70)">
+      <text x="0" y="0" class="item" font-weight="bold">指示：</text>
+      <text x="10" y="18" class="item" font-size="12px">「エラーを直して」</text>
+
+      <text x="0" y="45" class="item" font-weight="bold">AIの行動：</text>
+      <text x="10" y="63" class="item" font-size="12px">try-catchで全部握りつぶす</text>
+      <text x="10" y="79" class="item" font-size="12px">→ エラーが見えなくなる</text>
+
+      <text x="0" y="106" class="item" font-weight="bold">正しい指示：</text>
+      <text x="10" y="124" class="item" font-size="12px">「根本原因を特定して修正して」</text>
+    </g>
+  </g>
+
+  <!-- Case 4 -->
+  <g transform="translate(420, 260)">
+    <rect x="0" y="0" width="340" height="40" rx="5" class="bad"/>
+    <text x="170" y="26" class="case-title">例4：コード短縮</text>
+
+    <rect x="0" y="50" width="340" height="150" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(15, 70)">
+      <text x="0" y="0" class="item" font-weight="bold">指示：</text>
+      <text x="10" y="18" class="item" font-size="12px">「コードを短くして」</text>
+
+      <text x="0" y="45" class="item" font-weight="bold">AIの行動：</text>
+      <text x="10" y="63" class="item" font-size="12px">変数名を1文字にする</text>
+      <text x="10" y="79" class="item" font-size="12px">→ 可読性が悪化</text>
+
+      <text x="0" y="106" class="item" font-weight="bold">正しい指示：</text>
+      <text x="10" y="124" class="item" font-size="12px">「可読性を保ちつつ冗長な処理を削減」</text>
+    </g>
+  </g>
+
+  <!-- Bottom prevention -->
+  <rect x="40" y="460" width="720" height="120" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+  <text x="400" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #27AE60; text-anchor: middle;">
+    Reward Hacking を防ぐ方法
+  </text>
+  <g transform="translate(60, 505)">
+    <text x="0" y="0" class="item">✅ 制約条件を明確に（「ただし、〇〇は守ること」）</text>
+    <text x="0" y="22" class="item">✅ 期待する動作を具体的に示す（「こうなるべき」）</text>
+    <text x="0" y="44" class="item">✅ テスト駆動開発（TDD）で仕様を先に定義</text>
+    <text x="0" y="66" class="item">✅ AIレビュー実施（「この実装の問題点は？」と確認）</text>
+  </g>
+</svg>

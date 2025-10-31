@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
+      .box-red { fill: #E74C3C; }
+      .box-orange { fill: #E67E22; }
+      .box-yellow { fill: #F39C12; }
+      .box-green { fill: #27AE60; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="35" class="title">リグレッション防止の4段階</text>
+
+  <!-- Stage 1: Detection -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="420" height="60" rx="5" class="box-red"/>
+    <text x="210" y="40" class="step-title">Stage 1: 検出（バグ発見時）</text>
+
+    <rect x="0" y="70" width="420" height="140" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(20, 95)">
+      <text x="0" y="0" class="item" font-weight="bold">バグが発生した時点でやること:</text>
+      <text x="0" y="25" class="item">1. バグの再現手順を記録</text>
+      <text x="20" y="45" class="desc">→ 「どういう操作で発生するか」を明確化</text>
+      <text x="0" y="70" class="item">2. 失敗するテストケースを作成</text>
+      <text x="20" y="90" class="desc">→ まず RED の状態を作る（TDD的アプローチ）</text>
+      <text x="0" y="115" class="item">3. バグチケットに再現テストをリンク</text>
+    </g>
+  </g>
+
+  <!-- Stage 2: Fix -->
+  <g transform="translate(530, 80)">
+    <rect x="0" y="0" width="420" height="60" rx="5" class="box-orange"/>
+    <text x="210" y="40" class="step-title">Stage 2: 修正（バグ修正）</text>
+
+    <rect x="0" y="70" width="420" height="140" rx="5" fill="#FFF3E0" stroke="#E67E22" stroke-width="2"/>
+    <g transform="translate(20, 95)">
+      <text x="0" y="0" class="item" font-weight="bold">バグを修正する:</text>
+      <text x="0" y="25" class="item">1. 失敗するテストが GREEN になるまで修正</text>
+      <text x="20" y="45" class="desc">→ テストが通れば、バグ修正完了の証明</text>
+      <text x="0" y="70" class="item">2. 関連するテストも全て GREEN であることを確認</text>
+      <text x="20" y="90" class="desc">→ 修正が別の場所を壊していないか検証</text>
+      <text x="0" y="115" class="item">3. コードレビューで修正内容とテストを確認</text>
+    </g>
+  </g>
+
+  <!-- Stage 3: Automation -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="420" height="60" rx="5" class="box-yellow"/>
+    <text x="210" y="40" class="step-title">Stage 3: 自動化（CI/CD組込）</text>
+
+    <rect x="0" y="70" width="420" height="140" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+    <g transform="translate(20, 95)">
+      <text x="0" y="0" class="item" font-weight="bold">テストをCI/CDパイプラインに追加:</text>
+      <text x="0" y="25" class="item">1. pre-commit hookで自動実行</text>
+      <text x="20" y="45" class="desc">→ コミット時に必ず実行される</text>
+      <text x="0" y="70" class="item">2. GitHub Actions / GitLab CIで自動テスト</text>
+      <text x="20" y="90" class="desc">→ PR作成時に自動で全テスト実行</text>
+      <text x="0" y="115" class="item">3. 失敗したらマージブロック</text>
+    </g>
+  </g>
+
+  <!-- Stage 4: Monitoring -->
+  <g transform="translate(530, 280)">
+    <rect x="0" y="0" width="420" height="60" rx="5" class="box-green"/>
+    <text x="210" y="40" class="step-title">Stage 4: 監視（継続的保護）</text>
+
+    <rect x="0" y="70" width="420" height="140" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 95)">
+      <text x="0" y="0" class="item" font-weight="bold">恒久的にバグ再発を防ぐ:</text>
+      <text x="0" y="25" class="item">1. 定期的にテストスイート全体を実行</text>
+      <text x="20" y="45" class="desc">→ Nightly build で全テスト確認</text>
+      <text x="0" y="70" class="item">2. カバレッジレポートを監視</text>
+      <text x="20" y="90" class="desc">→ 80%以下になったらアラート</text>
+      <text x="0" y="115" class="item">3. テストが GREEN を維持し続けることを保証</text>
+    </g>
+  </g>
+
+  <!-- Flow arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+  <path d="M 470 150 L 530 150" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 470 350 L 530 350" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 260 220 L 260 280" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M 740 220 L 740 280" stroke="#666" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Bottom benefit -->
+  <rect x="50" y="480" width="900" height="180" rx="8" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="500" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    リグレッション防止の効果
+  </text>
+
+  <g transform="translate(80, 540)">
+    <text x="0" y="0" class="item" font-weight="bold">✅ 同じバグは二度と発生しない</text>
+    <text x="20" y="20" class="desc">→ 過去のバグがテストとして残り続ける</text>
+
+    <text x="0" y="50" class="item" font-weight="bold">✅ リファクタリングが安全に</text>
+    <text x="20" y="70" class="desc">→ コード変更しても、テストが保護してくれる</text>
+
+    <text x="0" y="100" class="item" font-weight="bold">✅ 品質が自動的に保たれる</text>
+    <text x="20" y="120" class="desc">→ CI/CDが24時間監視し続ける</text>
+  </g>
+</svg>

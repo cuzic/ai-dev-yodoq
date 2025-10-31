@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #333; text-anchor: middle; }
+      .box-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .mermaid-box { fill: #3498DB; }
+      .svg-box { fill: #E67E22; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="450" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="450" y="35" class="title">Mermaid vs SVG 使い分け</text>
+
+  <!-- Mermaid side -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="350" height="60" rx="5" class="mermaid-box"/>
+    <text x="175" y="40" class="box-title">Mermaid（テキストベース）</text>
+
+    <!-- Pros -->
+    <rect x="0" y="80" width="350" height="130" rx="5" fill="#E8F4F8" stroke="#3498DB" stroke-width="2"/>
+    <text x="175" y="105" class="subtitle">✅ メリット</text>
+    <text x="20" y="130" class="item">• Git差分が見やすい</text>
+    <text x="20" y="150" class="item">• AIが生成しやすい</text>
+    <text x="20" y="170" class="item">• 書きやすい（テキスト）</text>
+    <text x="20" y="190" class="item">• バージョン管理に最適</text>
+
+    <!-- Cons -->
+    <rect x="0" y="230" width="350" height="110" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <text x="175" y="255" class="subtitle">❌ デメリット</text>
+    <text x="20" y="280" class="item">• デザインの自由度低い</text>
+    <text x="20" y="300" class="item">• 複雑な図は難しい</text>
+    <text x="20" y="320" class="item">• 日本語レイアウト崩れやすい</text>
+  </g>
+
+  <!-- SVG side -->
+  <g transform="translate(500, 70)">
+    <rect x="0" y="0" width="350" height="60" rx="5" class="svg-box"/>
+    <text x="175" y="40" class="box-title">SVG（グラフィックベース）</text>
+
+    <!-- Pros -->
+    <rect x="0" y="80" width="350" height="130" rx="5" fill="#FFF3E0" stroke="#E67E22" stroke-width="2"/>
+    <text x="175" y="105" class="subtitle">✅ メリット</text>
+    <text x="20" y="130" class="item">• デザイン完全制御</text>
+    <text x="20" y="150" class="item">• 複雑な図も美しく</text>
+    <text x="20" y="170" class="item">• 日本語レイアウト安定</text>
+    <text x="20" y="190" class="item">• プレゼン品質</text>
+
+    <!-- Cons -->
+    <rect x="0" y="230" width="350" height="110" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <text x="175" y="255" class="subtitle">❌ デメリット</text>
+    <text x="20" y="280" class="item">• Git差分が見づらい</text>
+    <text x="20" y="300" class="item">• 手動編集は大変</text>
+    <text x="20" y="320" class="item">• AIに生成させる必要あり</text>
+  </g>
+
+  <!-- Bottom recommendation -->
+  <rect x="50" y="370" width="800" height="60" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="450" y="395" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    推奨：設計図はMermaid、プレゼン資料はSVG
+  </text>
+  <text x="450" y="417" class="note" text-anchor="middle">
+    どちらもAIに生成させる前提で、用途に応じて使い分ける
+  </text>
+</svg>

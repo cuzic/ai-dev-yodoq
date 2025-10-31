@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .category { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; }
+      .fit { fill: #27AE60; }
+      .gap { fill: #E74C3C; }
+      .custom { fill: #3498DB; }
+      .workaround { fill: #F39C12; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="400" y="30" class="title" style="font-size: 18px;">Fit &amp; Gap分析：要件と現状の差</text>
+
+  <!-- FIT (Top Left) -->
+  <g transform="translate(40, 70)">
+    <rect x="0" y="0" width="340" height="50" rx="5" class="fit"/>
+    <text x="170" y="33" class="category">FIT（適合）</text>
+
+    <rect x="0" y="60" width="340" height="140" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(15, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">現状のシステムで対応可能</text>
+      <text x="0" y="25" class="item">例：</text>
+      <text x="15" y="45" class="desc">• ユーザー認証機能</text>
+      <text x="20" y="62" class="desc">→ すでに実装済み</text>
+      <text x="15" y="82" class="desc">• データベースCRUD</text>
+      <text x="20" y="99" class="desc">→ 既存フレームワークで対応</text>
+      <text x="15" y="119" class="desc">優先度: Must/Should → そのまま実装</text>
+    </g>
+  </g>
+
+  <!-- GAP (Top Right) -->
+  <g transform="translate(420, 70)">
+    <rect x="0" y="0" width="340" height="50" rx="5" class="gap"/>
+    <text x="170" y="33" class="category">GAP（未対応）</text>
+
+    <rect x="0" y="60" width="340" height="140" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(15, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">現状では実現できない</text>
+      <text x="0" y="25" class="item">例：</text>
+      <text x="15" y="45" class="desc">• リアルタイム通知機能</text>
+      <text x="20" y="62" class="desc">→ WebSocket未対応</text>
+      <text x="15" y="82" class="desc">• 高度な分析機能</text>
+      <text x="20" y="99" class="desc">→ 新規開発必要</text>
+      <text x="15" y="119" class="desc">対応: カスタマイズ or 回避策</text>
+    </g>
+  </g>
+
+  <!-- CUSTOMIZATION (Bottom Left) -->
+  <g transform="translate(40, 260)">
+    <rect x="0" y="0" width="340" height="50" rx="5" class="custom"/>
+    <text x="170" y="33" class="category">カスタマイズ</text>
+
+    <rect x="0" y="60" width="340" height="140" rx="5" fill="#E3F2FD" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(15, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">新規開発で対応</text>
+      <text x="0" y="25" class="item">条件：</text>
+      <text x="15" y="45" class="desc">• Must/Should要件</text>
+      <text x="15" y="62" class="desc">• ビジネス価値が高い</text>
+      <text x="15" y="79" class="desc">• 技術的に実現可能</text>
+
+      <text x="0" y="104" class="item">判断基準：</text>
+      <text x="15" y="124" class="desc">コスト vs 効果を分析</text>
+    </g>
+  </g>
+
+  <!-- WORKAROUND (Bottom Right) -->
+  <g transform="translate(420, 260)">
+    <rect x="0" y="0" width="340" height="50" rx="5" class="workaround"/>
+    <text x="170" y="33" class="category">回避策</text>
+
+    <rect x="0" y="60" width="340" height="140" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+    <g transform="translate(15, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">別の方法で対応</text>
+      <text x="0" y="25" class="item">条件：</text>
+      <text x="15" y="45" class="desc">• Could/Won't要件</text>
+      <text x="15" y="62" class="desc">• 代替手段がある</text>
+      <text x="15" y="79" class="desc">• コスト削減優先</text>
+
+      <text x="0" y="104" class="item">例：</text>
+      <text x="15" y="124" class="desc">手動運用 / 外部サービス連携</text>
+    </g>
+  </g>
+
+  <!-- Bottom decision flow -->
+  <rect x="40" y="450" width="720" height="130" rx="8" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="400" y="480" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    Fit &amp; Gap分析の手順
+  </text>
+
+  <g transform="translate(60, 500)">
+    <text x="0" y="0" class="item">1. 要件一覧と現状機能を比較</text>
+    <text x="0" y="20" class="item">2. 各要件をFIT/GAPに分類</text>
+    <text x="0" y="40" class="item">3. GAPはMoSCoW優先度で判断</text>
+    <text x="0" y="60" class="item">4. カスタマイズ vs 回避策を決定</text>
+  </g>
+</svg>

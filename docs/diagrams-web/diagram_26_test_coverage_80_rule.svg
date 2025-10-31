@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #333; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
+      .high { fill: #27AE60; }
+      .medium { fill: #F39C12; }
+      .low { fill: #95A5A6; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="40" class="title">テストカバレッジ 80% ルール</text>
+
+  <!-- Pie Chart -->
+  <g transform="translate(500, 280)">
+    <!-- 80% Coverage (Green) -->
+    <path d="M 0 -150 A 150 150 0 1 1 -118 -94 L 0 0 Z" fill="#27AE60"/>
+    <!-- 20% Not Covered (Gray) -->
+    <path d="M -118 -94 A 150 150 0 0 1 0 -150 L 0 0 Z" fill="#95A5A6"/>
+
+    <!-- Center circle -->
+    <circle cx="0" cy="0" r="80" fill="white"/>
+    <text x="0" y="-10" style="font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #27AE60; text-anchor: middle;">80%</text>
+    <text x="0" y="25" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #666; text-anchor: middle;">カバレッジ</text>
+
+    <!-- Labels -->
+    <text x="-100" y="-100" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: white; font-weight: bold;">テスト済み</text>
+    <text x="60" y="-130" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666;">未カバー 20%</text>
+  </g>
+
+  <!-- High Priority (Left) -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="380" height="50" rx="5" class="high"/>
+    <text x="190" y="33" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle;">
+      必須テスト（60%）
+    </text>
+
+    <rect x="0" y="60" width="380" height="420" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">ビジネスロジック</text>
+      <text x="15" y="22" class="desc">• 決済処理</text>
+      <text x="15" y="40" class="desc">• 認証・認可</text>
+      <text x="15" y="58" class="desc">• データ検証</text>
+
+      <text x="0" y="90" class="item" font-weight="bold">重要な関数</text>
+      <text x="15" y="112" class="desc">• 金額計算</text>
+      <text x="15" y="130" class="desc">• 税込価格算出</text>
+      <text x="15" y="148" class="desc">• ポイント計算</text>
+
+      <text x="0" y="180" class="item" font-weight="bold">エラーケース</text>
+      <text x="15" y="202" class="desc">• バリデーション</text>
+      <text x="15" y="220" class="desc">• 例外処理</text>
+      <text x="15" y="238" class="desc">• 境界値テスト</text>
+
+      <text x="0" y="270" class="item" font-weight="bold">正常系フロー</text>
+      <text x="15" y="292" class="desc">• ユーザー登録</text>
+      <text x="15" y="310" class="desc">• ログイン</text>
+      <text x="15" y="328" class="desc">• CRUD操作</text>
+
+      <text x="0" y="365" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #27AE60; font-weight: bold;">
+        ✅ カバレッジ 100% 必須
+      </text>
+    </g>
+  </g>
+
+  <!-- Medium Priority (Middle) -->
+  <g transform="translate(460, 80)">
+    <rect x="0" y="0" width="240" height="50" rx="5" class="medium"/>
+    <text x="120" y="33" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle;">
+      推奨テスト（20%）
+    </text>
+
+    <rect x="0" y="60" width="240" height="220" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+    <g transform="translate(15, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">UI関連</text>
+      <text x="10" y="20" class="desc">• フォーム送信</text>
+      <text x="10" y="38" class="desc">• ボタン動作</text>
+
+      <text x="0" y="68" class="item" font-weight="bold">補助機能</text>
+      <text x="10" y="88" class="desc">• ソート</text>
+      <text x="10" y="106" class="desc">• フィルター</text>
+
+      <text x="0" y="136" class="item" font-weight="bold">ユーティリティ</text>
+      <text x="10" y="156" class="desc">• 日付フォーマット</text>
+      <text x="10" y="174" class="desc">• 文字列処理</text>
+    </g>
+  </g>
+
+  <!-- Low Priority (Right) -->
+  <g transform="translate(730, 80)">
+    <rect x="0" y="0" width="220" height="50" rx="5" class="low"/>
+    <text x="110" y="33" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle;">
+      スキップ可（20%）
+    </text>
+
+    <rect x="0" y="60" width="220" height="180" rx="5" fill="#ECEFF1" stroke="#95A5A6" stroke-width="2"/>
+    <g transform="translate(15, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">自明なコード</text>
+      <text x="10" y="20" class="desc">• Getter/Setter</text>
+      <text x="10" y="38" class="desc">• 定数定義</text>
+
+      <text x="0" y="68" class="item" font-weight="bold">見た目のみ</text>
+      <text x="10" y="88" class="desc">• CSSスタイル</text>
+      <text x="10" y="106" class="desc">• レイアウト</text>
+
+      <text x="0" y="136" class="item" font-weight="bold">外部依存</text>
+      <text x="10" y="156" class="desc">• API呼び出し部分</text>
+    </g>
+  </g>
+
+  <!-- Bottom note -->
+  <rect x="50" y="560" width="900" height="110" rx="8" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="500" y="595" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    80%ルールの理由
+  </text>
+  <g transform="translate(70, 615)">
+    <text x="0" y="0" class="item">• 100%を目指すとコスト爆発（20% → 80%は工数2倍、80% → 100%は工数10倍）</text>
+    <text x="0" y="24" class="item">• 重要な部分に集中すれば、品質は十分保証される</text>
+    <text x="0" y="48" class="item">• 残り20%はE2Eテストや手動テストでカバー</text>
+  </g>
+</svg>

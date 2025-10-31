@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .level-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; }
+      .beginner { fill: #3498DB; }
+      .intermediate { fill: #27AE60; }
+      .advanced { fill: #E67E22; }
+      .expert { fill: #9B59B6; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="40" class="title">AI開発スキル習得ロードマップ</text>
+
+  <!-- Level 1: Beginner -->
+  <g transform="translate(50, 90)">
+    <rect x="0" y="0" width="900" height="50" rx="5" class="beginner"/>
+    <text x="450" y="33" class="level-title">Level 1：初級（1週間）</text>
+
+    <rect x="0" y="60" width="900" height="120" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">目標：AIアシスタントを使いこなせる</text>
+      <text x="0" y="25" class="item">• Claude Code / GitHub Copilotの基本操作</text>
+      <text x="0" y="45" class="item">• プロンプトの書き方（5W1H明確に）</text>
+      <text x="0" y="65" class="item">• コード生成 → 理解 → 修正 のサイクル</text>
+      <text x="0" y="85" class="item">成果物: <text class="item" font-weight="bold" fill="#3498DB">簡単な関数をAIで実装できる</text></text>
+    </g>
+  </g>
+
+  <!-- Level 2: Intermediate -->
+  <g transform="translate(50, 290)">
+    <rect x="0" y="0" width="900" height="50" rx="5" class="intermediate"/>
+    <text x="450" y="33" class="level-title">Level 2：中級（2週間）</text>
+
+    <rect x="0" y="60" width="900" height="120" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">目標：5ステップフローで開発できる</text>
+      <text x="0" y="25" class="item">• MoSCoW要件定義 + Spec-First設計</text>
+      <text x="0" y="45" class="item">• TDDサイクル（RED → GREEN → REFACTOR）</text>
+      <text x="0" y="65" class="item">• AIにタスク分解させて段階的実装</text>
+      <text x="0" y="85" class="item">成果物: <text class="item" font-weight="bold" fill="#27AE60">小規模機能を品質保証付きで実装</text></text>
+    </g>
+  </g>
+
+  <!-- Level 3: Advanced -->
+  <g transform="translate(50, 490)">
+    <rect x="0" y="0" width="900" height="50" rx="5" class="advanced"/>
+    <text x="450" y="33" class="level-title">Level 3：上級（1ヶ月）</text>
+
+    <rect x="0" y="60" width="900" height="120" rx="5" fill="#FEF5E7" stroke="#E67E22" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">目標：レガシーコードも扱える</text>
+      <text x="0" y="25" class="item">• リバースエンジニアリング（コード → 仕様書生成）</text>
+      <text x="0" y="45" class="item">• 既存コードへのテスト追加＋リファクタリング</text>
+      <text x="0" y="65" class="item">• Living Documentation自動化</text>
+      <text x="0" y="85" class="item">成果物: <text class="item" font-weight="bold" fill="#E67E22">レガシーシステムを安全に改善</text></text>
+    </g>
+  </g>
+
+  <!-- Level 4: Expert -->
+  <g transform="translate(50, 690)">
+    <rect x="0" y="0" width="900" height="50" rx="5" class="expert"/>
+    <text x="450" y="33" class="level-title">Level 4：エキスパート（継続的）</text>
+
+    <rect x="0" y="60" width="900" height="90" rx="5" fill="#F4ECF7" stroke="#9B59B6" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">目標：チーム全体に展開できる</text>
+      <text x="0" y="25" class="item">• チーム向けワークショップ実施</text>
+      <text x="0" y="45" class="item">• ベストプラクティスの共有・改善</text>
+      <text x="0" y="65" class="item">成果物: <text class="item" font-weight="bold" fill="#9B59B6">組織全体の生産性向上</text></text>
+    </g>
+  </g>
+</svg>

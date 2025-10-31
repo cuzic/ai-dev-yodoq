@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #333; text-anchor: middle; }
+      .actor { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; text-anchor: middle; font-weight: bold; }
+      .message { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #333; }
+      .lifeline { stroke: #999; stroke-width: 1; stroke-dasharray: 5,5; }
+      .call { stroke: #00146E; stroke-width: 2; fill: none; }
+      .return { stroke: #00AFF0; stroke-width: 2; stroke-dasharray: 5,5; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00146E"/>
+    </marker>
+    <marker id="arrow-return" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00AFF0"/>
+    </marker>
+  </defs>
+  
+  <rect width="700" height="500" fill="#FFFFFF"/>
+  <text x="350" y="35" class="title">ログインシーケンス図</text>
+  
+  <!-- Actors -->
+  <rect x="70" y="70" width="80" height="40" rx="5" fill="#E6E6E6" stroke="#333" stroke-width="1"/>
+  <text x="110" y="95" class="actor">User</text>
+  
+  <rect x="270" y="70" width="80" height="40" rx="5" fill="#E6E6E6" stroke="#333" stroke-width="1"/>
+  <text x="310" y="95" class="actor">Frontend</text>
+  
+  <rect x="470" y="70" width="80" height="40" rx="5" fill="#E6E6E6" stroke="#333" stroke-width="1"/>
+  <text x="510" y="95" class="actor">Backend</text>
+  
+  <!-- Lifelines -->
+  <line x1="110" y1="110" x2="110" y2="450" class="lifeline"/>
+  <line x1="310" y1="110" x2="310" y2="450" class="lifeline"/>
+  <line x1="510" y1="110" x2="510" y2="450" class="lifeline"/>
+  
+  <!-- Interactions -->
+  <path d="M 110 140 L 310 140" class="call" marker-end="url(#arrow)"/>
+  <text x="200" y="130" class="message">1. 入力(email, password)</text>
+  
+  <path d="M 310 180 L 510 180" class="call" marker-end="url(#arrow)"/>
+  <text x="400" y="170" class="message">2. POST /api/login</text>
+  
+  <rect x="505" y="200" width="10" height="80" fill="#00146E"/>
+  <text x="540" y="240" class="message" font-size="11px">3. 認証処理</text>
+  
+  <path d="M 510 300 L 310 300" class="return" marker-end="url(#arrow-return)"/>
+  <text x="400" y="290" class="message">4. JWT token</text>
+  
+  <rect x="305" y="320" width="10" height="40" fill="#00AFF0"/>
+  <text x="340" y="340" class="message" font-size="11px">5. token保存</text>
+  
+  <path d="M 310 380 L 110 380" class="return" marker-end="url(#arrow-return)"/>
+  <text x="200" y="370" class="message">6. ダッシュボード表示</text>
+  
+  <!-- Note -->
+  <rect x="100" y="420" width="500" height="50" fill="#FFF8DC" stroke="#FFD700" stroke-width="2" rx="5"/>
+  <text x="350" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; text-anchor: middle;">
+    📝 Note: このシーケンス図を元にAIがテストコードを生成
+  </text>
+  <text x="350" y="458" style="font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; text-anchor: middle;">
+    各ステップの正常系・異常系を網羅
+  </text>
+</svg>

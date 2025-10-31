@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .step1 { fill: #3498DB; }
+      .step2 { fill: #27AE60; }
+      .step3 { fill: #E67E22; }
+      .step4 { fill: #9B59B6; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="400" y="30" class="title">AIセルフレビューフロー</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="150" height="45" rx="5" class="step1"/>
+    <text x="75" y="28" class="step-title">1. 実装完了</text>
+
+    <rect x="0" y="55" width="150" height="90" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(10, 75)">
+      <text x="0" y="0" class="item">コード書いた</text>
+      <text x="0" y="20" class="item">テスト通った</text>
+      <text x="0" y="40" class="item">→ 次はレビュー</text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+  <path d="M 210 115 L 240 115" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(250, 70)">
+    <rect x="0" y="0" width="150" height="45" rx="5" class="step2"/>
+    <text x="75" y="28" class="step-title">2. AIに依頼</text>
+
+    <rect x="0" y="55" width="150" height="90" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(10, 75)">
+      <text x="0" y="0" class="item" font-size="11px">「このコードを</text>
+      <text x="0" y="18" class="item" font-size="11px">レビューして」</text>
+      <text x="0" y="36" class="item" font-size="11px">とAIに指示</text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 410 115 L 440 115" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(450, 70)">
+    <rect x="0" y="0" width="150" height="45" rx="5" class="step3"/>
+    <text x="75" y="28" class="step-title">3. 指摘確認</text>
+
+    <rect x="0" y="55" width="150" height="90" rx="5" fill="#FEF5E7" stroke="#E67E22" stroke-width="2"/>
+    <g transform="translate(10, 75)">
+      <text x="0" y="0" class="item" font-size="11px">• エラー処理</text>
+      <text x="0" y="18" class="item" font-size="11px">• エッジケース</text>
+      <text x="0" y="36" class="item" font-size="11px">• 命名改善</text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 610 115 L 640 115" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4 -->
+  <g transform="translate(650, 70)">
+    <rect x="0" y="0" width="100" height="45" rx="5" class="step4"/>
+    <text x="50" y="28" class="step-title" font-size="14px">4. 修正</text>
+
+    <rect x="0" y="55" width="100" height="90" rx="5" fill="#F4ECF7" stroke="#9B59B6" stroke-width="2"/>
+    <g transform="translate(10, 75)">
+      <text x="0" y="0" class="item" font-size="11px">指摘反映</text>
+      <text x="0" y="20" class="item" font-size="11px">再テスト</text>
+      <text x="0" y="40" class="item" font-size="11px">完了✨</text>
+    </g>
+  </g>
+
+  <!-- Review Checklist -->
+  <rect x="50" y="210" width="700" height="160" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+  <text x="400" y="240" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #F39C12; text-anchor: middle;">
+    AIレビューで確認すべきポイント
+  </text>
+
+  <g transform="translate(70, 260)">
+    <text x="0" y="0" class="item">✓ エラーハンドリング：try-catch、nullチェック、境界値</text>
+    <text x="0" y="24" class="item">✓ パフォーマンス：無駄なループ、N+1問題、メモリリーク</text>
+    <text x="0" y="48" class="item">✓ セキュリティ：SQLインジェクション、XSS、認証・認可</text>
+    <text x="0" y="72" class="item">✓ 可読性：命名、コメント、関数の責務が単一か</text>
+    <text x="0" y="96" class="item">✓ テストカバレッジ：重要な処理がテストされているか</text>
+  </g>
+</svg>

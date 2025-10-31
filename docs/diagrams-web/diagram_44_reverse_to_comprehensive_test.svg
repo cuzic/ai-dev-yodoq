@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .step-num { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
+      .step-desc { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
+      .phase1 { fill: #E74C3C; }
+      .phase2 { fill: #E67E22; }
+      .phase3 { fill: #F39C12; }
+      .phase4 { fill: #27AE60; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="550" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="450" y="35" class="title">既存コードへのテスト追加：逆順アプローチ</text>
+
+  <!-- Phase 1: Reverse Engineering -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="800" height="50" rx="5" class="phase1"/>
+    <text x="400" y="32" class="phase-title">Phase 1: リバースエンジニアリング</text>
+
+    <rect x="0" y="60" width="800" height="80" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="step-num">1.</text>
+      <text x="30" y="0" class="step-text">AIに既存コードから仕様を抽出させる</text>
+      <text x="30" y="20" class="step-desc">「このコードの仕様書を生成して」</text>
+
+      <text x="0" y="45" class="step-num">2.</text>
+      <text x="30" y="45" class="step-text">ER図・シーケンス図を自動生成</text>
+      <text x="30" y="65" class="step-desc">Mermaid形式で構造を可視化</text>
+    </g>
+  </g>
+
+  <!-- Phase 2: Test Generation -->
+  <g transform="translate(50, 230)">
+    <rect x="0" y="0" width="800" height="50" rx="5" class="phase2"/>
+    <text x="400" y="32" class="phase-title">Phase 2: テスト生成</text>
+
+    <rect x="0" y="60" width="800" height="80" rx="5" fill="#FFF3E0" stroke="#E67E22" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="step-num">3.</text>
+      <text x="30" y="0" class="step-text">仕様書からテストケースを生成</text>
+      <text x="30" y="20" class="step-desc">正常系・異常系・境界値を網羅</text>
+
+      <text x="0" y="45" class="step-num">4.</text>
+      <text x="30" y="45" class="step-text">現状の動作をテストで固定（Snapshot）</text>
+      <text x="30" y="65" class="step-desc">リファクタリング前の動作を保証</text>
+    </g>
+  </g>
+
+  <!-- Phase 3: Refactoring -->
+  <g transform="translate(50, 390)">
+    <rect x="0" y="0" width="385" height="50" rx="5" class="phase3"/>
+    <text x="192" y="32" class="phase-title">Phase 3: リファクタ</text>
+
+    <rect x="0" y="60" width="385" height="70" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="step-num">5.</text>
+      <text x="30" y="0" class="step-text">テストが通る状態を保ちながら</text>
+      <text x="30" y="20" class="step-text">コードを改善</text>
+      <text x="30" y="40" class="step-desc">グリーンを維持したままリファクタ</text>
+    </g>
+  </g>
+
+  <!-- Phase 4: Documentation -->
+  <g transform="translate(465, 390)">
+    <rect x="0" y="0" width="385" height="50" rx="5" class="phase4"/>
+    <text x="192" y="32" class="phase-title">Phase 4: 文書化</text>
+
+    <rect x="0" y="60" width="385" height="70" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="step-num">6.</text>
+      <text x="30" y="0" class="step-text">仕様書を正式ドキュメントとして</text>
+      <text x="30" y="20" class="step-text">リポジトリに配置</text>
+      <text x="30" y="40" class="step-desc">今後はこれが真実の情報源</text>
+    </g>
+  </g>
+
+  <!-- Bottom note -->
+  <rect x="50" y="490" width="800" height="45" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="450" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    既存コードも、AIの力で「テスト+仕様書」を後付けできる
+  </text>
+</svg>

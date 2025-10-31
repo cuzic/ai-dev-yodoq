@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item-title { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+      .item-text { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .bad { fill: #E74C3C; }
+      .good { fill: #27AE60; }
+      .vs-text { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #666; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="450" y="35" class="title">「Vibe駆動開発」vs「本番品質開発」</text>
+
+  <!-- Left side: Vibe-driven (BAD) -->
+  <rect x="30" y="70" width="360" height="300" rx="8" class="bad"/>
+  <text x="210" y="100" class="subtitle">❌ Vibe駆動</text>
+  <text x="210" y="122" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle;">(なんとなく動けばOK)</text>
+
+  <!-- Vibe items -->
+  <g transform="translate(50, 145)">
+    <text x="0" y="0" class="item-title" fill="white">• テストなし</text>
+    <text x="20" y="20" class="item-text" fill="white">「動いてるっぽいからOK」</text>
+
+    <text x="0" y="50" class="item-title" fill="white">• ドキュメントなし</text>
+    <text x="20" y="70" class="item-text" fill="white">「コード見ればわかる」</text>
+
+    <text x="0" y="100" class="item-title" fill="white">• エラーハンドリング適当</text>
+    <text x="20" y="120" class="item-text" fill="white">「エラー出たら直せばいい」</text>
+
+    <text x="0" y="150" class="item-title" fill="white">• 設計なし</text>
+    <text x="20" y="170" class="item-text" fill="white">「とりあえず書く」</text>
+  </g>
+
+  <!-- VS -->
+  <text x="450" y="240" class="vs-text">VS</text>
+
+  <!-- Right side: Production quality (GOOD) -->
+  <rect x="510" y="70" width="360" height="300" rx="8" class="good"/>
+  <text x="690" y="100" class="subtitle">✅ 本番品質</text>
+  <text x="690" y="122" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle;">(最初から品質担保)</text>
+
+  <!-- Production items -->
+  <g transform="translate(530, 145)">
+    <text x="0" y="0" class="item-title" fill="white">• TDD必須</text>
+    <text x="20" y="20" class="item-text" fill="white">カバレッジ80%以上</text>
+
+    <text x="0" y="50" class="item-title" fill="white">• Living Documentation</text>
+    <text x="20" y="70" class="item-text" fill="white">コードと仕様が同期</text>
+
+    <text x="0" y="100" class="item-title" fill="white">• 堅牢なエラー処理</text>
+    <text x="20" y="120" class="item-text" fill="white">全パターン網羅</text>
+
+    <text x="0" y="150" class="item-title" fill="white">• Spec-First設計</text>
+    <text x="20" y="170" class="item-text" fill="white">実装前に設計完了</text>
+  </g>
+</svg>

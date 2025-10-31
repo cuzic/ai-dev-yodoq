@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
+      .code { font-family: 'Courier New', monospace; font-size: 11px; fill: #00146E; }
+      .bad { fill: #E74C3C; }
+      .good { fill: #27AE60; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="800" fill="#FFFFFF"/>
+  <text x="500" y="40" class="title">Living Documentation とは</text>
+
+  <!-- Traditional Docs (Bad) -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="420" height="50" rx="5" class="bad"/>
+    <text x="210" y="33" class="subtitle">❌ 従来のドキュメント</text>
+
+    <rect x="0" y="60" width="420" height="280" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">問題：</text>
+      <text x="0" y="25" class="item">1. コード変更</text>
+      <text x="20" y="47" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 実装を修正
+      </text>
+
+      <text x="0" y="75" class="item">2. ドキュメント更新忘れ</text>
+      <text x="20" y="97" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 仕様書が古いまま
+      </text>
+
+      <text x="0" y="125" class="item">3. 新メンバー参加</text>
+      <text x="20" y="147" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 古い仕様書を読んで混乱
+      </text>
+
+      <text x="0" y="175" class="item">4. バグ発生</text>
+      <text x="20" y="197" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 仕様とコードの乖離が原因
+      </text>
+
+      <text x="0" y="235" class="item" font-weight="bold" fill="#E74C3C">結果：誰もドキュメントを信用しない</text>
+    </g>
+  </g>
+
+  <!-- Living Docs (Good) -->
+  <g transform="translate(530, 80)">
+    <rect x="0" y="0" width="420" height="50" rx="5" class="good"/>
+    <text x="210" y="33" class="subtitle">✅ Living Documentation</text>
+
+    <rect x="0" y="60" width="420" height="280" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">仕組み：</text>
+      <text x="0" y="25" class="item">1. コード変更</text>
+      <text x="20" y="47" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 実装を修正
+      </text>
+
+      <text x="0" y="75" class="item">2. pre-commitフック発動</text>
+      <text x="20" y="97" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → AIが自動でドキュメント更新
+      </text>
+
+      <text x="0" y="125" class="item">3. CI/CDで図表も更新</text>
+      <text x="20" y="147" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → ER図・シーケンス図を自動生成
+      </text>
+
+      <text x="0" y="175" class="item">4. 乖離を検出</text>
+      <text x="20" y="197" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → コミット拒否（強制同期）
+      </text>
+
+      <text x="0" y="235" class="item" font-weight="bold" fill="#27AE60">結果：ドキュメント = 常に最新の真実</text>
+    </g>
+  </g>
+
+  <!-- Implementation Example -->
+  <rect x="50" y="410" width="900" height="340" rx="5" fill="#F8F8F8" stroke="#00146E" stroke-width="2"/>
+  <text x="500" y="445" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    実装例：pre-commit hookで自動更新
+  </text>
+
+  <g transform="translate(80, 465)">
+    <text x="0" y="0" class="code"># .pre-commit-config.yaml</text>
+    <text x="0" y="20" class="code">repos:</text>
+    <text x="10" y="40" class="code">- repo: local</text>
+    <text x="20" y="60" class="code">hooks:</text>
+    <text x="30" y="80" class="code">- id: auto-doc-sync</text>
+    <text x="40" y="100" class="code">name: Auto Documentation Sync</text>
+    <text x="40" y="120" class="code">entry: python scripts/sync_docs.py</text>
+    <text x="40" y="140" class="code">language: python</text>
+    <text x="40" y="160" class="code">pass_filenames: false</text>
+    <text x="40" y="180" class="code">always_run: true</text>
+
+    <text x="0" y="220" class="code"># scripts/sync_docs.py</text>
+    <text x="0" y="240" class="code">def sync_docs():</text>
+    <text x="20" y="260" class="code"># 1. コードからER図を生成（Mermaid）</text>
+    <text x="20" y="278" class="code"># 2. APIドキュメントを更新（OpenAPI）</text>
+    <text x="20" y="296" class="code"># 3. README.mdを更新（AI生成）</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="500" y="730" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666; text-anchor: middle;">
+    Living Documentationの核心：ドキュメントをコードと同じように扱う
+  </text>
+</svg>

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .header { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #333; text-anchor: middle; }
+      .activity { fill: #3498DB; }
+      .must { fill: #E74C3C; }
+      .should { fill: #F39C12; }
+      .could { fill: #95A5A6; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <text x="400" y="30" class="title">ユーザーストーリーマッピング</text>
+
+  <!-- Activities (Top row) -->
+  <g transform="translate(50, 60)">
+    <rect x="0" y="0" width="140" height="40" rx="3" class="activity"/>
+    <text x="70" y="25" class="header">新規登録</text>
+  </g>
+  <g transform="translate(210, 60)">
+    <rect x="0" y="0" width="140" height="40" rx="3" class="activity"/>
+    <text x="70" y="25" class="header">ログイン</text>
+  </g>
+  <g transform="translate(370, 60)">
+    <rect x="0" y="0" width="140" height="40" rx="3" class="activity"/>
+    <text x="70" y="25" class="header">投稿管理</text>
+  </g>
+  <g transform="translate(530, 60)">
+    <rect x="0" y="0" width="140" height="40" rx="3" class="activity"/>
+    <text x="70" y="25" class="header">プロフィール</text>
+  </g>
+
+  <!-- Release 1: MUST (Red) -->
+  <text x="20" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #E74C3C; font-weight: bold;">v1.0</text>
+  <g transform="translate(50, 120)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="must"/>
+    <text x="70" y="25" class="item" fill="white">メール登録</text>
+    <text x="70" y="43" class="item" fill="white">確認メール</text>
+  </g>
+  <g transform="translate(210, 120)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="must"/>
+    <text x="70" y="25" class="item" fill="white">ID/PW</text>
+    <text x="70" y="43" class="item" fill="white">ログイン</text>
+  </g>
+  <g transform="translate(370, 120)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="must"/>
+    <text x="70" y="25" class="item" fill="white">投稿作成</text>
+    <text x="70" y="43" class="item" fill="white">一覧表示</text>
+  </g>
+  <g transform="translate(530, 120)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="must"/>
+    <text x="70" y="25" class="item" fill="white">名前表示</text>
+    <text x="70" y="43" class="item" fill="white">基本情報</text>
+  </g>
+
+  <!-- Release 2: SHOULD (Orange) -->
+  <text x="20" y="225" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #F39C12; font-weight: bold;">v2.0</text>
+  <g transform="translate(50, 200)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="should"/>
+    <text x="70" y="25" class="item" fill="white">SNS連携</text>
+    <text x="70" y="43" class="item" fill="white">登録</text>
+  </g>
+  <g transform="translate(210, 200)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="should"/>
+    <text x="70" y="25" class="item" fill="white">Remember</text>
+    <text x="70" y="43" class="item" fill="white">Me</text>
+  </g>
+  <g transform="translate(370, 200)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="should"/>
+    <text x="70" y="25" class="item" fill="white">画像添付</text>
+    <text x="70" y="43" class="item" fill="white">検索機能</text>
+  </g>
+  <g transform="translate(530, 200)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="should"/>
+    <text x="70" y="25" class="item" fill="white">アバター</text>
+    <text x="70" y="43" class="item" fill="white">編集</text>
+  </g>
+
+  <!-- Release 3: COULD (Gray) -->
+  <text x="20" y="305" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #95A5A6; font-weight: bold;">v3.0</text>
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="could"/>
+    <text x="70" y="25" class="item" fill="white">招待制</text>
+    <text x="70" y="43" class="item" fill="white">登録</text>
+  </g>
+  <g transform="translate(210, 280)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="could"/>
+    <text x="70" y="25" class="item" fill="white">2FA</text>
+    <text x="70" y="43" class="item" fill="white">認証</text>
+  </g>
+  <g transform="translate(370, 280)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="could"/>
+    <text x="70" y="25" class="item" fill="white">予約投稿</text>
+    <text x="70" y="43" class="item" fill="white">タグ機能</text>
+  </g>
+  <g transform="translate(530, 280)">
+    <rect x="0" y="0" width="140" height="60" rx="3" class="could"/>
+    <text x="70" y="25" class="item" fill="white">テーマ</text>
+    <text x="70" y="43" class="item" fill="white">カスタマイズ</text>
+  </g>
+
+  <!-- Bottom explanation -->
+  <rect x="50" y="380" width="700" height="180" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="400" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    ユーザーストーリーマッピングの効果
+  </text>
+  <g transform="translate(70, 430)">
+    <text x="0" y="0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333;">
+      ✅ ユーザー視点で機能を整理（縦軸：アクティビティ）
+    </text>
+    <text x="0" y="25" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333;">
+      ✅ リリース計画が明確（横軸：優先度）
+    </text>
+    <text x="0" y="50" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333;">
+      ✅ MVP（v1.0）を最速でリリースできる
+    </text>
+    <text x="0" y="75" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333;">
+      ✅ 全体像が見えるので、抜け漏れ防止
+    </text>
+    <text x="0" y="100" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333;">
+      ✅ チーム全員で同じゴールを共有
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 20px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
+      .code { font-family: 'Courier New', monospace; font-size: 12px; fill: #00146E; }
+      .given { fill: #3498DB; }
+      .when { fill: #F39C12; }
+      .then { fill: #27AE60; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="800" fill="#FFFFFF"/>
+  <text x="500" y="40" class="title">Given-When-Then パターン</text>
+
+  <!-- GIVEN -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="900" height="60" rx="5" class="given"/>
+    <text x="450" y="40" class="phase-title">GIVEN（前提条件）</text>
+
+    <rect x="0" y="70" width="430" height="180" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(20, 95)">
+      <text x="0" y="0" class="item" font-weight="bold">日本語仕様：</text>
+      <text x="0" y="25" class="item">• ユーザーがログイン済み</text>
+      <text x="0" y="47" class="item">• 残高が 1000円</text>
+      <text x="0" y="69" class="item">• カートに商品がある</text>
+
+      <text x="0" y="105" class="item" font-weight="bold">意味：</text>
+      <text x="0" y="127" class="item" font-size="12px">テスト開始時の状態を定義</text>
+    </g>
+
+    <rect x="470" y="70" width="430" height="180" rx="5" fill="#F8F8F8" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(490, 95)">
+      <text x="0" y="0" class="item" font-weight="bold">テストコード：</text>
+      <text x="0" y="25" class="code">// GIVEN</text>
+      <text x="0" y="43" class="code">await login('user@example.com');</text>
+      <text x="0" y="61" class="code">await setBalance(1000);</text>
+      <text x="0" y="79" class="code">await addToCart(productId);</text>
+
+      <text x="0" y="110" class="item" font-weight="bold" font-size="12px">セットアップ処理</text>
+    </g>
+  </g>
+
+  <!-- WHEN -->
+  <g transform="translate(50, 340)">
+    <rect x="0" y="0" width="900" height="60" rx="5" class="when"/>
+    <text x="450" y="40" class="phase-title">WHEN（実行）</text>
+
+    <rect x="0" y="70" width="430" height="140" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+    <g transform="translate(20, 95)">
+      <text x="0" y="0" class="item" font-weight="bold">日本語仕様：</text>
+      <text x="0" y="25" class="item">• 購入ボタンをクリック</text>
+
+      <text x="0" y="65" class="item" font-weight="bold">意味：</text>
+      <text x="0" y="87" class="item" font-size="12px">テスト対象のアクションを実行</text>
+    </g>
+
+    <rect x="470" y="70" width="430" height="140" rx="5" fill="#F8F8F8" stroke="#F39C12" stroke-width="2"/>
+    <g transform="translate(490, 95)">
+      <text x="0" y="0" class="item" font-weight="bold">テストコード：</text>
+      <text x="0" y="25" class="code">// WHEN</text>
+      <text x="0" y="43" class="code">const result = await purchase();</text>
+
+      <text x="0" y="80" class="item" font-weight="bold" font-size="12px">実行処理（1アクション）</text>
+    </g>
+  </g>
+
+  <!-- THEN -->
+  <g transform="translate(50, 560)">
+    <rect x="0" y="0" width="900" height="60" rx="5" class="then"/>
+    <text x="450" y="40" class="phase-title">THEN（検証）</text>
+
+    <rect x="0" y="70" width="430" height="140" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 95)">
+      <text x="0" y="0" class="item" font-weight="bold">日本語仕様：</text>
+      <text x="0" y="25" class="item">• 購入完了メッセージ表示</text>
+      <text x="0" y="47" class="item">• 残高が 0円になる</text>
+
+      <text x="0" y="83" class="item" font-weight="bold">意味：</text>
+      <text x="0" y="105" class="item" font-size="12px">期待する結果を検証</text>
+    </g>
+
+    <rect x="470" y="70" width="430" height="140" rx="5" fill="#F8F8F8" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(490, 95)">
+      <text x="0" y="0" class="item" font-weight="bold">テストコード：</text>
+      <text x="0" y="25" class="code">// THEN</text>
+      <text x="0" y="43" class="code">expect(result.success).toBe(true);</text>
+      <text x="0" y="61" class="code">expect(await getBalance()).toBe(0);</text>
+
+      <text x="0" y="98" class="item" font-weight="bold" font-size="12px">アサーション（複数可）</text>
+    </g>
+  </g>
+</svg>

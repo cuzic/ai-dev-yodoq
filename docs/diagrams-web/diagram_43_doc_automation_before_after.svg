@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
+      .bad { fill: #E74C3C; }
+      .good { fill: #27AE60; }
+      .arrow { fill: #666; }
+      .arrow-text { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #666; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="450" y="35" class="title" style="font-size: 21px;">ドキュメント自動化：Before / After</text>
+
+  <!-- BEFORE (Left side) -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="330" height="60" rx="5" class="bad"/>
+    <text x="165" y="40" class="subtitle">❌ BEFORE（手動更新）</text>
+
+    <!-- Manual process -->
+    <rect x="0" y="80" width="330" height="330" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+
+    <g transform="translate(20, 110)">
+      <text x="0" y="0" class="item" font-weight="bold">問題点:</text>
+
+      <text x="0" y="30" class="item">• コード変更後、手動でドキュメント更新</text>
+      <text x="20" y="50" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 更新忘れが発生
+      </text>
+
+      <text x="0" y="80" class="item">• 仕様とコードが乖離</text>
+      <text x="20" y="100" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 信頼性低下
+      </text>
+
+      <text x="0" y="130" class="item">• レビュー時に気づけない</text>
+      <text x="20" y="150" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 問題が累積
+      </text>
+
+      <text x="0" y="180" class="item">• 新メンバーが混乱</text>
+      <text x="20" y="200" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → オンボーディング困難
+      </text>
+
+      <text x="0" y="240" class="item" font-weight="bold">結果:</text>
+      <text x="0" y="265" class="item" fill="#E74C3C">
+        誰もドキュメントを信用しない
+      </text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(450, 250)">
+    <path d="M -20 0 L 20 0" stroke="#666" stroke-width="3"/>
+    <polygon points="20,0 15,-5 15,5" class="arrow"/>
+    <text x="0" y="-15" class="arrow-text">自動化</text>
+  </g>
+
+  <!-- AFTER (Right side) -->
+  <g transform="translate(520, 70)">
+    <rect x="0" y="0" width="330" height="60" rx="5" class="good"/>
+    <text x="165" y="40" class="subtitle">✅ AFTER（自動更新）</text>
+
+    <!-- Automated process -->
+    <rect x="0" y="80" width="330" height="330" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+
+    <g transform="translate(20, 110)">
+      <text x="0" y="0" class="item" font-weight="bold">仕組み:</text>
+
+      <text x="0" y="30" class="item">• pre-commit hookで自動チェック</text>
+      <text x="20" y="50" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → コミット時に検証
+      </text>
+
+      <text x="0" y="80" class="item">• AIがコードから仕様を自動生成</text>
+      <text x="20" y="100" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 常に最新
+      </text>
+
+      <text x="0" y="130" class="item">• CI/CDで図表も自動更新</text>
+      <text x="20" y="150" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → ER図・API仕様同期
+      </text>
+
+      <text x="0" y="180" class="item">• 乖離を検出したらコミット拒否</text>
+      <text x="20" y="200" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 問題の未然防止
+      </text>
+
+      <text x="0" y="240" class="item" font-weight="bold">結果:</text>
+      <text x="0" y="265" class="item" fill="#27AE60">
+        ドキュメントが唯一の真実
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="450" y="475" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666; text-anchor: middle;">
+    Living Documentation = コードとドキュメントが常に同期している状態
+  </text>
+</svg>
