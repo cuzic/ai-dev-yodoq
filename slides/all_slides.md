@@ -160,6 +160,8 @@ style: |
 AI駆動開発で開発期間を大幅短縮
 
 ---
+<!-- _class: two-column -->
+
 
 # 本日の目標
 
@@ -373,6 +375,8 @@ AI駆動開発で開発期間を大幅短縮
 ## Claude Code の使い方（10:30-10:50, 20分）
 
 ---
+<!-- _class: two-column -->
+
 
 # Claude Code とは
 - **概要:** プロジェクト全体を扱うAI開発アシスタント、ターミナルから直接コード生成・修正・テスト
@@ -416,7 +420,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # モード詳細と使い分け
 
@@ -520,6 +524,8 @@ build/
 ## STEP1: 要件定義（10:50-11:30, 40分）
 
 ---
+<!-- _class: two-column -->
+
 
 # STEP1 要件定義とは
 - **目的:** 「何を作るか」を明確化
@@ -578,7 +584,7 @@ build/
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
 # 要件の引き出し方（文字起こしアプローチ）
 
@@ -643,7 +649,7 @@ build/
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
 # MoSCoW実践例（ToDoアプリ）
 
@@ -708,7 +714,7 @@ build/
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
 # 非機能要件
 
@@ -796,6 +802,8 @@ build/
 **効果:** 異常系も網羅 → 本番障害を大幅削減
 
 ---
+<!-- _class: two-column -->
+
 
 # 受け入れ基準（Given-When-Then）
 - **正常系:**
@@ -824,7 +832,7 @@ build/
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
 # STEP1のまとめ
 
@@ -908,6 +916,8 @@ build/
 ## STEP2: 設計ドキュメント作成（11:30-12:00, 30分）
 
 ---
+<!-- _class: two-column -->
+
 
 # STEP2 設計ドキュメントとは
 - **目的:** 「どのように作るか」を明確にする設計図
@@ -937,6 +947,8 @@ build/
 - **7. 技術的決定事項:** ライブラリ選定理由・アーキテクチャ判断
 
 ---
+<!-- _class: two-column -->
+
 
 # Tech Stack Setup
 - **最初に固める理由:** 後から変更すると大幅な手戻り
@@ -967,6 +979,8 @@ build/
 - **AIへの指示:** テーブル構造を明確に文書化
 
 ---
+<!-- _class: two-column -->
+
 
 # API仕様の明確化
 - **なぜAPI仕様が必要か**
@@ -1014,6 +1028,8 @@ build/
 - **効果**: 複雑処理も正確実装
 
 ---
+<!-- _class: two-column -->
+
 
 # 受け入れ条件の詳細化
 - **なぜ受け入れ条件が必要か**
@@ -1476,7 +1492,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
 # STEP3のまとめ
 
@@ -1573,7 +1589,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
 # 実装の標準ワークフロー
 
@@ -1748,6 +1764,8 @@ DATABASE_PASSWORD=secure-password
 - **効果:** 進捗が見える、モチベーション維持、リスク低減
 
 ---
+<!-- _class: two-column -->
+
 
 # インクリメンタル実装の実例
 - **Increment 1: 一覧表示**
@@ -1859,6 +1877,8 @@ DATABASE_PASSWORD=secure-password
 ## STEP5: 品質担保＆ドキュメント反映（40分）
 
 ---
+<!-- _class: two-column -->
+
 
 # STEP5 品質担保＆ドキュメント反映とは
 - **なぜ品質担保とドキュメント反映が必要か**
@@ -1918,7 +1938,7 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # AI自己レビュー4種類の使い分け
 
@@ -1976,6 +1996,8 @@ DATABASE_PASSWORD=secure-password
 - **効果:** テストカバレッジ向上
 
 ---
+<!-- _class: two-column -->
+
 
 # 自己レビューの実例
 - **Before（AIの初回実装）:**
@@ -2021,7 +2043,7 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
 # STEP5のまとめ（2/3）
 
@@ -2098,7 +2120,7 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
 # STEP5 チェックリスト
 
@@ -2604,7 +2626,7 @@ style: |
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # つまずきポイントと対処法
 
@@ -2642,7 +2664,7 @@ style: |
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # 演習成功のチェックリスト①
 
@@ -3630,7 +3652,7 @@ style: |
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 ### STEP1: リバースエンジニアリング（30分）
 
@@ -3746,7 +3768,7 @@ style: |
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 #### テストコード実装（30分）
 
