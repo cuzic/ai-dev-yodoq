@@ -299,7 +299,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
 <!-- _class: three-column -->
 
@@ -340,7 +340,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: two-column -->
 
 # セキュリティベストプラクティス（補足）
 
@@ -890,7 +890,7 @@ build/
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-horizontal-left -->
 
 # STEP1 チェックリスト
 
@@ -1008,7 +1008,7 @@ build/
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-diagram-only -->
 
 # ER図が開発をスムーズにする理由
 
@@ -1104,7 +1104,7 @@ build/
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-horizontal-left -->
 
 # STEP2 チェックリスト
 
@@ -1125,7 +1125,7 @@ build/
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 ## Part 1 振り返りチェックリスト
 
@@ -1316,8 +1316,6 @@ style: |
 ## STEP3: タスク分解（35分）
 
 ---
-
-<!-- _class: two-column -->
 
 # STEP3 タスク分解とは
 
@@ -1541,7 +1539,7 @@ style: |
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-horizontal-left -->
 
 # STEP3 チェックリスト
 
@@ -1850,7 +1848,7 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: two-column -->
 
 # STEP4 チェックリスト
 
@@ -2164,6 +2162,7 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
+<!-- _class: two-column -->
 
 ### Living Documentation（AIの外部メモリ）
 
@@ -2201,7 +2200,7 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # Part 2のキーポイント
 
@@ -2552,8 +2551,6 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
-
 # 演習の目的と課題
 
 ### 演習の目的
@@ -2604,6 +2601,7 @@ style: |
 - ゴール: TbV・Living Doc
 
 ---
+<!-- _class: two-column -->
 
 ### 演習のゴール
 - **5-STEPの流れを体験する**
@@ -2835,7 +2833,7 @@ style: |
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: two-column -->
 
 ## 2日目への準備
 
@@ -3087,6 +3085,7 @@ style: |
 - **効果:** 仕様正確把握、デグレ防止、適切な機能追加
 
 ---
+<!-- _class: two-column -->
 
 ### リバースエンジニアリングの第一歩
 - **ソースコード読み込み**
@@ -3134,6 +3133,7 @@ style: |
 - **自動生成:** 「OpenAPI仕様書を生成」「テーブル定義書を生成」
 
 ---
+<!-- _class: two-column -->
 
 ### 仕様書がない場合の対処法
 - **問題:** ドキュメントがない既存システムへの機能追加
@@ -3151,7 +3151,7 @@ style: |
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: two-column -->
 
 ### リバースエンジニアリング → 網羅的テスト生成（重要）
 
@@ -3220,6 +3220,7 @@ style: |
 ## STEP3: テストシナリオ一覧作成（30分）
 
 ---
+<!-- _class: two-column -->
 
 ### テストシナリオとは
 - **「何をテストすべきか」の一覧（Guardrails）**
@@ -3237,6 +3238,7 @@ style: |
 ---
 
 ---
+<!-- _class: two-column -->
 
 ### テストシナリオとテストコードの違い
 - **テストシナリオ：企画書（What）**
@@ -3359,8 +3361,6 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
-
 # テストシナリオからテストコードへ
 
 ### なぜシナリオから始める？
@@ -3380,6 +3380,7 @@ style: |
 漏れなく実装、品質担保、保守性向上
 
 ---
+<!-- _class: two-column -->
 
 ### テストコードの構造（Given-When-Then）
 - **なぜGiven-When-Then形式が重要か**
@@ -3392,6 +3393,7 @@ style: |
   - Then: 期待する結果（AIがアサーション生成）
 
 ---
+<!-- _class: two-column -->
 
 ### テストカバレッジの考え方（80%以上）
 - **なぜ80%以上が目標か**
@@ -3405,6 +3407,7 @@ style: |
 - リファクタリング時の安全性確保、デグレ防止の証拠
 
 ---
+<!-- _class: two-column -->
 
 ### AIによるテストコード自動生成
 - **テストシナリオがあることの重要性（Guardrails）**
@@ -3654,8 +3657,6 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
-
 ### STEP1: リバースエンジニアリング（30分）
 
 #### 既存コードから仕様を読み解く
@@ -3667,6 +3668,7 @@ style: |
 ---
 
 ---
+<!-- _class: two-column -->
 
 ### STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
@@ -3694,6 +3696,7 @@ style: |
 ### STEP3: テストシナリオ一覧作成（30分）
 
 ---
+<!-- _class: two-column -->
 
 #### 既存機能のテストシナリオ作成
 - **目的:** 既存機能が壊れていないことを保証（デグレ防止）
@@ -3708,8 +3711,6 @@ style: |
 - **効果:** デグレ防止、安心して変更可能
 
 ---
-
-<!-- _class: two-column -->
 
 #### 新機能のテストシナリオ作成
 
@@ -3822,8 +3823,6 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
-
 #### テスト実行・デバッグ
 
 **全テスト実行**
@@ -3928,6 +3927,7 @@ style: |
 ---
 
 ---
+<!-- _class: two-column -->
 
 ### 実務での活用ポイント
 
