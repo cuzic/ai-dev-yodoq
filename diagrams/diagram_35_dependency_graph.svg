@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1040">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .task-title { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: white; }
-      .task-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
+      .task-title { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: bold; fill: white; }
+      .task-text { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white; }
     </style>
   </defs>
 
@@ -14,7 +14,7 @@
   <text x="700" y="40" class="title" text-anchor="middle">タスク依存関係グラフ（実装順序の可視化）</text>
 
   <!-- Layer 1: Independent tasks -->
-  <text x="50" y="90" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; font-weight: bold;">
+  <text x="50" y="90" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; font-weight: bold;">
     Layer 1: 独立タスク（並行実行可）
   </text>
 
@@ -37,7 +37,7 @@
   <text x="555" y="170" class="task-text">工数: 20分</text>
 
   <!-- Layer 2: Depends on Layer 1 -->
-  <text x="50" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; font-weight: bold;">
+  <text x="50" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; font-weight: bold;">
     Layer 2: Layer 1完了後
   </text>
 
@@ -52,7 +52,7 @@
   <polygon points="190,250 185,240 195,240" fill="#00AFF0"/>
 
   <!-- Layer 3: Backend APIs -->
-  <text x="50" y="370" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; font-weight: bold;">
+  <text x="50" y="370" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; font-weight: bold;">
     Layer 3: Backend API実装
   </text>
 
@@ -97,19 +97,19 @@
   <polygon points="760,425 750,420 750,430" fill="#003399"/>
 
   <!-- Layer 4: Frontend -->
-  <text x="50" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; font-weight: bold;">
+  <text x="50" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; font-weight: bold;">
     Layer 4: Frontend実装（Backend完了後）
   </text>
 
   <!-- T-07 -->
   <rect x="100" y="530" width="180" height="70" fill="#66D9FF" rx="8"/>
-  <text x="190" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+  <text x="190" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: bold; fill: #00146E; text-anchor: middle;">
     T-07: 一覧画面
   </text>
-  <text x="115" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="115" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     React実装
   </text>
-  <text x="115" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="115" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     工数: 60分 | 依存: T-03
   </text>
 
@@ -119,13 +119,13 @@
 
   <!-- T-08 -->
   <rect x="320" y="530" width="180" height="70" fill="#66D9FF" rx="8"/>
-  <text x="410" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+  <text x="410" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: bold; fill: #00146E; text-anchor: middle;">
     T-08: 作成フォーム
   </text>
-  <text x="335" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="335" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     バリデーション
   </text>
-  <text x="335" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="335" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     工数: 60分 | 依存: T-04, T-07
   </text>
 
@@ -139,102 +139,102 @@
 
   <!-- Benefits section -->
   <rect x="980" y="110" width="380" height="490" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="1170" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="1170" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     依存関係グラフの活用
   </text>
 
   <!-- Benefit 1 -->
   <rect x="1000" y="160" width="340" height="100" fill="#00AFF0" rx="8"/>
-  <text x="1170" y="185" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1170" y="185" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     1. クリティカルパスの特定
   </text>
-  <text x="1015" y="208" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="208" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     最長経路（T-01 → T-02 → T-03 → T-04 → T-05
   </text>
-  <text x="1015" y="226" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="226" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     → T-06）が完了時間を決定 = 合計285分
   </text>
-  <text x="1015" y="244" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="244" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     → この経路を優先的に進める
   </text>
 
   <!-- Benefit 2 -->
   <rect x="1000" y="275" width="340" height="100" fill="#003399" rx="8"/>
-  <text x="1170" y="300" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1170" y="300" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     2. 並行作業の可能性
   </text>
-  <text x="1015" y="323" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="323" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     Layer 1（T-01, T-09, T-10）は並行実行可能
   </text>
-  <text x="1015" y="341" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="341" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     → 複数人で分担可能
   </text>
-  <text x="1015" y="359" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="359" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     → 全体完了時間を短縮
   </text>
 
   <!-- Benefit 3 -->
   <rect x="1000" y="390" width="340" height="100" fill="#00146E" rx="8"/>
-  <text x="1170" y="415" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1170" y="415" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     3. 手戻り防止
   </text>
-  <text x="1015" y="438" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="438" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     依存先タスクが完了していないと、
   </text>
-  <text x="1015" y="456" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="456" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     依存元タスクで手戻りが発生。
   </text>
-  <text x="1015" y="474" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="474" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     → グラフで順序を可視化、ミス防止
   </text>
 
   <!-- Benefit 4 -->
   <rect x="1000" y="505" width="340" height="85" fill="#66D9FF" rx="8"/>
-  <text x="1170" y="530" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1170" y="530" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     4. AIへの指示が明確に
   </text>
-  <text x="1015" y="553" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="553" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     「T-04を実装して（T-03完了済み）」
   </text>
-  <text x="1015" y="571" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1015" y="571" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     → AIが前提条件を理解、スムーズに実装
   </text>
 
   <!-- Bottom: Legend -->
   <rect x="50" y="640" width="1310" height="130" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="705" y="675" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="705" y="675" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     凡例と読み方
   </text>
 
   <rect x="70" y="695" width="30" height="20" fill="#00AFF0" rx="3"/>
-  <text x="110" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="110" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     Layer 1: 独立タスク（並行実行可）
   </text>
 
   <rect x="370" y="695" width="30" height="20" fill="#00146E" rx="3"/>
-  <text x="410" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="410" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     Layer 2: Entity/Repository作成
   </text>
 
   <rect x="670" y="695" width="30" height="20" fill="#003399" rx="3"/>
-  <text x="710" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="710" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     Layer 3: Backend API（順次実行）
   </text>
 
   <rect x="1010" y="695" width="30" height="20" fill="#66D9FF" rx="3"/>
-  <text x="1050" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="1050" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     Layer 4: Frontend実装
   </text>
 
   <line x1="70" y1="740" x2="100" y2="740" stroke="#00146E" stroke-width="4"/>
   <polygon points="100,740 90,735 90,745" fill="#00146E"/>
-  <text x="110" y="745" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="110" y="745" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     直接依存（前提タスク完了必須）
   </text>
 
   <line x1="370" y1="740" x2="400" y2="740" stroke="#66D9FF" stroke-width="4" stroke-dasharray="5,3"/>
   <polygon points="400,740 390,735 390,745" fill="#66D9FF"/>
-  <text x="410" y="745" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="410" y="745" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     間接依存（完了推奨だが必須ではない）
   </text>
 </svg>

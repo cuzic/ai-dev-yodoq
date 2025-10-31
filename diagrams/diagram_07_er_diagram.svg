@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 910">
   <defs>
     <style>
-      .title { font-family: sans-serif; font-size: 81px; font-weight: bold; fill: #333; }
-      .table-title { font-family: sans-serif; font-size: 70px; font-weight: bold; fill: white; }
-      .field { font-family: monospace; font-size: 54px; fill: #333; }
+      .title { font-family: sans-serif; font-size: 48px; font-weight: bold; fill: #333; }
+      .table-title { font-family: sans-serif; font-size: 42px; font-weight: bold; fill: white; }
+      .field { font-family: monospace; font-size: 32px; fill: #333; }
     </style>
   </defs>
   <rect width="1000" height="700" fill="#FFF"/>
@@ -48,24 +48,24 @@
   
   <!-- Relationships -->
   <line x1="250" y1="175" x2="400" y2="175" stroke="#00AFF0" stroke-width="3"/>
-  <text x="325" y="165" style="font-size: 60px; fill: #00146E;">1</text>
-  <text x="380" y="165" style="font-size: 60px; fill: #00146E;">*</text>
+  <text x="325" y="165" style="font-size: 36px; fill: #00146E;">1</text>
+  <text x="380" y="165" style="font-size: 36px; fill: #00146E;">*</text>
   
   <line x1="250" y1="200" x2="750" y2="200" stroke="#00AFF0" stroke-width="3"/>
-  <text x="270" y="190" style="font-size: 60px; fill: #00146E;">1</text>
-  <text x="730" y="190" style="font-size: 60px; fill: #00146E;">*</text>
+  <text x="270" y="190" style="font-size: 36px; fill: #00146E;">1</text>
+  <text x="730" y="190" style="font-size: 36px; fill: #00146E;">*</text>
   
   <line x1="500" y1="280" x2="500" y2="400" stroke="#00AFF0" stroke-width="3"/>
-  <text x="510" y="340" style="font-size: 60px; fill: #00146E;">*</text>
+  <text x="510" y="340" style="font-size: 36px; fill: #00146E;">*</text>
   
   <line x1="750" y1="225" x2="600" y2="460" stroke="#00AFF0" stroke-width="3"/>
-  <text x="680" y="350" style="font-size: 60px; fill: #00146E;">*</text>
+  <text x="680" y="350" style="font-size: 36px; fill: #00146E;">*</text>
   
   <rect x="50" y="600" width="900" height="80" fill="#E6E6E6" rx="5"/>
-  <text x="500" y="630" style="font-family: sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="500" y="630" style="font-family: sans-serif; font-size: 42px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     リレーション: 1対多、多対多（中間テーブル）
   </text>
-  <text x="500" y="655" style="font-family: sans-serif; font-size: 60px; fill: #333; text-anchor: middle;">
+  <text x="500" y="655" style="font-family: sans-serif; font-size: 36px; fill: #333; text-anchor: middle;">
     PK=主キー、FK=外部キー、UNIQUE=一意制約
   </text>
 </svg>

@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 780">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
-      .phase-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
+      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; font-weight: bold; fill: white; }
+      .phase-text { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; }
     </style>
   </defs>
 
@@ -18,7 +18,7 @@
   <rect x="100" y="80" width="250" height="140" fill="#CC0000" opacity="0.3" rx="10"/>
   <rect x="110" y="90" width="230" height="120" fill="#CC0000" rx="10"/>
   <text x="225" y="120" class="phase-title" text-anchor="middle">1. Red</text>
-  <text x="225" y="145" class="phase-title" text-anchor="middle" font-size="28">(失敗するテストを書く)</text>
+  <text x="225" y="145" class="phase-title" text-anchor="middle" font-size="16">(失敗するテストを書く)</text>
 
   <text x="130" y="175" class="phase-text">• テストコード作成</text>
   <text x="130" y="192" class="phase-text">• 実行 → 失敗（赤）</text>
@@ -31,7 +31,7 @@
   <rect x="420" y="80" width="250" height="140" fill="#00AA00" opacity="0.3" rx="10"/>
   <rect x="430" y="90" width="230" height="120" fill="#00AA00" rx="10"/>
   <text x="545" y="120" class="phase-title" text-anchor="middle">2. Green</text>
-  <text x="545" y="145" class="phase-title" text-anchor="middle" font-size="28">(最小実装)</text>
+  <text x="545" y="145" class="phase-title" text-anchor="middle" font-size="16">(最小実装)</text>
 
   <text x="450" y="175" class="phase-text">• 最小限のコード</text>
   <text x="450" y="192" class="phase-text">• テストが通る（緑）</text>
@@ -44,82 +44,82 @@
   <rect x="740" y="80" width="350" height="140" fill="#00AFF0" opacity="0.3" rx="10"/>
   <rect x="750" y="90" width="330" height="120" fill="#00AFF0" rx="10"/>
   <text x="915" y="120" class="phase-title" text-anchor="middle">3. Refactor</text>
-  <text x="915" y="145" class="phase-title" text-anchor="middle" font-size="28">(改善 - ここでリファクタリング！)</text>
+  <text x="915" y="145" class="phase-title" text-anchor="middle" font-size="16">(改善 - ここでリファクタリング！)</text>
 
   <text x="770" y="175" class="phase-text">• コード品質向上</text>
   <text x="770" y="192" class="phase-text">• テストが保証するから安心</text>
 
   <!-- When to Refactor section -->
   <rect x="100" y="260" width="1000" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="600" y="290" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="600" y="290" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     いつリファクタリングすべきか？
   </text>
 
   <!-- Good timing -->
   <rect x="100" y="330" width="480" height="220" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
-  <text x="340" y="360" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+  <text x="340" y="360" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
     ✓ リファクタリングすべきタイミング
   </text>
 
-  <text x="120" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="120" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     1. Greenフェーズの直後（テストが通った後）
   </text>
-  <text x="130" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="130" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     → テストが保証するから安心してリファクタできる
   </text>
 
-  <text x="120" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="120" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     2. コードレビューで改善点が見つかった時
   </text>
-  <text x="130" y="460" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="130" y="460" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     → AI自己レビュー後、改善提案があれば即座に対応
   </text>
 
-  <text x="120" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="120" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     3. 重複コードを発見した時
   </text>
   <text x="130" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size": 11px; fill: #333333;">
     → DRY原則違反を即座に解消
   </text>
 
-  <text x="130" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00AA00; font-weight: bold;">
+  <text x="130" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00AA00; font-weight: bold;">
     → 必ずテスト全実行して確認！
   </text>
 
   <!-- Bad timing -->
   <rect x="620" y="330" width="480" height="220" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
-  <text x="860" y="360" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+  <text x="860" y="360" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
     ✗ リファクタリングすべきでないタイミング
   </text>
 
-  <text x="640" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="640" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     1. テストが通っていない時
   </text>
-  <text x="650" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="650" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     → 何が壊れているかわからなくなる（危険）
   </text>
 
-  <text x="640" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="640" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     2. テストがない時
   </text>
-  <text x="650" y="460" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="650" y="460" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     → デグレを検出できない（最も危険）
   </text>
 
-  <text x="640" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="640" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     3. 新機能追加と同時
   </text>
-  <text x="650" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="650" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     → 問題の原因特定が困難になる
   </text>
 
-  <text x="650" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #CC0000; font-weight: bold;">
+  <text x="650" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #CC0000; font-weight: bold;">
     → 必ずテストを先に書く！
   </text>
 
   <!-- Bottom summary -->
   <rect x="100" y="565" width="1000" height="25" fill="#00AFF0" rx="5"/>
-  <text x="600" y="583" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="600" y="583" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     原則: Green（テスト通過）→ Refactor（改善）→ テスト全実行 → コミット
   </text>
 </svg>

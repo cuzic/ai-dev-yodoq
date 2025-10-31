@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2080 1170">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .activity-title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: white; }
-      .story-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
+      .activity-title { font-family: 'Noto Sans JP', sans-serif; font-size: 38px; font-weight: bold; fill: white; }
+      .story-text { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white; }
     </style>
   </defs>
 
@@ -14,7 +14,7 @@
   <text x="800" y="40" class="title" text-anchor="middle">ユーザーストーリーマッピング構造（ECサイト例）</text>
 
   <!-- User Activities (Top level) -->
-  <text x="50" y="90" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; font-weight: bold;">
+  <text x="50" y="90" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; font-weight: bold;">
     ユーザー活動
   </text>
   <line x1="50" y1="95" x2="1550" y2="95" stroke="#00146E" stroke-width="3"/>
@@ -22,46 +22,46 @@
   <!-- Activity 1: Browse -->
   <rect x="200" y="110" width="250" height="60" fill="#00AFF0" rx="8"/>
   <text x="325" y="135" class="activity-title" text-anchor="middle">1. 商品を探す</text>
-  <text x="325" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+  <text x="325" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
     (Browse Products)
   </text>
 
   <!-- Activity 2: Select -->
   <rect x="480" y="110" width="250" height="60" fill="#00AFF0" rx="8"/>
   <text x="605" y="135" class="activity-title" text-anchor="middle">2. カートに入れる</text>
-  <text x="605" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+  <text x="605" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
     (Add to Cart)
   </text>
 
   <!-- Activity 3: Purchase -->
   <rect x="760" y="110" width="250" height="60" fill="#00AFF0" rx="8"/>
   <text x="885" y="135" class="activity-title" text-anchor="middle">3. 購入する</text>
-  <text x="885" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+  <text x="885" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
     (Checkout)
   </text>
 
   <!-- Activity 4: Track -->
   <rect x="1040" y="110" width="250" height="60" fill="#00AFF0" rx="8"/>
   <text x="1165" y="135" class="activity-title" text-anchor="middle">4. 配送を追跡</text>
-  <text x="1165" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+  <text x="1165" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
     (Track Delivery)
   </text>
 
   <!-- Activity 5: Manage -->
   <rect x="1320" y="110" width="220" height="60" fill="#00AFF0" rx="8"/>
   <text x="1430" y="135" class="activity-title" text-anchor="middle">5. アカウント管理</text>
-  <text x="1430" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+  <text x="1430" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
     (Manage Account)
   </text>
 
   <!-- Priority levels -->
-  <text x="50" y="210" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; font-weight: bold;">
+  <text x="50" y="210" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; font-weight: bold;">
     優先度
   </text>
 
   <!-- MVP Line -->
   <line x1="180" y1="390" x2="1550" y2="390" stroke="#CC0000" stroke-width="4" stroke-dasharray="10,5"/>
-  <text x="80" y="395" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #CC0000; font-weight: bold;">
+  <text x="80" y="395" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #CC0000; font-weight: bold;">
     MVP線
   </text>
 
@@ -152,76 +152,76 @@
 
   <!-- Release Planning -->
   <rect x="50" y="520" width="1500" height="350" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="800" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="800" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     リリース計画（MVP線以下は後回し）
   </text>
 
   <!-- Sprint 1 -->
   <rect x="70" y="575" width="450" height="140" fill="#00146E" rx="8"/>
-  <text x="295" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="295" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
     Sprint 1（2週間）: MVP リリース
   </text>
-  <text x="90" y="625" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="90" y="625" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     ✓ Must Have のみ実装（MVP線の上）
   </text>
-  <text x="100" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • 商品一覧/詳細、カート、決済、注文履歴、ログイン
   </text>
-  <text x="90" y="670" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="90" y="670" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     成果:
   </text>
-  <text x="100" y="688" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="688" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 最小限のECサイトとして動作、ユーザー反応収集
   </text>
 
   <!-- Sprint 2 -->
   <rect x="540" y="575" width="450" height="140" fill="#003399" rx="8"/>
-  <text x="765" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="765" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
     Sprint 2（2週間）: 機能拡張
   </text>
-  <text x="560" y="625" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="560" y="625" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     ✓ Should Have 実装（ユーザーフィードバック反映）
   </text>
-  <text x="570" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="570" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • 検索機能、カート保存、複数決済、メール通知
   </text>
-  <text x="560" y="670" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="560" y="670" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     成果:
   </text>
-  <text x="570" y="688" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="570" y="688" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 使いやすさ向上、コンバージョン率改善
   </text>
 
   <!-- Sprint 3 -->
   <rect x="1010" y="575" width="520" height="140" fill="#66D9FF" rx="8"/>
-  <text x="1270" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1270" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
     Sprint 3+（優先度による）: 差別化機能
   </text>
-  <text x="1030" y="625" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1030" y="625" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     ✓ Could Have 実装（ビジネス価値に応じて選択）
   </text>
-  <text x="1040" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1040" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • レコメンド、お気に入り、ギフト、リアルタイム追跡
   </text>
-  <text x="1030" y="670" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="1030" y="670" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     成果:
   </text>
-  <text x="1040" y="688" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1040" y="688" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 競合他社との差別化、顧客満足度向上
   </text>
 
   <!-- Benefits -->
   <rect x="70" y="735" width="1460" height="120" fill="#00AFF0" rx="8"/>
-  <text x="800" y="760" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="800" y="760" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: white; text-anchor: middle; font-weight: bold;">
     ユーザーストーリーマッピングのメリット
   </text>
-  <text x="90" y="785" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
+  <text x="90" y="785" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white;">
     1. 全体像の可視化: ユーザージャーニー全体を俯瞰 → 抜け漏れ防止
   </text>
-  <text x="90" y="808" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
+  <text x="90" y="808" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white;">
     2. 優先順位付け: MoSCoWで優先度明確化 → MVP（最小実用製品）を早期リリース
   </text>
-  <text x="90" y="831" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
+  <text x="90" y="831" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white;">
     3. チーム共通理解: 誰が見ても同じ理解 → AIへの指示も明確、手戻り削減
   </text>
 </svg>

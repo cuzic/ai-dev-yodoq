@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1170">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .doc-title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: white; }
-      .doc-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
+      .doc-title { font-family: 'Noto Sans JP', sans-serif; font-size: 38px; font-weight: bold; fill: white; }
+      .doc-text { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white; }
     </style>
   </defs>
 
@@ -15,13 +15,13 @@
 
   <!-- Concept -->
   <rect x="50" y="70" width="1300" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="100" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="700" y="100" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     コードから自動生成 → 常に最新 → メンテナンス不要
   </text>
 
   <!-- Layer 1: Source Code -->
   <rect x="50" y="160" width="1300" height="120" fill="#00146E" rx="10"/>
-  <text x="700" y="190" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="700" y="190" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: white; text-anchor: middle; font-weight: bold;">
     Layer 1: ソースコード（唯一の真実の源）
   </text>
 
@@ -40,169 +40,169 @@
   <!-- Arrow Layer 1 to 2 -->
   <line x1="700" y1="280" x2="700" y2="320" stroke="#00146E" stroke-width="6"/>
   <polygon points="700,320 695,310 705,310" fill="#00146E"/>
-  <text x="720" y="305" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; font-weight: bold;">
+  <text x="720" y="305" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E; font-weight: bold;">
     自動生成
   </text>
 
   <!-- Layer 2: Generated Docs -->
   <rect x="50" y="320" width="1300" height="160" fill="#00AFF0" rx="10"/>
-  <text x="700" y="350" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="700" y="350" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: white; text-anchor: middle; font-weight: bold;">
     Layer 2: 自動生成ドキュメント（コードと100%同期）
   </text>
 
   <!-- API Docs -->
   <rect x="80" y="370" width="250" height="90" fill="#66D9FF" rx="5"/>
-  <text x="205" y="393" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="205" y="393" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     API仕様書
   </text>
-  <text x="100" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="100" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     • Swagger UI
   </text>
-  <text x="100" y="428" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="100" y="428" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     • OpenAPI 3.0 YAML
   </text>
-  <text x="100" y="443" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="100" y="443" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     → @ApiOperation から生成
   </text>
 
   <!-- Test Report -->
   <rect x="350" y="370" width="250" height="90" fill="#66D9FF" rx="5"/>
-  <text x="475" y="393" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="475" y="393" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     テストレポート
   </text>
-  <text x="370" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="370" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     • JaCoCo カバレッジ
   </text>
-  <text x="370" y="428" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="370" y="428" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     • JUnit レポート
   </text>
-  <text x="370" y="443" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="370" y="443" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     → テストコードから生成
   </text>
 
   <!-- Code Docs -->
   <rect x="620" y="370" width="250" height="90" fill="#66D9FF" rx="5"/>
-  <text x="745" y="393" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="745" y="393" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     コードドキュメント
   </text>
-  <text x="640" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="640" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     • JavaDoc HTML
   </text>
-  <text x="640" y="428" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="640" y="428" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     • TypeDoc
   </text>
-  <text x="640" y="443" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="640" y="443" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     → コメントから生成
   </text>
 
   <!-- DB Docs -->
   <rect x="890" y="370" width="250" height="90" fill="#66D9FF" rx="5"/>
-  <text x="1015" y="393" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="1015" y="393" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     DB仕様書
   </text>
-  <text x="910" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="910" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     • ER図
   </text>
-  <text x="910" y="428" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="910" y="428" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     • テーブル定義書
   </text>
-  <text x="910" y="443" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="910" y="443" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     → JPA Entity から生成
   </text>
 
   <!-- Comparison: Traditional vs Living -->
   <rect x="50" y="510" width="630" height="360" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
-  <text x="365" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+  <text x="365" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
     ✗ 従来のドキュメント管理
   </text>
 
   <rect x="70" y="560" width="590" height="290" fill="#CC0000" rx="8"/>
-  <text x="90" y="585" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
+  <text x="90" y="585" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; font-weight: bold;">
     問題点:
   </text>
 
-  <text x="100" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="100" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     1. 手動更新が必要 → 忘れる
   </text>
-  <text x="110" y="630" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="110" y="630" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     例: コード変更後、Excel仕様書の更新を忘れる
   </text>
 
-  <text x="100" y="660" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="100" y="660" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     2. コードとドキュメントの乖離
   </text>
-  <text x="110" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="110" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     例: 実装は既に変更されているが、仕様書は古いまま
   </text>
-  <text x="110" y="695" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="110" y="695" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 新メンバーが古い仕様書を信じて誤実装
   </text>
 
-  <text x="100" y="720" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="100" y="720" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     3. メンテナンスコストが高い
   </text>
-  <text x="110" y="740" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="110" y="740" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     例: API追加毎に、Word仕様書・Excel定義書・
   </text>
-  <text x="115" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="115" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     Confluence・社内Wikiを全て手動更新
   </text>
-  <text x="110" y="775" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="110" y="775" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 1機能追加に2時間のドキュメント更新作業
   </text>
 
-  <text x="100" y="805" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="100" y="805" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     4. 誰も信用しなくなる
   </text>
-  <text x="110" y="825" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="110" y="825" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     「ドキュメントは古いから、結局コード読むしかない」
   </text>
 
   <!-- Living Documentation -->
   <rect x="720" y="510" width="630" height="360" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
-  <text x="1035" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+  <text x="1035" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
     ✓ Living Documentation
   </text>
 
   <rect x="740" y="560" width="590" height="290" fill="#00AA00" rx="8"/>
-  <text x="760" y="585" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
+  <text x="760" y="585" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; font-weight: bold;">
     メリット:
   </text>
 
-  <text x="770" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="770" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     1. 自動更新 → 忘れない
   </text>
-  <text x="780" y="630" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="780" y="630" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     コミット時にCI/CDが自動生成 → 常に最新
   </text>
 
-  <text x="770" y="660" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="770" y="660" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     2. コードとドキュメントが100%同期
   </text>
-  <text x="780" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="780" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     コードが変われば、ドキュメントも即座に変わる
   </text>
-  <text x="780" y="695" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="780" y="695" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 乖離が発生しない（唯一の真実の源）
   </text>
 
-  <text x="770" y="720" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="770" y="720" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     3. メンテナンスコストがゼロ
   </text>
-  <text x="780" y="740" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="780" y="740" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     手動更新不要 → 開発者は実装に集中できる
   </text>
-  <text x="780" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="780" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 1機能追加に0時間のドキュメント更新
   </text>
-  <text x="780" y="775" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="780" y="775" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 年間数百時間の削減効果
   </text>
 
-  <text x="770" y="805" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="770" y="805" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     4. 信頼性が高い
   </text>
-  <text x="780" y="825" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="780" y="825" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     「Swagger見れば最新のAPI仕様がわかる」
   </text>
 </svg>

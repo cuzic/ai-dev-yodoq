@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2080 1300">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .section-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
-      .task-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
+      .section-title { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; font-weight: bold; fill: white; }
+      .task-text { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; }
     </style>
   </defs>
 
@@ -15,46 +15,46 @@
 
   <!-- Template header -->
   <rect x="50" y="80" width="1500" height="50" fill="#00146E" rx="10"/>
-  <text x="70" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; font-weight: bold;">
+  <text x="70" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; font-weight: bold;">
     機能: ToDoアプリ（タスク管理システム）
   </text>
-  <text x="1300" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white;">
+  <text x="1300" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white;">
     想定工数: 8時間（1日）
   </text>
 
   <!-- Task list table header -->
   <rect x="50" y="150" width="60" height="40" fill="#00AFF0"/>
-  <text x="80" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="80" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle; font-weight: bold;">
     ID
   </text>
 
   <rect x="110" y="150" width="400" height="40" fill="#00AFF0"/>
-  <text x="310" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="310" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle; font-weight: bold;">
     タスク名
   </text>
 
   <rect x="510" y="150" width="500" height="40" fill="#00AFF0"/>
-  <text x="760" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="760" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle; font-weight: bold;">
     実装内容
   </text>
 
   <rect x="1010" y="150" width="150" height="40" fill="#00AFF0"/>
-  <text x="1085" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1085" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle; font-weight: bold;">
     前提タスク
   </text>
 
   <rect x="1160" y="150" width="100" height="40" fill="#00AFF0"/>
-  <text x="1210" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1210" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle; font-weight: bold;">
     工数（分）
   </text>
 
   <rect x="1260" y="150" width="100" height="40" fill="#00AFF0"/>
-  <text x="1310" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1310" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle; font-weight: bold;">
     優先度
   </text>
 
   <rect x="1360" y="150" width="190" height="40" fill="#00AFF0"/>
-  <text x="1455" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1455" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle; font-weight: bold;">
     成果物
   </text>
 
@@ -266,73 +266,73 @@
 
   <!-- Summary section -->
   <rect x="50" y="620" width="1500" height="350" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="800" y="655" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="800" y="655" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     タスク一覧テンプレートの活用ポイント
   </text>
 
   <!-- Point 1 -->
   <rect x="70" y="675" width="710" height="140" fill="#00AFF0" rx="8"/>
-  <text x="425" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="425" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
     1. AIへの指示が明確になる
   </text>
-  <text x="90" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="90" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     各タスクをAIに渡す際、実装内容・成果物が明記されているため、
   </text>
-  <text x="90" y="743" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="90" y="743" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     曖昧さがなく正確なコードが生成される。
   </text>
-  <text x="90" y="770" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+  <text x="90" y="770" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
     プロンプト例:
   </text>
-  <text x="100" y="790" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">
+  <text x="100" y="790" style="font-family: 'Courier New', monospace; font-size: 30px; fill: white;">
     「T-03のタスクを実装して（詳細は上記参照）」
   </text>
 
   <!-- Point 2 -->
   <rect x="800" y="675" width="730" height="140" fill="#003399" rx="8"/>
-  <text x="1165" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1165" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
     2. 依存関係の可視化
   </text>
-  <text x="820" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="820" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     前提タスク列により、どのタスクから着手すべきか一目瞭然。
   </text>
-  <text x="820" y="743" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="820" y="743" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     T-01 → T-02 → T-03 → T-04 → ... の順で進める。
   </text>
-  <text x="820" y="770" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+  <text x="820" y="770" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
     メリット:
   </text>
-  <text x="830" y="790" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="830" y="790" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     並行作業できない箇所を事前把握、手戻り防止
   </text>
 
   <!-- Point 3 -->
   <rect x="70" y="835" width="710" height="120" fill="#00146E" rx="8"/>
-  <text x="425" y="860" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="425" y="860" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
     3. 進捗管理が容易
   </text>
-  <text x="90" y="885" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="90" y="885" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     工数列により、完了タスクの累積時間から進捗率を算出可能。
   </text>
-  <text x="90" y="903" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="90" y="903" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     例: T-01～T-04完了（180分/480分） → 進捗率37.5%
   </text>
-  <text x="90" y="925" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="90" y="925" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     → チーム共有時に「あと何時間で完成か」を明示できる
   </text>
 
   <!-- Point 4 -->
   <rect x="800" y="835" width="730" height="120" fill="#66D9FF" rx="8"/>
-  <text x="1165" y="860" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1165" y="860" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
     4. インクリメンタル開発との連携
   </text>
-  <text x="820" y="885" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="820" y="885" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     T-03完了時点で「一覧表示」が動作確認可能（Increment 1）
   </text>
-  <text x="820" y="903" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="820" y="903" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     T-04完了時点で「新規作成」が動作確認可能（Increment 2）
   </text>
-  <text x="820" y="925" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="820" y="925" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     → 30分～60分毎に成果が見える、モチベーション維持
   </text>
 </svg>

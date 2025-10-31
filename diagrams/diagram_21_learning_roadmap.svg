@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 910">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
-      .phase-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
-      .milestone-text { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; font-weight: bold; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
+      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; font-weight: bold; fill: white; }
+      .phase-text { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; }
+      .milestone-text { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E; font-weight: bold; }
     </style>
   </defs>
 
@@ -22,7 +22,7 @@
   <circle cx="200" cy="350" r="15" fill="#00146E"/>
   <rect x="100" y="120" width="280" height="200" fill="#00AFF0" rx="10"/>
   <text x="240" y="155" class="phase-title" text-anchor="middle">Phase 1: 基礎習得</text>
-  <text x="240" y="180" class="phase-title" text-anchor="middle" font-size="28">（0-1ヶ月）</text>
+  <text x="240" y="180" class="phase-title" text-anchor="middle" font-size="16">（0-1ヶ月）</text>
 
   <text x="120" y="210" class="phase-text">目標:</text>
   <text x="130" y="230" class="phase-text">• Claude Code基本操作</text>
@@ -35,14 +35,14 @@
   <!-- Milestone 1 -->
   <rect x="130" y="380" width="140" height="60" fill="#E6E6E6" stroke="#00AFF0" stroke-width="3" rx="5"/>
   <text x="200" y="400" class="milestone-text" text-anchor="middle">マイルストーン</text>
-  <text x="200" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">ToDoアプリ</text>
-  <text x="200" y="433" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">完成</text>
+  <text x="200" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">ToDoアプリ</text>
+  <text x="200" y="433" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">完成</text>
 
   <!-- Phase 2: Intermediate (1-3 months) -->
   <circle cx="520" cy="350" r="15" fill="#00146E"/>
   <rect x="420" y="100" width="280" height="220" fill="#003399" rx="10"/>
   <text x="560" y="135" class="phase-title" text-anchor="middle">Phase 2: 実践力強化</text>
-  <text x="560" y="160" class="phase-title" text-anchor="middle" font-size="28">（1-3ヶ月）</text>
+  <text x="560" y="160" class="phase-title" text-anchor="middle" font-size="16">（1-3ヶ月）</text>
 
   <text x="440" y="190" class="phase-text">目標:</text>
   <text x="450" y="210" class="phase-text">• 実務レベルの実装</text>
@@ -56,15 +56,15 @@
   <!-- Milestone 2 -->
   <rect x="450" y="380" width="140" height="80" fill="#E6E6E6" stroke="#003399" stroke-width="3" rx="5"/>
   <text x="520" y="400" class="milestone-text" text-anchor="middle">マイルストーン</text>
-  <text x="520" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">既存システムに</text>
-  <text x="520" y="433" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">新機能追加</text>
-  <text x="520" y="448" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">デグレなし</text>
+  <text x="520" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">既存システムに</text>
+  <text x="520" y="433" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">新機能追加</text>
+  <text x="520" y="448" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">デグレなし</text>
 
   <!-- Phase 3: Advanced (3-6 months) -->
   <circle cx="840" cy="350" r="15" fill="#00146E"/>
   <rect x="740" y="80" width="280" height="240" fill="#00146E" rx="10"/>
   <text x="880" y="115" class="phase-title" text-anchor="middle">Phase 3: マスター</text>
-  <text x="880" y="140" class="phase-title" text-anchor="middle" font-size="28">（3-6ヶ月）</text>
+  <text x="880" y="140" class="phase-title" text-anchor="middle" font-size="16">（3-6ヶ月）</text>
 
   <text x="760" y="170" class="phase-text">目標:</text>
   <text x="770" y="190" class="phase-text">• チームに知見共有</text>
@@ -79,16 +79,16 @@
   <!-- Milestone 3 -->
   <rect x="770" y="380" width="140" height="95" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="5"/>
   <text x="840" y="400" class="milestone-text" text-anchor="middle">マイルストーン</text>
-  <text x="840" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">大規模プロジェクト</text>
-  <text x="840" y="433" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">リード</text>
-  <text x="840" y="448" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">チームメンバー育成</text>
-  <text x="840" y="463" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">ベストプラクティス確立</text>
+  <text x="840" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">大規模プロジェクト</text>
+  <text x="840" y="433" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">リード</text>
+  <text x="840" y="448" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">チームメンバー育成</text>
+  <text x="840" y="463" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">ベストプラクティス確立</text>
 
   <!-- Continuous Improvement -->
   <circle cx="1050" cy="350" r="15" fill="#66D9FF"/>
   <rect x="960" y="120" width="200" height="200" fill="#66D9FF" rx="10"/>
   <text x="1060" y="155" class="phase-title" text-anchor="middle">継続的改善</text>
-  <text x="1060" y="180" class="phase-title" text-anchor="middle" font-size="28">（6ヶ月以降）</text>
+  <text x="1060" y="180" class="phase-title" text-anchor="middle" font-size="16">（6ヶ月以降）</text>
 
   <text x="980" y="210" class="phase-text">活動:</text>
   <text x="990" y="230" class="phase-text">• 最新AI技術</text>
@@ -99,50 +99,50 @@
 
   <!-- Bottom: Key Resources -->
   <rect x="50" y="510" width="1100" height="160" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="600" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="600" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     学習リソース
   </text>
 
   <!-- Resources in 3 columns -->
   <rect x="80" y="565" width="310" height="85" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5"/>
-  <text x="235" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="235" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     公式ドキュメント
   </text>
-  <text x="100" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="100" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     • Claude Code公式ドキュメント
   </text>
-  <text x="100" y="627" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="100" y="627" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     • Anthropic API Reference
   </text>
-  <text x="100" y="644" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="100" y="644" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     • プロンプトエンジニアリングガイド
   </text>
 
   <rect x="420" y="565" width="310" height="85" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5"/>
-  <text x="575" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="575" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     実践演習
   </text>
-  <text x="440" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="440" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     • サンプルプロジェクト実装
   </text>
-  <text x="440" y="627" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="440" y="627" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     • 既存コードリファクタリング
   </text>
-  <text x="440" y="644" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="440" y="644" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     • オープンソースコントリビュート
   </text>
 
   <rect x="760" y="565" width="310" height="85" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5"/>
-  <text x="915" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="915" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     コミュニティ
   </text>
-  <text x="780" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="780" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     • 社内勉強会・ナレッジ共有
   </text>
-  <text x="780" y="627" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="780" y="627" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     • 外部コミュニティ参加
   </text>
-  <text x="780" y="644" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="780" y="644" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     • カンファレンス・セミナー参加
   </text>
 </svg>

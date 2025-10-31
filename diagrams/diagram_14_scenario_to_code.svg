@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 650">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
-      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; }
-      .text { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; }
-      .code { font-family: 'Courier New', monospace; font-size: 50px; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #333333; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; font-weight: bold; }
+      .text { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; }
+      .code { font-family: 'Courier New', monospace; font-size: 30px; }
     </style>
   </defs>
 
@@ -23,16 +23,16 @@
   <text x="60" y="185" class="text" fill="#00146E" font-weight="bold">シナリオ例（Markdown形式）:</text>
 
   <text x="60" y="215" class="text" fill="#333333" font-weight="bold">1. 正常系:</text>
-  <text x="70" y="235" class="text" fill="#333333" font-size="24">正しいメール・パスワードで</text>
-  <text x="70" y="250" class="text" fill="#333333" font-size="24">ログイン成功</text>
+  <text x="70" y="235" class="text" fill="#333333" font-size="14">正しいメール・パスワードで</text>
+  <text x="70" y="250" class="text" fill="#333333" font-size="14">ログイン成功</text>
 
   <text x="60" y="280" class="text" fill="#333333" font-weight="bold">2. 異常系:</text>
-  <text x="70" y="300" class="text" fill="#333333" font-size="24">間違ったパスワードで</text>
-  <text x="70" y="315" class="text" fill="#333333" font-size="24">ログイン失敗</text>
+  <text x="70" y="300" class="text" fill="#333333" font-size="14">間違ったパスワードで</text>
+  <text x="70" y="315" class="text" fill="#333333" font-size="14">ログイン失敗</text>
 
   <text x="60" y="345" class="text" fill="#333333" font-weight="bold">3. 境界値:</text>
-  <text x="70" y="365" class="text" fill="#333333" font-size="24">パスワード長7文字（NG）</text>
-  <text x="70" y="380" class="text" fill="#333333" font-size="24">8文字（OK）</text>
+  <text x="70" y="365" class="text" fill="#333333" font-size="14">パスワード長7文字（NG）</text>
+  <text x="70" y="380" class="text" fill="#333333" font-size="14">8文字（OK）</text>
 
   <!-- Center: AI Conversion -->
   <rect x="360" y="180" width="280" height="160" fill="#00AFF0" rx="10"/>
@@ -77,7 +77,7 @@
 
   <!-- Bottom note -->
   <rect x="30" y="450" width="940" height="40" fill="#FFFFFF" stroke="#00146E" stroke-width="3" rx="5"/>
-  <text x="500" y="475" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="500" y="475" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     効果: テストシナリオで全体像把握 → AIが網羅的にテストコード生成
   </text>
 </svg>

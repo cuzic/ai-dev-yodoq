@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1040">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
-      .quadrant-title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: white; }
-      .quadrant-text { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; }
-      .axis-label { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: #00146E; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #333333; }
+      .quadrant-title { font-family: 'Noto Sans JP', sans-serif; font-size: 43px; font-weight: bold; fill: white; }
+      .quadrant-text { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; }
+      .axis-label { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; font-weight: bold; fill: #00146E; }
     </style>
   </defs>
 
@@ -26,16 +26,16 @@
   <polygon points="400,150 395,160 405,160" fill="#00146E"/>
 
   <!-- Axis labels -->
-  <text x="250" y="120" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle;">異常・例外</text>
-  <text x="550" y="120" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle;">正常</text>
+  <text x="250" y="120" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle;">異常・例外</text>
+  <text x="550" y="120" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle;">正常</text>
 
-  <text x="120" y="280" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle;">境界</text>
-  <text x="120" y="520" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle;">一般</text>
+  <text x="120" y="280" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle;">境界</text>
+  <text x="120" y="520" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle;">一般</text>
 
   <!-- Quadrant 1: 正常系 (Top-Right) -->
   <rect x="410" y="160" width="230" height="230" fill="#00AFF0" rx="10"/>
   <text x="525" y="200" class="quadrant-title" text-anchor="middle">1. 正常系</text>
-  <text x="525" y="225" class="quadrant-title" text-anchor="middle" font-size="28">(Happy Path)</text>
+  <text x="525" y="225" class="quadrant-title" text-anchor="middle" font-size="16">(Happy Path)</text>
 
   <text x="430" y="260" class="quadrant-text">• 想定通りの入力</text>
   <text x="430" y="280" class="quadrant-text">• 基本フロー確認</text>
@@ -47,7 +47,7 @@
   <!-- Quadrant 2: 異常系 (Top-Left) -->
   <rect x="160" y="160" width="230" height="230" fill="#00146E" rx="10"/>
   <text x="275" y="200" class="quadrant-title" text-anchor="middle">2. 異常系</text>
-  <text x="275" y="225" class="quadrant-title" text-anchor="middle" font-size="28">(Unhappy Path)</text>
+  <text x="275" y="225" class="quadrant-title" text-anchor="middle" font-size="16">(Unhappy Path)</text>
 
   <text x="180" y="260" class="quadrant-text">• 不正な入力</text>
   <text x="180" y="280" class="quadrant-text">• エラー処理確認</text>
@@ -59,7 +59,7 @@
   <!-- Quadrant 3: 境界値 (Bottom-Right) -->
   <rect x="410" y="410" width="230" height="230" fill="#003399" rx="10"/>
   <text x="525" y="450" class="quadrant-title" text-anchor="middle">3. 境界値</text>
-  <text x="525" y="475" class="quadrant-title" text-anchor="middle" font-size="28">(Boundary)</text>
+  <text x="525" y="475" class="quadrant-title" text-anchor="middle" font-size="16">(Boundary)</text>
 
   <text x="430" y="510" class="quadrant-text">• 最小・最大値</text>
   <text x="430" y="530" class="quadrant-text">• 閾値前後</text>
@@ -71,7 +71,7 @@
   <!-- Quadrant 4: 例外処理 (Bottom-Left) -->
   <rect x="160" y="410" width="230" height="230" fill="#4D6DB3" rx="10"/>
   <text x="275" y="450" class="quadrant-title" text-anchor="middle">4. 例外処理</text>
-  <text x="275" y="475" class="quadrant-title" text-anchor="middle" font-size="28">(Exception)</text>
+  <text x="275" y="475" class="quadrant-title" text-anchor="middle" font-size="16">(Exception)</text>
 
   <text x="180" y="510" class="quadrant-text">• システムエラー</text>
   <text x="180" y="530" class="quadrant-text">• 外部要因</text>
@@ -82,13 +82,13 @@
 
   <!-- Bottom note -->
   <rect x="50" y="680" width="700" height="80" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="400" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="400" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     4分類で網羅的なテスト設計
   </text>
-  <text x="400" y="735" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle;">
+  <text x="400" y="735" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333; text-anchor: middle;">
     AIに「この4分類でテストシナリオを作成して」と指示すれば、
   </text>
-  <text x="400" y="752" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle;">
+  <text x="400" y="752" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333; text-anchor: middle;">
     漏れのないテストケースが自動生成される
   </text>
 </svg>

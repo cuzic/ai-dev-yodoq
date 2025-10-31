@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1040">
   <rect width="800" height="800" fill="#FFF"/>
-  <text x="400" y="30" style="font-size: 81px; font-weight: bold; fill: #333; text-anchor: middle;">ログイン機能シーケンス図</text>
+  <text x="400" y="30" style="font-size: 48px; font-weight: bold; fill: #333; text-anchor: middle;">ログイン機能シーケンス図</text>
   
-  <text x="100" y="70" style="font-size: 70px; font-weight: bold; fill: #00146E;">ユーザー</text>
-  <text x="250" y="70" style="font-size: 70px; font-weight: bold; fill: #00146E;">フロントエンド</text>
-  <text x="450" y="70" style="font-size: 70px; font-weight: bold; fill: #00146E;">API</text>
-  <text x="650" y="70" style="font-size: 70px; font-weight: bold; fill: #00146E;">DB</text>
+  <text x="100" y="70" style="font-size: 42px; font-weight: bold; fill: #00146E;">ユーザー</text>
+  <text x="250" y="70" style="font-size: 42px; font-weight: bold; fill: #00146E;">フロントエンド</text>
+  <text x="450" y="70" style="font-size: 42px; font-weight: bold; fill: #00146E;">API</text>
+  <text x="650" y="70" style="font-size: 42px; font-weight: bold; fill: #00146E;">DB</text>
   
   <line x1="100" y1="80" x2="100" y2="700" stroke="#E6E6E6" stroke-width="3" stroke-dasharray="5,5"/>
   <line x1="250" y1="80" x2="250" y2="700" stroke="#E6E6E6" stroke-width="3" stroke-dasharray="5,5"/>
@@ -14,40 +14,40 @@
   
   <line x1="100" y1="120" x2="250" y2="120" stroke="#00146E" stroke-width="3"/>
   <polygon points="250,120 240,115 240,125" fill="#00146E"/>
-  <text x="175" y="110" style="font-size: 54px; fill: #333;">1. メール・パスワード入力</text>
+  <text x="175" y="110" style="font-size: 32px; fill: #333;">1. メール・パスワード入力</text>
   
   <line x1="250" y1="180" x2="450" y2="180" stroke="#00146E" stroke-width="3"/>
   <polygon points="450,180 440,175 440,185" fill="#00146E"/>
-  <text x="350" y="170" style="font-size: 54px; fill: #333;">2. POST /api/login</text>
+  <text x="350" y="170" style="font-size: 32px; fill: #333;">2. POST /api/login</text>
   
   <line x1="450" y1="240" x2="650" y2="240" stroke="#00AFF0" stroke-width="3"/>
   <polygon points="650,240 640,235 640,245" fill="#00AFF0"/>
-  <text x="550" y="230" style="font-size: 54px; fill: #333;">3. SELECT user</text>
+  <text x="550" y="230" style="font-size: 32px; fill: #333;">3. SELECT user</text>
   
   <line x1="650" y1="300" x2="450" y2="300" stroke="#00AFF0" stroke-width="3" stroke-dasharray="3,3"/>
   <polygon points="450,300 460,295 460,305" fill="#00AFF0"/>
-  <text x="550" y="290" style="font-size: 54px; fill: #333;">4. user情報</text>
+  <text x="550" y="290" style="font-size: 32px; fill: #333;">4. user情報</text>
   
   <rect x="420" y="340" width="60" height="60" fill="#003399"/>
-  <text x="450" y="365" style="font-size: 50px; fill: white; text-anchor: middle;">パスワード</text>
-  <text x="450" y="380" style="font-size: 50px; fill: white; text-anchor: middle;">検証</text>
-  <text x="450" y="395" style="font-size: 50px; fill: white; text-anchor: middle;">(bcrypt)</text>
+  <text x="450" y="365" style="font-size: 30px; fill: white; text-anchor: middle;">パスワード</text>
+  <text x="450" y="380" style="font-size: 30px; fill: white; text-anchor: middle;">検証</text>
+  <text x="450" y="395" style="font-size: 30px; fill: white; text-anchor: middle;">(bcrypt)</text>
   
   <rect x="420" y="440" width="60" height="40" fill="#00AFF0"/>
-  <text x="450" y="460" style="font-size: 50px; fill: white; text-anchor: middle;">JWT生成</text>
+  <text x="450" y="460" style="font-size: 30px; fill: white; text-anchor: middle;">JWT生成</text>
   
   <line x1="450" y1="520" x2="250" y2="520" stroke="#00AFF0" stroke-width="3" stroke-dasharray="3,3"/>
   <polygon points="250,520 260,515 260,525" fill="#00AFF0"/>
-  <text x="350" y="510" style="font-size: 54px; fill: #333;">7. 200 OK + JWT</text>
+  <text x="350" y="510" style="font-size: 32px; fill: #333;">7. 200 OK + JWT</text>
   
   <line x1="250" y1="580" x2="100" y2="580" stroke="#00AFF0" stroke-width="3" stroke-dasharray="3,3"/>
   <polygon points="100,580 110,575 110,585" fill="#00AFF0"/>
-  <text x="175" y="570" style="font-size: 54px; fill: #333;">8. ダッシュボードへ</text>
+  <text x="175" y="570" style="font-size: 32px; fill: #333;">8. ダッシュボードへ</text>
   
   <line x1="450" y1="650" x2="250" y2="650" stroke="#66D9FF" stroke-width="3" stroke-dasharray="5,5"/>
   <polygon points="250,650 260,645 260,655" fill="#66D9FF"/>
-  <text x="350" y="640" style="font-size: 54px; fill: #66D9FF;">エラー: 401</text>
+  <text x="350" y="640" style="font-size: 32px; fill: #66D9FF;">エラー: 401</text>
   
   <rect x="50" y="720" width="700" height="60" fill="#E6E6E6" rx="5"/>
-  <text x="400" y="750" style="font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">効果: 処理順序の明確化 → AIが正確に実装</text>
+  <text x="400" y="750" style="font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">効果: 処理順序の明確化 → AIが正確に実装</text>
 </svg>

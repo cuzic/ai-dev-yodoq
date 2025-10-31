@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1170">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .example-title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: white; }
-      .example-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
+      .example-title { font-family: 'Noto Sans JP', sans-serif; font-size: 38px; font-weight: bold; fill: white; }
+      .example-text { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white; }
     </style>
   </defs>
 
@@ -15,13 +15,13 @@
 
   <!-- Concept -->
   <rect x="50" y="70" width="1300" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="105" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="700" y="105" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     AIの能力は凸凹（Jagged）→ 得意分野を活かし、苦手分野は人間が補完
   </text>
 
   <!-- Strong Areas -->
   <rect x="50" y="160" width="650" height="330" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
-  <text x="375" y="195" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+  <text x="375" y="195" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
     ✓ AIが得意な領域（積極的に活用）
   </text>
 
@@ -63,7 +63,7 @@
 
   <!-- Weak Areas -->
   <rect x="720" y="160" width="650" height="330" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
-  <text x="1045" y="195" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+  <text x="1045" y="195" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
     ✗ AIが苦手な領域（人間が補完必須）
   </text>
 
@@ -105,95 +105,95 @@
 
   <!-- Practical Examples -->
   <rect x="50" y="520" width="1300" height="350" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="700" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     実践例：得意/不得意を踏まえた役割分担
   </text>
 
   <!-- Case 1 -->
   <rect x="70" y="575" width="620" height="140" fill="#00AFF0" rx="8"/>
-  <text x="380" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="380" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
     ケース1: ログイン機能の実装
   </text>
 
   <rect x="90" y="615" width="280" height="85" fill="#00AA00" rx="5"/>
-  <text x="110" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="110" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     ✓ AIに任せる部分
   </text>
-  <text x="120" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="120" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • LoginController, LoginService作成
   </text>
-  <text x="120" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="120" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • JUnit テストコード（80%カバレッジ）
   </text>
-  <text x="120" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="120" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • Swagger API仕様書自動生成
   </text>
 
   <rect x="390" y="615" width="280" height="85" fill="#CC0000" rx="5"/>
-  <text x="410" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="410" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     ✗ 人間が確認・補完する部分
   </text>
-  <text x="420" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="420" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • セキュリティ要件（BCrypt、JWT）
   </text>
-  <text x="420" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="420" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • ログイン失敗時のビジネスルール
   </text>
-  <text x="420" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="420" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • アカウントロック仕様（5回失敗で30分）
   </text>
 
   <!-- Case 2 -->
   <rect x="710" y="575" width="620" height="140" fill="#003399" rx="8"/>
-  <text x="1020" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1020" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
     ケース2: 決済処理の実装
   </text>
 
   <rect x="730" y="615" width="280" height="85" fill="#00AA00" rx="5"/>
-  <text x="750" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="750" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     ✓ AIに任せる部分
   </text>
-  <text x="760" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="760" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • API エンドポイント作成
   </text>
-  <text x="760" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="760" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • バリデーション（@Valid）
   </text>
-  <text x="760" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="760" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • エラーハンドリング基本実装
   </text>
 
   <rect x="1030" y="615" width="280" height="85" fill="#CC0000" rx="5"/>
-  <text x="1050" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="1050" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     ✗ 人間が確認・補完する部分
   </text>
-  <text x="1060" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1060" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • 決済ゲートウェイとの連携ロジック
   </text>
-  <text x="1060" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1060" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • リトライ戦略（3回まで、指数バックオフ）
   </text>
-  <text x="1060" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1060" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • 不正検知ルール（金額・頻度チェック）
   </text>
 
   <!-- Best Practice -->
   <rect x="70" y="735" width="1240" height="120" fill="#00146E" rx="8"/>
-  <text x="690" y="760" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="690" y="760" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: white; text-anchor: middle; font-weight: bold;">
     ベストプラクティス：得意領域を活かす指示の仕方
   </text>
 
-  <text x="90" y="785" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+  <text x="90" y="785" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
     ✓ 良い指示（AIの得意領域）:
   </text>
-  <text x="100" y="805" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="100" y="805" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     「ログイン機能を実装して。BCryptでパスワードハッシュ化、JWTで認証、@Validでバリデーション、
   </text>
-  <text x="105" y="823" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="105" y="823" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     JUnitテスト含む。失敗5回で30分ロック。」
   </text>
 
-  <text x="90" y="848" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+  <text x="90" y="848" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
     → 人間が「何を作るか」を明確に指示 → AIが「どう作るか」を実装 → 人間がレビュー
   </text>
 </svg>

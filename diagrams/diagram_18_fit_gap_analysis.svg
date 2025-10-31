@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 910">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
-      .circle-title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: white; }
-      .circle-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
-      .overlap-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #333333; }
+      .circle-title { font-family: 'Noto Sans JP', sans-serif; font-size: 43px; font-weight: bold; fill: white; }
+      .circle-text { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; }
+      .overlap-title { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; font-weight: bold; fill: white; }
     </style>
   </defs>
 
@@ -17,7 +17,7 @@
   <!-- Left Circle: AI Capabilities -->
   <circle cx="280" cy="280" r="180" fill="#00AFF0" opacity="0.8"/>
   <text x="180" y="180" class="circle-title">AIができること</text>
-  <text x="180" y="205" class="circle-title" font-size="28">(AI Capabilities)</text>
+  <text x="180" y="205" class="circle-title" font-size="16">(AI Capabilities)</text>
 
   <text x="150" y="240" class="circle-text">• コード生成</text>
   <text x="150" y="260" class="circle-text">• リファクタリング</text>
@@ -30,7 +30,7 @@
   <!-- Right Circle: Required Skills -->
   <circle cx="520" cy="280" r="180" fill="#00146E" opacity="0.8"/>
   <text x="540" y="180" class="circle-title">人が必要なこと</text>
-  <text x="540" y="205" class="circle-title" font-size="28">(Human Required)</text>
+  <text x="540" y="205" class="circle-title" font-size="16">(Human Required)</text>
 
   <text x="540" y="240" class="circle-text">• ビジネス判断</text>
   <text x="540" y="260" class="circle-text">• 要件定義</text>
@@ -42,70 +42,70 @@
 
   <!-- Overlap: Sweet Spot -->
   <text x="400" y="230" class="overlap-title" text-anchor="middle">最適領域</text>
-  <text x="400" y="250" class="overlap-title" text-anchor="middle" font-size="28">(Sweet Spot)</text>
+  <text x="400" y="250" class="overlap-title" text-anchor="middle" font-size="16">(Sweet Spot)</text>
 
-  <text x="400" y="280" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="400" y="280" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; text-anchor: middle; font-weight: bold;">
     人とAIの協働
   </text>
-  <text x="400" y="305" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+  <text x="400" y="305" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
     • 人が設計
   </text>
-  <text x="400" y="323" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+  <text x="400" y="323" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
     • AIが実装
   </text>
-  <text x="400" y="341" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+  <text x="400" y="341" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
     • 人がレビュー
   </text>
-  <text x="400" y="359" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+  <text x="400" y="359" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
     • AIが改善
   </text>
 
   <!-- Bottom: Gap Analysis -->
   <rect x="50" y="500" width="700" height="170" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="400" y="530" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="400" y="530" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     ギャップ分析の活用
   </text>
 
   <!-- Three columns -->
   <rect x="70" y="550" width="200" height="100" fill="#00AFF0" rx="5"/>
-  <text x="170" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="170" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     Fit（適合）
   </text>
-  <text x="85" y="595" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="85" y="595" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     AIに任せる領域
   </text>
-  <text x="85" y="612" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="85" y="612" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 自動化・効率化
   </text>
-  <text x="85" y="628" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="85" y="628" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → スピード重視
   </text>
 
   <rect x="300" y="550" width="200" height="100" fill="#003399" rx="5"/>
-  <text x="400" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="400" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     Gap（不足）
   </text>
-  <text x="315" y="595" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="315" y="595" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     人が補完する領域
   </text>
-  <text x="315" y="612" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="315" y="612" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 検証・判断
   </text>
-  <text x="315" y="628" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="315" y="628" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 品質保証
   </text>
 
   <rect x="530" y="550" width="200" height="100" fill="#00146E" rx="5"/>
-  <text x="630" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="630" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     戦略的役割分担
   </text>
-  <text x="545" y="595" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="545" y="595" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
     最適な協働パターン
   </text>
-  <text x="545" y="612" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="545" y="612" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 生産性最大化
   </text>
-  <text x="545" y="628" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="545" y="628" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → 品質担保
   </text>
 </svg>

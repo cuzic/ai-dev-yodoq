@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 780">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
-      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
-      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
-      .time-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #333333; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; }
+      .time-text { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold; }
     </style>
   </defs>
 
@@ -17,7 +17,7 @@
   <!-- Step 1: Requirements -->
   <rect x="30" y="80" width="200" height="180" fill="#00146E" rx="10"/>
   <text x="130" y="110" class="step-title" text-anchor="middle">STEP 1</text>
-  <text x="130" y="135" class="step-title" text-anchor="middle" font-size="28">要件整理</text>
+  <text x="130" y="135" class="step-title" text-anchor="middle" font-size="16">要件整理</text>
 
   <text x="50" y="165" class="step-text">やること:</text>
   <text x="60" y="185" class="step-text">• 課題を読む</text>
@@ -33,7 +33,7 @@
   <!-- Step 2: Design -->
   <rect x="270" y="80" width="200" height="180" fill="#00AFF0" rx="10"/>
   <text x="370" y="110" class="step-title" text-anchor="middle">STEP 2</text>
-  <text x="370" y="135" class="step-title" text-anchor="middle" font-size="28">設計書作成</text>
+  <text x="370" y="135" class="step-title" text-anchor="middle" font-size="16">設計書作成</text>
 
   <text x="290" y="165" class="step-text">やること:</text>
   <text x="300" y="185" class="step-text">• ER図作成</text>
@@ -49,7 +49,7 @@
   <!-- Step 3: Task Breakdown -->
   <rect x="510" y="80" width="200" height="180" fill="#003399" rx="10"/>
   <text x="610" y="110" class="step-title" text-anchor="middle">STEP 3</text>
-  <text x="610" y="135" class="step-title" text-anchor="middle" font-size="28">タスク分解</text>
+  <text x="610" y="135" class="step-title" text-anchor="middle" font-size="16">タスク分解</text>
 
   <text x="530" y="165" class="step-text">やること:</text>
   <text x="540" y="185" class="step-text">• Phase分け</text>
@@ -65,7 +65,7 @@
   <!-- Step 4: Implementation -->
   <rect x="750" y="80" width="200" height="180" fill="#66D9FF" rx="10"/>
   <text x="850" y="110" class="step-title" text-anchor="middle">STEP 4</text>
-  <text x="850" y="135" class="step-title" text-anchor="middle" font-size="28">実装</text>
+  <text x="850" y="135" class="step-title" text-anchor="middle" font-size="16">実装</text>
 
   <text x="770" y="165" class="step-text">やること:</text>
   <text x="780" y="185" class="step-text">• TDDで実装</text>
@@ -81,7 +81,7 @@
   <!-- Step 5: Review -->
   <rect x="990" y="80" width="180" height="180" fill="#4D6DB3" rx="10"/>
   <text x="1080" y="110" class="step-title" text-anchor="middle">STEP 5</text>
-  <text x="1080" y="135" class="step-title" text-anchor="middle" font-size="28">振り返り</text>
+  <text x="1080" y="135" class="step-title" text-anchor="middle" font-size="16">振り返り</text>
 
   <text x="1010" y="165" class="step-text">やること:</text>
   <text x="1020" y="185" class="step-text">• 成果発表</text>
@@ -93,67 +93,67 @@
   <!-- Loop arrow from 5 to 1 -->
   <path d="M 1080 260 L 1080 300 L 130 300 L 130 260" fill="none" stroke="#00146E" stroke-width="3" stroke-dasharray="5,5"/>
   <polygon points="130,260 125,270 135,270" fill="#00146E"/>
-  <text x="600" y="320" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; text-anchor: middle; font-style: italic;">
+  <text x="600" y="320" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E; text-anchor: middle; font-style: italic;">
     次の演習へ（繰り返し）
   </text>
 
   <!-- Key Points Section -->
   <rect x="30" y="350" width="1140" height="220" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="600" y="385" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="600" y="385" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     演習のポイント
   </text>
 
   <!-- Left column -->
   <rect x="60" y="405" width="340" height="140" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5"/>
-  <text x="230" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="230" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     実践重視
   </text>
-  <text x="80" y="455" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="80" y="455" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • 手を動かして学ぶ
   </text>
-  <text x="80" y="475" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="80" y="475" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • 完璧を目指さず、まず動かす
   </text>
-  <text x="80" y="495" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="80" y="495" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • 失敗から学ぶことが重要
   </text>
-  <text x="80" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="80" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • AIとの対話で改善していく
   </text>
 
   <!-- Middle column -->
   <rect x="430" y="405" width="340" height="140" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5"/>
-  <text x="600" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="600" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     チーム協力
   </text>
-  <text x="450" y="455" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="450" y="455" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • 困ったら質問する
   </text>
-  <text x="450" y="475" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="450" y="475" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • 他の人の進め方を見る
   </text>
-  <text x="450" y="495" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="450" y="495" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • 知見を共有し合う
   </text>
-  <text x="450" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="450" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • 成功パターンを横展開
   </text>
 
   <!-- Right column -->
   <rect x="800" y="405" width="340" height="140" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5"/>
-  <text x="970" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="970" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     時間管理
   </text>
-  <text x="820" y="455" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="820" y="455" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • 各STEPの時間を意識
   </text>
-  <text x="820" y="475" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="820" y="475" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • 詰まったら次に進む判断も必要
   </text>
-  <text x="820" y="495" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="820" y="495" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • タイムボックス内で最善を尽くす
   </text>
-  <text x="820" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+  <text x="820" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">
     • 全体で100分を目安に
   </text>
 </svg>

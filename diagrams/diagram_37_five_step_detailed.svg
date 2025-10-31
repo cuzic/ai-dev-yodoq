@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2080 1430">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
-      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white; }
     </style>
   </defs>
 
@@ -16,7 +16,7 @@
   <!-- Step 1: Requirements -->
   <rect x="50" y="80" width="300" height="190" fill="#00AFF0" rx="10"/>
   <text x="200" y="110" class="step-title" text-anchor="middle">STEP 1: 要件定義</text>
-  <text x="200" y="135" class="step-title" text-anchor="middle" font-size="26">(Requirements)</text>
+  <text x="200" y="135" class="step-title" text-anchor="middle" font-size="15">(Requirements)</text>
 
   <text x="70" y="160" class="step-text" font-weight="bold">📋 成果物:</text>
   <text x="80" y="178" class="step-text">• ユーザーストーリー</text>
@@ -34,7 +34,7 @@
   <!-- Step 2: Specification -->
   <rect x="400" y="80" width="300" height="190" fill="#00146E" rx="10"/>
   <text x="550" y="110" class="step-title" text-anchor="middle">STEP 2: 仕様定義</text>
-  <text x="550" y="135" class="step-title" text-anchor="middle" font-size="26">(Specification)</text>
+  <text x="550" y="135" class="step-title" text-anchor="middle" font-size="15">(Specification)</text>
 
   <text x="420" y="160" class="step-text" font-weight="bold">📋 成果物:</text>
   <text x="430" y="178" class="step-text">• ER図（Mermaid）</text>
@@ -53,7 +53,7 @@
   <!-- Step 3: Task Breakdown -->
   <rect x="750" y="80" width="300" height="190" fill="#003399" rx="10"/>
   <text x="900" y="110" class="step-title" text-anchor="middle">STEP 3: タスク分解</text>
-  <text x="900" y="135" class="step-title" text-anchor="middle" font-size="26">(Task Breakdown)</text>
+  <text x="900" y="135" class="step-title" text-anchor="middle" font-size="15">(Task Breakdown)</text>
 
   <text x="770" y="160" class="step-text" font-weight="bold">📋 成果物:</text>
   <text x="780" y="178" class="step-text">• タスク一覧（依存関係付き）</text>
@@ -71,31 +71,31 @@
 
   <!-- Step 4: Implementation -->
   <rect x="1100" y="80" width="230" height="190" fill="#66D9FF" rx="10"/>
-  <text x="1215" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+  <text x="1215" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; font-weight: bold; fill: #00146E; text-anchor: middle;">
     STEP 4: 実装
   </text>
-  <text x="1215" y="135" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+  <text x="1215" y="135" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: bold; fill: #00146E; text-anchor: middle;">
     (Implementation)
   </text>
 
-  <text x="1120" y="160" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
+  <text x="1120" y="160" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E; font-weight: bold;">
     📋 成果物:
   </text>
-  <text x="1130" y="178" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1130" y="178" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     • コード（TDD）
   </text>
-  <text x="1130" y="193" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1130" y="193" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     • テスト（80%以上）
   </text>
 
-  <text x="1120" y="218" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
+  <text x="1120" y="218" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E; font-weight: bold;">
     ⏱ 所要時間: 2-4時間
   </text>
 
-  <text x="1120" y="243" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
+  <text x="1120" y="243" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E; font-weight: bold;">
     🎯 重要ポイント:
   </text>
-  <text x="1130" y="261" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1130" y="261" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     Trust but Verify
   </text>
 
@@ -106,7 +106,7 @@
   <!-- Step 5: Documentation -->
   <rect x="1100" y="310" width="230" height="190" fill="#4D6DB3" rx="10"/>
   <text x="1215" y="340" class="step-title" text-anchor="middle">STEP 5: ドキュメント</text>
-  <text x="1215" y="365" class="step-title" text-anchor="middle" font-size="26">(Documentation)</text>
+  <text x="1215" y="365" class="step-title" text-anchor="middle" font-size="15">(Documentation)</text>
 
   <text x="1120" y="390" class="step-text" font-weight="bold">📋 成果物:</text>
   <text x="1130" y="408" class="step-text">• README.md</text>
@@ -120,295 +120,295 @@
 
   <!-- Detailed workflow for each step -->
   <rect x="50" y="540" width="1500" height="530" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="800" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="800" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     各STEPの詳細ワークフロー
   </text>
 
   <!-- STEP 1 Details -->
   <rect x="70" y="595" width="280" height="455" fill="#00AFF0" rx="8"/>
-  <text x="210" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="210" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     STEP 1 詳細手順
   </text>
 
-  <text x="90" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="90" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     1. ユーザーヒアリング (10分)
   </text>
-  <text x="100" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • ビジネス目的確認
   </text>
-  <text x="100" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • ユーザー像明確化
   </text>
 
-  <text x="90" y="703" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="90" y="703" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     2. ユーザーストーリー作成 (10分)
   </text>
-  <text x="100" y="721" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="721" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • As a [ユーザー]
   </text>
-  <text x="100" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • I want [機能]
   </text>
-  <text x="100" y="751" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="751" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • So that [目的]
   </text>
 
-  <text x="90" y="776" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="90" y="776" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     3. MoSCoW優先順位付け (5分)
   </text>
-  <text x="100" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • Must: 必須機能
   </text>
-  <text x="100" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • Should: 重要機能
   </text>
-  <text x="100" y="824" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="824" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • Could: あると良い
   </text>
-  <text x="100" y="839" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="839" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • Won't: 今回対象外
   </text>
 
-  <text x="90" y="864" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="90" y="864" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     4. 非機能要件定義 (5分)
   </text>
-  <text x="100" y="882" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="882" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • セキュリティ
   </text>
-  <text x="100" y="897" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="897" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • パフォーマンス
   </text>
-  <text x="100" y="912" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="100" y="912" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • 信頼性
   </text>
 
-  <text x="90" y="937" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+  <text x="90" y="937" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
     → AIに渡して仕様定義開始
   </text>
 
   <!-- STEP 2 Details -->
   <rect x="370" y="595" width="280" height="455" fill="#00146E" rx="8"/>
-  <text x="510" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="510" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     STEP 2 詳細手順
   </text>
 
-  <text x="390" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="390" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     1. ER図作成依頼 (15分)
   </text>
-  <text x="400" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="400" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     プロンプト: 「STEP1の要件から
   </text>
-  <text x="400" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="400" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     ER図をMermaid形式で作成」
   </text>
 
-  <text x="390" y="703" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="390" y="703" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     2. API仕様作成依頼 (15分)
   </text>
-  <text x="400" y="721" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="400" y="721" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     プロンプト: 「RESTful API仕様を
   </text>
-  <text x="400" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="400" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     OpenAPI 3.0形式で作成」
   </text>
 
-  <text x="390" y="761" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="390" y="761" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     3. シーケンス図作成 (15分)
   </text>
-  <text x="400" y="779" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="400" y="779" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     プロンプト: 「ログインフローの
   </text>
-  <text x="400" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="400" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     シーケンス図をMermaidで作成」
   </text>
 
-  <text x="390" y="819" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="390" y="819" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     4. AI自己レビュー (10分)
   </text>
-  <text x="400" y="837" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="400" y="837" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     プロンプト: 「この仕様をレビュー
   </text>
-  <text x="400" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="400" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     して。抜け漏れ、矛盾点を指摘」
   </text>
 
-  <text x="390" y="877" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="390" y="877" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     5. 人間レビュー (5分)
   </text>
-  <text x="400" y="895" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="400" y="895" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • ビジネスロジック確認
   </text>
-  <text x="400" y="910" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="400" y="910" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • セキュリティ要件確認
   </text>
 
-  <text x="390" y="935" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+  <text x="390" y="935" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
     → タスク分解に進む
   </text>
 
   <!-- STEP 3 Details -->
   <rect x="670" y="595" width="280" height="455" fill="#003399" rx="8"/>
-  <text x="810" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="810" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     STEP 3 詳細手順
   </text>
 
-  <text x="690" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="690" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     1. タスク一覧作成依頼 (15分)
   </text>
-  <text x="700" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="700" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     プロンプト: 「STEP2の仕様から
   </text>
-  <text x="700" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="700" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     タスク一覧を作成（依存関係付き）」
   </text>
 
-  <text x="690" y="703" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="690" y="703" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     2. 工数見積もり (10分)
   </text>
-  <text x="700" y="721" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="700" y="721" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     プロンプト: 「各タスクの工数を
   </text>
-  <text x="700" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="700" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     見積もって（30-60分単位）」
   </text>
 
-  <text x="690" y="761" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="690" y="761" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     3. 優先順位付け (5分)
   </text>
-  <text x="700" y="779" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="700" y="779" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • Must タスクを優先
   </text>
-  <text x="700" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="700" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • クリティカルパス特定
   </text>
-  <text x="700" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="700" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • 並行実行可能タスク洗い出し
   </text>
 
-  <text x="690" y="834" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="690" y="834" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     4. Increment計画 (5分)
   </text>
-  <text x="700" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="700" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • Increment 1: 一覧表示
   </text>
-  <text x="700" y="867" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="700" y="867" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • Increment 2: 新規作成
   </text>
-  <text x="700" y="882" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="700" y="882" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     • Increment 3: 更新・削除
   </text>
 
-  <text x="690" y="907" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+  <text x="690" y="907" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
     → 1タスクずつ実装開始
   </text>
 
   <!-- STEP 4 Details -->
   <rect x="970" y="595" width="280" height="455" fill="#66D9FF" rx="8"/>
-  <text x="1110" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="1110" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     STEP 4 詳細手順
   </text>
 
-  <text x="990" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; font-weight: bold;">
+  <text x="990" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E; font-weight: bold;">
     1. TDDサイクル (60-120分/タスク)
   </text>
-  <text x="1000" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1000" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     Red: テスト作成 → 失敗確認
   </text>
-  <text x="1000" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1000" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     Green: 最小実装 → テスト通過
   </text>
-  <text x="1000" y="693" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1000" y="693" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     Refactor: コード改善
   </text>
 
-  <text x="990" y="718" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; font-weight: bold;">
+  <text x="990" y="718" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E; font-weight: bold;">
     2. AI自己レビュー (5分)
   </text>
-  <text x="1000" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1000" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     プロンプト: 「このコードを
   </text>
-  <text x="1000" y="751" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1000" y="751" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     レビューして（セキュリティ、
   </text>
-  <text x="1000" y="766" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1000" y="766" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     エッジケース、ベストプラクティス）」
   </text>
 
-  <text x="990" y="791" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; font-weight: bold;">
+  <text x="990" y="791" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E; font-weight: bold;">
     3. 指摘事項修正 (10-30分)
   </text>
-  <text x="1000" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1000" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     AI指摘箇所を修正 → 再レビュー
   </text>
 
-  <text x="990" y="834" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; font-weight: bold;">
+  <text x="990" y="834" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E; font-weight: bold;">
     4. テスト全実行 (5分)
   </text>
-  <text x="1000" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1000" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     JaCoCo でカバレッジ確認
   </text>
-  <text x="1000" y="867" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1000" y="867" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     → 80%未満なら追加テスト
   </text>
 
-  <text x="990" y="892" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; font-weight: bold;">
+  <text x="990" y="892" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E; font-weight: bold;">
     5. コミット (5分)
   </text>
-  <text x="1000" y="910" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+  <text x="1000" y="910" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
     git add . && git commit -m "..."
   </text>
 
-  <text x="990" y="935" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; font-weight: bold;">
+  <text x="990" y="935" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E; font-weight: bold;">
     → 次タスク or ドキュメント作成
   </text>
 
   <!-- STEP 5 Details -->
   <rect x="1270" y="595" width="260" height="455" fill="#4D6DB3" rx="8"/>
-  <text x="1400" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1400" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">
     STEP 5 詳細手順
   </text>
 
-  <text x="1290" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="1290" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     1. README作成 (15分)
   </text>
-  <text x="1300" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1300" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     プロンプト: 「README.md
   </text>
-  <text x="1300" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1300" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     を作成（セットアップ手順、
   </text>
-  <text x="1300" y="693" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1300" y="693" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     API使用例、環境変数）」
   </text>
 
-  <text x="1290" y="718" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="1290" y="718" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     2. Swagger確認 (5分)
   </text>
-  <text x="1300" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1300" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     /swagger-ui.html アクセス
   </text>
-  <text x="1300" y="751" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1300" y="751" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     → API仕様書自動生成確認
   </text>
 
-  <text x="1290" y="776" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight="bold">
+  <text x="1290" y="776" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight="bold">
     3. JavaDoc追加 (10分)
   </text>
-  <text x="1300" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1300" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     複雑なロジックに
   </text>
-  <text x="1300" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1300" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     /** ... */ コメント追加
   </text>
 
-  <text x="1290" y="834" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+  <text x="1290" y="834" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; font-weight: bold;">
     4. .env.example作成 (5分)
   </text>
-  <text x="1300" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+  <text x="1300" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
     環境変数テンプレート
   </text>
 
-  <text x="1290" y="877" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+  <text x="1290" y="877" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
     → 完了！チーム共有
   </text>
 </svg>
