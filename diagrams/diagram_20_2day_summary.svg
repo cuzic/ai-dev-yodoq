@@ -65,22 +65,18 @@
   <text x="660" y="224" class="step-text">• 4分類テスト: 正常系/異常系/境界値/例外処理</text>
   <text x="660" y="241" class="step-text">• デグレ防止の3層構造（E2E/統合/単体）</text>
 
-  <!-- Day 2 - Quality -->
-  <rect x="640" y="275" width="510" height="110" fill="#00AFF0" rx="5"/>
-  <text x="895" y="300" class="step-title" text-anchor="middle">STEP5: 品質担保（11:30-12:30）</text>
-  <text x="660" y="325" class="step-text">• AIセルフレビュー必須化</text>
-  <text x="660" y="342" class="step-text">• リファクタリング後の全テスト実行</text>
-  <text x="660" y="359" class="step-text">• デバッグ戦略: エラーログ→仮説→検証</text>
-  <text x="660" y="376" class="step-text">• 演習: TDDで実装</text>
-
-  <!-- Day 2 - Documentation -->
-  <rect x="640" y="400" width="510" height="130" fill="#003399" rx="5"/>
-  <text x="895" y="425" class="step-title" text-anchor="middle">STEP6: ドキュメント化（13:30-14:30）</text>
-  <text x="660" y="450" class="step-text">• Living Documentation（コードと共に更新）</text>
-  <text x="660" y="467" class="step-text">• リバースエンジニアリング（既存コード→仕様書抽出）</text>
-  <text x="660" y="484" class="step-text">• 影響範囲調査（変更の波及確認）</text>
-  <text x="660" y="501" class="step-text">• チーム共有とナレッジ蓄積</text>
-  <text x="660" y="518" class="step-text">• 演習: ドキュメント自動生成</text>
+  <!-- Day 2 - Quality & Documentation -->
+  <rect x="640" y="275" width="510" height="230" fill="#00AFF0" rx="5"/>
+  <text x="895" y="300" class="step-title" text-anchor="middle">STEP5: 品質担保＆ドキュメント反映（11:30-14:30）</text>
+  <text x="660" y="325" class="step-text" font-weight="bold">【品質担保】</text>
+  <text x="660" y="347" class="step-text">• AIセルフレビュー必須化</text>
+  <text x="660" y="367" class="step-text">• リファクタリング後の全テスト実行</text>
+  <text x="660" y="387" class="step-text">• デバッグ戦略: エラーログ→仮説→検証</text>
+  <text x="660" y="412" class="step-text" font-weight="bold">【ドキュメント反映】</text>
+  <text x="660" y="434" class="step-text">• Living Documentation（コードと共に更新）</text>
+  <text x="660" y="454" class="step-text">• リバースエンジニアリング（既存コード→仕様書抽出）</text>
+  <text x="660" y="474" class="step-text">• 影響範囲調査（変更の波及確認）</text>
+  <text x="660" y="494" class="step-text">• 演習: TDD実装＋ドキュメント生成</text>
 
   <!-- Day 2 - Final Review -->
   <rect x="640" y="545" width="510" height="125" fill="#4D6DB3" rx="5"/>
@@ -93,7 +89,7 @@
   <!-- Bottom Summary -->
   <rect x="30" y="700" width="1140" height="75" fill="#00146E" rx="10"/>
   <text x="600" y="730" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: white; text-anchor: middle; font-weight: bold;">
-    2日間で習得: 要件 → 設計 → タスク分解 → TDD実装 → 品質担保 → ドキュメント化
+    2日間で習得: 5-STEP = 要件 → 設計 → タスク分解 → TDD実装 → 品質担保＆ドキュメント反映
   </text>
   <text x="600" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle;">
     AI時代の開発者スキル = Guardrailsを構築し、AIと協働して高品質な成果を生み出す能力
