@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
   <defs>
     <style>
-      .layer-title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: white; text-anchor: middle; }
-      .phase { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; text-anchor: middle; }
+      .layer-title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: white; text-anchor: middle; }
+      .phase { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; }
     </style>
   </defs>
 

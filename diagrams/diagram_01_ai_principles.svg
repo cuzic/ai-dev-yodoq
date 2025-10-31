@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600">
   <defs>
     <style>
-      .big-title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: white; text-anchor: middle; }
-      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; text-anchor: middle; }
+      .big-title { font-family: 'Noto Sans JP', sans-serif; font-size: 120px; font-weight: bold; fill: white; text-anchor: middle; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; }
     </style>
   </defs>
 

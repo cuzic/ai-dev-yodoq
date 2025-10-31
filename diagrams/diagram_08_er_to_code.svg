@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 520">
   <rect width="1000" height="400" fill="#FFF"/>
-  <text x="500" y="30" style="font-size: 48px; font-weight: bold; fill: #333; text-anchor: middle;">ER図からコード生成への流れ</text>
+  <text x="500" y="30" style="font-size: 81px; font-weight: bold; fill: #333; text-anchor: middle;">ER図からコード生成への流れ</text>
   
   <rect x="50" y="80" width="250" height="240" fill="#00146E" rx="10"/>
-  <text x="175" y="110" style="font-size: 43px; font-weight: bold; fill: white; text-anchor: middle;">ER図（入力）</text>
-  <text x="70" y="145" style="font-size: 38px; fill: white;">• テーブル定義</text>
-  <text x="70" y="170" style="font-size: 38px; fill: white;">• リレーション</text>
-  <text x="70" y="195" style="font-size: 38px; fill: white;">• 制約</text>
+  <text x="175" y="110" style="font-size: 72px; font-weight: bold; fill: white; text-anchor: middle;">ER図（入力）</text>
+  <text x="70" y="145" style="font-size: 64px; fill: white;">• テーブル定義</text>
+  <text x="70" y="170" style="font-size: 64px; fill: white;">• リレーション</text>
+  <text x="70" y="195" style="font-size: 64px; fill: white;">• 制約</text>
   
   <rect x="375" y="80" width="250" height="240" fill="#00AFF0" rx="10"/>
-  <text x="500" y="110" style="font-size: 43px; font-weight: bold; fill: white; text-anchor: middle;">AIの処理</text>
-  <text x="395" y="145" style="font-size: 38px; fill: white;">• ER図を読み込む</text>
-  <text x="395" y="170" style="font-size: 38px; fill: white;">• 構造を理解</text>
-  <text x="395" y="195" style="font-size: 38px; fill: white;">• コード生成ルール適用</text>
+  <text x="500" y="110" style="font-size: 72px; font-weight: bold; fill: white; text-anchor: middle;">AIの処理</text>
+  <text x="395" y="145" style="font-size: 64px; fill: white;">• ER図を読み込む</text>
+  <text x="395" y="170" style="font-size: 64px; fill: white;">• 構造を理解</text>
+  <text x="395" y="195" style="font-size: 64px; fill: white;">• コード生成ルール適用</text>
   
   <rect x="700" y="80" width="250" height="240" fill="#003399" rx="10"/>
-  <text x="825" y="110" style="font-size: 43px; font-weight: bold; fill: white; text-anchor: middle;">生成コード（出力）</text>
-  <text x="720" y="145" style="font-size: 38px; fill: white;">• CREATE TABLE文</text>
-  <text x="720" y="170" style="font-size: 38px; fill: white;">• JOIN処理</text>
-  <text x="720" y="195" style="font-size: 38px; fill: white;">• 外部キー制約</text>
-  <text x="720" y="220" style="font-size: 38px; fill: white;">• ORMモデル</text>
+  <text x="825" y="110" style="font-size: 72px; font-weight: bold; fill: white; text-anchor: middle;">生成コード（出力）</text>
+  <text x="720" y="145" style="font-size: 64px; fill: white;">• CREATE TABLE文</text>
+  <text x="720" y="170" style="font-size: 64px; fill: white;">• JOIN処理</text>
+  <text x="720" y="195" style="font-size: 64px; fill: white;">• 外部キー制約</text>
+  <text x="720" y="220" style="font-size: 64px; fill: white;">• ORMモデル</text>
   
   <line x1="300" y1="200" x2="375" y2="200" stroke="#00146E" stroke-width="4"/>
   <polygon points="375,200 365,195 365,205" fill="#00146E"/>
@@ -28,5 +28,5 @@
   <polygon points="700,200 690,195 690,205" fill="#00AFF0"/>
   
   <rect x="50" y="340" width="900" height="50" fill="#E6E6E6" rx="5"/>
-  <text x="500" y="370" style="font-size: 42px; fill: #00146E; text-anchor: middle; font-weight: bold;">効果: データ構造の全体像把握 → 正確な実装</text>
+  <text x="500" y="370" style="font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">効果: データ構造の全体像把握 → 正確な実装</text>
 </svg>

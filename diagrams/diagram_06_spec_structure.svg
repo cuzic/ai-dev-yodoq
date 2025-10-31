@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 780">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #333333; }
-      .node-text { font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; font-weight: bold; }
-      .small-text { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
+      .node-text { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold; }
+      .small-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
     </style>
   </defs>
 
@@ -30,17 +30,17 @@
   <text x="150" y="212" class="small-text" text-anchor="middle">選定理由含む</text>
 
   <rect x="240" y="160" width="120" height="60" fill="#00AFF0" rx="5"/>
-  <text x="300" y="178" class="node-text" text-anchor="middle" font-size="15">2. アーキテクチャ</text>
+  <text x="300" y="178" class="node-text" text-anchor="middle" font-size="26">2. アーキテクチャ</text>
   <text x="300" y="193" class="small-text" text-anchor="middle">3層構造</text>
   <text x="300" y="207" class="small-text" text-anchor="middle">Mermaid図</text>
 
   <rect x="370" y="160" width="60" height="60" fill="#00AFF0" rx="5"/>
-  <text x="400" y="183" class="node-text" text-anchor="middle" font-size="14">3. DB</text>
-  <text x="400" y="196" class="node-text" text-anchor="middle" font-size="14">スキーマ</text>
+  <text x="400" y="183" class="node-text" text-anchor="middle" font-size="24">3. DB</text>
+  <text x="400" y="196" class="node-text" text-anchor="middle" font-size="24">スキーマ</text>
   <text x="400" y="213" class="small-text" text-anchor="middle">ER図</text>
 
   <rect x="440" y="160" width="120" height="60" fill="#00AFF0" rx="5"/>
-  <text x="500" y="178" class="node-text" text-anchor="middle" font-size="15">4. API仕様</text>
+  <text x="500" y="178" class="node-text" text-anchor="middle" font-size="26">4. API仕様</text>
   <text x="500" y="193" class="small-text" text-anchor="middle">エンドポイント</text>
   <text x="500" y="207" class="small-text" text-anchor="middle">パラメータ</text>
 
@@ -59,30 +59,30 @@
   <text x="280" y="322" class="small-text" text-anchor="middle">環境変数管理</text>
 
   <rect x="440" y="270" width="160" height="60" fill="#003399" rx="5"/>
-  <text x="520" y="288" class="node-text" text-anchor="middle" font-size="15">7. 技術的決定事項</text>
+  <text x="520" y="288" class="node-text" text-anchor="middle" font-size="26">7. 技術的決定事項</text>
   <text x="520" y="303" class="small-text" text-anchor="middle">ライブラリ選定理由</text>
   <text x="520" y="317" class="small-text" text-anchor="middle">アーキテクチャ判断</text>
 
   <!-- Bottom explanation -->
   <rect x="50" y="370" width="700" height="200" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="400" y="400" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="400" y="400" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     なぜ設計ドキュメントが必要か
   </text>
 
-  <text x="70" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333;">
+  <text x="70" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333;">
     • AIは忘れっぽい → セッション超えると設計意図を忘れる
   </text>
-  <text x="70" y="455" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333;">
+  <text x="70" y="455" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333;">
     • Reward Hacking → 設計がないと手抜き実装
   </text>
-  <text x="70" y="480" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333;">
+  <text x="70" y="480" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333;">
     • 設計書 = AIが何度でも参照できる道しるべ
   </text>
 
-  <text x="400" y="520" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="400" y="520" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     効果: AIが設計に従って実装、一貫性のある構造
   </text>
-  <text x="400" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; text-anchor: middle;">
+  <text x="400" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
     Spec-Driven Development: Code-First → Spec-First へ
   </text>
 </svg>

@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 650">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #333333; }
-      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; font-weight: bold; fill: white; }
-      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
     </style>
   </defs>
 
@@ -15,14 +15,14 @@
 
   <!-- Step 1: Existing Code -->
   <rect x="30" y="80" width="180" height="300" fill="#E6E6E6" stroke="#333333" stroke-width="3" rx="10"/>
-  <text x="120" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">1. 既存コード</text>
-  <text x="50" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">入力:</text>
-  <text x="60" y="170" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• ソースコード</text>
-  <text x="60" y="190" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• テーブル定義</text>
-  <text x="60" y="210" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 設定ファイル</text>
-  <text x="60" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 既存ドキュメント</text>
-  <text x="60" y="270" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #666666;">※仕様書がない</text>
-  <text x="60" y="285" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #666666;">　ケースが多い</text>
+  <text x="120" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">1. 既存コード</text>
+  <text x="50" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">入力:</text>
+  <text x="60" y="170" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• ソースコード</text>
+  <text x="60" y="190" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• テーブル定義</text>
+  <text x="60" y="210" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 設定ファイル</text>
+  <text x="60" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 既存ドキュメント</text>
+  <text x="60" y="270" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666;">※仕様書がない</text>
+  <text x="60" y="285" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666;">　ケースが多い</text>
 
   <!-- Arrow -->
   <line x1="210" y1="230" x2="240" y2="230" stroke="#00146E" stroke-width="4"/>
@@ -31,7 +31,7 @@
   <!-- Step 2: Claude Code -->
   <rect x="240" y="80" width="180" height="300" fill="#00146E" rx="10"/>
   <text x="330" y="110" class="step-title" text-anchor="middle">2. Claude Code</text>
-  <text x="330" y="135" class="step-title" text-anchor="middle" font-size="16">読み込み</text>
+  <text x="330" y="135" class="step-title" text-anchor="middle" font-size="28">読み込み</text>
   <text x="260" y="170" class="step-text">プロジェクト全体:</text>
   <text x="270" y="190" class="step-text">• スキャン</text>
   <text x="270" y="210" class="step-text">• .claudeignore</text>
@@ -60,7 +60,7 @@
   <!-- Step 4: Document Generation -->
   <rect x="660" y="80" width="180" height="300" fill="#003399" rx="10"/>
   <text x="750" y="110" class="step-title" text-anchor="middle">4. ドキュメント</text>
-  <text x="750" y="133" class="step-title" text-anchor="middle" font-size="16">生成</text>
+  <text x="750" y="133" class="step-title" text-anchor="middle" font-size="28">生成</text>
   <text x="680" y="165" class="step-text">出力:</text>
   <text x="690" y="185" class="step-text">• architecture.md</text>
   <text x="690" y="205" class="step-text">• requirements.md</text>
@@ -74,25 +74,25 @@
 
   <!-- Step 5: New Feature -->
   <rect x="870" y="80" width="300" height="300" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="1020" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">5. 新機能追加</text>
-  <text x="890" y="150" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333;">仕様に基づいて実装:</text>
-  <text x="900" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 既存仕様を理解した上で</text>
-  <text x="900" y="195" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• デグレ防止テスト作成</text>
-  <text x="900" y="215" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 整合性のある実装</text>
-  <text x="900" y="235" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 既存パターンに従う</text>
+  <text x="1020" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">5. 新機能追加</text>
+  <text x="890" y="150" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">仕様に基づいて実装:</text>
+  <text x="900" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 既存仕様を理解した上で</text>
+  <text x="900" y="195" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• デグレ防止テスト作成</text>
+  <text x="900" y="215" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 整合性のある実装</text>
+  <text x="900" y="235" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 既存パターンに従う</text>
 
   <rect x="890" y="260" width="260" height="100" fill="#00146E" rx="5"/>
-  <text x="1020" y="285" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; text-anchor: middle; font-weight: bold;">効果:</text>
-  <text x="1020" y="310" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">デグレ防止</text>
-  <text x="1020" y="330" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">既存システムとの整合性</text>
-  <text x="1020" y="350" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">適切な機能追加</text>
+  <text x="1020" y="285" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">効果:</text>
+  <text x="1020" y="310" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">デグレ防止</text>
+  <text x="1020" y="330" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">既存システムとの整合性</text>
+  <text x="1020" y="350" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">適切な機能追加</text>
 
   <!-- Bottom note -->
   <rect x="30" y="410" width="1140" height="60" fill="#FFFFFF" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="600" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="600" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     ドキュメント化 = AIの外部メモリ構築 = 知見の蓄積
   </text>
-  <text x="600" y="460" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333; text-anchor: middle;">
+  <text x="600" y="460" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle;">
     仕様書がないシステムでも、リバースエンジニアリングでGuardrailsを構築できる
   </text>
 </svg>

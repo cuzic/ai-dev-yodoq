@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1170 1170">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #333333; }
-      .section-title { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; font-weight: bold; fill: white; }
-      .section-text { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; }
-      .center-text { font-family: 'Noto Sans JP', sans-serif; font-size: 43px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
+      .section-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
+      .section-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
+      .center-text { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: #00146E; text-anchor: middle; }
     </style>
   </defs>
 
@@ -22,16 +22,16 @@
   <!-- Failure 1: Top (12 o'clock) - No Guardrails -->
   <path d="M 450 100 L 520 250 A 100 100 0 0 1 380 250 Z" fill="#00146E"/>
   <text x="450" y="145" class="section-title" text-anchor="middle">失敗1</text>
-  <text x="450" y="170" class="section-title" text-anchor="middle" font-size="16">Guardrails不足</text>
+  <text x="450" y="170" class="section-title" text-anchor="middle" font-size="28">Guardrails不足</text>
   <text x="450" y="195" class="section-text" text-anchor="middle">設計書なしで実装</text>
   <text x="450" y="215" class="section-text" text-anchor="middle">→ 仕様ブレ・デグレ</text>
 
   <!-- Solution 1 -->
   <rect x="550" y="120" width="280" height="100" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="5"/>
-  <text x="690" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
-  <text x="570" y="170" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• architecture.md作成</text>
-  <text x="570" y="187" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• OpenAPI仕様定義</text>
-  <text x="570" y="204" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• リバースエンジニアリング実施</text>
+  <text x="690" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
+  <text x="570" y="170" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• architecture.md作成</text>
+  <text x="570" y="187" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• OpenAPI仕様定義</text>
+  <text x="570" y="204" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• リバースエンジニアリング実施</text>
 
   <!-- Arrow -->
   <line x1="520" y1="170" x2="550" y2="170" stroke="#00146E" stroke-width="3"/>
@@ -40,16 +40,16 @@
   <!-- Failure 2: Right (3 o'clock) - Trust without Verify -->
   <path d="M 800 450 L 650 520 A 100 100 0 0 1 650 380 Z" fill="#00AFF0"/>
   <text x="730" y="430" class="section-title" text-anchor="middle">失敗2</text>
-  <text x="730" y="455" class="section-title" text-anchor="middle" font-size="16">検証不足</text>
+  <text x="730" y="455" class="section-title" text-anchor="middle" font-size="28">検証不足</text>
   <text x="730" y="480" class="section-text" text-anchor="middle">AIコードを</text>
   <text x="730" y="497" class="section-text" text-anchor="middle">無検証で採用</text>
 
   <!-- Solution 2 -->
   <rect x="700" y="520" width="180" height="100" fill="#E6E6E6" stroke="#00AFF0" stroke-width="3" rx="5"/>
-  <text x="790" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
-  <text x="720" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• TDD実践</text>
-  <text x="720" y="582" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• AIセルフレビュー</text>
-  <text x="720" y="599" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• テスト全実行</text>
+  <text x="790" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
+  <text x="720" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• TDD実践</text>
+  <text x="720" y="582" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• AIセルフレビュー</text>
+  <text x="720" y="599" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• テスト全実行</text>
 
   <!-- Arrow -->
   <line x1="700" y1="490" x2="730" y2="520" stroke="#00AFF0" stroke-width="3"/>
@@ -58,16 +58,16 @@
   <!-- Failure 3: Bottom-Right (5 o'clock) - No Task Breakdown -->
   <path d="M 650 520 L 520 650 A 100 100 0 0 1 600 570 Z" fill="#003399"/>
   <text x="600" y="600" class="section-title" text-anchor="middle">失敗3</text>
-  <text x="600" y="625" class="section-title" text-anchor="middle" font-size="16">タスク分解ミス</text>
+  <text x="600" y="625" class="section-title" text-anchor="middle" font-size="28">タスク分解ミス</text>
   <text x="600" y="650" class="section-text" text-anchor="middle">全部一度に作成</text>
   <text x="600" y="667" class="section-text" text-anchor="middle">→ 混乱・依存複雑化</text>
 
   <!-- Solution 3 -->
   <rect x="530" y="690" width="200" height="90" fill="#E6E6E6" stroke="#003399" stroke-width="3" rx="5"/>
-  <text x="630" y="715" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
-  <text x="550" y="735" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• Phase分け実施</text>
-  <text x="550" y="752" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 段階的実装</text>
-  <text x="550" y="769" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 各Phase毎に動作確認</text>
+  <text x="630" y="715" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
+  <text x="550" y="735" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• Phase分け実施</text>
+  <text x="550" y="752" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 段階的実装</text>
+  <text x="550" y="769" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 各Phase毎に動作確認</text>
 
   <!-- Arrow -->
   <line x1="600" y1="670" x2="620" y2="690" stroke="#003399" stroke-width="3"/>
@@ -76,16 +76,16 @@
   <!-- Failure 4: Bottom-Left (7 o'clock) - No Documentation -->
   <path d="M 380 650 L 250 520 A 100 100 0 0 1 330 570 Z" fill="#4D6DB3"/>
   <text x="300" y="600" class="section-title" text-anchor="middle">失敗4</text>
-  <text x="300" y="625" class="section-title" text-anchor="middle" font-size="16">ドキュメント不足</text>
+  <text x="300" y="625" class="section-title" text-anchor="middle" font-size="28">ドキュメント不足</text>
   <text x="300" y="650" class="section-text" text-anchor="middle">コードだけ残す</text>
   <text x="300" y="667" class="section-text" text-anchor="middle">→ 属人化・引継困難</text>
 
   <!-- Solution 4 -->
   <rect x="70" y="690" width="210" height="90" fill="#E6E6E6" stroke="#4D6DB3" stroke-width="3" rx="5"/>
-  <text x="175" y="715" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
-  <text x="90" y="735" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• Living Documentation</text>
-  <text x="90" y="752" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• ADR（意思決定記録）</text>
-  <text x="90" y="769" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• コード内コメント充実</text>
+  <text x="175" y="715" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
+  <text x="90" y="735" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• Living Documentation</text>
+  <text x="90" y="752" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• ADR（意思決定記録）</text>
+  <text x="90" y="769" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• コード内コメント充実</text>
 
   <!-- Arrow -->
   <line x1="280" y1="670" x2="260" y2="690" stroke="#4D6DB3" stroke-width="3"/>
@@ -94,17 +94,17 @@
   <!-- Failure 5: Left (9 o'clock) - Wrong Prompting -->
   <path d="M 100 450 L 250 380 A 100 100 0 0 1 250 520 Z" fill="#66D9FF"/>
   <text x="170" y="430" class="section-title" text-anchor="middle">失敗5</text>
-  <text x="170" y="455" class="section-title" text-anchor="middle" font-size="16">プロンプト不適切</text>
+  <text x="170" y="455" class="section-title" text-anchor="middle" font-size="28">プロンプト不適切</text>
   <text x="170" y="480" class="section-text" text-anchor="middle">曖昧な指示</text>
   <text x="170" y="497" class="section-text" text-anchor="middle">→ 意図と違う実装</text>
 
   <!-- Solution 5 -->
   <rect x="20" y="360" width="180" height="110" fill="#E6E6E6" stroke="#66D9FF" stroke-width="3" rx="5"/>
-  <text x="110" y="385" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
-  <text x="40" y="405" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 具体的な指示</text>
-  <text x="40" y="422" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 設計書参照指示</text>
-  <text x="40" y="439" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 例示（Few-shot）</text>
-  <text x="40" y="456" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 段階的指示</text>
+  <text x="110" y="385" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
+  <text x="40" y="405" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 具体的な指示</text>
+  <text x="40" y="422" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 設計書参照指示</text>
+  <text x="40" y="439" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 例示（Few-shot）</text>
+  <text x="40" y="456" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 段階的指示</text>
 
   <!-- Arrow -->
   <line x1="200" y1="430" x2="230" y2="430" stroke="#66D9FF" stroke-width="3"/>
@@ -113,16 +113,16 @@
   <!-- Failure 6: Top-Left (11 o'clock) - Ignoring AI Limits -->
   <path d="M 250 380 L 380 250 A 100 100 0 0 1 330 330 Z" fill="#00146E"/>
   <text x="300" y="285" class="section-title" text-anchor="middle">失敗6</text>
-  <text x="300" y="310" class="section-title" text-anchor="middle" font-size="16">AI限界無視</text>
+  <text x="300" y="310" class="section-title" text-anchor="middle" font-size="28">AI限界無視</text>
   <text x="300" y="335" class="section-text" text-anchor="middle">全てAI任せ</text>
   <text x="300" y="352" class="section-text" text-anchor="middle">→ 品質低下</text>
 
   <!-- Solution 6 -->
   <rect x="70" y="180" width="180" height="100" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="5"/>
-  <text x="160" y="205" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
-  <text x="90" y="225" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 適材適所</text>
-  <text x="90" y="242" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• 人の判断重視</text>
-  <text x="90" y="259" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">• フィットギャップ分析</text>
+  <text x="160" y="205" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">対策</text>
+  <text x="90" y="225" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 適材適所</text>
+  <text x="90" y="242" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 人の判断重視</text>
+  <text x="90" y="259" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• フィットギャップ分析</text>
 
   <!-- Arrow -->
   <line x1="250" y1="300" x2="230" y2="270" stroke="#00146E" stroke-width="3"/>
@@ -130,10 +130,10 @@
 
   <!-- Bottom summary -->
   <rect x="70" y="810" width="760" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="450" y="838" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="450" y="838" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     失敗パターンを知り、対策を講じることで品質向上
   </text>
-  <text x="450" y="860" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333; text-anchor: middle;">
+  <text x="450" y="860" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle;">
     人とAIの協働で、それぞれの弱点を補完し合う
   </text>
 </svg>

@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1040">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
-      .section-title { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; font-weight: bold; fill: white; }
-      .section-text { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .section-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
+      .section-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
     </style>
   </defs>
 
@@ -15,14 +15,14 @@
 
   <!-- Without .claudeignore (Left) -->
   <rect x="50" y="80" width="650" height="320" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
-  <text x="375" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+  <text x="375" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
     ✗ .claudeignore なし（危険）
   </text>
 
   <!-- Without: File list -->
   <rect x="70" y="130" width="280" height="250" fill="#00146E" rx="10"/>
   <text x="210" y="160" class="section-title" text-anchor="middle">スキャン対象ファイル</text>
-  <text x="210" y="185" class="section-title" text-anchor="middle" font-size="15">(全ファイル読み込み)</text>
+  <text x="210" y="185" class="section-title" text-anchor="middle" font-size="26">(全ファイル読み込み)</text>
 
   <text x="90" y="215" class="section-text">• src/**/*.java (必要)</text>
   <text x="90" y="235" class="section-text">• node_modules/** (不要)</text>
@@ -37,47 +37,47 @@
   <rect x="370" y="130" width="310" height="250" fill="#CC0000" rx="10"/>
   <text x="525" y="160" class="section-title" text-anchor="middle">トークン消費量</text>
 
-  <text x="390" y="195" class="section-text" font-size="16" font-weight="bold">総トークン: 150,000</text>
+  <text x="390" y="195" class="section-text" font-size="28" font-weight="bold">総トークン: 150,000</text>
 
   <rect x="390" y="210" width="250" height="30" fill="#00AA00" rx="5"/>
-  <text x="515" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
+  <text x="515" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
     必要なコード: 30,000 (20%)
   </text>
 
   <rect x="390" y="250" width="250" height="110" fill="#666666" rx="5"/>
-  <text x="515" y="270" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
+  <text x="515" y="270" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
     不要なファイル: 120,000 (80%)
   </text>
-  <text x="400" y="290" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
+  <text x="400" y="290" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
     • node_modules: 50,000
   </text>
-  <text x="400" y="308" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
+  <text x="400" y="308" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
     • target/build: 40,000
   </text>
-  <text x="400" y="326" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
+  <text x="400" y="326" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
     • .git: 20,000
   </text>
-  <text x="400" y="344" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
+  <text x="400" y="344" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
     • その他: 10,000
   </text>
 
   <!-- With .claudeignore (Right) -->
   <rect x="730" y="80" width="650" height="320" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
-  <text x="1055" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+  <text x="1055" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
     ✓ .claudeignore あり（推奨）
   </text>
 
   <!-- With: File list -->
   <rect x="750" y="130" width="280" height="250" fill="#00146E" rx="10"/>
   <text x="890" y="160" class="section-title" text-anchor="middle">スキャン対象ファイル</text>
-  <text x="890" y="185" class="section-title" text-anchor="middle" font-size="15">(必要なファイルのみ)</text>
+  <text x="890" y="185" class="section-title" text-anchor="middle" font-size="26">(必要なファイルのみ)</text>
 
   <text x="770" y="215" class="section-text">• src/**/*.java ✓</text>
   <text x="770" y="235" class="section-text">• pom.xml ✓</text>
   <text x="770" y="255" class="section-text">• package.json ✓</text>
   <text x="770" y="275" class="section-text">• README.md ✓</text>
   <text x="770" y="295" class="section-text">• .env.example ✓</text>
-  <text x="770" y="335" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
+  <text x="770" y="335" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
     → 80%削減！
   </text>
 
@@ -85,112 +85,112 @@
   <rect x="1050" y="130" width="310" height="250" fill="#00AA00" rx="10"/>
   <text x="1205" y="160" class="section-title" text-anchor="middle">トークン消費量</text>
 
-  <text x="1070" y="195" class="section-text" font-size="16" font-weight="bold">総トークン: 30,000 (80%削減)</text>
+  <text x="1070" y="195" class="section-text" font-size="28" font-weight="bold">総トークン: 30,000 (80%削減)</text>
 
   <rect x="1070" y="210" width="250" height="150" fill="#00AA00" opacity="0.7" rx="5"/>
-  <text x="1195" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; text-anchor: middle;">
+  <text x="1195" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
     必要なコード: 30,000 (100%)
   </text>
-  <text x="1080" y="255" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
+  <text x="1080" y="255" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
     • ソースコード
   </text>
-  <text x="1080" y="273" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
+  <text x="1080" y="273" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
     • 設定ファイル
   </text>
-  <text x="1080" y="291" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white;">
+  <text x="1080" y="291" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
     • ドキュメント
   </text>
-  <text x="1080" y="320" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; font-weight: bold;">
+  <text x="1080" y="320" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
     → AIが重要な箇所に集中
   </text>
-  <text x="1080" y="343" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; font-weight: bold;">
+  <text x="1080" y="343" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
     → 応答速度向上
   </text>
 
   <!-- Impact comparison -->
   <rect x="50" y="430" width="1330" height="150" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="715" y="465" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="715" y="465" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     .claudeignore による影響
   </text>
 
   <!-- Cost impact -->
   <rect x="70" y="485" width="400" height="80" fill="#00AFF0" rx="8"/>
-  <text x="270" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="270" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
     💰 コスト削減
   </text>
-  <text x="90" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white;">
+  <text x="90" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
     トークン使用量: 150,000 → 30,000 (80%削減)
   </text>
-  <text x="90" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white;">
+  <text x="90" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
     API料金: 月$450 → $90 (年間$4,320削減)
   </text>
 
   <!-- Speed impact -->
   <rect x="490" y="485" width="400" height="80" fill="#003399" rx="8"/>
-  <text x="690" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="690" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
     ⚡ 応答速度向上
   </text>
-  <text x="510" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white;">
+  <text x="510" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
     応答時間: 15秒 → 3秒 (5倍高速化)
   </text>
-  <text x="510" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white;">
+  <text x="510" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
     生産性: 開発者の待ち時間が大幅削減
   </text>
 
   <!-- Quality impact -->
   <rect x="910" y="485" width="450" height="80" fill="#00146E" rx="8"/>
-  <text x="1135" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1135" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
     🎯 AI精度向上
   </text>
-  <text x="930" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white;">
+  <text x="930" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
     ノイズ除去: 不要な情報80%削減 → 重要コードに集中
   </text>
-  <text x="930" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white;">
+  <text x="930" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
     品質向上: 関連ファイルの理解深度向上 → より適切な提案
   </text>
 
   <!-- Best practices -->
   <rect x="50" y="610" width="1330" height="160" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="715" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 43px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="715" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     .claudeignore ベストプラクティス
   </text>
 
   <!-- Best practice 1 -->
-  <text x="70" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
+  <text x="70" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
     1. 除外すべきディレクトリ
   </text>
-  <text x="80" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
+  <text x="80" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
     node_modules/, target/, build/, dist/, .git/, coverage/, *.log
   </text>
-  <text x="80" y="717" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
+  <text x="80" y="717" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
     → ビルド成果物・依存ライブラリ・ログは不要
   </text>
 
   <!-- Best practice 2 -->
-  <text x="520" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
+  <text x="520" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
     2. 含めるべきファイル
   </text>
-  <text x="530" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
+  <text x="530" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
     src/, README.md, pom.xml, package.json, .env.example
   </text>
-  <text x="530" y="717" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
+  <text x="530" y="717" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
     → ソースコード・設定・ドキュメントは必須
   </text>
 
   <!-- Best practice 3 -->
-  <text x="970" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
+  <text x="970" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
     3. プロジェクト初期に設定
   </text>
-  <text x="980" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
+  <text x="980" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
     最初のコミット時に .claudeignore を作成
   </text>
-  <text x="980" y="717" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
+  <text x="980" y="717" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
     → 初日から効率的な開発環境を確保
   </text>
 
   <!-- Bottom summary -->
   <rect x="50" y="740" width="1330" height="35" fill="#00AFF0" rx="5"/>
-  <text x="715" y="765" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="715" y="765" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
     .claudeignore 設定 = トークン80%削減 + 応答5倍高速化 + AI精度向上 → 必須設定！
   </text>
 </svg>

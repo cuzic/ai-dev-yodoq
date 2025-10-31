@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1040">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #333333; }
-      .center-text { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; font-weight: bold; fill: white; text-anchor: middle; }
-      .layer-title { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; font-weight: bold; fill: white; }
-      .layer-text { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
+      .center-text { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; text-anchor: middle; }
+      .layer-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
+      .layer-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
     </style>
   </defs>
 
@@ -17,8 +17,8 @@
   <!-- Center: Change Point -->
   <circle cx="400" cy="400" r="80" fill="#00146E"/>
   <text x="400" y="385" class="center-text">変更箇所</text>
-  <text x="400" y="410" class="center-text" font-size="15">顧客テーブルに</text>
-  <text x="400" y="425" class="center-text" font-size="15">電話番号追加</text>
+  <text x="400" y="410" class="center-text" font-size="26">顧客テーブルに</text>
+  <text x="400" y="425" class="center-text" font-size="26">電話番号追加</text>
 
   <!-- Layer 1: File Layer (Top) -->
   <path d="M 400 100 L 550 200 L 500 280 L 250 280 L 200 200 Z" fill="#00AFF0" opacity="0.9"/>
@@ -73,10 +73,10 @@
 
   <!-- Bottom note -->
   <rect x="50" y="720" width="700" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="400" y="750" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="400" y="750" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     影響範囲を事前に把握 → デグレ防止、テスト計画立案
   </text>
-  <text x="400" y="768" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333; text-anchor: middle;">
+  <text x="400" y="768" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
     AIへの指示: 「この変更の影響範囲を調査して」
   </text>
 </svg>

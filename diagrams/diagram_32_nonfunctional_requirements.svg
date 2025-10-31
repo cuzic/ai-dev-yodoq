@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1300">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
-      .category-title { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; font-weight: bold; fill: white; }
-      .req-text { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .category-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
+      .req-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
     </style>
   </defs>
 
@@ -72,46 +72,46 @@
 
   <!-- Category 4: Usability -->
   <rect x="50" y="380" width="420" height="280" fill="#66D9FF" rx="10"/>
-  <text x="260" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+  <text x="260" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: #00146E; text-anchor: middle;">
     🎨 使いやすさ
   </text>
 
-  <text x="70" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E; font-weight: bold;">
+  <text x="70" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
     □ API設計
   </text>
-  <text x="80" y="458" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="80" y="458" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • RESTful API（GET/POST/PUT/DELETE適切に使用）
   </text>
-  <text x="80" y="473" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="80" y="473" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • HTTPステータスコード適切に返却（200/201/400/404/500）
   </text>
-  <text x="80" y="488" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="80" y="488" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • エラーメッセージはユーザーフレンドリー
   </text>
 
-  <text x="70" y="513" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E; font-weight: bold;">
+  <text x="70" y="513" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
     □ バリデーションメッセージ
   </text>
-  <text x="80" y="531" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="80" y="531" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • 日本語メッセージ（ValidationMessages.properties）
   </text>
-  <text x="80" y="546" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="80" y="546" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • フィールド名を含む具体的メッセージ
   </text>
-  <text x="80" y="561" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="80" y="561" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • 複数エラー時は全件表示
   </text>
 
-  <text x="70" y="586" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E; font-weight: bold;">
+  <text x="70" y="586" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
     □ ドキュメント
   </text>
-  <text x="80" y="604" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="80" y="604" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • Swagger/OpenAPI仕様書自動生成
   </text>
-  <text x="80" y="619" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="80" y="619" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • README.md（セットアップ手順、API使用例）
   </text>
-  <text x="80" y="634" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="80" y="634" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • .env.example（環境変数テンプレート）
   </text>
 
@@ -155,37 +155,37 @@
 
   <!-- Bottom: How to use with AI -->
   <rect x="50" y="690" width="1300" height="280" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="700" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     AIへの指示例（非機能要件を含める）
   </text>
 
   <rect x="70" y="745" width="1260" height="210" fill="#00AFF0" rx="8"/>
-  <text x="90" y="770" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; font-weight: bold;">
+  <text x="90" y="770" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
     プロンプト例:
   </text>
-  <text x="100" y="790" style="font-family: 'Courier New', monospace; font-size: 32px; fill: white;">
+  <text x="100" y="790" style="font-family: 'Courier New', monospace; font-size: 54px; fill: white;">
     「ユーザー登録機能を実装して。以下の非機能要件を満たすこと:
   </text>
-  <text x="110" y="810" style="font-family: 'Courier New', monospace; font-size: 32px; fill: white;">
+  <text x="110" y="810" style="font-family: 'Courier New', monospace; font-size: 54px; fill: white;">
     【セキュリティ】BCryptでパスワードハッシュ化、@Valid でバリデーション、環境変数でシークレット管理
   </text>
-  <text x="110" y="830" style="font-family: 'Courier New', monospace; font-size: 32px; fill: white;">
+  <text x="110" y="830" style="font-family: 'Courier New', monospace; font-size: 54px; fill: white;">
     【パフォーマンス】メールアドレス重複チェックにインデックス設定、@Async で非同期メール送信
   </text>
-  <text x="110" y="850" style="font-family: 'Courier New', monospace; font-size: 32px; fill: white;">
+  <text x="110" y="850" style="font-family: 'Courier New', monospace; font-size: 54px; fill: white;">
     【信頼性】@Transactional でトランザクション管理、@ControllerAdvice で統一エラー処理
   </text>
-  <text x="110" y="870" style="font-family: 'Courier New', monospace; font-size: 32px; fill: white;">
+  <text x="110" y="870" style="font-family: 'Courier New', monospace; font-size: 54px; fill: white;">
     【使いやすさ】日本語エラーメッセージ、Swagger API仕様書、README.md作成
   </text>
-  <text x="110" y="890" style="font-family: 'Courier New', monospace; font-size: 32px; fill: white;">
+  <text x="110" y="890" style="font-family: 'Courier New', monospace; font-size: 54px; fill: white;">
     【保守性】JUnit テストコード（カバレッジ80%以上）、変数名は意図明確に
   </text>
-  <text x="110" y="910" style="font-family: 'Courier New', monospace; font-size: 32px; fill: white;">
+  <text x="110" y="910" style="font-family: 'Courier New', monospace; font-size: 54px; fill: white;">
     【拡張性】Controller/Service/Repository 3層アーキテクチャ、DIコンテナ活用」
   </text>
 
-  <text x="90" y="940" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; font-weight: bold;">
+  <text x="90" y="940" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
     → 非機能要件を明記することで、AIが本番レベルのコードを生成！
   </text>
 </svg>

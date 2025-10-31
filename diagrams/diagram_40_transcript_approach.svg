@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1040">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; fill: #333333; }
-      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 38px; font-weight: bold; fill: white; }
-      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
     </style>
   </defs>
 
@@ -15,7 +15,7 @@
 
   <!-- Concept -->
   <rect x="50" y="70" width="1300" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="105" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="700" y="105" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     対話履歴 = トライアル知識の宝庫 → チーム共有で全員が即戦力に
   </text>
 
@@ -23,7 +23,7 @@
   <!-- Step 1 -->
   <rect x="100" y="160" width="250" height="160" fill="#00AFF0" rx="10"/>
   <text x="225" y="190" class="step-title" text-anchor="middle">1. 対話しながら開発</text>
-  <text x="225" y="215" class="step-title" text-anchor="middle" font-size="15">(Claude Code 対話モード)</text>
+  <text x="225" y="215" class="step-title" text-anchor="middle" font-size="26">(Claude Code 対話モード)</text>
 
   <text x="120" y="245" class="step-text" font-weight="bold">実施内容:</text>
   <text x="130" y="263" class="step-text">• 要件確認</text>
@@ -40,7 +40,7 @@
   <!-- Step 2 -->
   <rect x="400" y="160" width="250" height="160" fill="#00146E" rx="10"/>
   <text x="525" y="190" class="step-title" text-anchor="middle">2. 履歴をエクスポート</text>
-  <text x="525" y="215" class="step-title" text-anchor="middle" font-size="15">(Markdown形式)</text>
+  <text x="525" y="215" class="step-title" text-anchor="middle" font-size="26">(Markdown形式)</text>
 
   <text x="420" y="245" class="step-text" font-weight="bold">取得内容:</text>
   <text x="430" y="263" class="step-text">• プロンプト（質問内容）</text>
@@ -57,7 +57,7 @@
   <!-- Step 3 -->
   <rect x="700" y="160" width="250" height="160" fill="#003399" rx="10"/>
   <text x="825" y="190" class="step-title" text-anchor="middle">3. ナレッジ化</text>
-  <text x="825" y="215" class="step-title" text-anchor="middle" font-size="15">(整理・タグ付け)</text>
+  <text x="825" y="215" class="step-title" text-anchor="middle" font-size="26">(整理・タグ付け)</text>
 
   <text x="720" y="245" class="step-text" font-weight="bold">加工内容:</text>
   <text x="730" y="263" class="step-text">• タイトル追加</text>
@@ -73,154 +73,154 @@
 
   <!-- Step 4 -->
   <rect x="1000" y="160" width="280" height="160" fill="#66D9FF" rx="10"/>
-  <text x="1140" y="190" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+  <text x="1140" y="190" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: #00146E; text-anchor: middle;">
     4. チーム共有
   </text>
-  <text x="1140" y="215" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+  <text x="1140" y="215" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #00146E; text-anchor: middle;">
     (全員が即活用)
   </text>
 
-  <text x="1020" y="245" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E; font-weight: bold;">
+  <text x="1020" y="245" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
     活用方法:
   </text>
-  <text x="1030" y="263" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="1030" y="263" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • 同じ課題の解決時に参照
   </text>
-  <text x="1030" y="278" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="1030" y="278" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • 新メンバーのオンボーディング
   </text>
-  <text x="1030" y="293" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="1030" y="293" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     • プロンプトの再利用
   </text>
 
-  <text x="1020" y="318" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E; font-weight: bold;">
+  <text x="1020" y="318" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
     効果:
   </text>
-  <text x="1030" y="336" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00146E;">
+  <text x="1030" y="336" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
     知見の民主化 → 全員が高速開発
   </text>
 
   <!-- Example -->
   <rect x="50" y="350" width="1300" height="420" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="385" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="700" y="385" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     実践例：ログイン機能実装の文字起こし
   </text>
 
   <!-- Transcript Sample -->
   <rect x="70" y="405" width="620" height="345" fill="#00AFF0" rx="8"/>
-  <text x="380" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="380" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
     対話履歴（Markdown）
   </text>
 
   <rect x="90" y="445" width="580" height="285" fill="#FFFFFF" rx="5"/>
-  <text x="100" y="463" style="font-family: 'Courier New', monospace; font-size: 30px; fill: #333333;">
+  <text x="100" y="463" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #333333;">
     # ログイン機能実装（JWT認証）
   </text>
-  <text x="100" y="483" style="font-family: 'Courier New', monospace; font-size: 30px; fill: #333333;">
+  <text x="100" y="483" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #333333;">
     ## 要件
   </text>
-  <text x="110" y="498" style="font-family: 'Courier New', monospace; font-size: 30px; fill: #333333;">
+  <text x="110" y="498" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #333333;">
     - BCryptでパスワードハッシュ化
   </text>
-  <text x="110" y="513" style="font-family: 'Courier New', monospace; font-size: 30px; fill: #333333;">
+  <text x="110" y="513" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #333333;">
     - JWT認証（有効期限24時間）
   </text>
-  <text x="110" y="528" style="font-family: 'Courier New', monospace; font-size: 30px; fill: #333333;">
+  <text x="110" y="528" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #333333;">
     - 環境変数でシークレット管理
   </text>
-  <text x="100" y="553" style="font-family: 'Courier New', monospace; font-size: 30px; fill: #333333;">
+  <text x="100" y="553" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #333333;">
     ## 実装プロンプト
   </text>
-  <text x="110" y="568" style="font-family: 'Courier New', monospace; font-size: 30px; fill: #333333;">
+  <text x="110" y="568" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #333333;">
     「ログイン機能を実装して。BCrypt、JWT、@Valid必須」
   </text>
-  <text x="100" y="593" style="font-family: 'Courier New', monospace; font-size: 30px; fill: #333333;">
+  <text x="100" y="593" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #333333;">
     ## AIが生成したコード
   </text>
-  <text x="110" y="608" style="font-family: 'Courier New', monospace; font-size: 26px; fill: #333333;">
+  <text x="110" y="608" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
     - LoginController.java（POST /api/login）
   </text>
-  <text x="110" y="621" style="font-family: 'Courier New', monospace; font-size: 26px; fill: #333333;">
+  <text x="110" y="621" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
     - AuthService.java（BCrypt検証、JWT発行）
   </text>
-  <text x="110" y="634" style="font-family: 'Courier New', monospace; font-size: 26px; fill: #333333;">
+  <text x="110" y="634" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
     - JwtUtil.java（トークン生成・検証）
   </text>
-  <text x="100" y="659" style="font-family: 'Courier New', monospace; font-size: 30px; fill: #333333;">
+  <text x="100" y="659" style="font-family: 'Courier New', monospace; font-size: 50px; fill: #333333;">
     ## 試行錯誤
   </text>
-  <text x="110" y="674" style="font-family: 'Courier New', monospace; font-size: 26px; fill: #333333;">
+  <text x="110" y="674" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
     Q: 環境変数が読み込めない
   </text>
-  <text x="110" y="687" style="font-family: 'Courier New', monospace; font-size: 26px; fill: #333333;">
+  <text x="110" y="687" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
     A: .env.example作成、@Value("${jwt.secret}")使用
   </text>
-  <text x="110" y="707" style="font-family: 'Courier New', monospace; font-size: 26px; fill: #333333;">
+  <text x="110" y="707" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
     Q: JWTの有効期限設定は？
   </text>
-  <text x="110" y="720" style="font-family: 'Courier New', monospace; font-size: 26px; fill: #333333;">
+  <text x="110" y="720" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
     A: Jwts.builder().setExpiration(Date)で24時間設定
   </text>
 
   <!-- Benefits -->
   <rect x="710" y="405" width="620" height="345" fill="#003399" rx="8"/>
-  <text x="1020" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; text-anchor: middle; font-weight: bold;">
+  <text x="1020" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
     文字起こしアプローチのメリット
   </text>
 
   <!-- Benefit 1 -->
-  <text x="730" y="465" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
+  <text x="730" y="465" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
     1. トライアル知識の可視化
   </text>
-  <text x="740" y="485" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="485" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     • 試行錯誤の過程が全て記録される
   </text>
-  <text x="740" y="503" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="503" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     • 「なぜそう実装したか」が明確
   </text>
-  <text x="740" y="521" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="521" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     → 後から見返しても理解できる
   </text>
 
   <!-- Benefit 2 -->
-  <text x="730" y="551" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
+  <text x="730" y="551" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
     2. 即座にチーム共有
   </text>
-  <text x="740" y="571" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="571" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     • Markdown形式 → Confluence/Notionに即貼り付け
   </text>
-  <text x="740" y="589" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="589" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     • 検索性が高い → キーワードで即発見
   </text>
-  <text x="740" y="607" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="607" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     → 同じ課題に直面した人が即活用
   </text>
 
   <!-- Benefit 3 -->
-  <text x="730" y="637" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
+  <text x="730" y="637" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
     3. プロンプト再利用
   </text>
-  <text x="740" y="657" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="657" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     • 成功したプロンプトをコピペ
   </text>
-  <text x="740" y="675" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="675" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     • 新メンバーも同じ品質で実装可能
   </text>
-  <text x="740" y="693" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="693" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     → スキルの民主化（全員が即戦力）
   </text>
 
   <!-- Benefit 4 -->
-  <text x="730" y="723" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold;">
+  <text x="730" y="723" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
     4. ドキュメント作成コストゼロ
   </text>
-  <text x="740" y="743" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="743" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     • 対話しただけで自動的にドキュメント化
   </text>
-  <text x="740" y="761" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="761" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     • 手動でWord/Excel作成不要
   </text>
-  <text x="740" y="779" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: white;">
+  <text x="740" y="779" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     → 開発者は実装に集中できる
   </text>
 </svg>

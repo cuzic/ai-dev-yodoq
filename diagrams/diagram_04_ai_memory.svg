@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; font-weight: bold; text-anchor: middle; }
-      .label { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; text-anchor: middle; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; text-anchor: middle; }
+      .label { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; text-anchor: middle; }
     </style>
   </defs>
 
