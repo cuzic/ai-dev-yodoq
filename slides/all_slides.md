@@ -7,8 +7,8 @@ footer: '© 2024 AI Development Seminar'
 style: |
   /* デフォルト：上下レイアウト（図が大きい） */
   section img {
-    max-width: 95%;
-    max-height: 60vh;
+    max-width: 70%;
+    max-height: 45vh;
     display: block;
     margin: 10px auto;
     object-fit: contain;
@@ -25,8 +25,8 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-left img {
-    max-width: 100%;
-    max-height: 75vh;
+    max-width: 90%;
+    max-height: 55vh;
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
@@ -44,8 +44,8 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-right img {
-    max-width: 100%;
-    max-height: 75vh;
+    max-width: 90%;
+    max-height: 55vh;
     margin: 0;
     grid-column: 2;
     grid-row: 2;
@@ -57,8 +57,8 @@ style: |
 
   /* 図のみレイアウト：図を最大化 */
   section.layout-diagram-only img {
-    max-width: 98%;
-    max-height: 85vh;
+    max-width: 75%;
+    max-height: 60vh;
   }
 
   /* 2カラムレイアウト：テキストのみのスライド向け */
@@ -1169,8 +1169,8 @@ paginate: true
 style: |
   /* デフォルト：上下レイアウト（図が大きい） */
   section img {
-    max-width: 95%;
-    max-height: 60vh;
+    max-width: 70%;
+    max-height: 45vh;
     display: block;
     margin: 10px auto;
     object-fit: contain;
@@ -1187,8 +1187,8 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-left img {
-    max-width: 100%;
-    max-height: 75vh;
+    max-width: 90%;
+    max-height: 55vh;
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
@@ -1206,8 +1206,8 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-right img {
-    max-width: 100%;
-    max-height: 75vh;
+    max-width: 90%;
+    max-height: 55vh;
     margin: 0;
     grid-column: 2;
     grid-row: 2;
@@ -1219,8 +1219,8 @@ style: |
 
   /* 図のみレイアウト：図を最大化 */
   section.layout-diagram-only img {
-    max-width: 98%;
-    max-height: 85vh;
+    max-width: 75%;
+    max-height: 60vh;
   }
 
   /* 2カラムレイアウト：テキストのみのスライド向け */
@@ -2217,8 +2217,8 @@ paginate: true
 style: |
   /* デフォルト：上下レイアウト（図が大きい） */
   section img {
-    max-width: 95%;
-    max-height: 60vh;
+    max-width: 70%;
+    max-height: 45vh;
     display: block;
     margin: 10px auto;
     object-fit: contain;
@@ -2235,8 +2235,8 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-left img {
-    max-width: 100%;
-    max-height: 75vh;
+    max-width: 90%;
+    max-height: 55vh;
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
@@ -2254,8 +2254,8 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-right img {
-    max-width: 100%;
-    max-height: 75vh;
+    max-width: 90%;
+    max-height: 55vh;
     margin: 0;
     grid-column: 2;
     grid-row: 2;
@@ -2267,8 +2267,8 @@ style: |
 
   /* 図のみレイアウト：図を最大化 */
   section.layout-diagram-only img {
-    max-width: 98%;
-    max-height: 85vh;
+    max-width: 75%;
+    max-height: 60vh;
   }
 
   /* 2カラムレイアウト：テキストのみのスライド向け */
@@ -2872,8 +2872,8 @@ paginate: true
 style: |
   /* デフォルト：上下レイアウト（図が大きい） */
   section img {
-    max-width: 95%;
-    max-height: 60vh;
+    max-width: 70%;
+    max-height: 45vh;
     display: block;
     margin: 10px auto;
     object-fit: contain;
@@ -2890,8 +2890,8 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-left img {
-    max-width: 100%;
-    max-height: 75vh;
+    max-width: 90%;
+    max-height: 55vh;
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
@@ -2909,8 +2909,8 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-right img {
-    max-width: 100%;
-    max-height: 75vh;
+    max-width: 90%;
+    max-height: 55vh;
     margin: 0;
     grid-column: 2;
     grid-row: 2;
@@ -2922,8 +2922,8 @@ style: |
 
   /* 図のみレイアウト：図を最大化 */
   section.layout-diagram-only img {
-    max-width: 98%;
-    max-height: 85vh;
+    max-width: 75%;
+    max-height: 60vh;
   }
 
   /* 2カラムレイアウト：テキストのみのスライド向け */
@@ -3413,8 +3413,8 @@ paginate: true
 style: |
   /* デフォルト：上下レイアウト（図が大きい） */
   section img {
-    max-width: 95%;
-    max-height: 60vh;
+    max-width: 70%;
+    max-height: 45vh;
     display: block;
     margin: 10px auto;
     object-fit: contain;
@@ -3431,8 +3431,8 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-left img {
-    max-width: 100%;
-    max-height: 75vh;
+    max-width: 90%;
+    max-height: 55vh;
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
@@ -3450,8 +3450,8 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-right img {
-    max-width: 100%;
-    max-height: 75vh;
+    max-width: 90%;
+    max-height: 55vh;
     margin: 0;
     grid-column: 2;
     grid-row: 2;
@@ -3463,8 +3463,8 @@ style: |
 
   /* 図のみレイアウト：図を最大化 */
   section.layout-diagram-only img {
-    max-width: 98%;
-    max-height: 85vh;
+    max-width: 75%;
+    max-height: 60vh;
   }
 
   /* 2カラムレイアウト：テキストのみのスライド向け */
