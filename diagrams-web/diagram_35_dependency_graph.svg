@@ -87,7 +87,7 @@
 
   <!-- Legend -->
   <rect x="40" y="535" width="720" height="50" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
-  <text x="400" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    💡 並列実行可能：Task 2とTask 3、Task 4とTask 5とTask 6
+  <text x="400" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    💡 並列実行：Task 2と3、Task 4と5と6
   </text>
 </svg>

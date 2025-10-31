@@ -121,7 +121,7 @@
   <text x="500" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666; text-anchor: middle;">
     前工程（STEP1-2）を丁寧にすると、後工程がスムーズに進む
   </text>
-  <text x="500" y="665" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #999; text-anchor: middle;">
-    AIの制約（忘れっぽい・Reward Hacking・Jagged Intelligence）に対応した構造
+  <text x="500" y="665" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #999; text-anchor: middle;">
+    AIの制約（忘れっぽい・Reward Hacking・Jagged）に対応した構造
   </text>
 </svg>
