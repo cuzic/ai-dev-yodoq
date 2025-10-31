@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .time { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: white; text-anchor: middle; }
+      .s1 { fill: #E74C3C; }
+      .s2 { fill: #E67E22; }
+      .s3 { fill: #00AFF0; }
+      .s4 { fill: #003399; }
+      .s5 { fill: #27AE60; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+  <text x="500" y="40" class="title">5ステップフロー詳細版</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="180" height="50" rx="5" class="s1"/>
+    <text x="90" y="28" class="step-title">STEP 1</text>
+    <text x="90" y="44" class="time">半日</text>
+
+    <rect x="0" y="60" width="180" height="160" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(15, 80)">
+      <text x="0" y="0" class="item" font-weight="bold">要件定義</text>
+      <text x="0" y="20" class="item" font-size="11px">• ヒアリング</text>
+      <text x="0" y="36" class="item" font-size="11px">• MoSCoW分類</text>
+      <text x="0" y="52" class="item" font-size="11px">• 曖昧さ排除</text>
+      <text x="0" y="68" class="item" font-size="11px">• Guardrails設定</text>
+
+      <text x="0" y="95" class="item" font-weight="bold" font-size="11px">成果物:</text>
+      <text x="0" y="111" class="item" font-size="10px">requirements.md</text>
+    </g>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(255, 80)">
+    <rect x="0" y="0" width="180" height="50" rx="5" class="s2"/>
+    <text x="90" y="28" class="step-title">STEP 2</text>
+    <text x="90" y="44" class="time">半日</text>
+
+    <rect x="0" y="60" width="180" height="160" rx="5" fill="#FFF3E0" stroke="#E67E22" stroke-width="2"/>
+    <g transform="translate(15, 80)">
+      <text x="0" y="0" class="item" font-weight="bold">設計</text>
+      <text x="0" y="20" class="item" font-size="11px">• architecture.md</text>
+      <text x="0" y="36" class="item" font-size="11px">• ER図作成</text>
+      <text x="0" y="52" class="item" font-size="11px">• API仕様</text>
+      <text x="0" y="68" class="item" font-size="11px">• シーケンス図</text>
+
+      <text x="0" y="95" class="item" font-weight="bold" font-size="11px">成果物:</text>
+      <text x="0" y="111" class="item" font-size="10px">Spec-First設計書</text>
+    </g>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(460, 80)">
+    <rect x="0" y="0" width="180" height="50" rx="5" class="s3"/>
+    <text x="90" y="28" class="step-title">STEP 3</text>
+    <text x="90" y="44" class="time">1時間</text>
+
+    <rect x="0" y="60" width="180" height="160" rx="5" fill="#E1F5FE" stroke="#00AFF0" stroke-width="2"/>
+    <g transform="translate(15, 80)">
+      <text x="0" y="0" class="item" font-weight="bold">タスク分解</text>
+      <text x="0" y="20" class="item" font-size="11px">• Phase分け</text>
+      <text x="0" y="36" class="item" font-size="11px">• 依存関係整理</text>
+      <text x="0" y="52" class="item" font-size="11px">• 見積もり</text>
+      <text x="0" y="68" class="item" font-size="11px">• チケット作成</text>
+
+      <text x="0" y="95" class="item" font-weight="bold" font-size="11px">成果物:</text>
+      <text x="0" y="111" class="item" font-size="10px">タスクリスト</text>
+    </g>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(665, 80)">
+    <rect x="0" y="0" width="180" height="50" rx="5" class="s4"/>
+    <text x="90" y="28" class="step-title">STEP 4</text>
+    <text x="90" y="44" class="time">3日</text>
+
+    <rect x="0" y="60" width="180" height="160" rx="5" fill="#E3F2FD" stroke="#003399" stroke-width="2"/>
+    <g transform="translate(15, 80)">
+      <text x="0" y="0" class="item" font-weight="bold">実装</text>
+      <text x="0" y="20" class="item" font-size="11px">• TDD実践</text>
+      <text x="0" y="36" class="item" font-size="11px">• AIペアプロ</text>
+      <text x="0" y="52" class="item" font-size="11px">• AIレビュー</text>
+      <text x="0" y="68" class="item" font-size="11px">• リファクタ</text>
+
+      <text x="0" y="95" class="item" font-weight="bold" font-size="11px">成果物:</text>
+      <text x="0" y="111" class="item" font-size="10px">テスト付きコード</text>
+    </g>
+  </g>
+
+  <!-- Step 5 -->
+  <g transform="translate(357.5, 300)">
+    <rect x="0" y="0" width="285" height="50" rx="5" class="s5"/>
+    <text x="142.5" y="28" class="step-title">STEP 5</text>
+    <text x="142.5" y="44" class="time">1日</text>
+
+    <rect x="0" y="60" width="285" height="200" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(15, 80)">
+      <text x="0" y="0" class="item" font-weight="bold">品質担保＆ドキュメント反映</text>
+      <text x="0" y="22" class="item" font-size="11px">• カバレッジ80%確認</text>
+      <text x="0" y="40" class="item" font-size="11px">• E2Eテスト実行</text>
+      <text x="0" y="58" class="item" font-size="11px">• セキュリティチェック</text>
+      <text x="0" y="76" class="item" font-size="11px">• パフォーマンス測定</text>
+      <text x="0" y="94" class="item" font-size="11px">• ドキュメント自動更新</text>
+      <text x="0" y="112" class="item" font-size="11px">• pre-commit hook設定</text>
+
+      <text x="0" y="145" class="item" font-weight="bold" font-size="11px">成果物:</text>
+      <text x="0" y="163" class="item" font-size="10px">本番リリース可能な状態</text>
+    </g>
+  </g>
+
+  <!-- Bottom summary -->
+  <rect x="50" y="590" width="900" height="85" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="500" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    合計所要時間：約1週間（小規模プロジェクトの場合）
+  </text>
+  <text x="500" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666; text-anchor: middle;">
+    前工程（STEP1-2）を丁寧にすると、後工程がスムーズに進む
+  </text>
+  <text x="500" y="665" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #999; text-anchor: middle;">
+    AIの制約（忘れっぽい・Reward Hacking・Jagged Intelligence）に対応した構造
+  </text>
+</svg>

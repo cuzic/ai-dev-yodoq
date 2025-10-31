@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .box-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .box-text { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; }
+      .label { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; font-weight: bold; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
+      .box-blue { fill: #003399; }
+      .box-cyan { fill: #00AFF0; }
+      .box-green { fill: #27AE60; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="35" class="title">リバースエンジニアリング：レガシーコードの理解</text>
+
+  <!-- Step 1: Input -->
+  <rect x="50" y="80" width="200" height="120" rx="5" class="box-blue"/>
+  <text x="150" y="115" class="box-title">STEP 1</text>
+  <text x="150" y="135" class="box-title">入力</text>
+  <text x="70" y="165" class="box-text">• レガシーコード</text>
+  <text x="70" y="185" class="box-text">• ドキュメントなし</text>
+  <text x="70" y="205" class="box-text">• 仕様不明</text>
+
+  <!-- Arrow 1 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+  <path d="M 260 140 L 320 140" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="290" y="130" class="label">AI分析</text>
+
+  <!-- Step 2: Code Analysis -->
+  <rect x="330" y="80" width="200" height="120" rx="5" class="box-cyan"/>
+  <text x="430" y="115" class="box-title">STEP 2</text>
+  <text x="430" y="135" class="box-title">コード解析</text>
+  <text x="350" y="165" class="box-text">• 関数の責務特定</text>
+  <text x="350" y="185" class="box-text">• データフロー追跡</text>
+  <text x="350" y="205" class="box-text">• 依存関係抽出</text>
+
+  <!-- Arrow 2 -->
+  <path d="M 540 140 L 600 140" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="570" y="130" class="label">構造化</text>
+
+  <!-- Step 3: Structure Extraction -->
+  <rect x="610" y="80" width="200" height="120" rx="5" class="box-green"/>
+  <text x="710" y="115" class="box-title">STEP 3</text>
+  <text x="710" y="135" class="box-title">構造抽出</text>
+  <text x="630" y="165" class="box-text">• ER図生成</text>
+  <text x="630" y="185" class="box-text">• シーケンス図</text>
+  <text x="630" y="205" class="box-text">• クラス図</text>
+
+  <!-- Step 4: Spec Generation (bottom left) -->
+  <rect x="50" y="280" width="250" height="150" rx="5" fill="#E8F4F8" stroke="#003399" stroke-width="2"/>
+  <text x="175" y="315" class="label" fill="#00146E">STEP 4: 仕様書生成</text>
+  <text x="70" y="345" class="desc" fill="#333">AIに以下を生成させる:</text>
+  <text x="70" y="370" class="desc" fill="#333">• 機能要件一覧</text>
+  <text x="70" y="390" class="desc" fill="#333">• APIエンドポイント仕様</text>
+  <text x="70" y="410" class="desc" fill="#333">• データモデル定義</text>
+  <text x="70" y="430" class="desc" fill="#333">• ビジネスロジック説明</text>
+
+  <!-- Step 5: Test Generation (bottom middle) -->
+  <rect x="350" y="280" width="250" height="150" rx="5" fill="#E8F4F8" stroke="#00AFF0" stroke-width="2"/>
+  <text x="475" y="315" class="label" fill="#00146E">STEP 5: テスト生成</text>
+  <text x="370" y="345" class="desc" fill="#333">仕様書から自動生成:</text>
+  <text x="370" y="370" class="desc" fill="#333">• ユニットテスト</text>
+  <text x="370" y="390" class="desc" fill="#333">• 統合テスト</text>
+  <text x="370" y="410" class="desc" fill="#333">• 境界値テスト</text>
+  <text x="370" y="430" class="desc" fill="#333">現在の動作を固定化</text>
+
+  <!-- Step 6: Documentation (bottom right) -->
+  <rect x="650" y="280" width="250" height="150" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+  <text x="775" y="315" class="label" fill="#00146E">STEP 6: ドキュメント整備</text>
+  <text x="670" y="345" class="desc" fill="#333">成果物:</text>
+  <text x="670" y="370" class="desc" fill="#333">• README.md</text>
+  <text x="670" y="390" class="desc" fill="#333">• architecture.md</text>
+  <text x="670" y="410" class="desc" fill="#333">• API仕様書</text>
+  <text x="670" y="430" class="desc" fill="#333">• オンボーディングガイド</text>
+
+  <!-- Benefits section -->
+  <rect x="50" y="480" width="900" height="180" rx="8" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+  <text x="500" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    リバースエンジニアリングの効果
+  </text>
+
+  <g transform="translate(80, 540)">
+    <text x="0" y="0" class="desc" fill="#333" font-weight="bold">✅ 新メンバーのオンボーディング時間が1/10に</text>
+    <text x="20" y="20" class="desc" fill="#666">→ 「このコード何してるの？」が即座に解決</text>
+
+    <text x="0" y="50" class="desc" fill="#333" font-weight="bold">✅ バグ修正の精度向上</text>
+    <text x="20" y="70" class="desc" fill="#666">→ 影響範囲が可視化されるため、安全にリファクタ可能</text>
+
+    <text x="0" y="100" class="desc" fill="#333" font-weight="bold">✅ 技術的負債の可視化</text>
+    <text x="20" y="120" class="desc" fill="#666">→ 「どこから手をつけるべきか」の優先順位が明確に</text>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .day-title { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: bold; fill: white; text-anchor: middle; }
+      .session-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .time { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
+      .day1 { fill: #3498DB; }
+      .day2 { fill: #27AE60; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="40" class="title">AI開発 2日間研修まとめ</text>
+
+  <!-- Day 1 -->
+  <rect x="50" y="80" width="900" height="60" rx="8" class="day1"/>
+  <text x="500" y="120" class="day-title">DAY 1：基礎＋新規開発</text>
+
+  <!-- Day 1 sessions -->
+  <g transform="translate(80, 170)">
+    <!-- Session 1 -->
+    <rect x="0" y="0" width="840" height="100" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(20, 25)">
+      <text x="0" y="0" class="session-title">📚 午前（9:00-12:00）基礎知識</text>
+      <text x="0" y="25" class="item">• AI開発の3原則（忘れっぽい・Reward Hacking・Jagged Intelligence）</text>
+      <text x="0" y="45" class="item">• 役割の変化：Developer → Navigator</text>
+      <text x="0" y="65" class="item">• 5ステップフロー概要（要件定義→設計→タスク分解→実装→品質担保）</text>
+    </g>
+
+    <!-- Session 2 -->
+    <rect x="0" y="120" width="840" height="120" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(20, 145)">
+      <text x="0" y="0" class="session-title">💻 午後（13:00-17:00）実践</text>
+      <text x="0" y="25" class="item">• STEP1-2実習：MoSCoW要件定義 + Spec-First設計</text>
+      <text x="0" y="45" class="item">• STEP3-4実習：タスク分解 + TDD実装</text>
+      <text x="0" y="65" class="item">• STEP5実習：品質チェック + ドキュメント更新</text>
+      <text x="0" y="85" class="item">成果物：<tspan class="item" font-weight="bold" fill="#3498DB">動作するコード + テスト + 仕様書</tspan></text>
+    </g>
+  </g>
+
+  <!-- Day 2 -->
+  <rect x="50" y="430" width="900" height="60" rx="8" class="day2"/>
+  <text x="500" y="470" class="day-title">DAY 2：レガシーコード対応＋実践</text>
+
+  <!-- Day 2 sessions -->
+  <g transform="translate(80, 520)">
+    <!-- Session 3 -->
+    <rect x="0" y="0" width="840" height="100" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 25)">
+      <text x="0" y="0" class="session-title">🔍 午前（9:00-12:00）レガシーコード対応</text>
+      <text x="0" y="25" class="item">• リバースエンジニアリング：コード → 仕様書自動生成</text>
+      <text x="0" y="45" class="item">• 既存コードへのテスト追加（逆順アプローチ）</text>
+      <text x="0" y="65" class="item">• リファクタリング実践（テストで保護しながら）</text>
+    </g>
+
+    <!-- Session 4 -->
+    <rect x="0" y="120" width="840" height="100" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 145)">
+      <text x="0" y="0" class="session-title">🚀 午後（13:00-17:00）実プロジェクト適用</text>
+      <text x="0" y="25" class="item">• チームの実課題で5ステップフロー実践</text>
+      <text x="0" y="45" class="item">• CI/CD設定（pre-commit hook + GitHub Actions）</text>
+      <text x="0" y="65" class="item">• まとめ＋Q&amp;A＋今後のアクションプラン</text>
+    </g>
+  </g>
+
+  <!-- Bottom takeaway -->
+  <rect x="50" y="690" width="900" height="90" rx="8" fill="#FFF8E1" stroke="#F39C12" stroke-width="3"/>
+  <text x="500" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #F39C12; text-anchor: middle;">
+    🎯 2日間で得られるもの
+  </text>
+  <text x="500" y="750" class="item" text-anchor="middle" font-weight="bold">
+    翌日から実務で使える5ステップフロー + TDD + Living Documentation
+  </text>
+  <text x="500" y="770" class="time" text-anchor="middle">
+    「AIを使いこなす開発者」へ確実に進化
+  </text>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
+      .code { font-family: 'Courier New', monospace; font-size: 12px; fill: #00146E; }
+      .p1 { fill: #E74C3C; }
+      .p2 { fill: #F39C12; }
+      .p3 { fill: #27AE60; }
+      .p4 { fill: #3498DB; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+  <text x="500" y="40" class="title">リグレッションテストの仕組み</text>
+
+  <!-- Phase 1: Bug Discovery -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="430" height="50" rx="5" class="p1"/>
+    <text x="215" y="33" class="phase-title">Phase 1：バグ発見</text>
+
+    <rect x="0" y="60" width="430" height="120" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">ユーザーが報告：</text>
+      <text x="10" y="22" class="item" font-size="13px">「ログインできない！」</text>
+
+      <text x="0" y="52" class="item" font-weight="bold">再現手順：</text>
+      <text x="10" y="74" class="item" font-size="13px">1. メールアドレス入力</text>
+      <text x="10" y="92" class="item" font-size="13px">2. パスワード入力（特殊文字含む）</text>
+    </g>
+  </g>
+
+  <!-- Phase 2: Write Failing Test -->
+  <g transform="translate(520, 80)">
+    <rect x="0" y="0" width="430" height="50" rx="5" class="p2"/>
+    <text x="215" y="33" class="phase-title">Phase 2：失敗するテストを書く</text>
+
+    <rect x="0" y="60" width="430" height="180" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="code">test('特殊文字含むパスワードでログイン', async () => {</text>
+      <text x="10" y="20" class="code">const result = await login(</text>
+      <text x="20" y="38" class="code">'user@example.com',</text>
+      <text x="20" y="56" class="code">'P@ssw0rd!'</text>
+      <text x="10" y="74" class="code">);</text>
+      <text x="10" y="92" class="code">expect(result.success).toBe(true);</text>
+      <text x="0" y="110" class="code">});</text>
+
+      <text x="0" y="142" class="item" font-weight="bold" fill="#F39C12">テスト実行 → RED（失敗）</text>
+    </g>
+  </g>
+
+  <!-- Phase 3: Fix Bug -->
+  <g transform="translate(50, 270)">
+    <rect x="0" y="0" width="430" height="50" rx="5" class="p3"/>
+    <text x="215" y="33" class="phase-title">Phase 3：バグ修正</text>
+
+    <rect x="0" y="60" width="430" height="180" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">原因：</text>
+      <text x="10" y="22" class="item" font-size="13px">特殊文字のエスケープ処理漏れ</text>
+
+      <text x="0" y="52" class="item" font-weight="bold">修正内容：</text>
+      <text x="0" y="72" class="code">// Before</text>
+      <text x="0" y="90" class="code">password = input;</text>
+
+      <text x="0" y="115" class="code">// After</text>
+      <text x="0" y="133" class="code">password = escapeSpecialChars(input);</text>
+    </g>
+  </g>
+
+  <!-- Phase 4: CI/CD Protection -->
+  <g transform="translate(520, 270)">
+    <rect x="0" y="0" width="430" height="50" rx="5" class="p4"/>
+    <text x="215" y="33" class="phase-title">Phase 4：CI/CDで自動保護</text>
+
+    <rect x="0" y="60" width="430" height="180" rx="5" fill="#E3F2FD" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">テスト → GREEN（成功）✅</text>
+
+      <text x="0" y="30" class="item" font-weight="bold">CI/CDパイプライン：</text>
+      <text x="10" y="52" class="item" font-size="13px">1. 毎回のコミットで自動実行</text>
+      <text x="10" y="72" class="item" font-size="13px">2. 同じバグが再発したら即検出</text>
+      <text x="10" y="92" class="item" font-size="13px">3. マージをブロック</text>
+
+      <text x="0" y="122" class="item" font-weight="bold">結果：</text>
+      <text x="10" y="144" class="item" font-size="13px" fill="#3498DB">
+        このバグは二度と起きない！
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom flow -->
+  <rect x="50" y="510" width="900" height="150" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="500" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    リグレッションテストの黄金ルール
+  </text>
+  <g transform="translate(80, 565)">
+    <text x="0" y="0" class="item">1. バグが見つかったら → まず失敗するテストを書く（RED）</text>
+    <text x="0" y="25" class="item">2. バグを修正 → テストが通る（GREEN）</text>
+    <text x="0" y="50" class="item">3. CI/CDに登録 → 永久に保護される</text>
+    <text x="0" y="75" class="item">4. 過去のバグが復活することは二度とない</text>
+  </g>
+</svg>

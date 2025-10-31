@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .category-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item-text { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .desc-text { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; }
+      .unit { fill: #3498DB; }
+      .integration { fill: #27AE60; }
+      .e2e { fill: #E67E22; }
+      .visual { fill: #9B59B6; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="400" y="30" class="title">テストの分類と使い分け</text>
+
+  <!-- Unit Test (Top Left) -->
+  <g transform="translate(40, 70)">
+    <rect x="0" y="0" width="340" height="60" rx="5" class="unit"/>
+    <text x="170" y="38" class="category-title">ユニットテスト</text>
+
+    <rect x="0" y="70" width="340" height="160" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(15, 90)">
+      <text x="0" y="0" class="item-text" font-weight="bold">対象：</text>
+      <text x="60" y="0" class="item-text">関数・メソッド単体</text>
+
+      <text x="0" y="25" class="item-text" font-weight="bold">速度：</text>
+      <text x="60" y="25" class="item-text">超高速（ミリ秒）</text>
+
+      <text x="0" y="50" class="item-text" font-weight="bold">カバレッジ：</text>
+      <text x="110" y="50" class="item-text">80%以上</text>
+
+      <text x="0" y="75" class="item-text" font-weight="bold">例：</text>
+      <text x="15" y="95" class="desc-text">• validateEmail('test@example.com')</text>
+      <text x="15" y="112" class="desc-text">• calculateTax(1000) === 100</text>
+      <text x="15" y="129" class="desc-text">• formatDate(date) === '2024-01-01'</text>
+    </g>
+  </g>
+
+  <!-- Integration Test (Top Right) -->
+  <g transform="translate(420, 70)">
+    <rect x="0" y="0" width="340" height="60" rx="5" class="integration"/>
+    <text x="170" y="38" class="category-title">統合テスト</text>
+
+    <rect x="0" y="70" width="340" height="160" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(15, 90)">
+      <text x="0" y="0" class="item-text" font-weight="bold">対象：</text>
+      <text x="60" y="0" class="item-text">複数モジュール連携</text>
+
+      <text x="0" y="25" class="item-text" font-weight="bold">速度：</text>
+      <text x="60" y="25" class="item-text">中速（秒単位）</text>
+
+      <text x="0" y="50" class="item-text" font-weight="bold">カバレッジ：</text>
+      <text x="110" y="50" class="item-text">主要フロー網羅</text>
+
+      <text x="0" y="75" class="item-text" font-weight="bold">例：</text>
+      <text x="15" y="95" class="desc-text">• API → DB → Response</text>
+      <text x="15" y="112" class="desc-text">• ログイン → セッション確立</text>
+      <text x="15" y="129" class="desc-text">• 決済処理フロー全体</text>
+    </g>
+  </g>
+
+  <!-- E2E Test (Bottom Left) -->
+  <g transform="translate(40, 300)">
+    <rect x="0" y="0" width="340" height="60" rx="5" class="e2e"/>
+    <text x="170" y="38" class="category-title">E2Eテスト</text>
+
+    <rect x="0" y="70" width="340" height="160" rx="5" fill="#FEF5E7" stroke="#E67E22" stroke-width="2"/>
+    <g transform="translate(15, 90)">
+      <text x="0" y="0" class="item-text" font-weight="bold">対象：</text>
+      <text x="60" y="0" class="item-text">ユーザー操作全体</text>
+
+      <text x="0" y="25" class="item-text" font-weight="bold">速度：</text>
+      <text x="60" y="25" class="item-text">低速（分単位）</text>
+
+      <text x="0" y="50" class="item-text" font-weight="bold">カバレッジ：</text>
+      <text x="110" y="50" class="item-text">重要シナリオのみ</text>
+
+      <text x="0" y="75" class="item-text" font-weight="bold">例：</text>
+      <text x="15" y="95" class="desc-text">• ログイン → 商品購入 → 完了</text>
+      <text x="15" y="112" class="desc-text">• 新規登録フロー</text>
+      <text x="15" y="129" class="desc-text">• ブラウザ自動操作</text>
+    </g>
+  </g>
+
+  <!-- Visual Regression Test (Bottom Right) -->
+  <g transform="translate(420, 300)">
+    <rect x="0" y="0" width="340" height="60" rx="5" class="visual"/>
+    <text x="170" y="38" class="category-title">ビジュアルリグレッション</text>
+
+    <rect x="0" y="70" width="340" height="160" rx="5" fill="#F4ECF7" stroke="#9B59B6" stroke-width="2"/>
+    <g transform="translate(15, 90)">
+      <text x="0" y="0" class="item-text" font-weight="bold">対象：</text>
+      <text x="60" y="0" class="item-text">UI・レイアウト</text>
+
+      <text x="0" y="25" class="item-text" font-weight="bold">速度：</text>
+      <text x="60" y="25" class="item-text">中速（秒単位）</text>
+
+      <text x="0" y="50" class="item-text" font-weight="bold">カバレッジ：</text>
+      <text x="110" y="50" class="item-text">主要画面</text>
+
+      <text x="0" y="75" class="item-text" font-weight="bold">例：</text>
+      <text x="15" y="95" class="desc-text">• スクリーンショット比較</text>
+      <text x="15" y="112" class="desc-text">• CSS崩れ検出</text>
+      <text x="15" y="129" class="desc-text">• レスポンシブ確認</text>
+    </g>
+  </g>
+
+  <!-- Bottom recommendation -->
+  <rect x="40" y="500" width="720" height="80" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="400" y="530" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    推奨バランス：ユニット70% / 統合20% / E2E10%
+  </text>
+  <text x="400" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #666; text-anchor: middle;">
+    高速で安定したテストを多く、遅いテストは重要シナリオのみ
+  </text>
+</svg>

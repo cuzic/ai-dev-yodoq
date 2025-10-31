@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
+      .code { font-family: 'Courier New', monospace; font-size: 12px; fill: #00146E; }
+      .bad { fill: #E74C3C; }
+      .good { fill: #27AE60; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+  <text x="500" y="40" class="title">.claudeignore の重要性</text>
+
+  <!-- Without .claudeignore (Bad) -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="420" height="50" rx="5" class="bad"/>
+    <text x="210" y="33" class="subtitle">❌ .claudeignoreなし</text>
+
+    <rect x="0" y="60" width="420" height="240" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">問題：</text>
+      <text x="0" y="25" class="item">• node_modules/ 全部読み込む</text>
+      <text x="20" y="47" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 数万ファイル、数百MB
+      </text>
+
+      <text x="0" y="75" class="item">• .env ファイルを送信</text>
+      <text x="20" y="97" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → 秘密情報が漏洩リスク
+      </text>
+
+      <text x="0" y="125" class="item">• ビルド成果物も含む</text>
+      <text x="20" y="147" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → dist/, build/ など不要
+      </text>
+
+      <text x="0" y="180" class="item" font-weight="bold" fill="#E74C3C">結果：</text>
+      <text x="0" y="205" class="item">コンテキスト溢れ → AI混乱</text>
+    </g>
+  </g>
+
+  <!-- With .claudeignore (Good) -->
+  <g transform="translate(530, 80)">
+    <rect x="0" y="0" width="420" height="50" rx="5" class="good"/>
+    <text x="210" y="33" class="subtitle">✅ .claudeignoreあり</text>
+
+    <rect x="0" y="60" width="420" height="240" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">効果：</text>
+      <text x="0" y="25" class="item">• 必要なファイルだけ送信</text>
+      <text x="20" y="47" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → src/だけで十分
+      </text>
+
+      <text x="0" y="75" class="item">• 秘密情報を保護</text>
+      <text x="20" y="97" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → .env は除外済み
+      </text>
+
+      <text x="0" y="125" class="item">• ノイズを削減</text>
+      <text x="20" y="147" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
+        → AIが本質に集中
+      </text>
+
+      <text x="0" y="180" class="item" font-weight="bold" fill="#27AE60">結果：</text>
+      <text x="0" y="205" class="item">高速＆正確な応答</text>
+    </g>
+  </g>
+
+  <!-- Example .claudeignore -->
+  <rect x="50" y="370" width="900" height="280" rx="5" fill="#F8F8F8" stroke="#00146E" stroke-width="2"/>
+  <text x="500" y="405" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    推奨 .claudeignore 設定例
+  </text>
+
+  <g transform="translate(80, 425)">
+    <text x="0" y="0" class="code"># Dependencies</text>
+    <text x="0" y="20" class="code">node_modules/</text>
+    <text x="0" y="40" class="code">vendor/</text>
+
+    <text x="0" y="75" class="code"># Build outputs</text>
+    <text x="0" y="95" class="code">dist/</text>
+    <text x="0" y="115" class="code">build/</text>
+    <text x="0" y="135" class="code">*.min.js</text>
+
+    <text x="400" y="0" class="code"># Secrets</text>
+    <text x="400" y="20" class="code">.env</text>
+    <text x="400" y="40" class="code">.env.*</text>
+    <text x="400" y="60" class="code">credentials.json</text>
+    <text x="400" y="80" class="code">*.pem</text>
+    <text x="400" y="100" class="code">*.key</text>
+
+    <text x="0" y="175" class="code"># Cache</text>
+    <text x="0" y="195" class="code">.cache/</text>
+    <text x="0" y="215" class="code">tmp/</text>
+
+    <text x="400" y="135" class="code"># Logs</text>
+    <text x="400" y="155" class="code">*.log</text>
+    <text x="400" y="175" class="code">logs/</text>
+  </g>
+</svg>

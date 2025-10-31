@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .cat-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; }
+      .c1 { fill: #3498DB; }
+      .c2 { fill: #27AE60; }
+      .c3 { fill: #E67E22; }
+      .c4 { fill: #9B59B6; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <text x="400" y="30" class="title">非機能要件チェックリスト</text>
+
+  <!-- Performance -->
+  <g transform="translate(40, 60)">
+    <rect x="0" y="0" width="340" height="40" rx="5" class="c1"/>
+    <text x="170" y="26" class="cat-title">パフォーマンス</text>
+
+    <rect x="0" y="50" width="340" height="180" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(15, 70)">
+      <text x="0" y="0" class="item">□ ページ読み込み &lt; 3秒</text>
+      <text x="0" y="22" class="item">□ API応答時間 &lt; 200ms</text>
+      <text x="0" y="44" class="item">□ 同時接続 1000ユーザー対応</text>
+      <text x="0" y="66" class="item">□ データベースクエリ最適化</text>
+      <text x="0" y="88" class="item">□ CDN使用（静的ファイル）</text>
+      <text x="0" y="110" class="item">□ 画像遅延読み込み</text>
+      <text x="0" y="132" class="item">□ キャッシュ戦略</text>
+    </g>
+  </g>
+
+  <!-- Security -->
+  <g transform="translate(420, 60)">
+    <rect x="0" y="0" width="340" height="40" rx="5" class="c2"/>
+    <text x="170" y="26" class="cat-title">セキュリティ</text>
+
+    <rect x="0" y="50" width="340" height="180" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(15, 70)">
+      <text x="0" y="0" class="item">□ HTTPS必須</text>
+      <text x="0" y="22" class="item">□ SQLインジェクション対策</text>
+      <text x="0" y="44" class="item">□ XSS対策（入力サニタイズ）</text>
+      <text x="0" y="66" class="item">□ CSRF対策</text>
+      <text x="0" y="88" class="item">□ 認証トークン有効期限</text>
+      <text x="0" y="110" class="item">□ パスワードハッシュ化</text>
+      <text x="0" y="132" class="item">□ 脆弱性スキャン（定期）</text>
+    </g>
+  </g>
+
+  <!-- Usability -->
+  <g transform="translate(40, 290)">
+    <rect x="0" y="0" width="340" height="40" rx="5" class="c3"/>
+    <text x="170" y="26" class="cat-title">ユーザビリティ</text>
+
+    <rect x="0" y="50" width="340" height="180" rx="5" fill="#FEF5E7" stroke="#E67E22" stroke-width="2"/>
+    <g transform="translate(15, 70)">
+      <text x="0" y="0" class="item">□ レスポンシブデザイン</text>
+      <text x="0" y="22" class="item">□ アクセシビリティ（WCAG AA）</text>
+      <text x="0" y="44" class="item">□ エラーメッセージが分かりやすい</text>
+      <text x="0" y="66" class="item">□ ローディング表示</text>
+      <text x="0" y="88" class="item">□ キーボード操作対応</text>
+      <text x="0" y="110" class="item">□ 多言語対応（i18n）</text>
+      <text x="0" y="132" class="item">□ ダークモード対応</text>
+    </g>
+  </g>
+
+  <!-- Reliability -->
+  <g transform="translate(420, 290)">
+    <rect x="0" y="0" width="340" height="40" rx="5" class="c4"/>
+    <text x="170" y="26" class="cat-title">信頼性・保守性</text>
+
+    <rect x="0" y="50" width="340" height="180" rx="5" fill="#F4ECF7" stroke="#9B59B6" stroke-width="2"/>
+    <g transform="translate(15, 70)">
+      <text x="0" y="0" class="item">□ エラーログ記録</text>
+      <text x="0" y="22" class="item">□ 監視・アラート設定</text>
+      <text x="0" y="44" class="item">□ データバックアップ（日次）</text>
+      <text x="0" y="66" class="item">□ ロールバック手順</text>
+      <text x="0" y="88" class="item">□ ドキュメント整備</text>
+      <text x="0" y="110" class="item">□ コードカバレッジ 80%以上</text>
+      <text x="0" y="132" class="item">□ CI/CDパイプライン</text>
+    </g>
+  </g>
+
+  <!-- Bottom tip -->
+  <rect x="40" y="520" width="720" height="60" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+  <text x="400" y="548" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #F39C12; text-anchor: middle; font-weight: bold;">
+    設計段階で非機能要件も明確にすると、後から「作り直し」を防げる
+  </text>
+  <text x="400" y="568" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; text-anchor: middle;">
+    AIに「セキュリティとパフォーマンスを考慮して実装」と明示すると効果的
+  </text>
+</svg>

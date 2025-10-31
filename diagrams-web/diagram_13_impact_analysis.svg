@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .box-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .box-text { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; }
+      .label { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; font-weight: bold; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
+      .center-box { fill: #E74C3C; }
+      .impact-high { fill: #F39C12; }
+      .impact-medium { fill: #3498DB; }
+      .impact-low { fill: #95A5A6; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="35" class="title">影響範囲分析：変更前の安全確認</text>
+
+  <!-- Central change -->
+  <rect x="400" y="250" width="200" height="100" rx="5" class="center-box"/>
+  <text x="500" y="285" class="box-title">変更対象</text>
+  <text x="500" y="310" class="box-text">UserService</text>
+  <text x="500" y="330" class="box-text">updateProfile()</text>
+
+  <!-- High Impact (Top) -->
+  <g transform="translate(350, 70)">
+    <rect x="0" y="0" width="300" height="120" rx="5" class="impact-high"/>
+    <text x="150" y="30" class="box-title">影響大（直接依存）</text>
+    <text x="20" y="60" class="box-text">• ProfileController.update()</text>
+    <text x="20" y="80" class="box-text">• AdminService.modifyUser()</text>
+    <text x="20" y="100" class="box-text">⚠️ 必ずテスト修正必要</text>
+  </g>
+
+  <!-- Medium Impact (Left) -->
+  <g transform="translate(50, 250)">
+    <rect x="0" y="0" width="280" height="100" rx="5" class="impact-medium"/>
+    <text x="140" y="30" class="box-title">影響中（間接依存）</text>
+    <text x="20" y="55" class="box-text">• AuthMiddleware</text>
+    <text x="20" y="75" class="box-text">• LoggingService</text>
+    <text x="20" y="95" class="box-text">→ テスト実行推奨</text>
+  </g>
+
+  <!-- Medium Impact (Right) -->
+  <g transform="translate(670, 250)">
+    <rect x="0" y="0" width="280" height="100" rx="5" class="impact-medium"/>
+    <text x="140" y="30" class="box-title">影響中（データ依存）</text>
+    <text x="20" y="55" class="box-text">• NotificationService</text>
+    <text x="20" y="75" class="box-text">• AuditLog</text>
+    <text x="20" y="95" class="box-text">→ 結合テスト実行</text>
+  </g>
+
+  <!-- Low Impact (Bottom) -->
+  <g transform="translate(350, 450)">
+    <rect x="0" y="0" width="300" height="100" rx="5" class="impact-low"/>
+    <text x="150" y="30" class="box-title">影響小（独立）</text>
+    <text x="20" y="55" class="box-text">• ProductService</text>
+    <text x="20" y="75" class="box-text">• OrderService</text>
+    <text x="20" y="95" class="box-text">→ 影響なし（スキップ可）</text>
+  </g>
+
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrow-high" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#F39C12" />
+    </marker>
+    <marker id="arrow-med" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#3498DB" />
+    </marker>
+    <marker id="arrow-low" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#95A5A6" />
+    </marker>
+  </defs>
+
+  <path d="M 500 190 L 500 250" stroke="#F39C12" stroke-width="3" marker-end="url(#arrow-high)"/>
+  <path d="M 330 300 L 400 300" stroke="#3498DB" stroke-width="3" marker-end="url(#arrow-med)"/>
+  <path d="M 600 300 L 670 300" stroke="#3498DB" stroke-width="3" marker-end="url(#arrow-med)"/>
+  <path d="M 500 350 L 500 450" stroke="#95A5A6" stroke-width="3" marker-end="url(#arrow-low)"/>
+
+  <!-- Bottom process -->
+  <rect x="50" y="580" width="900" height="95" rx="8" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="500" y="610" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    AIによる影響範囲分析の手順
+  </text>
+  <text x="500" y="635" class="desc" text-anchor="middle" fill="#333">
+    1. 変更対象のコードをAIに入力 → 2. 依存関係を自動抽出 → 3. 影響範囲をレベル分け
+  </text>
+  <text x="500" y="655" class="desc" text-anchor="middle" fill="#333">
+    → 4. 必要なテストリストを生成 → 5. リグレッションテスト実行
+  </text>
+</svg>

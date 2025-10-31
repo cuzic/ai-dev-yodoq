@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .week { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; font-weight: bold; }
+      .phase1 { fill: #3498DB; }
+      .phase2 { fill: #27AE60; }
+      .phase3 { fill: #E67E22; }
+      .phase4 { fill: #9B59B6; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="400" y="30" class="title">段階的リリースタイムライン</text>
+
+  <!-- Week 1 -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="160" height="50" rx="5" class="phase1"/>
+    <text x="80" y="32" class="phase-title">Week 1: MVP</text>
+
+    <rect x="0" y="60" width="160" height="110" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(10, 80)">
+      <text x="0" y="0" class="week">Must機能のみ</text>
+      <text x="0" y="20" class="item">• ログイン</text>
+      <text x="0" y="38" class="item">• CRUD基本</text>
+      <text x="0" y="56" class="item">• 最小限UI</text>
+      <text x="0" y="74" class="item">🚀 最速リリース</text>
+    </g>
+  </g>
+
+  <!-- Week 2 -->
+  <g transform="translate(240, 70)">
+    <rect x="0" y="0" width="160" height="50" rx="5" class="phase2"/>
+    <text x="80" y="32" class="phase-title">Week 2: 拡張</text>
+
+    <rect x="0" y="60" width="160" height="110" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(10, 80)">
+      <text x="0" y="0" class="week">Should機能追加</text>
+      <text x="0" y="20" class="item">• 検索機能</text>
+      <text x="0" y="38" class="item">• フィルター</text>
+      <text x="0" y="56" class="item">• 通知</text>
+      <text x="0" y="74" class="item">📈 価値向上</text>
+    </g>
+  </g>
+
+  <!-- Week 3 -->
+  <g transform="translate(430, 70)">
+    <rect x="0" y="0" width="160" height="50" rx="5" class="phase3"/>
+    <text x="80" y="32" class="phase-title">Week 3: 改善</text>
+
+    <rect x="0" y="60" width="160" height="110" rx="5" fill="#FEF5E7" stroke="#E67E22" stroke-width="2"/>
+    <g transform="translate(10, 80)">
+      <text x="0" y="0" class="week">Could機能追加</text>
+      <text x="0" y="20" class="item">• CSV出力</text>
+      <text x="0" y="38" class="item">• ダッシュボード</text>
+      <text x="0" y="56" class="item">• 統計表示</text>
+      <text x="0" y="74" class="item">✨ UX向上</text>
+    </g>
+  </g>
+
+  <!-- Week 4 -->
+  <g transform="translate(620, 70)">
+    <rect x="0" y="0" width="160" height="50" rx="5" class="phase4"/>
+    <text x="80" y="32" class="phase-title">Week 4: 磨き</text>
+
+    <rect x="0" y="60" width="160" height="110" rx="5" fill="#F4ECF7" stroke="#9B59B6" stroke-width="2"/>
+    <g transform="translate(10, 80)">
+      <text x="0" y="0" class="week">改善・最適化</text>
+      <text x="0" y="20" class="item">• パフォーマンス</text>
+      <text x="0" y="38" class="item">• アクセシビリティ</text>
+      <text x="0" y="56" class="item">• ドキュメント</text>
+      <text x="0" y="74" class="item">🏆 本番品質</text>
+    </g>
+  </g>
+
+  <!-- Timeline -->
+  <rect x="50" y="230" width="730" height="6" fill="#DDD" rx="3"/>
+  <rect x="50" y="230" width="160" height="6" fill="#3498DB" rx="3"/>
+  <rect x="210" y="230" width="190" height="6" fill="#27AE60" rx="3"/>
+  <rect x="400" y="230" width="190" height="6" fill="#E67E22" rx="3"/>
+  <rect x="590" y="230" width="190" height="6" fill="#9B59B6" rx="3"/>
+
+  <!-- Benefits -->
+  <rect x="50" y="270" width="730" height="110" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="415" y="300" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    段階的リリースのメリット
+  </text>
+  <g transform="translate(70, 315)">
+    <text x="0" y="0" class="item">✅ 早期フィードバック：Week 1で顧客の反応を確認</text>
+    <text x="0" y="22" class="item">✅ リスク最小化：小さく始めて、徐々に拡張</text>
+    <text x="0" y="44" class="item">✅ モチベーション維持：毎週「動くものが増える」達成感</text>
+  </g>
+</svg>

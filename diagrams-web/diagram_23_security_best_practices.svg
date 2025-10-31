@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .category-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
+      .danger { fill: #E74C3C; }
+      .warning { fill: #F39C12; }
+      .safe { fill: #27AE60; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="40" class="title">AI開発におけるセキュリティベストプラクティス</text>
+
+  <!-- Danger Zone -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="900" height="50" rx="5" class="danger"/>
+    <text x="450" y="33" class="category-title">⚠️ 絶対にやってはいけないこと</text>
+
+    <rect x="0" y="60" width="900" height="160" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="3"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">❌ 機密情報をAIに入力しない</text>
+      <text x="20" y="22" class="desc">• APIキー、パスワード、トークン</text>
+      <text x="20" y="40" class="desc">• 個人情報（氏名、メールアドレス、電話番号）</text>
+      <text x="20" y="58" class="desc">• 顧客データ、社外秘情報</text>
+
+      <text x="0" y="90" class="item" font-weight="bold">❌ 生成されたコードを盲目的に信用しない</text>
+      <text x="20" y="112" class="desc">• SQLインジェクション、XSSなどの脆弱性が混入する可能性</text>
+      <text x="20" y="130" class="desc">• 必ずコードレビューとセキュリティチェックを実施</text>
+    </g>
+  </g>
+
+  <!-- Warning Zone -->
+  <g transform="translate(50, 310)">
+    <rect x="0" y="0" width="900" height="50" rx="5" class="warning"/>
+    <text x="450" y="33" class="category-title">⚡ 注意が必要なこと</text>
+
+    <rect x="0" y="60" width="900" height="180" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">⚠️ プロンプトに含めてはいけない情報</text>
+      <text x="20" y="22" class="desc">• 具体的な顧客名や企業名 → 「UserX」「CompanyY」などに置き換え</text>
+      <text x="20" y="40" class="desc">• 実際のサーバーIPアドレス → 「192.0.2.1」（RFC文書用サンプルIP）を使用</text>
+      <text x="20" y="58" class="desc">• 本番環境のURL → 「example.com」などダミー値を使用</text>
+
+      <text x="0" y="90" class="item" font-weight="bold">⚠️ .claudeignoreで保護する</text>
+      <text x="20" y="112" class="desc">• .env ファイル（環境変数）</text>
+      <text x="20" y="130" class="desc">• credentials.json（認証情報）</text>
+      <text x="20" y="148" class="desc">• データベースダンプファイル</text>
+    </g>
+  </g>
+
+  <!-- Safe Zone -->
+  <g transform="translate(50, 560)">
+    <rect x="0" y="0" width="900" height="50" rx="5" class="safe"/>
+    <text x="450" y="33" class="category-title">✅ 推奨されるセキュアな使い方</text>
+
+    <rect x="0" y="60" width="900" height="160" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">✅ 匿名化・マスキング</text>
+      <text x="20" y="22" class="desc">• 実データは全てサンプルデータに置き換える</text>
+      <text x="20" y="40" class="desc">• テストデータ生成時も、リアルな個人情報は使わない</text>
+
+      <text x="0" y="72" class="item" font-weight="bold">✅ セキュリティチェックリスト</text>
+      <text x="20" y="94" class="desc">• OWASP Top 10に基づいた脆弱性スキャン</text>
+      <text x="20" y="112" class="desc">• 依存ライブラリの脆弱性チェック（npm audit / pip-audit）</text>
+      <text x="20" y="130" class="desc">• CI/CDパイプラインにセキュリティテストを組み込む</text>
+    </g>
+  </g>
+</svg>

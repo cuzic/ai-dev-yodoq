@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .phase { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .red { fill: #E74C3C; }
+      .green { fill: #27AE60; }
+      .blue { fill: #3498DB; }
+    </style>
+  </defs>
+
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  <text x="400" y="30" class="title">TDDにおけるリファクタリングのタイミング</text>
+
+  <!-- RED -->
+  <g transform="translate(80, 70)">
+    <circle cx="80" cy="80" r="60" class="red"/>
+    <text x="80" y="75" class="phase">RED</text>
+    <text x="80" y="95" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle;">失敗テスト</text>
+
+    <rect x="10" y="160" width="140" height="70" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
+    <g transform="translate(20, 180)">
+      <text x="0" y="0" class="item" font-weight="bold">❌ リファクタ禁止</text>
+      <text x="0" y="20" class="item" font-size="11px">まずテストを</text>
+      <text x="0" y="36" class="item" font-size="11px">通すことに集中</text>
+    </g>
+  </g>
+
+  <!-- GREEN -->
+  <g transform="translate(300, 70)">
+    <circle cx="80" cy="80" r="60" class="green"/>
+    <text x="80" y="75" class="phase">GREEN</text>
+    <text x="80" y="95" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle;">テスト通過</text>
+
+    <rect x="10" y="160" width="140" height="70" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
+    <g transform="translate(20, 180)">
+      <text x="0" y="0" class="item" font-weight="bold">⚠️ 我慢する</text>
+      <text x="0" y="20" class="item" font-size="11px">動けばOK</text>
+      <text x="0" y="36" class="item" font-size="11px">次フェーズで改善</text>
+    </g>
+  </g>
+
+  <!-- REFACTOR -->
+  <g transform="translate(520, 70)">
+    <circle cx="80" cy="80" r="60" class="blue"/>
+    <text x="80" y="75" class="phase">REFACTOR</text>
+    <text x="80" y="95" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle;">リファクタ</text>
+
+    <rect x="10" y="160" width="140" height="70" rx="5" fill="#E3F2FD" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(20, 180)">
+      <text x="0" y="0" class="item" font-weight="bold">✅ ここで改善</text>
+      <text x="0" y="20" class="item" font-size="11px">テストが守る</text>
+      <text x="0" y="36" class="item" font-size="11px">安全に変更可能</text>
+    </g>
+  </g>
+
+  <!-- Bottom rule -->
+  <rect x="50" y="280" width="700" height="90" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="400" y="310" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    鉄則：GREENになってからリファクタリング
+  </text>
+  <g transform="translate(70, 325)">
+    <text x="0" y="0" class="item">• RED/GREENフェーズでは「動かすこと」最優先</text>
+    <text x="0" y="22" class="item">• REFACTORフェーズでは「美しくすること」に専念</text>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .segment-title { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: bold; fill: white; text-anchor: middle; }
+      .segment-text { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: white; text-anchor: middle; }
+      .center-text { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="300" y="35" class="title">AI開発でよくある失敗パターン</text>
+
+  <!-- Center circle -->
+  <circle cx="300" cy="310" r="90" fill="#F5F5F5" stroke="#00146E" stroke-width="2"/>
+  <text x="300" y="305" class="center-text">失敗の</text>
+  <text x="300" y="328" class="center-text">6大要因</text>
+
+  <!-- Segment 1: Top (Context overflow) -->
+  <path d="M 300 120 L 380 180 A 120 120 0 0 0 220 180 Z" fill="#E74C3C"/>
+  <text x="300" y="165" class="segment-title">コンテキスト</text>
+  <text x="300" y="182" class="segment-title">溢れ</text>
+  <text x="300" y="200" class="segment-text">長すぎる指示</text>
+
+  <!-- Segment 2: Top Right (Vague requirements) -->
+  <path d="M 380 180 L 460 280 A 120 120 0 0 0 390 350 Z" fill="#E67E22"/>
+  <text x="410" y="250" class="segment-title">曖昧な</text>
+  <text x="410" y="267" class="segment-title">要求</text>
+  <text x="410" y="285" class="segment-text">仕様不明確</text>
+
+  <!-- Segment 3: Bottom Right (No testing) -->
+  <path d="M 390 350 L 380 440 A 120 120 0 0 0 300 460 Z" fill="#F39C12"/>
+  <text x="360" y="400" class="segment-title">テスト</text>
+  <text x="360" y="417" class="segment-title">なし</text>
+  <text x="360" y="435" class="segment-text">品質保証欠如</text>
+
+  <!-- Segment 4: Bottom (Trust blindly) -->
+  <path d="M 300 460 L 220 440 A 120 120 0 0 0 210 350 Z" fill="#3498DB"/>
+  <text x="240" y="400" class="segment-title">盲目的</text>
+  <text x="240" y="417" class="segment-title">信頼</text>
+  <text x="240" y="435" class="segment-text">検証なし</text>
+
+  <!-- Segment 5: Bottom Left (No structure) -->
+  <path d="M 210 350 L 140 280 A 120 120 0 0 0 220 180 Z" fill="#9B59B6"/>
+  <text x="190" y="250" class="segment-title">構造</text>
+  <text x="190" y="267" class="segment-title">なし</text>
+  <text x="190" y="285" class="segment-text">設計欠如</text>
+
+  <!-- Segment 6: Top Left (No documentation) -->
+  <path d="M 220 180 L 140 280 A 120 120 0 0 0 160 220 Z" fill="#1ABC9C"/>
+  <text x="170" y="210" class="segment-title">ドキュメント</text>
+  <text x="170" y="227" class="segment-title">なし</text>
+  <text x="170" y="245" class="segment-text">記録欠如</text>
+
+  <!-- Bottom note -->
+  <text x="300" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666; text-anchor: middle;">
+    これらを避ける = 5ステップフロー
+  </text>
+  <text x="300" y="570" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #999; text-anchor: middle;">
+    各失敗に対応する対策が組み込まれている
+  </text>
+</svg>

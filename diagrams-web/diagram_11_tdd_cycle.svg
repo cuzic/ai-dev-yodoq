@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .cycle-text { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: white; font-weight: bold; text-anchor: middle; }
+      .cycle-desc { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle; }
+      .center-text { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .arrow-text { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="250" y="35" class="title">TDDサイクル</text>
+
+  <!-- RED Phase (Top) -->
+  <circle cx="250" cy="120" r="65" fill="#E74C3C"/>
+  <text x="250" y="115" class="cycle-text">RED</text>
+  <text x="250" y="133" class="cycle-desc">失敗するテストを</text>
+  <text x="250" y="149" class="cycle-desc">書く</text>
+
+  <!-- GREEN Phase (Bottom Right) -->
+  <circle cx="360" cy="300" r="65" fill="#27AE60"/>
+  <text x="360" y="295" class="cycle-text">GREEN</text>
+  <text x="360" y="313" class="cycle-desc">テストを</text>
+  <text x="360" y="329" class="cycle-desc">通す</text>
+
+  <!-- REFACTOR Phase (Bottom Left) -->
+  <circle cx="140" cy="300" r="65" fill="#3498DB"/>
+  <text x="140" y="295" class="cycle-text">REFACTOR</text>
+  <text x="140" y="313" class="cycle-desc">リファクタ</text>
+  <text x="140" y="329" class="cycle-desc">する</text>
+
+  <!-- Arrows with labels -->
+  <!-- RED to GREEN -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+
+  <path d="M 290 160 Q 330 220 340 265" fill="none" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="330" y="210" class="arrow-text">実装</text>
+
+  <!-- GREEN to REFACTOR -->
+  <path d="M 310 330 Q 250 360 180 330" fill="none" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="250" y="370" class="arrow-text">改善</text>
+
+  <!-- REFACTOR to RED -->
+  <path d="M 160 240 Q 190 180 220 155" fill="none" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="170" y="195" class="arrow-text">次の機能</text>
+
+  <!-- Center circle -->
+  <circle cx="250" cy="240" r="55" fill="none" stroke="#00146E" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="250" y="237" class="center-text">小さく</text>
+  <text x="250" y="257" class="center-text">速く</text>
+
+  <!-- Bottom note -->
+  <text x="250" y="455" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666; text-anchor: middle;">
+    各サイクルは5〜10分で完結
+  </text>
+  <text x="250" y="480" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #999; text-anchor: middle;">
+    AIと一緒なら、さらに高速化
+  </text>
+</svg>

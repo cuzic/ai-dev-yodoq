@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
+      .time { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: white; text-anchor: middle; }
+      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; }
+      .phase1 { fill: #3498DB; }
+      .phase2 { fill: #27AE60; }
+      .phase3 { fill: #E67E22; }
+      .phase4 { fill: #9B59B6; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="35" class="title">2日間ワークショップの流れ</text>
+
+  <!-- Day 1 Morning -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="420" height="50" rx="5" class="phase1"/>
+    <text x="210" y="25" class="phase-title">Day 1 午前（3時間）</text>
+    <text x="210" y="43" class="time">9:00-12:00</text>
+
+    <rect x="0" y="60" width="420" height="150" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">1. 基礎知識（1時間）</text>
+      <text x="15" y="20" class="desc">• AI開発の3原則</text>
+      <text x="15" y="38" class="desc">• 役割の変化（Driver → Navigator）</text>
+      <text x="15" y="56" class="desc">• 5ステップフロー概要</text>
+
+      <text x="0" y="85" class="item" font-weight="bold">2. ハンズオン（2時間）</text>
+      <text x="15" y="105" class="desc">• 要件定義（MoSCoW）実習</text>
+      <text x="15" y="123" class="desc">• Spec-First設計の実践</text>
+    </g>
+  </g>
+
+  <!-- Day 1 Afternoon -->
+  <g transform="translate(530, 80)">
+    <rect x="0" y="0" width="420" height="50" rx="5" class="phase2"/>
+    <text x="210" y="25" class="phase-title">Day 1 午後（4時間）</text>
+    <text x="210" y="43" class="time">13:00-17:00</text>
+
+    <rect x="0" y="60" width="420" height="150" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">3. タスク分解＆実装（4時間）</text>
+      <text x="15" y="20" class="desc">• タスクリスト作成実習</text>
+      <text x="15" y="38" class="desc">• TDD実践（小規模機能）</text>
+      <text x="15" y="56" class="desc">• AIペアプログラミング体験</text>
+      <text x="15" y="74" class="desc">• コードレビュー</text>
+
+      <text x="0" y="103" class="item" font-weight="bold">成果物:</text>
+      <text x="15" y="123" class="desc">動作するコード＋テスト</text>
+    </g>
+  </g>
+
+  <!-- Day 2 Morning -->
+  <g transform="translate(50, 300)">
+    <rect x="0" y="0" width="420" height="50" rx="5" class="phase3"/>
+    <text x="210" y="25" class="phase-title">Day 2 午前（3時間）</text>
+    <text x="210" y="43" class="time">9:00-12:00</text>
+
+    <rect x="0" y="60" width="420" height="150" rx="5" fill="#FEF5E7" stroke="#E67E22" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">4. レガシーコード対応（3時間）</text>
+      <text x="15" y="20" class="desc">• リバースエンジニアリング実習</text>
+      <text x="15" y="38" class="desc">• 既存コードへのテスト追加</text>
+      <text x="15" y="56" class="desc">• リファクタリング実践</text>
+      <text x="15" y="74" class="desc">• ドキュメント自動生成</text>
+
+      <text x="0" y="103" class="item" font-weight="bold">成果物:</text>
+      <text x="15" y="123" class="desc">仕様書＋テスト付きコード</text>
+    </g>
+  </g>
+
+  <!-- Day 2 Afternoon -->
+  <g transform="translate(530, 300)">
+    <rect x="0" y="0" width="420" height="50" rx="5" class="phase4"/>
+    <text x="210" y="25" class="phase-title">Day 2 午後（4時間）</text>
+    <text x="210" y="43" class="time">13:00-17:00</text>
+
+    <rect x="0" y="60" width="420" height="150" rx="5" fill="#F4ECF7" stroke="#9B59B6" stroke-width="2"/>
+    <g transform="translate(20, 85)">
+      <text x="0" y="0" class="item" font-weight="bold">5. 実プロジェクト適用（3時間）</text>
+      <text x="15" y="20" class="desc">• チームの実課題で実践</text>
+      <text x="15" y="38" class="desc">• ワークフロー構築</text>
+      <text x="15" y="56" class="desc">• CI/CD設定</text>
+
+      <text x="0" y="85" class="item" font-weight="bold">6. まとめ &amp; Q&amp;A（1時間）</text>
+      <text x="15" y="105" class="desc">• 学んだことの振り返り</text>
+      <text x="15" y="123" class="desc">• 今後のアクションプラン</text>
+    </g>
+  </g>
+
+  <!-- Timeline -->
+  <rect x="50" y="490" width="900" height="10" fill="#DDD" rx="5"/>
+  <rect x="50" y="490" width="225" height="10" fill="#3498DB" rx="5"/>
+  <rect x="275" y="490" width="225" height="10" fill="#27AE60" rx="5"/>
+  <rect x="500" y="490" width="225" height="10" fill="#E67E22" rx="5"/>
+  <rect x="725" y="490" width="225" height="10" fill="#9B59B6" rx="5"/>
+
+  <!-- Labels -->
+  <text x="162" y="520" class="desc" text-anchor="middle">Day1 AM</text>
+  <text x="387" y="520" class="desc" text-anchor="middle">Day1 PM</text>
+  <text x="612" y="520" class="desc" text-anchor="middle">Day2 AM</text>
+  <text x="837" y="520" class="desc" text-anchor="middle">Day2 PM</text>
+
+  <!-- Bottom summary -->
+  <rect x="50" y="550" width="900" height="120" rx="8" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="500" y="585" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    ワークショップのゴール
+  </text>
+
+  <g transform="translate(80, 610)">
+    <text x="0" y="0" class="item">✅ 翌日から実プロジェクトで即実践できる</text>
+    <text x="0" y="22" class="item">✅ AIを使った開発フローが身につく</text>
+    <text x="0" y="44" class="item">✅ チーム全体で同じ方法論を共有</text>
+  </g>
+</svg>

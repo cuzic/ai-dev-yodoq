@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .task { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; font-weight: bold; fill: white; text-anchor: middle; }
+      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: white; text-anchor: middle; }
+      .t1 { fill: #3498DB; }
+      .t2 { fill: #27AE60; }
+      .t3 { fill: #E67E22; }
+      .t4 { fill: #9B59B6; }
+      .t5 { fill: #F39C12; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666" />
+    </marker>
+  </defs>
+
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <text x="400" y="30" class="title">タスク依存関係グラフ</text>
+
+  <!-- Task 1: Setup (No dependencies) -->
+  <g transform="translate(320, 70)">
+    <rect x="0" y="0" width="160" height="60" rx="5" class="t1"/>
+    <text x="80" y="28" class="task">Task 1: Setup</text>
+    <text x="80" y="46" class="desc">環境構築</text>
+  </g>
+
+  <!-- Task 2: Design -->
+  <g transform="translate(50, 180)">
+    <rect x="0" y="0" width="160" height="60" rx="5" class="t2"/>
+    <text x="80" y="28" class="task">Task 2: Design</text>
+    <text x="80" y="46" class="desc">設計書作成</text>
+  </g>
+
+  <!-- Task 3: API -->
+  <g transform="translate(590, 180)">
+    <rect x="0" y="0" width="160" height="60" rx="5" class="t2"/>
+    <text x="80" y="28" class="task">Task 3: API</text>
+    <text x="80" y="46" class="desc">エンドポイント</text>
+  </g>
+
+  <!-- Task 4: Model -->
+  <g transform="translate(50, 310)">
+    <rect x="0" y="0" width="160" height="60" rx="5" class="t3"/>
+    <text x="80" y="28" class="task">Task 4: Model</text>
+    <text x="80" y="46" class="desc">データモデル</text>
+  </g>
+
+  <!-- Task 5: Auth -->
+  <g transform="translate(320, 310)">
+    <rect x="0" y="0" width="160" height="60" rx="5" class="t3"/>
+    <text x="80" y="28" class="task">Task 5: Auth</text>
+    <text x="80" y="46" class="desc">認証機能</text>
+  </g>
+
+  <!-- Task 6: UI -->
+  <g transform="translate(590, 310)">
+    <rect x="0" y="0" width="160" height="60" rx="5" class="t4"/>
+    <text x="80" y="28" class="task">Task 6: UI</text>
+    <text x="80" y="46" class="desc">フロントエンド</text>
+  </g>
+
+  <!-- Task 7: Integration -->
+  <g transform="translate(320, 440)">
+    <rect x="0" y="0" width="160" height="60" rx="5" class="t5"/>
+    <text x="80" y="28" class="task">Task 7: Integration</text>
+    <text x="80" y="46" class="desc">統合テスト</text>
+  </g>
+
+  <!-- Arrows (dependencies) -->
+  <!-- Task 1 -> Task 2, 3 -->
+  <path d="M 400 130 L 180 180" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 400 130 L 670 180" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Task 2 -> Task 4, 5 -->
+  <path d="M 130 240 L 130 310" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 180 240 L 370 310" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Task 3 -> Task 5, 6 -->
+  <path d="M 630 240 L 430 310" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 670 240 L 670 310" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Task 4, 5, 6 -> Task 7 -->
+  <path d="M 180 370 L 330 440" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 400 370 L 400 440" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 630 370 L 470 440" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Legend -->
+  <rect x="40" y="535" width="720" height="50" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
+  <text x="400" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    💡 並列実行可能：Task 2とTask 3、Task 4とTask 5とTask 6
+  </text>
+</svg>

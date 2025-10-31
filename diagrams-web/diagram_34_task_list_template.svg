@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
+      .section { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .item { font-family: 'Courier New', monospace; font-size: 12px; fill: #333; }
+      .comment { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; }
+      .phase1 { fill: #3498DB; }
+      .phase2 { fill: #27AE60; }
+      .phase3 { fill: #E67E22; }
+      .phase4 { fill: #9B59B6; }
+    </style>
+  </defs>
+
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <text x="400" y="30" class="title">タスクリストテンプレート</text>
+
+  <!-- Phase 1 -->
+  <g transform="translate(40, 60)">
+    <rect x="0" y="0" width="720" height="35" rx="3" class="phase1"/>
+    <text x="360" y="23" class="section">Phase 1: 環境セットアップ</text>
+
+    <rect x="0" y="40" width="720" height="80" rx="3" fill="#EBF5FB" stroke="#3498DB" stroke-width="1"/>
+    <g transform="translate(15, 58)">
+      <text x="0" y="0" class="item">□ プロジェクト初期化（npm init / poetry init）</text>
+      <text x="0" y="18" class="item">□ 依存関係インストール</text>
+      <text x="0" y="36" class="item">□ .gitignore, .claudeignore 設定</text>
+      <text x="0" y="54" class="item">□ ESLint / Prettier 設定</text>
+    </g>
+  </g>
+
+  <!-- Phase 2 -->
+  <g transform="translate(40, 185)">
+    <rect x="0" y="0" width="720" height="35" rx="3" class="phase2"/>
+    <text x="360" y="23" class="section">Phase 2: 設計ドキュメント</text>
+
+    <rect x="0" y="40" width="720" height="80" rx="3" fill="#E8F8F5" stroke="#27AE60" stroke-width="1"/>
+    <g transform="translate(15, 58)">
+      <text x="0" y="0" class="item">□ requirements.md （MoSCoW優先順位付き）</text>
+      <text x="0" y="18" class="item">□ architecture.md （システム構成）</text>
+      <text x="0" y="36" class="item">□ ER図生成（Mermaid形式）</text>
+      <text x="0" y="54" class="item">□ API仕様書（OpenAPI / README）</text>
+    </g>
+  </g>
+
+  <!-- Phase 3 -->
+  <g transform="translate(40, 310)">
+    <rect x="0" y="0" width="720" height="35" rx="3" class="phase3"/>
+    <text x="360" y="23" class="section">Phase 3: 実装（TDD）</text>
+
+    <rect x="0" y="40" width="720" height="98" rx="3" fill="#FEF5E7" stroke="#E67E22" stroke-width="1"/>
+    <g transform="translate(15, 58)">
+      <text x="0" y="0" class="item">□ Task 3-1: モデル定義（User, Post, Comment）</text>
+      <text x="20" y="16" class="comment">依存: Phase 2 ER図完成</text>
+      <text x="0" y="34" class="item">□ Task 3-2: API実装（CRUD）+ テスト</text>
+      <text x="20" y="50" class="comment">依存: Task 3-1完了</text>
+      <text x="0" y="68" class="item">□ Task 3-3: 認証機能 + テスト</text>
+      <text x="20" y="84" class="comment">依存: Task 3-1完了</text>
+    </g>
+  </g>
+
+  <!-- Phase 4 -->
+  <g transform="translate(40, 453)">
+    <rect x="0" y="0" width="720" height="35" rx="3" class="phase4"/>
+    <text x="360" y="23" class="section">Phase 4: 品質担保</text>
+
+    <rect x="0" y="40" width="720" height="80" rx="3" fill="#F4ECF7" stroke="#9B59B6" stroke-width="1"/>
+    <g transform="translate(15, 58)">
+      <text x="0" y="0" class="item">□ カバレッジ80%以上確認</text>
+      <text x="0" y="18" class="item">□ E2Eテスト実行</text>
+      <text x="0" y="36" class="item">□ ドキュメント更新（変更内容反映）</text>
+      <text x="0" y="54" class="item">□ pre-commit hook設定</text>
+    </g>
+  </g>
+</svg>
