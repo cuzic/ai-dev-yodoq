@@ -1,0 +1,89 @@
+================================================================================
+ANALYZING ACTUAL TEXT WIDTH (FIXED VERSION)
+================================================================================
+
+⚠️  Found 31 lines with overflow in 19 real slides
+   (Ignored 20 lines in CSS/style blocks)
+
+📍 Slide 4: AI活用の3原則
+   Layout: layout-horizontal-left (column width: 500px)
+   Issues: 2 lines overflow
+   1. - **Jagged Intelligence**: 得意（コード生成・テスト・アーキテクチャ設計）、苦手（ビジネス要件の解釈・トレードオフ判断）
+      Width: 914px (overflow: 454px)
+   2. - **Trust but Verify**: AIにもエラーあり、AI自己レビューで品質向上
+      Width: 490px (overflow: 30px)
+
+📍 Slide 5: Vibe Coding vs Production Engineering
+   Layout: layout-horizontal-left (column width: 500px)
+   Issues: 2 lines overflow
+   1. - **Vibe Coding**: 速い（30分〜1時間）、品質バラバラ、プロトタイプ向き
+      Width: 503px (overflow: 43px)
+   2. - **Vibe Coding with Guardrails**: 速さと品質両立、設計書で導く
+      Width: 472px (overflow: 12px)
+
+📍 Slide 6: 開発者の役割変化
+   Layout: layout-horizontal-left (column width: 500px)
+   Issues: 1 lines overflow
+   1. - **AIの役割**: コード生成、テスト、リファクタリング、ドキュメント
+      Width: 462px (overflow: 2px)
+
+📍 Slide 7: 5-STEPフロー全体像
+   Layout: layout-horizontal-left (column width: 500px)
+   Issues: 1 lines overflow
+   1. - **STEP5: 品質担保＆ドキュメント反映** - Trust but Verify自動化、Living Documentation
+      Width: 670px (overflow: 210px)
+
+📍 Slide 8: AIの制約①忘れっぽい（セッション制約）
+   Layout: layout-horizontal-right (column width: 500px)
+   Issues: 2 lines overflow
+   1. - **セッション内のみ記憶**: ブラウザ閉じる→全忘却、20万トークン超過→古い情報忘却
+      Width: 590px (overflow: 130px)
+   2. - **対策**: ドキュメント化＝外部メモリ、architecture.md/README.mdに知見蓄積
+      Width: 566px (overflow: 106px)
+
+📍 Slide 15: セットアップ
+   Layout: layout-horizontal-right (column width: 500px)
+   Issues: 1 lines overflow
+   1. - **インストール:** `npm install -g @anthropic-ai/claude-code`
+      Width: 466px (overflow: 6px)
+
+📍 Slide 16: 4つのモード比較
+   Layout: layout-horizontal-left (column width: 500px)
+   Issues: 2 lines overflow
+   1. - **YOLOモード（Shift+Tab）:** 自動実行、確認時間を大幅削減、Git管理済み推奨
+      Width: 560px (overflow: 100px)
+   2. - **プランモード（Shift+Tab×2）:** 計画→確認→実行、大規模タスク向き
+      Width: 493px (overflow: 33px)
+
+📍 Slide 25: MoSCoW 優先順位付け
+   Layout: layout-horizontal-left (column width: 500px)
+   Issues: 1 lines overflow
+   1. - **Must（必須）:** プロダクト成立に不可欠な機能 → Phase 1 (MVP)
+      Width: 482px (overflow: 22px)
+
+📍 Slide 37: 設計ドキュメントの構造
+   Layout: layout-horizontal-right (column width: 500px)
+   Issues: 3 lines overflow
+   1. - **1. 技術スタック:** フロント・バック・DB・ライブラリ（選定理由含む）
+      Width: 526px (overflow: 66px)
+   2. - **3. データベーススキーマ:** テーブル定義・カラム・制約・インデックス
+      Width: 524px (overflow: 64px)
+   3. - **4. API仕様:** エンドポイント・メソッド・パラメータ・レスポンス
+      Width: 486px (overflow: 26px)
+
+📍 Slide 41: Mermaid記法とSVG生成でビジュアル化
+   Layout: layout-horizontal-right (column width: 500px)
+   Issues: 2 lines overflow
+   1. - **Mermaid**: テキストで図描画、Git管理可、AI自動生成、GitHub/VS Code表示
+      Width: 545px (overflow: 85px)
+   2. - **SVG生成magic word**: 「SVGで書いて」→AI生成→即可視化、記法不要
+      Width: 476px (overflow: 16px)
+
+================================================================================
+RECOMMENDATIONS:
+================================================================================
+1. Split long sentences into multiple lines
+2. Use abbreviations where possible
+3. Remove redundant words
+4. For 3-column: max ~40 chars per line
+5. For 2-column: max ~60 chars per line

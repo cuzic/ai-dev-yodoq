@@ -1,93 +1,240 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1040">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .task { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; font-weight: bold; fill: white; text-anchor: middle; }
-      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: white; text-anchor: middle; }
-      .t1 { fill: #3498DB; }
-      .t2 { fill: #27AE60; }
-      .t3 { fill: #E67E22; }
-      .t4 { fill: #9B59B6; }
-      .t5 { fill: #F39C12; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .task-title { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: white; }
+      .task-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
     </style>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#666" />
-    </marker>
   </defs>
 
-  <rect width="800" height="600" fill="#FFFFFF"/>
-  <text x="400" y="30" class="title">タスク依存関係グラフ</text>
+  <!-- Background -->
+  <rect width="1400" height="800" fill="#FFFFFF"/>
 
-  <!-- Task 1: Setup (No dependencies) -->
-  <g transform="translate(320, 70)">
-    <rect x="0" y="0" width="160" height="60" rx="5" class="t1"/>
-    <text x="80" y="28" class="task">Task 1: Setup</text>
-    <text x="80" y="46" class="desc">環境構築</text>
-  </g>
+  <!-- Title -->
+  <text x="700" y="40" class="title" text-anchor="middle">タスク依存関係グラフ（実装順序の可視化）</text>
 
-  <!-- Task 2: Design -->
-  <g transform="translate(50, 180)">
-    <rect x="0" y="0" width="160" height="60" rx="5" class="t2"/>
-    <text x="80" y="28" class="task">Task 2: Design</text>
-    <text x="80" y="46" class="desc">設計書作成</text>
-  </g>
+  <!-- Layer 1: Independent tasks -->
+  <text x="50" y="90" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; font-weight: bold;">
+    Layer 1: 独立タスク（並行実行可）
+  </text>
 
-  <!-- Task 3: API -->
-  <g transform="translate(590, 180)">
-    <rect x="0" y="0" width="160" height="60" rx="5" class="t2"/>
-    <text x="80" y="28" class="task">Task 3: API</text>
-    <text x="80" y="46" class="desc">エンドポイント</text>
-  </g>
+  <!-- T-01 -->
+  <rect x="100" y="110" width="180" height="70" fill="#00AFF0" rx="8"/>
+  <text x="190" y="135" class="task-title" text-anchor="middle">T-01: DB設計</text>
+  <text x="115" y="155" class="task-text">tasksテーブル作成</text>
+  <text x="115" y="170" class="task-text">工数: 30分</text>
 
-  <!-- Task 4: Model -->
-  <g transform="translate(50, 310)">
-    <rect x="0" y="0" width="160" height="60" rx="5" class="t3"/>
-    <text x="80" y="28" class="task">Task 4: Model</text>
-    <text x="80" y="46" class="desc">データモデル</text>
-  </g>
+  <!-- T-09 -->
+  <rect x="320" y="110" width="180" height="70" fill="#00AFF0" rx="8"/>
+  <text x="410" y="135" class="task-title" text-anchor="middle">T-09: 環境設定</text>
+  <text x="335" y="155" class="task-text">.env.example作成</text>
+  <text x="335" y="170" class="task-text">工数: 15分</text>
 
-  <!-- Task 5: Auth -->
-  <g transform="translate(320, 310)">
-    <rect x="0" y="0" width="160" height="60" rx="5" class="t3"/>
-    <text x="80" y="28" class="task">Task 5: Auth</text>
-    <text x="80" y="46" class="desc">認証機能</text>
-  </g>
+  <!-- T-10 -->
+  <rect x="540" y="110" width="180" height="70" fill="#00AFF0" rx="8"/>
+  <text x="630" y="135" class="task-title" text-anchor="middle">T-10: README作成</text>
+  <text x="555" y="155" class="task-text">セットアップ手順</text>
+  <text x="555" y="170" class="task-text">工数: 20分</text>
 
-  <!-- Task 6: UI -->
-  <g transform="translate(590, 310)">
-    <rect x="0" y="0" width="160" height="60" rx="5" class="t4"/>
-    <text x="80" y="28" class="task">Task 6: UI</text>
-    <text x="80" y="46" class="desc">フロントエンド</text>
-  </g>
+  <!-- Layer 2: Depends on Layer 1 -->
+  <text x="50" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; font-weight: bold;">
+    Layer 2: Layer 1完了後
+  </text>
 
-  <!-- Task 7: Integration -->
-  <g transform="translate(320, 440)">
-    <rect x="0" y="0" width="160" height="60" rx="5" class="t5"/>
-    <text x="80" y="28" class="task">Task 7: Integration</text>
-    <text x="80" y="46" class="desc">統合テスト</text>
-  </g>
+  <!-- T-02 -->
+  <rect x="100" y="250" width="180" height="70" fill="#00146E" rx="8"/>
+  <text x="190" y="275" class="task-title" text-anchor="middle">T-02: Entity作成</text>
+  <text x="115" y="295" class="task-text">Task.java</text>
+  <text x="115" y="310" class="task-text">工数: 30分 | 依存: T-01</text>
 
-  <!-- Arrows (dependencies) -->
-  <!-- Task 1 -> Task 2, 3 -->
-  <path d="M 400 130 L 180 180" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-  <path d="M 400 130 L 670 180" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Arrow T-01 to T-02 -->
+  <line x1="190" y1="180" x2="190" y2="250" stroke="#00AFF0" stroke-width="4"/>
+  <polygon points="190,250 185,240 195,240" fill="#00AFF0"/>
 
-  <!-- Task 2 -> Task 4, 5 -->
-  <path d="M 130 240 L 130 310" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-  <path d="M 180 240 L 370 310" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Layer 3: Backend APIs -->
+  <text x="50" y="370" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; font-weight: bold;">
+    Layer 3: Backend API実装
+  </text>
 
-  <!-- Task 3 -> Task 5, 6 -->
-  <path d="M 630 240 L 430 310" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-  <path d="M 670 240 L 670 310" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- T-03 -->
+  <rect x="100" y="390" width="180" height="70" fill="#003399" rx="8"/>
+  <text x="190" y="415" class="task-title" text-anchor="middle">T-03: GET API</text>
+  <text x="115" y="435" class="task-text">一覧取得</text>
+  <text x="115" y="450" class="task-text">工数: 60分 | 依存: T-02</text>
 
-  <!-- Task 4, 5, 6 -> Task 7 -->
-  <path d="M 180 370 L 330 440" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-  <path d="M 400 370 L 400 440" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-  <path d="M 630 370 L 470 440" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Arrow T-02 to T-03 -->
+  <line x1="190" y1="320" x2="190" y2="390" stroke="#00146E" stroke-width="4"/>
+  <polygon points="190,390 185,380 195,380" fill="#00146E"/>
 
-  <!-- Legend -->
-  <rect x="40" y="535" width="720" height="50" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
-  <text x="400" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    💡 並列実行：Task 2と3、Task 4と5と6
+  <!-- T-04 -->
+  <rect x="320" y="390" width="180" height="70" fill="#003399" rx="8"/>
+  <text x="410" y="415" class="task-title" text-anchor="middle">T-04: POST API</text>
+  <text x="335" y="435" class="task-text">新規作成</text>
+  <text x="335" y="450" class="task-text">工数: 60分 | 依存: T-03</text>
+
+  <!-- Arrow T-03 to T-04 -->
+  <line x1="280" y1="425" x2="320" y2="425" stroke="#003399" stroke-width="4"/>
+  <polygon points="320,425 310,420 310,430" fill="#003399"/>
+
+  <!-- T-05 -->
+  <rect x="540" y="390" width="180" height="70" fill="#003399" rx="8"/>
+  <text x="630" y="415" class="task-title" text-anchor="middle">T-05: PATCH API</text>
+  <text x="555" y="435" class="task-text">ステータス更新</text>
+  <text x="555" y="450" class="task-text">工数: 60分 | 依存: T-04</text>
+
+  <!-- Arrow T-04 to T-05 -->
+  <line x1="500" y1="425" x2="540" y2="425" stroke="#003399" stroke-width="4"/>
+  <polygon points="540,425 530,420 530,430" fill="#003399"/>
+
+  <!-- T-06 -->
+  <rect x="760" y="390" width="180" height="70" fill="#003399" rx="8"/>
+  <text x="850" y="415" class="task-title" text-anchor="middle">T-06: DELETE API</text>
+  <text x="775" y="435" class="task-text">論理削除</text>
+  <text x="775" y="450" class="task-text">工数: 45分 | 依存: T-05</text>
+
+  <!-- Arrow T-05 to T-06 -->
+  <line x1="720" y1="425" x2="760" y2="425" stroke="#003399" stroke-width="4"/>
+  <polygon points="760,425 750,420 750,430" fill="#003399"/>
+
+  <!-- Layer 4: Frontend -->
+  <text x="50" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; font-weight: bold;">
+    Layer 4: Frontend実装（Backend完了後）
+  </text>
+
+  <!-- T-07 -->
+  <rect x="100" y="530" width="180" height="70" fill="#66D9FF" rx="8"/>
+  <text x="190" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    T-07: 一覧画面
+  </text>
+  <text x="115" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    React実装
+  </text>
+  <text x="115" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    工数: 60分 | 依存: T-03
+  </text>
+
+  <!-- Arrow T-03 to T-07 -->
+  <line x1="190" y1="460" x2="190" y2="530" stroke="#003399" stroke-width="4"/>
+  <polygon points="190,530 185,520 195,520" fill="#003399"/>
+
+  <!-- T-08 -->
+  <rect x="320" y="530" width="180" height="70" fill="#66D9FF" rx="8"/>
+  <text x="410" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    T-08: 作成フォーム
+  </text>
+  <text x="335" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    バリデーション
+  </text>
+  <text x="335" y="590" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    工数: 60分 | 依存: T-04, T-07
+  </text>
+
+  <!-- Arrow T-04 to T-08 -->
+  <line x1="410" y1="460" x2="410" y2="530" stroke="#003399" stroke-width="4"/>
+  <polygon points="410,530 405,520 415,520" fill="#003399"/>
+
+  <!-- Arrow T-07 to T-08 -->
+  <line x1="280" y1="565" x2="320" y2="565" stroke="#66D9FF" stroke-width="4" stroke-dasharray="5,3"/>
+  <polygon points="320,565 310,560 310,570" fill="#66D9FF"/>
+
+  <!-- Benefits section -->
+  <rect x="980" y="110" width="380" height="490" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="1170" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    依存関係グラフの活用
+  </text>
+
+  <!-- Benefit 1 -->
+  <rect x="1000" y="160" width="340" height="100" fill="#00AFF0" rx="8"/>
+  <text x="1170" y="185" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    1. クリティカルパスの特定
+  </text>
+  <text x="1015" y="208" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    最長経路（T-01 → T-02 → T-03 → T-04 → T-05
+  </text>
+  <text x="1015" y="226" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    → T-06）が完了時間を決定 = 合計285分
+  </text>
+  <text x="1015" y="244" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    → この経路を優先的に進める
+  </text>
+
+  <!-- Benefit 2 -->
+  <rect x="1000" y="275" width="340" height="100" fill="#003399" rx="8"/>
+  <text x="1170" y="300" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    2. 並行作業の可能性
+  </text>
+  <text x="1015" y="323" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    Layer 1（T-01, T-09, T-10）は並行実行可能
+  </text>
+  <text x="1015" y="341" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    → 複数人で分担可能
+  </text>
+  <text x="1015" y="359" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    → 全体完了時間を短縮
+  </text>
+
+  <!-- Benefit 3 -->
+  <rect x="1000" y="390" width="340" height="100" fill="#00146E" rx="8"/>
+  <text x="1170" y="415" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    3. 手戻り防止
+  </text>
+  <text x="1015" y="438" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    依存先タスクが完了していないと、
+  </text>
+  <text x="1015" y="456" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    依存元タスクで手戻りが発生。
+  </text>
+  <text x="1015" y="474" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    → グラフで順序を可視化、ミス防止
+  </text>
+
+  <!-- Benefit 4 -->
+  <rect x="1000" y="505" width="340" height="85" fill="#66D9FF" rx="8"/>
+  <text x="1170" y="530" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    4. AIへの指示が明確に
+  </text>
+  <text x="1015" y="553" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    「T-04を実装して（T-03完了済み）」
+  </text>
+  <text x="1015" y="571" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    → AIが前提条件を理解、スムーズに実装
+  </text>
+
+  <!-- Bottom: Legend -->
+  <rect x="50" y="640" width="1310" height="130" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="705" y="675" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    凡例と読み方
+  </text>
+
+  <rect x="70" y="695" width="30" height="20" fill="#00AFF0" rx="3"/>
+  <text x="110" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    Layer 1: 独立タスク（並行実行可）
+  </text>
+
+  <rect x="370" y="695" width="30" height="20" fill="#00146E" rx="3"/>
+  <text x="410" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    Layer 2: Entity/Repository作成
+  </text>
+
+  <rect x="670" y="695" width="30" height="20" fill="#003399" rx="3"/>
+  <text x="710" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    Layer 3: Backend API（順次実行）
+  </text>
+
+  <rect x="1010" y="695" width="30" height="20" fill="#66D9FF" rx="3"/>
+  <text x="1050" y="710" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    Layer 4: Frontend実装
+  </text>
+
+  <line x1="70" y1="740" x2="100" y2="740" stroke="#00146E" stroke-width="4"/>
+  <polygon points="100,740 90,735 90,745" fill="#00146E"/>
+  <text x="110" y="745" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    直接依存（前提タスク完了必須）
+  </text>
+
+  <line x1="370" y1="740" x2="400" y2="740" stroke="#66D9FF" stroke-width="4" stroke-dasharray="5,3"/>
+  <polygon points="400,740 390,735 390,745" fill="#66D9FF"/>
+  <text x="410" y="745" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    間接依存（完了推奨だが必須ではない）
   </text>
 </svg>

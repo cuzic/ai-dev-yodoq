@@ -1,60 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350">
-  <defs>
-    <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #333; text-anchor: middle; }
-      .step-box { fill: #00146E; }
-      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: white; text-anchor: middle; }
-      .code { font-family: 'Consolas', monospace; font-size: 11px; fill: #333; }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 650">
+  <rect width="1000" height="400" fill="#FFF"/>
+  <text x="500" y="30" style="font-size: 81px; font-weight: bold; fill: #333; text-anchor: middle;">ER図からコード生成への流れ</text>
   
-  <rect width="900" height="350" fill="#FFFFFF"/>
-  <text x="450" y="35" class="title">ER図からコード生成の流れ</text>
+  <rect x="50" y="80" width="250" height="240" fill="#00146E" rx="10"/>
+  <text x="175" y="110" style="font-size: 72px; font-weight: bold; fill: white; text-anchor: middle;">ER図（入力）</text>
+  <text x="70" y="145" style="font-size: 64px; fill: white;">• テーブル定義</text>
+  <text x="70" y="170" style="font-size: 64px; fill: white;">• リレーション</text>
+  <text x="70" y="195" style="font-size: 64px; fill: white;">• 制約</text>
   
-  <!-- Step 1: ER Diagram -->
-  <rect x="50" y="70" width="180" height="80" rx="5" class="step-box"/>
-  <text x="140" y="100" class="step-text" font-weight="bold">STEP1</text>
-  <text x="140" y="120" class="step-text">ER図作成</text>
-  <text x="140" y="138" class="step-text" font-size="11px">Mermaid記法</text>
+  <rect x="375" y="80" width="250" height="240" fill="#00AFF0" rx="10"/>
+  <text x="500" y="110" style="font-size: 72px; font-weight: bold; fill: white; text-anchor: middle;">AIの処理</text>
+  <text x="395" y="145" style="font-size: 64px; fill: white;">• ER図を読み込む</text>
+  <text x="395" y="170" style="font-size: 64px; fill: white;">• 構造を理解</text>
+  <text x="395" y="195" style="font-size: 64px; fill: white;">• コード生成ルール適用</text>
   
-  <!-- Arrow -->
-  <line x1="230" y1="110" x2="270" y2="110" stroke="#00AFF0" stroke-width="2"/>
-  <polygon points="270,110 265,107 265,113" fill="#00AFF0"/>
+  <rect x="700" y="80" width="250" height="240" fill="#003399" rx="10"/>
+  <text x="825" y="110" style="font-size: 72px; font-weight: bold; fill: white; text-anchor: middle;">生成コード（出力）</text>
+  <text x="720" y="145" style="font-size: 64px; fill: white;">• CREATE TABLE文</text>
+  <text x="720" y="170" style="font-size: 64px; fill: white;">• JOIN処理</text>
+  <text x="720" y="195" style="font-size: 64px; fill: white;">• 外部キー制約</text>
+  <text x="720" y="220" style="font-size: 64px; fill: white;">• ORMモデル</text>
   
-  <!-- Step 2: Schema -->
-  <rect x="275" y="70" width="180" height="80" rx="5" fill="#00AFF0"/>
-  <text x="365" y="100" class="step-text" font-weight="bold">STEP2</text>
-  <text x="365" y="120" class="step-text">スキーマ定義</text>
-  <text x="365" y="138" class="step-text" font-size="11px">DDL生成</text>
+  <line x1="300" y1="200" x2="375" y2="200" stroke="#00146E" stroke-width="4"/>
+  <polygon points="375,200 365,195 365,205" fill="#00146E"/>
   
-  <!-- Arrow -->
-  <line x1="455" y1="110" x2="495" y2="110" stroke="#003399" stroke-width="2"/>
-  <polygon points="495,110 490,107 490,113" fill="#003399"/>
+  <line x1="625" y1="200" x2="700" y2="200" stroke="#00AFF0" stroke-width="4"/>
+  <polygon points="700,200 690,195 690,205" fill="#00AFF0"/>
   
-  <!-- Step 3: Model Code -->
-  <rect x="500" y="70" width="180" height="80" rx="5" fill="#003399"/>
-  <text x="590" y="100" class="step-text" font-weight="bold">STEP3</text>
-  <text x="590" y="120" class="step-text">モデルコード</text>
-  <text x="590" y="138" class="step-text" font-size="11px">ORM生成</text>
-  
-  <!-- Arrow -->
-  <line x1="680" y1="110" x2="720" y2="110" stroke="#27ae60" stroke-width="2"/>
-  <polygon points="720,110 715,107 715,113" fill="#27ae60"/>
-  
-  <!-- Step 4: API -->
-  <rect x="725" y="70" width="130" height="80" rx="5" fill="#27ae60"/>
-  <text x="790" y="100" class="step-text" font-weight="bold">STEP4</text>
-  <text x="790" y="120" class="step-text">API実装</text>
-  <text x="790" y="138" class="step-text" font-size="11px">CRUD</text>
-  
-  <!-- Example code below -->
-  <rect x="50" y="180" width="800" height="150" fill="#F6F8FA" stroke="#00146E" stroke-width="1" rx="5"/>
-  
-  <text x="70" y="205" class="code" font-weight="bold">// 自動生成されるコード例</text>
-  <text x="70" y="230" class="code">class User {</text>
-  <text x="90" y="250" class="code">  id: number;        // PK</text>
-  <text x="90" y="270" class="code">  email: string;</text>
-  <text x="90" y="290" class="code">  name: string;</text>
-  <text x="90" y="310" class="code">  posts: Post[];     // 1:N relation</text>
-  <text x="70" y="325" class="code">}</text>
+  <rect x="50" y="340" width="900" height="50" fill="#E6E6E6" rx="5"/>
+  <text x="500" y="370" style="font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">効果: データ構造の全体像把握 → 正確な実装</text>
 </svg>

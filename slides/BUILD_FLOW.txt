@@ -1,0 +1,87 @@
+╔════════════════════════════════════════════════════════════════╗
+║        AI Development Training - Build System Flow            ║
+╚════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────┐
+│                     SOURCE FILES                             │
+├─────────────────────────────────────────────────────────────┤
+│  day1_1.md  │  day1_2.md  │  day1_3.md  │  day2_1.md  │  day2_2.md
+│   (32 KB)      (30 KB)       (17 KB)       (18 KB)       (17 KB)
+└──────┬──────────────┬─────────────┬──────────────┬──────────┘
+       │              │             │              │
+       └──────────────┴─────────────┴──────────────┘
+                      │
+                      ▼
+         ┌────────────────────────┐
+         │  COMBINE MARKDOWN      │ ← build_pptx.py
+         │  cat day*.md >         │   build_pptx.sh
+         │  all_slides.md         │   Makefile
+         └────────────┬───────────┘
+                      │
+                      ▼
+         ┌────────────────────────┐
+         │  all_slides.md         │
+         │  (112 KB, ~200 slides) │
+         └────────────┬───────────┘
+                      │
+                      ▼
+         ┌────────────────────────┐
+         │  MARP CLI              │ ← @marp-team/marp-cli
+         │  Render slides         │   (via npx)
+         │  Convert to PPTX       │   Chrome/Chromium
+         └────────────┬───────────┘
+                      │
+                      ▼
+         ┌────────────────────────┐
+         │  Temp PPTX             │
+         │  (40 MB)               │
+         │  PNG images @ 2x scale │
+         └────────────┬───────────┘
+                      │
+                      ▼
+         ┌────────────────────────┐
+         │  SVG REPLACEMENT       │ ← replace_with_svg.py
+         │  1. Extract PPTX (ZIP) │   (Python + zipfile)
+         │  2. Map PNG→SVG        │
+         │  3. Copy SVG files     │
+         │  4. Update references  │
+         │  5. Register MIME type │
+         │  6. Repackage PPTX     │
+         └────────────┬───────────┘
+                      │
+                      ▼
+         ┌────────────────────────┐
+         │  FINAL PPTX            │
+         │  (36 MB, -10%)         │
+         │  41 SVG images         │
+         │  Vector graphics       │
+         └────────────────────────┘
+
+╔════════════════════════════════════════════════════════════╗
+║                    BUILD COMMANDS                          ║
+╠════════════════════════════════════════════════════════════╣
+║  make build         → Full automated build                 ║
+║  python3 build.py   → Python build script                  ║
+║  ./build_pptx.sh    → Bash build script                    ║
+║  make clean         → Remove generated files               ║
+║  make test          → Check dependencies                   ║
+╚════════════════════════════════════════════════════════════╝
+
+╔════════════════════════════════════════════════════════════╗
+║                   FILE STRUCTURE                           ║
+╠════════════════════════════════════════════════════════════╣
+║  Build Scripts:                                            ║
+║    • Makefile          - Make-based build                  ║
+║    • build_pptx.py     - Python build script               ║
+║    • build_pptx.sh     - Bash build script                 ║
+║    • replace_with_svg.py - SVG replacement utility         ║
+║                                                            ║
+║  Configuration:                                            ║
+║    • .build.config     - Build configuration               ║
+║                                                            ║
+║  Documentation:                                            ║
+║    • README.md         - Complete documentation            ║
+║    • QUICKSTART.md     - Quick start guide                 ║
+║    • BUILD_SUMMARY.md  - Build system overview             ║
+║    • BUILD_FLOW.txt    - This file                         ║
+╚════════════════════════════════════════════════════════════╝

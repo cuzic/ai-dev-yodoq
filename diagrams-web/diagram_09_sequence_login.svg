@@ -1,64 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
-  <defs>
-    <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #333; text-anchor: middle; }
-      .actor { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; text-anchor: middle; font-weight: bold; }
-      .message { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #333; }
-      .lifeline { stroke: #999; stroke-width: 1; stroke-dasharray: 5,5; }
-      .call { stroke: #00146E; stroke-width: 2; fill: none; }
-      .return { stroke: #00AFF0; stroke-width: 2; stroke-dasharray: 5,5; fill: none; }
-    </style>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#00146E"/>
-    </marker>
-    <marker id="arrow-return" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#00AFF0"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1040">
+  <rect width="800" height="800" fill="#FFF"/>
+  <text x="400" y="30" style="font-size: 81px; font-weight: bold; fill: #333; text-anchor: middle;">ログイン機能シーケンス図</text>
   
-  <rect width="700" height="500" fill="#FFFFFF"/>
-  <text x="350" y="35" class="title">ログインシーケンス図</text>
+  <text x="100" y="70" style="font-size: 70px; font-weight: bold; fill: #00146E;">ユーザー</text>
+  <text x="250" y="70" style="font-size: 70px; font-weight: bold; fill: #00146E;">フロントエンド</text>
+  <text x="450" y="70" style="font-size: 70px; font-weight: bold; fill: #00146E;">API</text>
+  <text x="650" y="70" style="font-size: 70px; font-weight: bold; fill: #00146E;">DB</text>
   
-  <!-- Actors -->
-  <rect x="70" y="70" width="80" height="40" rx="5" fill="#E6E6E6" stroke="#333" stroke-width="1"/>
-  <text x="110" y="95" class="actor">User</text>
+  <line x1="100" y1="80" x2="100" y2="700" stroke="#E6E6E6" stroke-width="3" stroke-dasharray="5,5"/>
+  <line x1="250" y1="80" x2="250" y2="700" stroke="#E6E6E6" stroke-width="3" stroke-dasharray="5,5"/>
+  <line x1="450" y1="80" x2="450" y2="700" stroke="#E6E6E6" stroke-width="3" stroke-dasharray="5,5"/>
+  <line x1="650" y1="80" x2="650" y2="700" stroke="#E6E6E6" stroke-width="3" stroke-dasharray="5,5"/>
   
-  <rect x="270" y="70" width="80" height="40" rx="5" fill="#E6E6E6" stroke="#333" stroke-width="1"/>
-  <text x="310" y="95" class="actor">Frontend</text>
+  <line x1="100" y1="120" x2="250" y2="120" stroke="#00146E" stroke-width="3"/>
+  <polygon points="250,120 240,115 240,125" fill="#00146E"/>
+  <text x="175" y="110" style="font-size: 54px; fill: #333;">1. メール・パスワード入力</text>
   
-  <rect x="470" y="70" width="80" height="40" rx="5" fill="#E6E6E6" stroke="#333" stroke-width="1"/>
-  <text x="510" y="95" class="actor">Backend</text>
+  <line x1="250" y1="180" x2="450" y2="180" stroke="#00146E" stroke-width="3"/>
+  <polygon points="450,180 440,175 440,185" fill="#00146E"/>
+  <text x="350" y="170" style="font-size: 54px; fill: #333;">2. POST /api/login</text>
   
-  <!-- Lifelines -->
-  <line x1="110" y1="110" x2="110" y2="450" class="lifeline"/>
-  <line x1="310" y1="110" x2="310" y2="450" class="lifeline"/>
-  <line x1="510" y1="110" x2="510" y2="450" class="lifeline"/>
+  <line x1="450" y1="240" x2="650" y2="240" stroke="#00AFF0" stroke-width="3"/>
+  <polygon points="650,240 640,235 640,245" fill="#00AFF0"/>
+  <text x="550" y="230" style="font-size: 54px; fill: #333;">3. SELECT user</text>
   
-  <!-- Interactions -->
-  <path d="M 110 140 L 310 140" class="call" marker-end="url(#arrow)"/>
-  <text x="200" y="130" class="message">1. 入力(email, password)</text>
+  <line x1="650" y1="300" x2="450" y2="300" stroke="#00AFF0" stroke-width="3" stroke-dasharray="3,3"/>
+  <polygon points="450,300 460,295 460,305" fill="#00AFF0"/>
+  <text x="550" y="290" style="font-size: 54px; fill: #333;">4. user情報</text>
   
-  <path d="M 310 180 L 510 180" class="call" marker-end="url(#arrow)"/>
-  <text x="400" y="170" class="message">2. POST /api/login</text>
+  <rect x="420" y="340" width="60" height="60" fill="#003399"/>
+  <text x="450" y="365" style="font-size: 50px; fill: white; text-anchor: middle;">パスワード</text>
+  <text x="450" y="380" style="font-size: 50px; fill: white; text-anchor: middle;">検証</text>
+  <text x="450" y="395" style="font-size: 50px; fill: white; text-anchor: middle;">(bcrypt)</text>
   
-  <rect x="505" y="200" width="10" height="80" fill="#00146E"/>
-  <text x="540" y="240" class="message" font-size="11px">3. 認証処理</text>
+  <rect x="420" y="440" width="60" height="40" fill="#00AFF0"/>
+  <text x="450" y="460" style="font-size: 50px; fill: white; text-anchor: middle;">JWT生成</text>
   
-  <path d="M 510 300 L 310 300" class="return" marker-end="url(#arrow-return)"/>
-  <text x="400" y="290" class="message">4. JWT token</text>
+  <line x1="450" y1="520" x2="250" y2="520" stroke="#00AFF0" stroke-width="3" stroke-dasharray="3,3"/>
+  <polygon points="250,520 260,515 260,525" fill="#00AFF0"/>
+  <text x="350" y="510" style="font-size: 54px; fill: #333;">7. 200 OK + JWT</text>
   
-  <rect x="305" y="320" width="10" height="40" fill="#00AFF0"/>
-  <text x="340" y="340" class="message" font-size="11px">5. token保存</text>
+  <line x1="250" y1="580" x2="100" y2="580" stroke="#00AFF0" stroke-width="3" stroke-dasharray="3,3"/>
+  <polygon points="100,580 110,575 110,585" fill="#00AFF0"/>
+  <text x="175" y="570" style="font-size: 54px; fill: #333;">8. ダッシュボードへ</text>
   
-  <path d="M 310 380 L 110 380" class="return" marker-end="url(#arrow-return)"/>
-  <text x="200" y="370" class="message">6. ダッシュボード表示</text>
+  <line x1="450" y1="650" x2="250" y2="650" stroke="#66D9FF" stroke-width="3" stroke-dasharray="5,5"/>
+  <polygon points="250,650 260,645 260,655" fill="#66D9FF"/>
+  <text x="350" y="640" style="font-size: 54px; fill: #66D9FF;">エラー: 401</text>
   
-  <!-- Note -->
-  <rect x="100" y="420" width="500" height="50" fill="#FFF8DC" stroke="#FFD700" stroke-width="2" rx="5"/>
-  <text x="350" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; text-anchor: middle;">
-    📝 Note: このシーケンス図を元にAIがテストコードを生成
-  </text>
-  <text x="350" y="458" style="font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; text-anchor: middle;">
-    各ステップの正常系・異常系を網羅
-  </text>
+  <rect x="50" y="720" width="700" height="60" fill="#E6E6E6" rx="5"/>
+  <text x="400" y="750" style="font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">効果: 処理順序の明確化 → AIが正確に実装</text>
 </svg>

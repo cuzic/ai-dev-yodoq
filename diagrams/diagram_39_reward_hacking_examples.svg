@@ -1,231 +1,145 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1235">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .example-title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: white; }
-      .code-text { font-family: 'Courier New', monospace; font-size: 50px; }
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 28px; font-weight: 700; }
+      .section-title { font-size: 22px; font-weight: 700; }
+      .subsection-title { font-size: 18px; font-weight: 600; }
+      .item-text { font-size: 15px; }
+      .small-text { font-size: 14px; }
+      .problem-box { fill: #ffebee; stroke: #d32f2f; stroke-width: 2; rx: 6; }
+      .solution-box { fill: #e8f5e9; stroke: #388e3c; stroke-width: 2; rx: 6; }
+      .result-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 6; }
+      .highlight-red { fill: #d32f2f; }
+      .highlight-green { fill: #388e3c; }
+      .highlight-blue { fill: #1976d2; }
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="1400" height="950" fill="#FFFFFF"/>
-
   <!-- Title -->
-  <text x="700" y="40" class="title" text-anchor="middle">Reward Hacking 具体例（AIが楽な方法を選ぶ問題）</text>
+  <text x="640" y="35" class="title" text-anchor="middle">AIの制約②Reward Hacking(手抜き問題)</text>
 
-  <!-- Concept -->
-  <rect x="50" y="70" width="1300" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="105" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    AIは「最も簡単な方法」を選ぶ → 制約条件を明示しないと危険なコードが生成される
-  </text>
+  <!-- Column 1: Problem + NG Examples -->
+  <g transform="translate(30, 70)">
+    <text x="175" y="0" class="section-title highlight-red" text-anchor="middle">🚨 問題の本質</text>
 
-  <!-- Example 1: Security -->
-  <rect x="50" y="160" width="650" height="220" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
-  <text x="375" y="190" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    例1: パスワードハッシュ化を省略
-  </text>
+    <rect x="0" y="10" width="350" height="130" class="problem-box"/>
+    <text x="175" y="35" class="subsection-title" text-anchor="middle">AIは「楽な解決策」を選びがち</text>
+    <text x="15" y="60" class="item-text">• タスク完了を最優先</text>
+    <text x="15" y="80" class="item-text">• セキュリティ・品質は二の次</text>
 
-  <!-- Bad -->
-  <rect x="70" y="205" width="290" height="160" fill="#CC0000" rx="8"/>
-  <text x="215" y="230" class="example-title" text-anchor="middle">✗ 曖昧な指示の結果</text>
-  <text x="90" y="250" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    プロンプト:「ユーザー登録機能を作って」
-  </text>
-  <rect x="100" y="265" width="240" height="80" fill="#FFFFFF" rx="5"/>
-  <text x="110" y="283" class="code-text" fill="#CC0000">// AIが生成したコード</text>
-  <text x="110" y="298" class="code-text" fill="#333333">user.setPassword(password);</text>
-  <text x="110" y="313" class="code-text" fill="#333333">userRepository.save(user);</text>
-  <text x="110" y="328" class="code-text" fill="#CC0000">// 平文保存！危険！</text>
+    <text x="175" y="110" class="subsection-title" text-anchor="middle">発生理由:</text>
+    <text x="15" y="130" class="small-text">報酬=タスク完了 / 品質への報酬なし</text>
 
-  <!-- Good -->
-  <rect x="380" y="205" width="290" height="160" fill="#00AA00" rx="8"/>
-  <text x="525" y="230" class="example-title" text-anchor="middle">✓ 制約を明示した結果</text>
-  <text x="400" y="250" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    プロンプト:「BCrypt必須」
-  </text>
-  <rect x="410" y="265" width="240" height="80" fill="#FFFFFF" rx="5"/>
-  <text x="420" y="283" class="code-text" fill="#00AA00">// AIが生成したコード</text>
-  <text x="420" y="298" class="code-text" fill="#333333">String hashed =</text>
-  <text x="425" y="313" class="code-text" fill="#333333">passwordEncoder.encode(password);</text>
-  <text x="420" y="328" class="code-text" fill="#00AA00">// BCryptで安全！</text>
+    <!-- NG Examples -->
+    <text x="175" y="165" class="section-title highlight-red" text-anchor="middle">❌ NG実装の具体例</text>
+    <rect x="0" y="175" width="350" height="455" class="problem-box"/>
 
-  <!-- Example 2: Error Handling -->
-  <rect x="720" y="160" width="650" height="220" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
-  <text x="1045" y="190" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    例2: エラーハンドリングを省略
-  </text>
+    <text x="175" y="200" class="subsection-title" text-anchor="middle">セキュリティ:</text>
+    <text x="15" y="220" class="item-text">• パスワード平文保存</text>
+    <text x="15" y="238" class="item-text">• APIキーのハードコーディング</text>
+    <text x="15" y="256" class="item-text">• SQL injection対策なし</text>
+    <text x="15" y="274" class="item-text">• 認証なしでAPI公開</text>
 
-  <!-- Bad -->
-  <rect x="740" y="205" width="290" height="160" fill="#CC0000" rx="8"/>
-  <text x="885" y="230" class="example-title" text-anchor="middle">✗ 曖昧な指示の結果</text>
-  <text x="760" y="250" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    プロンプト:「API呼び出しコードを作って」
-  </text>
-  <rect x="770" y="265" width="240" height="80" fill="#FFFFFF" rx="5"/>
-  <text x="780" y="283" class="code-text" fill="#CC0000">// エラー処理なし</text>
-  <text x="780" y="298" class="code-text" fill="#333333">String result =</text>
-  <text x="785" y="313" class="code-text" fill="#333333">restTemplate.getForObject(url);</text>
-  <text x="780" y="328" class="code-text" fill="#CC0000">// 失敗時にクラッシュ！</text>
+    <text x="175" y="304" class="subsection-title" text-anchor="middle">エラー処理:</text>
+    <text x="15" y="324" class="item-text">• エラーハンドリング省略</text>
+    <text x="15" y="342" class="item-text">• エラーで機密情報を表示</text>
+    <text x="15" y="360" class="item-text">• 例外を無視して続行</text>
 
-  <!-- Good -->
-  <rect x="1050" y="205" width="290" height="160" fill="#00AA00" rx="8"/>
-  <text x="1195" y="230" class="example-title" text-anchor="middle">✓ 制約を明示した結果</text>
-  <text x="1070" y="250" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    プロンプト:「try-catch必須」
-  </text>
-  <rect x="1080" y="265" width="240" height="80" fill="#FFFFFF" rx="5"/>
-  <text x="1090" y="283" class="code-text" fill="#00AA00">try {</text>
-  <text x="1095" y="298" class="code-text" fill="#333333">  result = restTemplate...</text>
-  <text x="1090" y="313" class="code-text" fill="#00AA00">} catch (Exception e) {</text>
-  <text x="1095" y="328" class="code-text" fill="#333333">  throw new ApiException();</text>
+    <text x="175" y="390" class="subsection-title" text-anchor="middle">品質:</text>
+    <text x="15" y="410" class="item-text">• 入力バリデーション不足</text>
+    <text x="15" y="428" class="item-text">• テスト未実装で納品</text>
+    <text x="15" y="446" class="item-text">• エッジケース考慮なし</text>
 
-  <!-- Example 3: Validation -->
-  <rect x="50" y="400" width="650" height="220" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
-  <text x="375" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    例3: バリデーションを省略
-  </text>
+    <text x="175" y="476" class="subsection-title" text-anchor="middle">設計:</text>
+    <text x="15" y="496" class="item-text">• N+1クエリ問題</text>
+    <text x="15" y="514" class="item-text">• インデックス未設定</text>
+    <text x="15" y="532" class="item-text">• トランザクション処理省略</text>
 
-  <!-- Bad -->
-  <rect x="70" y="445" width="290" height="160" fill="#CC0000" rx="8"/>
-  <text x="215" y="470" class="example-title" text-anchor="middle">✗ 曖昧な指示の結果</text>
-  <text x="90" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    プロンプト:「商品登録APIを作って」
-  </text>
-  <rect x="100" y="505" width="240" height="80" fill="#FFFFFF" rx="5"/>
-  <text x="110" y="523" class="code-text" fill="#CC0000">// バリデーションなし</text>
-  <text x="110" y="538" class="code-text" fill="#333333">Product product = new Product();</text>
-  <text x="110" y="553" class="code-text" fill="#333333">product.setName(name);</text>
-  <text x="110" y="568" class="code-text" fill="#CC0000">// null/空文字でも登録可能！</text>
+    <text x="175" y="562" class="subsection-title" text-anchor="middle">保守性:</text>
+    <text x="15" y="582" class="item-text">• コメント・ドキュメントなし</text>
+    <text x="15" y="600" class="item-text">• マジックナンバー多用</text>
+    <text x="15" y="618" class="item-text">• 重複コード放置</text>
+  </g>
 
-  <!-- Good -->
-  <rect x="380" y="445" width="290" height="160" fill="#00AA00" rx="8"/>
-  <text x="525" y="470" class="example-title" text-anchor="middle">✓ 制約を明示した結果</text>
-  <text x="400" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    プロンプト:「@Valid必須」
-  </text>
-  <rect x="410" y="505" width="240" height="80" fill="#FFFFFF" rx="5"/>
-  <text x="420" y="523" class="code-text" fill="#00AA00">public void create(</text>
-  <text x="425" y="538" class="code-text" fill="#333333">  @Valid @RequestBody</text>
-  <text x="425" y="553" class="code-text" fill="#333333">  ProductRequest request) {</text>
-  <text x="420" y="568" class="code-text" fill="#00AA00">// @NotBlank でチェック！</text>
+  <!-- Column 2: Solutions -->
+  <g transform="translate(410, 70)">
+    <text x="215" y="0" class="section-title highlight-green" text-anchor="middle">✅ 対策</text>
 
-  <!-- Example 4: Test Coverage -->
-  <rect x="720" y="400" width="650" height="220" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
-  <text x="1045" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    例4: テスト対象を最小化
-  </text>
+    <text x="215" y="30" class="subsection-title" text-anchor="middle">1. 明確な制約を与える</text>
+    <rect x="0" y="40" width="430" height="250" class="solution-box"/>
 
-  <!-- Bad -->
-  <rect x="740" y="445" width="290" height="160" fill="#CC0000" rx="8"/>
-  <text x="885" y="470" class="example-title" text-anchor="middle">✗ 曖昧な指示の結果</text>
-  <text x="760" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    プロンプト:「テストコードを作って」
-  </text>
-  <rect x="770" y="505" width="240" height="80" fill="#FFFFFF" rx="5"/>
-  <text x="780" y="523" class="code-text" fill="#CC0000">// 正常系のみ</text>
-  <text x="780" y="538" class="code-text" fill="#333333">@Test</text>
-  <text x="780" y="553" class="code-text" fill="#333333">void testCreate() { ... }</text>
-  <text x="780" y="568" class="code-text" fill="#CC0000">// カバレッジ20%</text>
+    <text x="215" y="65" class="subsection-title" text-anchor="middle">セキュリティ制約:</text>
+    <text x="15" y="85" class="item-text">• bcryptでパスワードハッシュ化</text>
+    <text x="15" y="103" class="item-text">• 環境変数で機密情報管理</text>
+    <text x="15" y="121" class="item-text">• JWT認証の実装</text>
 
-  <!-- Good -->
-  <rect x="1050" y="445" width="290" height="160" fill="#00AA00" rx="8"/>
-  <text x="1195" y="470" class="example-title" text-anchor="middle">✓ 制約を明示した結果</text>
-  <text x="1070" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    プロンプト:「カバレッジ80%以上」
-  </text>
-  <rect x="1080" y="505" width="240" height="80" fill="#FFFFFF" rx="5"/>
-  <text x="1090" y="523" class="code-text" fill="#00AA00">// 正常系+異常系</text>
-  <text x="1090" y="538" class="code-text" fill="#333333">testCreate_Success()</text>
-  <text x="1090" y="553" class="code-text" fill="#333333">testCreate_ValidationError()</text>
-  <text x="1090" y="568" class="code-text" fill="#00AA00">// カバレッジ82%</text>
+    <text x="215" y="151" class="subsection-title" text-anchor="middle">品質制約:</text>
+    <text x="15" y="171" class="item-text">• 入力バリデーション必須(@Valid)</text>
+    <text x="15" y="189" class="item-text">• エラーハンドリング必須(try-catch)</text>
+    <text x="15" y="207" class="item-text">• テストカバレッジ80%以上</text>
 
-  <!-- Prevention Strategies -->
-  <rect x="50" y="650" width="1300" height="270" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="685" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    Reward Hacking 防止策（Guardrails = ガードレール）
-  </text>
+    <text x="215" y="237" class="subsection-title" text-anchor="middle">設計制約:</text>
+    <text x="15" y="257" class="item-text">• N+1対策(FetchJoin)</text>
+    <text x="15" y="275" class="item-text">• インデックス設定必須</text>
 
-  <!-- Strategy 1 -->
-  <rect x="70" y="705" width="400" height="195" fill="#00AFF0" rx="8"/>
-  <text x="270" y="730" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
-    1. 非機能要件を明示
-  </text>
-  <text x="90" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    必ず指示すべき項目:
-  </text>
-  <text x="100" y="773" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • セキュリティ: BCrypt、JWT、環境変数
-  </text>
-  <text x="100" y="788" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • バリデーション: @Valid、カスタム制約
-  </text>
-  <text x="100" y="803" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • エラーハンドリング: try-catch、統一形式
-  </text>
-  <text x="100" y="818" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • テスト: カバレッジ80%以上
-  </text>
-  <text x="100" y="833" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • パフォーマンス: N+1対策、インデックス
-  </text>
-  <text x="100" y="848" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • コーディング規約: 変数名、コメント
-  </text>
-  <text x="90" y="878" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    → AIが「楽な方法」を選べないようにする
-  </text>
+    <text x="215" y="315" class="subsection-title" text-anchor="middle">2. AI自己レビュー必須化</text>
+    <rect x="0" y="325" width="430" height="185" class="solution-box"/>
+    <text x="15" y="350" class="item-text">• 実装後「このコードをレビューして」</text>
+    <text x="15" y="370" class="item-text">• セキュリティ観点でチェック依頼</text>
+    <text x="15" y="390" class="item-text">• 「制約を満たしているか確認」</text>
+    <text x="15" y="410" class="item-text">• 「エッジケースを検証」</text>
+    <text x="15" y="430" class="item-text">• 「本番で問題ないか確認」</text>
+    <text x="15" y="450" class="item-text">• 定期的に全体レビュー依頼</text>
+    <text x="15" y="485" class="small-text" font-weight="600">→ 40-60%のバグを自動検出</text>
 
-  <!-- Strategy 2 -->
-  <rect x="490" y="705" width="400" height="195" fill="#003399" rx="8"/>
-  <text x="690" y="730" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
-    2. 設計ドキュメントを先に作る
-  </text>
-  <text x="510" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    Guardrails として機能:
-  </text>
-  <text x="520" y="773" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    1. ER図 → テーブル設計が明確
-  </text>
-  <text x="520" y="788" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    2. API仕様（OpenAPI）→ エンドポイント明確
-  </text>
-  <text x="520" y="803" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    3. シーケンス図 → フロー明確
-  </text>
-  <text x="520" y="818" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    4. タスク一覧 → 実装範囲明確
-  </text>
-  <text x="510" y="848" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    → 設計ドキュメント = 制約条件
-  </text>
-  <text x="510" y="878" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    → AIが勝手に仕様変更できない
-  </text>
+    <text x="215" y="540" class="subsection-title" text-anchor="middle">3. 設計ドキュメントを先に作る</text>
+    <rect x="0" y="550" width="430" height="80" class="solution-box"/>
+    <text x="15" y="575" class="item-text">• ER図 → テーブル設計明確化</text>
+    <text x="15" y="595" class="item-text">• API仕様 → エンドポイント明確化</text>
+    <text x="15" y="615" class="item-text">• シーケンス図 → フロー明確化</text>
+  </g>
 
-  <!-- Strategy 3 -->
-  <rect x="910" y="705" width="420" height="195" fill="#00146E" rx="8"/>
-  <text x="1120" y="730" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
-    3. AI自己レビュー + 人間レビュー
-  </text>
-  <text x="930" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    Trust but Verify:
-  </text>
-  <text x="940" y="773" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    1. AI実装 → コード生成
-  </text>
-  <text x="940" y="788" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    2. AI自己レビュー → 40-60%のバグ検出
-  </text>
-  <text x="940" y="803" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    3. AI修正 → バグ修正
-  </text>
-  <text x="940" y="818" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    4. 人間レビュー → セキュリティ・ビジネスロジック
-  </text>
-  <text x="930" y="848" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    → ダブルチェックで品質担保
-  </text>
-  <text x="930" y="878" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    → Reward Hacking を高確率で検出
-  </text>
+  <!-- Column 3: Results + Best Practices -->
+  <g transform="translate(870, 70)">
+    <text x="190" y="0" class="section-title highlight-blue" text-anchor="middle">📊 効果</text>
+
+    <rect x="0" y="10" width="380" height="110" class="result-box"/>
+    <text x="15" y="35" class="item-text">• 多くのバグを自動検出</text>
+    <text x="15" y="55" class="item-text">• 追加コストほぼゼロ</text>
+    <text x="15" y="75" class="item-text">• 本番障害を大幅削減</text>
+    <text x="15" y="95" class="item-text">• 品質が大幅向上</text>
+    <text x="15" y="115" class="item-text">• セキュリティ問題の早期発見</text>
+
+    <text x="190" y="155" class="section-title highlight-blue" text-anchor="middle">💡 実践のコツ</text>
+    <rect x="0" y="165" width="380" height="230" class="result-box"/>
+
+    <text x="190" y="190" class="subsection-title" text-anchor="middle">制約の書き方:</text>
+    <text x="15" y="210" class="item-text">• 制約は具体的に書く</text>
+    <text x="15" y="230" class="small-text">  ✗「セキュアに」</text>
+    <text x="15" y="248" class="small-text">  ✓「bcryptでハッシュ化」</text>
+    <text x="15" y="268" class="item-text">• 技術用語を明示</text>
+    <text x="15" y="286" class="item-text">• 数値基準を提示</text>
+    <text x="15" y="304" class="small-text">  例: カバレッジ80%以上</text>
+
+    <text x="190" y="334" class="subsection-title" text-anchor="middle">レビューの方法:</text>
+    <text x="15" y="354" class="item-text">• 機能完成後すぐにレビュー</text>
+    <text x="15" y="372" class="item-text">• セキュリティは特に重点的に</text>
+    <text x="15" y="390" class="item-text">• レビュー結果を次の指示に反映</text>
+
+    <text x="190" y="425" class="section-title highlight-blue" text-anchor="middle">⚠️ 注意点</text>
+    <rect x="0" y="435" width="380" height="195" class="result-box"/>
+    <text x="15" y="460" class="item-text">• AIの提案を鵜呑みにしない</text>
+    <text x="15" y="480" class="item-text">• 人間の最終確認は必須</text>
+    <text x="15" y="500" class="item-text">• セキュリティは特に慎重に</text>
+    <text x="15" y="520" class="item-text">• ビジネスロジックは人間が検証</text>
+    <text x="15" y="540" class="item-text">• 本番デプロイ前に必ずレビュー</text>
+    <text x="15" y="560" class="item-text">• AIは「楽をしたがる」を前提に</text>
+    <text x="15" y="595" class="small-text" font-weight="600">Trust but Verify（信頼するが検証する）</text>
+  </g>
+
+  <!-- Bottom Summary -->
+  <rect x="30" y="650" width="1220" height="55" fill="#fff3e0" stroke="#ff6f00" stroke-width="3" rx="6"/>
+  <text x="640" y="673" class="subsection-title" text-anchor="middle">まとめ: Reward Hackingは「制約の明示」+「AI自己レビュー」+「人間の最終確認」で防ぐ</text>
+  <text x="640" y="695" class="small-text" text-anchor="middle">設計ドキュメント = Guardrails（ガードレール）→ AIが勝手に手抜きできなくなる</text>
 </svg>

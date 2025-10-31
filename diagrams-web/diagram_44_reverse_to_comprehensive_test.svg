@@ -1,89 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800">
   <defs>
-    <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
-      .step-num { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; }
-      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
-      .step-desc { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
-      .phase1 { fill: #E74C3C; }
-      .phase2 { fill: #E67E22; }
-      .phase3 { fill: #F39C12; }
-      .phase4 { fill: #27AE60; }
-    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#e74c3c" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#27ae60" />
+    </marker>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="550" fill="#FFFFFF"/>
-
   <!-- Title -->
-  <text x="450" y="35" class="title">既存コードへのテスト追加：逆順アプローチ</text>
+  <text x="700" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    リバースエンジニアリング → 網羅的テスト生成
+  </text>
 
-  <!-- Phase 1: Reverse Engineering -->
-  <g transform="translate(50, 70)">
-    <rect x="0" y="0" width="800" height="50" rx="5" class="phase1"/>
-    <text x="400" y="32" class="phase-title">Phase 1: リバースエンジニアリング</text>
+  <!-- Left side: Traditional approach (Bad) -->
+  <g id="traditional-approach">
+    <rect x="50" y="80" width="600" height="650" fill="#fee" stroke="#e74c3c" stroke-width="3" rx="10"/>
 
-    <rect x="0" y="60" width="800" height="80" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="step-num">1.</text>
-      <text x="30" y="0" class="step-text">AIに既存コードから仕様を抽出させる</text>
-      <text x="30" y="20" class="step-desc">「このコードの仕様書を生成して」</text>
+    <text x="350" y="120" font-size="24" font-weight="bold" text-anchor="middle" fill="#e74c3c">
+      ❌ 従来のアプローチ（コード追認のみ）
+    </text>
 
-      <text x="0" y="45" class="step-num">2.</text>
-      <text x="30" y="45" class="step-text">ER図・シーケンス図を自動生成</text>
-      <text x="30" y="65" class="step-desc">Mermaid形式で構造を可視化</text>
-    </g>
+    <!-- Existing Code -->
+    <rect x="100" y="160" width="500" height="120" fill="#fff" stroke="#e74c3c" stroke-width="2" rx="5"/>
+    <text x="350" y="195" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">既存コード</text>
+    <text x="120" y="230" font-size="16" fill="#555">• 実装されている機能のみ</text>
+    <text x="120" y="255" font-size="16" fill="#555">• バグも含まれている</text>
+
+    <!-- Arrow -->
+    <line x1="350" y1="290" x2="350" y2="330" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+    <text x="380" y="315" font-size="16" fill="#e74c3c">直接生成</text>
+
+    <!-- Test from Code -->
+    <rect x="100" y="340" width="500" height="150" fill="#fff" stroke="#e74c3c" stroke-width="2" rx="5"/>
+    <text x="350" y="375" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">テストシナリオ（不完全）</text>
+    <text x="120" y="410" font-size="16" fill="#555">• 実装済み機能のみカバー</text>
+    <text x="120" y="435" font-size="16" fill="#555">• エッジケースの見落とし</text>
+    <text x="120" y="460" font-size="16" fill="#555">• バグもテストで追認</text>
+
+    <!-- Arrow -->
+    <line x1="350" y1="500" x2="350" y2="540" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+
+    <!-- Result -->
+    <rect x="100" y="550" width="500" height="150" fill="#fdd" stroke="#e74c3c" stroke-width="2" rx="5"/>
+    <text x="350" y="585" font-size="20" font-weight="bold" text-anchor="middle" fill="#c0392b">❌ 結果：不完全なテスト</text>
+    <text x="120" y="620" font-size="16" fill="#555">• 既存バグを見逃す</text>
+    <text x="120" y="645" font-size="16" fill="#555">• 仕様外の動作を検出できない</text>
+    <text x="120" y="670" font-size="16" fill="#555">• 本来あるべきテストが欠落</text>
   </g>
 
-  <!-- Phase 2: Test Generation -->
-  <g transform="translate(50, 230)">
-    <rect x="0" y="0" width="800" height="50" rx="5" class="phase2"/>
-    <text x="400" y="32" class="phase-title">Phase 2: テスト生成</text>
+  <!-- Right side: Reverse Engineering approach (Good) -->
+  <g id="reverse-engineering-approach">
+    <rect x="750" y="80" width="600" height="650" fill="#efe" stroke="#27ae60" stroke-width="3" rx="10"/>
 
-    <rect x="0" y="60" width="800" height="80" rx="5" fill="#FFF3E0" stroke="#E67E22" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="step-num">3.</text>
-      <text x="30" y="0" class="step-text">仕様書からテストケースを生成</text>
-      <text x="30" y="20" class="step-desc">正常系・異常系・境界値を網羅</text>
+    <text x="1050" y="120" font-size="24" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      ✅ リバースエンジニアリング（仕様逆生成）
+    </text>
 
-      <text x="0" y="45" class="step-num">4.</text>
-      <text x="30" y="45" class="step-text">現状の動作をテストで固定（Snapshot）</text>
-      <text x="30" y="65" class="step-desc">リファクタリング前の動作を保証</text>
-    </g>
-  </g>
+    <!-- Existing Code -->
+    <rect x="800" y="160" width="500" height="80" fill="#fff" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="1050" y="195" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">既存コード</text>
+    <text x="820" y="225" font-size="16" fill="#555">• 実装されている機能</text>
 
-  <!-- Phase 3: Refactoring -->
-  <g transform="translate(50, 390)">
-    <rect x="0" y="0" width="385" height="50" rx="5" class="phase3"/>
-    <text x="192" y="32" class="phase-title">Phase 3: リファクタ</text>
+    <!-- Arrow -->
+    <line x1="1050" y1="250" x2="1050" y2="280" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+    <text x="1080" y="270" font-size="16" fill="#27ae60">AI逆生成</text>
 
-    <rect x="0" y="60" width="385" height="70" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="step-num">5.</text>
-      <text x="30" y="0" class="step-text">テストが通る状態を保ちながら</text>
-      <text x="30" y="20" class="step-text">コードを改善</text>
-      <text x="30" y="40" class="step-desc">グリーンを維持したままリファクタ</text>
-    </g>
-  </g>
+    <!-- Requirements & User Stories -->
+    <rect x="800" y="290" width="500" height="120" fill="#fff" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="1050" y="325" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">要件定義書・ユーザーストーリー</text>
+    <text x="820" y="360" font-size="16" fill="#555">• 機能の意図を理解</text>
+    <text x="820" y="385" font-size="16" fill="#555">• あるべき仕様を明確化</text>
 
-  <!-- Phase 4: Documentation -->
-  <g transform="translate(465, 390)">
-    <rect x="0" y="0" width="385" height="50" rx="5" class="phase4"/>
-    <text x="192" y="32" class="phase-title">Phase 4: 文書化</text>
+    <!-- Arrow -->
+    <line x1="1050" y1="420" x2="1050" y2="460" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+    <text x="1080" y="445" font-size="16" fill="#27ae60">仕様ベース</text>
 
-    <rect x="0" y="60" width="385" height="70" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="step-num">6.</text>
-      <text x="30" y="0" class="step-text">仕様書を正式ドキュメントとして</text>
-      <text x="30" y="20" class="step-text">リポジトリに配置</text>
-      <text x="30" y="40" class="step-desc">今後はこれが真実の情報源</text>
-    </g>
+    <!-- Comprehensive Test Scenarios -->
+    <rect x="800" y="470" width="500" height="150" fill="#fff" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="1050" y="505" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">網羅的テストシナリオ</text>
+    <text x="820" y="540" font-size="16" fill="#555">• 正常系・異常系・境界値すべて</text>
+    <text x="820" y="565" font-size="16" fill="#555">• 未実装のエッジケースも検出</text>
+    <text x="820" y="590" font-size="16" fill="#555">• 仕様外の動作を発見</text>
+
+    <!-- Arrow -->
+    <line x1="1050" y1="630" x2="1050" y2="660" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+
+    <!-- Result -->
+    <rect x="800" y="670" width="500" height="50" fill="#dfd" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="1050" y="702" font-size="20" font-weight="bold" text-anchor="middle" fill="#27ae60">
+      ✅ あるべきテストの網羅的実施
+    </text>
   </g>
 
   <!-- Bottom note -->
-  <rect x="50" y="490" width="800" height="45" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
-  <text x="450" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    既存コードも、AIの力で「テスト+仕様書」を後付けできる
+  <rect x="100" y="750" width="1250" height="40" fill="#e8f4f8" stroke="#3498db" stroke-width="2" rx="5"/>
+  <text x="725" y="775" font-size="18" font-weight="bold" text-anchor="middle" fill="#2980b9">
+    💡 仕様を逆生成することで、コードの追認ではなく「あるべき姿」に基づいたテストが可能に
   </text>
 </svg>

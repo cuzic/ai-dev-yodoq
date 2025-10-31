@@ -1,101 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 650">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .box-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
-      .box-text { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; }
-      .label { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; font-weight: bold; }
-      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
-      .box-blue { fill: #003399; }
-      .box-cyan { fill: #00AFF0; }
-      .box-green { fill: #27AE60; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="1000" height="700" fill="#FFFFFF"/>
+  <rect width="1200" height="500" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="500" y="35" class="title">リバースエンジニアリング：レガシーコードの理解</text>
+  <text x="600" y="35" class="title" text-anchor="middle">リバースエンジニアリングのプロセス</text>
 
-  <!-- Step 1: Input -->
-  <rect x="50" y="80" width="200" height="120" rx="5" class="box-blue"/>
-  <text x="150" y="115" class="box-title">STEP 1</text>
-  <text x="150" y="135" class="box-title">入力</text>
-  <text x="70" y="165" class="box-text">• レガシーコード</text>
-  <text x="70" y="185" class="box-text">• ドキュメントなし</text>
-  <text x="70" y="205" class="box-text">• 仕様不明</text>
+  <!-- Step 1: Existing Code -->
+  <rect x="30" y="80" width="180" height="300" fill="#E6E6E6" stroke="#333333" stroke-width="3" rx="10"/>
+  <text x="120" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">1. 既存コード</text>
+  <text x="50" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">入力:</text>
+  <text x="60" y="170" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• ソースコード</text>
+  <text x="60" y="190" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• テーブル定義</text>
+  <text x="60" y="210" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 設定ファイル</text>
+  <text x="60" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 既存ドキュメント</text>
+  <text x="60" y="270" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666;">※仕様書がない</text>
+  <text x="60" y="285" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666;">　ケースが多い</text>
 
-  <!-- Arrow 1 -->
-  <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#666" />
-    </marker>
-  </defs>
-  <path d="M 260 140 L 320 140" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="290" y="130" class="label">AI分析</text>
+  <!-- Arrow -->
+  <line x1="210" y1="230" x2="240" y2="230" stroke="#00146E" stroke-width="4"/>
+  <polygon points="240,230 230,225 230,235" fill="#00146E"/>
 
-  <!-- Step 2: Code Analysis -->
-  <rect x="330" y="80" width="200" height="120" rx="5" class="box-cyan"/>
-  <text x="430" y="115" class="box-title">STEP 2</text>
-  <text x="430" y="135" class="box-title">コード解析</text>
-  <text x="350" y="165" class="box-text">• 関数の責務特定</text>
-  <text x="350" y="185" class="box-text">• データフロー追跡</text>
-  <text x="350" y="205" class="box-text">• 依存関係抽出</text>
+  <!-- Step 2: Claude Code -->
+  <rect x="240" y="80" width="180" height="300" fill="#00146E" rx="10"/>
+  <text x="330" y="110" class="step-title" text-anchor="middle">2. Claude Code</text>
+  <text x="330" y="135" class="step-title" text-anchor="middle" font-size="28">読み込み</text>
+  <text x="260" y="170" class="step-text">プロジェクト全体:</text>
+  <text x="270" y="190" class="step-text">• スキャン</text>
+  <text x="270" y="210" class="step-text">• .claudeignore</text>
+  <text x="270" y="230" class="step-text">　で除外設定</text>
+  <text x="270" y="260" class="step-text">• トークン最適化</text>
 
-  <!-- Arrow 2 -->
-  <path d="M 540 140 L 600 140" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="570" y="130" class="label">構造化</text>
+  <!-- Arrow -->
+  <line x1="420" y1="230" x2="450" y2="230" stroke="#00AFF0" stroke-width="4"/>
+  <polygon points="450,230 440,225 440,235" fill="#00AFF0"/>
 
-  <!-- Step 3: Structure Extraction -->
-  <rect x="610" y="80" width="200" height="120" rx="5" class="box-green"/>
-  <text x="710" y="115" class="box-title">STEP 3</text>
-  <text x="710" y="135" class="box-title">構造抽出</text>
-  <text x="630" y="165" class="box-text">• ER図生成</text>
-  <text x="630" y="185" class="box-text">• シーケンス図</text>
-  <text x="630" y="205" class="box-text">• クラス図</text>
+  <!-- Step 3: AI Analysis -->
+  <rect x="450" y="80" width="180" height="300" fill="#00AFF0" rx="10"/>
+  <text x="540" y="110" class="step-title" text-anchor="middle">3. AI分析</text>
+  <text x="470" y="150" class="step-text">処理:</text>
+  <text x="480" y="175" class="step-text">• 構造理解</text>
+  <text x="480" y="195" class="step-text">• パターン抽出</text>
+  <text x="480" y="215" class="step-text">• 依存関係把握</text>
+  <text x="480" y="235" class="step-text">• 設計意図推測</text>
+  <text x="480" y="265" class="step-text">• 技術スタック</text>
+  <text x="480" y="285" class="step-text">　識別</text>
 
-  <!-- Step 4: Spec Generation (bottom left) -->
-  <rect x="50" y="280" width="250" height="150" rx="5" fill="#E8F4F8" stroke="#003399" stroke-width="2"/>
-  <text x="175" y="315" class="label" fill="#00146E">STEP 4: 仕様書生成</text>
-  <text x="70" y="345" class="desc" fill="#333">AIに以下を生成させる:</text>
-  <text x="70" y="370" class="desc" fill="#333">• 機能要件一覧</text>
-  <text x="70" y="390" class="desc" fill="#333">• APIエンドポイント仕様</text>
-  <text x="70" y="410" class="desc" fill="#333">• データモデル定義</text>
-  <text x="70" y="430" class="desc" fill="#333">• ビジネスロジック説明</text>
+  <!-- Arrow -->
+  <line x1="630" y1="230" x2="660" y2="230" stroke="#003399" stroke-width="4"/>
+  <polygon points="660,230 650,225 650,235" fill="#003399"/>
 
-  <!-- Step 5: Test Generation (bottom middle) -->
-  <rect x="350" y="280" width="250" height="150" rx="5" fill="#E8F4F8" stroke="#00AFF0" stroke-width="2"/>
-  <text x="475" y="315" class="label" fill="#00146E">STEP 5: テスト生成</text>
-  <text x="370" y="345" class="desc" fill="#333">仕様書から自動生成:</text>
-  <text x="370" y="370" class="desc" fill="#333">• ユニットテスト</text>
-  <text x="370" y="390" class="desc" fill="#333">• 統合テスト</text>
-  <text x="370" y="410" class="desc" fill="#333">• 境界値テスト</text>
-  <text x="370" y="430" class="desc" fill="#333">現在の動作を固定化</text>
+  <!-- Step 4: Document Generation -->
+  <rect x="660" y="80" width="180" height="300" fill="#003399" rx="10"/>
+  <text x="750" y="110" class="step-title" text-anchor="middle">4. ドキュメント</text>
+  <text x="750" y="133" class="step-title" text-anchor="middle" font-size="28">生成</text>
+  <text x="680" y="165" class="step-text">出力:</text>
+  <text x="690" y="185" class="step-text">• architecture.md</text>
+  <text x="690" y="205" class="step-text">• requirements.md</text>
+  <text x="690" y="225" class="step-text">• OpenAPI仕様</text>
+  <text x="690" y="245" class="step-text">• テーブル定義書</text>
+  <text x="690" y="275" class="step-text" font-weight="bold">= Guardrails構築</text>
 
-  <!-- Step 6: Documentation (bottom right) -->
-  <rect x="650" y="280" width="250" height="150" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
-  <text x="775" y="315" class="label" fill="#00146E">STEP 6: ドキュメント整備</text>
-  <text x="670" y="345" class="desc" fill="#333">成果物:</text>
-  <text x="670" y="370" class="desc" fill="#333">• README.md</text>
-  <text x="670" y="390" class="desc" fill="#333">• architecture.md</text>
-  <text x="670" y="410" class="desc" fill="#333">• API仕様書</text>
-  <text x="670" y="430" class="desc" fill="#333">• オンボーディングガイド</text>
+  <!-- Arrow -->
+  <line x1="840" y1="230" x2="870" y2="230" stroke="#00146E" stroke-width="4"/>
+  <polygon points="870,230 860,225 860,235" fill="#00146E"/>
 
-  <!-- Benefits section -->
-  <rect x="50" y="480" width="900" height="180" rx="8" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
-  <text x="500" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
-    リバースエンジニアリングの効果
+  <!-- Step 5: New Feature -->
+  <rect x="870" y="80" width="300" height="300" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="1020" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">5. 新機能追加</text>
+  <text x="890" y="150" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">仕様に基づいて実装:</text>
+  <text x="900" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 既存仕様を理解した上で</text>
+  <text x="900" y="195" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• デグレ防止テスト作成</text>
+  <text x="900" y="215" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 整合性のある実装</text>
+  <text x="900" y="235" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 既存パターンに従う</text>
+
+  <rect x="890" y="260" width="260" height="100" fill="#00146E" rx="5"/>
+  <text x="1020" y="285" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">効果:</text>
+  <text x="1020" y="310" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">デグレ防止</text>
+  <text x="1020" y="330" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">既存システムとの整合性</text>
+  <text x="1020" y="350" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">適切な機能追加</text>
+
+  <!-- Bottom note -->
+  <rect x="30" y="410" width="1140" height="60" fill="#FFFFFF" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="600" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    ドキュメント化 = AIの外部メモリ構築 = 知見の蓄積
   </text>
-
-  <g transform="translate(80, 540)">
-    <text x="0" y="0" class="desc" fill="#333" font-weight="bold">✅ 新メンバーのオンボーディング時間が1/10に</text>
-    <text x="20" y="20" class="desc" fill="#666">→ 「このコード何してるの？」が即座に解決</text>
-
-    <text x="0" y="50" class="desc" fill="#333" font-weight="bold">✅ バグ修正の精度向上</text>
-    <text x="20" y="70" class="desc" fill="#666">→ 影響範囲が可視化されるため、安全にリファクタ可能</text>
-
-    <text x="0" y="100" class="desc" fill="#333" font-weight="bold">✅ 技術的負債の可視化</text>
-    <text x="20" y="120" class="desc" fill="#666">→ 「どこから手をつけるべきか」の優先順位が明確に</text>
-  </g>
+  <text x="600" y="460" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle;">
+    仕様書がないシステムでも、リバースエンジニアリングでGuardrailsを構築できる
+  </text>
 </svg>

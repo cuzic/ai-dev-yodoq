@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .section-title { font-size: 24px; font-weight: 700; }
+      .step-title { font-size: 18px; font-weight: 600; }
+      .item-text { font-size: 16px; }
+      .small-text { font-size: 15px; }
+      .main-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 3; rx: 8; }
+      .step-box { fill: #ffffff; stroke: #42a5f5; stroke-width: 2; rx: 6; }
+      .why-box { fill: #fff3e0; stroke: #ff6f00; stroke-width: 3; rx: 8; }
+      .effect-box { fill: #e8f5e9; stroke: #388e3c; stroke-width: 3; rx: 8; }
+      .highlight-blue { fill: #1976d2; }
+      .highlight-orange { fill: #ff6f00; }
+      .highlight-green { fill: #388e3c; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">STEP2のまとめ</text>
+
+  <!-- Left Column: 7 Steps -->
+  <g transform="translate(30, 85)">
+    <text x="305" y="0" class="section-title highlight-blue" text-anchor="middle">📋 設計の7ステップ</text>
+    <rect x="0" y="10" width="610" height="545" class="main-box"/>
+
+    <!-- Step 1 -->
+    <rect x="15" y="25" width="580" height="70" class="step-box"/>
+    <text x="305" y="48" class="step-title" text-anchor="middle">STEP2-1: Tech Stack Setup</text>
+    <text x="30" y="70" class="item-text">• 最初に固める(後から変更は大変)</text>
+    <text x="30" y="88" class="item-text">• 選定理由も明記(技術判断の根拠)</text>
+
+    <!-- Step 2 -->
+    <rect x="15" y="103" width="580" height="68" class="step-box"/>
+    <text x="305" y="126" class="step-title" text-anchor="middle">STEP2-2: システムアーキテクチャ</text>
+    <text x="30" y="148" class="item-text">• Mermaid/SVG図で可視化</text>
+    <text x="30" y="166" class="item-text">• 3層構造(UI・ビジネスロジック・データ)</text>
+
+    <!-- Step 3 -->
+    <rect x="15" y="179" width="580" height="70" class="step-box"/>
+    <text x="305" y="202" class="step-title" text-anchor="middle">STEP2-3: データベーススキーマ設計</text>
+    <text x="30" y="224" class="item-text">• ER図作成 / • 正規化</text>
+    <text x="30" y="242" class="item-text">• インデックス設計</text>
+
+    <!-- Step 4 -->
+    <rect x="15" y="257" width="580" height="88" class="step-box"/>
+    <text x="305" y="280" class="step-title" text-anchor="middle">STEP2-4: API仕様定義</text>
+    <text x="30" y="302" class="item-text">• エンドポイント / • パラメータ</text>
+    <text x="30" y="320" class="item-text">• レスポンス形式</text>
+    <text x="30" y="338" class="item-text">• エラーハンドリング</text>
+
+    <!-- Step 5 -->
+    <rect x="15" y="353" width="580" height="68" class="step-box"/>
+    <text x="305" y="376" class="step-title" text-anchor="middle">STEP2-5: 受入条件詳細化</text>
+    <text x="30" y="398" class="item-text">• Given-When-Then形式</text>
+    <text x="30" y="416" class="item-text">• 具体的な値で明示</text>
+
+    <!-- Step 6 -->
+    <rect x="15" y="429" width="580" height="70" class="step-box"/>
+    <text x="305" y="452" class="step-title" text-anchor="middle">STEP2-6: セキュリティ設計</text>
+    <text x="30" y="474" class="item-text">• 認証・認可 / • 入力検証</text>
+    <text x="30" y="492" class="item-text">• 環境変数管理</text>
+
+    <!-- Step 7 -->
+    <rect x="15" y="507" width="580" height="68" class="step-box"/>
+    <text x="305" y="530" class="step-title" text-anchor="middle">STEP2-7: docs/spec.md 作成</text>
+    <text x="30" y="552" class="item-text">• 全てを集約</text>
+    <text x="30" y="570" class="item-text">• AIが参照する設計書</text>
+  </g>
+
+  <!-- Right Column Top: Why This Order -->
+  <g transform="translate(670, 85)">
+    <text x="290" y="0" class="section-title highlight-orange" text-anchor="middle">🎯 なぜこの順序か</text>
+    <rect x="0" y="10" width="580" height="245" class="why-box"/>
+
+    <text x="290" y="40" class="step-title" text-anchor="middle">技術スタック確定 → 全体構造 → 詳細設計</text>
+    <text x="20" y="70" class="item-text">• 大きな決定から小さな決定へ</text>
+    <text x="20" y="93" class="item-text">• 手戻りを最小化</text>
+    <text x="20" y="116" class="item-text">• AIが迷わない設計図</text>
+
+    <text x="290" y="151" class="step-title" text-anchor="middle">設計書 = AIのGuardrails:</text>
+    <text x="20" y="178" class="item-text">• AIは設計書に従って実装</text>
+    <text x="20" y="201" class="item-text">• 一貫性のある構造</text>
+    <text x="20" y="224" class="item-text">• セキュリティ・品質を担保</text>
+  </g>
+
+  <!-- Right Column Middle: AI Instruction -->
+  <g transform="translate(670, 355)">
+    <text x="290" y="0" class="section-title highlight-blue" text-anchor="middle">💡 AIへの指示</text>
+    <rect x="0" y="10" width="580" height="110" class="main-box"/>
+
+    <rect x="20" y="30" width="540" height="70" fill="#ffffff" stroke="#1976d2" stroke-width="2" rx="4"/>
+    <text x="290" y="55" class="item-text" text-anchor="middle" font-family="monospace">「docs/spec.md に厳密に従って</text>
+    <text x="290" y="80" class="item-text" text-anchor="middle" font-family="monospace">実装してください」</text>
+  </g>
+
+  <!-- Right Column Bottom: Effect -->
+  <g transform="translate(670, 480)">
+    <text x="290" y="0" class="section-title highlight-green" text-anchor="middle">📊 効果</text>
+    <rect x="0" y="10" width="580" height="150" class="effect-box"/>
+
+    <text x="20" y="45" class="item-text">✅ AIが一貫性のある実装</text>
+    <text x="20" y="75" class="item-text">✅ 手戻りなし</text>
+    <text x="20" y="105" class="item-text">✅ セキュリティ・品質担保</text>
+    <text x="20" y="135" class="item-text">✅ 全員が同じ設計書を参照</text>
+  </g>
+
+  <!-- Bottom Summary -->
+  <rect x="30" y="675" width="1220" height="35" fill="#fff3e0" stroke="#ff6f00" stroke-width="3" rx="6"/>
+  <text x="640" y="698" class="item-text" text-anchor="middle" font-weight="600">設計書は「AIの作業指示書」であり「Guardrails(ガードレール)」→ AIが勝手な実装をできなくなる</text>
+</svg>

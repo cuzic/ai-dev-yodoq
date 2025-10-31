@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .section-title { font-size: 26px; font-weight: 700; }
+      .subsection-title { font-size: 20px; font-weight: 600; }
+      .item-text { font-size: 17px; }
+      .small-text { font-size: 16px; }
+      .tips-box { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 3; rx: 8; }
+      .roadmap-box { fill: #e3f2fd; stroke: #1565c0; stroke-width: 3; rx: 8; }
+      .highlight-green { fill: #2e7d32; }
+      .highlight-blue { fill: #1565c0; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="40" class="title" text-anchor="middle">実務で明日から実践できること＆学習ロードマップ</text>
+
+  <!-- Left Column: Practical Tips -->
+  <g transform="translate(30, 85)">
+    <text x="295" y="0" class="section-title highlight-green" text-anchor="middle">実務で明日から実践できること (Top 5)</text>
+    <rect x="0" y="10" width="590" height="550" class="tips-box"/>
+
+    <!-- Tip 1 -->
+    <text x="295" y="45" class="subsection-title" text-anchor="middle">① AI自己レビューの習慣化</text>
+    <text x="20" y="75" class="item-text">• 実装後必ず「このコードをレビューして」</text>
+    <text x="20" y="100" class="item-text">• バグ検出率向上</text>
+    <text x="40" y="125" class="small-text">→ 40-60%のバグを自動検出</text>
+
+    <!-- Tip 2 -->
+    <text x="295" y="165" class="subsection-title" text-anchor="middle">② 受け入れ条件の明確化</text>
+    <text x="20" y="195" class="item-text">• Given-When-Then形式</text>
+    <text x="20" y="220" class="item-text">• 曖昧さ排除→AI制約対策</text>
+    <text x="40" y="245" class="small-text">→ Jagged Intelligence対策</text>
+
+    <!-- Tip 3 -->
+    <text x="295" y="285" class="subsection-title" text-anchor="middle">③ 環境変数管理の徹底</text>
+    <text x="20" y="315" class="item-text">• .envで秘密情報管理</text>
+    <text x="20" y="340" class="item-text">• .env.exampleをGitコミット</text>
+    <text x="40" y="365" class="small-text">→ Reward Hacking防止</text>
+
+    <!-- Tip 4 -->
+    <text x="295" y="405" class="subsection-title" text-anchor="middle">④ 頻繁なコミット</text>
+    <text x="20" y="435" class="item-text">• 1機能完了→コミット</text>
+    <text x="20" y="460" class="item-text">• AI暴走対策</text>
+    <text x="40" y="485" class="small-text">→ いつでも前の状態に戻せる</text>
+
+    <!-- Tip 5 -->
+    <text x="295" y="525" class="subsection-title" text-anchor="middle">⑤ テストシナリオを先に作る</text>
+    <text x="20" y="555" class="item-text">• シナリオ→テストコード</text>
+    <text x="40" y="580" class="small-text">→ モレ・ヌケ防止、TDD実践</text>
+  </g>
+
+  <!-- Right Column: Learning Roadmap -->
+  <g transform="translate(660, 85)">
+    <text x="295" y="0" class="section-title highlight-blue" text-anchor="middle">今後の学習ロードマップ</text>
+    <rect x="0" y="10" width="590" height="550" class="roadmap-box"/>
+
+    <!-- Step 1 -->
+    <text x="295" y="45" class="subsection-title" text-anchor="middle">ステップ1: 小プロジェクト3つ</text>
+    <text x="20" y="75" class="item-text">目的: 5-STEPフローの習得</text>
+    <text x="20" y="100" class="item-text">• TODO/メモ/簡易ECなど</text>
+    <text x="20" y="123" class="item-text">• 5-STEP実践</text>
+    <text x="20" y="146" class="item-text">• TDD習慣化</text>
+    <text x="40" y="171" class="small-text">→ まずは小さく完成させる経験</text>
+
+    <!-- Step 2 -->
+    <text x="295" y="211" class="subsection-title" text-anchor="middle">ステップ2: 中規模プロジェクト</text>
+    <text x="20" y="241" class="item-text">目的: 複雑さへの対応力向上</text>
+    <text x="20" y="266" class="item-text">• 複数テーブル・画面</text>
+    <text x="20" y="289" class="item-text">• 認証・認可</text>
+    <text x="20" y="312" class="item-text">• E2Eテスト</text>
+    <text x="40" y="337" class="small-text">→ 実務レベルの機能開発</text>
+
+    <!-- Step 3 -->
+    <text x="295" y="377" class="subsection-title" text-anchor="middle">ステップ3: 既存リファクタリング</text>
+    <text x="20" y="407" class="item-text">目的: レガシー改善スキル獲得</text>
+    <text x="20" y="432" class="item-text">• リバースエンジニアリング</text>
+    <text x="20" y="455" class="item-text">• デグレ防止</text>
+    <text x="20" y="478" class="item-text">• 技術的負債解消</text>
+
+    <!-- Step 4 -->
+    <text x="295" y="518" class="subsection-title" text-anchor="middle">ステップ4: チーム開発</text>
+    <text x="20" y="548" class="item-text">目的: チームへの展開</text>
+    <text x="20" y="571" class="item-text">• 5-STEP運用 / • プロンプト共有</text>
+    <text x="20" y="594" class="item-text">• Living Documentation浸透</text>
+  </g>
+
+  <!-- Bottom Summary -->
+  <rect x="30" y="670" width="1220" height="40" fill="#fff3e0" stroke="#ff6f00" stroke-width="3" rx="6"/>
+  <text x="640" y="695" class="item-text" text-anchor="middle" font-weight="600">継続的な実践と学習で、AI駆動開発を自分のものに → 開発効率と品質が飛躍的に向上</text>
+</svg>

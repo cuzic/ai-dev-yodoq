@@ -1,67 +1,125 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 780">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .phase { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
-      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
-      .red { fill: #E74C3C; }
-      .green { fill: #27AE60; }
-      .blue { fill: #3498DB; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
+      .phase-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
     </style>
   </defs>
 
-  <rect width="800" height="400" fill="#FFFFFF"/>
-  <text x="400" y="30" class="title">TDDにおけるリファクタリングのタイミング</text>
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#FFFFFF"/>
 
-  <!-- RED -->
-  <g transform="translate(80, 70)">
-    <circle cx="80" cy="80" r="60" class="red"/>
-    <text x="80" y="75" class="phase">RED</text>
-    <text x="80" y="95" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle;">失敗テスト</text>
+  <!-- Title -->
+  <text x="600" y="40" class="title" text-anchor="middle">リファクタリングのタイミング（TDDサイクル内）</text>
 
-    <rect x="10" y="160" width="140" height="70" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
-    <g transform="translate(20, 180)">
-      <text x="0" y="0" class="item" font-weight="bold">❌ リファクタ禁止</text>
-      <text x="0" y="20" class="item" font-size="11px">まずテストを</text>
-      <text x="0" y="36" class="item" font-size="11px">通すことに集中</text>
-    </g>
-  </g>
+  <!-- TDD Cycle with Refactoring -->
+  <!-- Red Phase -->
+  <rect x="100" y="80" width="250" height="140" fill="#CC0000" opacity="0.3" rx="10"/>
+  <rect x="110" y="90" width="230" height="120" fill="#CC0000" rx="10"/>
+  <text x="225" y="120" class="phase-title" text-anchor="middle">1. Red</text>
+  <text x="225" y="145" class="phase-title" text-anchor="middle" font-size="28">(失敗するテストを書く)</text>
 
-  <!-- GREEN -->
-  <g transform="translate(300, 70)">
-    <circle cx="80" cy="80" r="60" class="green"/>
-    <text x="80" y="75" class="phase">GREEN</text>
-    <text x="80" y="95" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle;">テスト通過</text>
+  <text x="130" y="175" class="phase-text">• テストコード作成</text>
+  <text x="130" y="192" class="phase-text">• 実行 → 失敗（赤）</text>
 
-    <rect x="10" y="160" width="140" height="70" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
-    <g transform="translate(20, 180)">
-      <text x="0" y="0" class="item" font-weight="bold">⚠️ 我慢する</text>
-      <text x="0" y="20" class="item" font-size="11px">動けばOK</text>
-      <text x="0" y="36" class="item" font-size="11px">次フェーズで改善</text>
-    </g>
-  </g>
+  <!-- Arrow -->
+  <line x1="350" y1="150" x2="420" y2="150" stroke="#CC0000" stroke-width="4"/>
+  <polygon points="420,150 410,145 410,155" fill="#CC0000"/>
 
-  <!-- REFACTOR -->
-  <g transform="translate(520, 70)">
-    <circle cx="80" cy="80" r="60" class="blue"/>
-    <text x="80" y="75" class="phase">REFACTOR</text>
-    <text x="80" y="95" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle;">リファクタ</text>
+  <!-- Green Phase -->
+  <rect x="420" y="80" width="250" height="140" fill="#00AA00" opacity="0.3" rx="10"/>
+  <rect x="430" y="90" width="230" height="120" fill="#00AA00" rx="10"/>
+  <text x="545" y="120" class="phase-title" text-anchor="middle">2. Green</text>
+  <text x="545" y="145" class="phase-title" text-anchor="middle" font-size="28">(最小実装)</text>
 
-    <rect x="10" y="160" width="140" height="70" rx="5" fill="#E3F2FD" stroke="#3498DB" stroke-width="2"/>
-    <g transform="translate(20, 180)">
-      <text x="0" y="0" class="item" font-weight="bold">✅ ここで改善</text>
-      <text x="0" y="20" class="item" font-size="11px">テストが守る</text>
-      <text x="0" y="36" class="item" font-size="11px">安全に変更可能</text>
-    </g>
-  </g>
+  <text x="450" y="175" class="phase-text">• 最小限のコード</text>
+  <text x="450" y="192" class="phase-text">• テストが通る（緑）</text>
 
-  <!-- Bottom rule -->
-  <rect x="50" y="280" width="700" height="90" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
-  <text x="400" y="310" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle;">
-    鉄則：GREENになってからリファクタリング
+  <!-- Arrow -->
+  <line x1="670" y1="150" x2="740" y2="150" stroke="#00AA00" stroke-width="4"/>
+  <polygon points="740,150 730,145 730,155" fill="#00AA00"/>
+
+  <!-- Refactor Phase (HIGHLIGHTED) -->
+  <rect x="740" y="80" width="350" height="140" fill="#00AFF0" opacity="0.3" rx="10"/>
+  <rect x="750" y="90" width="330" height="120" fill="#00AFF0" rx="10"/>
+  <text x="915" y="120" class="phase-title" text-anchor="middle">3. Refactor</text>
+  <text x="915" y="145" class="phase-title" text-anchor="middle" font-size="28">(改善 - ここでリファクタリング！)</text>
+
+  <text x="770" y="175" class="phase-text">• コード品質向上</text>
+  <text x="770" y="192" class="phase-text">• テストが保証するから安心</text>
+
+  <!-- When to Refactor section -->
+  <rect x="100" y="260" width="1000" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="600" y="290" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    いつリファクタリングすべきか？
   </text>
-  <g transform="translate(70, 325)">
-    <text x="0" y="0" class="item">• RED/GREENフェーズでは「動かすこと」最優先</text>
-    <text x="0" y="22" class="item">• REFACTORフェーズでは「美しくすること」に専念</text>
-  </g>
+
+  <!-- Good timing -->
+  <rect x="100" y="330" width="480" height="220" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
+  <text x="340" y="360" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+    ✓ リファクタリングすべきタイミング
+  </text>
+
+  <text x="120" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    1. Greenフェーズの直後（テストが通った後）
+  </text>
+  <text x="130" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    → テストが保証するから安心してリファクタできる
+  </text>
+
+  <text x="120" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    2. コードレビューで改善点が見つかった時
+  </text>
+  <text x="130" y="460" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    → AI自己レビュー後、改善提案があれば即座に対応
+  </text>
+
+  <text x="120" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    3. 重複コードを発見した時
+  </text>
+  <text x="130" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size": 11px; fill: #333333;">
+    → DRY原則違反を即座に解消
+  </text>
+
+  <text x="130" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00AA00; font-weight: bold;">
+    → 必ずテスト全実行して確認！
+  </text>
+
+  <!-- Bad timing -->
+  <rect x="620" y="330" width="480" height="220" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
+  <text x="860" y="360" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+    ✗ リファクタリングすべきでないタイミング
+  </text>
+
+  <text x="640" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    1. テストが通っていない時
+  </text>
+  <text x="650" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    → 何が壊れているかわからなくなる（危険）
+  </text>
+
+  <text x="640" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    2. テストがない時
+  </text>
+  <text x="650" y="460" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    → デグレを検出できない（最も危険）
+  </text>
+
+  <text x="640" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    3. 新機能追加と同時
+  </text>
+  <text x="650" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    → 問題の原因特定が困難になる
+  </text>
+
+  <text x="650" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #CC0000; font-weight: bold;">
+    → 必ずテストを先に書く！
+  </text>
+
+  <!-- Bottom summary -->
+  <rect x="100" y="565" width="1000" height="25" fill="#00AFF0" rx="5"/>
+  <text x="600" y="583" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    原則: Green（テスト通過）→ Refactor（改善）→ テスト全実行 → コミット
+  </text>
 </svg>

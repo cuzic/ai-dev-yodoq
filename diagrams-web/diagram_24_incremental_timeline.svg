@@ -1,98 +1,141 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 780">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
-      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
-      .week { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; font-weight: bold; }
-      .phase1 { fill: #3498DB; }
-      .phase2 { fill: #27AE60; }
-      .phase3 { fill: #E67E22; }
-      .phase4 { fill: #9B59B6; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .increment-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
+      .increment-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
+      .time-label { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #00146E; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="800" height="400" fill="#FFFFFF"/>
+  <rect width="1400" height="600" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="400" y="30" class="title">段階的リリースタイムライン</text>
+  <text x="700" y="40" class="title" text-anchor="middle">インクリメンタル開発のタイムライン（ToDoアプリ例）</text>
 
-  <!-- Week 1 -->
-  <g transform="translate(50, 70)">
-    <rect x="0" y="0" width="160" height="50" rx="5" class="phase1"/>
-    <text x="80" y="32" class="phase-title">Week 1: MVP</text>
+  <!-- Timeline axis -->
+  <line x1="100" y1="300" x2="1300" y2="300" stroke="#00146E" stroke-width="6"/>
+  <polygon points="1300,300 1290,295 1290,305" fill="#00146E"/>
 
-    <rect x="0" y="60" width="160" height="110" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
-    <g transform="translate(10, 80)">
-      <text x="0" y="0" class="week">Must機能のみ</text>
-      <text x="0" y="20" class="item">• ログイン</text>
-      <text x="0" y="38" class="item">• CRUD基本</text>
-      <text x="0" y="56" class="item">• 最小限UI</text>
-      <text x="0" y="74" class="item">🚀 最速リリース</text>
-    </g>
-  </g>
+  <!-- Time markers -->
+  <text x="100" y="330" class="time-label" text-anchor="middle">0分</text>
+  <text x="400" y="330" class="time-label" text-anchor="middle">30分</text>
+  <text x="700" y="330" class="time-label" text-anchor="middle">60分</text>
+  <text x="1000" y="330" class="time-label" text-anchor="middle">90分</text>
+  <text x="1300" y="330" class="time-label" text-anchor="middle">120分</text>
 
-  <!-- Week 2 -->
-  <g transform="translate(240, 70)">
-    <rect x="0" y="0" width="160" height="50" rx="5" class="phase2"/>
-    <text x="80" y="32" class="phase-title">Week 2: 拡張</text>
+  <!-- Increment 1 -->
+  <circle cx="250" cy="300" r="15" fill="#00AFF0"/>
+  <rect x="120" y="80" width="260" height="180" fill="#00AFF0" rx="10"/>
+  <text x="250" y="110" class="increment-title" text-anchor="middle">Increment 1: 一覧表示</text>
+  <text x="250" y="135" class="increment-title" text-anchor="middle" font-size="26">(30分)</text>
 
-    <rect x="0" y="60" width="160" height="110" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
-    <g transform="translate(10, 80)">
-      <text x="0" y="0" class="week">Should機能追加</text>
-      <text x="0" y="20" class="item">• 検索機能</text>
-      <text x="0" y="38" class="item">• フィルター</text>
-      <text x="0" y="56" class="item">• 通知</text>
-      <text x="0" y="74" class="item">📈 価値向上</text>
-    </g>
-  </g>
+  <text x="140" y="165" class="increment-text">実装:</text>
+  <text x="150" y="185" class="increment-text">• GET /api/tasks API作成</text>
+  <text x="150" y="202" class="increment-text">• TaskController実装</text>
+  <text x="150" y="219" class="increment-text">• 一覧画面表示</text>
 
-  <!-- Week 3 -->
-  <g transform="translate(430, 70)">
-    <rect x="0" y="0" width="160" height="50" rx="5" class="phase3"/>
-    <text x="80" y="32" class="phase-title">Week 3: 改善</text>
+  <text x="140" y="245" class="increment-text" font-weight="bold">✓ 動作確認 → テスト → コミット</text>
 
-    <rect x="0" y="60" width="160" height="110" rx="5" fill="#FEF5E7" stroke="#E67E22" stroke-width="2"/>
-    <g transform="translate(10, 80)">
-      <text x="0" y="0" class="week">Could機能追加</text>
-      <text x="0" y="20" class="item">• CSV出力</text>
-      <text x="0" y="38" class="item">• ダッシュボード</text>
-      <text x="0" y="56" class="item">• 統計表示</text>
-      <text x="0" y="74" class="item">✨ UX向上</text>
-    </g>
-  </g>
+  <line x1="250" y1="260" x2="250" y2="285" stroke="#00AFF0" stroke-width="4"/>
 
-  <!-- Week 4 -->
-  <g transform="translate(620, 70)">
-    <rect x="0" y="0" width="160" height="50" rx="5" class="phase4"/>
-    <text x="80" y="32" class="phase-title">Week 4: 磨き</text>
+  <!-- Increment 2 -->
+  <circle cx="550" cy="300" r="15" fill="#003399"/>
+  <rect x="420" y="80" width="260" height="180" fill="#003399" rx="10"/>
+  <text x="550" y="110" class="increment-title" text-anchor="middle">Increment 2: 新規作成</text>
+  <text x="550" y="135" class="increment-title" text-anchor="middle" font-size="26">(30分)</text>
 
-    <rect x="0" y="60" width="160" height="110" rx="5" fill="#F4ECF7" stroke="#9B59B6" stroke-width="2"/>
-    <g transform="translate(10, 80)">
-      <text x="0" y="0" class="week">改善・最適化</text>
-      <text x="0" y="20" class="item">• パフォーマンス</text>
-      <text x="0" y="38" class="item">• アクセシビリティ</text>
-      <text x="0" y="56" class="item">• ドキュメント</text>
-      <text x="0" y="74" class="item">🏆 本番品質</text>
-    </g>
-  </g>
+  <text x="440" y="165" class="increment-text">実装:</text>
+  <text x="450" y="185" class="increment-text">• POST /api/tasks API作成</text>
+  <text x="450" y="202" class="increment-text">• バリデーション追加</text>
+  <text x="450" y="219" class="increment-text">• 作成フォーム実装</text>
 
-  <!-- Timeline -->
-  <rect x="50" y="230" width="730" height="6" fill="#DDD" rx="3"/>
-  <rect x="50" y="230" width="160" height="6" fill="#3498DB" rx="3"/>
-  <rect x="210" y="230" width="190" height="6" fill="#27AE60" rx="3"/>
-  <rect x="400" y="230" width="190" height="6" fill="#E67E22" rx="3"/>
-  <rect x="590" y="230" width="190" height="6" fill="#9B59B6" rx="3"/>
+  <text x="440" y="245" class="increment-text" font-weight="bold">✓ 動作確認 → テスト → コミット</text>
 
-  <!-- Benefits -->
-  <rect x="50" y="270" width="730" height="110" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
-  <text x="415" y="300" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle;">
-    段階的リリースのメリット
+  <line x1="550" y1="260" x2="550" y2="285" stroke="#003399" stroke-width="4"/>
+
+  <!-- Increment 3 -->
+  <circle cx="850" cy="300" r="15" fill="#00146E"/>
+  <rect x="720" y="80" width="260" height="180" fill="#00146E" rx="10"/>
+  <text x="850" y="110" class="increment-title" text-anchor="middle">Increment 3: 完了機能</text>
+  <text x="850" y="135" class="increment-title" text-anchor="middle" font-size="26">(30分)</text>
+
+  <text x="740" y="165" class="increment-text">実装:</text>
+  <text x="750" y="185" class="increment-text">• PATCH /api/tasks/:id API</text>
+  <text x="750" y="202" class="increment-text">• 完了チェックボックス</text>
+  <text x="750" y="219" class="increment-text">• 状態更新ロジック</text>
+
+  <text x="740" y="245" class="increment-text" font-weight="bold">✓ 動作確認 → テスト → コミット</text>
+
+  <line x1="850" y1="260" x2="850" y2="285" stroke="#00146E" stroke-width="4"/>
+
+  <!-- Increment 4 -->
+  <circle cx="1150" cy="300" r="15" fill="#66D9FF"/>
+  <rect x="1020" y="80" width="260" height="180" fill="#66D9FF" rx="10"/>
+  <text x="1150" y="110" class="increment-title" text-anchor="middle">Increment 4: 削除機能</text>
+  <text x="1150" y="135" class="increment-title" text-anchor="middle" font-size="26">(30分)</text>
+
+  <text x="1040" y="165" class="increment-text">実装:</text>
+  <text x="1050" y="185" class="increment-text">• DELETE /api/tasks/:id API</text>
+  <text x="1050" y="202" class="increment-text">• 削除ボタン実装</text>
+  <text x="1050" y="219" class="increment-text">• 確認ダイアログ</text>
+
+  <text x="1040" y="245" class="increment-text" font-weight="bold">✓ 動作確認 → テスト → コミット</text>
+
+  <line x1="1150" y1="260" x2="1150" y2="285" stroke="#66D9FF" stroke-width="4"/>
+
+  <!-- Bottom: Benefits -->
+  <rect x="100" y="360" width="600" height="210" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="400" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    インクリメンタル開発のメリット
   </text>
-  <g transform="translate(70, 315)">
-    <text x="0" y="0" class="item">✅ 早期フィードバック：Week 1で顧客の反応を確認</text>
-    <text x="0" y="22" class="item">✅ リスク最小化：小さく始めて、徐々に拡張</text>
-    <text x="0" y="44" class="item">✅ モチベーション維持：毎週「動くものが増える」達成感</text>
-  </g>
+
+  <text x="120" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    ✓ 常に動く状態を維持
+  </text>
+  <text x="130" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    各Incrementで動作確認 → 問題を早期発見
+  </text>
+
+  <text x="120" y="470" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    ✓ 進捗が可視化される
+  </text>
+  <text x="130" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    30分毎に成果が見える → モチベーション維持
+  </text>
+
+  <text x="120" y="520" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    ✓ リスクが最小化
+  </text>
+  <text x="130" y="540" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    小さく作る → 小さく失敗 → すぐ修正
+  </text>
+
+  <!-- Bottom: Comparison -->
+  <rect x="720" y="360" width="580" height="210" fill="#E6E6E6" stroke="#CC0000" stroke-width="3" rx="10"/>
+  <text x="1010" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+    ✗ 一度に全部作る場合（NG）
+  </text>
+
+  <text x="740" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    ✗ 完成まで動かない
+  </text>
+  <text x="750" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    2時間後に初めて動作確認 → バグが大量発生
+  </text>
+
+  <text x="740" y="470" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    ✗ 進捗が見えない
+  </text>
+  <text x="750" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    「まだできてない」が続く → 不安・焦り
+  </text>
+
+  <text x="740" y="520" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    ✗ デバッグが困難
+  </text>
+  <text x="750" y="540" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    どこでバグが発生したか特定が難しい
+  </text>
 </svg>

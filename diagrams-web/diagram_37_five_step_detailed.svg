@@ -1,127 +1,414 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2080 1430">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
-      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
-      .time { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: white; text-anchor: middle; }
-      .s1 { fill: #E74C3C; }
-      .s2 { fill: #E67E22; }
-      .s3 { fill: #00AFF0; }
-      .s4 { fill: #003399; }
-      .s5 { fill: #27AE60; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
     </style>
   </defs>
 
-  <rect width="1000" height="700" fill="#FFFFFF"/>
-  <text x="500" y="40" class="title">5ステップフロー詳細版</text>
+  <!-- Background -->
+  <rect width="1600" height="1100" fill="#FFFFFF"/>
 
-  <!-- Step 1 -->
-  <g transform="translate(50, 80)">
-    <rect x="0" y="0" width="180" height="50" rx="5" class="s1"/>
-    <text x="90" y="28" class="step-title">STEP 1</text>
-    <text x="90" y="44" class="time">半日</text>
+  <!-- Title -->
+  <text x="800" y="40" class="title" text-anchor="middle">AI開発5-STEPフロー詳細版（実践ガイド）</text>
 
-    <rect x="0" y="60" width="180" height="160" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
-    <g transform="translate(15, 80)">
-      <text x="0" y="0" class="item" font-weight="bold">要件定義</text>
-      <text x="0" y="20" class="item" font-size="11px">• ヒアリング</text>
-      <text x="0" y="36" class="item" font-size="11px">• MoSCoW分類</text>
-      <text x="0" y="52" class="item" font-size="11px">• 曖昧さ排除</text>
-      <text x="0" y="68" class="item" font-size="11px">• Guardrails設定</text>
+  <!-- Step 1: Requirements -->
+  <rect x="50" y="80" width="300" height="190" fill="#00AFF0" rx="10"/>
+  <text x="200" y="110" class="step-title" text-anchor="middle">STEP 1: 要件定義</text>
+  <text x="200" y="135" class="step-title" text-anchor="middle" font-size="26">(Requirements)</text>
 
-      <text x="0" y="95" class="item" font-weight="bold" font-size="11px">成果物:</text>
-      <text x="0" y="111" class="item" font-size="10px">requirements.md</text>
-    </g>
-  </g>
+  <text x="70" y="160" class="step-text" font-weight="bold">📋 成果物:</text>
+  <text x="80" y="178" class="step-text">• ユーザーストーリー</text>
+  <text x="80" y="193" class="step-text">• MoSCoW優先順位付け</text>
 
-  <!-- Step 2 -->
-  <g transform="translate(255, 80)">
-    <rect x="0" y="0" width="180" height="50" rx="5" class="s2"/>
-    <text x="90" y="28" class="step-title">STEP 2</text>
-    <text x="90" y="44" class="time">半日</text>
+  <text x="70" y="218" class="step-text" font-weight="bold">⏱ 所要時間: 30分</text>
 
-    <rect x="0" y="60" width="180" height="160" rx="5" fill="#FFF3E0" stroke="#E67E22" stroke-width="2"/>
-    <g transform="translate(15, 80)">
-      <text x="0" y="0" class="item" font-weight="bold">設計</text>
-      <text x="0" y="20" class="item" font-size="11px">• architecture.md</text>
-      <text x="0" y="36" class="item" font-size="11px">• ER図作成</text>
-      <text x="0" y="52" class="item" font-size="11px">• API仕様</text>
-      <text x="0" y="68" class="item" font-size="11px">• シーケンス図</text>
+  <text x="70" y="243" class="step-text" font-weight="bold">🎯 重要ポイント:</text>
+  <text x="80" y="261" class="step-text">機能要件+非機能要件を明記</text>
 
-      <text x="0" y="95" class="item" font-weight="bold" font-size="11px">成果物:</text>
-      <text x="0" y="111" class="item" font-size="10px">Spec-First設計書</text>
-    </g>
-  </g>
+  <!-- Arrow 1 to 2 -->
+  <line x1="350" y1="175" x2="400" y2="175" stroke="#00AFF0" stroke-width="6"/>
+  <polygon points="400,175 390,170 390,180" fill="#00AFF0"/>
 
-  <!-- Step 3 -->
-  <g transform="translate(460, 80)">
-    <rect x="0" y="0" width="180" height="50" rx="5" class="s3"/>
-    <text x="90" y="28" class="step-title">STEP 3</text>
-    <text x="90" y="44" class="time">1時間</text>
+  <!-- Step 2: Specification -->
+  <rect x="400" y="80" width="300" height="190" fill="#00146E" rx="10"/>
+  <text x="550" y="110" class="step-title" text-anchor="middle">STEP 2: 仕様定義</text>
+  <text x="550" y="135" class="step-title" text-anchor="middle" font-size="26">(Specification)</text>
 
-    <rect x="0" y="60" width="180" height="160" rx="5" fill="#E1F5FE" stroke="#00AFF0" stroke-width="2"/>
-    <g transform="translate(15, 80)">
-      <text x="0" y="0" class="item" font-weight="bold">タスク分解</text>
-      <text x="0" y="20" class="item" font-size="11px">• Phase分け</text>
-      <text x="0" y="36" class="item" font-size="11px">• 依存関係整理</text>
-      <text x="0" y="52" class="item" font-size="11px">• 見積もり</text>
-      <text x="0" y="68" class="item" font-size="11px">• チケット作成</text>
+  <text x="420" y="160" class="step-text" font-weight="bold">📋 成果物:</text>
+  <text x="430" y="178" class="step-text">• ER図（Mermaid）</text>
+  <text x="430" y="193" class="step-text">• API仕様（OpenAPI）</text>
+  <text x="430" y="208" class="step-text">• シーケンス図</text>
 
-      <text x="0" y="95" class="item" font-weight="bold" font-size="11px">成果物:</text>
-      <text x="0" y="111" class="item" font-size="10px">タスクリスト</text>
-    </g>
-  </g>
+  <text x="420" y="233" class="step-text" font-weight="bold">⏱ 所要時間: 60分</text>
 
-  <!-- Step 4 -->
-  <g transform="translate(665, 80)">
-    <rect x="0" y="0" width="180" height="50" rx="5" class="s4"/>
-    <text x="90" y="28" class="step-title">STEP 4</text>
-    <text x="90" y="44" class="time">3日</text>
+  <text x="420" y="258" class="step-text" font-weight="bold">🎯 重要ポイント:</text>
+  <text x="430" y="276" class="step-text">AI生成→レビュー→修正</text>
 
-    <rect x="0" y="60" width="180" height="160" rx="5" fill="#E3F2FD" stroke="#003399" stroke-width="2"/>
-    <g transform="translate(15, 80)">
-      <text x="0" y="0" class="item" font-weight="bold">実装</text>
-      <text x="0" y="20" class="item" font-size="11px">• TDD実践</text>
-      <text x="0" y="36" class="item" font-size="11px">• AIペアプロ</text>
-      <text x="0" y="52" class="item" font-size="11px">• AIレビュー</text>
-      <text x="0" y="68" class="item" font-size="11px">• リファクタ</text>
+  <!-- Arrow 2 to 3 -->
+  <line x1="700" y1="175" x2="750" y2="175" stroke="#00146E" stroke-width="6"/>
+  <polygon points="750,175 740,170 740,180" fill="#00146E"/>
 
-      <text x="0" y="95" class="item" font-weight="bold" font-size="11px">成果物:</text>
-      <text x="0" y="111" class="item" font-size="10px">テスト付きコード</text>
-    </g>
-  </g>
+  <!-- Step 3: Task Breakdown -->
+  <rect x="750" y="80" width="300" height="190" fill="#003399" rx="10"/>
+  <text x="900" y="110" class="step-title" text-anchor="middle">STEP 3: タスク分解</text>
+  <text x="900" y="135" class="step-title" text-anchor="middle" font-size="26">(Task Breakdown)</text>
 
-  <!-- Step 5 -->
-  <g transform="translate(357.5, 300)">
-    <rect x="0" y="0" width="285" height="50" rx="5" class="s5"/>
-    <text x="142.5" y="28" class="step-title">STEP 5</text>
-    <text x="142.5" y="44" class="time">1日</text>
+  <text x="770" y="160" class="step-text" font-weight="bold">📋 成果物:</text>
+  <text x="780" y="178" class="step-text">• タスク一覧（依存関係付き）</text>
+  <text x="780" y="193" class="step-text">• 工数見積もり</text>
+  <text x="780" y="208" class="step-text">• 優先順位付け</text>
 
-    <rect x="0" y="60" width="285" height="200" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
-    <g transform="translate(15, 80)">
-      <text x="0" y="0" class="item" font-weight="bold">品質担保＆ドキュメント反映</text>
-      <text x="0" y="22" class="item" font-size="11px">• カバレッジ80%確認</text>
-      <text x="0" y="40" class="item" font-size="11px">• E2Eテスト実行</text>
-      <text x="0" y="58" class="item" font-size="11px">• セキュリティチェック</text>
-      <text x="0" y="76" class="item" font-size="11px">• パフォーマンス測定</text>
-      <text x="0" y="94" class="item" font-size="11px">• ドキュメント自動更新</text>
-      <text x="0" y="112" class="item" font-size="11px">• pre-commit hook設定</text>
+  <text x="770" y="233" class="step-text" font-weight="bold">⏱ 所要時間: 30分</text>
 
-      <text x="0" y="145" class="item" font-weight="bold" font-size="11px">成果物:</text>
-      <text x="0" y="163" class="item" font-size="10px">本番リリース可能な状態</text>
-    </g>
-  </g>
+  <text x="770" y="258" class="step-text" font-weight="bold">🎯 重要ポイント:</text>
+  <text x="780" y="276" class="step-text">30-60分単位のIncrement</text>
 
-  <!-- Bottom summary -->
-  <rect x="50" y="590" width="900" height="85" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
-  <text x="500" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
-    合計所要時間：約1週間（小規模プロジェクトの場合）
+  <!-- Arrow 3 to 4 -->
+  <line x1="1050" y1="175" x2="1100" y2="175" stroke="#003399" stroke-width="6"/>
+  <polygon points="1100,175 1090,170 1090,180" fill="#003399"/>
+
+  <!-- Step 4: Implementation -->
+  <rect x="1100" y="80" width="230" height="190" fill="#66D9FF" rx="10"/>
+  <text x="1215" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    STEP 4: 実装
   </text>
-  <text x="500" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666; text-anchor: middle;">
-    前工程（STEP1-2）を丁寧にすると、後工程がスムーズに進む
+  <text x="1215" y="135" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+    (Implementation)
   </text>
-  <text x="500" y="665" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #999; text-anchor: middle;">
-    AIの制約（忘れっぽい・Reward Hacking・Jagged）に対応した構造
+
+  <text x="1120" y="160" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
+    📋 成果物:
+  </text>
+  <text x="1130" y="178" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    • コード（TDD）
+  </text>
+  <text x="1130" y="193" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    • テスト（80%以上）
+  </text>
+
+  <text x="1120" y="218" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
+    ⏱ 所要時間: 2-4時間
+  </text>
+
+  <text x="1120" y="243" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E; font-weight: bold;">
+    🎯 重要ポイント:
+  </text>
+  <text x="1130" y="261" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    Trust but Verify
+  </text>
+
+  <!-- Arrow 4 to 5 -->
+  <line x1="1215" y1="270" x2="1215" y2="310" stroke="#66D9FF" stroke-width="6"/>
+  <polygon points="1215,310 1210,300 1220,300" fill="#66D9FF"/>
+
+  <!-- Step 5: Documentation -->
+  <rect x="1100" y="310" width="230" height="190" fill="#4D6DB3" rx="10"/>
+  <text x="1215" y="340" class="step-title" text-anchor="middle">STEP 5: ドキュメント</text>
+  <text x="1215" y="365" class="step-title" text-anchor="middle" font-size="26">(Documentation)</text>
+
+  <text x="1120" y="390" class="step-text" font-weight="bold">📋 成果物:</text>
+  <text x="1130" y="408" class="step-text">• README.md</text>
+  <text x="1130" y="423" class="step-text">• API仕様書（自動生成）</text>
+  <text x="1130" y="438" class="step-text">• コメント・JavaDoc</text>
+
+  <text x="1120" y="463" class="step-text" font-weight="bold">⏱ 所要時間: 30分</text>
+
+  <text x="1120" y="488" class="step-text" font-weight="bold">🎯 重要ポイント:</text>
+  <text x="1130" y="506" class="step-text">Living Documentation</text>
+
+  <!-- Detailed workflow for each step -->
+  <rect x="50" y="540" width="1500" height="530" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="800" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    各STEPの詳細ワークフロー
+  </text>
+
+  <!-- STEP 1 Details -->
+  <rect x="70" y="595" width="280" height="455" fill="#00AFF0" rx="8"/>
+  <text x="210" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    STEP 1 詳細手順
+  </text>
+
+  <text x="90" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    1. ユーザーヒアリング (10分)
+  </text>
+  <text x="100" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • ビジネス目的確認
+  </text>
+  <text x="100" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • ユーザー像明確化
+  </text>
+
+  <text x="90" y="703" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    2. ユーザーストーリー作成 (10分)
+  </text>
+  <text x="100" y="721" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • As a [ユーザー]
+  </text>
+  <text x="100" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • I want [機能]
+  </text>
+  <text x="100" y="751" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • So that [目的]
+  </text>
+
+  <text x="90" y="776" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    3. MoSCoW優先順位付け (5分)
+  </text>
+  <text x="100" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • Must: 必須機能
+  </text>
+  <text x="100" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • Should: 重要機能
+  </text>
+  <text x="100" y="824" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • Could: あると良い
+  </text>
+  <text x="100" y="839" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • Won't: 今回対象外
+  </text>
+
+  <text x="90" y="864" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    4. 非機能要件定義 (5分)
+  </text>
+  <text x="100" y="882" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • セキュリティ
+  </text>
+  <text x="100" y="897" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • パフォーマンス
+  </text>
+  <text x="100" y="912" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • 信頼性
+  </text>
+
+  <text x="90" y="937" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    → AIに渡して仕様定義開始
+  </text>
+
+  <!-- STEP 2 Details -->
+  <rect x="370" y="595" width="280" height="455" fill="#00146E" rx="8"/>
+  <text x="510" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    STEP 2 詳細手順
+  </text>
+
+  <text x="390" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    1. ER図作成依頼 (15分)
+  </text>
+  <text x="400" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    プロンプト: 「STEP1の要件から
+  </text>
+  <text x="400" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    ER図をMermaid形式で作成」
+  </text>
+
+  <text x="390" y="703" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    2. API仕様作成依頼 (15分)
+  </text>
+  <text x="400" y="721" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    プロンプト: 「RESTful API仕様を
+  </text>
+  <text x="400" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    OpenAPI 3.0形式で作成」
+  </text>
+
+  <text x="390" y="761" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    3. シーケンス図作成 (15分)
+  </text>
+  <text x="400" y="779" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    プロンプト: 「ログインフローの
+  </text>
+  <text x="400" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    シーケンス図をMermaidで作成」
+  </text>
+
+  <text x="390" y="819" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    4. AI自己レビュー (10分)
+  </text>
+  <text x="400" y="837" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    プロンプト: 「この仕様をレビュー
+  </text>
+  <text x="400" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    して。抜け漏れ、矛盾点を指摘」
+  </text>
+
+  <text x="390" y="877" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    5. 人間レビュー (5分)
+  </text>
+  <text x="400" y="895" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • ビジネスロジック確認
+  </text>
+  <text x="400" y="910" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • セキュリティ要件確認
+  </text>
+
+  <text x="390" y="935" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    → タスク分解に進む
+  </text>
+
+  <!-- STEP 3 Details -->
+  <rect x="670" y="595" width="280" height="455" fill="#003399" rx="8"/>
+  <text x="810" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    STEP 3 詳細手順
+  </text>
+
+  <text x="690" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    1. タスク一覧作成依頼 (15分)
+  </text>
+  <text x="700" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    プロンプト: 「STEP2の仕様から
+  </text>
+  <text x="700" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    タスク一覧を作成（依存関係付き）」
+  </text>
+
+  <text x="690" y="703" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    2. 工数見積もり (10分)
+  </text>
+  <text x="700" y="721" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    プロンプト: 「各タスクの工数を
+  </text>
+  <text x="700" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    見積もって（30-60分単位）」
+  </text>
+
+  <text x="690" y="761" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    3. 優先順位付け (5分)
+  </text>
+  <text x="700" y="779" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • Must タスクを優先
+  </text>
+  <text x="700" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • クリティカルパス特定
+  </text>
+  <text x="700" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • 並行実行可能タスク洗い出し
+  </text>
+
+  <text x="690" y="834" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    4. Increment計画 (5分)
+  </text>
+  <text x="700" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • Increment 1: 一覧表示
+  </text>
+  <text x="700" y="867" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • Increment 2: 新規作成
+  </text>
+  <text x="700" y="882" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • Increment 3: 更新・削除
+  </text>
+
+  <text x="690" y="907" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    → 1タスクずつ実装開始
+  </text>
+
+  <!-- STEP 4 Details -->
+  <rect x="970" y="595" width="280" height="455" fill="#66D9FF" rx="8"/>
+  <text x="1110" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    STEP 4 詳細手順
+  </text>
+
+  <text x="990" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; font-weight: bold;">
+    1. TDDサイクル (60-120分/タスク)
+  </text>
+  <text x="1000" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    Red: テスト作成 → 失敗確認
+  </text>
+  <text x="1000" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    Green: 最小実装 → テスト通過
+  </text>
+  <text x="1000" y="693" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    Refactor: コード改善
+  </text>
+
+  <text x="990" y="718" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; font-weight: bold;">
+    2. AI自己レビュー (5分)
+  </text>
+  <text x="1000" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    プロンプト: 「このコードを
+  </text>
+  <text x="1000" y="751" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    レビューして（セキュリティ、
+  </text>
+  <text x="1000" y="766" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    エッジケース、ベストプラクティス）」
+  </text>
+
+  <text x="990" y="791" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; font-weight: bold;">
+    3. 指摘事項修正 (10-30分)
+  </text>
+  <text x="1000" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    AI指摘箇所を修正 → 再レビュー
+  </text>
+
+  <text x="990" y="834" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; font-weight: bold;">
+    4. テスト全実行 (5分)
+  </text>
+  <text x="1000" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    JaCoCo でカバレッジ確認
+  </text>
+  <text x="1000" y="867" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    → 80%未満なら追加テスト
+  </text>
+
+  <text x="990" y="892" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; font-weight: bold;">
+    5. コミット (5分)
+  </text>
+  <text x="1000" y="910" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
+    git add . && git commit -m "..."
+  </text>
+
+  <text x="990" y="935" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; font-weight: bold;">
+    → 次タスク or ドキュメント作成
+  </text>
+
+  <!-- STEP 5 Details -->
+  <rect x="1270" y="595" width="260" height="455" fill="#4D6DB3" rx="8"/>
+  <text x="1400" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    STEP 5 詳細手順
+  </text>
+
+  <text x="1290" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    1. README作成 (15分)
+  </text>
+  <text x="1300" y="663" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    プロンプト: 「README.md
+  </text>
+  <text x="1300" y="678" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    を作成（セットアップ手順、
+  </text>
+  <text x="1300" y="693" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    API使用例、環境変数）」
+  </text>
+
+  <text x="1290" y="718" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    2. Swagger確認 (5分)
+  </text>
+  <text x="1300" y="736" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    /swagger-ui.html アクセス
+  </text>
+  <text x="1300" y="751" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → API仕様書自動生成確認
+  </text>
+
+  <text x="1290" y="776" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight="bold">
+    3. JavaDoc追加 (10分)
+  </text>
+  <text x="1300" y="794" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    複雑なロジックに
+  </text>
+  <text x="1300" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    /** ... */ コメント追加
+  </text>
+
+  <text x="1290" y="834" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
+    4. .env.example作成 (5分)
+  </text>
+  <text x="1300" y="852" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    環境変数テンプレート
+  </text>
+
+  <text x="1290" y="877" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    → 完了！チーム共有
   </text>
 </svg>

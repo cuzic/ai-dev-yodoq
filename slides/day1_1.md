@@ -182,8 +182,7 @@ AI駆動開発で開発期間を大幅短縮
 - STEP2: 設計
 - STEP3: タスク分解
 - STEP4: 実装
-- STEP5: 品質担保
-- STEP6: リファクタリング
+- STEP5: 品質担保＆ドキュメント反映
 
 **③AI制約への対応**
 - Jagged Intelligence（得意/苦手の把握）
@@ -244,8 +243,7 @@ AI駆動開発で開発期間を大幅短縮
 - **STEP2: 設計** - どう作るか定義（AI外部メモリ）
 - **STEP3: タスク分解** - 全体像を小さく分割（忘れっぽさ対策）
 - **STEP4: 実装** - 小さく作る・TDD・AI自己レビュー
-- **STEP5: 品質担保** - Trust but Verify自動化
-- **STEP6: リファクタリング** - Living Documentation
+- **STEP5: 品質担保＆ドキュメント反映** - Trust but Verify自動化、Living Documentation
 - **効果:** 手戻り防止、品質保証、開発期間短縮
 
 ---

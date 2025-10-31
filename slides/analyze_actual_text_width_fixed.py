@@ -69,8 +69,8 @@ def get_actual_layout(slide_text):
         elif layout_class == 'card-grid':
             return 'card-grid', 350
         elif 'horizontal' in layout_class:
-            # horizontal layouts typically have text in one column
-            return layout_class, 500
+            # horizontal layouts: 45% of 1280px = 576px, minus gap/padding = ~536px usable
+            return layout_class, 536
 
     return 'default', 1100
 

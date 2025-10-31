@@ -1,104 +1,278 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1105">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
-      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
-      .code { font-family: 'Courier New', monospace; font-size: 12px; fill: #00146E; }
-      .p1 { fill: #E74C3C; }
-      .p2 { fill: #F39C12; }
-      .p3 { fill: #27AE60; }
-      .p4 { fill: #3498DB; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
     </style>
   </defs>
 
-  <rect width="1000" height="700" fill="#FFFFFF"/>
-  <text x="500" y="40" class="title">リグレッションテストの仕組み</text>
+  <!-- Background -->
+  <rect width="1400" height="850" fill="#FFFFFF"/>
 
-  <!-- Phase 1: Bug Discovery -->
-  <g transform="translate(50, 80)">
-    <rect x="0" y="0" width="430" height="50" rx="5" class="p1"/>
-    <text x="215" y="33" class="phase-title">Phase 1：バグ発見</text>
+  <!-- Title -->
+  <text x="700" y="40" class="title" text-anchor="middle">デグレ発生メカニズムと防止策（TDDで根絶）</text>
 
-    <rect x="0" y="60" width="430" height="120" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">ユーザーが報告：</text>
-      <text x="10" y="22" class="item" font-size="13px">「ログインできない！」</text>
-
-      <text x="0" y="52" class="item" font-weight="bold">再現手順：</text>
-      <text x="10" y="74" class="item" font-size="13px">1. メールアドレス入力</text>
-      <text x="10" y="92" class="item" font-size="13px">2. パスワード入力（特殊文字含む）</text>
-    </g>
-  </g>
-
-  <!-- Phase 2: Write Failing Test -->
-  <g transform="translate(520, 80)">
-    <rect x="0" y="0" width="430" height="50" rx="5" class="p2"/>
-    <text x="215" y="33" class="phase-title">Phase 2：失敗するテストを書く</text>
-
-    <rect x="0" y="60" width="430" height="180" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="code">test('特殊文字含むパスワードでログイン', async () => {</text>
-      <text x="10" y="20" class="code">const result = await login(</text>
-      <text x="20" y="38" class="code">'user@example.com',</text>
-      <text x="20" y="56" class="code">'P@ssw0rd!'</text>
-      <text x="10" y="74" class="code">);</text>
-      <text x="10" y="92" class="code">expect(result.success).toBe(true);</text>
-      <text x="0" y="110" class="code">});</text>
-
-      <text x="0" y="142" class="item" font-weight="bold" fill="#F39C12">テスト実行 → RED（失敗）</text>
-    </g>
-  </g>
-
-  <!-- Phase 3: Fix Bug -->
-  <g transform="translate(50, 270)">
-    <rect x="0" y="0" width="430" height="50" rx="5" class="p3"/>
-    <text x="215" y="33" class="phase-title">Phase 3：バグ修正</text>
-
-    <rect x="0" y="60" width="430" height="180" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">原因：</text>
-      <text x="10" y="22" class="item" font-size="13px">特殊文字のエスケープ処理漏れ</text>
-
-      <text x="0" y="52" class="item" font-weight="bold">修正内容：</text>
-      <text x="0" y="72" class="code">// Before</text>
-      <text x="0" y="90" class="code">password = input;</text>
-
-      <text x="0" y="115" class="code">// After</text>
-      <text x="0" y="133" class="code">password = escapeSpecialChars(input);</text>
-    </g>
-  </g>
-
-  <!-- Phase 4: CI/CD Protection -->
-  <g transform="translate(520, 270)">
-    <rect x="0" y="0" width="430" height="50" rx="5" class="p4"/>
-    <text x="215" y="33" class="phase-title">Phase 4：CI/CDで自動保護</text>
-
-    <rect x="0" y="60" width="430" height="180" rx="5" fill="#E3F2FD" stroke="#3498DB" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">テスト → GREEN（成功）✅</text>
-
-      <text x="0" y="30" class="item" font-weight="bold">CI/CDパイプライン：</text>
-      <text x="10" y="52" class="item" font-size="13px">1. 毎回のコミットで自動実行</text>
-      <text x="10" y="72" class="item" font-size="13px">2. 同じバグが再発したら即検出</text>
-      <text x="10" y="92" class="item" font-size="13px">3. マージをブロック</text>
-
-      <text x="0" y="122" class="item" font-weight="bold">結果：</text>
-      <text x="10" y="144" class="item" font-size="13px" fill="#3498DB">
-        このバグは二度と起きない！
-      </text>
-    </g>
-  </g>
-
-  <!-- Bottom flow -->
-  <rect x="50" y="510" width="900" height="150" rx="5" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
-  <text x="500" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
-    リグレッションテストの黄金ルール
+  <!-- Mechanism -->
+  <text x="50" y="85" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #CC0000; font-weight: bold;">
+    デグレ（Regression Bug）発生メカニズム
   </text>
-  <g transform="translate(80, 565)">
-    <text x="0" y="0" class="item">1. バグが見つかったら → まず失敗するテストを書く（RED）</text>
-    <text x="0" y="25" class="item">2. バグを修正 → テストが通る（GREEN）</text>
-    <text x="0" y="50" class="item">3. CI/CDに登録 → 永久に保護される</text>
-    <text x="0" y="75" class="item">4. 過去のバグが復活することは二度とない</text>
-  </g>
+
+  <!-- Step 1: Initial State -->
+  <rect x="100" y="110" width="220" height="120" fill="#00AA00" rx="8"/>
+  <text x="210" y="135" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    初期状態：正常動作
+  </text>
+  <text x="120" y="160" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    機能A: ログイン機能
+  </text>
+  <text x="120" y="178" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    状態: 正常動作 ✓
+  </text>
+  <text x="120" y="196" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    テスト: なし ✗
+  </text>
+  <text x="120" y="214" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → テストがないと危険！
+  </text>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="320" y1="170" x2="380" y2="170" stroke="#CC0000" stroke-width="6"/>
+  <polygon points="380,170 370,165 370,175" fill="#CC0000"/>
+
+  <!-- Step 2: Code Change -->
+  <rect x="380" y="110" width="220" height="120" fill="#00AFF0" rx="8"/>
+  <text x="490" y="135" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    機能B追加（別機能）
+  </text>
+  <text x="400" y="160" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    機能B: 商品一覧機能追加
+  </text>
+  <text x="400" y="178" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    変更箇所: UserService修正
+  </text>
+  <text x="400" y="196" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    （共通メソッドをリファクタ）
+  </text>
+  <text x="400" y="214" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 意図せず機能Aに影響
+  </text>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="600" y1="170" x2="660" y2="170" stroke="#CC0000" stroke-width="6"/>
+  <polygon points="660,170 650,165 650,175" fill="#CC0000"/>
+
+  <!-- Step 3: Regression -->
+  <rect x="660" y="110" width="220" height="120" fill="#CC0000" rx="8"/>
+  <text x="770" y="135" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    デグレ発生！
+  </text>
+  <text x="680" y="160" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    機能A: ログイン不可 ✗
+  </text>
+  <text x="680" y="178" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    原因: UserService変更の</text>
+  <text x="690" y="196" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    副作用で壊れた
+  </text>
+  <text x="680" y="214" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → テストがないので気づかず
+  </text>
+
+  <!-- Arrow 3 to 4 -->
+  <line x1="880" y1="170" x2="940" y2="170" stroke="#CC0000" stroke-width="6"/>
+  <polygon points="940,170 930,165 930,175" fill="#CC0000"/>
+
+  <!-- Step 4: Production Bug -->
+  <rect x="940" y="110" width="220" height="120" fill="#990000" rx="8"/>
+  <text x="1050" y="135" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    本番障害発生
+  </text>
+  <text x="960" y="160" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    ユーザー: ログインできない
+  </text>
+  <text x="960" y="178" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    影響: 全ユーザー（数千人）
+  </text>
+  <text x="960" y="196" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    対応: 緊急ロールバック
+  </text>
+  <text x="960" y="214" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    損失: 信頼低下、売上損失
+  </text>
+
+  <!-- Prevention with TDD -->
+  <text x="50" y="285" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00AA00; font-weight: bold;">
+    TDDによるデグレ防止メカニズム
+  </text>
+
+  <!-- TDD Step 1 -->
+  <rect x="100" y="310" width="220" height="140" fill="#00AA00" rx="8"/>
+  <text x="210" y="335" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    1. Red：テスト作成
+  </text>
+  <text x="120" y="360" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    機能A: ログイン機能
+  </text>
+  <text x="120" y="378" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    テスト作成: loginTest()
+  </text>
+  <text x="120" y="396" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    - 正常ログイン
+  </text>
+  <text x="120" y="414" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    - パスワード間違い
+  </text>
+  <text x="120" y="432" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → テストが保護する！
+  </text>
+
+  <!-- Arrow -->
+  <line x1="320" y1="380" x2="380" y2="380" stroke="#00AA00" stroke-width="6"/>
+  <polygon points="380,380 370,375 370,385" fill="#00AA00"/>
+
+  <!-- TDD Step 2 -->
+  <rect x="380" y="310" width="220" height="140" fill="#00AA00" rx="8"/>
+  <text x="490" y="335" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    2. Green：実装
+  </text>
+  <text x="400" y="360" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    機能A: 実装完了
+  </text>
+  <text x="400" y="378" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    テスト: 全て通過 ✓
+  </text>
+  <text x="400" y="396" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    カバレッジ: 82%
+  </text>
+  <text x="400" y="414" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    コミット → CI/CD実行
+  </text>
+  <text x="400" y="432" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → ベースライン確立
+  </text>
+
+  <!-- Arrow -->
+  <line x1="600" y1="380" x2="660" y2="380" stroke="#00AA00" stroke-width="6"/>
+  <polygon points="660,380 650,375 650,385" fill="#00AA00"/>
+
+  <!-- TDD Step 3 -->
+  <rect x="660" y="310" width="220" height="140" fill="#00AFF0" rx="8"/>
+  <text x="770" y="335" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    3. 機能B追加
+  </text>
+  <text x="680" y="360" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    機能B: 商品一覧実装
+  </text>
+  <text x="680" y="378" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    変更: UserService修正
+  </text>
+  <text x="680" y="396" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    テスト全実行:
+  </text>
+  <text x="690" y="414" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 機能Aのテスト失敗！
+  </text>
+  <text x="680" y="432" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → デグレを即座に検出 ✓
+  </text>
+
+  <!-- Arrow -->
+  <line x1="880" y1="380" x2="940" y2="380" stroke="#00AFF0" stroke-width="6"/>
+  <polygon points="940,380 930,375 930,385" fill="#00AFF0"/>
+
+  <!-- TDD Step 4 -->
+  <rect x="940" y="310" width="220" height="140" fill="#003399" rx="8"/>
+  <text x="1050" y="335" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    4. 修正 → 本番デプロイ
+  </text>
+  <text x="960" y="360" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    機能A: テスト通るよう修正
+  </text>
+  <text x="960" y="378" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    全テスト: 通過 ✓
+  </text>
+  <text x="960" y="396" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    コミット → CI/CD → 本番
+  </text>
+  <text x="960" y="414" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    結果: デグレなし！
+  </text>
+  <text x="960" y="432" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 本番障害ゼロ達成 ✓
+  </text>
+
+  <!-- Statistics -->
+  <rect x="50" y="480" width="1300" height="340" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="700" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    デグレ防止の効果（実データ）
+  </text>
+
+  <!-- Without TDD -->
+  <rect x="70" y="535" width="620" height="265" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
+  <text x="380" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+    ✗ TDDなしの場合
+  </text>
+
+  <rect x="90" y="580" width="580" height="200" fill="#CC0000" rx="8"/>
+  <text x="110" y="605" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    デグレ発生率: 30-50%
+  </text>
+  <text x="120" y="625" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    新機能追加10回中、3-5回はデグレ発生
+  </text>
+
+  <text x="110" y="655" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    検出タイミング: 本番デプロイ後
+  </text>
+  <text x="120" y="675" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    ユーザーからの問い合わせで初めて発覚
+  </text>
+  <text x="120" y="693" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 即座にロールバック、緊急対応
+  </text>
+
+  <text x="110" y="723" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    修正コスト: 100倍
+  </text>
+  <text x="120" y="743" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    開発時に修正: 10分 → 本番障害対応: 1,000分（16時間）
+  </text>
+  <text x="120" y="761" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 原因調査、緊急修正、影響範囲調査、ユーザー対応
+  </text>
+
+  <!-- With TDD -->
+  <rect x="710" y="535" width="620" height="265" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
+  <text x="1020" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+    ✓ TDDありの場合
+  </text>
+
+  <rect x="730" y="580" width="580" height="200" fill="#00AA00" rx="8"/>
+  <text x="750" y="605" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    デグレ発生率: 0-5%
+  </text>
+  <text x="760" y="625" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    新機能追加10回中、0-1回のみ（95%以上防止）
+  </text>
+
+  <text x="750" y="655" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    検出タイミング: コミット前（開発時）
+  </text>
+  <text x="760" y="675" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    テスト全実行で即座に検出
+  </text>
+  <text x="760" y="693" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 本番デプロイ前に修正完了
+  </text>
+
+  <text x="750" y="723" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    修正コスト: 1倍
+  </text>
+  <text x="760" y="743" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    開発時に修正: 10分 → 本番障害: なし（0分）
+  </text>
+  <text x="760" y="761" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → コスト100倍削減、信頼性向上、ユーザー満足度向上
+  </text>
 </svg>
