@@ -412,7 +412,7 @@ style: |
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 実装の3原則（AIの制約に対応）
 
@@ -778,7 +778,7 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # AI自己レビュー4種類の使い分け
 
@@ -849,7 +849,7 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
 # STEP5のまとめ
 

@@ -423,7 +423,7 @@ style: |
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # テストシナリオ作成の実例
 

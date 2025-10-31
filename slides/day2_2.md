@@ -159,7 +159,7 @@ style: |
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 3つの演習課題から選択
 
@@ -246,6 +246,8 @@ style: |
 ---
 
 ---
+
+<!-- _class: two-column -->
 
 ### STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
@@ -349,7 +351,7 @@ style: |
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 #### テストコード実装（30分）
 
@@ -507,6 +509,8 @@ style: |
 ---
 
 ---
+
+<!-- _class: two-column -->
 
 ### 実務での活用ポイント
 

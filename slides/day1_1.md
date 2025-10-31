@@ -161,6 +161,8 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
+<!-- _class: two-column -->
+
 # 本日の目標
 
 ## 🎯 1日目のゴール
@@ -387,7 +389,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # モード詳細と使い分け
 
@@ -956,7 +958,7 @@ build/
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 ## Part 1 振り返りチェックリスト
 

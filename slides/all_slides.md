@@ -7,8 +7,8 @@ footer: '© 2024 AI Development Seminar'
 style: |
   /* デフォルト：上下レイアウト（図が大きい） */
   section img {
-    max-width: 70%;
-    max-height: 45vh;
+    max-width: 95%;
+    max-height: 60vh;
     display: block;
     margin: 10px auto;
     object-fit: contain;
@@ -25,12 +25,12 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-left img {
-    max-width: 90%;
-    max-height: 55vh;
+    max-width: 100%;
+    max-height: 75vh;
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -44,21 +44,21 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-right img {
-    max-width: 90%;
-    max-height: 55vh;
+    max-width: 100%;
+    max-height: 75vh;
     margin: 0;
     grid-column: 2;
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 16px;
+    font-size: 22px;
     grid-column: 1;
   }
 
   /* 図のみレイアウト：図を最大化 */
   section.layout-diagram-only img {
-    max-width: 75%;
-    max-height: 60vh;
+    max-width: 98%;
+    max-height: 85vh;
   }
 
   /* 2カラムレイアウト：テキストのみのスライド向け */
@@ -131,206 +131,22 @@ style: |
     color: #0066cc;
   }
 
-
-  /* 比較レイアウト：2つの概念を左右で対比 */
-  section.layout-comparison {
-    display: grid;
-    grid-template-columns: 1fr 80px 1fr;
-    grid-template-rows: auto 1fr;
-    gap: 20px;
-    padding: 40px;
-  }
-  section.layout-comparison h1 {
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  section.layout-comparison > div:nth-of-type(1) {
-    grid-column: 1;
-    grid-row: 2;
-    background: #e3f2fd;
-    padding: 30px;
-    border-radius: 10px;
-    font-size: 16px;
-  }
-  section.layout-comparison > div:nth-of-type(2) {
-    grid-column: 2;
-    grid-row: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: #666;
-  }
-  section.layout-comparison > div:nth-of-type(3) {
-    grid-column: 3;
-    grid-row: 2;
-    background: #fff3e0;
-    padding: 30px;
-    border-radius: 10px;
-    font-size: 16px;
-  }
-  section.layout-comparison h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 24px;
-  }
-
-  /* 強調メッセージレイアウト：重要ポイントを大きく表示 */
-  section.layout-callout {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-  }
-  section.layout-callout h1 {
-    font-size: 48px;
-    margin-bottom: 40px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  }
-  section.layout-callout .icon {
-    font-size: 80px;
-    margin-bottom: 30px;
-  }
-  section.layout-callout .message {
-    font-size: 28px;
-    line-height: 1.6;
-    max-width: 900px;
-    background: rgba(255,255,255,0.15);
-    padding: 30px 40px;
-    border-radius: 15px;
-    border: 3px solid rgba(255,255,255,0.3);
-    margin-bottom: 30px;
-    font-weight: 500;
-  }
-  section.layout-callout ul {
-    text-align: left;
-    font-size: 18px;
-    max-width: 800px;
-    background: rgba(255,255,255,0.1);
-    padding: 25px 40px;
-    border-radius: 10px;
-    line-height: 1.8;
-  }
-
-  /* タイムラインレイアウト：手順・フローを横並びで表示 */
-  section.layout-timeline {
-    padding: 40px 50px;
-  }
-  section.layout-timeline h1 {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  section.layout-timeline .timeline {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-top: 40px;
-    gap: 15px;
-  }
-  section.layout-timeline .timeline::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 8%;
-    right: 8%;
-    height: 4px;
-    background: linear-gradient(to right, #2196F3, #4CAF50);
-    z-index: 0;
-  }
-  section.layout-timeline .step {
-    flex: 1;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-  section.layout-timeline .step-number {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: #2196F3;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    font-weight: bold;
-    margin: 0 auto 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-  section.layout-timeline .step h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: #333;
-  }
-  section.layout-timeline .step p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.4;
-  }
-
-  /* コード重視レイアウト：コードを大きく表示 */
-  section.layout-code-focus {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    padding: 30px;
-    gap: 20px;
-  }
-  section.layout-code-focus h1 {
-    grid-row: 1;
-    margin-bottom: 10px;
-  }
-  section.layout-code-focus pre {
-    grid-row: 2;
-    font-size: 16px;
-    padding: 25px;
-    border-radius: 10px;
-    background: #1e1e1e;
-    color: #d4d4d4;
-    overflow: auto;
-    max-height: 450px;
-    margin: 0;
-  }
-  section.layout-code-focus .notes {
-    grid-row: 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    font-size: 15px;
-  }
-  section.layout-code-focus .notes > div {
-    background: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #2196F3;
-  }
-  section.layout-code-focus .notes h3 {
-    margin-top: 0;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
   section {
-    font-size: 18px;
-    padding: 30px 50px;
+    font-size: 24px;
+    padding: 40px 60px;
   }
   h1 {
-    font-size: 32px;
-    margin-bottom: 12px;
+    font-size: 44px;
+    margin-bottom: 15px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 36px;
   }
   ul, ol {
-    margin: 6px 0;
+    margin: 8px 0;
   }
   li {
-    margin: 4px 0;
+    margin: 6px 0;
     line-height: 1.4;
   }
 ---
@@ -344,8 +160,8 @@ style: |
 AI駆動開発で開発期間を大幅短縮
 
 ---
-<!-- _class: two-column -->
 
+<!-- _class: two-column -->
 
 # 本日の目標
 
@@ -385,9 +201,9 @@ AI駆動開発で開発期間を大幅短縮
 
 # AI活用の3原則
 
-![AI活用の3原則](diagrams-web/diagram_01_ai_principles.svg)
+![AI活用の3原則](diagrams/diagram_01_ai_principles.svg)
 
-- **Jagged Intelligence**: 得意:コード・テスト、苦手:要件・判断
+- **Jagged Intelligence**: 得意（コード生成・テスト・アーキテクチャ設計）、苦手（ビジネス要件の解釈・トレードオフ判断）
 - **Trust but Verify**: AIにもエラーあり、AI自己レビューで品質向上
 - **Guardrails**: ドキュメント駆動、受入条件で手戻り防止
 
@@ -397,9 +213,9 @@ AI駆動開発で開発期間を大幅短縮
 
 # Vibe Coding vs Production Engineering
 
-![3つのアプローチ比較](diagrams-web/diagram_22_vibe_vs_production.svg)
+![3つのアプローチ比較](diagrams/diagram_22_vibe_vs_production.svg)
 
-- **Vibe Coding**: 速い（30分〜1時間）、品質不安定、プロトタイプ向き
+- **Vibe Coding**: 速い（30分〜1時間）、品質バラバラ、プロトタイプ向き
 - **Production Engineering**: 構造化、品質保証、本番向き
 - **Vibe Coding with Guardrails**: 速さと品質両立、設計書で導く
 
@@ -409,7 +225,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 開発者の役割変化
 
-![開発者の役割変化](diagrams-web/diagram_02_role_change.svg)
+![開発者の役割変化](diagrams/diagram_02_role_change.svg)
 
 - **従来：運転手** - コード1行ずつ、全実装詳細把握
 - **AI時代：ナビゲーター** - 方向指示、AIが実装
@@ -423,13 +239,13 @@ AI駆動開発で開発期間を大幅短縮
 
 # 5-STEPフロー全体像
 
-![5-STEPフロー](diagrams-web/diagram_03_5step_flow.svg)
+![5-STEPフロー](diagrams/diagram_03_5step_flow.svg)
 
 - **STEP1: 要件定義** - 何を作るか明確化（Guardrails構築）
 - **STEP2: 設計** - どう作るか定義（AI外部メモリ）
 - **STEP3: タスク分解** - 全体像を小さく分割（忘れっぽさ対策）
 - **STEP4: 実装** - 小さく作る・TDD・AI自己レビュー
-- **STEP5: 品質担保＆ドキュメント反映** - TbV・Living Doc
+- **STEP5: 品質担保＆ドキュメント反映** - Trust but Verify自動化、Living Documentation
 - **効果:** 手戻り防止、品質保証、開発期間短縮
 
 ---
@@ -438,54 +254,23 @@ AI駆動開発で開発期間を大幅短縮
 
 # AIの制約①忘れっぽい（セッション制約）
 
-![AIの外部メモリ](diagrams-web/diagram_04_ai_memory.svg)
+![AIの外部メモリ](diagrams/diagram_04_ai_memory.svg)
 
-- **セッション内のみ記憶**: ブラウザ閉じる→全忘却、トークン超過→忘却
+- **セッション内のみ記憶**: ブラウザ閉じる→全忘却、20万トークン超過→古い情報忘却
 - **問題**: 同じバグ繰り返し、成功方法忘却
-- **対策**: ドキュメント化＝外部メモリ、architecture.md等に蓄積
+- **対策**: ドキュメント化＝外部メモリ、architecture.md/README.mdに知見蓄積
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: layout-diagram-only -->
 
 # AIの制約②Reward Hacking（手抜き問題）
 
-## 🚨 問題の本質
-- **AIは「楽な解決策」を選びがち**
-  - タスク完了を最優先
-  - セキュリティ・品質は二の次
-- **発生理由:**
-  - 報酬=タスク完了
-  - 品質への報酬がない
-
-## ❌ NG実装の具体例
-- パスワード平文保存
-- エラーハンドリング省略
-- APIキーのハードコーディング
-- SQL injection対策なし
-- 入力バリデーション不足
-
-## ✅ 対策
-**明確な制約を与える:**
-- bcryptでパスワードハッシュ化
-- 環境変数で機密情報管理
-- 入力バリデーション必須
-- エラーハンドリング必須
-
-**AI自己レビュー必須化:**
-- 実装後「このコードをレビューして」
-- セキュリティ観点でチェック依頼
-
-## 📊 効果
-- **多くのバグを自動検出**
-- **追加コストほぼゼロ**
-- 本番障害を大幅削減
+![Reward Hacking問題と対策](diagrams/diagram_39_reward_hacking_examples.svg)
 
 ---
 
-<!-- _class: three-column -->
-
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # 環境準備
 
@@ -494,7 +279,7 @@ AI駆動開発で開発期間を大幅短縮
 **📦 Claude Code**
 - AI開発環境
 - プロジェクト全体を扱うAIアシスタント
-- **なぜ必要:** 全体文脈理解、複数ファイル一括
+- **なぜ必要:** プロジェクト全体の文脈を理解、複数ファイル一括操作
 
 **🔧 GitHub**
 - バージョン管理
@@ -510,7 +295,7 @@ AI駆動開発で開発期間を大幅短縮
 
 **🐳 Dev Container**
 - 環境統一化
-- dangerously-skipモード安全利用
+- dangerously-skip-permissionsモードの安全利用
 - **なぜ推奨:**
   - 環境の再現性（全員同じ環境）
   - 実験の安全性（コンテナ内で隔離）
@@ -524,11 +309,11 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # セキュリティベストプラクティス（補足）
 
-![セキュリティベストプラクティス](diagrams-web/diagram_36_security_best_practices.svg)
+![セキュリティベストプラクティス](diagrams/diagram_36_security_best_practices.svg)
 
 **AIに必ず指示すべきセキュリティ要件:**
 
@@ -561,11 +346,9 @@ AI駆動開発で開発期間を大幅短縮
 ## Claude Code の使い方（10:30-10:50, 20分）
 
 ---
-<!-- _class: two-column -->
-
 
 # Claude Code とは
-- **概要:** プロジェクト全体扱うAIアシスタント、コード生成/修正/テスト
+- **概要:** プロジェクト全体を扱うAI開発アシスタント、ターミナルから直接コード生成・修正・テスト
 - **なぜClaude Codeが重要か:**
   - プロジェクト全体の文脈を理解（複数ファイルの関係性を把握）
   - 単一ファイル編集ではなく、関連ファイルを一括操作
@@ -573,7 +356,7 @@ AI駆動開発で開発期間を大幅短縮
 - **他ツールとの違い:**
   - ChatGPT: 単一会話、ファイル手動アップロード、コンテキスト限定的
   - Cursor: エディタ内、部分編集、ファイル単位
-  - Claude Code: プロジェクト全体、複数ファイル一括、Git統合
+  - Claude Code: プロジェクト全体、複数ファイル一括、Git統合、長期文脈保持
 - **効果:** プロジェクト全体の一貫性を保ちながら開発
 
 ---
@@ -582,7 +365,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # セットアップ
 
-![.claudeignoreの重要性](diagrams-web/diagram_29_claudeignore_importance.svg)
+![.claudeignoreの重要性](diagrams/diagram_29_claudeignore_importance.svg)
 
 - **インストール:** `npm install -g @anthropic-ai/claude-code`
 - **APIキー取得:** https://console.anthropic.com
@@ -597,10 +380,10 @@ AI駆動開発で開発期間を大幅短縮
 
 # 4つのモード比較
 
-![Claude Codeモード比較](diagrams-web/diagram_28_claude_code_modes.svg)
+![Claude Codeモード比較](diagrams/diagram_28_claude_code_modes.svg)
 
 - **通常モード:** 毎回確認 (y/n)、最も安全
-- **YOLOモード（Shift+Tab）:** 自動実行、確認時間削減、Git管理推奨
+- **YOLOモード（Shift+Tab）:** 自動実行、確認時間を大幅削減、Git管理済み推奨
 - **プランモード（Shift+Tab×2）:** 計画→確認→実行、大規模タスク向き
 - **dangerously-skip-permissions:** 全確認スキップ（超危険）
 
@@ -690,7 +473,7 @@ build/
 
 # 効率的な指示の出し方
 
-![プロンプトパターン（良い例vs悪い例）](diagrams-web/diagram_30_prompt_patterns.svg)
+![プロンプトパターン（良い例vs悪い例）](diagrams/diagram_30_prompt_patterns.svg)
 
 - **❌ 悪い指示:** 「ログイン機能を作って」
 - **✅ 良い指示:**
@@ -710,13 +493,11 @@ build/
 ## STEP1: 要件定義（10:50-11:30, 40分）
 
 ---
-<!-- _class: two-column -->
-
 
 # STEP1 要件定義とは
 - **目的:** 「何を作るか」を明確化
 - **なぜ最初に要件定義が必要か（Guardrails）**
-  - AIはJagged Intelligence（技術は得意、ビジネス要件は苦手）
+  - AIはJagged Intelligence（技術実装は得意だがビジネス要件の解釈は苦手）
   - Reward Hacking→曖昧な仕様だと手抜き実装
   - 明確な要件＝AIが道を外れない境界線
 - **成果物:**
@@ -734,7 +515,7 @@ build/
 
 **Jagged Intelligence（能力のギザギザ）:**
 - ✅ 得意: コード生成、テスト作成、リファクタリング、技術設計
-- ❌ 苦手: ビジネス要件解釈、優先順位判断、ドメインルール
+- ❌ 苦手: ビジネス要件の解釈、ステークホルダー間の優先順位判断、ドメイン固有ルール
 - 結果: 曖昧な指示では勝手に推測して間違った方向へ
 
 **具体例:**
@@ -770,9 +551,11 @@ build/
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: layout-horizontal-left -->
 
 # 要件の引き出し方（文字起こしアプローチ）
+
+![文字起こし→AI抽出フロー](diagrams/diagram_40_transcript_approach.svg)
 
 ## 🎯 なぜこの手法が強力か
 
@@ -811,7 +594,7 @@ build/
 ## 💡 実践例
 
 **顧客の言葉:**
-「営業が顧客管理したい。スマホ対応希望」
+「営業が顧客管理したい。スマホ対応。Excel同時編集で困ってる」
 
 **AI抽出結果:**
 - Must: 顧客CRUD、モバイル対応
@@ -824,7 +607,7 @@ build/
 
 # MoSCoW 優先順位付け
 
-![MoSCoW優先順位](diagrams-web/diagram_05_moscow.svg)
+![MoSCoW優先順位](diagrams/diagram_05_moscow.svg)
 
 - **Must（必須）:** プロダクト成立に不可欠な機能 → Phase 1 (MVP)
 - **Should（重要）:** あるべきだが、なくても動く → Phase 2
@@ -835,52 +618,11 @@ build/
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: layout-diagram-only -->
 
 # MoSCoW実践例（ToDoアプリ）
 
-## 🚀 Must（Phase 1: MVP）
-**必須機能のみ - これがないと成立しない**
-
-**コア機能:**
-- ✅ タスク追加
-- ✅ タスク完了
-- ✅ タスク削除
-
-**セキュリティ必須:**
-- ✅ ユーザー登録
-- ✅ ログイン
-- ✅ パスワードハッシュ化（bcrypt）
-
-## 📊 Should（Phase 2）
-**重要機能 - あるべきだが、なくても動く**
-
-- カテゴリ分類
-- 優先度設定
-- 期限設定
-- タスク編集
-
-## 🌟 Could（Phase 3）
-**あれば嬉しい - ユーザー体験向上**
-
-- タグ機能
-- 検索機能
-- ダークモード
-- 並び替え
-
-## 🚫 Won't（スコープ外）
-**今回はやらない - 将来的には考える**
-
-- タスク共有
-- チーム機能
-- リマインダー
-- カレンダー連携
-
-## 🎯 効果
-**Mustのみに集中 → 開発期間を大幅短縮**
-- Phase 1: 2週間
-- Phase 2: +1週間
-- Phase 3: +1週間
+![MoSCoW実践例（ToDoアプリ）](diagrams/diagram_47_moscow_example.svg)
 
 ---
 
@@ -888,7 +630,7 @@ build/
 
 # ユーザーストーリーマッピング
 
-![ユーザーストーリーマッピング](diagrams-web/diagram_31_user_story_mapping.svg)
+![ユーザーストーリーマッピング](diagrams/diagram_31_user_story_mapping.svg)
 
 - **フォーマット:** `<誰が> <何をしたい> <なぜ>`
 - **例:** ユーザーとして、タスクを追加したい（忘れないため）
@@ -900,9 +642,11 @@ build/
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: layout-horizontal-left -->
 
 # 非機能要件
+
+![非機能要件チェックリスト](diagrams/diagram_32_nonfunctional_requirements.svg)
 
 ## 🎯 なぜ非機能要件が重要か
 
@@ -943,53 +687,13 @@ build/
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: layout-diagram-only -->
 
 # エラー・エッジケース・制約の洗い出し
 
-## 🚨 なぜ重要か
-**本番障害の多くはエッジケース**
-- AIが最も見落とすポイント
-- 列挙は得意だが、網羅性保証は苦手
-- 明示的な洗い出しが必須
-
-## 📋 3つの観点
-
-**❌ エラーケース**
-- パスワード間違い
-- ネットワークエラー
-- サーバーダウン
-- タイムアウト
-- DB接続失敗
-
-**⚠️ エッジケース**
-- パスワード長0文字
-- パスワード長128文字
-- SQL injection試行
-- XSS攻撃試行
-- 特殊文字入力
-- 同時ログイン
-- セッション期限切れ
-
-**📏 制約条件**
-- 同時接続数上限
-- 対応ブラウザ
-- レスポンス時間
-- データサイズ制限
-- API呼び出し回数
-
-## 💡 AIプロンプト
-```
-「ログイン機能の
-エラー・エッジケース・制約を
-洗い出して」
-```
-
-**効果:** 異常系も網羅 → 本番障害を大幅削減
+![エラー・エッジケース・制約の洗い出し](diagrams/diagram_45_error_edge_constraint.svg)
 
 ---
-<!-- _class: two-column -->
-
 
 # 受け入れ基準（Given-When-Then）
 - **正常系:**
@@ -1018,7 +722,7 @@ build/
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # STEP1のまとめ
 
@@ -1074,11 +778,11 @@ build/
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-diagram-only -->
 
 # STEP1 チェックリスト
 
-![STEP1チェックリスト](diagrams-web/diagram_34_step1_checklist.svg)
+![STEP1チェックリスト](diagrams/diagram_34_step1_checklist.svg)
 
 **必ず確認:**
 - [ ] 要件をAIに質問させて曖昧さを排除した
@@ -1102,8 +806,6 @@ build/
 ## STEP2: 設計ドキュメント作成（11:30-12:00, 30分）
 
 ---
-<!-- _class: two-column -->
-
 
 # STEP2 設計ドキュメントとは
 - **目的:** 「どのように作るか」を明確にする設計図
@@ -1122,19 +824,17 @@ build/
 
 # 設計ドキュメントの構造
 
-![設計ドキュメントの7要素](diagrams-web/diagram_06_spec_structure.svg)
+![設計ドキュメントの7要素](diagrams/diagram_06_spec_structure.svg)
 
-- **1. 技術スタック:** フロント・バック・DB・ライブラリ
+- **1. 技術スタック:** フロント・バック・DB・ライブラリ（選定理由含む）
 - **2. システムアーキテクチャ:** 3層構造、Mermaid図で可視化
-- **3. データベーススキーマ:** テーブル・カラム・制約・INDEX
+- **3. データベーススキーマ:** テーブル定義・カラム・制約・インデックス
 - **4. API仕様:** エンドポイント・メソッド・パラメータ・レスポンス
 - **5. 受入条件（BDD形式）:** Given-When-Then
 - **6. セキュリティ設計:** 認証・認可・入力検証・環境変数管理
 - **7. 技術的決定事項:** ライブラリ選定理由・アーキテクチャ判断
 
 ---
-<!-- _class: two-column -->
-
 
 # Tech Stack Setup
 - **最初に固める理由:** 後から変更すると大幅な手戻り
@@ -1153,7 +853,7 @@ build/
 
 # データベーススキーマ設計
 
-![ER図の例](diagrams-web/diagram_07_er_diagram.svg)
+![ER図の例](diagrams/diagram_07_er_diagram.svg)
 
 - **なぜスキーマ定義が必要か**
   - 後から変更すると影響範囲が非常に大きい
@@ -1165,8 +865,6 @@ build/
 - **AIへの指示:** テーブル構造を明確に文書化
 
 ---
-<!-- _class: two-column -->
-
 
 # API仕様の明確化
 - **なぜAPI仕様が必要か**
@@ -1184,19 +882,19 @@ build/
 
 # Mermaid記法とSVG生成でビジュアル化
 
-![Mermaid vs SVG使い分け](diagrams-web/diagram_41_mermaid_vs_svg.svg)
+![Mermaid vs SVG使い分け](diagrams/diagram_41_mermaid_vs_svg.svg)
 
-- **Mermaid**: テキストで図描画、Git管理可、AI生成、GH/VSC表示
+- **Mermaid**: テキストで図描画、Git管理可、AI自動生成、GitHub/VS Code表示
 - **SVG生成magic word**: 「SVGで書いて」→AI生成→即可視化、記法不要
 - **使い分け**: Mermaid=GitHub用、SVG=即可視化・プレゼン用
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-horizontal-left -->
 
 # ER図が開発をスムーズにする理由
 
-![ER図からコード生成](diagrams-web/diagram_08_er_to_code.svg)
+![ER図からコード生成](diagrams/diagram_08_er_to_code.svg)
 
 - **AIの実装**: CREATE TABLE自動生成、JOIN処理、外部キー、ORMモデル
 - **人間の恩恵**: 全体像一目把握、リレーション検証、正規化問題発見
@@ -1207,15 +905,13 @@ build/
 
 # シーケンス図がAI実装を助ける理由
 
-![シーケンス図の例（ログインフロー）](diagrams-web/diagram_09_sequence_login.svg)
+![シーケンス図の例（ログインフロー）](diagrams/diagram_09_sequence_login.svg)
 
-- **AIの実装**: 処理順序→コードフロー、エラー処理、依存、TX境界
+- **AIの実装**: 処理順序理解→正確コードフロー、エラー処理タイミング、依存関係、トランザクション境界
 - **図なしの問題**: 処理順序推測ミス、ロールバック漏れ
 - **効果**: 複雑処理も正確実装
 
 ---
-<!-- _class: two-column -->
-
 
 # 受け入れ条件の詳細化
 - **なぜ受け入れ条件が必要か**
@@ -1233,66 +929,19 @@ build/
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # STEP2のまとめ
 
-## 📋 設計の7ステップ
-
-**STEP2-1: Tech Stack Setup**
-- 最初に固める、選定理由明記
-
-**STEP2-2: システムアーキテクチャ**
-- Mermaid/SVG図で3層構造可視化
-
-**STEP2-3: データベーススキーマ設計**
-- ER図作成・正規化・インデックス
-
-**STEP2-4: API仕様定義**
-- エンドポイント・パラメータ・レスポンス・エラー
-
-**STEP2-5: 受入条件詳細化**
-- Given-When-Then形式で具体的な値
-
-**STEP2-6: セキュリティ設計**
-- 認証・認可・入力検証・環境変数
-
-**STEP2-7: docs/spec.md 作成**
-- 全てを集約、AIが参照する設計書
-
-## 🎯 なぜこの順序か
-
-**技術スタック確定 → 全体構造 → 詳細設計**
-- 大きな決定から小さな決定へ
-- 手戻りを最小化
-- AIが迷わない設計図
-
-**設計書 = AIのGuardrails:**
-- AIは設計書に従って実装
-- 一貫性のある構造
-- セキュリティ・品質を担保
-
-## 💡 AIへの指示
-
-```
-「docs/spec.md に厳密に従って
-実装してください」
-```
-
-## 📊 効果
-
-✅ AIが一貫性のある実装
-✅ 手戻りなし
-✅ セキュリティ・品質担保
-✅ チーム全体で同じ方向
+![STEP2のまとめ](diagrams/diagram_46_step2_summary.svg)
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-diagram-only -->
 
 # STEP2 チェックリスト
 
-![STEP2チェックリスト](diagrams-web/diagram_35_step2_checklist.svg)
+![STEP2チェックリスト](diagrams/diagram_35_step2_checklist.svg)
 
 **必ず確認:**
 - [ ] Tech Stack確定（フロント・バック・DB・ライブラリ）
@@ -1339,7 +988,6 @@ build/
 **Part 1 終了 - 昼休憩（12:00-13:00）**
 
 **スライド数: 35枚**
-
 ---
 marp: true
 theme: default
@@ -1347,8 +995,8 @@ paginate: true
 style: |
   /* デフォルト：上下レイアウト（図が大きい） */
   section img {
-    max-width: 70%;
-    max-height: 45vh;
+    max-width: 95%;
+    max-height: 60vh;
     display: block;
     margin: 10px auto;
     object-fit: contain;
@@ -1365,12 +1013,12 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-left img {
-    max-width: 90%;
-    max-height: 55vh;
+    max-width: 100%;
+    max-height: 75vh;
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -1384,21 +1032,21 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-right img {
-    max-width: 90%;
-    max-height: 55vh;
+    max-width: 100%;
+    max-height: 75vh;
     margin: 0;
     grid-column: 2;
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 16px;
+    font-size: 22px;
     grid-column: 1;
   }
 
   /* 図のみレイアウト：図を最大化 */
   section.layout-diagram-only img {
-    max-width: 75%;
-    max-height: 60vh;
+    max-width: 98%;
+    max-height: 85vh;
   }
 
   /* 2カラムレイアウト：テキストのみのスライド向け */
@@ -1472,21 +1120,21 @@ style: |
   }
 
   section {
-    font-size: 18px;
-    padding: 30px 50px;
+    font-size: 24px;
+    padding: 40px 60px;
   }
   h1 {
-    font-size: 32px;
-    margin-bottom: 12px;
+    font-size: 44px;
+    margin-bottom: 15px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 36px;
   }
   ul, ol {
-    margin: 6px 0;
+    margin: 8px 0;
   }
   li {
-    margin: 4px 0;
+    margin: 6px 0;
     line-height: 1.4;
   }
 ---
@@ -1500,6 +1148,8 @@ style: |
 ## STEP3: タスク分解（35分）
 
 ---
+
+<!-- _class: two-column -->
 
 # STEP3 タスク分解とは
 
@@ -1578,7 +1228,7 @@ style: |
 
 # Phase分け戦略（Phase 1-4）
 
-![Phase分け戦略](diagrams-web/diagram_10_phase_breakdown.svg)
+![Phase分け戦略](diagrams/diagram_10_phase_breakdown.svg)
 
 - **なぜPhase分けが必要か**
   - 全部一度に作ると依存関係が複雑化→AIが混乱（忘れっぽい）
@@ -1639,11 +1289,11 @@ style: |
 
 # 依存関係の可視化
 
-![タスク依存関係グラフ](diagrams-web/diagram_35_dependency_graph.svg)
+![タスク依存関係グラフ](diagrams/diagram_35_dependency_graph.svg)
 
 - **なぜ依存関係の可視化が必要か**
   - 順序を間違えると手戻りが発生（DB未作成でAPI実装できない）
-  - AIは依存関係の判断が苦手（タスクは得意、順序判断は苦手）
+  - AIは依存関係の判断が苦手（タスク実行は得意だが順序判断は苦手）
 - **並行作業可能なタスク:** フロントとバックを同時進行
 - **順序が必要なタスク:** DB設計→マイグレーション→API実装
 - **AIへの指示:** 「依存関係を明示してタスク一覧を作成して」
@@ -1655,11 +1305,11 @@ style: |
 
 # タスク一覧テンプレート
 
-![タスク一覧テンプレート](diagrams-web/diagram_34_task_list_template.svg)
+![タスク一覧テンプレート](diagrams/diagram_34_task_list_template.svg)
 
 - **必須項目:** Phase・タスク名・所要時間・依存関係・完了条件
 - **なぜテンプレート化が必要か**
-  - 曖昧な計画→AIが勝手に解釈（構造化は得意、自由形式は苦手）
+  - 曖昧な計画→AIが勝手に解釈（構造化タスクは得意だが自由形式は苦手）
   - 明確なフォーマット→AIが一貫した出力
 - **進捗管理:** 一覧表でステータス可視化（未着手・進行中・完了）
 - **チーム共有:** Markdown形式でGit管理、誰でも参照可能
@@ -1676,7 +1326,7 @@ style: |
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # STEP3のまとめ
 
@@ -1723,11 +1373,11 @@ style: |
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-diagram-only -->
 
 # STEP3 チェックリスト
 
-![STEP3チェックリスト](diagrams-web/diagram_37_step3_checklist.svg)
+![STEP3チェックリスト](diagrams/diagram_37_step3_checklist.svg)
 
 **必ず確認:**
 - [ ] タスク一覧をAIに生成させた
@@ -1752,14 +1402,14 @@ style: |
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 実装の3原則（AIの制約に対応）
 
 ### ①小さく作る（Increment）
 - **理由:** AIは忘れっぽいので小刻みに
 - **方法:** 1タスク30分〜2時間で完了
-- **効果:** 常に動作状態維持、早期発見
+- **効果:** 常に動く状態を維持、問題を早期発見
 
 ### ②テスト駆動（TDD/BDD）
 - **理由:** Trust but Verify、AIが自己完結
@@ -1768,12 +1418,12 @@ style: |
 
 ### ③AI自己レビュー必須
 - **理由:** Reward Hacking対策、手抜き検出
-- **方法:** 毎回レビュー指示
+- **方法:** 「このコードをレビューして」と毎回指示
 - **効果:** 多くのバグを自動検出
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # 実装の標準ワークフロー
 
@@ -1823,14 +1473,14 @@ style: |
 
 # TDD/BDD統合ワークフロー
 
-![TDD Red-Green-Refactorサイクル](diagrams-web/diagram_11_tdd_cycle.svg)
+![TDD Red-Green-Refactorサイクル](diagrams/diagram_11_tdd_cycle.svg)
 
 - **なぜTDD/BDDが必要か**
-  - テストなし→AIが作る→手動テスト→エラー→修正（無限ループ）
+  - テストなし→AIが作る→人間が手動テスト→エラー→修正（無限ループ）
   - テストあり→AIが作る→自動テスト→エラー→AI自己修正（自己完結）
 - **Red（失敗するテストを書く）:** テストが仕様を定義
 - **Green（最小実装）:** テストを通す最小コード
-- **Refactor（改善）:** テストが保証するから安心リファクタ
+- **Refactor（改善）:** テストが保証するから安心してリファクタリング
 - **BDD形式（Given-When-Then）:** 人間が読める仕様書になる
 
 ---
@@ -1839,9 +1489,9 @@ style: |
 
 # AIにTDD/BDDで実装させる
 
-![Given-When-Then構造](diagrams-web/diagram_33_given_when_then.svg)
+![Given-When-Then構造](diagrams/diagram_33_given_when_then.svg)
 
-- **プロンプト例:** 「POST /api/register を TDD実装。GWT形式」
+- **プロンプト例:** 「POST /api/register を TDD で実装して。Given-When-Then形式のテストを書き、正常系・異常系をカバー」
 - **AIが自動で行うこと:**
   1. Given-When-Thenテストを先に書く
   2. 実装コードを書く
@@ -1855,7 +1505,7 @@ style: |
 
 # セキュリティベストプラクティス（重要）
 
-![セキュリティベストプラクティス](diagrams-web/diagram_23_security_best_practices.svg)
+![セキュリティベストプラクティス](diagrams/diagram_23_security_best_practices.svg)
 
 - **なぜセキュリティが後回しになるか（Reward Hacking）**
   - AIは「タスク完了」を最優先→セキュリティは二の次
@@ -1940,7 +1590,7 @@ DATABASE_PASSWORD=secure-password
 
 # インクリメンタル開発とは
 
-![インクリメンタル開発タイムライン](diagrams-web/diagram_24_incremental_timeline.svg)
+![インクリメンタル開発タイムライン](diagrams/diagram_24_incremental_timeline.svg)
 
 - **なぜ小さく作るべきか（AIは忘れっぽい対策）**
   - 全部一度に作る→完成まで動かない→問題発見が遅れる
@@ -1948,8 +1598,6 @@ DATABASE_PASSWORD=secure-password
 - **効果:** 進捗が見える、モチベーション維持、リスク低減
 
 ---
-<!-- _class: two-column -->
-
 
 # インクリメンタル実装の実例
 - **Increment 1: 一覧表示**
@@ -1967,13 +1615,13 @@ DATABASE_PASSWORD=secure-password
 
 # AI自己レビュー必須化（重要）
 
-![AI自己レビューフロー](diagrams-web/diagram_25_ai_self_review_flow.svg)
+![AI自己レビューフロー](diagrams/diagram_25_ai_self_review_flow.svg)
 
 - **なぜAI自己レビューが重要か（Trust but Verify）**
   - AIにもエラーあり→自己レビューで多くを検出
   - Reward Hacking→実装後に手抜きチェック
   - Reward Hackingで省略されるため、セキュリティ観点での検証必須
-- 実装後必ず：「レビュー実施。セキュリティ・エラー確認」
+- 実装後必ず：「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」
 - 追加コストほぼゼロで品質大幅向上
 
 ---
@@ -2032,11 +1680,11 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # STEP4 チェックリスト
 
-![STEP4チェックリスト](diagrams-web/diagram_38_step4_checklist.svg)
+![STEP4チェックリスト](diagrams/diagram_38_step4_checklist.svg)
 
 **必ず確認:**
 - [ ] 1タスク30分〜2時間で完了
@@ -2061,13 +1709,11 @@ DATABASE_PASSWORD=secure-password
 ## STEP5: 品質担保＆ドキュメント反映（40分）
 
 ---
-<!-- _class: two-column -->
-
 
 # STEP5 品質担保＆ドキュメント反映とは
 - **なぜ品質担保とドキュメント反映が必要か**
-  - **品質担保:** AIにもエラー→検証必須
-  - **ドキュメント反映:** AIは忘れっぽい→外部メモリ化必須
+  - **品質担保（Trust but Verify）:** AIにもエラーあり→検証なしでは本番投入不可
+  - **ドキュメント反映（Living Documentation）:** AIは忘れっぽい→外部メモリ化が必須
 - **TDDとAI活用の相乗効果**
   - テストがあれば→AIが自分でバグに気づき→自分で修正→自己完結
   - テストなし→人間が手動確認→エラー報告→修正依頼（非効率）
@@ -2149,7 +1795,7 @@ DATABASE_PASSWORD=secure-password
 ---
 
 # AI自己レビュー①一般レビュー
-- **プロンプト:** 「コードレビュー。セキュリティ・エラー・エッジ・ベストプラクティス」
+- **プロンプト:** 「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」
 - **検出:** ロジックエラー、エッジケース見落とし（null、空配列）、命名規則違反
 - **効果:** バグ検出率向上
 
@@ -2173,15 +1819,13 @@ DATABASE_PASSWORD=secure-password
 
 # AI自己レビュー④テストカバレッジ
 
-![テストカバレッジ80%ルール](diagrams-web/diagram_26_test_coverage_80_rule.svg)
+![テストカバレッジ80%ルール](diagrams/diagram_26_test_coverage_80_rule.svg)
 
-- **プロンプト:** 「テストレビュー。エッジ・異常・境界・独立性・GWT」
+- **プロンプト:** 「テストレビュー。エッジケース・異常系・境界値・独立性・Given-When-Thenをチェック」
 - **検出:** テストケース漏れ（null、空文字、MAX値）、異常系不足
 - **効果:** テストカバレッジ向上
 
 ---
-<!-- _class: two-column -->
-
 
 # 自己レビューの実例
 - **Before（AIの初回実装）:**
@@ -2195,9 +1839,9 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: three-column -->
 
-# STEP5のまとめ（1/3）
+# STEP5のまとめ
 
 ## 🎯 品質担保の核心
 
@@ -2225,12 +1869,6 @@ DATABASE_PASSWORD=secure-password
 - Serena: 高速検索
 - Browser DevTools: エラー自動キャプチャ
 
----
-
-<!-- _class: three-column -->
-
-# STEP5のまとめ（2/3）
-
 ## 🔍 AI自己レビュー4種類
 
 **①一般レビュー**
@@ -2243,11 +1881,11 @@ DATABASE_PASSWORD=secure-password
 
 **③パフォーマンス特化**
 - N+1問題・メモリリーク
-- レスポンス大幅改善
+- レスポンス大幅改善（N+1解消など）
 
 **④テストカバレッジ**
 - エッジケース・異常系
-- カバレッジ向上
+- テストカバレッジ向上
 
 ## 🔧 リファクタリング3つの観点
 
@@ -2264,12 +1902,6 @@ DATABASE_PASSWORD=secure-password
 - 車輪の再発明を避ける
 - エッジケーステスト済み
 - セキュリティパッチ自動適用
-
----
-
-<!-- _class: two-column -->
-
-# STEP5のまとめ（3/3）
 
 ## 📚 Living Documentation
 
@@ -2304,17 +1936,19 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: layout-diagram-only -->
 
 # STEP5 チェックリスト
+
+![STEP5チェックリスト](diagrams/diagram_39_step5_checklist.svg)
 
 **品質担保:**
 - [ ] ユニットテストカバレッジ80%以上
 - [ ] E2Eテスト（Playwright）実施
 - [ ] ビジュアルリグレッションテスト実施
 - [ ] AI一般レビュー実施
-- [ ] AIセキュリティレビュー（OWASP）
-- [ ] AIパフォーマンスレビュー（N+1）
+- [ ] AIセキュリティレビュー実施（OWASP Top 10）
+- [ ] AIパフォーマンスレビュー実施（N+1チェック）
 - [ ] AIテストカバレッジレビュー実施
 - [ ] 全テスト通過確認
 
@@ -2324,7 +1958,7 @@ DATABASE_PASSWORD=secure-password
 - [ ] ライブラリ活用検討
 - [ ] architecture.md 更新（システム全体像）
 - [ ] README.md 更新（セットアップ・使い方）
-- [ ] CLAUDE.md 更新（パターン・知見）
+- [ ] CLAUDE.md 更新（成功パターン・ハマった点）
 - [ ] 頻繁にコミット実施
 
 **完了:**
@@ -2346,7 +1980,6 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: two-column -->
 
 ### Living Documentation（AIの外部メモリ）
 
@@ -2384,25 +2017,24 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: card-grid -->
 
 # Part 2のキーポイント
 
 ### ①計画の可視化（STEP3）
-タスク分解で思考言語化、軌道修正
+タスク分解でAIの思考を言語化、早期軌道修正
 
 ### ②セキュリティファースト（STEP4）
-BCrypt・環境変数・@Valid明示必須
+BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ### ③TDDでAI自己完結（STEP4-5）
-テストでAI自己デバッグ・修正
+テストがあれば、AIが自分でデバッグ・修正
 
 ### ④AI自己レビュー必須（STEP5）
 観点別レビューで検出率大幅向上
 
 ### ⑤リファクタリング＆ドキュメント（STEP6）
-技術的負債早期解消、ドキュメント蓄積
-
+技術的負債の早期解消、Living Documentationで知見蓄積
 ---
 marp: true
 theme: default
@@ -2410,8 +2042,8 @@ paginate: true
 style: |
   /* デフォルト：上下レイアウト（図が大きい） */
   section img {
-    max-width: 70%;
-    max-height: 45vh;
+    max-width: 95%;
+    max-height: 60vh;
     display: block;
     margin: 10px auto;
     object-fit: contain;
@@ -2428,12 +2060,12 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-left img {
-    max-width: 90%;
-    max-height: 55vh;
+    max-width: 100%;
+    max-height: 75vh;
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -2447,21 +2079,21 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-right img {
-    max-width: 90%;
-    max-height: 55vh;
+    max-width: 100%;
+    max-height: 75vh;
     margin: 0;
     grid-column: 2;
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 16px;
+    font-size: 22px;
     grid-column: 1;
   }
 
   /* 図のみレイアウト：図を最大化 */
   section.layout-diagram-only img {
-    max-width: 75%;
-    max-height: 60vh;
+    max-width: 98%;
+    max-height: 85vh;
   }
 
   /* 2カラムレイアウト：テキストのみのスライド向け */
@@ -2535,21 +2167,21 @@ style: |
   }
 
   section {
-    font-size: 18px;
-    padding: 30px 50px;
+    font-size: 24px;
+    padding: 40px 60px;
   }
   h1 {
-    font-size: 32px;
-    margin-bottom: 12px;
+    font-size: 44px;
+    margin-bottom: 15px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 36px;
   }
   ul, ol {
-    margin: 6px 0;
+    margin: 8px 0;
   }
   li {
-    margin: 4px 0;
+    margin: 6px 0;
     line-height: 1.4;
   }
 ---
@@ -2568,7 +2200,7 @@ style: |
 
 # 1日目の振り返り
 
-![5-STEPフロー全体](diagrams-web/diagram_03_5step_flow.svg)
+![5-STEPフロー全体](diagrams/diagram_03_5step_flow.svg)
 
 ## 🎯 5-STEPフロー全体の確認
 
@@ -2638,46 +2270,11 @@ style: |
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: layout-diagram-only -->
 
 # 1日目のキーメッセージ
 
-### ①曖昧さの徹底排除（Guardrails）
-**Jagged Intelligence対策**
-- AIの弱点を補う
-- STEP1: 要件定義で「何を作るか」明確化
-- STEP2: 設計で「どう作るか」明確化
-- 受け入れ基準でゴール設定
-
-### ②AIの思考可視化（タスク分解）
-**AIは忘れっぽい対策**
-- STEP3: タスク分解で計画作成
-- AIの思考を言語化
-- 全体像を把握
-- 実装前に軌道修正可能
-
-### ③TDDによる自己完結（Trust but Verify自動化）
-**AIが自己完結**
-- STEP4-5: TDD/BDD実装
-- テストがあればAIが自己完結
-- テスト→エラー検知→修正を自動化
-- 人間の負担が劇的に軽減
-
-### ④リファクタリング＆知見の蓄積（Living Documentation）
-**AIの外部メモリ**
-- STEP6: ドキュメント化
-- AIは忘れっぽい→ドキュメント必須
-- 次のセッションで参照可能
-- 同じ間違いを繰り返さない
-
----
-
-## 🚀 これら4つを実践することで、AIとの協業効率が飛躍的に向上
-
-✅ 開発期間短縮
-✅ 品質の安定化
-✅ 手戻りゼロ
-✅ 技術的負債の早期解消
+![1日目のキーメッセージ](diagrams/diagram_48_day1_key_messages.svg)
 
 ---
 
@@ -2735,6 +2332,8 @@ style: |
 
 ---
 
+<!-- _class: two-column -->
+
 # 演習の目的と課題
 
 ### 演習の目的
@@ -2782,9 +2381,10 @@ style: |
 - テスト実行・カバレッジ確認
 - リファクタリング（重複削減、パターン適用）
 - ドキュメント生成（architecture.md、README.md、CLAUDE.md）
-- ゴール: TbV・Living Doc
+- ゴール: Trust but Verify自動化、Living Documentation
 
 ---
+
 <!-- _class: two-column -->
 
 ### 演習のゴール
@@ -2870,7 +2470,7 @@ style: |
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # 演習成功のチェックリスト②
 
@@ -2886,12 +2486,12 @@ style: |
 **STEP5: 品質担保＆ドキュメント反映**
 - ✅ カバレッジ80%以上確認
 - ✅ E2Eテスト実施
-- ✅ AI観点別レビュー（4観点）
+- ✅ AI観点別レビュー（一般・セキュリティ・パフォーマンス・テスト）
 - ✅ 冗長・重複コード削除
 - ✅ リファクタリング実施
 - ✅ architecture.md生成
 - ✅ README.md作成
-- ✅ CLAUDE.md更新（パターン・知見）
+- ✅ CLAUDE.md更新（成功パターン・ハマった点）
 
 ---
 
@@ -2979,25 +2579,22 @@ style: |
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 1日目全体の振り返り
 
 ### 🌅 午前（Part 1）で学んだこと
 **基礎とSTEP1-2**
-- AI活用の3原則
-  （制約理解・検証・ガードレール）
+- AI活用の3原則（Jagged Intelligence、Trust but Verify、Guardrails）
 - Claude Codeの使い方（3つのモード）
 - STEP1: 要件定義（曖昧さ排除）
-- STEP2: 設計ドキュメント
+- STEP2: 設計ドキュメント（Spec-Driven）
 
 ### 🌤️ 午後前半（Part 2）で学んだこと
 **STEP3-5実践**
 - STEP3: タスク分解（AI思考言語化）
-- STEP4: 実装
-  （小さく・TDD・自己レビュー）
-- STEP5: 品質担保＆ドキュメント
-  （TDD・自己レビュー・Living Doc）
+- STEP4: 実装（小さく・TDD・AI自己レビュー）
+- STEP5: 品質担保＆ドキュメント反映（TDDとAI相乗効果、Living Documentation）
 
 ### 🌆 午後後半（Part 3）で体験したこと
 **5-STEPフロー実践**
@@ -3059,7 +2656,6 @@ style: |
 **レベル3: 習慣化**
 - AI自己レビューを習慣化してみる
 - 成功したプロンプトをCLAUDE.mdに記録
-
 ---
 marp: true
 theme: default
@@ -3067,8 +2663,8 @@ paginate: true
 style: |
   /* デフォルト：上下レイアウト（図が大きい） */
   section img {
-    max-width: 70%;
-    max-height: 45vh;
+    max-width: 95%;
+    max-height: 60vh;
     display: block;
     margin: 10px auto;
     object-fit: contain;
@@ -3085,12 +2681,12 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-left img {
-    max-width: 90%;
-    max-height: 55vh;
+    max-width: 100%;
+    max-height: 75vh;
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -3104,21 +2700,21 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-right img {
-    max-width: 90%;
-    max-height: 55vh;
+    max-width: 100%;
+    max-height: 75vh;
     margin: 0;
     grid-column: 2;
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 16px;
+    font-size: 22px;
     grid-column: 1;
   }
 
   /* 図のみレイアウト：図を最大化 */
   section.layout-diagram-only img {
-    max-width: 75%;
-    max-height: 60vh;
+    max-width: 98%;
+    max-height: 85vh;
   }
 
   /* 2カラムレイアウト：テキストのみのスライド向け */
@@ -3192,21 +2788,21 @@ style: |
   }
 
   section {
-    font-size: 18px;
-    padding: 30px 50px;
+    font-size: 24px;
+    padding: 40px 60px;
   }
   h1 {
-    font-size: 32px;
-    margin-bottom: 12px;
+    font-size: 44px;
+    margin-bottom: 15px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 36px;
   }
   ul, ol {
-    margin: 6px 0;
+    margin: 8px 0;
   }
   li {
-    margin: 4px 0;
+    margin: 6px 0;
     line-height: 1.4;
   }
 ---
@@ -3226,7 +2822,7 @@ style: |
 - STEP2: 設計ドキュメント（Guardrails、AIは忘れっぽい対策）
 - STEP3: タスク分解（AIの思考を言語化、全体像把握）
 - STEP4: 実装（小さく作る・TDD・AI自己レビュー必須）
-- STEP5: 品質担保＆ドキュメント反映（TbV・Living Doc＝外部メモリ）
+- STEP5: 品質担保＆ドキュメント反映（Trust but Verify自動化、Living Documentation＝外部メモリ）
 
 ---
 
@@ -3261,7 +2857,7 @@ style: |
 
 ### リバースエンジニアリングとは
 
-![リバースエンジニアリングのプロセス](diagrams-web/diagram_12_reverse_engineering.svg)
+![リバースエンジニアリングのプロセス](diagrams/diagram_12_reverse_engineering.svg)
 
 - **既存コードから仕様を読み解く技術**
 - **なぜ必要か:** AIは過去実装を記憶できない、仕様書なしで推測実装→デグレ
@@ -3269,7 +2865,6 @@ style: |
 - **効果:** 仕様正確把握、デグレ防止、適切な機能追加
 
 ---
-<!-- _class: two-column -->
 
 ### リバースエンジニアリングの第一歩
 - **ソースコード読み込み**
@@ -3293,7 +2888,7 @@ style: |
 
 ### AIの制約を理解する（Jagged Intelligence）
 
-![Jagged Intelligence実例](diagrams-web/diagram_38_jagged_intelligence_examples.svg)
+![Jagged Intelligence実例](diagrams/diagram_38_jagged_intelligence_examples.svg)
 
 - **AIの得意・不得意を理解**
   - 得意: コード生成、パターン認識、テスト生成
@@ -3308,7 +2903,7 @@ style: |
 
 ### ドキュメント自動生成（Guardrails構築）
 
-![文字起こしアプローチ（トライアル知識の共有）](diagrams-web/diagram_40_transcript_approach.svg)
+![文字起こしアプローチ（トライアル知識の共有）](diagrams/diagram_40_transcript_approach.svg)
 
 - **APIドキュメント（OpenAPI）:** 仕様明確化、既存API整合性保証
 - **DB定義書:** 正確なSQL生成、デグレ防止
@@ -3317,7 +2912,6 @@ style: |
 - **自動生成:** 「OpenAPI仕様書を生成」「テーブル定義書を生成」
 
 ---
-<!-- _class: two-column -->
 
 ### 仕様書がない場合の対処法
 - **問題:** ドキュメントがない既存システムへの機能追加
@@ -3335,11 +2929,11 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: layout-horizontal-left -->
 
 ### リバースエンジニアリング → 網羅的テスト生成（重要）
 
-![リバースエンジニアリングから網羅的テスト生成](diagrams-web/diagram_44_reverse_to_comprehensive_test.svg)
+![リバースエンジニアリングから網羅的テスト生成](diagrams/diagram_44_reverse_to_comprehensive_test.svg)
 
 - **❌ 従来のアプローチ（コード追認のみ）**
   - 既存コード→直接テスト生成→実装済み機能のみカバー
@@ -3366,7 +2960,7 @@ style: |
 
 ### 既存機能のフィットギャップ分析
 
-![フィットギャップ分析](diagrams-web/diagram_18_fit_gap_analysis.svg)
+![フィットギャップ分析](diagrams/diagram_18_fit_gap_analysis.svg)
 
 - **目的:** 既存vs新機能比較、追加開発範囲明確化
 - **分析項目:**
@@ -3384,7 +2978,7 @@ style: |
 
 ### 影響範囲調査の手法
 
-![影響範囲調査の可視化](diagrams-web/diagram_13_impact_analysis.svg)
+![影響範囲調査の可視化](diagrams/diagram_13_impact_analysis.svg)
 
 - **なぜ必要:** AIは局所変更のみ見る→全体影響見落とし→デグレ
 - **調査項目:**
@@ -3404,7 +2998,6 @@ style: |
 ## STEP3: テストシナリオ一覧作成（30分）
 
 ---
-<!-- _class: two-column -->
 
 ### テストシナリオとは
 - **「何をテストすべきか」の一覧（Guardrails）**
@@ -3422,7 +3015,6 @@ style: |
 ---
 
 ---
-<!-- _class: two-column -->
 
 ### テストシナリオとテストコードの違い
 - **テストシナリオ：企画書（What）**
@@ -3445,7 +3037,7 @@ style: |
 
 ### テストシナリオ → テストコードの順序
 
-![テストシナリオからテストコードへの流れ](diagrams-web/diagram_14_scenario_to_code.svg)
+![テストシナリオからテストコードへの流れ](diagrams/diagram_14_scenario_to_code.svg)
 
 - **テストシナリオを先に作成（Guardrails構築）**
   - 全体像を把握→AIは忘れっぽい対策
@@ -3463,7 +3055,7 @@ style: |
 
 ### デグレ防止の重要性
 
-![Reward Hacking実例](diagrams-web/diagram_39_reward_hacking_examples.svg)
+![Reward Hacking実例](diagrams/diagram_39_reward_hacking_examples.svg)
 
 - **既存機能が壊れていないことを保証（Trust but Verify）**
 - **なぜデグレ:** AI忘れっぽい→既存仕様忘却、全体影響判断不可、新機能優先で既存軽視
@@ -3479,7 +3071,7 @@ style: |
 
 ### テストシナリオの分類
 
-![テストシナリオの4分類](diagrams-web/diagram_15_test_classification.svg)
+![テストシナリオの4分類](diagrams/diagram_15_test_classification.svg)
 
 - **正常系（Happy Path）:** 想定入力→期待結果（最重要、最頻使用）
 - **異常系（Error Handling）:** 不正入力→エラー処理確認（本番障害多発箇所）
@@ -3489,7 +3081,7 @@ style: |
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # テストシナリオ作成の実例
 
@@ -3506,7 +3098,7 @@ style: |
 ### ③デグレ防止（連携確認）
 - **目的:** 既存と新機能の連携確認
 - **対象:** インターフェース、データ整合性
-- **例:** ユーザーとパスワード連携
+- **例:** ユーザー管理とパスワードリセット連携
 
 ---
 
@@ -3545,6 +3137,8 @@ style: |
 
 ---
 
+<!-- _class: two-column -->
+
 # テストシナリオからテストコードへ
 
 ### なぜシナリオから始める？
@@ -3564,7 +3158,6 @@ style: |
 漏れなく実装、品質担保、保守性向上
 
 ---
-<!-- _class: two-column -->
 
 ### テストコードの構造（Given-When-Then）
 - **なぜGiven-When-Then形式が重要か**
@@ -3577,7 +3170,6 @@ style: |
   - Then: 期待する結果（AIがアサーション生成）
 
 ---
-<!-- _class: two-column -->
 
 ### テストカバレッジの考え方（80%以上）
 - **なぜ80%以上が目標か**
@@ -3591,7 +3183,6 @@ style: |
 - リファクタリング時の安全性確保、デグレ防止の証拠
 
 ---
-<!-- _class: two-column -->
 
 ### AIによるテストコード自動生成
 - **テストシナリオがあることの重要性（Guardrails）**
@@ -3605,7 +3196,6 @@ style: |
   - テストシナリオの作成（全体像の把握）
   - 生成されたテストコードのレビュー
   - 不足しているケースの追加指示
-
 ---
 marp: true
 theme: default
@@ -3613,8 +3203,8 @@ paginate: true
 style: |
   /* デフォルト：上下レイアウト（図が大きい） */
   section img {
-    max-width: 70%;
-    max-height: 45vh;
+    max-width: 95%;
+    max-height: 60vh;
     display: block;
     margin: 10px auto;
     object-fit: contain;
@@ -3631,12 +3221,12 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-left img {
-    max-width: 90%;
-    max-height: 55vh;
+    max-width: 100%;
+    max-height: 75vh;
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -3650,21 +3240,21 @@ style: |
     grid-column: 1 / -1;
   }
   section.layout-horizontal-right img {
-    max-width: 90%;
-    max-height: 55vh;
+    max-width: 100%;
+    max-height: 75vh;
     margin: 0;
     grid-column: 2;
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 16px;
+    font-size: 22px;
     grid-column: 1;
   }
 
   /* 図のみレイアウト：図を最大化 */
   section.layout-diagram-only img {
-    max-width: 75%;
-    max-height: 60vh;
+    max-width: 98%;
+    max-height: 85vh;
   }
 
   /* 2カラムレイアウト：テキストのみのスライド向け */
@@ -3738,21 +3328,21 @@ style: |
   }
 
   section {
-    font-size: 18px;
-    padding: 30px 50px;
+    font-size: 24px;
+    padding: 40px 60px;
   }
   h1 {
-    font-size: 32px;
-    margin-bottom: 12px;
+    font-size: 44px;
+    margin-bottom: 15px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 36px;
   }
   ul, ol {
-    margin: 6px 0;
+    margin: 8px 0;
   }
   li {
-    margin: 4px 0;
+    margin: 6px 0;
     line-height: 1.4;
   }
 ---
@@ -3767,25 +3357,25 @@ style: |
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 3つの演習課題から選択
 
 ### ①マスター追加（商品カテゴリマスタのCRUD）
-- マスタテーブル追加
-- CRUD実装（全レイヤー）
+- 新しいマスタテーブル追加（CREATE TABLE）
+- CRUD機能実装（Controller、Service、Repository、Entity、View）
 - 既存マスタとの関連付け（外部キー）
 - **難易度: 中**（デグレリスク低）
 
 ### ②項目追加（顧客に電話番号カラム追加）
-- カラム追加（ALTER TABLE）
-- 関連画面・API修正（全CRUD）
-- バリデーション追加
+- 既存テーブルへのカラム追加（ALTER TABLE）
+- 関連画面・API修正（登録、更新、一覧、詳細）
+- バリデーション追加（電話番号形式チェック）
 - **難易度: 高**（影響大、デグレリスク高）
 
 ### ③検索条件追加（日付範囲指定検索）
 - 既存検索への条件追加（WHERE句拡張）
-- UI・API・SQL修正
+- UI・API・SQL修正（日付ピッカー、パラメータ、クエリ）
 - 境界値処理（開始日・終了日チェック）
 - **難易度: 中**（既存検索への影響あり）
 
@@ -3797,7 +3387,7 @@ style: |
 
 ### 演習の進め方（ワークフロー）
 
-![演習ワークフロー](diagrams-web/diagram_17_workshop_workflow.svg)
+![演習ワークフロー](diagrams/diagram_17_workshop_workflow.svg)
 
 **保守開発の4ステップワークフロー:**
 - **STEP1: リバースエンジニアリング（30分）** 仕様把握、ドキュメント自動生成
@@ -3841,17 +3431,20 @@ style: |
 
 ---
 
+<!-- _class: three-column -->
+
 ### STEP1: リバースエンジニアリング（30分）
 
 #### 既存コードから仕様を読み解く
 - **AI指示:** 「内部仕様書作成」「要件定義書作成」
-- **出力:** 技術・構成・仕様
-- **保存先:** docs/内
+- **出力:** 技術スタック、アーキテクチャ、DB/API仕様
+- **保存先:** docs/architecture.md、requirements.md
 - **効果:** 全体像把握、整合性保証
 
 ---
 
 ---
+
 <!-- _class: two-column -->
 
 ### STEP2: フィットギャップ分析＆影響範囲調査（20分）
@@ -3880,7 +3473,6 @@ style: |
 ### STEP3: テストシナリオ一覧作成（30分）
 
 ---
-<!-- _class: two-column -->
 
 #### 既存機能のテストシナリオ作成
 - **目的:** 既存機能が壊れていないことを保証（デグレ防止）
@@ -3895,6 +3487,8 @@ style: |
 - **効果:** デグレ防止、安心して変更可能
 
 ---
+
+<!-- _class: two-column -->
 
 #### 新機能のテストシナリオ作成
 
@@ -3920,7 +3514,7 @@ style: |
 
 #### デグレ防止のテストシナリオ
 
-![デグレ防止の3層構造](diagrams-web/diagram_16_regression_prevention.svg)
+![デグレ防止の3層構造](diagrams/diagram_16_regression_prevention.svg)
 
 - **目的:** 既存と新機能の連携確認
 - **対象:** 既存機能動作確認、インターフェース、データ整合性
@@ -3934,7 +3528,7 @@ style: |
 
 #### デグレ発生メカニズムとTDDによる予防
 
-![デグレ発生メカニズムとTDD予防](diagrams-web/diagram_42_regression_mechanism.svg)
+![デグレ発生メカニズムとTDD予防](diagrams/diagram_42_regression_mechanism.svg)
 
 - **デグレが起きる3つの原因**
   - AIは忘れっぽい→既存仕様を忘れる
@@ -3960,12 +3554,12 @@ style: |
 #### テストコード実装（30分）
 
 **AIへの指示:**
-- 「シナリオからJUnitコード生成」
-- 「Given-When-ThenでMockito使用」
+- 「このテストシナリオ一覧に基づいて、JUnitテストコードを生成して」
+- 「Given-When-Then形式で、Mockitoを使ってモックを作成して」
 
 **生成されるテストコード:**
 - シナリオ1つ→1テストメソッド
-- Given: @BeforeEach、データ準備
+- Given（前提条件）: @BeforeEach、テストデータ準備
 - When（実行）: テスト対象メソッド呼び出し
 - Then（検証）: assertEquals、assertThrows
 
@@ -4007,6 +3601,8 @@ style: |
 
 ---
 
+<!-- _class: two-column -->
+
 #### テスト実行・デバッグ
 
 **全テスト実行**
@@ -4032,7 +3628,7 @@ style: |
 
 #### ドキュメント反映
 
-![ドキュメント自動生成Before/After](diagrams-web/diagram_43_doc_automation_before_after.svg)
+![ドキュメント自動生成Before/After](diagrams/diagram_43_doc_automation_before_after.svg)
 
 - **architecture.md更新:** テーブル、API、画面記録
   - AI指示: 「変更内容をarchitecture.mdに反映して」
@@ -4094,13 +3690,13 @@ style: |
 
 # 2日間の総まとめ
 
-![2日間の学習構造](diagrams-web/diagram_20_2day_summary.svg)
+![2日間の学習構造](diagrams/diagram_20_2day_summary.svg)
 
 ### 1日目：新規開発の5-STEP
 - STEP1-2: 要件・設計（Guardrails、曖昧さ排除）
 - STEP3: タスク分解（AI思考言語化）
 - STEP4: 実装（TDD、AI自己レビュー）
-- STEP5: 品質担保＆ドキュメント反映（TbV・Living Documentation）
+- STEP5: 品質担保＆ドキュメント反映（Trust but Verify、Living Documentation）
 
 ### 2日目：保守開発の4ステップ
 1. リバースエンジニアリング（既存仕様読解）
@@ -4111,6 +3707,7 @@ style: |
 ---
 
 ---
+
 <!-- _class: two-column -->
 
 ### 実務での活用ポイント
@@ -4143,7 +3740,7 @@ style: |
 
 ### よくある失敗と対策
 
-![よくある失敗パターンと対策](diagrams-web/diagram_19_common_failures.svg)
+![よくある失敗パターンと対策](diagrams/diagram_19_common_failures.svg)
 
 #### ①いきなりコード
 - 失敗: STEP1-2スキップ→何度も作り直し
@@ -4199,7 +3796,7 @@ style: |
 
 ### 今後の学習ロードマップ
 
-![学習ロードマップ](diagrams-web/diagram_21_learning_roadmap.svg)
+![学習ロードマップ](diagrams/diagram_21_learning_roadmap.svg)
 
 #### ステップ1: 小プロジェクト3つ
 - TODO/メモ/簡易ECなど、5-STEP実践、TDD習慣化

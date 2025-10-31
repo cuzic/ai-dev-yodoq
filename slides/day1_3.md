@@ -348,6 +348,8 @@ style: |
 
 ---
 
+<!-- _class: two-column -->
+
 ### 演習のゴール
 - **5-STEPの流れを体験する**
 - **AIとの対話方法を習得する**
@@ -371,7 +373,7 @@ style: |
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # つまずきポイントと対処法
 
@@ -409,7 +411,7 @@ style: |
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # 演習成功のチェックリスト①
 
@@ -431,7 +433,7 @@ style: |
 
 ---
 
-<!-- _class: three-column -->
+<!-- _class: two-column -->
 
 # 演習成功のチェックリスト②
 
@@ -540,7 +542,7 @@ style: |
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 1日目全体の振り返り
 
@@ -575,7 +577,7 @@ style: |
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: two-column -->
 
 ## 2日目への準備
 
