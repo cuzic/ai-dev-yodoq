@@ -1,0 +1,59 @@
+[tools]
+python = "3.12"
+node = "22"
+
+[tasks.install]
+description = "Install Python dependencies with uv"
+run = "uv pip install python-pptx"
+
+[tasks.lint]
+description = "Lint Python code with ruff"
+run = "ruff check *.py"
+
+[tasks.format]
+description = "Format Python code with ruff"
+run = "ruff format *.py"
+
+[tasks.typecheck]
+description = "Type check with pyright"
+run = "pyright *.py"
+
+[tasks.test]
+description = "Run unit tests"
+run = "python test_build.py"
+
+[tasks.check]
+description = "Run all checks (lint, format, typecheck)"
+depends = ["lint", "typecheck"]
+
+[tasks.build]
+description = "Build PPTX with SVG support"
+run = "python build_pptx.py"
+
+[tasks.build-html]
+description = "Build HTML slides for GitHub Pages"
+run = """
+npx -y @marp-team/marp-cli@latest all_slides.md --html --allow-local-files -o index.html
+cp index.html ../docs/
+echo "✓ HTML slides generated: docs/index.html"
+"""
+
+[tasks.deploy-preview]
+description = "Build HTML and preview locally"
+run = """
+npx -y @marp-team/marp-cli@latest all_slides.md --html --allow-local-files -o index.html
+python3 -m http.server 8000
+"""
+
+[tasks.clean]
+description = "Clean generated files"
+run = """
+rm -f all_slides.md
+rm -f AI_Development_Training_2Days*.pptx
+rm -f index.html
+rm -rf temp_pptx_extract temp_pptx_working
+rm -f marp.log
+"""
+
+[env]
+CHROME_PATH = "{{env.HOME}}/.cache/ms-playwright/chromium-1194/chrome-linux/chrome"
