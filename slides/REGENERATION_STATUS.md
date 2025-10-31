@@ -1,13 +1,18 @@
 # SVG Regeneration Status
 
-## Progress: 5/44 Complete (11%)
+## Progress: 10/44 Complete (23%)
 
-### ✅ Completed (5)
+### ✅ Completed (10)
 - diagram_01_ai_principles.svg - 3 principles in boxes
 - diagram_02_role_change.svg - Before/After comparison
 - diagram_03_5step_flow.svg - Complete 5-step flow with details
 - diagram_04_ai_memory.svg - Problem/Solution comparison
 - diagram_05_moscow.svg - Priority levels
+- diagram_06_spec_structure.svg - Document structure tree
+- diagram_07_er_diagram.svg - Entity relationship example
+- diagram_08_er_to_code.svg - ER to code flow
+- diagram_09_sequence_login.svg - Login sequence diagram
+- diagram_10_phase_breakdown.svg - 4-phase task breakdown
 
 ### 🔄 In Progress
 

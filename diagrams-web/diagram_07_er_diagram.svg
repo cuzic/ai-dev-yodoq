@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #333; text-anchor: middle; }
+      .table-name { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
+      .field { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #333; }
+      .pk { fill: #FFD700; }
+      .fk { fill: #00AFF0; }
+      .relation { stroke: #00146E; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+  
+  <rect width="800" height="500" fill="#FFFFFF"/>
+  <text x="400" y="35" class="title">ER図の例（ユーザー管理）</text>
+  
+  <!-- Users table -->
+  <g id="users-table">
+    <rect x="100" y="100" width="200" height="35" fill="#00146E" rx="5"/>
+    <text x="200" y="122" class="table-name">Users</text>
+    
+    <rect x="100" y="135" width="200" height="130" fill="#FFFFFF" stroke="#00146E" stroke-width="2" rx="5"/>
+    <text x="110" y="155" class="field">🔑 id: integer (PK)</text>
+    <text x="110" y="180" class="field">📧 email: string</text>
+    <text x="110" y="205" class="field">👤 name: string</text>
+    <text x="110" y="230" class="field">🔒 password_hash: string</text>
+    <text x="110" y="255" class="field">📅 created_at: datetime</text>
+  </g>
+  
+  <!-- Posts table -->
+  <g id="posts-table">
+    <rect x="500" y="100" width="200" height="35" fill="#00146E" rx="5"/>
+    <text x="600" y="122" class="table-name">Posts</text>
+    
+    <rect x="500" y="135" width="200" height="155" fill="#FFFFFF" stroke="#00146E" stroke-width="2" rx="5"/>
+    <text x="510" y="155" class="field">🔑 id: integer (PK)</text>
+    <text x="510" y="180" class="field">🔗 user_id: integer (FK)</text>
+    <text x="510" y="205" class="field">📝 title: string</text>
+    <text x="510" y="230" class="field">📄 content: text</text>
+    <text x="510" y="255" class="field">🔓 is_published: boolean</text>
+    <text x="510" y="280" class="field">📅 created_at: datetime</text>
+  </g>
+  
+  <!-- Relationship -->
+  <path d="M 300 165 L 500 165" class="relation" marker-end="url(#arrowhead)"/>
+  <text x="400" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; text-anchor: middle;">1:N</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00146E"/>
+    </marker>
+  </defs>
+  
+  <!-- Comments table -->
+  <g id="comments-table">
+    <rect x="500" y="320" width="200" height="35" fill="#00146E" rx="5"/>
+    <text x="600" y="342" class="table-name">Comments</text>
+    
+    <rect x="500" y="355" width="200" height="130" fill="#FFFFFF" stroke="#00146E" stroke-width="2" rx="5"/>
+    <text x="510" y="375" class="field">🔑 id: integer (PK)</text>
+    <text x="510" y="400" class="field">🔗 post_id: integer (FK)</text>
+    <text x="510" y="425" class="field">🔗 user_id: integer (FK)</text>
+    <text x="510" y="450" class="field">💬 content: text</text>
+    <text x="510" y="475" class="field">📅 created_at: datetime</text>
+  </g>
+  
+  <!-- Post-Comment relationship -->
+  <path d="M 600 290 L 600 320" class="relation" marker-end="url(#arrowhead)"/>
+  <text x="615" y="310" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">1:N</text>
+  
+  <!-- User-Comment relationship -->
+  <path d="M 200 265 Q 200 420 500 420" class="relation" marker-end="url(#arrowhead)"/>
+  <text x="300" y="380" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; text-anchor: middle;">1:N</text>
+</svg>
