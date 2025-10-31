@@ -45,6 +45,30 @@ npx -y @marp-team/marp-cli@latest all_slides.md --html --allow-local-files -o in
 python3 -m http.server 8000
 """
 
+[tasks.publish]
+description = "Build HTML, commit, and push to GitHub"
+run = """
+set -e
+echo "📦 Building HTML slides..."
+npx -y @marp-team/marp-cli@latest all_slides.md --html --allow-local-files -o index.html
+cp index.html ../docs/
+echo "✓ HTML slides generated"
+
+echo "📝 Committing changes..."
+cd ..
+git add docs/index.html slides/all_slides.md
+git commit -m "docs: Update HTML slides
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>" || echo "⚠ No changes to commit"
+
+echo "🚀 Pushing to GitHub..."
+git push
+
+echo "✅ Published! View at: https://cuzic.github.io/ai-dev-yodoq/"
+"""
+
 [tasks.clean]
 description = "Clean generated files"
 run = """
