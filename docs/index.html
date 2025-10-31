@@ -923,7 +923,7 @@ li {
 <h1 id="ai%E6%B4%BB%E7%94%A8%E3%81%AE3%E5%8E%9F%E5%89%87">AI活用の3原則</h1>
 <p><img src="diagrams-web/diagram_01_ai_principles.svg" alt="AI活用の3原則" /></p>
 <ul>
-<li><strong>Jagged Intelligence</strong>: 得意（コード生成・テスト・アーキテクチャ設計）、苦手（ビジネス要件の解釈・トレードオフ判断）</li>
+<li><strong>Jagged Intelligence</strong>: 得意:コード・テスト、苦手:要件・判断</li>
 <li><strong>Trust but Verify</strong>: AIにもエラーあり、AI自己レビューで品質向上</li>
 <li><strong>Guardrails</strong>: ドキュメント駆動、受入条件で手戻り防止</li>
 </ul>
@@ -1223,7 +1223,7 @@ li {
 <h1 id="vibe-coding-vs-production-engineering">Vibe Coding vs Production Engineering</h1>
 <p><img src="diagrams-web/diagram_22_vibe_vs_production.svg" alt="3つのアプローチ比較" /></p>
 <ul>
-<li><strong>Vibe Coding</strong>: 速い（30分〜1時間）、品質バラバラ、プロトタイプ向き</li>
+<li><strong>Vibe Coding</strong>: 速い（30分〜1時間）、品質不安定、プロトタイプ向き</li>
 <li><strong>Production Engineering</strong>: 構造化、品質保証、本番向き</li>
 <li><strong>Vibe Coding with Guardrails</strong>: 速さと品質両立、設計書で導く</li>
 </ul>
@@ -1829,7 +1829,7 @@ li {
 <li><strong>STEP2: 設計</strong> - どう作るか定義（AI外部メモリ）</li>
 <li><strong>STEP3: タスク分解</strong> - 全体像を小さく分割（忘れっぽさ対策）</li>
 <li><strong>STEP4: 実装</strong> - 小さく作る・TDD・AI自己レビュー</li>
-<li><strong>STEP5: 品質担保＆ドキュメント反映</strong> - Trust but Verify自動化、Living Documentation</li>
+<li><strong>STEP5: 品質担保＆ドキュメント反映</strong> - TbV・Living Doc</li>
 <li><strong>効果:</strong> 手戻り防止、品質保証、開発期間短縮</li>
 </ul>
 <footer>© 2024 AI Development Seminar</footer>
@@ -2128,9 +2128,9 @@ li {
 <h1 id="ai%E3%81%AE%E5%88%B6%E7%B4%84%E2%91%A0%E5%BF%98%E3%82%8C%E3%81%A3%E3%81%BD%E3%81%84%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E5%88%B6%E7%B4%84">AIの制約①忘れっぽい（セッション制約）</h1>
 <p><img src="diagrams-web/diagram_04_ai_memory.svg" alt="AIの外部メモリ" /></p>
 <ul>
-<li><strong>セッション内のみ記憶</strong>: ブラウザ閉じる→全忘却、20万トークン超過→古い情報忘却</li>
+<li><strong>セッション内のみ記憶</strong>: ブラウザ閉じる→全忘却、トークン超過→忘却</li>
 <li><strong>問題</strong>: 同じバグ繰り返し、成功方法忘却</li>
-<li><strong>対策</strong>: ドキュメント化＝外部メモリ、architecture.md/README.mdに知見蓄積</li>
+<li><strong>対策</strong>: ドキュメント化＝外部メモリ、architecture.md等に蓄積</li>
 </ul>
 <footer>© 2024 AI Development Seminar</footer>
 </section>
@@ -4622,7 +4622,7 @@ li {
 <p><img src="diagrams-web/diagram_28_claude_code_modes.svg" alt="Claude Codeモード比較" /></p>
 <ul>
 <li><strong>通常モード:</strong> 毎回確認 (y/n)、最も安全</li>
-<li><strong>YOLOモード（Shift+Tab）:</strong> 自動実行、確認時間を大幅削減、Git管理済み推奨</li>
+<li><strong>YOLOモード（Shift+Tab）:</strong> 自動実行、確認時間削減、Git管理推奨</li>
 <li><strong>プランモード（Shift+Tab×2）:</strong> 計画→確認→実行、大規模タスク向き</li>
 <li><strong>dangerously-skip-permissions:</strong> 全確認スキップ（超危険）</li>
 </ul>
@@ -11246,9 +11246,9 @@ li {
 <h1 id="%E8%A8%AD%E8%A8%88%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AE%E6%A7%8B%E9%80%A0">設計ドキュメントの構造</h1>
 <p><img src="diagrams-web/diagram_06_spec_structure.svg" alt="設計ドキュメントの7要素" /></p>
 <ul>
-<li><strong>1. 技術スタック:</strong> フロント・バック・DB・ライブラリ（選定理由含む）</li>
+<li><strong>1. 技術スタック:</strong> フロント・バック・DB・ライブラリ</li>
 <li><strong>2. システムアーキテクチャ:</strong> 3層構造、Mermaid図で可視化</li>
-<li><strong>3. データベーススキーマ:</strong> テーブル定義・カラム・制約・インデックス</li>
+<li><strong>3. データベーススキーマ:</strong> テーブル・カラム・制約・INDEX</li>
 <li><strong>4. API仕様:</strong> エンドポイント・メソッド・パラメータ・レスポンス</li>
 <li><strong>5. 受入条件（BDD形式）:</strong> Given-When-Then</li>
 <li><strong>6. セキュリティ設計:</strong> 認証・認可・入力検証・環境変数管理</li>
@@ -12479,7 +12479,7 @@ li {
 <h1 id="mermaid%E8%A8%98%E6%B3%95%E3%81%A8svg%E7%94%9F%E6%88%90%E3%81%A7%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%E5%8C%96">Mermaid記法とSVG生成でビジュアル化</h1>
 <p><img src="diagrams-web/diagram_41_mermaid_vs_svg.svg" alt="Mermaid vs SVG使い分け" /></p>
 <ul>
-<li><strong>Mermaid</strong>: テキストで図描画、Git管理可、AI自動生成、GitHub/VS Code表示</li>
+<li><strong>Mermaid</strong>: テキストで図描画、Git管理可、AI生成、GH/VSC表示</li>
 <li><strong>SVG生成magic word</strong>: 「SVGで書いて」→AI生成→即可視化、記法不要</li>
 <li><strong>使い分け</strong>: Mermaid=GitHub用、SVG=即可視化・プレゼン用</li>
 </ul>
@@ -13078,7 +13078,7 @@ li {
 <h1 id="%E3%82%B7%E3%83%BC%E3%82%B1%E3%83%B3%E3%82%B9%E5%9B%B3%E3%81%8Cai%E5%AE%9F%E8%A3%85%E3%82%92%E5%8A%A9%E3%81%91%E3%82%8B%E7%90%86%E7%94%B1">シーケンス図がAI実装を助ける理由</h1>
 <p><img src="diagrams-web/diagram_09_sequence_login.svg" alt="シーケンス図の例（ログインフロー）" /></p>
 <ul>
-<li><strong>AIの実装</strong>: 処理順序理解→正確コードフロー、エラー処理タイミング、依存関係、トランザクション境界</li>
+<li><strong>AIの実装</strong>: 処理順序→コードフロー、エラー処理、依存、TX境界</li>
 <li><strong>図なしの問題</strong>: 処理順序推測ミス、ロールバック漏れ</li>
 <li><strong>効果</strong>: 複雑処理も正確実装</li>
 </ul>
@@ -17270,7 +17270,7 @@ li {
 <li><strong>なぜ依存関係の可視化が必要か</strong>
 <ul>
 <li>順序を間違えると手戻りが発生（DB未作成でAPI実装できない）</li>
-<li>AIは依存関係の判断が苦手（タスク実行は得意だが順序判断は苦手）</li>
+<li>AIは依存関係の判断が苦手（タスクは得意、順序判断は苦手）</li>
 </ul>
 </li>
 <li><strong>並行作業可能なタスク:</strong> フロントとバックを同時進行</li>
@@ -17577,7 +17577,7 @@ li {
 <li><strong>必須項目:</strong> Phase・タスク名・所要時間・依存関係・完了条件</li>
 <li><strong>なぜテンプレート化が必要か</strong>
 <ul>
-<li>曖昧な計画→AIが勝手に解釈（構造化タスクは得意だが自由形式は苦手）</li>
+<li>曖昧な計画→AIが勝手に解釈（構造化は得意、自由形式は苦手）</li>
 <li>明確なフォーマット→AIが一貫した出力</li>
 </ul>
 </li>
@@ -20062,13 +20062,13 @@ li {
 <ul>
 <li><strong>なぜTDD/BDDが必要か</strong>
 <ul>
-<li>テストなし→AIが作る→人間が手動テスト→エラー→修正（無限ループ）</li>
+<li>テストなし→AIが作る→手動テスト→エラー→修正（無限ループ）</li>
 <li>テストあり→AIが作る→自動テスト→エラー→AI自己修正（自己完結）</li>
 </ul>
 </li>
 <li><strong>Red（失敗するテストを書く）:</strong> テストが仕様を定義</li>
 <li><strong>Green（最小実装）:</strong> テストを通す最小コード</li>
-<li><strong>Refactor（改善）:</strong> テストが保証するから安心してリファクタリング</li>
+<li><strong>Refactor（改善）:</strong> テストが保証するから安心リファクタ</li>
 <li><strong>BDD形式（Given-When-Then）:</strong> 人間が読める仕様書になる</li>
 </ul>
 <footer>© 2024 AI Development Seminar</footer>
@@ -20367,7 +20367,7 @@ li {
 <h1 id="ai%E3%81%ABtddbdd%E3%81%A7%E5%AE%9F%E8%A3%85%E3%81%95%E3%81%9B%E3%82%8B">AIにTDD/BDDで実装させる</h1>
 <p><img src="diagrams-web/diagram_33_given_when_then.svg" alt="Given-When-Then構造" /></p>
 <ul>
-<li><strong>プロンプト例:</strong> 「POST /api/register を TDD で実装して。Given-When-Then形式のテストを書き、正常系・異常系をカバー」</li>
+<li><strong>プロンプト例:</strong> 「POST /api/register を TDD実装。GWT形式」</li>
 <li><strong>AIが自動で行うこと:</strong>
 <ol>
 <li>Given-When-Thenテストを先に書く</li>
@@ -22249,7 +22249,7 @@ li {
 <li>Reward Hackingで省略されるため、セキュリティ観点での検証必須</li>
 </ul>
 </li>
-<li>実装後必ず：「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」</li>
+<li>実装後必ず：「レビュー実施。セキュリティ・エラー確認」</li>
 <li>追加コストほぼゼロで品質大幅向上</li>
 </ul>
 <footer>© 2024 AI Development Seminar</footer>
@@ -25929,7 +25929,7 @@ li {
 <header>AI活用研修：新規開発編 - Day 1 Part 1</header>
 <h1 id="ai%E8%87%AA%E5%B7%B1%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E2%91%A0%E4%B8%80%E8%88%AC%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC">AI自己レビュー①一般レビュー</h1>
 <ul>
-<li><strong>プロンプト:</strong> 「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」</li>
+<li><strong>プロンプト:</strong> 「コードレビュー。セキュリティ・エラー・エッジ・ベストプラクティス」</li>
 <li><strong>検出:</strong> ロジックエラー、エッジケース見落とし（null、空配列）、命名規則違反</li>
 <li><strong>効果:</strong> バグ検出率向上</li>
 </ul>
@@ -26825,7 +26825,7 @@ li {
 <h1 id="ai%E8%87%AA%E5%B7%B1%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E2%91%A3%E3%83%86%E3%82%B9%E3%83%88%E3%82%AB%E3%83%90%E3%83%AC%E3%83%83%E3%82%B8">AI自己レビュー④テストカバレッジ</h1>
 <p><img src="diagrams-web/diagram_26_test_coverage_80_rule.svg" alt="テストカバレッジ80%ルール" /></p>
 <ul>
-<li><strong>プロンプト:</strong> 「テストレビュー。エッジケース・異常系・境界値・独立性・Given-When-Thenをチェック」</li>
+<li><strong>プロンプト:</strong> 「テストレビュー。エッジ・異常・境界・独立性・GWT」</li>
 <li><strong>検出:</strong> テストケース漏れ（null、空文字、MAX値）、異常系不足</li>
 <li><strong>効果:</strong> テストカバレッジ向上</li>
 </ul>
@@ -34394,7 +34394,7 @@ li {
 <li>テスト実行・カバレッジ確認</li>
 <li>リファクタリング（重複削減、パターン適用）</li>
 <li>ドキュメント生成（architecture.md、README.md、CLAUDE.md）</li>
-<li>ゴール: Trust but Verify自動化、Living Documentation</li>
+<li>ゴール: TbV・Living Doc</li>
 </ul>
 <footer>© 2024 AI Development Seminar</footer>
 </section>
@@ -36824,7 +36824,7 @@ li {
 <li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> リファクタリング実施</li>
 <li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> architecture.md生成</li>
 <li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> README.md作成</li>
-<li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> CLAUDE.md更新（成功パターン・ハマった点）</li>
+<li><img class="emoji" draggable="false" alt="✅" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2705.svg" data-marp-twemoji=""/> CLAUDE.md更新（パターン・知見）</li>
 </ul>
 <footer>© 2024 AI Development Seminar</footer>
 </section>
@@ -41494,7 +41494,7 @@ li {
 <li>STEP2: 設計ドキュメント（Guardrails、AIは忘れっぽい対策）</li>
 <li>STEP3: タスク分解（AIの思考を言語化、全体像把握）</li>
 <li>STEP4: 実装（小さく作る・TDD・AI自己レビュー必須）</li>
-<li>STEP5: 品質担保＆ドキュメント反映（Trust but Verify自動化、Living Documentation＝外部メモリ）</li>
+<li>STEP5: 品質担保＆ドキュメント反映（TbV・Living Doc＝外部メモリ）</li>
 </ul>
 <footer>© 2024 AI Development Seminar</footer>
 </section>
@@ -63303,7 +63303,7 @@ li {
 <li>STEP1-2: 要件・設計（Guardrails、曖昧さ排除）</li>
 <li>STEP3: タスク分解（AI思考言語化）</li>
 <li>STEP4: 実装（TDD、AI自己レビュー）</li>
-<li>STEP5: 品質担保＆ドキュメント反映（Trust but Verify、Living Documentation）</li>
+<li>STEP5: 品質担保＆ドキュメント反映（TbV・Living Documentation）</li>
 </ul>
 <h3 id="2%E6%97%A5%E7%9B%AE%E4%BF%9D%E5%AE%88%E9%96%8B%E7%99%BA%E3%81%AE4%E3%82%B9%E3%83%86%E3%83%83%E3%83%97">2日目：保守開発の4ステップ</h3>
 <ol>

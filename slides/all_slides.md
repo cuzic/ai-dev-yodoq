@@ -203,7 +203,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![AI活用の3原則](diagrams-web/diagram_01_ai_principles.svg)
 
-- **Jagged Intelligence**: 得意（コード生成・テスト・アーキテクチャ設計）、苦手（ビジネス要件の解釈・トレードオフ判断）
+- **Jagged Intelligence**: 得意:コード・テスト、苦手:要件・判断
 - **Trust but Verify**: AIにもエラーあり、AI自己レビューで品質向上
 - **Guardrails**: ドキュメント駆動、受入条件で手戻り防止
 
@@ -215,7 +215,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![3つのアプローチ比較](diagrams-web/diagram_22_vibe_vs_production.svg)
 
-- **Vibe Coding**: 速い（30分〜1時間）、品質バラバラ、プロトタイプ向き
+- **Vibe Coding**: 速い（30分〜1時間）、品質不安定、プロトタイプ向き
 - **Production Engineering**: 構造化、品質保証、本番向き
 - **Vibe Coding with Guardrails**: 速さと品質両立、設計書で導く
 
@@ -245,7 +245,7 @@ AI駆動開発で開発期間を大幅短縮
 - **STEP2: 設計** - どう作るか定義（AI外部メモリ）
 - **STEP3: タスク分解** - 全体像を小さく分割（忘れっぽさ対策）
 - **STEP4: 実装** - 小さく作る・TDD・AI自己レビュー
-- **STEP5: 品質担保＆ドキュメント反映** - Trust but Verify自動化、Living Documentation
+- **STEP5: 品質担保＆ドキュメント反映** - TbV・Living Doc
 - **効果:** 手戻り防止、品質保証、開発期間短縮
 
 ---
@@ -256,9 +256,9 @@ AI駆動開発で開発期間を大幅短縮
 
 ![AIの外部メモリ](diagrams-web/diagram_04_ai_memory.svg)
 
-- **セッション内のみ記憶**: ブラウザ閉じる→全忘却、20万トークン超過→古い情報忘却
+- **セッション内のみ記憶**: ブラウザ閉じる→全忘却、トークン超過→忘却
 - **問題**: 同じバグ繰り返し、成功方法忘却
-- **対策**: ドキュメント化＝外部メモリ、architecture.md/README.mdに知見蓄積
+- **対策**: ドキュメント化＝外部メモリ、architecture.md等に蓄積
 
 ---
 
@@ -416,7 +416,7 @@ AI駆動開発で開発期間を大幅短縮
 ![Claude Codeモード比較](diagrams-web/diagram_28_claude_code_modes.svg)
 
 - **通常モード:** 毎回確認 (y/n)、最も安全
-- **YOLOモード（Shift+Tab）:** 自動実行、確認時間を大幅削減、Git管理済み推奨
+- **YOLOモード（Shift+Tab）:** 自動実行、確認時間削減、Git管理推奨
 - **プランモード（Shift+Tab×2）:** 計画→確認→実行、大規模タスク向き
 - **dangerously-skip-permissions:** 全確認スキップ（超危険）
 
@@ -940,9 +940,9 @@ build/
 
 ![設計ドキュメントの7要素](diagrams-web/diagram_06_spec_structure.svg)
 
-- **1. 技術スタック:** フロント・バック・DB・ライブラリ（選定理由含む）
+- **1. 技術スタック:** フロント・バック・DB・ライブラリ
 - **2. システムアーキテクチャ:** 3層構造、Mermaid図で可視化
-- **3. データベーススキーマ:** テーブル定義・カラム・制約・インデックス
+- **3. データベーススキーマ:** テーブル・カラム・制約・INDEX
 - **4. API仕様:** エンドポイント・メソッド・パラメータ・レスポンス
 - **5. 受入条件（BDD形式）:** Given-When-Then
 - **6. セキュリティ設計:** 認証・認可・入力検証・環境変数管理
@@ -1002,7 +1002,7 @@ build/
 
 ![Mermaid vs SVG使い分け](diagrams-web/diagram_41_mermaid_vs_svg.svg)
 
-- **Mermaid**: テキストで図描画、Git管理可、AI自動生成、GitHub/VS Code表示
+- **Mermaid**: テキストで図描画、Git管理可、AI生成、GH/VSC表示
 - **SVG生成magic word**: 「SVGで書いて」→AI生成→即可視化、記法不要
 - **使い分け**: Mermaid=GitHub用、SVG=即可視化・プレゼン用
 
@@ -1025,7 +1025,7 @@ build/
 
 ![シーケンス図の例（ログインフロー）](diagrams-web/diagram_09_sequence_login.svg)
 
-- **AIの実装**: 処理順序理解→正確コードフロー、エラー処理タイミング、依存関係、トランザクション境界
+- **AIの実装**: 処理順序→コードフロー、エラー処理、依存、TX境界
 - **図なしの問題**: 処理順序推測ミス、ロールバック漏れ
 - **効果**: 複雑処理も正確実装
 
@@ -1461,7 +1461,7 @@ style: |
 
 - **なぜ依存関係の可視化が必要か**
   - 順序を間違えると手戻りが発生（DB未作成でAPI実装できない）
-  - AIは依存関係の判断が苦手（タスク実行は得意だが順序判断は苦手）
+  - AIは依存関係の判断が苦手（タスクは得意、順序判断は苦手）
 - **並行作業可能なタスク:** フロントとバックを同時進行
 - **順序が必要なタスク:** DB設計→マイグレーション→API実装
 - **AIへの指示:** 「依存関係を明示してタスク一覧を作成して」
@@ -1477,7 +1477,7 @@ style: |
 
 - **必須項目:** Phase・タスク名・所要時間・依存関係・完了条件
 - **なぜテンプレート化が必要か**
-  - 曖昧な計画→AIが勝手に解釈（構造化タスクは得意だが自由形式は苦手）
+  - 曖昧な計画→AIが勝手に解釈（構造化は得意、自由形式は苦手）
   - 明確なフォーマット→AIが一貫した出力
 - **進捗管理:** 一覧表でステータス可視化（未着手・進行中・完了）
 - **チーム共有:** Markdown形式でGit管理、誰でも参照可能
@@ -1644,11 +1644,11 @@ style: |
 ![TDD Red-Green-Refactorサイクル](diagrams-web/diagram_11_tdd_cycle.svg)
 
 - **なぜTDD/BDDが必要か**
-  - テストなし→AIが作る→人間が手動テスト→エラー→修正（無限ループ）
+  - テストなし→AIが作る→手動テスト→エラー→修正（無限ループ）
   - テストあり→AIが作る→自動テスト→エラー→AI自己修正（自己完結）
 - **Red（失敗するテストを書く）:** テストが仕様を定義
 - **Green（最小実装）:** テストを通す最小コード
-- **Refactor（改善）:** テストが保証するから安心してリファクタリング
+- **Refactor（改善）:** テストが保証するから安心リファクタ
 - **BDD形式（Given-When-Then）:** 人間が読める仕様書になる
 
 ---
@@ -1659,7 +1659,7 @@ style: |
 
 ![Given-When-Then構造](diagrams-web/diagram_33_given_when_then.svg)
 
-- **プロンプト例:** 「POST /api/register を TDD で実装して。Given-When-Then形式のテストを書き、正常系・異常系をカバー」
+- **プロンプト例:** 「POST /api/register を TDD実装。GWT形式」
 - **AIが自動で行うこと:**
   1. Given-When-Thenテストを先に書く
   2. 実装コードを書く
@@ -1791,7 +1791,7 @@ DATABASE_PASSWORD=secure-password
   - AIにもエラーあり→自己レビューで多くを検出
   - Reward Hacking→実装後に手抜きチェック
   - Reward Hackingで省略されるため、セキュリティ観点での検証必須
-- 実装後必ず：「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」
+- 実装後必ず：「レビュー実施。セキュリティ・エラー確認」
 - 追加コストほぼゼロで品質大幅向上
 
 ---
@@ -1967,7 +1967,7 @@ DATABASE_PASSWORD=secure-password
 ---
 
 # AI自己レビュー①一般レビュー
-- **プロンプト:** 「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」
+- **プロンプト:** 「コードレビュー。セキュリティ・エラー・エッジ・ベストプラクティス」
 - **検出:** ロジックエラー、エッジケース見落とし（null、空配列）、命名規則違反
 - **効果:** バグ検出率向上
 
@@ -1993,7 +1993,7 @@ DATABASE_PASSWORD=secure-password
 
 ![テストカバレッジ80%ルール](diagrams-web/diagram_26_test_coverage_80_rule.svg)
 
-- **プロンプト:** 「テストレビュー。エッジケース・異常系・境界値・独立性・Given-When-Thenをチェック」
+- **プロンプト:** 「テストレビュー。エッジ・異常・境界・独立性・GWT」
 - **検出:** テストケース漏れ（null、空文字、MAX値）、異常系不足
 - **効果:** テストカバレッジ向上
 
@@ -2601,7 +2601,7 @@ style: |
 - テスト実行・カバレッジ確認
 - リファクタリング（重複削減、パターン適用）
 - ドキュメント生成（architecture.md、README.md、CLAUDE.md）
-- ゴール: Trust but Verify自動化、Living Documentation
+- ゴール: TbV・Living Doc
 
 ---
 
@@ -2709,7 +2709,7 @@ style: |
 - ✅ リファクタリング実施
 - ✅ architecture.md生成
 - ✅ README.md作成
-- ✅ CLAUDE.md更新（成功パターン・ハマった点）
+- ✅ CLAUDE.md更新（パターン・知見）
 
 ---
 
@@ -3044,7 +3044,7 @@ style: |
 - STEP2: 設計ドキュメント（Guardrails、AIは忘れっぽい対策）
 - STEP3: タスク分解（AIの思考を言語化、全体像把握）
 - STEP4: 実装（小さく作る・TDD・AI自己レビュー必須）
-- STEP5: 品質担保＆ドキュメント反映（Trust but Verify自動化、Living Documentation＝外部メモリ）
+- STEP5: 品質担保＆ドキュメント反映（TbV・Living Doc＝外部メモリ）
 
 ---
 
@@ -3917,7 +3917,7 @@ style: |
 - STEP1-2: 要件・設計（Guardrails、曖昧さ排除）
 - STEP3: タスク分解（AI思考言語化）
 - STEP4: 実装（TDD、AI自己レビュー）
-- STEP5: 品質担保＆ドキュメント反映（Trust but Verify、Living Documentation）
+- STEP5: 品質担保＆ドキュメント反映（TbV・Living Documentation）
 
 ### 2日目：保守開発の4ステップ
 1. リバースエンジニアリング（既存仕様読解）
