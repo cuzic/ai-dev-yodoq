@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 780">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 780">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .increment-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
-      .increment-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
-      .time-label { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #00146E; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: #333333; }
+      .increment-title { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; font-weight: bold; fill: white; }
+      .increment-text { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: white; }
+      .time-label { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; font-weight: bold; fill: #00146E; }
     </style>
   </defs>
 
@@ -28,114 +28,96 @@
   <!-- Increment 1 -->
   <circle cx="250" cy="300" r="15" fill="#00AFF0"/>
   <rect x="120" y="80" width="260" height="180" fill="#00AFF0" rx="10"/>
-  <text x="250" y="110" class="increment-title" text-anchor="middle">Increment 1: 一覧表示</text>
-  <text x="250" y="135" class="increment-title" text-anchor="middle" font-size="26">(30分)</text>
+  <text x="250" y="115" class="increment-title" text-anchor="middle">Increment 1: 一覧表示</text>
+  <text x="250" y="145" class="increment-title" text-anchor="middle" font-size="22">(30分)</text>
 
-  <text x="140" y="165" class="increment-text">実装:</text>
-  <text x="150" y="185" class="increment-text">• GET /api/tasks API作成</text>
-  <text x="150" y="202" class="increment-text">• TaskController実装</text>
-  <text x="150" y="219" class="increment-text">• 一覧画面表示</text>
-
-  <text x="140" y="245" class="increment-text" font-weight="bold">✓ 動作確認 → テスト → コミット</text>
+  <text x="135" y="178" class="increment-text">実装:</text>
+  <text x="140" y="212" class="increment-text">• GET /api/tasks API作成</text>
+  <text x="140" y="244" class="increment-text">• TaskController実装</text>
 
   <line x1="250" y1="260" x2="250" y2="285" stroke="#00AFF0" stroke-width="4"/>
 
   <!-- Increment 2 -->
   <circle cx="550" cy="300" r="15" fill="#003399"/>
   <rect x="420" y="80" width="260" height="180" fill="#003399" rx="10"/>
-  <text x="550" y="110" class="increment-title" text-anchor="middle">Increment 2: 新規作成</text>
-  <text x="550" y="135" class="increment-title" text-anchor="middle" font-size="26">(30分)</text>
+  <text x="550" y="115" class="increment-title" text-anchor="middle">Increment 2: 新規作成</text>
+  <text x="550" y="145" class="increment-title" text-anchor="middle" font-size="22">(30分)</text>
 
-  <text x="440" y="165" class="increment-text">実装:</text>
-  <text x="450" y="185" class="increment-text">• POST /api/tasks API作成</text>
-  <text x="450" y="202" class="increment-text">• バリデーション追加</text>
-  <text x="450" y="219" class="increment-text">• 作成フォーム実装</text>
-
-  <text x="440" y="245" class="increment-text" font-weight="bold">✓ 動作確認 → テスト → コミット</text>
+  <text x="435" y="178" class="increment-text">実装:</text>
+  <text x="440" y="212" class="increment-text">• POST /api/tasks API作成</text>
+  <text x="440" y="244" class="increment-text">• バリデーション追加</text>
 
   <line x1="550" y1="260" x2="550" y2="285" stroke="#003399" stroke-width="4"/>
 
   <!-- Increment 3 -->
   <circle cx="850" cy="300" r="15" fill="#00146E"/>
   <rect x="720" y="80" width="260" height="180" fill="#00146E" rx="10"/>
-  <text x="850" y="110" class="increment-title" text-anchor="middle">Increment 3: 完了機能</text>
-  <text x="850" y="135" class="increment-title" text-anchor="middle" font-size="26">(30分)</text>
+  <text x="850" y="115" class="increment-title" text-anchor="middle">Increment 3: 完了機能</text>
+  <text x="850" y="145" class="increment-title" text-anchor="middle" font-size="22">(30分)</text>
 
-  <text x="740" y="165" class="increment-text">実装:</text>
-  <text x="750" y="185" class="increment-text">• PATCH /api/tasks/:id API</text>
-  <text x="750" y="202" class="increment-text">• 完了チェックボックス</text>
-  <text x="750" y="219" class="increment-text">• 状態更新ロジック</text>
-
-  <text x="740" y="245" class="increment-text" font-weight="bold">✓ 動作確認 → テスト → コミット</text>
+  <text x="735" y="178" class="increment-text">実装:</text>
+  <text x="740" y="212" class="increment-text">• PATCH /api/tasks/:id API</text>
+  <text x="740" y="244" class="increment-text">• 完了チェックボックス</text>
 
   <line x1="850" y1="260" x2="850" y2="285" stroke="#00146E" stroke-width="4"/>
 
   <!-- Increment 4 -->
   <circle cx="1150" cy="300" r="15" fill="#66D9FF"/>
   <rect x="1020" y="80" width="260" height="180" fill="#66D9FF" rx="10"/>
-  <text x="1150" y="110" class="increment-title" text-anchor="middle">Increment 4: 削除機能</text>
-  <text x="1150" y="135" class="increment-title" text-anchor="middle" font-size="26">(30分)</text>
+  <text x="1150" y="115" class="increment-title" text-anchor="middle">Increment 4: 削除機能</text>
+  <text x="1150" y="145" class="increment-title" text-anchor="middle" font-size="22">(30分)</text>
 
-  <text x="1040" y="165" class="increment-text">実装:</text>
-  <text x="1050" y="185" class="increment-text">• DELETE /api/tasks/:id API</text>
-  <text x="1050" y="202" class="increment-text">• 削除ボタン実装</text>
-  <text x="1050" y="219" class="increment-text">• 確認ダイアログ</text>
-
-  <text x="1040" y="245" class="increment-text" font-weight="bold">✓ 動作確認 → テスト → コミット</text>
+  <text x="1035" y="178" class="increment-text">実装:</text>
+  <text x="1040" y="212" class="increment-text">• DELETE /api/tasks/:id API</text>
+  <text x="1040" y="244" class="increment-text">• 削除ボタン実装</text>
 
   <line x1="1150" y1="260" x2="1150" y2="285" stroke="#66D9FF" stroke-width="4"/>
 
   <!-- Bottom: Benefits -->
   <rect x="100" y="360" width="600" height="210" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="400" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="400" y="395" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     インクリメンタル開発のメリット
   </text>
 
-  <text x="120" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="120" y="435" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     ✓ 常に動く状態を維持
   </text>
-  <text x="130" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="130" y="465" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     各Incrementで動作確認 → 問題を早期発見
   </text>
 
-  <text x="120" y="470" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="120" y="500" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     ✓ 進捗が可視化される
   </text>
-  <text x="130" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="130" y="530" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     30分毎に成果が見える → モチベーション維持
   </text>
 
-  <text x="120" y="520" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="120" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     ✓ リスクが最小化
-  </text>
-  <text x="130" y="540" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
-    小さく作る → 小さく失敗 → すぐ修正
   </text>
 
   <!-- Bottom: Comparison -->
   <rect x="720" y="360" width="580" height="210" fill="#E6E6E6" stroke="#CC0000" stroke-width="3" rx="10"/>
-  <text x="1010" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+  <text x="1010" y="395" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
     ✗ 一度に全部作る場合（NG）
   </text>
 
-  <text x="740" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="740" y="435" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     ✗ 完成まで動かない
   </text>
-  <text x="750" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="750" y="465" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     2時間後に初めて動作確認 → バグが大量発生
   </text>
 
-  <text x="740" y="470" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="740" y="500" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     ✗ 進捗が見えない
   </text>
-  <text x="750" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="750" y="530" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333;">
     「まだできてない」が続く → 不安・焦り
   </text>
 
-  <text x="740" y="520" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+  <text x="740" y="565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; font-weight: bold;">
     ✗ デバッグが困難
-  </text>
-  <text x="750" y="540" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
-    どこでバグが発生したか特定が難しい
   </text>
 </svg>

@@ -1,283 +1,164 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1222">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1400">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .mode-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
-      .mode-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
-      .header-text { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: #00146E; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #333333; }
+      .mode-title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: bold; fill: white; }
+      .header-text { font-family: 'Noto Sans JP', sans-serif; font-size: 38px; font-weight: bold; fill: #00146E; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="1400" height="700" fill="#FFFFFF"/>
+  <rect width="1400" height="1400" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="700" y="40" class="title" text-anchor="middle">Claude Code 4つのモード比較表</text>
+  <text x="700" y="55" class="title" text-anchor="middle">Claude Code 4つのモード比較表</text>
 
   <!-- Header row -->
-  <rect x="50" y="70" width="200" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
-  <text x="150" y="100" class="header-text" text-anchor="middle">項目</text>
+  <rect x="50" y="90" width="200" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="150" y="123" class="header-text" text-anchor="middle">項目</text>
 
-  <rect x="250" y="70" width="270" height="50" fill="#00AFF0"/>
-  <text x="385" y="100" class="mode-title" text-anchor="middle">通常モード</text>
+  <rect x="250" y="90" width="270" height="50" fill="#00AFF0"/>
+  <text x="385" y="123" class="mode-title" text-anchor="middle">通常モード</text>
 
-  <rect x="520" y="70" width="270" height="50" fill="#00146E"/>
-  <text x="655" y="100" class="mode-title" text-anchor="middle">YOLOモード</text>
+  <rect x="520" y="90" width="270" height="50" fill="#00146E"/>
+  <text x="655" y="123" class="mode-title" text-anchor="middle">YOLOモード</text>
 
-  <rect x="790" y="70" width="270" height="50" fill="#003399"/>
-  <text x="925" y="100" class="mode-title" text-anchor="middle">プランモード</text>
+  <rect x="790" y="90" width="270" height="50" fill="#003399"/>
+  <text x="925" y="123" class="mode-title" text-anchor="middle">プランモード</text>
 
-  <rect x="1060" y="70" width="290" height="50" fill="#CC0000"/>
-  <text x="1205" y="100" class="mode-title" text-anchor="middle">dangerously-skip</text>
+  <rect x="1060" y="90" width="290" height="50" fill="#CC0000"/>
+  <text x="1205" y="123" class="mode-title" text-anchor="middle">dangerously-skip</text>
 
-  <!-- Row 1: Activation -->
-  <rect x="50" y="120" width="200" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
-  <text x="150" y="178.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle; font-weight: bold;">
-    起動方法
-  </text>
+  <!-- Row 1: Activation (y=140-230) -->
+  <rect x="50" y="140" width="200" height="90" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="150" y="191" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; text-anchor: middle; font-weight: bold;">起動方法</text>
 
-  <rect x="250" y="120" width="270" height="60" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3"/>
-  <text x="385" y="170.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    デフォルト
-  </text>
-  <text x="385" y="240.39999999999998" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    claude
-  </text>
+  <rect x="250" y="140" width="270" height="90" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3"/>
+  <text x="385" y="176" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: #333333; text-anchor: middle;">デフォルト</text>
+  <text x="385" y="218" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #666666; text-anchor: middle;">claude</text>
 
-  <rect x="520" y="120" width="270" height="60" fill="#FFFFFF" stroke="#00146E" stroke-width="3"/>
-  <text x="655" y="170.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    Shift + Tab
-  </text>
-  <text x="655" y="240.39999999999998" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    (トグル切替)
-  </text>
+  <rect x="520" y="140" width="270" height="90" fill="#FFFFFF" stroke="#00146E" stroke-width="3"/>
+  <text x="655" y="176" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: #333333; text-anchor: middle;">Shift + Tab</text>
+  <text x="655" y="218" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #666666; text-anchor: middle;">(トグル切替)</text>
 
-  <rect x="790" y="120" width="270" height="60" fill="#FFFFFF" stroke="#003399" stroke-width="3"/>
-  <text x="925" y="170.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    Shift + Tab × 2
-  </text>
-  <text x="925" y="240.39999999999998" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    (2回押す)
-  </text>
+  <rect x="790" y="140" width="270" height="90" fill="#FFFFFF" stroke="#003399" stroke-width="3"/>
+  <text x="925" y="176" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333; text-anchor: middle;">Shift+Tab×2</text>
+  <text x="925" y="218" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #666666; text-anchor: middle;">(2回押す)</text>
 
-  <rect x="1060" y="120" width="290" height="60" fill="#FFFFFF" stroke="#CC0000" stroke-width="3"/>
-  <text x="1205" y="170.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    --dangerously-skip-
-  </text>
-  <text x="1205" y="240.39999999999998" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    permissions
-  </text>
+  <rect x="1060" y="140" width="290" height="90" fill="#FFFFFF" stroke="#CC0000" stroke-width="3"/>
+  <text x="1205" y="197" style="font-family: 'Noto Sans JP', sans-serif; font-size: 26px; fill: #333333; text-anchor: middle;">--dangerously-skip-permissions</text>
 
-  <!-- Row 2: Confirmation -->
-  <rect x="50" y="180" width="200" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
-  <text x="150" y="256.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle; font-weight: bold;">
-    確認プロセス
-  </text>
+  <!-- Row 2: Confirmation (y=230-330) -->
+  <rect x="50" y="230" width="200" height="100" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="150" y="272" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: #333333; text-anchor: middle; font-weight: bold;">確認</text>
+  <text x="150" y="316" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: #333333; text-anchor: middle; font-weight: bold;">プロセス</text>
 
-  <rect x="250" y="180" width="270" height="60" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3"/>
-  <text x="385" y="310.59999999999997" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    毎回確認 (y/n)
-  </text>
-  <text x="385" y="380.79999999999995" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
-    安全
-  </text>
+  <rect x="250" y="230" width="270" height="100" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3"/>
+  <text x="385" y="272" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333; text-anchor: middle;">毎回確認</text>
+  <text x="385" y="314" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00AA00; text-anchor: middle; font-weight: bold;">安全</text>
 
-  <rect x="520" y="180" width="270" height="60" fill="#FFFFFF" stroke="#00146E" stroke-width="3"/>
-  <text x="655" y="310.59999999999997" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    自動実行
-  </text>
-  <text x="655" y="380.79999999999995" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #FF9900; text-anchor: middle; font-weight: bold;">
-    要注意
-  </text>
+  <rect x="520" y="230" width="270" height="100" fill="#FFFFFF" stroke="#00146E" stroke-width="3"/>
+  <text x="655" y="272" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333; text-anchor: middle;">自動実行</text>
+  <text x="655" y="314" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #FF9900; text-anchor: middle; font-weight: bold;">要注意</text>
 
-  <rect x="790" y="180" width="270" height="60" fill="#FFFFFF" stroke="#003399" stroke-width="3"/>
-  <text x="925" y="310.59999999999997" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    計画確認→実行
-  </text>
-  <text x="925" y="380.79999999999995" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
-    比較的安全
-  </text>
+  <rect x="790" y="230" width="270" height="100" fill="#FFFFFF" stroke="#003399" stroke-width="3"/>
+  <text x="925" y="267" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">計画確認→実行</text>
+  <text x="925" y="307" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #00AA00; text-anchor: middle; font-weight: bold;">比較的安全</text>
 
-  <rect x="1060" y="180" width="290" height="60" fill="#FFFFFF" stroke="#CC0000" stroke-width="3"/>
-  <text x="1205" y="310.59999999999997" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    全確認スキップ
-  </text>
-  <text x="1205" y="380.79999999999995" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    超危険
-  </text>
+  <rect x="1060" y="230" width="290" height="100" fill="#FFFFFF" stroke="#CC0000" stroke-width="3"/>
+  <text x="1205" y="267" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">全確認スキップ</text>
+  <text x="1205" y="309" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #CC0000; text-anchor: middle; font-weight: bold;">超危険</text>
 
-  <!-- Row 3: Speed -->
-  <rect x="50" y="240" width="200" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
-  <text x="150" y="334.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle; font-weight: bold;">
-    生産性
-  </text>
+  <!-- Row 3: Speed (y=330-430) -->
+  <rect x="50" y="330" width="200" height="100" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="150" y="385" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; text-anchor: middle; font-weight: bold;">生産性</text>
 
-  <rect x="250" y="240" width="270" height="60" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3"/>
-  <text x="385" y="450.99999999999994" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    ★★☆☆☆
-  </text>
-  <text x="385" y="521.1999999999999" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    確認で中断
-  </text>
+  <rect x="250" y="330" width="270" height="100" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3"/>
+  <text x="385" y="369" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: #333333; text-anchor: middle;">★★☆☆☆</text>
+  <text x="385" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #666666; text-anchor: middle;">確認で中断</text>
 
-  <rect x="520" y="240" width="270" height="60" fill="#FFFFFF" stroke="#00146E" stroke-width="3"/>
-  <text x="655" y="450.99999999999994" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    ★★★★☆
-  </text>
-  <text x="655" y="521.1999999999999" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    3-5倍高速
-  </text>
+  <rect x="520" y="330" width="270" height="100" fill="#FFFFFF" stroke="#00146E" stroke-width="3"/>
+  <text x="655" y="369" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: #333333; text-anchor: middle;">★★★★☆</text>
+  <text x="655" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #666666; text-anchor: middle;">3-5倍高速</text>
 
-  <rect x="790" y="240" width="270" height="60" fill="#FFFFFF" stroke="#003399" stroke-width="3"/>
-  <text x="925" y="450.99999999999994" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    ★★★☆☆
-  </text>
-  <text x="925" y="521.1999999999999" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    計画フェーズあり
-  </text>
+  <rect x="790" y="330" width="270" height="100" fill="#FFFFFF" stroke="#003399" stroke-width="3"/>
+  <text x="925" y="369" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: #333333; text-anchor: middle;">★★★☆☆</text>
+  <text x="925" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: #666666; text-anchor: middle;">計画フェーズあり</text>
 
-  <rect x="1060" y="240" width="290" height="60" fill="#FFFFFF" stroke="#CC0000" stroke-width="3"/>
-  <text x="1205" y="450.99999999999994" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    ★★★★★
-  </text>
-  <text x="1205" y="521.1999999999999" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    最高速（危険）
-  </text>
+  <rect x="1060" y="330" width="290" height="100" fill="#FFFFFF" stroke="#CC0000" stroke-width="3"/>
+  <text x="1205" y="369" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: #333333; text-anchor: middle;">★★★★★</text>
+  <text x="1205" y="413" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #666666; text-anchor: middle;">最高速（危険）</text>
 
-  <!-- Row 4: Use case -->
-  <rect x="50" y="300" width="200" height="100" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
-  <text x="150" y="412.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle; font-weight: bold;">
-    適用場面
-  </text>
+  <!-- Row 4: Use case (y=430-630) -->
+  <rect x="50" y="430" width="200" height="200" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="150" y="536" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; text-anchor: middle; font-weight: bold;">適用場面</text>
 
-  <rect x="250" y="300" width="270" height="100" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3"/>
-  <text x="385" y="591.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • 初心者
-  </text>
-  <text x="385" y="661.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • 本番環境
-  </text>
-  <text x="385" y="731.8000000000001" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • 重要ファイル
-  </text>
-  <text x="385" y="802.0000000000001" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • 不明なタスク
+  <rect x="250" y="430" width="270" height="200" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3"/>
+  <text x="385" y="476" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• 初心者</text>
+  <text x="385" y="526" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• 本番環境</text>
+  <text x="385" y="576" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• 重要ファイル</text>
+  <text x="385" y="616" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• 不明タスク</text>
+
+  <rect x="520" y="430" width="270" height="200" fill="#FFFFFF" stroke="#00146E" stroke-width="3"/>
+  <text x="655" y="476" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• Git管理済</text>
+  <text x="655" y="526" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• タスク明確</text>
+  <text x="655" y="576" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• 日常開発</text>
+  <text x="655" y="616" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• 推奨モード</text>
+
+  <rect x="790" y="430" width="270" height="200" fill="#FFFFFF" stroke="#003399" stroke-width="3"/>
+  <text x="925" y="476" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• 大規模タスク</text>
+  <text x="925" y="526" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• 複雑な変更</text>
+  <text x="925" y="576" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• 手戻り防止</text>
+  <text x="925" y="616" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">• 不確実性高</text>
+
+  <rect x="1060" y="430" width="290" height="200" fill="#FFFFFF" stroke="#CC0000" stroke-width="3"/>
+  <text x="1205" y="472" style="font-family: 'Noto Sans JP', sans-serif; font-size: 27px; fill: #333333; text-anchor: middle;">• DevContainer</text>
+  <text x="1205" y="519" style="font-family: 'Noto Sans JP', sans-serif; font-size: 27px; fill: #333333; text-anchor: middle;">• CI/CD自動化</text>
+  <text x="1205" y="566" style="font-family: 'Noto Sans JP', sans-serif; font-size: 27px; fill: #333333; text-anchor: middle;">• デモ・実験</text>
+  <text x="1205" y="611" style="font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: #CC0000; text-anchor: middle; font-weight: bold;">絶対NG:本番</text>
+
+  <!-- Row 5: Conditions (y=630-840) -->
+  <rect x="50" y="630" width="200" height="210" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="150" y="742" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #333333; text-anchor: middle; font-weight: bold;">前提条件</text>
+
+  <rect x="250" y="630" width="270" height="210" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3"/>
+  <text x="385" y="714" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: #333333; text-anchor: middle;">なし</text>
+  <text x="385" y="766" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #666666; text-anchor: middle;">誰でも使える</text>
+
+  <rect x="520" y="630" width="270" height="210" fill="#FFFFFF" stroke="#00146E" stroke-width="3"/>
+  <text x="655" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle; font-weight: bold;">必須:</text>
+  <text x="655" y="727" style="font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: #333333; text-anchor: middle;">• Git管理済</text>
+  <text x="655" y="774" style="font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: #333333; text-anchor: middle;">• 頻繁コミット</text>
+  <text x="655" y="811" style="font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: #333333; text-anchor: middle;">• タスク明確</text>
+
+  <rect x="790" y="630" width="270" height="210" fill="#FFFFFF" stroke="#003399" stroke-width="3"/>
+  <text x="925" y="701" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #333333; text-anchor: middle;">タスクが複雑</text>
+  <text x="925" y="751" style="font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: #666666; text-anchor: middle;">計画レビューが</text>
+  <text x="925" y="795" style="font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: #666666; text-anchor: middle;">必要な場合</text>
+
+  <rect x="1060" y="630" width="290" height="210" fill="#FFFFFF" stroke="#CC0000" stroke-width="3"/>
+  <text x="1205" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #CC0000; text-anchor: middle; font-weight: bold;">絶対必須:</text>
+  <text x="1205" y="730" style="font-family: 'Noto Sans JP', sans-serif; font-size: 27px; fill: #333333; text-anchor: middle;">• DevContainer</text>
+  <text x="1205" y="777" style="font-family: 'Noto Sans JP', sans-serif; font-size: 27px; fill: #333333; text-anchor: middle;">• 隔離環境</text>
+  <text x="1205" y="821" style="font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: #CC0000; text-anchor: middle; font-weight: bold;">失敗OK環境</text>
+
+  <!-- Bottom recommendation (y=860-1120) -->
+  <rect x="50" y="860" width="1300" height="240" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="700" y="914" style="font-family: 'Noto Sans JP', sans-serif; font-size: 46px; fill: #00146E; text-anchor: middle; font-weight: bold;">推奨モード選択ガイド</text>
+
+  <text x="700" y="990" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333; text-anchor: middle;">
+    <tspan font-weight="bold" fill="#00AFF0">通常モード:</tspan> 初心者・学習中
   </text>
 
-  <rect x="520" y="300" width="270" height="100" fill="#FFFFFF" stroke="#00146E" stroke-width="3"/>
-  <text x="655" y="591.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • Git管理済み
-  </text>
-  <text x="655" y="661.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • タスク明確
-  </text>
-  <text x="655" y="731.8000000000001" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • 日常開発
-  </text>
-  <text x="655" y="802.0000000000001" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • 推奨モード
+  <text x="700" y="1050" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333; text-anchor="middle">
+    <tspan font-weight="bold" fill="#00146E">YOLOモード:</tspan> 日常開発推奨
   </text>
 
-  <rect x="790" y="300" width="270" height="100" fill="#FFFFFF" stroke="#003399" stroke-width="3"/>
-  <text x="925" y="591.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • 大規模タスク
-  </text>
-  <text x="925" y="661.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • 複雑な変更
-  </text>
-  <text x="925" y="731.8000000000001" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • 手戻り防止
-  </text>
-  <text x="925" y="802.0000000000001" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • 不確実性高
+  <text x="700" y="1110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #333333; text-anchor: middle;">
+    <tspan font-weight="bold" fill="#003399">プランモード:</tspan> 大規模・複雑変更
   </text>
 
-  <rect x="1060" y="300" width="290" height="100" fill="#FFFFFF" stroke="#CC0000" stroke-width="3"/>
-  <text x="1205" y="591.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • Dev Container
-  </text>
-  <text x="1205" y="661.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • CI/CD自動化
-  </text>
-  <text x="1205" y="731.8000000000001" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    • デモ・実験
-  </text>
-  <text x="1205" y="802.0000000000001" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    絶対NG: 本番
-  </text>
-
-  <!-- Row 5: Conditions -->
-  <rect x="50" y="400" width="200" height="100" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
-  <text x="150" y="490.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle; font-weight: bold;">
-    前提条件
-  </text>
-
-  <rect x="250" y="400" width="270" height="100" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3"/>
-  <text x="385" y="872.2000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    なし
-  </text>
-  <text x="385" y="942.4000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    誰でも使える
-  </text>
-
-  <rect x="520" y="400" width="270" height="100" fill="#FFFFFF" stroke="#00146E" stroke-width="3"/>
-  <text x="655" y="872.2000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle; font-weight: bold;">
-    必須:
-  </text>
-  <text x="655" y="942.4000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">
-    • Git管理済み
-  </text>
-  <text x="655" y="1007.4000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">
-    • 頻繁なコミット
-  </text>
-  <text x="655" y="1072.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">
-    • タスク明確
-  </text>
-
-  <rect x="790" y="400" width="270" height="100" fill="#FFFFFF" stroke="#003399" stroke-width="3"/>
-  <text x="925" y="872.2000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
-    タスクが複雑
-  </text>
-  <text x="925" y="942.4000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    計画レビューが
-  </text>
-  <text x="925" y="1007.4000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #666666; text-anchor: middle;">
-    必要な場合
-  </text>
-
-  <rect x="1060" y="400" width="290" height="100" fill="#FFFFFF" stroke="#CC0000" stroke-width="3"/>
-  <text x="1205" y="872.2000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    絶対必須:
-  </text>
-  <text x="1205" y="942.4000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">
-    • Dev Container
-  </text>
-  <text x="1205" y="1007.4000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; text-anchor: middle;">
-    • 隔離環境
-  </text>
-  <text x="1205" y="1072.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    失敗OK環境
-  </text>
-
-  <!-- Bottom recommendation -->
-  <rect x="50" y="520" width="1300" height="150" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    推奨モード選択ガイド
-  </text>
-
-  <text x="700" y="648.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
-    <tspan font-weight="bold" fill="#00AFF0">通常モード:</tspan> 初心者・学習中（まずこれで慣れる）
-  </text>
-
-  <text x="700" y="731.8000000000001" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
-    <tspan font-weight="bold" fill="#00146E">YOLOモード:</tspan> 日常開発の推奨モード（Git管理下で3-5倍の生産性）
-  </text>
-
-  <text x="700" y="815.0000000000001" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
-    <tspan font-weight="bold" fill="#003399">プランモード:</tspan> 大規模タスク・複雑な変更（事前に計画確認で手戻り防止）
-  </text>
-
-  <text x="700" y="898.2000000000002" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    dangerously-skip: Dev Container以外では絶対に使わない！
+  <text x="700" y="1170" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+    dangerously-skip: DevContainer以外で使わない
   </text>
 </svg>

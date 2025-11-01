@@ -1,0 +1,7716 @@
+[
+  {
+    "page": 1,
+    "title": "AI活用研修：新規開発編",
+    "classes": "lead",
+    "metrics": {
+      "h1": 1,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 116,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 205,
+      "max_height": 670,
+      "utilization": 0.30597014925373134,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 2,
+    "title": "本日の目標",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 65,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 3,
+    "title": "AI活用の3原則",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 3,
+      "pre": 0,
+      "img": 1,
+      "text_length": 212,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 216,
+      "max_height": 670,
+      "utilization": 0.32238805970149254,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_01_ai_principles.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 4,
+    "title": "Vibe Coding vs Production Engineering",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 3,
+      "pre": 0,
+      "img": 1,
+      "text_length": 222,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 216,
+      "max_height": 670,
+      "utilization": 0.32238805970149254,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_22_vibe_vs_production.svg"
+    ],
+    "svg_issues": [
+      "diagram_22_vibe_vs_production.svg (overlap=1/100[v:5,h:13])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 1.0,
+      "overall": 75
+    }
+  },
+  {
+    "page": 5,
+    "title": "開発者の役割変化",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 5,
+      "pre": 0,
+      "img": 1,
+      "text_length": 197,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 244,
+      "max_height": 670,
+      "utilization": 0.3641791044776119,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_02_role_change.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 6,
+    "title": "5-STEPフロー全体像",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 6,
+      "pre": 0,
+      "img": 1,
+      "text_length": 291,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 258,
+      "max_height": 670,
+      "utilization": 0.3850746268656716,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_03_5step_flow.svg"
+    ],
+    "svg_issues": [
+      "diagram_03_5step_flow.svg (overlap=26/100[v:18,h:4,oversized:2])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 26.0,
+      "overall": 81
+    }
+  },
+  {
+    "page": 7,
+    "title": "AIの制約①忘れっぽい（セッション制約）",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 3,
+      "pre": 0,
+      "img": 1,
+      "text_length": 192,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 216,
+      "max_height": 670,
+      "utilization": 0.32238805970149254,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_04_ai_memory.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 8,
+    "title": "AIの制約②Reward Hacking（手抜き問題）",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 87,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_39_reward_hacking_examples.svg"
+    ],
+    "svg_issues": [
+      "diagram_39_reward_hacking_examples.svg (overlap=33/100[v:39,h:31])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 33.0,
+      "overall": 82
+    }
+  },
+  {
+    "page": 9,
+    "title": "環境準備",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 64,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 10,
+    "title": "セキュリティベストプラクティス（補足）",
+    "classes": "layout-horizontal-left compact",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 6,
+      "li": 0,
+      "pre": 0,
+      "img": 5,
+      "text_length": 186,
+      "is_compact": true,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 506,
+      "max_height": 670,
+      "utilization": 0.7564179104477612,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 11,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 12,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 93,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 13,
+    "title": "Claude Code とは",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 10,
+      "pre": 0,
+      "img": 0,
+      "text_length": 374,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 450,
+      "max_height": 670,
+      "utilization": 0.6716417910447762,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 14,
+    "title": "セットアップ",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 6,
+      "pre": 0,
+      "img": 1,
+      "text_length": 266,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 258,
+      "max_height": 670,
+      "utilization": 0.3850746268656716,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_29_claudeignore_importance.svg"
+    ],
+    "svg_issues": [
+      "diagram_29_claudeignore_importance.svg (overlap=0/100[h:11])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 0.0,
+      "overall": 75
+    }
+  },
+  {
+    "page": 15,
+    "title": "4つのモード比較",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 4,
+      "pre": 0,
+      "img": 1,
+      "text_length": 220,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 230,
+      "max_height": 670,
+      "utilization": 0.34328358208955223,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_28_claude_code_modes.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 16,
+    "title": "モード詳細と使い分け",
+    "classes": "two-column",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 4,
+      "li": 9,
+      "pre": 0,
+      "img": 0,
+      "text_length": 330,
+      "is_compact": false,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 277,
+      "max_height": 670,
+      "utilization": 0.4141791044776119,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 91,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 98
+    }
+  },
+  {
+    "page": 17,
+    "title": "よくある問題と対処法",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 70,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 18,
+    "title": "効率的な指示の出し方",
+    "classes": "layout-horizontal-right compact",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 4,
+      "li": 0,
+      "pre": 0,
+      "img": 3,
+      "text_length": 164,
+      "is_compact": true,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 319,
+      "max_height": 670,
+      "utilization": 0.4764179104477613,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_30_prompt_patterns.svg"
+    ],
+    "svg_issues": [
+      "diagram_30_prompt_patterns.svg (overlap=42/100[v:3,h:4])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 42.0,
+      "overall": 85
+    }
+  },
+  {
+    "page": 19,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 20,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 88,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 21,
+    "title": "STEP1 要件定義とは",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 9,
+      "pre": 0,
+      "img": 0,
+      "text_length": 287,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 415,
+      "max_height": 670,
+      "utilization": 0.6194029850746269,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 22,
+    "title": "AIに質問させる手法",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 70,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 23,
+    "title": "要件の引き出し方（文字起こしアプローチ）",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 2,
+      "h3": 0,
+      "h4": 0,
+      "p": 7,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 295,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 314,
+      "max_height": 670,
+      "utilization": 0.46865671641791046,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_40_transcript_approach.svg"
+    ],
+    "svg_issues": [
+      "diagram_40_transcript_approach.svg (overlap=43/100[v:19,h:6])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 43.0,
+      "overall": 85
+    }
+  },
+  {
+    "page": 24,
+    "title": "MoSCoW 優先順位付け",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 6,
+      "pre": 0,
+      "img": 1,
+      "text_length": 270,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 258,
+      "max_height": 670,
+      "utilization": 0.3850746268656716,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_05_moscow.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 25,
+    "title": "MoSCoW実践例（ToDoアプリ）",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 78,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_47_moscow_example.svg"
+    ],
+    "svg_issues": [
+      "diagram_47_moscow_example.svg (overlap=14/100[v:2,h:4])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 14.0,
+      "overall": 77
+    }
+  },
+  {
+    "page": 26,
+    "title": "ユーザーストーリーマッピング",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 230,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 272,
+      "max_height": 670,
+      "utilization": 0.4059701492537313,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_31_user_story_mapping.svg"
+    ],
+    "svg_issues": [
+      "diagram_31_user_story_mapping.svg (overlap=32/100[v:7,h:5])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 32.0,
+      "overall": 83
+    }
+  },
+  {
+    "page": 27,
+    "title": "非機能要件",
+    "classes": "layout-horizontal-left compact",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 6,
+      "li": 0,
+      "pre": 0,
+      "img": 5,
+      "text_length": 187,
+      "is_compact": true,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 506,
+      "max_height": 670,
+      "utilization": 0.7564179104477612,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_32_nonfunctional_requirements.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 28,
+    "title": "エラー・エッジケース・制約の洗い出し",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 78,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_45_error_edge_constraint.svg"
+    ],
+    "svg_issues": [
+      "diagram_45_error_edge_constraint.svg (overlap=0/100[h:3])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 0.0,
+      "overall": 74
+    }
+  },
+  {
+    "page": 29,
+    "title": "受け入れ基準（Given-When-Then）",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 9,
+      "pre": 0,
+      "img": 0,
+      "text_length": 244,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 415,
+      "max_height": 670,
+      "utilization": 0.6194029850746269,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 30,
+    "title": "プロトタイプ駆動開発（Vibe Coding）",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 6,
+      "pre": 1,
+      "img": 0,
+      "text_length": 302,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 445,
+      "max_height": 670,
+      "utilization": 0.664179104477612,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 31,
+    "title": "STEP1のまとめ",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 69,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 32,
+    "title": "STEP1 チェックリスト",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 2,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 215,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 286,
+      "max_height": 670,
+      "utilization": 0.42686567164179107,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 33,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 34,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 94,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 35,
+    "title": "STEP2 設計ドキュメントとは",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 9,
+      "pre": 0,
+      "img": 0,
+      "text_length": 303,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 415,
+      "max_height": 670,
+      "utilization": 0.6194029850746269,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 36,
+    "title": "設計ドキュメントの構造",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 310,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 272,
+      "max_height": 670,
+      "utilization": 0.4059701492537313,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_06_spec_structure.svg"
+    ],
+    "svg_issues": [
+      "diagram_06_spec_structure.svg (overlap=0/100[h:1])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 0.0,
+      "overall": 75
+    }
+  },
+  {
+    "page": 37,
+    "title": "Tech Stack Setup",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 9,
+      "pre": 0,
+      "img": 0,
+      "text_length": 289,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 415,
+      "max_height": 670,
+      "utilization": 0.6194029850746269,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 38,
+    "title": "データベーススキーマ設計",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 8,
+      "pre": 0,
+      "img": 1,
+      "text_length": 228,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 286,
+      "max_height": 670,
+      "utilization": 0.42686567164179107,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_07_er_diagram.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 39,
+    "title": "API仕様の明確化",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 8,
+      "pre": 0,
+      "img": 0,
+      "text_length": 224,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 380,
+      "max_height": 670,
+      "utilization": 0.5671641791044776,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 40,
+    "title": "Mermaid記法とSVG生成でビジュアル化",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 3,
+      "pre": 0,
+      "img": 1,
+      "text_length": 212,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 216,
+      "max_height": 670,
+      "utilization": 0.32238805970149254,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_41_mermaid_vs_svg.svg"
+    ],
+    "svg_issues": [
+      "diagram_41_mermaid_vs_svg.svg (overlap=26/100[v:5,h:6])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 26.0,
+      "overall": 81
+    }
+  },
+  {
+    "page": 41,
+    "title": "ER図が開発をスムーズにする理由",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 2,
+      "pre": 0,
+      "img": 1,
+      "text_length": 153,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 202,
+      "max_height": 670,
+      "utilization": 0.30149253731343284,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_08_er_to_code.svg"
+    ],
+    "svg_issues": [
+      "diagram_08_er_to_code.svg (overlap=27/100[v:6,h:7,oversized:1])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 27.0,
+      "overall": 81
+    }
+  },
+  {
+    "page": 42,
+    "title": "シーケンス図がAI実装を助ける理由",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 3,
+      "pre": 0,
+      "img": 1,
+      "text_length": 169,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 216,
+      "max_height": 670,
+      "utilization": 0.32238805970149254,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_09_sequence_login.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 43,
+    "title": "受け入れ条件の詳細化",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 12,
+      "pre": 0,
+      "img": 0,
+      "text_length": 306,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 520,
+      "max_height": 670,
+      "utilization": 0.7761194029850746,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 44,
+    "title": "STEP2のまとめ",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 69,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_46_step2_summary.svg"
+    ],
+    "svg_issues": [
+      "diagram_46_step2_summary.svg (text_size=15.0/100, overlap=0/100[v:6,h:17])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 15.0,
+      "svg_overlap": 0.0,
+      "overall": 57
+    }
+  },
+  {
+    "page": 45,
+    "title": "STEP2 チェックリスト",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 2,
+      "li": 8,
+      "pre": 0,
+      "img": 1,
+      "text_length": 192,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 300,
+      "max_height": 670,
+      "utilization": 0.44776119402985076,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 46,
+    "title": "",
+    "classes": "two-column",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 4,
+      "li": 13,
+      "pre": 0,
+      "img": 0,
+      "text_length": 413,
+      "is_compact": false,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 332,
+      "max_height": 670,
+      "utilization": 0.4962686567164179,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 85,
+      "whitespace": 99,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 47,
+    "title": "Day 1-2: タスク分解 + 実装 + 品質担保 + リファクタリング (13:00-14:50)",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 2,
+      "h3": 0,
+      "h4": 0,
+      "p": 11,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 3341,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 625,
+      "max_height": 670,
+      "utilization": 0.9328358208955224,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 48,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 76,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 49,
+    "title": "STEP3 タスク分解とは",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 73,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 50,
+    "title": "タスク分解 = AIの思考を言語化（重要）",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 81,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 51,
+    "title": "計画書作成による可視化（重要）",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 6,
+      "pre": 0,
+      "img": 0,
+      "text_length": 186,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 310,
+      "max_height": 670,
+      "utilization": 0.4626865671641791,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 96,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 52,
+    "title": "Phase分け戦略（Phase 1-4）",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 8,
+      "pre": 0,
+      "img": 1,
+      "text_length": 290,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 286,
+      "max_height": 670,
+      "utilization": 0.42686567164179107,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_10_phase_breakdown.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 53,
+    "title": "タスク粒度（30分〜2時間）",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 74,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 54,
+    "title": "依存関係の可視化",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 263,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 272,
+      "max_height": 670,
+      "utilization": 0.4059701492537313,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_35_dependency_graph.svg"
+    ],
+    "svg_issues": [
+      "diagram_35_dependency_graph.svg (overlap=36/100[v:2,h:3])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 36.0,
+      "overall": 84
+    }
+  },
+  {
+    "page": 55,
+    "title": "タスク一覧テンプレート",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 270,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 272,
+      "max_height": 670,
+      "utilization": 0.4059701492537313,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_34_task_list_template.svg"
+    ],
+    "svg_issues": [
+      "diagram_34_task_list_template.svg (overlap=24/100[v:14,h:17])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 24.0,
+      "overall": 81
+    }
+  },
+  {
+    "page": 56,
+    "title": "AI活用でタスク自動生成",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 5,
+      "pre": 0,
+      "img": 0,
+      "text_length": 258,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 275,
+      "max_height": 670,
+      "utilization": 0.41044776119402987,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 91,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 98
+    }
+  },
+  {
+    "page": 57,
+    "title": "STEP3のまとめ",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 69,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 58,
+    "title": "STEP3 チェックリスト",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 2,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 178,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 286,
+      "max_height": 670,
+      "utilization": 0.42686567164179107,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 59,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 60,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 73,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 61,
+    "title": "実装の3原則（AIの制約に対応）",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 76,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 62,
+    "title": "実装の標準ワークフロー",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 71,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 63,
+    "title": "TDD/BDD統合ワークフロー",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 290,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 272,
+      "max_height": 670,
+      "utilization": 0.4059701492537313,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_11_tdd_cycle.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 64,
+    "title": "AIにTDD/BDDで実装させる",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 279,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 272,
+      "max_height": 670,
+      "utilization": 0.4059701492537313,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_33_given_when_then.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 65,
+    "title": "セキュリティベストプラクティス（重要）",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 8,
+      "pre": 0,
+      "img": 1,
+      "text_length": 306,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 286,
+      "max_height": 670,
+      "utilization": 0.42686567164179107,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_23_security_best_practices.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 66,
+    "title": "パスワード・JWT認証の実装",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 74,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 67,
+    "title": "セキュアなコードの指示方法（重要）",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 5,
+      "pre": 0,
+      "img": 0,
+      "text_length": 249,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 275,
+      "max_height": 670,
+      "utilization": 0.41044776119402987,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 91,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 98
+    }
+  },
+  {
+    "page": 68,
+    "title": "インクリメンタル開発とは",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 4,
+      "pre": 0,
+      "img": 1,
+      "text_length": 171,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 230,
+      "max_height": 670,
+      "utilization": 0.34328358208955223,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_24_incremental_timeline.svg"
+    ],
+    "svg_issues": [
+      "diagram_24_incremental_timeline.svg (overlap=47/100[h:1])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 47.0,
+      "overall": 86
+    }
+  },
+  {
+    "page": 69,
+    "title": "インクリメンタル実装の実例",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 8,
+      "pre": 0,
+      "img": 0,
+      "text_length": 275,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 380,
+      "max_height": 670,
+      "utilization": 0.5671641791044776,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 70,
+    "title": "AI自己レビュー必須化（重要）",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 6,
+      "pre": 0,
+      "img": 1,
+      "text_length": 274,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 258,
+      "max_height": 670,
+      "utilization": 0.3850746268656716,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_25_ai_self_review_flow.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 71,
+    "title": "STEP4のまとめ",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 69,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 72,
+    "title": "STEP4 チェックリスト",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 2,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 190,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 286,
+      "max_height": 670,
+      "utilization": 0.42686567164179107,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 73,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 74,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 84,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 75,
+    "title": "STEP5 品質担保＆ドキュメント反映とは",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 9,
+      "pre": 0,
+      "img": 0,
+      "text_length": 368,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 415,
+      "max_height": 670,
+      "utilization": 0.6194029850746269,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 76,
+    "title": "テスト駆動開発とAI活用の相乗効果（重要）",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 6,
+      "pre": 0,
+      "img": 0,
+      "text_length": 233,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 310,
+      "max_height": 670,
+      "utilization": 0.4626865671641791,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 96,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 77,
+    "title": "E2Eテスト重視の戦略",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 4,
+      "pre": 0,
+      "img": 0,
+      "text_length": 158,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 240,
+      "max_height": 670,
+      "utilization": 0.3582089552238806,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 85,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 78,
+    "title": "Playwright によるE2Eテスト",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 7,
+      "pre": 0,
+      "img": 0,
+      "text_length": 261,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 345,
+      "max_height": 670,
+      "utilization": 0.5149253731343284,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 79,
+    "title": "ビジュアルリグレッションテスト",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 4,
+      "pre": 0,
+      "img": 0,
+      "text_length": 159,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 240,
+      "max_height": 670,
+      "utilization": 0.3582089552238806,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 85,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 80,
+    "title": "MCP関連ツール",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 4,
+      "pre": 0,
+      "img": 0,
+      "text_length": 193,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 240,
+      "max_height": 670,
+      "utilization": 0.3582089552238806,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 85,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 81,
+    "title": "AI自己レビュー4種類の使い分け",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 76,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 82,
+    "title": "AI自己レビュー①一般レビュー",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 3,
+      "pre": 0,
+      "img": 0,
+      "text_length": 184,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 205,
+      "max_height": 670,
+      "utilization": 0.30597014925373134,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 80,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 83,
+    "title": "AI自己レビュー②セキュリティ特化",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 3,
+      "pre": 0,
+      "img": 0,
+      "text_length": 222,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 205,
+      "max_height": 670,
+      "utilization": 0.30597014925373134,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 80,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 84,
+    "title": "AI自己レビュー③パフォーマンス特化",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 3,
+      "pre": 0,
+      "img": 0,
+      "text_length": 194,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 205,
+      "max_height": 670,
+      "utilization": 0.30597014925373134,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 80,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 85,
+    "title": "AI自己レビュー④テストカバレッジ",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 3,
+      "pre": 0,
+      "img": 1,
+      "text_length": 185,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 216,
+      "max_height": 670,
+      "utilization": 0.32238805970149254,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_26_test_coverage_80_rule.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 86,
+    "title": "自己レビューの実例",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 8,
+      "pre": 0,
+      "img": 0,
+      "text_length": 258,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 380,
+      "max_height": 670,
+      "utilization": 0.5671641791044776,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 87,
+    "title": "STEP5のまとめ",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 69,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 88,
+    "title": "STEP5 チェックリスト",
+    "classes": "layout-horizontal-left compact",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 4,
+      "li": 9,
+      "pre": 0,
+      "img": 1,
+      "text_length": 229,
+      "is_compact": true,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 239,
+      "max_height": 670,
+      "utilization": 0.3573134328358209,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 89,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 9,
+      "pre": 0,
+      "img": 0,
+      "text_length": 328,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 370,
+      "max_height": 670,
+      "utilization": 0.5522388059701493,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 90,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 13,
+      "pre": 0,
+      "img": 0,
+      "text_length": 432,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 510,
+      "max_height": 670,
+      "utilization": 0.7611940298507462,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 91,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 5,
+      "pre": 0,
+      "img": 0,
+      "text_length": 188,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 230,
+      "max_height": 670,
+      "utilization": 0.34328358208955223,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 84,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 92,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 93,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 72,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 94,
+    "title": "Part 2のキーポイント",
+    "classes": "card-grid",
+    "metrics": {
+      "h1": 2,
+      "h2": 2,
+      "h3": 5,
+      "h4": 0,
+      "p": 14,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 3525,
+      "is_compact": false,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 552,
+      "max_height": 670,
+      "utilization": 0.8246268656716418,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 70,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 98
+    }
+  },
+  {
+    "page": 95,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 66,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 96,
+    "title": "1日目の振り返り",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 3,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 142,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 202,
+      "max_height": 670,
+      "utilization": 0.30149253731343284,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_03_5step_flow.svg"
+    ],
+    "svg_issues": [
+      "diagram_03_5step_flow.svg (overlap=26/100[v:18,h:4,oversized:2])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 26.0,
+      "overall": 81
+    }
+  },
+  {
+    "page": 97,
+    "title": "よくある失敗①いきなりコード",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 74,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 98,
+    "title": "よくある失敗②AI自己レビュースキップ",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 5,
+      "pre": 0,
+      "img": 0,
+      "text_length": 198,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 275,
+      "max_height": 670,
+      "utilization": 0.41044776119402987,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 91,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 98
+    }
+  },
+  {
+    "page": 99,
+    "title": "よくある失敗③リファクタリング後回し",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 5,
+      "pre": 0,
+      "img": 0,
+      "text_length": 184,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 275,
+      "max_height": 670,
+      "utilization": 0.41044776119402987,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 91,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 98
+    }
+  },
+  {
+    "page": 100,
+    "title": "1日目のキーメッセージ",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 71,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_48_day1_key_messages.svg"
+    ],
+    "svg_issues": [
+      "diagram_48_day1_key_messages.svg (overlap=0/100[h:7])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 0.0,
+      "overall": 74
+    }
+  },
+  {
+    "page": 101,
+    "title": "演習課題の説明（TODOアプリ）",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 76,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 102,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 103,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 73,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 104,
+    "title": "演習の目的と課題",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 68,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 105,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 5,
+      "p": 0,
+      "li": 16,
+      "pre": 0,
+      "img": 0,
+      "text_length": 578,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 294,
+      "max_height": 670,
+      "utilization": 0.4388059701492537,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 65,
+      "whitespace": 93,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 106,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 2,
+      "h4": 0,
+      "p": 0,
+      "li": 9,
+      "pre": 0,
+      "img": 0,
+      "text_length": 230,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 148,
+      "max_height": 670,
+      "utilization": 0.22201492537313433,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 107,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 108,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 78,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 109,
+    "title": "つまずきポイントと対処法",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 72,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 110,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 111,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 71,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 112,
+    "title": "演習成功のチェックリスト①",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 73,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 113,
+    "title": "演習成功のチェックリスト②",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 73,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 114,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 115,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 69,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 116,
+    "title": "演習で体感できること",
+    "classes": "two-column",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 5,
+      "h4": 0,
+      "p": 0,
+      "li": 11,
+      "pre": 0,
+      "img": 0,
+      "text_length": 425,
+      "is_compact": false,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 380,
+      "max_height": 670,
+      "utilization": 0.5671641791044776,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 95,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 117,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 118,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 65,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 119,
+    "title": "成果物：ディレクトリ構成",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 1,
+      "img": 0,
+      "text_length": 246,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 235,
+      "max_height": 670,
+      "utilization": 0.35074626865671643,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 85,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 120,
+    "title": "成果物：品質基準",
+    "classes": "two-column",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 2,
+      "li": 8,
+      "pre": 0,
+      "img": 0,
+      "text_length": 214,
+      "is_compact": false,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 225,
+      "max_height": 670,
+      "utilization": 0.3358208955223881,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 83,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 121,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 122,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 69,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 123,
+    "title": "1日目全体の振り返り",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 70,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 124,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 125,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 3,
+      "li": 9,
+      "pre": 0,
+      "img": 3,
+      "text_length": 184,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 486,
+      "max_height": 670,
+      "utilization": 0.7261194029850745,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 126,
+    "title": "Day 2-1: リバースエンジニアリング + テストシナリオ (10:00-12:00)",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 10,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 3295,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 520,
+      "max_height": 670,
+      "utilization": 0.7761194029850746,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 127,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 72,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 128,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 5,
+      "pre": 0,
+      "img": 0,
+      "text_length": 283,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 230,
+      "max_height": 670,
+      "utilization": 0.34328358208955223,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 84,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 129,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 4,
+      "pre": 0,
+      "img": 0,
+      "text_length": 192,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 195,
+      "max_height": 670,
+      "utilization": 0.291044776119403,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 130,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 1,
+      "li": 5,
+      "pre": 0,
+      "img": 0,
+      "text_length": 243,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 265,
+      "max_height": 670,
+      "utilization": 0.39552238805970147,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 89,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 98
+    }
+  },
+  {
+    "page": 131,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 132,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 83,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 133,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 1,
+      "li": 4,
+      "pre": 0,
+      "img": 1,
+      "text_length": 186,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 212,
+      "max_height": 670,
+      "utilization": 0.3164179104477612,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_12_reverse_engineering.svg"
+    ],
+    "svg_issues": [
+      "diagram_12_reverse_engineering.svg (overlap=47/100[v:9,h:1,oversized:2])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 47.0,
+      "overall": 86
+    }
+  },
+  {
+    "page": 134,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 12,
+      "pre": 0,
+      "img": 0,
+      "text_length": 435,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 475,
+      "max_height": 670,
+      "utilization": 0.7089552238805971,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 135,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 136,
+    "title": "",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 1,
+      "li": 4,
+      "pre": 0,
+      "img": 1,
+      "text_length": 179,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 212,
+      "max_height": 670,
+      "utilization": 0.3164179104477612,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_38_jagged_intelligence_examples.svg"
+    ],
+    "svg_issues": [
+      "diagram_38_jagged_intelligence_examples.svg (overlap=0/100[h:4])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 0.0,
+      "overall": 75
+    }
+  },
+  {
+    "page": 137,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 138,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 1,
+      "li": 5,
+      "pre": 0,
+      "img": 1,
+      "text_length": 250,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 226,
+      "max_height": 670,
+      "utilization": 0.3373134328358209,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_40_transcript_approach.svg"
+    ],
+    "svg_issues": [
+      "diagram_40_transcript_approach.svg (overlap=43/100[v:19,h:6])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 43.0,
+      "overall": 85
+    }
+  },
+  {
+    "page": 139,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 12,
+      "pre": 0,
+      "img": 0,
+      "text_length": 421,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 475,
+      "max_height": 670,
+      "utilization": 0.7089552238805971,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 140,
+    "title": "",
+    "classes": "layout-horizontal-left compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 1,
+      "li": 3,
+      "pre": 0,
+      "img": 4,
+      "text_length": 180,
+      "is_compact": true,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 390,
+      "max_height": 670,
+      "utilization": 0.5829850746268657,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_44_reverse_to_comprehensive_test.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 141,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 142,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 88,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 143,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 1,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 228,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 254,
+      "max_height": 670,
+      "utilization": 0.37910447761194027,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_18_fit_gap_analysis.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 144,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 145,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 1,
+      "li": 8,
+      "pre": 0,
+      "img": 1,
+      "text_length": 295,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 268,
+      "max_height": 670,
+      "utilization": 0.4,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_13_impact_analysis.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 146,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 147,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 82,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 148,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 11,
+      "pre": 0,
+      "img": 0,
+      "text_length": 351,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 440,
+      "max_height": 670,
+      "utilization": 0.6567164179104478,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 149,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 150,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 11,
+      "pre": 0,
+      "img": 0,
+      "text_length": 367,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 440,
+      "max_height": 670,
+      "utilization": 0.6567164179104478,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 151,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 152,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 1,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 218,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 254,
+      "max_height": 670,
+      "utilization": 0.37910447761194027,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_14_scenario_to_code.svg"
+    ],
+    "svg_issues": [
+      "diagram_14_scenario_to_code.svg (overlap=0/100[h:5])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 0.0,
+      "overall": 75
+    }
+  },
+  {
+    "page": 153,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 154,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 1,
+      "li": 5,
+      "pre": 0,
+      "img": 1,
+      "text_length": 220,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 226,
+      "max_height": 670,
+      "utilization": 0.3373134328358209,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_39_reward_hacking_examples.svg"
+    ],
+    "svg_issues": [
+      "diagram_39_reward_hacking_examples.svg (overlap=33/100[v:39,h:31])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 33.0,
+      "overall": 83
+    }
+  },
+  {
+    "page": 155,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 156,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 1,
+      "li": 5,
+      "pre": 0,
+      "img": 1,
+      "text_length": 248,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 226,
+      "max_height": 670,
+      "utilization": 0.3373134328358209,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_15_test_classification.svg"
+    ],
+    "svg_issues": [
+      "diagram_15_test_classification.svg (overlap=36/100[v:2,h:2])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 36.0,
+      "overall": 84
+    }
+  },
+  {
+    "page": 157,
+    "title": "テストシナリオ作成の実例",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 72,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 158,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 159,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 97,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 125,
+      "max_height": 670,
+      "utilization": 0.1865671641791045,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 160,
+    "title": "テストコード基礎（復習）",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 72,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 161,
+    "title": "テストシナリオからテストコードへ",
+    "classes": "two-column",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 4,
+      "h4": 0,
+      "p": 2,
+      "li": 6,
+      "pre": 0,
+      "img": 0,
+      "text_length": 249,
+      "is_compact": false,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 300,
+      "max_height": 670,
+      "utilization": 0.44776119402985076,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 94,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 162,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 8,
+      "pre": 0,
+      "img": 0,
+      "text_length": 274,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 335,
+      "max_height": 670,
+      "utilization": 0.5,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 163,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 9,
+      "pre": 0,
+      "img": 0,
+      "text_length": 272,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 370,
+      "max_height": 670,
+      "utilization": 0.5522388059701493,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 164,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 11,
+      "pre": 0,
+      "img": 0,
+      "text_length": 351,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 440,
+      "max_height": 670,
+      "utilization": 0.6567164179104478,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 165,
+    "title": "Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)",
+    "classes": "",
+    "metrics": {
+      "h1": 1,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 10,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 3290,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 520,
+      "max_height": 670,
+      "utilization": 0.7761194029850746,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 166,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 71,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 167,
+    "title": "3つの演習課題から選択",
+    "classes": "layout-diagram-only",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 1,
+      "li": 0,
+      "pre": 0,
+      "img": 1,
+      "text_length": 71,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 174,
+      "max_height": 670,
+      "utilization": 0.25970149253731345,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 168,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 169,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 2,
+      "li": 5,
+      "pre": 0,
+      "img": 1,
+      "text_length": 303,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 240,
+      "max_height": 670,
+      "utilization": 0.3582089552238806,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_17_workshop_workflow.svg"
+    ],
+    "svg_issues": [
+      "diagram_17_workshop_workflow.svg (overlap=0/100[v:2,h:17])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 0.0,
+      "overall": 75
+    }
+  },
+  {
+    "page": 170,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 171,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 3,
+      "p": 1,
+      "li": 9,
+      "pre": 0,
+      "img": 0,
+      "text_length": 278,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 189,
+      "max_height": 670,
+      "utilization": 0.282089552238806,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 172,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 173,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 68,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 174,
+    "title": "",
+    "classes": "three-column",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 1,
+      "p": 0,
+      "li": 4,
+      "pre": 0,
+      "img": 0,
+      "text_length": 211,
+      "is_compact": false,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 120,
+      "max_height": 670,
+      "utilization": 0.1791044776119403,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 175,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 176,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 3,
+      "p": 0,
+      "li": 11,
+      "pre": 0,
+      "img": 0,
+      "text_length": 399,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 201,
+      "max_height": 670,
+      "utilization": 0.3003731343283582,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 80,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 177,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 178,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 81,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 55,
+      "max_height": 670,
+      "utilization": 0.08208955223880597,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 88
+    }
+  },
+  {
+    "page": 179,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 1,
+      "p": 0,
+      "li": 10,
+      "pre": 0,
+      "img": 0,
+      "text_length": 275,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 395,
+      "max_height": 670,
+      "utilization": 0.5895522388059702,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 100
+    }
+  },
+  {
+    "page": 180,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 1,
+      "p": 5,
+      "li": 6,
+      "pre": 0,
+      "img": 0,
+      "text_length": 302,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 150,
+      "max_height": 670,
+      "utilization": 0.22462686567164178,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 181,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 1,
+      "p": 1,
+      "li": 5,
+      "pre": 0,
+      "img": 1,
+      "text_length": 208,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 222,
+      "max_height": 670,
+      "utilization": 0.33134328358208953,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_16_regression_prevention.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 182,
+    "title": "",
+    "classes": "layout-horizontal-left",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 1,
+      "p": 1,
+      "li": 8,
+      "pre": 0,
+      "img": 1,
+      "text_length": 231,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 264,
+      "max_height": 670,
+      "utilization": 0.3940298507462687,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_42_regression_mechanism.svg"
+    ],
+    "svg_issues": [
+      "diagram_42_regression_mechanism.svg (overlap=0/100[h:2])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 0.0,
+      "overall": 75
+    }
+  },
+  {
+    "page": 183,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 184,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 185,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 83,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 55,
+      "max_height": 670,
+      "utilization": 0.08208955223880597,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 88
+    }
+  },
+  {
+    "page": 186,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 1,
+      "p": 4,
+      "li": 8,
+      "pre": 0,
+      "img": 0,
+      "text_length": 355,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 162,
+      "max_height": 670,
+      "utilization": 0.24291044776119403,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 187,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 188,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 1,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 69,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 45,
+      "max_height": 670,
+      "utilization": 0.06716417910447761,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 88
+    }
+  },
+  {
+    "page": 189,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 1,
+      "p": 5,
+      "li": 8,
+      "pre": 0,
+      "img": 0,
+      "text_length": 297,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 175,
+      "max_height": 670,
+      "utilization": 0.26119402985074625,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 190,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 1,
+      "p": 5,
+      "li": 7,
+      "pre": 0,
+      "img": 0,
+      "text_length": 289,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 162,
+      "max_height": 670,
+      "utilization": 0.24291044776119403,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 191,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 1,
+      "p": 1,
+      "li": 7,
+      "pre": 0,
+      "img": 1,
+      "text_length": 287,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 250,
+      "max_height": 670,
+      "utilization": 0.373134328358209,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_43_doc_automation_before_after.svg"
+    ],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 100.0,
+      "overall": 100
+    }
+  },
+  {
+    "page": 192,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 193,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 77,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 194,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 4,
+      "pre": 0,
+      "img": 0,
+      "text_length": 125,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 195,
+      "max_height": 670,
+      "utilization": 0.291044776119403,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 195,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 3,
+      "pre": 0,
+      "img": 0,
+      "text_length": 95,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 160,
+      "max_height": 670,
+      "utilization": 0.23880597014925373,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 196,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 4,
+      "pre": 0,
+      "img": 0,
+      "text_length": 120,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 195,
+      "max_height": 670,
+      "utilization": 0.291044776119403,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 197,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 3,
+      "pre": 0,
+      "img": 0,
+      "text_length": 107,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 160,
+      "max_height": 670,
+      "utilization": 0.23880597014925373,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  },
+  {
+    "page": 198,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 199,
+    "title": "",
+    "classes": "lead",
+    "metrics": {
+      "h1": 0,
+      "h2": 1,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 67,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 70,
+      "max_height": 670,
+      "utilization": 0.1044776119402985,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 80.0,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 99
+    }
+  },
+  {
+    "page": 200,
+    "title": "2日間の総まとめ",
+    "classes": "image-top-compact",
+    "metrics": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 2,
+      "h4": 0,
+      "p": 1,
+      "li": 8,
+      "pre": 0,
+      "img": 1,
+      "text_length": 332,
+      "is_compact": true,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 577,
+      "max_height": 670,
+      "utilization": 0.8619402985074627,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_20_2day_summary.svg"
+    ],
+    "svg_issues": [
+      "diagram_20_2day_summary.svg (overlap=0/100[h:2])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 0.0,
+      "overall": 75
+    }
+  },
+  {
+    "page": 201,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 202,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 4,
+      "p": 0,
+      "li": 12,
+      "pre": 0,
+      "img": 0,
+      "text_length": 300,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 229,
+      "max_height": 670,
+      "utilization": 0.34216417910447755,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 90,
+      "whitespace": 84,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 203,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 204,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 5,
+      "p": 1,
+      "li": 8,
+      "pre": 0,
+      "img": 1,
+      "text_length": 324,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 358,
+      "max_height": 670,
+      "utilization": 0.5343283582089552,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_19_common_failures.svg"
+    ],
+    "svg_issues": [
+      "diagram_19_common_failures.svg (overlap=36/100[v:25,h:14])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 36.0,
+      "overall": 84
+    }
+  },
+  {
+    "page": 205,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 206,
+    "title": "",
+    "classes": "two-column compact",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 5,
+      "p": 0,
+      "li": 10,
+      "pre": 0,
+      "img": 0,
+      "text_length": 280,
+      "is_compact": true,
+      "is_multi_column": true,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 220,
+      "max_height": 670,
+      "utilization": 0.3291044776119403,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 95,
+      "whitespace": 82,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 97
+    }
+  },
+  {
+    "page": 207,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 208,
+    "title": "",
+    "classes": "layout-horizontal-right",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 4,
+      "p": 1,
+      "li": 4,
+      "pre": 0,
+      "img": 1,
+      "text_length": 265,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": true
+    },
+    "height_info": {
+      "estimated_height": 284,
+      "max_height": 670,
+      "utilization": 0.42388059701492536,
+      "overflow": 0
+    },
+    "svg_files": [
+      "diagram_21_learning_roadmap.svg"
+    ],
+    "svg_issues": [
+      "diagram_21_learning_roadmap.svg (overlap=23/100[v:25,h:15])"
+    ],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 100,
+      "overflow": 100,
+      "svg": 100.0,
+      "svg_overlap": 23.0,
+      "overall": 80
+    }
+  },
+  {
+    "page": 209,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 0,
+      "h4": 0,
+      "p": 0,
+      "li": 0,
+      "pre": 0,
+      "img": 0,
+      "text_length": 57,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 0,
+      "max_height": 670,
+      "utilization": 0.0,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 50,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 87
+    }
+  },
+  {
+    "page": 210,
+    "title": "",
+    "classes": "",
+    "metrics": {
+      "h1": 0,
+      "h2": 0,
+      "h3": 1,
+      "h4": 0,
+      "p": 0,
+      "li": 4,
+      "pre": 0,
+      "img": 0,
+      "text_length": 130,
+      "is_compact": false,
+      "is_multi_column": false,
+      "is_diagram_only": false
+    },
+    "height_info": {
+      "estimated_height": 195,
+      "max_height": 670,
+      "utilization": 0.291044776119403,
+      "overflow": 0
+    },
+    "svg_files": [],
+    "svg_issues": [],
+    "scores": {
+      "font": 100,
+      "density": 100,
+      "whitespace": 30,
+      "overflow": 100,
+      "svg": 100,
+      "svg_overlap": 100,
+      "overall": 89
+    }
+  }
+]

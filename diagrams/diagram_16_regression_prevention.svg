@@ -1,96 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1454">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1500">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
-      .layer-title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: white; }
-      .layer-text { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: bold; fill: #333333; }
+      .layer-title { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; font-weight: bold; fill: white; }
+      .layer-text { font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: white; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="800" height="700" fill="#FFFFFF"/>
+  <rect width="1040" height="1500" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="400" y="35" class="title" text-anchor="middle">デグレ防止の3層構造（テストピラミッド）</text>
+  <text x="520" y="45" class="title" text-anchor="middle">デグレ防止の3層構造（テストピラミッド）</text>
 
   <!-- Layer 1: E2E Tests (Top - Smallest) -->
-  <path d="M 400 100 L 500 200 L 300 200 Z" fill="#00146E"/>
-  <text x="400" y="140" class="layer-title" text-anchor="middle">E2Eテスト</text>
-  <text x="400" y="218.0" class="layer-text" text-anchor="middle" font-size="24">実行時間: 長い</text>
-  <text x="400" y="296.0" class="layer-text" text-anchor="middle" font-size="24">数: 少ない</text>
+  <path d="M 520 80 L 620 180 L 420 180 Z" fill="#00146E"/>
+  <text x="520" y="130" class="layer-title" text-anchor="middle">E2Eテスト</text>
+  <text x="520" y="165" class="layer-text" text-anchor="middle" font-size="18">実行時間: 長い</text>
+  <text x="520" y="190" class="layer-text" text-anchor="middle" font-size="18">数: 少ない</text>
 
   <!-- Layer 2: Integration Tests (Middle) -->
-  <path d="M 500 200 L 600 350 L 200 350 L 300 200 Z" fill="#00AFF0"/>
-  <text x="400" y="374.0" class="layer-title" text-anchor="middle">統合テスト</text>
-  <text x="400" y="452.0" class="layer-text" text-anchor="middle" font-size="24">実行時間: 中程度</text>
-  <text x="400" y="530.0" class="layer-text" text-anchor="middle" font-size="24">数: 中程度</text>
-  <text x="400" y="805.6" class="layer-text" text-anchor="middle" font-size="24">API単位の動作確認</text>
+  <path d="M 620 180 L 720 330 L 320 330 L 420 180 Z" fill="#00AFF0"/>
+  <text x="520" y="240" class="layer-title" text-anchor="middle">統合テスト</text>
+  <text x="520" y="270" class="layer-text" text-anchor="middle" font-size="18">実行時間: 中程度</text>
+  <text x="520" y="295" class="layer-text" text-anchor="middle" font-size="18">数: 中程度</text>
+  <text x="520" y="320" class="layer-text" text-anchor="middle" font-size="18">API単位の動作確認</text>
 
   <!-- Layer 3: Unit Tests (Bottom - Largest) -->
-  <path d="M 600 350 L 700 500 L 100 500 L 200 350 Z" fill="#66D9FF"/>
-  <text x="400" y="1133.2" class="layer-title" text-anchor="middle">単体テスト</text>
-  <text x="400" y="1211.2" class="layer-text" text-anchor="middle" font-size="24">実行時間: 速い</text>
-  <text x="400" y="1242.4" class="layer-text" text-anchor="middle" font-size="24">数: 多い</text>
-  <text x="400" y="1273.6" class="layer-text" text-anchor="middle" font-size="24">関数・メソッド単位</text>
-  <text x="400" y="1304.8" class="layer-text" text-anchor="middle" font-size="24">リファクタリング後必ず実行</text>
+  <path d="M 720 330 L 820 480 L 220 480 L 320 330 Z" fill="#66D9FF"/>
+  <text x="520" y="385" class="layer-title" text-anchor="middle">単体テスト</text>
+  <text x="520" y="415" class="layer-text" text-anchor="middle" font-size="18">実行時間: 速い</text>
+  <text x="520" y="440" class="layer-text" text-anchor="middle" font-size="18">数: 多い</text>
+  <text x="520" y="465" class="layer-text" text-anchor="middle" font-size="18">関数・メソッド単位</text>
+  <text x="520" y="490" class="layer-text" text-anchor="middle" font-size="18">リファクタリング後必ず実行</text>
 
   <!-- Right side annotations -->
-  <rect x="550" y="110" width="220" height="80" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="5"/>
-  <text x="660" y="135" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">UIテスト</text>
-  <text x="570" y="218.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 画面操作フロー</text>
-  <text x="570" y="288.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 本番に近い環境</text>
+  <rect x="50" y="520" width="450" height="100" fill="#E6E6E6" stroke="#00146E" stroke-width="2" rx="5"/>
+  <text x="275" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: #00146E; text-anchor: middle; font-weight: bold;">UIテスト</text>
+  <text x="60" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• 画面操作フロー</text>
+  <text x="60" y="603" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• 本番に近い環境</text>
 
-  <rect x="550" y="220" width="220" height="110" fill="#E6E6E6" stroke="#00AFF0" stroke-width="3" rx="5"/>
-  <text x="660" y="441.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">API・DB連携</text>
-  <text x="570" y="525.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• コンポーネント間連携</text>
-  <text x="570" y="665.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 実DB使用</text>
-  <text x="570" y="735.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• ビジネスロジック</text>
-  <text x="570" y="805.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">　全体確認</text>
+  <rect x="540" y="520" width="450" height="150" fill="#E6E6E6" stroke="#00AFF0" stroke-width="2" rx="5"/>
+  <text x="765" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: #00146E; text-anchor: middle; font-weight: bold;">API・DB連携</text>
+  <text x="550" y="580" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• コンポーネント間連携</text>
+  <text x="550" y="608" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• 実DB使用</text>
+  <text x="550" y="636" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• ビジネスロジック全体確認</text>
 
-  <rect x="550" y="360" width="220" height="130" fill="#E6E6E6" stroke="#66D9FF" stroke-width="3" rx="5"/>
-  <text x="660" y="889.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">ロジック検証</text>
-  <text x="570" y="972.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 個別関数テスト</text>
-  <text x="570" y="1042.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• モック使用</text>
-  <text x="570" y="1112.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 高速フィードバック</text>
-  <text x="570" y="1182.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• カバレッジ90%以上</text>
-  <text x="570" y="1253.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">　目標</text>
+  <rect x="50" y="700" width="450" height="145" fill="#E6E6E6" stroke="#66D9FF" stroke-width="2" rx="5"/>
+  <text x="275" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: #00146E; text-anchor: middle; font-weight: bold;">ロジック検証</text>
+  <text x="60" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• 個別関数テスト</text>
+  <text x="60" y="783" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• モック使用</text>
+  <text x="60" y="811" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• 高速フィードバック</text>
+  <text x="60" y="839" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• カバレッジ90%以上目標</text>
 
   <!-- Left side annotations -->
-  <rect x="30" y="110" width="220" height="80" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="5"/>
-  <text x="140" y="135" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">実行頻度</text>
-  <text x="50" y="218.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• リリース前</text>
-  <text x="50" y="288.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 重要機能の変更時</text>
+  <rect x="540" y="700" width="450" height="95" fill="#E6E6E6" stroke="#00146E" stroke-width="2" rx="5"/>
+  <text x="765" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: #00146E; text-anchor: middle; font-weight: bold;">実行頻度</text>
+  <text x="550" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• リリース前</text>
+  <text x="550" y="783" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• 重要機能の変更時</text>
 
-  <rect x="30" y="220" width="220" height="110" fill="#E6E6E6" stroke="#00AFF0" stroke-width="3" rx="5"/>
-  <text x="140" y="371.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">実行頻度</text>
-  <text x="50" y="454.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 機能追加時</text>
-  <text x="50" y="525.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• API変更時</text>
-  <text x="50" y="595.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 1日1回以上</text>
+  <rect x="50" y="870" width="450" height="120" fill="#E6E6E6" stroke="#00AFF0" stroke-width="2" rx="5"/>
+  <text x="275" y="895" style="font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: #00146E; text-anchor: middle; font-weight: bold;">実行頻度</text>
+  <text x="60" y="930" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• 機能追加時</text>
+  <text x="60" y="958" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• API変更時</text>
+  <text x="60" y="986" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• 1日1回以上</text>
 
-  <rect x="30" y="360" width="220" height="130" fill="#E6E6E6" stroke="#66D9FF" stroke-width="3" rx="5"/>
-  <text x="140" y="678.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">実行頻度</text>
-  <text x="50" y="761.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• コミット毎</text>
-  <text x="50" y="831.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• リファクタ後必須</text>
-  <text x="50" y="902.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• CI/CD組み込み</text>
-  <text x="50" y="972.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">• 秒単位で結果確認</text>
+  <rect x="540" y="870" width="450" height="145" fill="#E6E6E6" stroke="#66D9FF" stroke-width="2" rx="5"/>
+  <text x="765" y="895" style="font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: #00146E; text-anchor: middle; font-weight: bold;">実行頻度</text>
+  <text x="550" y="930" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• コミット毎</text>
+  <text x="550" y="958" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• リファクタ後必須</text>
+  <text x="550" y="986" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• CI/CD組み込み</text>
+  <text x="550" y="1014" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #333333;">• 秒単位で結果確認</text>
 
   <!-- Bottom note -->
-  <rect x="50" y="530" width="700" height="140" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="400" y="626.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <rect x="50" y="1050" width="940" height="210" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="520" y="1085" style="font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     デグレ防止の黄金ルール
   </text>
 
-  <text x="400" y="722.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
+  <text x="520" y="1130" style="font-family: 'Noto Sans JP', sans-serif; font-size: 22px; fill: #333333; text-anchor: middle;">
     1. <tspan font-weight="bold">リファクタ後は必ず単体テスト全実行</tspan>
   </text>
-  <text x="400" y="888.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
+  <text x="520" y="1168" style="font-family: 'Noto Sans JP', sans-serif; font-size: 22px; fill: #333333; text-anchor: middle;">
     2. <tspan font-weight="bold">機能追加時は統合テスト実行</tspan>
   </text>
-  <text x="400" y="972.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
+  <text x="520" y="1206" style="font-family: 'Noto Sans JP', sans-serif; font-size: 22px; fill: #333333; text-anchor: middle;">
     3. <tspan font-weight="bold">リリース前はE2Eテスト実行</tspan>
   </text>
 
-  <text x="400" y="1055.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="520" y="1248" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     → AIにテストコード生成させて、自動実行で品質担保
   </text>
 </svg>

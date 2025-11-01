@@ -1,62 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; text-anchor: middle; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; text-anchor: middle; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; font-weight: bold; text-anchor: middle; }
+      .text { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; }
+      .small { font-family: 'Noto Sans JP', sans-serif; font-size: 20px; }
       .label { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; text-anchor: middle; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect width="1200" height="680" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="400" y="40" class="title" text-anchor="middle">AIの「忘れっぽい」制約</text>
+  <text x="400" y="70" class="title" text-anchor="middle">AIの「忘れっぽい」制約</text>
 
   <!-- Upper: Context Window (Volatile) -->
-  <rect x="100" y="80" width="600" height="200" fill="#66D9FF" stroke="#00AFF0" stroke-width="4" rx="10" opacity="0.7"/>
-  <text x="400" y="110" class="subtitle" text-anchor="middle">コンテキストウィンドウ（セッション内記憶）</text>
+  <rect x="100" y="110" width="600" height="240" fill="#66D9FF" stroke="#00AFF0" stroke-width="4" rx="10" opacity="0.7"/>
+  <text x="400" y="145" class="subtitle" text-anchor="middle">コンテキストウィンドウ（セッション内記憶）</text>
 
-  <text x="120" y="145" class="text" font-weight="bold">容量: Claude 20万トークン</text>
-  <text x="120" y="170" class="text" font-weight="bold">範囲: セッション内のみ</text>
+  <text x="120" y="185" class="text" font-weight="bold">容量: Claude 20万トークン</text>
+  <text x="120" y="215" class="text" font-weight="bold">範囲: セッション内のみ</text>
 
-  <rect x="120" y="190" width="560" height="70" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5"/>
-  <text x="400" y="215" class="text" text-anchor="middle" fill="#00146E" font-weight="bold">問題点:</text>
-  <text x="130" y="240" class="small" fill="#00146E">• ブラウザを閉じる/新プロジェクト → 全て忘れる</text>
-  <text x="130" y="255" class="small" fill="#00146E">• 同じバグを何度も修正、前回の成功方法を忘れる</text>
+  <rect x="120" y="245" width="560" height="90" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5"/>
+  <text x="400" y="275" class="text" text-anchor="middle" fill="#00146E" font-weight="bold">問題点:</text>
+  <text x="130" y="303" class="small" fill="#00146E">• ブラウザを閉じる/新プロジェクト → 全て忘れる</text>
+  <text x="130" y="327" class="small" fill="#00146E">• 同じバグを何度も修正、前回の成功方法を忘れる</text>
 
   <!-- Arrow down (Documentation) -->
-  <line x1="400" y1="290" x2="400" y2="320" stroke="#00146E" stroke-width="4"/>
-  <polygon points="400,320 395,310 405,310" fill="#00146E"/>
-  <text x="420" y="310" class="text" fill="#00146E" font-weight="bold">ドキュメント化</text>
+  <line x1="400" y1="360" x2="400" y2="395" stroke="#00146E" stroke-width="4"/>
+  <polygon points="400,395 395,385 405,385" fill="#00146E"/>
+  <text x="420" y="382" class="text" fill="#00146E" font-weight="bold">ドキュメント化</text>
 
   <!-- Lower: External Memory (Persistent) -->
-  <rect x="100" y="330" width="600" height="220" fill="#00146E" stroke="#00146E" stroke-width="4" rx="10"/>
-  <text x="400" y="360" class="subtitle" text-anchor="middle" fill="white">外部メモリ（ドキュメント化）</text>
+  <rect x="100" y="405" width="600" height="235" fill="#00146E" stroke="#00146E" stroke-width="4" rx="10"/>
+  <text x="400" y="440" class="subtitle" text-anchor="middle" fill="white">外部メモリ（ドキュメント化）</text>
 
   <g transform="translate(0, 0)">
-    <rect x="120" y="380" width="160" height="60" fill="#00AFF0" rx="5"/>
-    <text x="200" y="405" class="text" text-anchor="middle" fill="white" font-weight="bold">architecture.md</text>
-    <text x="200" y="425" class="small" text-anchor="middle" fill="white">設計・技術判断</text>
+    <rect x="120" y="460" width="160" height="60" fill="#00AFF0" rx="5"/>
+    <text x="200" y="485" class="text" text-anchor="middle" fill="white" font-weight="bold">architecture.md</text>
+    <text x="200" y="508" class="small" text-anchor="middle" fill="white">設計・技術判断</text>
   </g>
 
   <g transform="translate(0, 0)">
-    <rect x="320" y="380" width="160" height="60" fill="#00AFF0" rx="5"/>
-    <text x="400" y="405" class="text" text-anchor="middle" fill="white" font-weight="bold">README.md</text>
-    <text x="400" y="425" class="small" text-anchor="middle" fill="white">使い方・知見</text>
+    <rect x="320" y="460" width="160" height="60" fill="#00AFF0" rx="5"/>
+    <text x="400" y="485" class="text" text-anchor="middle" fill="white" font-weight="bold">README.md</text>
+    <text x="400" y="508" class="small" text-anchor="middle" fill="white">使い方・知見</text>
   </g>
 
   <g transform="translate(0, 0)">
-    <rect x="520" y="380" width="160" height="60" fill="#00AFF0" rx="5"/>
-    <text x="600" y="405" class="text" text-anchor="middle" fill="white" font-weight="bold">CLAUDE.md</text>
-    <text x="600" y="425" class="small" text-anchor="middle" fill="white">プロンプトパターン</text>
+    <rect x="520" y="460" width="160" height="60" fill="#00AFF0" rx="5"/>
+    <text x="600" y="485" class="text" text-anchor="middle" fill="white" font-weight="bold">CLAUDE.md</text>
+    <text x="600" y="508" class="small" text-anchor="middle" fill="white">プロンプトパターン</text>
   </g>
 
-  <text x="120" y="475" class="text" fill="white" font-weight="bold">効果:</text>
-  <text x="130" y="495" class="text" fill="white">• 知見の蓄積</text>
-  <text x="130" y="515" class="text" fill="white">• 次のセッションで参照可能</text>
-  <text x="130" y="535" class="text" fill="white">• AIが過去の成功パターンを活用</text>
+  <text x="120" y="550" class="text" fill="white" font-weight="bold">効果:</text>
+  <text x="130" y="577" class="text" fill="white">• 知見の蓄積</text>
+  <text x="130" y="602" class="text" fill="white">• 次のセッションで参照可能</text>
+  <text x="130" y="627" class="text" fill="white">• AIが過去の成功パターンを活用</text>
 
   <!-- Bottom note -->
-  <rect x="100" y="560" width="600" height="30" fill="#E6E6E6" rx="5"/>
-  <text x="400" y="580" class="text" text-anchor="middle" font-weight="bold">ドキュメント = AIの外部メモリ</text>
+  <rect x="100" y="650" width="600" height="25" fill="#E6E6E6" rx="5"/>
+  <text x="400" y="667" class="text" text-anchor="middle" font-weight="bold">ドキュメント = AIの外部メモリ</text>
 </svg>

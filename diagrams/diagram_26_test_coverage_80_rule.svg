@@ -35,7 +35,7 @@
     (優先度: 低)
   </text>
 
-  <text x="500" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
+  <text x="500" y="420" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
     Getter/Setter、定数、シンプルな代入
   </text>
   <text x="500" y="511" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
@@ -50,12 +50,12 @@
 
   <!-- Must test details -->
   <rect x="795" y="130" width="170" height="220" fill="#00AFF0" rx="5"/>
-  <text x="880" y="201" class="layer-title" text-anchor="middle" font-size="26">必須テスト</text>
+  <text x="880" y="220" class="layer-title" text-anchor="middle" font-size="26">必須テスト</text>
 
-  <text x="805" y="292" class="layer-text" font-weight="bold">ビジネスロジック:</text>
+  <text x="805" y="310" class="layer-text" font-weight="bold">ビジネスロジック:</text>
   <text x="815" y="363" class="layer-text">• 料金計算</text>
-  <text x="815" y="434" class="layer-text">• 在庫管理</text>
-  <text x="815" y="505" class="layer-text">• 注文処理</text>
+  <text x="815" y="454" class="layer-text">• 在庫管理</text>
+  <text x="815" y="530" class="layer-text">• 注文処理</text>
 
   <text x="805" y="576" class="layer-text" font-weight="bold">セキュリティ:</text>
   <text x="815" y="647" class="layer-text">• 認証・認可</text>
@@ -75,53 +75,53 @@
   <text x="805" y="1159" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; font-weight: bold;">
     例:
   </text>
-  <text x="815" y="1230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="815" y="1270" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
     // Getter/Setter
   </text>
-  <text x="815" y="1301" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333;">
+  <text x="815" y="1350" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333;">
     getName() { return name; }
   </text>
 
-  <text x="815" y="1372" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+  <text x="815" y="1440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
     // 定数
   </text>
-  <text x="815" y="1443" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333;">
+  <text x="815" y="1530" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333;">
     MAX_SIZE = 100;
   </text>
 
   <!-- Left side: Examples -->
   <rect x="20" y="80" width="210" height="440" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="125" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <text x="125" y="105" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     実装例
   </text>
 
   <!-- Good example -->
   <rect x="35" y="130" width="180" height="220" fill="#00146E" rx="5"/>
-  <text x="125" y="201" class="layer-title" text-anchor="middle" font-size="26">✓ テスト必須</text>
+  <text x="125" y="200" class="layer-title" text-anchor="middle" font-size="26">✓ テスト必須</text>
 
   <rect x="45" y="165" width="160" height="170" fill="#003399" rx="3"/>
-  <text x="55" y="292" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+  <text x="55" y="260" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
     // ビジネスロジック
   </text>
   <text x="55" y="350" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
     calculateTotal(items) {
   </text>
-  <text x="60" y="408" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+  <text x="60" y="385" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
     if (items.length === 0)
   </text>
-  <text x="65" y="466" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+  <text x="65" y="445" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
     throw new Error();
   </text>
-  <text x="60" y="524" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+  <text x="60" y="491" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
     let total = 0;
   </text>
-  <text x="60" y="582" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+  <text x="60" y="556" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
     for (item of items) {
   </text>
   <text x="65" y="640" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
     total += item.price;
   </text>
-  <text x="60" y="698" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+  <text x="60" y="673" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
     }
   </text>
   <text x="60" y="756" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
@@ -160,13 +160,13 @@
     80%ルールの実践
   </text>
 
-  <text x="500" y="1333" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
+  <text x="500" y="1333" style="font-family: 'Noto Sans JP', sans-serif; font-size: 37px; fill: #333333; text-anchor: middle;">
     1. ビジネスロジックを優先的にテスト → 本番障害防止の効果が高い
   </text>
-  <text x="500" y="1417" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
+  <text x="500" y="1417" style="font-family: 'Noto Sans JP', sans-serif; font-size: 37px; fill: #333333; text-anchor: middle;">
     2. Getter/Setterはテストしない → コスト削減、重要な箇所に集中
   </text>
-  <text x="500" y="1501" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
+  <text x="500" y="1501" style="font-family: 'Noto Sans JP', sans-serif; font-size: 37px; fill: #333333; text-anchor: middle;">
     3. JaCoCoで確認 → 80%未満の箇所を特定してAIに追加テスト依頼
   </text>
 </svg>

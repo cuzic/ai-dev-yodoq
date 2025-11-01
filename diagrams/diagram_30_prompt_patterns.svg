@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1673">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 2100">
   <defs>
     <style>
       .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
@@ -8,214 +8,176 @@
     </style>
   </defs>
 
-  
-  <rect width="1400" height="900" fill="#FFFFFF" />
 
-  
-  <text x="700" y="40" class="title" text-anchor="middle">プロンプトパターン：良い例 vs 悪い例</text>
+  <rect width="1820" height="2100" fill="#FFFFFF" />
 
-  
-  <rect x="50" y="80" width="650" height="240" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10" />
-  <text x="375" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+
+  <text x="910" y="110" class="title" text-anchor="middle">プロンプトパターン：良い例 vs 悪い例</text>
+
+
+  <rect x="50" y="180" width="650" height="530" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10" />
+  <text x="375" y="220" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
     ✗ 悪い例：曖昧な指示
   </text>
 
-  <rect x="70" y="125" width="600" height="180" fill="#CC0000" rx="8" />
-  <text x="90" y="150" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
+  <rect x="70" y="280" width="600" height="400" fill="#CC0000" rx="8" />
+  <text x="90" y="350" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
     プロンプト:
   </text>
-  <text x="100" y="234.2" class="code-text">
+  <text x="100" y="420" class="code-text">
     「ログイン機能を作って」
   </text>
 
-  <text x="90" y="313.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+  <text x="90" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
     問題点:
   </text>
-  <text x="100" y="392.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • セキュリティ要件が不明（BCrypt？平文？）
+  <text x="100" y="585" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • セキュリティ要件が不明
   </text>
-  <text x="100" y="463.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • 認証方式が不明（JWT？Session？）
-  </text>
-  <text x="100" y="534.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • バリデーション要件が不明
-  </text>
-  <text x="100" y="605.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    → AIが独自判断 → 危険なコード生成の可能性
+  <text x="100" y="655" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • 認証方式が不明
   </text>
 
-  
-  <rect x="730" y="80" width="650" height="240" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10" />
-  <text x="1055" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+
+  <rect x="730" y="180" width="650" height="530" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10" />
+  <text x="1055" y="220" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
     ✓ 良い例：具体的な指示
   </text>
 
-  <rect x="750" y="125" width="600" height="180" fill="#00AA00" rx="8" />
-  <text x="770" y="158.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
+  <rect x="750" y="280" width="600" height="400" fill="#00AA00" rx="8" />
+  <text x="770" y="350" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
     プロンプト:
   </text>
-  <text x="780" y="242.2" class="code-text">
+  <text x="780" y="420" class="code-text">
     「ログイン機能を実装して。要件:
   </text>
-  <text x="780" y="308.2" class="code-text">
-    - BCryptでパスワードハッシュ化必須
+  <text x="780" y="485" class="code-text">
+    - BCryptでパスワードハッシュ化
   </text>
-  <text x="780" y="374.2" class="code-text">
-    - JWT認証（有効期限24時間）
+  <text x="780" y="550" class="code-text">
+    - JWT認証（24時間）
   </text>
-  <text x="780" y="440.2" class="code-text">
-    - 環境変数でシークレット管理（.env.example作成）
-  </text>
-  <text x="780" y="506.2" class="code-text">
+  <text x="780" y="615" class="code-text">
     - @Valid でバリデーション
   </text>
-  <text x="780" y="572.2" class="code-text">
-    - ログイン失敗時のエラーハンドリング
-  </text>
-  <text x="780" y="638.2" class="code-text">
-    - JUnit テストコード含む」
+
+
+  <rect x="50" y="750" width="650" height="500" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10" />
+  <text x="375" y="790" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+    ✗ 悪い例：複数タスク同時
   </text>
 
-  <text x="770" y="717.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    → セキュアで保守性の高いコードが生成される
-  </text>
-
-  
-  <rect x="50" y="350" width="650" height="240" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10" />
-  <text x="375" y="380" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    ✗ 悪い例：複数タスク同時依頼
-  </text>
-
-  <rect x="70" y="395" width="600" height="180" fill="#CC0000" rx="8" />
-  <text x="90" y="690.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
+  <rect x="70" y="850" width="600" height="370" fill="#CC0000" rx="8" />
+  <text x="90" y="920" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
     プロンプト:
   </text>
-  <text x="100" y="774.2" class="code-text">
-    「ログイン、商品一覧、カート、決済、管理画面を作って」
+  <text x="100" y="990" class="code-text">
+    「ログイン、商品一覧、カート、
+  </text>
+  <text x="100" y="1055" class="code-text">
+    決済、管理画面を作って」
   </text>
 
-  <text x="90" y="853.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+  <text x="90" y="1145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
     問題点:
   </text>
-  <text x="100" y="932.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • 一度に全部作る → 動作確認できない（2時間後に初テスト）
-  </text>
-  <text x="100" y="1003.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • バグが発生した時、どの機能が原因か特定困難
-  </text>
-  <text x="100" y="1074.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • 要件漏れ・認識齟齬が後から大量発覚
-  </text>
-  <text x="100" y="1145.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    → Vibe Coding の典型的失敗パターン
+  <text x="100" y="1210" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • 動作確認ができない
   </text>
 
-  
-  <rect x="730" y="350" width="650" height="240" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10" />
-  <text x="1055" y="380" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
-    ✓ 良い例：インクリメンタル開発
+
+  <rect x="730" y="750" width="650" height="500" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10" />
+  <text x="1055" y="790" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+    ✓ 良い例：インクリメンタル
   </text>
 
-  <rect x="750" y="395" width="600" height="180" fill="#00AA00" rx="8" />
-  <text x="770" y="801.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
-    プロンプト（Increment 1）:
+  <rect x="750" y="850" width="600" height="370" fill="#00AA00" rx="8" />
+  <text x="770" y="920" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
+    Increment 1:
   </text>
-  <text x="780" y="885.6" class="code-text">
-    「ログイン機能を実装して（要件は上記の通り）」
+  <text x="780" y="1000" class="code-text">
+    「ログイン機能を実装」
   </text>
-  <text x="780" y="951.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    → 実装 → テスト → コミット → 動作確認 ✓
-  </text>
-
-  <text x="770" y="1035.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
-    プロンプト（Increment 2）:
-  </text>
-  <text x="780" y="1120.0" class="code-text">
-    「商品一覧機能を追加して（ページング、検索機能含む）」
-  </text>
-  <text x="780" y="1186.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    → 実装 → テスト → コミット → 動作確認 ✓
+  <text x="780" y="1055" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: white;">
+    → テスト → 確認 ✓
   </text>
 
-  <text x="770" y="1265.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    → 30分毎に成果確認、問題早期発見、リスク最小化
+  <text x="770" y="1145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
+    Increment 2:
+  </text>
+  <text x="780" y="1210" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: white;">
+    → 次の機能へ
   </text>
 
-  
-  <rect x="50" y="620" width="1330" height="250" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10" />
-  <text x="715" y="1371.3" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+
+  <rect x="50" y="1290" width="1330" height="750" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10" />
+  <text x="715" y="1370" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     プロンプトベストプラクティス
   </text>
 
-  
-  <rect x="70" y="675" width="400" height="180" fill="#00AFF0" rx="8" />
-  <text x="270" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+
+  <rect x="70" y="1420" width="390" height="580" fill="#00AFF0" rx="8" />
+  <text x="265" y="1475" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
     1. 5W1Hを明確に
   </text>
-  <text x="90" y="1217.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+  <text x="90" y="1565" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
     • What: 何を作るか
   </text>
-  <text x="90" y="1288.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • Why: なぜ必要か（ビジネス目的）
+  <text x="90" y="1650" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • Why: なぜ必要か
   </text>
-  <text x="90" y="1359.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • How: どう実装するか（技術要件）
+  <text x="90" y="1725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • How: どう実装するか
   </text>
-  <text x="90" y="1430.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • Who: 誰が使うか（ユーザー）
+  <text x="90" y="1800" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • Who: 誰が使うか
   </text>
-  <text x="90" y="1501.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • When: いつ使うか（利用シーン）
+  <text x="90" y="1875" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • When: いつ使うか
   </text>
-  <text x="90" y="1573.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • Where: どこに配置するか（アーキテクチャ）
+  <text x="90" y="1950" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • Where: どこに配置
   </text>
 
-  
-  <rect x="490" y="675" width="400" height="180" fill="#003399" rx="8" />
-  <text x="690" y="1477.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+
+  <rect x="480" y="1420" width="430" height="580" fill="#003399" rx="8" />
+  <text x="695" y="1575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
     2. 制約条件を明記
   </text>
-  <text x="510" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • セキュリティ: BCrypt、JWT、環境変数
+  <text x="500" y="1665" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • セキュリティ: BCrypt
   </text>
-  <text x="510" y="796.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • バリデーション: @Valid、カスタム制約
+  <text x="500" y="1680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • バリデーション
   </text>
-  <text x="510" y="867.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • エラーハンドリング: カスタム例外、統一形式
+  <text x="500" y="1755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • エラーハンドリング
   </text>
-  <text x="510" y="938.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • テスト: カバレッジ80%以上
+  <text x="500" y="1830" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • テスト: 80%以上
   </text>
-  <text x="510" y="1009.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • コーディング規約: 変数命名、コメント
+  <text x="500" y="1905" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • コーディング規約
   </text>
-  <text x="510" y="1081.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • パフォーマンス: N+1対策、キャッシュ
+  <text x="500" y="1980" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • パフォーマンス
   </text>
 
-  
-  <rect x="910" y="675" width="450" height="180" fill="#00146E" rx="8" />
-  <text x="1135" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
-    3. 期待する成果物を指定
+
+  <rect x="930" y="1420" width="420" height="580" fill="#00146E" rx="8" />
+  <text x="1140" y="1675" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    3. 期待する成果物
   </text>
-  <text x="930" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • ソースコード（Controller, Service, Repository）
+  <text x="950" y="1765" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • ソースコード
   </text>
-  <text x="930" y="796.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • テストコード（JUnit、カバレッジ80%以上）
+  <text x="950" y="1840" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • テストコード
   </text>
-  <text x="930" y="867.4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • .env.example（環境変数テンプレート）
+  <text x="950" y="1915" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • .env.example
   </text>
-  <text x="930" y="938.6" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • README.md（セットアップ手順、API仕様）
-  </text>
-  <text x="930" y="1009.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    • マイグレーションSQL（DB変更がある場合）
-  </text>
-  <text x="930" y="1081.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    → 成果物を明示すると、AIが包括的に対応
+  <text x="950" y="1990" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    • README.md
   </text>
 </svg>

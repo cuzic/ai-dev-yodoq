@@ -1,199 +1,153 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1170">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1680">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .example-title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: white; }
-      .example-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 80px; font-weight: bold; fill: #333333; }
+      .section-title { font-family: 'Noto Sans JP', sans-serif; font-size: 68px; font-weight: bold; }
+      .example-title { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: bold; fill: white; }
+      .example-text { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: white; }
+      .example-conclusion { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: white; font-weight: bold; }
+      .case-title { font-family: 'Noto Sans JP', sans-serif; font-size: 58px; fill: white; font-weight: bold; }
+      .case-section { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: white; font-weight: bold; }
+      .case-text { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: white; }
+      .best-title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold; }
+      .best-label { font-family: 'Noto Sans JP', sans-serif; font-size: 52px; fill: white; font-weight: bold; }
+      .best-text { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: white; }
+      .best-summary { font-family: 'Noto Sans JP', sans-serif; font-size: 52px; fill: white; font-weight: bold; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="1400" height="900" fill="#FFFFFF"/>
+  <rect width="1820" height="1680" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="700" y="40" class="title" text-anchor="middle">Jagged Intelligence 具体例（AIの得意/不得意領域）</text>
+  <text x="910" y="60" class="title" text-anchor="middle">Jagged Intelligence 具体例（AIの得意/不得意領域）</text>
 
   <!-- Concept -->
-  <rect x="50" y="70" width="1300" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="105" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    AIの能力は凸凹（Jagged）→ 得意分野を活かし、苦手分野は人間が補完
-  </text>
+  <rect x="80" y="100" width="1660" height="90" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="910" y="135" class="section-title" text-anchor="middle" fill="#00146E">AIの能力は凸凹（Jagged）</text>
+  <text x="910" y="175" class="section-title" text-anchor="middle" fill="#00146E">→ 得意分野を活かし、苦手分野は人間が補完</text>
 
   <!-- Strong Areas -->
-  <rect x="50" y="160" width="650" height="330" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
-  <text x="375" y="195" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
-    ✓ AIが得意な領域（積極的に活用）
-  </text>
+  <rect x="80" y="230" width="820" height="500" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
+  <text x="490" y="275" class="section-title" fill="#00AA00" text-anchor="middle">✓ AIが得意な領域（積極的に活用）</text>
 
   <!-- Strong 1 -->
-  <rect x="70" y="210" width="290" height="130" fill="#00AA00" rx="8"/>
-  <text x="215" y="235" class="example-title" text-anchor="middle">1. ボイラープレートコード</text>
-  <text x="90" y="260" class="example-text" font-weight="bold">具体例:</text>
-  <text x="100" y="278" class="example-text">• CRUD API（GET/POST/PUT/DELETE）</text>
-  <text x="100" y="293" class="example-text">• DTO/Entity変換コード</text>
-  <text x="100" y="308" class="example-text">• バリデーションロジック</text>
-  <text x="90" y="328" class="example-text" font-weight="bold">→ AIに任せて生産性10倍</text>
+  <rect x="110" y="305" width="360" height="200" fill="#00AA00" rx="8"/>
+  <text x="290" y="340" class="example-title" text-anchor="middle">1. ボイラープレート</text>
+  <text x="290" y="370" class="example-title" text-anchor="middle">コード</text>
+  <text x="130" y="405" class="example-text" font-weight="bold">具体例:</text>
+  <text x="140" y="440" class="example-text">• CRUD API生成</text>
+  <text x="140" y="470" class="example-text">• DTO/Entity変換</text>
+  <text x="130" y="500" class="example-conclusion">→ 生産性10倍</text>
 
   <!-- Strong 2 -->
-  <rect x="380" y="210" width="290" height="130" fill="#00AA00" rx="8"/>
-  <text x="525" y="235" class="example-title" text-anchor="middle">2. テストコード生成</text>
-  <text x="400" y="260" class="example-text" font-weight="bold">具体例:</text>
-  <text x="410" y="278" class="example-text">• 正常系テスト（Happy Path）</text>
-  <text x="410" y="293" class="example-text">• 異常系テスト（エッジケース）</text>
-  <text x="410" y="308" class="example-text">• モックオブジェクト設定</text>
-  <text x="400" y="328" class="example-text" font-weight="bold">→ カバレッジ80%が30分で達成</text>
+  <rect x="490" y="305" width="360" height="200" fill="#00AA00" rx="8"/>
+  <text x="670" y="340" class="example-title" text-anchor="middle">2. テストコード生成</text>
+  <text x="510" y="375" class="example-text" font-weight="bold">具体例:</text>
+  <text x="520" y="410" class="example-text">• 正常系テスト</text>
+  <text x="520" y="440" class="example-text">• 異常系テスト</text>
+  <text x="520" y="470" class="example-text">• モック設定</text>
+  <text x="510" y="500" class="example-conclusion">→ カバレッジ80%達成</text>
 
   <!-- Strong 3 -->
-  <rect x="70" y="350" width="290" height="130" fill="#00AA00" rx="8"/>
-  <text x="215" y="375" class="example-title" text-anchor="middle">3. ドキュメント生成</text>
-  <text x="90" y="400" class="example-text" font-weight="bold">具体例:</text>
-  <text x="100" y="418" class="example-text">• README.md（セットアップ手順）</text>
-  <text x="100" y="433" class="example-text">• API仕様書（OpenAPI）</text>
-  <text x="100" y="448" class="example-text">• JavaDoc コメント</text>
-  <text x="90" y="468" class="example-text" font-weight="bold">→ 手動作成の1/10の時間</text>
+  <rect x="110" y="520" width="360" height="200" fill="#00AA00" rx="8"/>
+  <text x="290" y="555" class="example-title" text-anchor="middle">3. ドキュメント生成</text>
+  <text x="130" y="590" class="example-text" font-weight="bold">具体例:</text>
+  <text x="140" y="625" class="example-text">• README.md</text>
+  <text x="140" y="655" class="example-text">• API仕様書</text>
+  <text x="140" y="685" class="example-text">• JavaDoc</text>
+  <text x="130" y="715" class="example-conclusion">→ 時間1/10</text>
 
   <!-- Strong 4 -->
-  <rect x="380" y="350" width="290" height="130" fill="#00AA00" rx="8"/>
-  <text x="525" y="375" class="example-title" text-anchor="middle">4. リファクタリング提案</text>
-  <text x="400" y="400" class="example-text" font-weight="bold">具体例:</text>
-  <text x="410" y="418" class="example-text">• N+1問題の検出・修正</text>
-  <text x="410" y="433" class="example-text">• 重複コードの共通化</text>
-  <text x="410" y="448" class="example-text">• SOLID原則違反の指摘</text>
-  <text x="400" y="468" class="example-text" font-weight="bold">→ コードレビューの負担削減</text>
+  <rect x="490" y="520" width="360" height="200" fill="#00AA00" rx="8"/>
+  <text x="670" y="555" class="example-title" text-anchor="middle">4. リファクタリング</text>
+  <text x="670" y="585" class="example-title" text-anchor="middle">提案</text>
+  <text x="510" y="620" class="example-text" font-weight="bold">具体例:</text>
+  <text x="520" y="655" class="example-text">• N+1問題検出</text>
+  <text x="520" y="685" class="example-text">• 重複コード共通化</text>
+  <text x="510" y="715" class="example-conclusion">→ レビュー負担削減</text>
 
   <!-- Weak Areas -->
-  <rect x="720" y="160" width="650" height="330" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
-  <text x="1045" y="195" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
-    ✗ AIが苦手な領域（人間が補完必須）
-  </text>
+  <rect x="920" y="230" width="820" height="500" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
+  <text x="1330" y="275" class="section-title" fill="#CC0000" text-anchor="middle">✗ AIが苦手な領域（人間が補完必須）</text>
 
   <!-- Weak 1 -->
-  <rect x="740" y="210" width="290" height="130" fill="#CC0000" rx="8"/>
-  <text x="885" y="235" class="example-title" text-anchor="middle">1. ビジネスロジック設計</text>
-  <text x="760" y="260" class="example-text" font-weight="bold">具体例:</text>
-  <text x="770" y="278" class="example-text">• 割引ルールの優先順位</text>
-  <text x="770" y="293" class="example-text">• 在庫引当のロジック</text>
-  <text x="770" y="308" class="example-text">• 決済フローの例外処理</text>
-  <text x="760" y="328" class="example-text" font-weight="bold">→ 人間が要件を明確に指示</text>
+  <rect x="950" y="305" width="360" height="200" fill="#CC0000" rx="8"/>
+  <text x="1130" y="340" class="example-title" text-anchor="middle">1. ビジネスロジック</text>
+  <text x="1130" y="370" class="example-title" text-anchor="middle">設計</text>
+  <text x="970" y="405" class="example-text" font-weight="bold">具体例:</text>
+  <text x="980" y="440" class="example-text">• 割引ルール優先順位</text>
+  <text x="980" y="470" class="example-text">• 在庫引当ロジック</text>
+  <text x="970" y="500" class="example-conclusion">→ 人間が要件指示</text>
 
   <!-- Weak 2 -->
-  <rect x="1050" y="210" width="290" height="130" fill="#CC0000" rx="8"/>
-  <text x="1195" y="235" class="example-title" text-anchor="middle">2. パフォーマンス最適化</text>
-  <text x="1070" y="260" class="example-text" font-weight="bold">具体例:</text>
-  <text x="1080" y="278" class="example-text">• DB インデックス設計</text>
-  <text x="1080" y="293" class="example-text">• キャッシュ戦略</text>
-  <text x="1080" y="308" class="example-text">• 並列処理の最適化</text>
-  <text x="1070" y="328" class="example-text" font-weight="bold">→ 人間が実測値をもとに判断</text>
+  <rect x="1330" y="305" width="360" height="200" fill="#CC0000" rx="8"/>
+  <text x="1510" y="340" class="example-title" text-anchor="middle">2. パフォーマンス</text>
+  <text x="1510" y="370" class="example-title" text-anchor="middle">最適化</text>
+  <text x="1350" y="405" class="example-text" font-weight="bold">具体例:</text>
+  <text x="1360" y="440" class="example-text">• インデックス設計</text>
+  <text x="1360" y="470" class="example-text">• キャッシュ戦略</text>
+  <text x="1350" y="500" class="example-conclusion">→ 人間が実測判断</text>
 
   <!-- Weak 3 -->
-  <rect x="740" y="350" width="290" height="130" fill="#CC0000" rx="8"/>
-  <text x="885" y="375" class="example-title" text-anchor="middle">3. セキュリティ脆弱性</text>
-  <text x="760" y="400" class="example-text" font-weight="bold">具体例:</text>
-  <text x="770" y="418" class="example-text">• 認可制御の漏れ（@PreAuthorize）</text>
-  <text x="770" y="433" class="example-text">• 機密情報のログ出力</text>
-  <text x="770" y="448" class="example-text">• CSRF対策の不備</text>
-  <text x="760" y="468" class="example-text" font-weight="bold">→ 人間がセキュリティ観点で確認</text>
+  <rect x="950" y="520" width="360" height="200" fill="#CC0000" rx="8"/>
+  <text x="1130" y="555" class="example-title" text-anchor="middle">3. セキュリティ</text>
+  <text x="1130" y="585" class="example-title" text-anchor="middle">脆弱性</text>
+  <text x="970" y="620" class="example-text" font-weight="bold">具体例:</text>
+  <text x="980" y="655" class="example-text">• 認可制御漏れ</text>
+  <text x="980" y="685" class="example-text">• 機密情報ログ出力</text>
+  <text x="970" y="715" class="example-conclusion">→ 人間が確認</text>
 
   <!-- Weak 4 -->
-  <rect x="1050" y="350" width="290" height="130" fill="#CC0000" rx="8"/>
-  <text x="1195" y="375" class="example-title" text-anchor="middle">4. アーキテクチャ判断</text>
-  <text x="1070" y="400" class="example-text" font-weight="bold">具体例:</text>
-  <text x="1080" y="418" class="example-text">• モノリスvsマイクロサービス</text>
-  <text x="1080" y="433" class="example-text">• 同期vs非同期処理</text>
-  <text x="1080" y="448" class="example-text">• データベース選定（RDB/NoSQL）</text>
-  <text x="1070" y="468" class="example-text" font-weight="bold">→ 人間がビジネス要件から判断</text>
+  <rect x="1330" y="520" width="360" height="200" fill="#CC0000" rx="8"/>
+  <text x="1510" y="555" class="example-title" text-anchor="middle">4. アーキテクチャ</text>
+  <text x="1510" y="585" class="example-title" text-anchor="middle">判断</text>
+  <text x="1350" y="620" class="example-text" font-weight="bold">具体例:</text>
+  <text x="1360" y="655" class="example-text">• モノリスvs</text>
+  <text x="1360" y="685" class="example-text">  マイクロサービス</text>
+  <text x="1350" y="715" class="example-conclusion">→ 人間がビジネス判断</text>
 
   <!-- Practical Examples -->
-  <rect x="50" y="520" width="1300" height="350" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    実践例：得意/不得意を踏まえた役割分担
-  </text>
+  <rect x="80" y="770" width="1660" height="530" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="910" y="820" class="section-title" fill="#00146E" text-anchor="middle">実践例：得意/不得意を踏まえた役割分担</text>
 
   <!-- Case 1 -->
-  <rect x="70" y="575" width="620" height="140" fill="#00AFF0" rx="8"/>
-  <text x="380" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
-    ケース1: ログイン機能の実装
-  </text>
+  <rect x="110" y="860" width="800" height="215" fill="#00AFF0" rx="8"/>
+  <text x="510" y="900" class="case-title" text-anchor="middle">ケース1: ログイン機能の実装</text>
 
-  <rect x="90" y="615" width="280" height="85" fill="#00AA00" rx="5"/>
-  <text x="110" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    ✓ AIに任せる部分
-  </text>
-  <text x="120" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • LoginController, LoginService作成
-  </text>
-  <text x="120" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • JUnit テストコード（80%カバレッジ）
-  </text>
-  <text x="120" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • Swagger API仕様書自動生成
-  </text>
+  <rect x="140" y="930" width="350" height="130" fill="#00AA00" rx="5"/>
+  <text x="160" y="965" class="case-section">✓ AIに任せる部分</text>
+  <text x="170" y="1005" class="case-text">• Controller/Service作成</text>
+  <text x="170" y="1040" class="case-text">• テストコード生成</text>
 
-  <rect x="390" y="615" width="280" height="85" fill="#CC0000" rx="5"/>
-  <text x="410" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    ✗ 人間が確認・補完する部分
-  </text>
-  <text x="420" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • セキュリティ要件（BCrypt、JWT）
-  </text>
-  <text x="420" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • ログイン失敗時のビジネスルール
-  </text>
-  <text x="420" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • アカウントロック仕様（5回失敗で30分）
-  </text>
+  <rect x="530" y="930" width="350" height="130" fill="#CC0000" rx="5"/>
+  <text x="550" y="965" class="case-section">✗ 人間が補完</text>
+  <text x="560" y="1005" class="case-text">• セキュリティ要件</text>
+  <text x="560" y="1040" class="case-text">• ビジネスルール</text>
 
   <!-- Case 2 -->
-  <rect x="710" y="575" width="620" height="140" fill="#003399" rx="8"/>
-  <text x="1020" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
-    ケース2: 決済処理の実装
-  </text>
+  <rect x="930" y="860" width="800" height="215" fill="#003399" rx="8"/>
+  <text x="1330" y="900" class="case-title" text-anchor="middle">ケース2: 決済処理の実装</text>
 
-  <rect x="730" y="615" width="280" height="85" fill="#00AA00" rx="5"/>
-  <text x="750" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    ✓ AIに任せる部分
-  </text>
-  <text x="760" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • API エンドポイント作成
-  </text>
-  <text x="760" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • バリデーション（@Valid）
-  </text>
-  <text x="760" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • エラーハンドリング基本実装
-  </text>
+  <rect x="960" y="930" width="350" height="130" fill="#00AA00" rx="5"/>
+  <text x="980" y="965" class="case-section">✓ AIに任せる部分</text>
+  <text x="990" y="1005" class="case-text">• APIエンドポイント</text>
+  <text x="990" y="1040" class="case-text">• バリデーション</text>
 
-  <rect x="1030" y="615" width="280" height="85" fill="#CC0000" rx="5"/>
-  <text x="1050" y="635" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold;">
-    ✗ 人間が確認・補完する部分
-  </text>
-  <text x="1060" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • 決済ゲートウェイとの連携ロジック
-  </text>
-  <text x="1060" y="668" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • リトライ戦略（3回まで、指数バックオフ）
-  </text>
-  <text x="1060" y="683" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    • 不正検知ルール（金額・頻度チェック）
-  </text>
+  <rect x="1350" y="930" width="350" height="130" fill="#CC0000" rx="5"/>
+  <text x="1370" y="965" class="case-section">✗ 人間が補完</text>
+  <text x="1380" y="1005" class="case-text">• 決済連携ロジック</text>
+  <text x="1380" y="1040" class="case-text">• リトライ戦略</text>
 
   <!-- Best Practice -->
-  <rect x="70" y="735" width="1240" height="120" fill="#00146E" rx="8"/>
-  <text x="690" y="760" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: white; text-anchor: middle; font-weight: bold;">
-    ベストプラクティス：得意領域を活かす指示の仕方
-  </text>
+  <rect x="110" y="1100" width="1600" height="180" fill="#00146E" rx="8"/>
+  <text x="910" y="1145" class="best-title" text-anchor="middle">ベストプラクティス：得意領域を活かす指示の仕方</text>
 
-  <text x="90" y="785" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ 良い指示（AIの得意領域）:
-  </text>
-  <text x="100" y="805" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    「ログイン機能を実装して。BCryptでパスワードハッシュ化、JWTで認証、@Validでバリデーション、
-  </text>
-  <text x="105" y="823" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
-    JUnitテスト含む。失敗5回で30分ロック。」
-  </text>
+  <text x="140" y="1195" class="best-label">✓ 良い指示（AIの得意領域）:</text>
+  <text x="150" y="1240" class="best-text">「ログイン機能を実装。BCrypt、JWT、@Valid、JUnitテスト含む。失敗5回で30分ロック」</text>
 
-  <text x="90" y="848" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    → 人間が「何を作るか」を明確に指示 → AIが「どう作るか」を実装 → 人間がレビュー
-  </text>
+  <!-- Summary -->
+  <rect x="110" y="1310" width="1600" height="90" fill="#00146E" rx="8"/>
+  <text x="910" y="1350" class="best-summary" text-anchor="middle">→ 人間が「何を作るか」を指示</text>
+  <text x="910" y="1390" class="best-summary" text-anchor="middle">→ AIが「どう作るか」を実装 → 人間がレビュー</text>
 </svg>

@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1170">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
-      .format-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
-      .format-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: bold; fill: #333333; }
+      .format-title { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; font-weight: bold; fill: white; }
+      .format-text { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; }
     </style>
   </defs>
 
@@ -11,247 +11,213 @@
   <rect width="1400" height="900" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="700" y="40" class="title" text-anchor="middle">Mermaid vs SVG 使い分け（図表作成の選択基準）</text>
+  <text x="700" y="50" class="title" text-anchor="middle">Mermaid vs SVG 使い分け</text>
+  <text x="700" y="95" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #666666; text-anchor: middle;">（図表作成の選択基準）</text>
 
   <!-- Mermaid Side -->
-  <rect x="50" y="80" width="650" height="380" fill="#00AFF0" opacity="0.1" stroke="#00AFF0" stroke-width="4" rx="10"/>
-  <text x="375" y="115" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00AFF0; text-anchor: middle; font-weight: bold;">
+  <rect x="50" y="110" width="650" height="350" fill="#00AFF0" opacity="0.1" stroke="#00AFF0" stroke-width="4" rx="10"/>
+  <text x="375" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00AFF0; text-anchor: middle; font-weight: bold;">
     Mermaid（テキストベース）
   </text>
 
   <!-- Mermaid Pros -->
-  <rect x="70" y="130" width="290" height="310" fill="#00AFF0" rx="8"/>
-  <text x="215" y="155" class="format-title" text-anchor="middle">✓ メリット</text>
+  <rect x="70" y="160" width="290" height="280" fill="#00AFF0" rx="8"/>
+  <text x="215" y="188" class="format-title" text-anchor="middle">✓ メリット</text>
 
-  <text x="90" y="180" class="format-text" font-weight="bold">1. AI生成が容易</text>
-  <text x="100" y="198" class="format-text">テキストなのでAIが簡単に生成可能</text>
+  <text x="90" y="218" class="format-text" font-weight="bold">1. AI生成が容易</text>
+  <text x="100" y="237" class="format-text">テキストでAI簡単生成</text>
 
-  <text x="90" y="223" class="format-text" font-weight="bold">2. 修正が簡単</text>
-  <text x="100" y="241" class="format-text">コードエディタで編集できる</text>
-  <text x="100" y="256" class="format-text">Git diff で変更点が明確</text>
+  <text x="90" y="265" class="format-text" font-weight="bold">2. 修正が簡単</text>
+  <text x="100" y="284" class="format-text">エディタで編集</text>
 
-  <text x="90" y="281" class="format-text" font-weight="bold">3. バージョン管理に最適</text>
-  <text x="100" y="299" class="format-text">テキストなのでGitで管理しやすい</text>
-  <text x="100" y="314" class="format-text">コンフリクト解消も容易</text>
+  <text x="90" y="310" class="format-text" font-weight="bold">3. 管理最適</text>
+  <text x="100" y="329" class="format-text">Git管理しやすい</text>
 
-  <text x="90" y="339" class="format-text" font-weight="bold">4. 学習コスト低</text>
-  <text x="100" y="357" class="format-text">シンプルな記法（graph TD, sequenceDiagram）</text>
+  <text x="90" y="355" class="format-text" font-weight="bold">4. 学習コスト低</text>
+  <text x="100" y="374" class="format-text">シンプル記法</text>
 
-  <text x="90" y="382" class="format-text" font-weight="bold">5. Marp/Markdown対応</text>
-  <text x="100" y="400" class="format-text">```mermaid で直接埋め込み可能</text>
-  <text x="100" y="415" class="format-text">スライド作成に最適</text>
+  <text x="90" y="400" class="format-text" font-weight="bold">5. Markdown対応</text>
+  <text x="100" y="419" class="format-text">直接埋め込み可能</text>
 
   <!-- Mermaid Cons -->
-  <rect x="380" y="130" width="290" height="310" fill="#CC0000" rx="8"/>
-  <text x="525" y="155" class="format-title" text-anchor="middle">✗ デメリット</text>
+  <rect x="380" y="160" width="290" height="280" fill="#CC0000" rx="8"/>
+  <text x="525" y="188" class="format-title" text-anchor="middle">✗ デメリット</text>
 
-  <text x="400" y="180" class="format-text" font-weight="bold">1. デザイン自由度が低い</text>
-  <text x="410" y="198" class="format-text">色・フォント・配置の制御が限定的</text>
+  <text x="400" y="218" class="format-text" font-weight="bold">1. 自由度低</text>
+  <text x="410" y="237" class="format-text">制御限定</text>
 
-  <text x="400" y="223" class="format-text" font-weight="bold">2. 複雑な図には不向き</text>
-  <text x="410" y="241" class="format-text">細かいレイアウト調整が難しい</text>
-  <text x="410" y="256" class="format-text">要素が多いと見づらくなる</text>
+  <text x="400" y="265" class="format-text" font-weight="bold">2. 複雑図不向き</text>
+  <text x="410" y="284" class="format-text">調整が難しい</text>
 
-  <text x="400" y="281" class="format-text" font-weight="bold">3. ブランド色の適用困難</text>
-  <text x="410" y="299" class="format-text">企業カラー（トリトンブルー等）</text>
-  <text x="410" y="314" class="format-text">を正確に再現しづらい</text>
+  <text x="400" y="310" class="format-text" font-weight="bold">3. 色指定困難</text>
+  <text x="410" y="329" class="format-text">再現難</text>
 
-  <text x="400" y="339" class="format-text" font-weight="bold">4. レンダリング環境に依存</text>
-  <text x="410" y="357" class="format-text">ツールによって表示が異なる</text>
-  <text x="410" y="372" class="format-text">（Marp, GitHub, Notion等）</text>
+  <text x="400" y="355" class="format-text" font-weight="bold">4. 環境依存</text>
+  <text x="410" y="374" class="format-text">表示異なる</text>
 
-  <text x="400" y="397" class="format-text" font-weight="bold">5. 日本語フォント制御不可</text>
-  <text x="410" y="415" class="format-text">Noto Sans JPなど指定できない</text>
+  <text x="400" y="400" class="format-text" font-weight="bold">5. 制御不可</text>
+  <text x="410" y="419" class="format-text">指定できない</text>
 
   <!-- SVG Side -->
-  <rect x="720" y="80" width="650" height="380" fill="#00146E" opacity="0.1" stroke="#00146E" stroke-width="4" rx="10"/>
-  <text x="1045" y="115" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <rect x="720" y="110" width="650" height="350" fill="#00146E" opacity="0.1" stroke="#00146E" stroke-width="4" rx="10"/>
+  <text x="1045" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     SVG（ベクター画像）
   </text>
 
   <!-- SVG Pros -->
-  <rect x="740" y="130" width="290" height="310" fill="#00146E" rx="8"/>
-  <text x="885" y="155" class="format-title" text-anchor="middle">✓ メリット</text>
+  <rect x="740" y="160" width="290" height="280" fill="#00146E" rx="8"/>
+  <text x="885" y="188" class="format-title" text-anchor="middle">✓ メリット</text>
 
-  <text x="760" y="180" class="format-text" font-weight="bold">1. 完全な自由度</text>
-  <text x="770" y="198" class="format-text">色・フォント・配置を完全制御</text>
+  <text x="760" y="218" class="format-text" font-weight="bold">1. 完全自由度</text>
+  <text x="770" y="237" class="format-text">完全制御</text>
 
-  <text x="760" y="223" class="format-text" font-weight="bold">2. ブランド色の正確な再現</text>
-  <text x="770" y="241" class="format-text">トリトンブルー #00146E、</text>
-  <text x="770" y="256" class="format-text">モヒカンブルー #00AFF0 など</text>
+  <text x="760" y="265" class="format-text" font-weight="bold">2. 色再現</text>
+  <text x="770" y="284" class="format-text">正確再現</text>
 
-  <text x="760" y="281" class="format-text" font-weight="bold">3. 複雑な図に対応</text>
-  <text x="770" y="299" class="format-text">多階層構造、詳細な比較表、</text>
-  <text x="770" y="314" class="format-text">多要素の配置が可能</text>
+  <text x="760" y="310" class="format-text" font-weight="bold">3. 複雑図対応</text>
+  <text x="770" y="329" class="format-text">構造対応</text>
 
-  <text x="760" y="339" class="format-text" font-weight="bold">4. レンダリング一貫性</text>
-  <text x="770" y="357" class="format-text">どの環境でも同じ見た目</text>
+  <text x="760" y="355" class="format-text" font-weight="bold">4. 一貫性</text>
+  <text x="770" y="374" class="format-text">同じ見た目</text>
 
-  <text x="760" y="382" class="format-text" font-weight="bold">5. 日本語フォント指定可</text>
-  <text x="770" y="400" class="format-text">Noto Sans JP、ヒラギノ角ゴ等</text>
-  <text x="770" y="415" class="format-text">読みやすさを最大化</text>
+  <text x="760" y="400" class="format-text" font-weight="bold">5. フォント可</text>
+  <text x="770" y="419" class="format-text">読みやすい</text>
 
   <!-- SVG Cons -->
-  <rect x="1050" y="130" width="290" height="310" fill="#CC0000" rx="8"/>
-  <text x="1195" y="155" class="format-title" text-anchor="middle">✗ デメリット</text>
+  <rect x="1050" y="160" width="290" height="280" fill="#CC0000" rx="8"/>
+  <text x="1195" y="188" class="format-title" text-anchor="middle">✗ デメリット</text>
 
-  <text x="1070" y="180" class="format-text" font-weight="bold">1. AI生成に制約</text>
-  <text x="1080" y="198" class="format-text">座標指定が必要で</text>
-  <text x="1080" y="213" class="format-text">AIが正確に配置しづらい</text>
+  <text x="1070" y="218" class="format-text" font-weight="bold">1. AI制約</text>
+  <text x="1080" y="237" class="format-text">座標必要</text>
 
-  <text x="1070" y="238" class="format-text" font-weight="bold">2. 修正コストが高い</text>
-  <text x="1080" y="256" class="format-text">座標を直接編集する必要</text>
-  <text x="1080" y="271" class="format-text">GUI エディタが必要</text>
+  <text x="1070" y="265" class="format-text" font-weight="bold">2. コスト高</text>
+  <text x="1080" y="284" class="format-text">編集必要</text>
 
-  <text x="1070" y="296" class="format-text" font-weight="bold">3. Git diff が見づらい</text>
-  <text x="1080" y="314" class="format-text">XMLなので変更点が分かりにくい</text>
+  <text x="1070" y="310" class="format-text" font-weight="bold">3. diff難</text>
+  <text x="1080" y="329" class="format-text">分かりにくい</text>
 
-  <text x="1070" y="339" class="format-text" font-weight="bold">4. 学習コストが高</text>
-  <text x="1080" y="357" class="format-text">SVG記法の理解が必要</text>
-  <text x="1080" y="372" class="format-text">座標計算が複雑</text>
+  <text x="1070" y="355" class="format-text" font-weight="bold">4. 学習難</text>
+  <text x="1080" y="374" class="format-text">理解必要</text>
 
-  <text x="1070" y="397" class="format-text" font-weight="bold">5. ファイルサイズ大</text>
-  <text x="1080" y="415" class="format-text">複雑な図は数百KBになる</text>
+  <text x="1070" y="400" class="format-text" font-weight="bold">5. サイズ大</text>
+  <text x="1080" y="419" class="format-text">数百KB</text>
 
   <!-- Decision Matrix -->
-  <rect x="50" y="490" width="1300" height="380" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="700" y="525" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+  <rect x="50" y="480" width="1300" height="390" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="700" y="520" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; text-anchor: middle; font-weight: bold;">
     使い分け基準（判断フローチャート）
   </text>
 
   <!-- Use Case 1: Mermaid -->
-  <rect x="70" y="545" width="400" height="305" fill="#00AFF0" rx="8"/>
-  <text x="270" y="570" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
-    Mermaid を使うべき場合
+  <rect x="70" y="550" width="400" height="300" fill="#00AFF0" rx="8"/>
+  <text x="270" y="582" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; text-anchor: middle; font-weight: bold;">
+    Mermaid を使う場合
   </text>
 
-  <text x="90" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ ER図（データベース設計）
+  <text x="90" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; font-weight: bold;">
+    ✓ ER図・UML
   </text>
-  <text x="100" y="618" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    entity-relationship記法がシンプル
-  </text>
-
-  <text x="90" y="643" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ シーケンス図（処理フロー）
-  </text>
-  <text x="100" y="661" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    sequenceDiagram で簡潔に表現
+  <text x="100" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: white;">
+    自動レイアウト
   </text>
 
-  <text x="90" y="686" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ クラス図（UML）
+  <text x="90" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; font-weight: bold;">
+    ✓ シーケンス図
   </text>
-  <text x="100" y="704" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    classDiagram で自動レイアウト
-  </text>
-
-  <text x="90" y="729" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ フローチャート（シンプル）
-  </text>
-  <text x="100" y="747" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    graph TD/LR で分岐を表現
+  <text x="100" y="705" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: white;">
+    簡潔に表現
   </text>
 
-  <text x="90" y="772" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ ガントチャート（スケジュール）
+  <text x="90" y="740" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; font-weight: bold;">
+    ✓ フロー図
   </text>
-  <text x="100" y="790" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    gantt で工程管理を可視化
+  <text x="100" y="765" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: white;">
+    分岐を表現
   </text>
 
-  <text x="90" y="820" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
-    → AI生成容易、修正も簡単
+  <text x="90" y="800" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; font-weight: bold;">
+    ✓ ガント図
+  </text>
+  <text x="100" y="825" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: white;">
+    工程管理
+  </text>
+
+  <text x="270" y="858" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; font-weight: bold; text-anchor: middle;">
+    AI生成容易、修正簡単
   </text>
 
   <!-- Use Case 2: SVG -->
-  <rect x="490" y="545" width="400" height="305" fill="#00146E" rx="8"/>
-  <text x="690" y="570" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
-    SVG を使うべき場合
+  <rect x="490" y="550" width="400" height="300" fill="#00146E" rx="8"/>
+  <text x="690" y="582" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white; text-anchor: middle; font-weight: bold;">
+    SVG を使う場合
   </text>
 
-  <text x="510" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ 比較表（良い例 vs 悪い例）
+  <text x="510" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; font-weight: bold;">
+    ✓ 比較表
   </text>
-  <text x="520" y="618" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    2列レイアウト、色分けが重要
-  </text>
-
-  <text x="510" y="643" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ 詳細なタイムライン
-  </text>
-  <text x="520" y="661" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    Increment毎の成果物を明示
+  <text x="520" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: white;">
+    色分け重要
   </text>
 
-  <text x="510" y="686" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ 多階層ピラミッド図
+  <text x="510" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; font-weight: bold;">
+    ✓ タイムライン
   </text>
-  <text x="520" y="704" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    テストカバレッジ80%ルール等
-  </text>
-
-  <text x="510" y="729" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ チェックリスト（多項目）
-  </text>
-  <text x="520" y="747" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    非機能要件30項目など
+  <text x="520" y="705" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: white;">
+    成果物明示
   </text>
 
-  <text x="510" y="772" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
-    ✓ ブランドカラー重視の図
+  <text x="510" y="740" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; font-weight: bold;">
+    ✓ ピラミッド図
   </text>
-  <text x="520" y="790" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
-    企業プレゼン、公式資料
+  <text x="520" y="765" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: white;">
+    階層構造
   </text>
 
-  <text x="510" y="820" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
-    → デザイン自由度、一貫性重視
+  <text x="510" y="800" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: white; font-weight: bold;">
+    ✓ チェックリスト
+  </text>
+  <text x="520" y="825" style="font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: white;">
+    多項目対応
+  </text>
+
+  <text x="690" y="858" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: white; font-weight: bold; text-anchor: middle;">
+    デザイン自由、一貫性
   </text>
 
   <!-- Hybrid Approach -->
-  <rect x="910" y="545" width="420" height="305" fill="#66D9FF" rx="8"/>
-  <text x="1120" y="570" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    ハイブリッドアプローチ（推奨）
+  <rect x="910" y="550" width="420" height="300" fill="#66D9FF" rx="8"/>
+  <text x="1120" y="582" style="font-family: 'Noto Sans JP', sans-serif; font-size: 46px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    ハイブリッド（推奨）
   </text>
 
-  <text x="930" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; font-weight: bold;">
-    1. Mermaidでプロトタイプ作成
+  <text x="930" y="620" style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; fill: #00146E; font-weight: bold;">
+    1. Mermaidプロトタイプ
   </text>
-  <text x="940" y="618" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
-    AIに依頼して素早く全体像を把握
-  </text>
-
-  <text x="930" y="643" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; font-weight: bold;">
-    2. レビューで判断
-  </text>
-  <text x="940" y="661" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
-    • シンプル → Mermaidのまま使用
-  </text>
-  <text x="940" y="676" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
-    • 複雑・デザイン重視 → SVGで再作成
+  <text x="940" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E;">
+    AIで素早く把握
   </text>
 
-  <text x="930" y="701" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; font-weight: bold;">
-    3. プロジェクトで統一ルール
+  <text x="930" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; fill: #00146E; font-weight: bold;">
+    2. レビュー判断
   </text>
-  <text x="940" y="719" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
-    内部資料 → Mermaid（修正容易）
+  <text x="940" y="705" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E;">
+    シンプル → Mermaid
   </text>
-  <text x="940" y="734" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #00146E;">
-    顧客資料 → SVG（ブランド色）
+  <text x="940" y="727" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E;">
+    複雑 → SVG再作成
   </text>
 
-  <text x="930" y="764" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; font-weight: bold;">
-    実践例（本セミナー）:
+  <text x="930" y="762" style="font-family: 'Noto Sans JP', sans-serif; font-size: 40px; fill: #00146E; font-weight: bold;">
+    3. 統一ルール
   </text>
-  <text x="940" y="782" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E;">
-    • ER図/シーケンス図 → Mermaid
+  <text x="940" y="787" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E;">
+    内部 → Mermaid
   </text>
-  <text x="940" y="799" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E;">
-    • 比較表/タイムライン → SVG
+  <text x="940" y="809" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E;">
+    顧客 → SVG
   </text>
-  <text x="940" y="816" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E;">
-    → 適材適所で使い分け
+
+  <text x="1120" y="850" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E; font-weight: bold; text-anchor: middle;">
+    適材適所で使い分け
   </text>
 </svg>
