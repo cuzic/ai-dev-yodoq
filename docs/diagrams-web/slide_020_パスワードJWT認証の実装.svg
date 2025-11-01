@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .section-title { font-size: 22px; font-weight: 700; fill: #1976d2; }
+      .item-text { font-size: 16px; }
+      .section-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 6; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">パスワード・JWT認証の実装</text>
+
+  <!-- Section: ❌ NG例（Reward Hacking） -->
+  <g transform="translate(40, 90)">
+    <text x="600" y="0" class="section-title" text-anchor="middle">❌ NG例（Reward Hacking）</text>
+    <rect x="0" y="10" width="1200" height="200" class="section-box"/>
+    <text x="15" y="35" class="item-text">• 平文パスワード保存</text>
+    <text x="15" y="60" class="item-text">• APIキーをハードコーディング</text>
+    <text x="15" y="85" class="item-text">• 「とりあえず動く」実装</text>
+    <text x="15" y="110" class="item-text">• セキュリティ無視</text>
+    <text x="15" y="135" class="item-text">• タスク完了を最優先（Reward Hacking）</text>
+    <text x="15" y="160" class="item-text">• セキュリティへの報酬がない</text>
+    <text x="15" y="185" class="item-text">• セキュリティベストプラクティスは知っているが、明示しないと省略</text>
+  </g>
+
+  <!-- Section: 💡 プロンプトに必ず明記 -->
+  <g transform="translate(40, 320)">
+    <text x="600" y="0" class="section-title" text-anchor="middle">💡 プロンプトに必ず明記</text>
+    <rect x="0" y="10" width="1200" height="125" class="section-box"/>
+    <text x="15" y="35" class="item-text">• BCryptでパスワードハッシュ化</text>
+    <text x="15" y="60" class="item-text">• JWT秘密鍵は環境変数から取得</text>
+    <text x="15" y="85" class="item-text">• .envファイルを使用</text>
+    <text x="15" y="110" class="item-text">• .gitignoreに.envを追加」</text>
+  </g>
+</svg>

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 726.0" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 34px; font-weight: 700; }
+      .section-title { font-size: 26px; font-weight: 700; }
+      .subsection-title { font-size: 20px; font-weight: 600; }
+      .item-text { font-size: 17px; }
+      .small-text { font-size: 16px; }
+      .box1 { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 3; rx: 8; }
+      .box2 { fill: #e3f2fd; stroke: #1565c0; stroke-width: 3; rx: 8; }
+      .box3 { fill: #fff3e0; stroke: #ef6c00; stroke-width: 3; rx: 8; }
+      .box4 { fill: #f3e5f5; stroke: #6a1b9a; stroke-width: 3; rx: 8; }
+      .effect-box { fill: #ffebee; stroke: #c62828; stroke-width: 3; rx: 8; }
+      .highlight1 { fill: #2e7d32; }
+      .highlight2 { fill: #1565c0; }
+      .highlight3 { fill: #ef6c00; }
+      .highlight4 { fill: #6a1b9a; }
+      .highlight-red { fill: #c62828; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">1日目のキーメッセージ</text>
+
+  <!-- Row 1: Messages 1 & 2 -->
+  <g transform="translate(30, 85)">
+    <!-- Message 1 -->
+    <text x="295" y="0" class="section-title highlight1" text-anchor="middle">① 曖昧さの徹底排除(Guardrails)</text>
+    <rect x="0" y="10" width="590" height="245" class="box1"/>
+
+    <text x="295" y="40" class="subsection-title" text-anchor="middle">Jagged Intelligence対策</text>
+    <text x="20" y="70" class="item-text">• AIの弱点を補う</text>
+
+    <text x="20" y="105" class="item-text">STEP1: 要件定義</text>
+    <text x="40" y="130" class="small-text">→「何を作るか」明確化</text>
+
+    <text x="20" y="160" class="item-text">STEP2: 設計</text>
+    <text x="40" y="185" class="small-text">→「どう作るか」明確化</text>
+
+    <text x="20" y="215" class="item-text">受け入れ基準でゴール設定</text>
+    <text x="40" y="240" class="small-text">→ AIが目指すべき地点を明示</text>
+  </g>
+
+  <g transform="translate(660, 85)">
+    <!-- Message 2 -->
+    <text x="295" y="0" class="section-title highlight2" text-anchor="middle">② AIの思考可視化(タスク分解)</text>
+    <rect x="0" y="10" width="590" height="245" class="box2"/>
+
+    <text x="295" y="40" class="subsection-title" text-anchor="middle">AIは忘れっぽい対策</text>
+
+    <text x="20" y="70" class="item-text">STEP3: タスク分解で計画作成</text>
+    <text x="40" y="95" class="small-text">→ AIの思考を言語化</text>
+
+    <text x="20" y="125" class="item-text">• 全体像を把握</text>
+    <text x="20" y="150" class="item-text">• 実装前に軌道修正可能</text>
+
+    <text x="20" y="180" class="item-text">効果:</text>
+    <text x="40" y="205" class="small-text">→ タスクリストがAIの記憶</text>
+    <text x="40" y="230" class="small-text">→ 長期タスクも完遂可能</text>
+  </g>
+
+  <!-- Row 2: Messages 3 & 4 -->
+  <g transform="translate(30, 355)">
+    <!-- Message 3 -->
+    <text x="295" y="0" class="section-title highlight3" text-anchor="middle">③ TDDによる自己完結</text>
+    <rect x="0" y="10" width="590" height="245" class="box3"/>
+
+    <text x="295" y="40" class="subsection-title" text-anchor="middle">Trust but Verify自動化</text>
+
+    <text x="20" y="70" class="item-text">STEP4-5: TDD/BDD実装</text>
+
+    <text x="20" y="105" class="item-text">• テストがあればAIが自己完結</text>
+    <text x="20" y="130" class="item-text">• テスト→エラー検知→修正を自動化</text>
+    <text x="20" y="155" class="item-text">• 人間の負担が劇的に軽減</text>
+
+    <text x="20" y="190" class="item-text">効果:</text>
+    <text x="40" y="215" class="small-text">→ AIが自分でバグを見つけて修正</text>
+    <text x="40" y="240" class="small-text">→ 人間は最終確認のみ</text>
+  </g>
+
+  <g transform="translate(660, 355)">
+    <!-- Message 4 -->
+    <text x="295" y="0" class="section-title highlight4" text-anchor="middle">④ リファクタ＆知見蓄積</text>
+    <rect x="0" y="10" width="590" height="245" class="box4"/>
+
+    <text x="295" y="40" class="subsection-title" text-anchor="middle">Living Documentation</text>
+
+    <text x="20" y="70" class="item-text">STEP6: ドキュメント化</text>
+
+    <text x="20" y="105" class="item-text">AIの外部メモリ:</text>
+    <text x="40" y="130" class="small-text">• AIは忘れっぽい→ドキュメント必須</text>
+    <text x="40" y="155" class="small-text">• 次のセッションで参照可能</text>
+    <text x="40" y="180" class="small-text">• 同じ間違いを繰り返さない</text>
+
+    <text x="20" y="215" class="item-text">効果:</text>
+    <text x="40" y="240" class="small-text">→ プロジェクトの知識を永続化</text>
+  </g>
+
+  <!-- Bottom: Overall Effect -->
+  <g transform="translate(30, 625)">
+    <text x="590" y="0" class="section-title highlight-red" text-anchor="middle">🚀 これら4つを実践することで、AIとの協業効率が飛躍的に向上</text>
+    <rect x="0" y="10" width="1220" height="70" class="effect-box"/>
+
+    <g transform="translate(100, 35)">
+      <text x="0" y="0" class="item-text">✅ 開発期間短縮</text>
+      <text x="250" y="0" class="item-text">✅ 品質の安定化</text>
+      <text x="500" y="0" class="item-text">✅ 手戻りゼロ</text>
+      <text x="750" y="0" class="item-text">✅ 技術的負債の早期解消</text>
+    </g>
+
+    <text x="590" y="65" class="small-text" text-anchor="middle" font-weight="600">→ 構造化されたアプローチでAIの潜在能力を最大限引き出す</text>
+  </g>
+</svg>

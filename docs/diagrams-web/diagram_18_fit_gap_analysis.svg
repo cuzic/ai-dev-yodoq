@@ -1,103 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 910">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .category { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
-      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
-      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; }
-      .fit { fill: #27AE60; }
-      .gap { fill: #E74C3C; }
-      .custom { fill: #3498DB; }
-      .workaround { fill: #F39C12; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
+      .circle-title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: white; }
+      .circle-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
+      .overlap-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect width="800" height="700" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="400" y="30" class="title" style="font-size: 18px;">Fit &amp; Gap分析：要件と現状の差</text>
+  <text x="400" y="35" class="title" text-anchor="middle">フィットギャップ分析（Venn図）</text>
 
-  <!-- FIT (Top Left) -->
-  <g transform="translate(40, 70)">
-    <rect x="0" y="0" width="340" height="50" rx="5" class="fit"/>
-    <text x="170" y="33" class="category">FIT（適合）</text>
+  <!-- Left Circle: AI Capabilities -->
+  <circle cx="280" cy="280" r="180" fill="#00AFF0" opacity="0.8"/>
+  <text x="180" y="180" class="circle-title">AIができること</text>
+  <text x="180" y="205" class="circle-title" font-size="28">(AI Capabilities)</text>
 
-    <rect x="0" y="60" width="340" height="140" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
-    <g transform="translate(15, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">現状のシステムで対応可能</text>
-      <text x="0" y="25" class="item">例：</text>
-      <text x="15" y="45" class="desc">• ユーザー認証機能</text>
-      <text x="20" y="62" class="desc">→ すでに実装済み</text>
-      <text x="15" y="82" class="desc">• データベースCRUD</text>
-      <text x="20" y="99" class="desc">→ 既存フレームワークで対応</text>
-      <text x="15" y="119" class="desc">優先度: Must/Should → そのまま実装</text>
-    </g>
-  </g>
+  <text x="150" y="240" class="circle-text">• コード生成</text>
+  <text x="150" y="260" class="circle-text">• リファクタリング</text>
+  <text x="150" y="280" class="circle-text">• テスト自動生成</text>
+  <text x="150" y="300" class="circle-text">• ドキュメント作成</text>
+  <text x="150" y="320" class="circle-text">• パターン適用</text>
+  <text x="150" y="340" class="circle-text">• 既存コード理解</text>
+  <text x="150" y="360" class="circle-text">• バグ検出</text>
 
-  <!-- GAP (Top Right) -->
-  <g transform="translate(420, 70)">
-    <rect x="0" y="0" width="340" height="50" rx="5" class="gap"/>
-    <text x="170" y="33" class="category">GAP（未対応）</text>
+  <!-- Right Circle: Required Skills -->
+  <circle cx="520" cy="280" r="180" fill="#00146E" opacity="0.8"/>
+  <text x="540" y="180" class="circle-title">人が必要なこと</text>
+  <text x="540" y="205" class="circle-title" font-size="28">(Human Required)</text>
 
-    <rect x="0" y="60" width="340" height="140" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
-    <g transform="translate(15, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">現状では実現できない</text>
-      <text x="0" y="25" class="item">例：</text>
-      <text x="15" y="45" class="desc">• リアルタイム通知機能</text>
-      <text x="20" y="62" class="desc">→ WebSocket未対応</text>
-      <text x="15" y="82" class="desc">• 高度な分析機能</text>
-      <text x="20" y="99" class="desc">→ 新規開発必要</text>
-      <text x="15" y="119" class="desc">対応: カスタマイズ or 回避策</text>
-    </g>
-  </g>
+  <text x="540" y="240" class="circle-text">• ビジネス判断</text>
+  <text x="540" y="260" class="circle-text">• 要件定義</text>
+  <text x="540" y="280" class="circle-text">• アーキテクチャ設計</text>
+  <text x="540" y="300" class="circle-text">• 品質基準設定</text>
+  <text x="540" y="320" class="circle-text">• セキュリティ判断</text>
+  <text x="540" y="340" class="circle-text">• ユーザー体験設計</text>
+  <text x="540" y="360" class="circle-text">• 最終意思決定</text>
 
-  <!-- CUSTOMIZATION (Bottom Left) -->
-  <g transform="translate(40, 260)">
-    <rect x="0" y="0" width="340" height="50" rx="5" class="custom"/>
-    <text x="170" y="33" class="category">カスタマイズ</text>
+  <!-- Overlap: Sweet Spot -->
+  <text x="400" y="230" class="overlap-title" text-anchor="middle">最適領域</text>
+  <text x="400" y="250" class="overlap-title" text-anchor="middle" font-size="28">(Sweet Spot)</text>
 
-    <rect x="0" y="60" width="340" height="140" rx="5" fill="#E3F2FD" stroke="#3498DB" stroke-width="2"/>
-    <g transform="translate(15, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">新規開発で対応</text>
-      <text x="0" y="25" class="item">条件：</text>
-      <text x="15" y="45" class="desc">• Must/Should要件</text>
-      <text x="15" y="62" class="desc">• ビジネス価値が高い</text>
-      <text x="15" y="79" class="desc">• 技術的に実現可能</text>
-
-      <text x="0" y="104" class="item">判断基準：</text>
-      <text x="15" y="124" class="desc">コスト vs 効果を分析</text>
-    </g>
-  </g>
-
-  <!-- WORKAROUND (Bottom Right) -->
-  <g transform="translate(420, 260)">
-    <rect x="0" y="0" width="340" height="50" rx="5" class="workaround"/>
-    <text x="170" y="33" class="category">回避策</text>
-
-    <rect x="0" y="60" width="340" height="140" rx="5" fill="#FFF8E1" stroke="#F39C12" stroke-width="2"/>
-    <g transform="translate(15, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">別の方法で対応</text>
-      <text x="0" y="25" class="item">条件：</text>
-      <text x="15" y="45" class="desc">• Could/Won't要件</text>
-      <text x="15" y="62" class="desc">• 代替手段がある</text>
-      <text x="15" y="79" class="desc">• コスト削減優先</text>
-
-      <text x="0" y="104" class="item">例：</text>
-      <text x="15" y="124" class="desc">手動運用 / 外部サービス連携</text>
-    </g>
-  </g>
-
-  <!-- Bottom decision flow -->
-  <rect x="40" y="450" width="720" height="130" rx="8" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
-  <text x="400" y="480" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; text-anchor: middle;">
-    Fit &amp; Gap分析の手順
+  <text x="400" y="280" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    人とAIの協働
+  </text>
+  <text x="400" y="305" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+    • 人が設計
+  </text>
+  <text x="400" y="323" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+    • AIが実装
+  </text>
+  <text x="400" y="341" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+    • 人がレビュー
+  </text>
+  <text x="400" y="359" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+    • AIが改善
   </text>
 
-  <g transform="translate(60, 500)">
-    <text x="0" y="0" class="item">1. 要件一覧と現状機能を比較</text>
-    <text x="0" y="20" class="item">2. 各要件をFIT/GAPに分類</text>
-    <text x="0" y="40" class="item">3. GAPはMoSCoW優先度で判断</text>
-    <text x="0" y="60" class="item">4. カスタマイズ vs 回避策を決定</text>
-  </g>
+  <!-- Bottom: Gap Analysis -->
+  <rect x="50" y="500" width="700" height="170" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="400" y="530" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    ギャップ分析の活用
+  </text>
+
+  <!-- Three columns -->
+  <rect x="70" y="550" width="200" height="100" fill="#00AFF0" rx="5"/>
+  <text x="170" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    Fit（適合）
+  </text>
+  <text x="85" y="595" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    AIに任せる領域
+  </text>
+  <text x="85" y="612" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 自動化・効率化
+  </text>
+  <text x="85" y="628" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → スピード重視
+  </text>
+
+  <rect x="300" y="550" width="200" height="100" fill="#003399" rx="5"/>
+  <text x="400" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    Gap（不足）
+  </text>
+  <text x="315" y="595" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    人が補完する領域
+  </text>
+  <text x="315" y="612" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 検証・判断
+  </text>
+  <text x="315" y="628" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 品質保証
+  </text>
+
+  <rect x="530" y="550" width="200" height="100" fill="#00146E" rx="5"/>
+  <text x="630" y="575" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle; font-weight: bold;">
+    戦略的役割分担
+  </text>
+  <text x="545" y="595" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    最適な協働パターン
+  </text>
+  <text x="545" y="612" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 生産性最大化
+  </text>
+  <text x="545" y="628" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    → 品質担保
+  </text>
 </svg>

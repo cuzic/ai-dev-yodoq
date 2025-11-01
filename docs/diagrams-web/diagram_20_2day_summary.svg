@@ -1,82 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 1040">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .day-title { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: bold; fill: white; text-anchor: middle; }
-      .session-title { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: #00146E; }
-      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
-      .time { font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666; }
-      .day1 { fill: #3498DB; }
-      .day2 { fill: #27AE60; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .day-title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: white; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="1000" height="800" fill="#FFFFFF"/>
+  <rect width="1200" height="800" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="500" y="40" class="title">AI開発 2日間研修まとめ</text>
+  <text x="600" y="40" class="title" text-anchor="middle">2日間の学習構造 総まとめ</text>
 
-  <!-- Day 1 -->
-  <rect x="50" y="80" width="900" height="60" rx="8" class="day1"/>
-  <text x="500" y="120" class="day-title">DAY 1：基礎＋新規開発</text>
+  <!-- Day 1 Section -->
+  <rect x="30" y="80" width="550" height="600" fill="#E6E6E6" stroke="#00146E" stroke-width="4" rx="10"/>
+  <text x="305" y="115" class="day-title" fill="#00146E" text-anchor="middle">1日目: 基礎と準備</text>
 
-  <!-- Day 1 sessions -->
-  <g transform="translate(80, 170)">
-    <!-- Session 1 -->
-    <rect x="0" y="0" width="840" height="100" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
-    <g transform="translate(20, 25)">
-      <text x="0" y="0" class="session-title">📚 午前（9:00-12:00）基礎知識</text>
-      <text x="0" y="25" class="item">• AI開発の3原則（忘れっぽい・Reward Hacking・Jagged Intelligence）</text>
-      <text x="0" y="45" class="item">• 役割の変化：Developer → Navigator</text>
-      <text x="0" y="65" class="item">• 5ステップフロー概要（要件定義→設計→タスク分解→実装→品質担保）</text>
-    </g>
+  <!-- Day 1 - Introduction -->
+  <rect x="50" y="140" width="510" height="90" fill="#00146E" rx="5"/>
+  <text x="305" y="165" class="step-title" text-anchor="middle">導入（10:00-10:30）</text>
+  <text x="70" y="190" class="step-text">• AI開発の3原則: Jagged Intelligence、Trust but Verify、Guardrails</text>
+  <text x="70" y="207" class="step-text">• 役割変化: Driver → Navigator</text>
+  <text x="70" y="224" class="step-text">• Claude Codeの特徴とセットアップ</text>
 
-    <!-- Session 2 -->
-    <rect x="0" y="120" width="840" height="120" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
-    <g transform="translate(20, 145)">
-      <text x="0" y="0" class="session-title">💻 午後（13:00-17:00）実践</text>
-      <text x="0" y="25" class="item">• STEP1-2実習：MoSCoW要件定義 + Spec-First設計</text>
-      <text x="0" y="45" class="item">• STEP3-4実習：タスク分解 + TDD実装</text>
-      <text x="0" y="65" class="item">• STEP5実習：品質チェック + ドキュメント更新</text>
-      <text x="0" y="85" class="item">成果物：<tspan class="item" font-weight="bold" fill="#3498DB">動作するコード + テスト + 仕様書</tspan></text>
-    </g>
-  </g>
+  <!-- Day 1 - Requirements -->
+  <rect x="50" y="245" width="510" height="100" fill="#00AFF0" rx="5"/>
+  <text x="305" y="270" class="step-title" text-anchor="middle">STEP1: 要件整理（10:30-11:30）</text>
+  <text x="70" y="295" class="step-text">• 要件ヒアリングの技術</text>
+  <text x="70" y="312" class="step-text">• MoSCoW優先順位付け（Must/Should/Could/Won't）</text>
+  <text x="70" y="329" class="step-text">• 演習: ToDoアプリ要件整理</text>
 
-  <!-- Day 2 -->
-  <rect x="50" y="430" width="900" height="60" rx="8" class="day2"/>
-  <text x="500" y="470" class="day-title">DAY 2：レガシーコード対応＋実践</text>
+  <!-- Day 1 - Specification -->
+  <rect x="50" y="360" width="510" height="110" fill="#003399" rx="5"/>
+  <text x="305" y="385" class="step-title" text-anchor="middle">STEP2: 設計書作成（11:30-12:30）</text>
+  <text x="70" y="410" class="step-text">• 7要素設計書: 技術スタック/ER図/API仕様/画面設計/セキュリティ/インフラ/監視</text>
+  <text x="70" y="427" class="step-text">• OpenAPI仕様、ER図の自動生成</text>
+  <text x="70" y="444" class="step-text">• 演習: 設計書作成</text>
+  <text x="70" y="461" class="step-text">• Guardrails構築 = AI外部メモリ確立</text>
 
-  <!-- Day 2 sessions -->
-  <g transform="translate(80, 520)">
-    <!-- Session 3 -->
-    <rect x="0" y="0" width="840" height="100" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
-    <g transform="translate(20, 25)">
-      <text x="0" y="0" class="session-title">🔍 午前（9:00-12:00）レガシーコード対応</text>
-      <text x="0" y="25" class="item">• リバースエンジニアリング：コード → 仕様書自動生成</text>
-      <text x="0" y="45" class="item">• 既存コードへのテスト追加（逆順アプローチ）</text>
-      <text x="0" y="65" class="item">• リファクタリング実践（テストで保護しながら）</text>
-    </g>
+  <!-- Day 1 - Task Breakdown -->
+  <rect x="50" y="485" width="510" height="110" fill="#4D6DB3" rx="5"/>
+  <text x="305" y="510" class="step-title" text-anchor="middle">STEP3: タスク分解（13:30-14:30）</text>
+  <text x="70" y="535" class="step-text">• Phase分け戦略（基盤→コア→拡張→仕上げ）</text>
+  <text x="70" y="552" class="step-text">• 各Phase後に動作確認（チェックポイント）</text>
+  <text x="70" y="569" class="step-text">• 演習: Phase分けとタスク一覧作成</text>
+  <text x="70" y="586" class="step-text">• AIの忘れっぽさ対策</text>
 
-    <!-- Session 4 -->
-    <rect x="0" y="120" width="840" height="100" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
-    <g transform="translate(20, 145)">
-      <text x="0" y="0" class="session-title">🚀 午後（13:00-17:00）実プロジェクト適用</text>
-      <text x="0" y="25" class="item">• チームの実課題で5ステップフロー実践</text>
-      <text x="0" y="45" class="item">• CI/CD設定（pre-commit hook + GitHub Actions）</text>
-      <text x="0" y="65" class="item">• まとめ＋Q&amp;A＋今後のアクションプラン</text>
-    </g>
-  </g>
+  <!-- Day 1 - Review -->
+  <rect x="50" y="610" width="510" height="60" fill="#66D9FF" rx="5"/>
+  <text x="305" y="635" class="step-title" text-anchor="middle">1日目振り返り（14:30-15:00）</text>
+  <text x="70" y="660" class="step-text">• 学びの共有、質疑応答</text>
 
-  <!-- Bottom takeaway -->
-  <rect x="50" y="690" width="900" height="90" rx="8" fill="#FFF8E1" stroke="#F39C12" stroke-width="3"/>
-  <text x="500" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #F39C12; text-anchor: middle;">
-    🎯 2日間で得られるもの
+  <!-- Day 2 Section -->
+  <rect x="620" y="80" width="550" height="600" fill="#E6E6E6" stroke="#00146E" stroke-width="4" rx="10"/>
+  <text x="895" y="115" class="day-title" fill="#00146E" text-anchor="middle">2日目: 実装と品質</text>
+
+  <!-- Day 2 - TDD -->
+  <rect x="640" y="140" width="510" height="120" fill="#00146E" rx="5"/>
+  <text x="895" y="165" class="step-title" text-anchor="middle">STEP4: TDD実装（10:00-11:30）</text>
+  <text x="660" y="190" class="step-text">• Red-Green-Refactorサイクル</text>
+  <text x="660" y="207" class="step-text">• テストシナリオ（What）→ テストコード（How）自動変換</text>
+  <text x="660" y="224" class="step-text">• 4分類テスト: 正常系/異常系/境界値/例外処理</text>
+  <text x="660" y="241" class="step-text">• デグレ防止の3層構造（E2E/統合/単体）</text>
+
+  <!-- Day 2 - Quality & Documentation -->
+  <rect x="640" y="275" width="510" height="230" fill="#00AFF0" rx="5"/>
+  <text x="895" y="300" class="step-title" text-anchor="middle">STEP5: 品質担保＆ドキュメント反映（11:30-14:30）</text>
+  <text x="660" y="325" class="step-text" font-weight="bold">【品質担保】</text>
+  <text x="660" y="347" class="step-text">• AIセルフレビュー必須化</text>
+  <text x="660" y="367" class="step-text">• リファクタリング後の全テスト実行</text>
+  <text x="660" y="387" class="step-text">• デバッグ戦略: エラーログ→仮説→検証</text>
+  <text x="660" y="412" class="step-text" font-weight="bold">【ドキュメント反映】</text>
+  <text x="660" y="434" class="step-text">• Living Documentation（コードと共に更新）</text>
+  <text x="660" y="454" class="step-text">• リバースエンジニアリング（既存コード→仕様書抽出）</text>
+  <text x="660" y="474" class="step-text">• 影響範囲調査（変更の波及確認）</text>
+  <text x="660" y="494" class="step-text">• 演習: TDD実装＋ドキュメント生成</text>
+
+  <!-- Day 2 - Final Review -->
+  <rect x="640" y="545" width="510" height="125" fill="#4D6DB3" rx="5"/>
+  <text x="895" y="570" class="step-title" text-anchor="middle">総括と次のステップ（14:30-15:00）</text>
+  <text x="660" y="595" class="step-text">• よくある失敗と対策（6パターン）</text>
+  <text x="660" y="612" class="step-text">• フィットギャップ分析（人とAIの役割分担）</text>
+  <text x="660" y="629" class="step-text">• 学習ロードマップ提示</text>
+  <text x="660" y="646" class="step-text">• 質疑応答、成果発表</text>
+
+  <!-- Bottom Summary -->
+  <rect x="30" y="700" width="1140" height="75" fill="#00146E" rx="10"/>
+  <text x="600" y="730" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: white; text-anchor: middle; font-weight: bold;">
+    2日間で習得: 5-STEP = 要件 → 設計 → タスク分解 → TDD実装 → 品質担保＆ドキュメント反映
   </text>
-  <text x="500" y="750" class="item" text-anchor="middle" font-weight="bold">
-    翌日から実務で使える5ステップフロー + TDD + Living Documentation
-  </text>
-  <text x="500" y="770" class="time" text-anchor="middle">
-    「AIを使いこなす開発者」へ確実に進化
+  <text x="600" y="755" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; text-anchor: middle;">
+    AI時代の開発者スキル = Guardrailsを構築し、AIと協働して高品質な成果を生み出す能力
   </text>
 </svg>

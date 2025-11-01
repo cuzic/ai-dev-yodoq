@@ -1,103 +1,196 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1040">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
-      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333; }
-      .code { font-family: 'Courier New', monospace; font-size: 12px; fill: #00146E; }
-      .bad { fill: #E74C3C; }
-      .good { fill: #27AE60; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .section-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
+      .section-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
     </style>
   </defs>
 
-  <rect width="1000" height="700" fill="#FFFFFF"/>
-  <text x="500" y="40" class="title">.claudeignore の重要性</text>
+  <!-- Background -->
+  <rect width="1400" height="800" fill="#FFFFFF"/>
 
-  <!-- Without .claudeignore (Bad) -->
-  <g transform="translate(50, 80)">
-    <rect x="0" y="0" width="420" height="50" rx="5" class="bad"/>
-    <text x="210" y="33" class="subtitle">❌ .claudeignoreなし</text>
+  <!-- Title -->
+  <text x="700" y="40" class="title" text-anchor="middle">.claudeignore の重要性（トークン削減とAI精度向上）</text>
 
-    <rect x="0" y="60" width="420" height="240" rx="5" fill="#FFEBEE" stroke="#E74C3C" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">問題：</text>
-      <text x="0" y="25" class="item">• node_modules/ 全部読み込む</text>
-      <text x="20" y="47" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
-        → 数万ファイル、数百MB
-      </text>
-
-      <text x="0" y="75" class="item">• .env ファイルを送信</text>
-      <text x="20" y="97" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
-        → 秘密情報が漏洩リスク
-      </text>
-
-      <text x="0" y="125" class="item">• ビルド成果物も含む</text>
-      <text x="20" y="147" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
-        → dist/, build/ など不要
-      </text>
-
-      <text x="0" y="180" class="item" font-weight="bold" fill="#E74C3C">結果：</text>
-      <text x="0" y="205" class="item">コンテキスト溢れ → AI混乱</text>
-    </g>
-  </g>
-
-  <!-- With .claudeignore (Good) -->
-  <g transform="translate(530, 80)">
-    <rect x="0" y="0" width="420" height="50" rx="5" class="good"/>
-    <text x="210" y="33" class="subtitle">✅ .claudeignoreあり</text>
-
-    <rect x="0" y="60" width="420" height="240" rx="5" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">効果：</text>
-      <text x="0" y="25" class="item">• 必要なファイルだけ送信</text>
-      <text x="20" y="47" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
-        → src/だけで十分
-      </text>
-
-      <text x="0" y="75" class="item">• 秘密情報を保護</text>
-      <text x="20" y="97" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
-        → .env は除外済み
-      </text>
-
-      <text x="0" y="125" class="item">• ノイズを削減</text>
-      <text x="20" y="147" style="font-family: 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666;">
-        → AIが本質に集中
-      </text>
-
-      <text x="0" y="180" class="item" font-weight="bold" fill="#27AE60">結果：</text>
-      <text x="0" y="205" class="item">高速＆正確な応答</text>
-    </g>
-  </g>
-
-  <!-- Example .claudeignore -->
-  <rect x="50" y="370" width="900" height="280" rx="5" fill="#F8F8F8" stroke="#00146E" stroke-width="2"/>
-  <text x="500" y="405" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
-    推奨 .claudeignore 設定例
+  <!-- Without .claudeignore (Left) -->
+  <rect x="50" y="80" width="650" height="320" fill="#CC0000" opacity="0.1" stroke="#CC0000" stroke-width="4" rx="10"/>
+  <text x="375" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #CC0000; text-anchor: middle; font-weight: bold;">
+    ✗ .claudeignore なし（危険）
   </text>
 
-  <g transform="translate(80, 425)">
-    <text x="0" y="0" class="code"># Dependencies</text>
-    <text x="0" y="20" class="code">node_modules/</text>
-    <text x="0" y="40" class="code">vendor/</text>
+  <!-- Without: File list -->
+  <rect x="70" y="130" width="280" height="250" fill="#00146E" rx="10"/>
+  <text x="210" y="160" class="section-title" text-anchor="middle">スキャン対象ファイル</text>
+  <text x="210" y="185" class="section-title" text-anchor="middle" font-size="26">(全ファイル読み込み)</text>
 
-    <text x="0" y="75" class="code"># Build outputs</text>
-    <text x="0" y="95" class="code">dist/</text>
-    <text x="0" y="115" class="code">build/</text>
-    <text x="0" y="135" class="code">*.min.js</text>
+  <text x="90" y="215" class="section-text">• src/**/*.java (必要)</text>
+  <text x="90" y="235" class="section-text">• node_modules/** (不要)</text>
+  <text x="90" y="255" class="section-text">• target/** (不要)</text>
+  <text x="90" y="275" class="section-text">• .git/** (不要)</text>
+  <text x="90" y="295" class="section-text">• dist/** (不要)</text>
+  <text x="90" y="315" class="section-text">• build/** (不要)</text>
+  <text x="90" y="335" class="section-text">• coverage/** (不要)</text>
+  <text x="90" y="355" class="section-text">• *.log (不要)</text>
 
-    <text x="400" y="0" class="code"># Secrets</text>
-    <text x="400" y="20" class="code">.env</text>
-    <text x="400" y="40" class="code">.env.*</text>
-    <text x="400" y="60" class="code">credentials.json</text>
-    <text x="400" y="80" class="code">*.pem</text>
-    <text x="400" y="100" class="code">*.key</text>
+  <!-- Without: Token consumption -->
+  <rect x="370" y="130" width="310" height="250" fill="#CC0000" rx="10"/>
+  <text x="525" y="160" class="section-title" text-anchor="middle">トークン消費量</text>
 
-    <text x="0" y="175" class="code"># Cache</text>
-    <text x="0" y="195" class="code">.cache/</text>
-    <text x="0" y="215" class="code">tmp/</text>
+  <text x="390" y="195" class="section-text" font-size="28" font-weight="bold">総トークン: 150,000</text>
 
-    <text x="400" y="135" class="code"># Logs</text>
-    <text x="400" y="155" class="code">*.log</text>
-    <text x="400" y="175" class="code">logs/</text>
-  </g>
+  <rect x="390" y="210" width="250" height="30" fill="#00AA00" rx="5"/>
+  <text x="515" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+    必要なコード: 30,000 (20%)
+  </text>
+
+  <rect x="390" y="250" width="250" height="110" fill="#666666" rx="5"/>
+  <text x="515" y="270" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+    不要なファイル: 120,000 (80%)
+  </text>
+  <text x="400" y="290" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • node_modules: 50,000
+  </text>
+  <text x="400" y="308" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • target/build: 40,000
+  </text>
+  <text x="400" y="326" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • .git: 20,000
+  </text>
+  <text x="400" y="344" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • その他: 10,000
+  </text>
+
+  <!-- With .claudeignore (Right) -->
+  <rect x="730" y="80" width="650" height="320" fill="#00AA00" opacity="0.1" stroke="#00AA00" stroke-width="4" rx="10"/>
+  <text x="1055" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00AA00; text-anchor: middle; font-weight: bold;">
+    ✓ .claudeignore あり（推奨）
+  </text>
+
+  <!-- With: File list -->
+  <rect x="750" y="130" width="280" height="250" fill="#00146E" rx="10"/>
+  <text x="890" y="160" class="section-title" text-anchor="middle">スキャン対象ファイル</text>
+  <text x="890" y="185" class="section-title" text-anchor="middle" font-size="26">(必要なファイルのみ)</text>
+
+  <text x="770" y="215" class="section-text">• src/**/*.java ✓</text>
+  <text x="770" y="235" class="section-text">• pom.xml ✓</text>
+  <text x="770" y="255" class="section-text">• package.json ✓</text>
+  <text x="770" y="275" class="section-text">• README.md ✓</text>
+  <text x="770" y="295" class="section-text">• .env.example ✓</text>
+  <text x="770" y="335" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    → 80%削減！
+  </text>
+
+  <!-- With: Token consumption -->
+  <rect x="1050" y="130" width="310" height="250" fill="#00AA00" rx="10"/>
+  <text x="1205" y="160" class="section-title" text-anchor="middle">トークン消費量</text>
+
+  <text x="1070" y="195" class="section-text" font-size="28" font-weight="bold">総トークン: 30,000 (80%削減)</text>
+
+  <rect x="1070" y="210" width="250" height="150" fill="#00AA00" opacity="0.7" rx="5"/>
+  <text x="1195" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle;">
+    必要なコード: 30,000 (100%)
+  </text>
+  <text x="1080" y="255" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • ソースコード
+  </text>
+  <text x="1080" y="273" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • 設定ファイル
+  </text>
+  <text x="1080" y="291" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: white;">
+    • ドキュメント
+  </text>
+  <text x="1080" y="320" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
+    → AIが重要な箇所に集中
+  </text>
+  <text x="1080" y="343" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white; font-weight: bold;">
+    → 応答速度向上
+  </text>
+
+  <!-- Impact comparison -->
+  <rect x="50" y="430" width="1330" height="150" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="715" y="465" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    .claudeignore による影響
+  </text>
+
+  <!-- Cost impact -->
+  <rect x="70" y="485" width="400" height="80" fill="#00AFF0" rx="8"/>
+  <text x="270" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+    💰 コスト削減
+  </text>
+  <text x="90" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
+    トークン使用量: 150,000 → 30,000 (80%削減)
+  </text>
+  <text x="90" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
+    API料金: 月$450 → $90 (年間$4,320削減)
+  </text>
+
+  <!-- Speed impact -->
+  <rect x="490" y="485" width="400" height="80" fill="#003399" rx="8"/>
+  <text x="690" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+    ⚡ 応答速度向上
+  </text>
+  <text x="510" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
+    応答時間: 15秒 → 3秒 (5倍高速化)
+  </text>
+  <text x="510" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
+    生産性: 開発者の待ち時間が大幅削減
+  </text>
+
+  <!-- Quality impact -->
+  <rect x="910" y="485" width="450" height="80" fill="#00146E" rx="8"/>
+  <text x="1135" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+    🎯 AI精度向上
+  </text>
+  <text x="930" y="535" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
+    ノイズ除去: 不要な情報80%削減 → 重要コードに集中
+  </text>
+  <text x="930" y="555" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white;">
+    品質向上: 関連ファイルの理解深度向上 → より適切な提案
+  </text>
+
+  <!-- Best practices -->
+  <rect x="50" y="610" width="1330" height="160" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="715" y="645" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    .claudeignore ベストプラクティス
+  </text>
+
+  <!-- Best practice 1 -->
+  <text x="70" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    1. 除外すべきディレクトリ
+  </text>
+  <text x="80" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    node_modules/, target/, build/, dist/, .git/, coverage/, *.log
+  </text>
+  <text x="80" y="717" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    → ビルド成果物・依存ライブラリ・ログは不要
+  </text>
+
+  <!-- Best practice 2 -->
+  <text x="520" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    2. 含めるべきファイル
+  </text>
+  <text x="530" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    src/, README.md, pom.xml, package.json, .env.example
+  </text>
+  <text x="530" y="717" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    → ソースコード・設定・ドキュメントは必須
+  </text>
+
+  <!-- Best practice 3 -->
+  <text x="970" y="680" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; font-weight: bold;">
+    3. プロジェクト初期に設定
+  </text>
+  <text x="980" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    最初のコミット時に .claudeignore を作成
+  </text>
+  <text x="980" y="717" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    → 初日から効率的な開発環境を確保
+  </text>
+
+  <!-- Bottom summary -->
+  <rect x="50" y="740" width="1330" height="35" fill="#00AFF0" rx="5"/>
+  <text x="715" y="765" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+    .claudeignore 設定 = トークン80%削減 + 応答5倍高速化 + AI精度向上 → 必須設定！
+  </text>
 </svg>

@@ -1,62 +1,125 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 910">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
-      .item-title { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
-      .item-text { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
-      .bad { fill: #E74C3C; }
-      .good { fill: #27AE60; }
-      .vs-text { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: bold; fill: #666; text-anchor: middle; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .approach-title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: white; }
+      .approach-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
+      .label { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: #00146E; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="900" height="400" fill="#FFFFFF"/>
+  <rect width="1200" height="700" fill="#FFFFFF"/>
 
   <!-- Title -->
-  <text x="450" y="35" class="title">「Vibe駆動開発」vs「本番品質開発」</text>
+  <text x="600" y="40" class="title" text-anchor="middle">3つの開発アプローチ比較</text>
 
-  <!-- Left side: Vibe-driven (BAD) -->
-  <rect x="30" y="70" width="360" height="300" rx="8" class="bad"/>
-  <text x="210" y="100" class="subtitle">❌ Vibe駆動</text>
-  <text x="210" y="122" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle;">(なんとなく動けばOK)</text>
+  <!-- Approach 1: Vibe Coding -->
+  <rect x="50" y="80" width="330" height="520" fill="#66D9FF" rx="10"/>
+  <text x="215" y="115" class="approach-title" text-anchor="middle">Vibe Coding</text>
+  <text x="215" y="140" class="approach-title" text-anchor="middle" font-size="28">(高速プロトタイプ)</text>
 
-  <!-- Vibe items -->
-  <g transform="translate(50, 145)">
-    <text x="0" y="0" class="item-title" fill="white">• テストなし</text>
-    <text x="20" y="20" class="item-text" fill="white">「動いてるっぽいからOK」</text>
+  <text x="70" y="175" class="approach-text" font-weight="bold">特徴:</text>
+  <text x="80" y="195" class="approach-text">• とにかく速い（30分〜1時間）</text>
+  <text x="80" y="212" class="approach-text">• 設計なし、いきなりコード</text>
+  <text x="80" y="229" class="approach-text">• AIに任せっぱなし</text>
+  <text x="80" y="246" class="approach-text">• テストなし、動けばOK</text>
 
-    <text x="0" y="50" class="item-title" fill="white">• ドキュメントなし</text>
-    <text x="20" y="70" class="item-text" fill="white">「コード見ればわかる」</text>
+  <text x="70" y="280" class="approach-text" font-weight="bold">メリット:</text>
+  <text x="80" y="300" class="approach-text">✓ アイデア検証が超高速</text>
+  <text x="80" y="317" class="approach-text">✓ プロトタイプに最適</text>
+  <text x="80" y="334" class="approach-text">✓ 学習・実験向き</text>
 
-    <text x="0" y="100" class="item-title" fill="white">• エラーハンドリング適当</text>
-    <text x="20" y="120" class="item-text" fill="white">「エラー出たら直せばいい」</text>
+  <text x="70" y="368" class="approach-text" font-weight="bold">デメリット:</text>
+  <text x="80" y="388" class="approach-text">✗ 品質がバラバラ</text>
+  <text x="80" y="405" class="approach-text">✗ セキュリティ脆弱</text>
+  <text x="80" y="422" class="approach-text">✗ デグレ多発</text>
+  <text x="80" y="439" class="approach-text">✗ 本番投入NG</text>
 
-    <text x="0" y="150" class="item-title" fill="white">• 設計なし</text>
-    <text x="20" y="170" class="item-text" fill="white">「とりあえず書く」</text>
-  </g>
+  <text x="70" y="473" class="approach-text" font-weight="bold">適用場面:</text>
+  <text x="80" y="493" class="approach-text">• PoC・プロトタイプ</text>
+  <text x="80" y="510" class="approach-text">• 学習・実験</text>
+  <text x="80" y="527" class="approach-text">• アイデア検証</text>
+  <text x="80" y="544" class="approach-text">• 技術調査</text>
 
-  <!-- VS -->
-  <text x="450" y="240" class="vs-text">VS</text>
+  <rect x="70" y="565" width="270" height="25" fill="#00146E" rx="5"/>
+  <text x="205" y="583" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    速度: ★★★★★ 品質: ★☆☆☆☆
+  </text>
 
-  <!-- Right side: Production quality (GOOD) -->
-  <rect x="510" y="70" width="360" height="300" rx="8" class="good"/>
-  <text x="690" y="100" class="subtitle">✅ 本番品質</text>
-  <text x="690" y="122" style="font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: white; text-anchor: middle;">(最初から品質担保)</text>
+  <!-- Approach 2: Production Engineering -->
+  <rect x="435" y="80" width="330" height="520" fill="#00146E" rx="10"/>
+  <text x="600" y="115" class="approach-title" text-anchor="middle">Production Engineering</text>
+  <text x="600" y="140" class="approach-title" text-anchor="middle" font-size="28">(従来の厳格開発)</text>
 
-  <!-- Production items -->
-  <g transform="translate(530, 145)">
-    <text x="0" y="0" class="item-title" fill="white">• TDD必須</text>
-    <text x="20" y="20" class="item-text" fill="white">カバレッジ80%以上</text>
+  <text x="455" y="175" class="approach-text" font-weight="bold">特徴:</text>
+  <text x="465" y="195" class="approach-text">• 時間がかかる（数週間）</text>
+  <text x="465" y="212" class="approach-text">• 厳格なプロセス</text>
+  <text x="465" y="229" class="approach-text">• 詳細設計必須</text>
+  <text x="465" y="246" class="approach-text">• 手動テスト中心</text>
 
-    <text x="0" y="50" class="item-title" fill="white">• Living Documentation</text>
-    <text x="20" y="70" class="item-text" fill="white">コードと仕様が同期</text>
+  <text x="455" y="280" class="approach-text" font-weight="bold">メリット:</text>
+  <text x="465" y="300" class="approach-text">✓ 高品質</text>
+  <text x="465" y="317" class="approach-text">✓ セキュア</text>
+  <text x="465" y="334" class="approach-text">✓ 本番投入可能</text>
 
-    <text x="0" y="100" class="item-title" fill="white">• 堅牢なエラー処理</text>
-    <text x="20" y="120" class="item-text" fill="white">全パターン網羅</text>
+  <text x="455" y="368" class="approach-text" font-weight="bold">デメリット:</text>
+  <text x="465" y="388" class="approach-text">✗ 遅い（従来8週間）</text>
+  <text x="465" y="405" class="approach-text">✗ 手間がかかる</text>
+  <text x="465" y="422" class="approach-text">✗ ドキュメント作成負荷</text>
+  <text x="465" y="439" class="approach-text">✗ AIの恩恵が少ない</text>
 
-    <text x="0" y="150" class="item-title" fill="white">• Spec-First設計</text>
-    <text x="20" y="170" class="item-text" fill="white">実装前に設計完了</text>
-  </g>
+  <text x="455" y="473" class="approach-text" font-weight="bold">適用場面:</text>
+  <text x="465" y="493" class="approach-text">• 本番リリース</text>
+  <text x="465" y="510" class="approach-text">• ミッションクリティカル</text>
+  <text x="465" y="527" class="approach-text">• 大規模プロジェクト</text>
+  <text x="465" y="544" class="approach-text">• 長期運用システム</text>
+
+  <rect x="455" y="565" width="270" height="25" fill="#00AFF0" rx="5"/>
+  <text x="590" y="583" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    速度: ★☆☆☆☆ 品質: ★★★★★
+  </text>
+
+  <!-- Approach 3: Vibe Coding with Guardrails -->
+  <rect x="820" y="80" width="330" height="520" fill="#00AFF0" rx="10"/>
+  <text x="985" y="115" class="approach-title" text-anchor="middle">Vibe Coding</text>
+  <text x="985" y="140" class="approach-title" text-anchor="middle" font-size="28">with Guardrails</text>
+  <text x="985" y="163" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">(本研修の推奨アプローチ)</text>
+
+  <text x="840" y="195" class="approach-text" font-weight="bold">特徴:</text>
+  <text x="850" y="215" class="approach-text">• 速い（従来の1/4の期間）</text>
+  <text x="850" y="232" class="approach-text">• 最小限の設計（Guardrails）</text>
+  <text x="850" y="249" class="approach-text">• AIと協働</text>
+  <text x="850" y="266" class="approach-text">• 自動テスト完備</text>
+
+  <text x="840" y="300" class="approach-text" font-weight="bold">メリット:</text>
+  <text x="850" y="320" class="approach-text">✓ 速さと品質を両立</text>
+  <text x="850" y="337" class="approach-text">✓ 本番投入可能</text>
+  <text x="850" y="354" class="approach-text">✓ セキュア</text>
+  <text x="850" y="371" class="approach-text">✓ 持続可能</text>
+
+  <text x="840" y="405" class="approach-text" font-weight="bold">キーポイント:</text>
+  <text x="850" y="425" class="approach-text">• 要件定義（10分）</text>
+  <text x="850" y="442" class="approach-text">• 設計書（15分）</text>
+  <text x="850" y="459" class="approach-text">• TDD必須</text>
+  <text x="850" y="476" class="approach-text">• AI自己レビュー</text>
+
+  <text x="840" y="510" class="approach-text" font-weight="bold">適用場面:</text>
+  <text x="850" y="530" class="approach-text">• すべての本番開発</text>
+  <text x="850" y="547" class="approach-text">• 新規開発・保守開発</text>
+  <text x="850" y="564" class="approach-text">• 小〜大規模</text>
+
+  <rect x="840" y="580" width="290" height="25" fill="#003399" rx="5"/>
+  <text x="985" y="598" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; text-anchor: middle; font-weight: bold;">
+    速度: ★★★★☆ 品質: ★★★★★
+  </text>
+
+  <!-- Bottom summary -->
+  <rect x="50" y="625" width="1100" height="55" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="600" y="653" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    Guardrails（設計書・テスト）を設定することで、速さと品質を両立
+  </text>
+  <text x="600" y="672" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle;">
+    従来8週間 → Vibe Coding with Guardrailsで2週間（4倍の生産性）
+  </text>
 </svg>

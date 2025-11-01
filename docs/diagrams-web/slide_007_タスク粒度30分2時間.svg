@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .section-title { font-size: 24px; font-weight: 700; }
+      .item-text { font-size: 17px; }
+      .left-section { fill: #d32f2f; }
+      .right-section { fill: #388e3c; }
+      .section-box { fill-opacity: 0.1; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">タスク粒度（30分〜2時間）</text>
+
+  <!-- Divider -->
+  <line x1="640" y1="80" x2="640" y2="720" stroke="#cccccc" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- Left Section -->
+  <g transform="translate(40, 100)">
+    <rect x="0" y="0" width="550" height="580" class="section-box left-section" stroke="#d32f2f"/>
+    <text x="275" y="35" class="section-title left-section" text-anchor="middle">❌ 大きすぎるタスク</text>
+    <text x="20" y="80" class="item-text">• 進捗が見えない</text>
+    <text x="20" y="110" class="item-text">• AIが全体像を見失う</text>
+    <text x="20" y="140" class="item-text">• 問題発見が遅れる</text>
+    <text x="20" y="170" class="item-text">• モチベーション低下</text>
+  </g>
+
+  <!-- Right Section -->
+  <g transform="translate(690, 100)">
+    <rect x="0" y="0" width="550" height="580" class="section-box right-section" stroke="#388e3c"/>
+    <text x="275" y="35" class="section-title right-section" text-anchor="middle">❌ 小さすぎるタスク</text>
+    <text x="20" y="80" class="item-text">• 管理コストが増大</text>
+    <text x="20" y="110" class="item-text">• オーバーヘッド増加</text>
+    <text x="20" y="140" class="item-text">• タスク切り替えの手間</text>
+  </g>
+</svg>

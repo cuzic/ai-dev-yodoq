@@ -1,122 +1,159 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
-  <defs>
-    <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .phase-title { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: white; text-anchor: middle; }
-      .time { font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: white; text-anchor: middle; }
-      .item { font-family: 'Noto Sans JP', sans-serif; font-size: 13px; fill: #333; }
-      .desc { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; }
-      .phase1 { fill: #3498DB; }
-      .phase2 { fill: #27AE60; }
-      .phase3 { fill: #E67E22; }
-      .phase4 { fill: #9B59B6; }
-    </style>
-  </defs>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" viewBox="0 0 1560 820">
+  <ns0:defs>
+    <ns0:style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
+      .time-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold; }
+    </ns0:style>
+  </ns0:defs>
 
-  <!-- Background -->
-  <rect width="1000" height="700" fill="#FFFFFF"/>
+  
+  <ns0:rect width="1200" height="600" fill="#FFFFFF" />
 
-  <!-- Title -->
-  <text x="500" y="35" class="title">2日間ワークショップの流れ</text>
+  
+  <ns0:text x="600" y="35" class="title" text-anchor="middle">演習の進め方（5ステップワークフロー）</ns0:text>
 
-  <!-- Day 1 Morning -->
-  <g transform="translate(50, 80)">
-    <rect x="0" y="0" width="420" height="50" rx="5" class="phase1"/>
-    <text x="210" y="25" class="phase-title">Day 1 午前（3時間）</text>
-    <text x="210" y="43" class="time">9:00-12:00</text>
+  
+  <ns0:rect x="30" y="80" width="200" height="180" fill="#00146E" rx="10" />
+  <ns0:text x="130" y="110" class="step-title" text-anchor="middle">STEP 1</ns0:text>
+  <ns0:text x="130" y="206.2" class="step-title" text-anchor="middle" font-size="28">要件整理</ns0:text>
 
-    <rect x="0" y="60" width="420" height="150" rx="5" fill="#EBF5FB" stroke="#3498DB" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">1. 基礎知識（1時間）</text>
-      <text x="15" y="20" class="desc">• AI開発の3原則</text>
-      <text x="15" y="38" class="desc">• 役割の変化（Driver → Navigator）</text>
-      <text x="15" y="56" class="desc">• 5ステップフロー概要</text>
+  <ns0:text x="50" y="165" class="step-text">やること:</ns0:text>
+  <ns0:text x="60" y="235.2" class="step-text">• 課題を読む</ns0:text>
+  <ns0:text x="60" y="305.4" class="step-text">• 不明点を質問</ns0:text>
+  <ns0:text x="60" y="375.6" class="step-text">• 要件リスト作成</ns0:text>
 
-      <text x="0" y="85" class="item" font-weight="bold">2. ハンズオン（2時間）</text>
-      <text x="15" y="105" class="desc">• 要件定義（MoSCoW）実習</text>
-      <text x="15" y="123" class="desc">• Spec-First設計の実践</text>
-    </g>
-  </g>
+  <ns0:text x="50" y="445.8" class="time-text">所要時間: 10分</ns0:text>
 
-  <!-- Day 1 Afternoon -->
-  <g transform="translate(530, 80)">
-    <rect x="0" y="0" width="420" height="50" rx="5" class="phase2"/>
-    <text x="210" y="25" class="phase-title">Day 1 午後（4時間）</text>
-    <text x="210" y="43" class="time">13:00-17:00</text>
+  
+  <ns0:line x1="230" y1="170" x2="270" y2="170" stroke="#00146E" stroke-width="4" />
+  <ns0:polygon points="270,170 260,165 260,175" fill="#00146E" />
 
-    <rect x="0" y="60" width="420" height="150" rx="5" fill="#E8F8F5" stroke="#27AE60" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">3. タスク分解＆実装（4時間）</text>
-      <text x="15" y="20" class="desc">• タスクリスト作成実習</text>
-      <text x="15" y="38" class="desc">• TDD実践（小規模機能）</text>
-      <text x="15" y="56" class="desc">• AIペアプログラミング体験</text>
-      <text x="15" y="74" class="desc">• コードレビュー</text>
+  
+  <ns0:rect x="270" y="80" width="200" height="180" fill="#00AFF0" rx="10" />
+  <ns0:text x="370" y="110" class="step-title" text-anchor="middle">STEP 2</ns0:text>
+  <ns0:text x="370" y="206.2" class="step-title" text-anchor="middle" font-size="28">設計書作成</ns0:text>
 
-      <text x="0" y="103" class="item" font-weight="bold">成果物:</text>
-      <text x="15" y="123" class="desc">動作するコード＋テスト</text>
-    </g>
-  </g>
+  <ns0:text x="290" y="165" class="step-text">やること:</ns0:text>
+  <ns0:text x="300" y="235.2" class="step-text">• ER図作成</ns0:text>
+  <ns0:text x="300" y="305.4" class="step-text">• API仕様定義</ns0:text>
+  <ns0:text x="300" y="375.6" class="step-text">• 画面遷移図</ns0:text>
 
-  <!-- Day 2 Morning -->
-  <g transform="translate(50, 300)">
-    <rect x="0" y="0" width="420" height="50" rx="5" class="phase3"/>
-    <text x="210" y="25" class="phase-title">Day 2 午前（3時間）</text>
-    <text x="210" y="43" class="time">9:00-12:00</text>
+  <ns0:text x="290" y="445.8" class="time-text">所要時間: 20分</ns0:text>
 
-    <rect x="0" y="60" width="420" height="150" rx="5" fill="#FEF5E7" stroke="#E67E22" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">4. レガシーコード対応（3時間）</text>
-      <text x="15" y="20" class="desc">• リバースエンジニアリング実習</text>
-      <text x="15" y="38" class="desc">• 既存コードへのテスト追加</text>
-      <text x="15" y="56" class="desc">• リファクタリング実践</text>
-      <text x="15" y="74" class="desc">• ドキュメント自動生成</text>
+  
+  <ns0:line x1="470" y1="170" x2="510" y2="170" stroke="#00AFF0" stroke-width="4" />
+  <ns0:polygon points="510,170 500,165 500,175" fill="#00AFF0" />
 
-      <text x="0" y="103" class="item" font-weight="bold">成果物:</text>
-      <text x="15" y="123" class="desc">仕様書＋テスト付きコード</text>
-    </g>
-  </g>
+  
+  <ns0:rect x="510" y="80" width="200" height="180" fill="#003399" rx="10" />
+  <ns0:text x="610" y="140.3" class="step-title" text-anchor="middle">STEP 3</ns0:text>
+  <ns0:text x="610" y="236.5" class="step-title" text-anchor="middle" font-size="28">タスク分解</ns0:text>
 
-  <!-- Day 2 Afternoon -->
-  <g transform="translate(530, 300)">
-    <rect x="0" y="0" width="420" height="50" rx="5" class="phase4"/>
-    <text x="210" y="25" class="phase-title">Day 2 午後（4時間）</text>
-    <text x="210" y="43" class="time">13:00-17:00</text>
+  <ns0:text x="530" y="165" class="step-text">やること:</ns0:text>
+  <ns0:text x="540" y="235.2" class="step-text">• Phase分け</ns0:text>
+  <ns0:text x="540" y="305.4" class="step-text">• タスク一覧作成</ns0:text>
+  <ns0:text x="540" y="375.6" class="step-text">• 優先順位付け</ns0:text>
 
-    <rect x="0" y="60" width="420" height="150" rx="5" fill="#F4ECF7" stroke="#9B59B6" stroke-width="2"/>
-    <g transform="translate(20, 85)">
-      <text x="0" y="0" class="item" font-weight="bold">5. 実プロジェクト適用（3時間）</text>
-      <text x="15" y="20" class="desc">• チームの実課題で実践</text>
-      <text x="15" y="38" class="desc">• ワークフロー構築</text>
-      <text x="15" y="56" class="desc">• CI/CD設定</text>
+  <ns0:text x="530" y="445.8" class="time-text">所要時間: 15分</ns0:text>
 
-      <text x="0" y="85" class="item" font-weight="bold">6. まとめ &amp; Q&amp;A（1時間）</text>
-      <text x="15" y="105" class="desc">• 学んだことの振り返り</text>
-      <text x="15" y="123" class="desc">• 今後のアクションプラン</text>
-    </g>
-  </g>
+  
+  <ns0:line x1="710" y1="170" x2="750" y2="170" stroke="#003399" stroke-width="4" />
+  <ns0:polygon points="750,170 740,165 740,175" fill="#003399" />
 
-  <!-- Timeline -->
-  <rect x="50" y="490" width="900" height="10" fill="#DDD" rx="5"/>
-  <rect x="50" y="490" width="225" height="10" fill="#3498DB" rx="5"/>
-  <rect x="275" y="490" width="225" height="10" fill="#27AE60" rx="5"/>
-  <rect x="500" y="490" width="225" height="10" fill="#E67E22" rx="5"/>
-  <rect x="725" y="490" width="225" height="10" fill="#9B59B6" rx="5"/>
+  
+  <ns0:rect x="750" y="80" width="200" height="180" fill="#66D9FF" rx="10" />
+  <ns0:text x="850" y="110" class="step-title" text-anchor="middle">STEP 4</ns0:text>
+  <ns0:text x="850" y="206.2" class="step-title" text-anchor="middle" font-size="28">実装</ns0:text>
 
-  <!-- Labels -->
-  <text x="162" y="520" class="desc" text-anchor="middle">Day1 AM</text>
-  <text x="387" y="520" class="desc" text-anchor="middle">Day1 PM</text>
-  <text x="612" y="520" class="desc" text-anchor="middle">Day2 AM</text>
-  <text x="837" y="520" class="desc" text-anchor="middle">Day2 PM</text>
+  <ns0:text x="770" y="165" class="step-text">やること:</ns0:text>
+  <ns0:text x="780" y="235.2" class="step-text">• TDDで実装</ns0:text>
+  <ns0:text x="780" y="305.4" class="step-text">• Phase毎に確認</ns0:text>
+  <ns0:text x="780" y="375.6" class="step-text">• AIレビュー実施</ns0:text>
 
-  <!-- Bottom summary -->
-  <rect x="50" y="550" width="900" height="120" rx="8" fill="#E8F4F8" stroke="#00146E" stroke-width="2"/>
-  <text x="500" y="585" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: bold; fill: #00146E; text-anchor: middle;">
-    ワークショップのゴール
-  </text>
+  <ns0:text x="770" y="445.8" class="time-text">所要時間: 40分</ns0:text>
 
-  <g transform="translate(80, 610)">
-    <text x="0" y="0" class="item">✅ 翌日から実プロジェクトで即実践できる</text>
-    <text x="0" y="22" class="item">✅ AIを使った開発フローが身につく</text>
-    <text x="0" y="44" class="item">✅ チーム全体で同じ方法論を共有</text>
-  </g>
-</svg>
+  
+  <ns0:line x1="950" y1="170" x2="990" y2="170" stroke="#66D9FF" stroke-width="4" />
+  <ns0:polygon points="990,170 980,165 980,175" fill="#66D9FF" />
+
+  
+  <ns0:rect x="990" y="80" width="180" height="180" fill="#4D6DB3" rx="10" />
+  <ns0:text x="1080" y="110" class="step-title" text-anchor="middle">STEP 5</ns0:text>
+  <ns0:text x="1080" y="206.2" class="step-title" text-anchor="middle" font-size="28">振り返り</ns0:text>
+
+  <ns0:text x="1010" y="165" class="step-text">やること:</ns0:text>
+  <ns0:text x="1020" y="235.2" class="step-text">• 成果発表</ns0:text>
+  <ns0:text x="1020" y="305.4" class="step-text">• 学び共有</ns0:text>
+  <ns0:text x="1020" y="375.6" class="step-text">• 改善点議論</ns0:text>
+
+  <ns0:text x="1010" y="445.8" class="time-text">所要時間: 15分</ns0:text>
+
+  
+  <ns0:path d="M 1080 260 L 1080 300 L 130 300 L 130 260" fill="none" stroke="#00146E" stroke-width="3" stroke-dasharray="5,5" />
+  <ns0:polygon points="130,260 125,270 135,270" fill="#00146E" />
+  <ns0:text x="600" y="421.5" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; text-anchor: middle; font-style: italic;">
+    次の演習へ（繰り返し）
+  </ns0:text>
+
+  
+  <ns0:rect x="30" y="350" width="1140" height="220" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10" />
+  <ns0:text x="600" y="515.1" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    演習のポイント
+  </ns0:text>
+
+  
+  <ns0:rect x="60" y="405" width="340" height="140" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5" />
+  <ns0:text x="230" y="430" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    実践重視
+  </ns0:text>
+  <ns0:text x="80" y="526.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 手を動かして学ぶ
+  </ns0:text>
+  <ns0:text x="80" y="604.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 完璧を目指さず、まず動かす
+  </ns0:text>
+  <ns0:text x="80" y="682.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 失敗から学ぶことが重要
+  </ns0:text>
+  <ns0:text x="80" y="760.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • AIとの対話で改善していく
+  </ns0:text>
+
+  
+  <ns0:rect x="430" y="405" width="340" height="140" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5" />
+  <ns0:text x="600" y="608.7" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    チーム協力
+  </ns0:text>
+  <ns0:text x="450" y="455" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 困ったら質問する
+  </ns0:text>
+  <ns0:text x="450" y="533.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 他の人の進め方を見る
+  </ns0:text>
+  <ns0:text x="450" y="611.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 知見を共有し合う
+  </ns0:text>
+  <ns0:text x="450" y="689.0" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 成功パターンを横展開
+  </ns0:text>
+
+  
+  <ns0:rect x="800" y="405" width="340" height="140" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5" />
+  <ns0:text x="970" y="625.8" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    時間管理
+  </ns0:text>
+  <ns0:text x="820" y="526.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 各STEPの時間を意識
+  </ns0:text>
+  <ns0:text x="820" y="604.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 詰まったら次に進む判断も必要
+  </ns0:text>
+  <ns0:text x="820" y="682.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • タイムボックス内で最善を尽くす
+  </ns0:text>
+  <ns0:text x="820" y="760.2" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 全体で100分を目安に
+  </ns0:text>
+</ns0:svg>

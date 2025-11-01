@@ -1,75 +1,338 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2080 1300">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: #00146E; text-anchor: middle; }
-      .section { font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: bold; fill: white; text-anchor: middle; }
-      .item { font-family: 'Courier New', monospace; font-size: 12px; fill: #333; }
-      .comment { font-family: 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666; }
-      .phase1 { fill: #3498DB; }
-      .phase2 { fill: #27AE60; }
-      .phase3 { fill: #E67E22; }
-      .phase4 { fill: #9B59B6; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .section-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
+      .task-text { font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333; }
     </style>
   </defs>
 
-  <rect width="800" height="600" fill="#FFFFFF"/>
-  <text x="400" y="30" class="title">タスクリストテンプレート</text>
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="#FFFFFF"/>
 
-  <!-- Phase 1 -->
-  <g transform="translate(40, 60)">
-    <rect x="0" y="0" width="720" height="35" rx="3" class="phase1"/>
-    <text x="360" y="23" class="section">Phase 1: 環境セットアップ</text>
+  <!-- Title -->
+  <text x="800" y="40" class="title" text-anchor="middle">タスク一覧テンプレート例（ToDoアプリ開発）</text>
 
-    <rect x="0" y="40" width="720" height="80" rx="3" fill="#EBF5FB" stroke="#3498DB" stroke-width="1"/>
-    <g transform="translate(15, 58)">
-      <text x="0" y="0" class="item">□ プロジェクト初期化（npm init / poetry init）</text>
-      <text x="0" y="18" class="item">□ 依存関係インストール</text>
-      <text x="0" y="36" class="item">□ .gitignore, .claudeignore 設定</text>
-      <text x="0" y="54" class="item">□ ESLint / Prettier 設定</text>
-    </g>
-  </g>
+  <!-- Template header -->
+  <rect x="50" y="80" width="1500" height="50" fill="#00146E" rx="10"/>
+  <text x="70" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; font-weight: bold;">
+    機能: ToDoアプリ（タスク管理システム）
+  </text>
+  <text x="1300" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: white;">
+    想定工数: 8時間（1日）
+  </text>
 
-  <!-- Phase 2 -->
-  <g transform="translate(40, 185)">
-    <rect x="0" y="0" width="720" height="35" rx="3" class="phase2"/>
-    <text x="360" y="23" class="section">Phase 2: 設計ドキュメント</text>
+  <!-- Task list table header -->
+  <rect x="50" y="150" width="60" height="40" fill="#00AFF0"/>
+  <text x="80" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+    ID
+  </text>
 
-    <rect x="0" y="40" width="720" height="80" rx="3" fill="#E8F8F5" stroke="#27AE60" stroke-width="1"/>
-    <g transform="translate(15, 58)">
-      <text x="0" y="0" class="item">□ requirements.md （MoSCoW優先順位付き）</text>
-      <text x="0" y="18" class="item">□ architecture.md （システム構成）</text>
-      <text x="0" y="36" class="item">□ ER図生成（Mermaid形式）</text>
-      <text x="0" y="54" class="item">□ API仕様書（OpenAPI / README）</text>
-    </g>
-  </g>
+  <rect x="110" y="150" width="400" height="40" fill="#00AFF0"/>
+  <text x="310" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+    タスク名
+  </text>
 
-  <!-- Phase 3 -->
-  <g transform="translate(40, 310)">
-    <rect x="0" y="0" width="720" height="35" rx="3" class="phase3"/>
-    <text x="360" y="23" class="section">Phase 3: 実装（TDD）</text>
+  <rect x="510" y="150" width="500" height="40" fill="#00AFF0"/>
+  <text x="760" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+    実装内容
+  </text>
 
-    <rect x="0" y="40" width="720" height="98" rx="3" fill="#FEF5E7" stroke="#E67E22" stroke-width="1"/>
-    <g transform="translate(15, 58)">
-      <text x="0" y="0" class="item">□ Task 3-1: モデル定義（User, Post, Comment）</text>
-      <text x="20" y="16" class="comment">依存: Phase 2 ER図完成</text>
-      <text x="0" y="34" class="item">□ Task 3-2: API実装（CRUD）+ テスト</text>
-      <text x="20" y="50" class="comment">依存: Task 3-1完了</text>
-      <text x="0" y="68" class="item">□ Task 3-3: 認証機能 + テスト</text>
-      <text x="20" y="84" class="comment">依存: Task 3-1完了</text>
-    </g>
-  </g>
+  <rect x="1010" y="150" width="150" height="40" fill="#00AFF0"/>
+  <text x="1085" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+    前提タスク
+  </text>
 
-  <!-- Phase 4 -->
-  <g transform="translate(40, 453)">
-    <rect x="0" y="0" width="720" height="35" rx="3" class="phase4"/>
-    <text x="360" y="23" class="section">Phase 4: 品質担保</text>
+  <rect x="1160" y="150" width="100" height="40" fill="#00AFF0"/>
+  <text x="1210" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+    工数（分）
+  </text>
 
-    <rect x="0" y="40" width="720" height="80" rx="3" fill="#F4ECF7" stroke="#9B59B6" stroke-width="1"/>
-    <g transform="translate(15, 58)">
-      <text x="0" y="0" class="item">□ カバレッジ80%以上確認</text>
-      <text x="0" y="18" class="item">□ E2Eテスト実行</text>
-      <text x="0" y="36" class="item">□ ドキュメント更新（変更内容反映）</text>
-      <text x="0" y="54" class="item">□ pre-commit hook設定</text>
-    </g>
-  </g>
+  <rect x="1260" y="150" width="100" height="40" fill="#00AFF0"/>
+  <text x="1310" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+    優先度
+  </text>
+
+  <rect x="1360" y="150" width="190" height="40" fill="#00AFF0"/>
+  <text x="1455" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; text-anchor: middle; font-weight: bold;">
+    成果物
+  </text>
+
+  <!-- Task rows -->
+  <!-- Task 1 -->
+  <rect x="50" y="190" width="60" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="80" y="220" class="task-text" text-anchor="middle" font-weight="bold">T-01</text>
+
+  <rect x="110" y="190" width="400" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="120" y="213" class="task-text" font-weight="bold">DB設計・マイグレーション</text>
+  <text x="120" y="228" class="task-text">tasksテーブル作成</text>
+
+  <rect x="510" y="190" width="500" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="520" y="213" class="task-text">id, title, description, status, created_at</text>
+  <text x="520" y="228" class="task-text">Flyway migration SQL作成</text>
+
+  <rect x="1010" y="190" width="150" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1085" y="220" class="task-text" text-anchor="middle">なし</text>
+
+  <rect x="1160" y="190" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1210" y="220" class="task-text" text-anchor="middle">30分</text>
+
+  <rect x="1260" y="190" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1310" y="220" class="task-text" text-anchor="middle" font-weight="bold">Must</text>
+
+  <rect x="1360" y="190" width="190" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1370" y="213" class="task-text">V1__create_tasks.sql</text>
+  <text x="1370" y="228" class="task-text">README.md更新</text>
+
+  <!-- Task 2 -->
+  <rect x="50" y="240" width="60" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="80" y="270" class="task-text" text-anchor="middle" font-weight="bold">T-02</text>
+
+  <rect x="110" y="240" width="400" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="120" y="263" class="task-text" font-weight="bold">エンティティ・Repository作成</text>
+  <text x="120" y="278" class="task-text">Task.java, TaskRepository.java</text>
+
+  <rect x="510" y="240" width="500" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="520" y="263" class="task-text">JPA Entity, Spring Data JPA Repository</text>
+  <text x="520" y="278" class="task-text">Lombok使用、@Valid アノテーション設定</text>
+
+  <rect x="1010" y="240" width="150" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1085" y="270" class="task-text" text-anchor="middle">T-01</text>
+
+  <rect x="1160" y="240" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1210" y="270" class="task-text" text-anchor="middle">30分</text>
+
+  <rect x="1260" y="240" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1310" y="270" class="task-text" text-anchor="middle" font-weight="bold">Must</text>
+
+  <rect x="1360" y="240" width="190" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1370" y="263" class="task-text">Task.java</text>
+  <text x="1370" y="278" class="task-text">TaskRepository.java</text>
+
+  <!-- Task 3 -->
+  <rect x="50" y="290" width="60" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="80" y="320" class="task-text" text-anchor="middle" font-weight="bold">T-03</text>
+
+  <rect x="110" y="290" width="400" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="120" y="313" class="task-text" font-weight="bold">GET /api/tasks 一覧取得API</text>
+  <text x="120" y="328" class="task-text">Controller, Service実装</text>
+
+  <rect x="510" y="290" width="500" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="520" y="313" class="task-text">TaskController, TaskService作成</text>
+  <text x="520" y="328" class="task-text">ページング対応（Pageable）、例外ハンドリング</text>
+
+  <rect x="1010" y="290" width="150" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1085" y="320" class="task-text" text-anchor="middle">T-02</text>
+
+  <rect x="1160" y="290" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1210" y="320" class="task-text" text-anchor="middle">60分</text>
+
+  <rect x="1260" y="290" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1310" y="320" class="task-text" text-anchor="middle" font-weight="bold">Must</text>
+
+  <rect x="1360" y="290" width="190" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1370" y="308" class="task-text">TaskController.java</text>
+  <text x="1370" y="323" class="task-text">TaskService.java</text>
+  <text x="1370" y="338" class="task-text">JUnit テスト（80%以上）</text>
+
+  <!-- Task 4 -->
+  <rect x="50" y="340" width="60" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="80" y="370" class="task-text" text-anchor="middle" font-weight="bold">T-04</text>
+
+  <rect x="110" y="340" width="400" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="120" y="363" class="task-text" font-weight="bold">POST /api/tasks 新規作成API</text>
+  <text x="120" y="378" class="task-text">バリデーション、エラーハンドリング</text>
+
+  <rect x="510" y="340" width="500" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="520" y="363" class="task-text">@Valid でバリデーション、カスタム例外</text>
+  <text x="520" y="378" class="task-text">@ControllerAdvice でエラーレスポンス統一</text>
+
+  <rect x="1010" y="340" width="150" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1085" y="370" class="task-text" text-anchor="middle">T-03</text>
+
+  <rect x="1160" y="340" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1210" y="370" class="task-text" text-anchor="middle">60分</text>
+
+  <rect x="1260" y="340" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1310" y="370" class="task-text" text-anchor="middle" font-weight="bold">Must</text>
+
+  <rect x="1360" y="340" width="190" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1370" y="358" class="task-text">TaskController拡張</text>
+  <text x="1370" y="373" class="task-text">GlobalExceptionHandler</text>
+  <text x="1370" y="388" class="task-text">JUnit テスト</text>
+
+  <!-- Task 5 -->
+  <rect x="50" y="390" width="60" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="80" y="420" class="task-text" text-anchor="middle" font-weight="bold">T-05</text>
+
+  <rect x="110" y="390" width="400" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="120" y="413" class="task-text" font-weight="bold">PATCH /api/tasks/:id 更新API</text>
+  <text x="120" y="428" class="task-text">ステータス変更（未完了↔完了）</text>
+
+  <rect x="510" y="390" width="500" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="520" y="413" class="task-text">楽観的ロック（@Version）、Not Found 処理</text>
+  <text x="520" y="428" class="task-text">トランザクション管理（@Transactional）</text>
+
+  <rect x="1010" y="390" width="150" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1085" y="420" class="task-text" text-anchor="middle">T-04</text>
+
+  <rect x="1160" y="390" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1210" y="420" class="task-text" text-anchor="middle">60分</text>
+
+  <rect x="1260" y="390" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1310" y="420" class="task-text" text-anchor="middle" font-weight="bold">Must</text>
+
+  <rect x="1360" y="390" width="190" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1370" y="408" class="task-text">TaskController拡張</text>
+  <text x="1370" y="423" class="task-text">TaskService拡張</text>
+  <text x="1370" y="438" class="task-text">JUnit テスト</text>
+
+  <!-- Task 6 -->
+  <rect x="50" y="440" width="60" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="80" y="470" class="task-text" text-anchor="middle" font-weight="bold">T-06</text>
+
+  <rect x="110" y="440" width="400" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="120" y="463" class="task-text" font-weight="bold">DELETE /api/tasks/:id 削除API</text>
+  <text x="120" y="478" class="task-text">論理削除 or 物理削除</text>
+
+  <rect x="510" y="440" width="500" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="520" y="463" class="task-text">論理削除（deleted_atカラム）、Not Found 処理</text>
+  <text x="520" y="478" class="task-text">@SQLDelete, @Where アノテーション使用</text>
+
+  <rect x="1010" y="440" width="150" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1085" y="470" class="task-text" text-anchor="middle">T-05</text>
+
+  <rect x="1160" y="440" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1210" y="470" class="task-text" text-anchor="middle">45分</text>
+
+  <rect x="1260" y="440" width="100" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1310" y="470" class="task-text" text-anchor="middle" font-weight="bold">Must</text>
+
+  <rect x="1360" y="440" width="190" height="50" fill="#E6E6E6" stroke="#00146E" stroke-width="3"/>
+  <text x="1370" y="458" class="task-text">TaskController拡張</text>
+  <text x="1370" y="473" class="task-text">Task.java拡張</text>
+  <text x="1370" y="488" class="task-text">JUnit テスト</text>
+
+  <!-- Task 7 -->
+  <rect x="50" y="490" width="60" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="80" y="520" class="task-text" text-anchor="middle" font-weight="bold">T-07</text>
+
+  <rect x="110" y="490" width="400" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="120" y="513" class="task-text" font-weight="bold">フロントエンド一覧画面</text>
+  <text x="120" y="528" class="task-text">React/Vue実装</text>
+
+  <rect x="510" y="490" width="500" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="520" y="513" class="task-text">axios で GET /api/tasks 呼び出し</text>
+  <text x="520" y="528" class="task-text">一覧表示、ローディング状態、エラー表示</text>
+
+  <rect x="1010" y="490" width="150" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="1085" y="520" class="task-text" text-anchor="middle">T-03</text>
+
+  <rect x="1160" y="490" width="100" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="1210" y="520" class="task-text" text-anchor="middle">60分</text>
+
+  <rect x="1260" y="490" width="100" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="1310" y="520" class="task-text" text-anchor="middle">Should</text>
+
+  <rect x="1360" y="490" width="190" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="1370" y="508" class="task-text">TaskList.tsx</text>
+  <text x="1370" y="523" class="task-text">taskApi.ts</text>
+  <text x="1370" y="538" class="task-text">Jest テスト</text>
+
+  <!-- Task 8 -->
+  <rect x="50" y="540" width="60" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="80" y="570" class="task-text" text-anchor="middle" font-weight="bold">T-08</text>
+
+  <rect x="110" y="540" width="400" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="120" y="563" class="task-text" font-weight="bold">フロントエンド作成フォーム</text>
+  <text x="120" y="578" class="task-text">入力バリデーション含む</text>
+
+  <rect x="510" y="540" width="500" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="520" y="563" class="task-text">Formik or React Hook Form 使用</text>
+  <text x="520" y="578" class="task-text">POST /api/tasks 呼び出し、成功時に一覧更新</text>
+
+  <rect x="1010" y="540" width="150" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="1085" y="570" class="task-text" text-anchor="middle">T-04, T-07</text>
+
+  <rect x="1160" y="540" width="100" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="1210" y="570" class="task-text" text-anchor="middle">60分</text>
+
+  <rect x="1260" y="540" width="100" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="1310" y="570" class="task-text" text-anchor="middle">Should</text>
+
+  <rect x="1360" y="540" width="190" height="50" fill="#CCE5FF" stroke="#00146E" stroke-width="3"/>
+  <text x="1370" y="558" class="task-text">TaskForm.tsx</text>
+  <text x="1370" y="573" class="task-text">Jest テスト</text>
+
+  <!-- Summary section -->
+  <rect x="50" y="620" width="1500" height="350" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="800" y="655" style="font-family: 'Noto Sans JP', sans-serif; font-size: 81px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    タスク一覧テンプレートの活用ポイント
+  </text>
+
+  <!-- Point 1 -->
+  <rect x="70" y="675" width="710" height="140" fill="#00AFF0" rx="8"/>
+  <text x="425" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+    1. AIへの指示が明確になる
+  </text>
+  <text x="90" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    各タスクをAIに渡す際、実装内容・成果物が明記されているため、
+  </text>
+  <text x="90" y="743" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    曖昧さがなく正確なコードが生成される。
+  </text>
+  <text x="90" y="770" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    プロンプト例:
+  </text>
+  <text x="100" y="790" style="font-family: 'Courier New', monospace; font-size: 50px; fill: white;">
+    「T-03のタスクを実装して（詳細は上記参照）」
+  </text>
+
+  <!-- Point 2 -->
+  <rect x="800" y="675" width="730" height="140" fill="#003399" rx="8"/>
+  <text x="1165" y="700" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+    2. 依存関係の可視化
+  </text>
+  <text x="820" y="725" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    前提タスク列により、どのタスクから着手すべきか一目瞭然。
+  </text>
+  <text x="820" y="743" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    T-01 → T-02 → T-03 → T-04 → ... の順で進める。
+  </text>
+  <text x="820" y="770" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: white; font-weight: bold;">
+    メリット:
+  </text>
+  <text x="830" y="790" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    並行作業できない箇所を事前把握、手戻り防止
+  </text>
+
+  <!-- Point 3 -->
+  <rect x="70" y="835" width="710" height="120" fill="#00146E" rx="8"/>
+  <text x="425" y="860" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+    3. 進捗管理が容易
+  </text>
+  <text x="90" y="885" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    工数列により、完了タスクの累積時間から進捗率を算出可能。
+  </text>
+  <text x="90" y="903" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    例: T-01～T-04完了（180分/480分） → 進捗率37.5%
+  </text>
+  <text x="90" y="925" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    → チーム共有時に「あと何時間で完成か」を明示できる
+  </text>
+
+  <!-- Point 4 -->
+  <rect x="800" y="835" width="730" height="120" fill="#66D9FF" rx="8"/>
+  <text x="1165" y="860" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: white; text-anchor: middle; font-weight: bold;">
+    4. インクリメンタル開発との連携
+  </text>
+  <text x="820" y="885" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    T-03完了時点で「一覧表示」が動作確認可能（Increment 1）
+  </text>
+  <text x="820" y="903" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    T-04完了時点で「新規作成」が動作確認可能（Increment 2）
+  </text>
+  <text x="820" y="925" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white;">
+    → 30分～60分毎に成果が見える、モチベーション維持
+  </text>
 </svg>
