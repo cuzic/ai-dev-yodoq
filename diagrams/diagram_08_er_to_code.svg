@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 545">
-  <rect width="1000" height="400" fill="#FFF"/>
-  <text x="500" y="30" style="font-size: 81px; font-weight: bold; fill: #333; text-anchor: middle;">ER図からコード生成への流れ</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 545">
+  <rect width="1800" height="545" fill="#FFF"/>
+  <text x="900" y="30" style="font-size: 66px; font-weight: bold; fill: #333; text-anchor: middle;">ER図からコード生成への流れ</text>
   
   <rect x="50" y="80" width="250" height="240" fill="#00146E" rx="10"/>
   <text x="175" y="110" style="font-size: 72px; font-weight: bold; fill: white; text-anchor: middle;">ER図（入力）</text>
@@ -27,6 +27,6 @@
   <line x1="625" y1="200" x2="700" y2="200" stroke="#00AFF0" stroke-width="4"/>
   <polygon points="700,200 690,195 690,205" fill="#00AFF0"/>
   
-  <rect x="50" y="340" width="900" height="50" fill="#E6E6E6" rx="5"/>
-  <text x="500" y="395.3" style="font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">効果: データ構造の全体像把握 → 正確な実装</text>
+  <rect x="50" y="340" width="1700" height="50" fill="#E6E6E6" rx="5"/>
+  <text x="900" y="375" style="font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">効果: データ構造の全体像把握 → 正確な実装</text>
 </svg>

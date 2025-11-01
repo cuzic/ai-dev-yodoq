@@ -1,17 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1650">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: #333333; }
       .layer-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
       .layer-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="1000" height="700" fill="#FFFFFF"/>
+  <rect width="1800" height="1650" fill="#FFFFFF"/>
 
-  <!-- Title -->
-  <text x="500" y="40" class="title" text-anchor="middle">テストカバレッジ80%ルール（何をテストし、何をテストしないか）</text>
+  <!-- Title - split into 2 lines -->
+  <text x="900" y="50" class="title" text-anchor="middle">テストカバレッジ80%ルール</text>
+  <text x="900" y="125" class="title" text-anchor="middle">（何をテストし、何をテストしないか）</text>
 
   <!-- Test Coverage Pyramid -->
   <!-- Layer 1: Must Test (80%) - Bottom -->
@@ -160,13 +161,13 @@
     80%ルールの実践
   </text>
 
-  <text x="500" y="1333" style="font-family: 'Noto Sans JP', sans-serif; font-size: 37px; fill: #333333; text-anchor: middle;">
+  <text x="500" y="1333" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333; text-anchor: middle;">
     1. ビジネスロジックを優先的にテスト → 本番障害防止の効果が高い
   </text>
-  <text x="500" y="1417" style="font-family: 'Noto Sans JP', sans-serif; font-size: 37px; fill: #333333; text-anchor: middle;">
+  <text x="500" y="1417" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333; text-anchor: middle;">
     2. Getter/Setterはテストしない → コスト削減、重要な箇所に集中
   </text>
-  <text x="500" y="1501" style="font-family: 'Noto Sans JP', sans-serif; font-size: 37px; fill: #333333; text-anchor: middle;">
+  <text x="500" y="1501" style="font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #333333; text-anchor: middle;">
     3. JaCoCoで確認 → 80%未満の箇所を特定してAIに追加テスト依頼
   </text>
 </svg>
