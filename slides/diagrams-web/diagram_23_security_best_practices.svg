@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="500" y="50" font-size="32" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    セキュリティベストプラクティス
+  </text>
+
+  <!-- Left Section: Why Security is Postponed -->
+  <g id="why-postponed">
+    <!-- Header -->
+    <rect x="30" y="90" width="460" height="50" fill="#e74c3c" rx="5"/>
+    <text x="260" y="122" font-size="22" font-weight="bold" text-anchor="middle" fill="white">
+      なぜセキュリティが後回しに？
+    </text>
+
+    <!-- Reason 1 -->
+    <rect x="30" y="160" width="460" height="100" fill="#fff" stroke="#e74c3c" stroke-width="2" rx="5"/>
+    <text x="50" y="185" font-size="20" font-weight="bold" fill="#e74c3c">
+      Reward Hacking
+    </text>
+    <text x="50" y="214" font-size="18" fill="#2c3e50">
+      AIは「タスク完了」を最優先
+    </text>
+    <text x="50" y="241" font-size="18" fill="#2c3e50">
+      セキュリティは二の次になる
+    </text>
+
+    <!-- Reason 2 -->
+    <rect x="30" y="280" width="460" height="100" fill="#fff" stroke="#e74c3c" stroke-width="2" rx="5"/>
+    <text x="50" y="305" font-size="20" font-weight="bold" fill="#e74c3c">
+      とりあえず動く優先
+    </text>
+    <text x="50" y="334" font-size="18" fill="#2c3e50">
+      平文保存、ハードコーディング
+    </text>
+    <text x="50" y="361" font-size="18" fill="#2c3e50">
+      で実装してしまう
+    </text>
+
+    <!-- Reason 3 -->
+    <rect x="30" y="400" width="460" height="100" fill="#fff" stroke="#e74c3c" stroke-width="2" rx="5"/>
+    <text x="50" y="425" font-size="20" font-weight="bold" fill="#e74c3c">
+      知識はあるが省略する
+    </text>
+    <text x="50" y="454" font-size="18" fill="#2c3e50">
+      明示的に指示しないと
+    </text>
+    <text x="50" y="481" font-size="18" fill="#2c3e50">
+      セキュリティ対策を省く
+    </text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 500 300 L 540 300" stroke="#3498db" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#3498db"/>
+    </marker>
+  </defs>
+
+  <!-- Right Section: Countermeasures -->
+  <g id="countermeasures">
+    <!-- Header -->
+    <rect x="560" y="90" width="410" height="50" fill="#27ae60" rx="5"/>
+    <text x="765" y="122" font-size="22" font-weight="bold" text-anchor="middle" fill="white">
+      対策：Guardrails設定
+    </text>
+
+    <!-- Measure 1 -->
+    <rect x="560" y="160" width="410" height="90" fill="#fff" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="580" y="188" font-size="20" font-weight="bold" fill="#27ae60">
+      パスワード暗号化
+    </text>
+    <text x="580" y="217" font-size="18" fill="#2c3e50">
+      ✓ BCryptで必ずハッシュ化
+    </text>
+    <text x="580" y="244" font-size="18" fill="#2c3e50">
+      ✗ 平文保存は禁止
+    </text>
+
+    <!-- Measure 2 -->
+    <rect x="560" y="270" width="410" height="90" fill="#fff" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="580" y="288" font-size="20" font-weight="bold" fill="#27ae60">
+      APIキー・秘密鍵
+    </text>
+    <text x="580" y="317" font-size="18" fill="#2c3e50">
+      ✓ 環境変数(.env)に保存
+    </text>
+    <text x="580" y="344" font-size="18" fill="#2c3e50">
+      ✗ ハードコーディング禁止
+    </text>
+
+    <!-- Measure 3 -->
+    <rect x="560" y="380" width="410" height="90" fill="#fff" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="580" y="408" font-size="20" font-weight="bold" fill="#27ae60">
+      入力値検証
+    </text>
+    <text x="580" y="437" font-size="18" fill="#2c3e50">
+      ✓ @Valid必須
+    </text>
+    <text x="580" y="464" font-size="18" fill="#2c3e50">
+      ✓ SQLインジェクション対策
+    </text>
+  </g>
+
+  <!-- Bottom Section: Implementation Checklist -->
+  <g id="checklist">
+    <rect x="30" y="530" width="940" height="240" fill="#ecf0f1" stroke="#34495e" stroke-width="2" rx="5"/>
+    <text x="500" y="560" font-size="22" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+      実装チェックリスト
+    </text>
+
+    <!-- Checklist items -->
+    <text x="60" y="600" font-size="19" fill="#2c3e50">
+      ☑ .envファイル作成（API_KEY、JWT_SECRET、DB_PASSWORD）
+    </text>
+    <text x="60" y="635" font-size="19" fill="#2c3e50">
+      ☑ .gitignoreに.envを追加（機密情報のコミット防止）
+    </text>
+    <text x="60" y="670" font-size="19" fill="#2c3e50">
+      ☑ .env.exampleを用意（チーム共有用テンプレート）
+    </text>
+    <text x="60" y="705" font-size="19" fill="#2c3e50">
+      ☑ パスワードはBCryptでハッシュ化（平文保存禁止）
+    </text>
+    <text x="60" y="740" font-size="19" fill="#2c3e50">
+      ☑ すべての入力値に@Validを適用（バリデーション必須）
+    </text>
+  </g>
+</svg>

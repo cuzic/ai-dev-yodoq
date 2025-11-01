@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1200" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: bold; fill: #333333; }
+      .activity-title { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: bold; fill: white; }
+      .activity-subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 26px; fill: white; }
+      .section-header { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; font-weight: bold; }
+      .story-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; fill: white; }
+      .story-title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: white; font-weight: bold; }
+      .sprint-title { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold; }
+      .sprint-text { font-family: 'Noto Sans JP', sans-serif; font-size: 26px; fill: white; }
+      .sprint-detail { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: white; }
+      .benefit-title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; fill: white; font-weight: bold; }
+      .benefit-text { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: white; }
+      .mvp-label { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #CC0000; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2000" height="1200" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="960" y="50" class="title" text-anchor="middle">ユーザーストーリーマッピング構造（ECサイト例）</text>
+
+  <!-- User Activities (Top level) -->
+  <text x="60" y="100" class="section-header">ユーザー活動</text>
+  <line x1="60" y1="105" x2="1860" y2="105" stroke="#00146E" stroke-width="2"/>
+
+  <!-- Activity 1: Browse -->
+  <rect x="140" y="120" width="200" height="65" fill="#00AFF0" rx="6"/>
+  <text x="240" y="148" class="activity-title" text-anchor="middle">1. 商品を探す</text>
+  <text x="240" y="175" class="activity-subtitle" text-anchor="middle">(Browse Products)</text>
+
+  <!-- Activity 2: Select -->
+  <rect x="365" y="120" width="230" height="65" fill="#00AFF0" rx="6"/>
+  <text x="480" y="148" class="activity-title" text-anchor="middle">2. カートに入れる</text>
+  <text x="480" y="175" class="activity-subtitle" text-anchor="middle">(Add to Cart)</text>
+
+  <!-- Activity 3: Purchase -->
+  <rect x="620" y="120" width="190" height="65" fill="#00AFF0" rx="6"/>
+  <text x="715" y="148" class="activity-title" text-anchor="middle">3. 購入する</text>
+  <text x="715" y="175" class="activity-subtitle" text-anchor="middle">(Checkout)</text>
+
+  <!-- Activity 4: Track -->
+  <rect x="835" y="120" width="215" height="65" fill="#00AFF0" rx="6"/>
+  <text x="942" y="148" class="activity-title" text-anchor="middle">4. 配送を追跡</text>
+  <text x="942" y="175" class="activity-subtitle" text-anchor="middle">(Track Delivery)</text>
+
+  <!-- Activity 5: Manage -->
+  <rect x="1075" y="120" width="245" height="65" fill="#00AFF0" rx="6"/>
+  <text x="1197" y="148" class="activity-title" text-anchor="middle">5. アカウント管理</text>
+  <text x="1197" y="175" class="activity-subtitle" text-anchor="middle">(Manage Account)</text>
+
+  <!-- Priority levels -->
+  <text x="60" y="215" class="section-header">優先度</text>
+
+  <!-- MVP Line -->
+  <line x1="130" y1="510" x2="1860" y2="510" stroke="#CC0000" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="60" y="517" class="mvp-label">MVP線</text>
+
+  <!-- Must Have (Activity 1) -->
+  <rect x="140" y="230" width="200" height="90" fill="#00146E" rx="4"/>
+  <text x="150" y="250" class="story-title">Must Have:</text>
+  <text x="155" y="276" class="story-text">• 商品一覧表示</text>
+  <text x="155" y="299" class="story-text">• カテゴリー検索</text>
+  <text x="155" y="317" class="story-text">• 商品詳細表示</text>
+
+  <rect x="140" y="330" width="200" height="75" fill="#003399" rx="4"/>
+  <text x="150" y="350" class="story-title">Should Have:</text>
+  <text x="155" y="376" class="story-text">• キーワード検索</text>
+  <text x="155" y="399" class="story-text">• フィルター</text>
+
+  <rect x="140" y="420" width="200" height="60" fill="#66D9FF" rx="4"/>
+  <text x="150" y="440" class="story-title">Could Have:</text>
+  <text x="155" y="463" class="story-text">• レコメンド機能</text>
+
+  <!-- Must Have (Activity 2) -->
+  <rect x="370" y="230" width="220" height="90" fill="#00146E" rx="4"/>
+  <text x="380" y="250" class="story-title">Must Have:</text>
+  <text x="385" y="276" class="story-text">• カート追加/削除</text>
+  <text x="385" y="299" class="story-text">• 数量変更</text>
+  <text x="385" y="317" class="story-text">• 合計金額表示</text>
+
+  <rect x="370" y="330" width="220" height="75" fill="#003399" rx="4"/>
+  <text x="380" y="350" class="story-title">Should Have:</text>
+  <text x="385" y="376" class="story-text">• カート保存</text>
+  <text x="385" y="399" class="story-text">• 在庫確認</text>
+
+  <rect x="370" y="420" width="220" height="60" fill="#66D9FF" rx="4"/>
+  <text x="380" y="440" class="story-title">Could Have:</text>
+  <text x="385" y="463" class="story-text">• お気に入り登録</text>
+
+  <!-- Must Have (Activity 3) -->
+  <rect x="620" y="230" width="180" height="90" fill="#00146E" rx="4"/>
+  <text x="630" y="250" class="story-title">Must Have:</text>
+  <text x="635" y="276" class="story-text">• 配送先入力</text>
+  <text x="635" y="299" class="story-text">• 決済処理</text>
+  <text x="635" y="317" class="story-text">• 注文確定</text>
+
+  <rect x="620" y="330" width="180" height="75" fill="#003399" rx="4"/>
+  <text x="630" y="350" class="story-title">Should Have:</text>
+  <text x="635" y="376" class="story-text">• 複数決済対応</text>
+  <text x="635" y="399" class="story-text">• クーポン適用</text>
+
+  <rect x="620" y="420" width="180" height="60" fill="#66D9FF" rx="4"/>
+  <text x="630" y="440" class="story-title">Could Have:</text>
+  <text x="635" y="463" class="story-text">• ギフト対応</text>
+
+  <!-- Must Have (Activity 4) -->
+  <rect x="830" y="230" width="210" height="90" fill="#00146E" rx="4"/>
+  <text x="840" y="250" class="story-title">Must Have:</text>
+  <text x="845" y="276" class="story-text">• 注文履歴表示</text>
+  <text x="845" y="299" class="story-text">• 配送状況確認</text>
+  <text x="845" y="317" class="story-text">• 配送先変更</text>
+
+  <rect x="830" y="330" width="210" height="75" fill="#003399" rx="4"/>
+  <text x="840" y="350" class="story-title">Should Have:</text>
+  <text x="845" y="376" class="story-text">• メール通知</text>
+  <text x="845" y="399" class="story-text">• 配送時間指定</text>
+
+  <rect x="830" y="420" width="210" height="60" fill="#66D9FF" rx="4"/>
+  <text x="840" y="440" class="story-title">Could Have:</text>
+  <text x="845" y="463" class="story-text">• 位置追跡</text>
+
+  <!-- Must Have (Activity 5) -->
+  <rect x="1070" y="230" width="240" height="90" fill="#00146E" rx="4"/>
+  <text x="1080" y="250" class="story-title">Must Have:</text>
+  <text x="1085" y="276" class="story-text">• ログイン/ログアウト</text>
+  <text x="1085" y="299" class="story-text">• ユーザー登録</text>
+  <text x="1085" y="317" class="story-text">• パスワード変更</text>
+
+  <rect x="1070" y="330" width="240" height="75" fill="#003399" rx="4"/>
+  <text x="1080" y="350" class="story-title">Should Have:</text>
+  <text x="1085" y="376" class="story-text">• 住所管理</text>
+  <text x="1085" y="399" class="story-text">• 決済情報保存</text>
+
+  <rect x="1070" y="420" width="240" height="60" fill="#66D9FF" rx="4"/>
+  <text x="1080" y="440" class="story-title">Could Have:</text>
+  <text x="1085" y="463" class="story-text">• SNSログイン</text>
+
+  <!-- Release Planning -->
+  <rect x="60" y="565" width="1800" height="290" fill="#E6E6E6" stroke="#00146E" stroke-width="2" rx="8"/>
+  <text x="960" y="600" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    リリース計画（MVP線以下は後回し）
+  </text>
+
+  <!-- Sprint 1 -->
+  <rect x="80" y="625" width="520" height="210" fill="#00146E" rx="6"/>
+  <text x="340" y="655" class="sprint-title" text-anchor="middle">Sprint 1（2週間）: MVP リリース</text>
+  <text x="95" y="685" class="sprint-text">✓ Must Have のみ実装（MVP線の上）</text>
+  <text x="105" y="715" class="sprint-detail">• 商品一覧/詳細、カート、決済、</text>
+  <text x="115" y="735" class="sprint-detail">注文履歴、ログイン</text>
+  <text x="95" y="770" class="sprint-text">成果:</text>
+  <text x="105" y="795" class="sprint-detail">→ 最小限のECサイトとして動作、</text>
+  <text x="115" y="815" class="sprint-detail">ユーザー反応収集</text>
+
+  <!-- Sprint 2 -->
+  <rect x="625" y="625" width="520" height="210" fill="#003399" rx="6"/>
+  <text x="885" y="655" class="sprint-title" text-anchor="middle">Sprint 2（2週間）: 機能拡張</text>
+  <text x="640" y="685" class="sprint-text">✓ Should Have 実装</text>
+  <text x="650" y="710" class="sprint-text">（ユーザーフィードバック反映）</text>
+  <text x="655" y="740" class="sprint-detail">• 検索機能、カート保存、</text>
+  <text x="665" y="760" class="sprint-detail">複数決済、メール通知</text>
+  <text x="640" y="795" class="sprint-text">成果:</text>
+  <text x="650" y="815" class="sprint-detail">→ 使いやすさ向上、</text>
+  <text x="665" y="830" class="sprint-detail">コンバージョン率改善</text>
+
+  <!-- Sprint 3 -->
+  <rect x="1170" y="625" width="660" height="210" fill="#66D9FF" rx="6"/>
+  <text x="1500" y="655" class="sprint-title" text-anchor="middle">Sprint 3+（優先度による）: 差別化機能</text>
+  <text x="1185" y="690" class="sprint-text">✓ Could Have 実装</text>
+  <text x="1195" y="715" class="sprint-text">（ビジネス価値に応じて選択）</text>
+  <text x="1200" y="745" class="sprint-detail">• レコメンド、お気に入り、ギフト、</text>
+  <text x="1210" y="765" class="sprint-detail">リアルタイム追跡</text>
+  <text x="1185" y="800" class="sprint-text">成果:</text>
+  <text x="1195" y="820" class="sprint-detail">→ 競合他社との差別化、</text>
+  <text x="1210" y="835" class="sprint-detail">顧客満足度向上</text>
+
+  <!-- Benefits -->
+  <rect x="80" y="870" width="1750" height="120" fill="#00AFF0" rx="6"/>
+  <text x="955" y="900" class="benefit-title" text-anchor="middle">ユーザーストーリーマッピングのメリット</text>
+  <text x="100" y="930" class="benefit-text">1. 全体像の可視化: ユーザージャーニー全体を俯瞰 → 抜け漏れ防止</text>
+  <text x="100" y="955" class="benefit-text">2. 優先順位付け: MoSCoWで優先度明確化 → MVP（最小実用製品）を早期リリース</text>
+  <text x="100" y="980" class="benefit-text">3. チーム共通理解: 誰が見ても同じ理解 → AIへの指示も明確、手戻り削減</text>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 29px; font-weight: 700; }
+      .section-title { font-size: 23px; font-weight: 700; }
+      .subsection-title { font-size: 17px; font-weight: 600; }
+      .item-text { font-size: 14px; }
+      .small-text { font-size: 13px; }
+      .error-box { fill: #ffebee; stroke: #d32f2f; stroke-width: 2; rx: 6; }
+      .edge-box { fill: #fff3e0; stroke: #ff6f00; stroke-width: 2; rx: 6; }
+      .constraint-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 6; }
+      .bottom-box { fill: #f3e5f5; stroke: #7b1fa2; stroke-width: 2; rx: 6; }
+      .highlight-red { fill: #d32f2f; }
+      .highlight-orange { fill: #ff6f00; }
+      .highlight-blue { fill: #1976d2; }
+      .highlight-purple { fill: #7b1fa2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="38" class="title" text-anchor="middle">エラー・エッジケース・制約の洗い出し</text>
+
+  <!-- Top Row: Why Important -->
+  <text x="620" y="73" class="section-title highlight-red" text-anchor="middle">🚨 なぜ重要か</text>
+  <rect x="30" y="82" width="1220" height="102" class="error-box"/>
+  <text x="640" y="109" class="subsection-title" text-anchor="middle">本番障害の多くはエッジケース</text>
+  <text x="50" y="131" class="item-text">• AIが最も見落とすポイント</text>
+  <text x="50" y="152" class="item-text">• エッジケース列挙は得意だが、網羅性の保証(見落としゼロ)は苦手</text>
+  <text x="50" y="173" class="item-text">• 明示的な洗い出しが必須</text>
+
+  <!-- Column 1: Error Cases -->
+  <text x="210" y="203" class="section-title highlight-red" text-anchor="middle">❌ エラーケース</text>
+  <rect x="30" y="212" width="380" height="265" class="error-box"/>
+
+  <text x="220" y="238" class="subsection-title" text-anchor="middle">システムエラー:</text>
+  <text x="50" y="261" class="item-text">• ネットワークエラー</text>
+  <text x="50" y="282" class="item-text">• サーバーダウン</text>
+  <text x="50" y="303" class="item-text">• タイムアウト</text>
+  <text x="50" y="324" class="item-text">• DB接続失敗</text>
+
+  <text x="220" y="355" class="subsection-title" text-anchor="middle">ユーザーエラー:</text>
+  <text x="50" y="375" class="item-text">• パスワード間違い</text>
+  <text x="50" y="396" class="item-text">• 権限不足</text>
+  <text x="50" y="417" class="item-text">• 不正なリクエスト</text>
+  <text x="50" y="438" class="item-text">• セッション切れ</text>
+
+  <!-- Column 2: Edge Cases -->
+  <text x="630" y="203" class="section-title highlight-orange" text-anchor="middle">⚠️ エッジケース</text>
+  <rect x="430" y="212" width="400" height="265" class="edge-box"/>
+
+  <text x="630" y="238" class="subsection-title" text-anchor="middle">入力の境界値:</text>
+  <text x="450" y="262" class="item-text">• パスワード長0文字</text>
+  <text x="450" y="283" class="item-text">• パスワード長128文字</text>
+  <text x="450" y="304" class="item-text">• 特殊文字入力</text>
+
+  <text x="630" y="336" class="subsection-title" text-anchor="middle">セキュリティ攻撃:</text>
+  <text x="450" y="358" class="item-text">• SQL injection試行</text>
+  <text x="450" y="379" class="item-text">• XSS攻撃試行</text>
+  <text x="450" y="400" class="item-text">• CSRF攻撃試行</text>
+
+  <text x="630" y="445" class="subsection-title" text-anchor="middle">同時実行:</text>
+  <text x="450" y="467" class="item-text">• 同時ログイン / セッション期限切れ</text>
+
+  <!-- Column 3: Constraints -->
+  <text x="1050" y="203" class="section-title highlight-blue" text-anchor="middle">📏 制約条件</text>
+  <rect x="850" y="212" width="400" height="265" class="constraint-box"/>
+
+  <text x="1050" y="238" class="subsection-title" text-anchor="middle">性能制約:</text>
+  <text x="870" y="263" class="item-text">• レスポンス時間</text>
+  <text x="870" y="284" class="item-text">• 同時接続数上限</text>
+  <text x="870" y="305" class="item-text">• API呼び出し回数</text>
+
+  <text x="1050" y="337" class="subsection-title" text-anchor="middle">データ制約:</text>
+  <text x="870" y="359" class="item-text">• データサイズ制限</text>
+  <text x="870" y="380" class="item-text">• ファイルサイズ上限</text>
+  <text x="870" y="401" class="item-text">• 文字数制限</text>
+
+  <text x="1050" y="446" class="subsection-title" text-anchor="middle">環境制約:</text>
+  <text x="870" y="468" class="item-text">• 対応ブラウザ / 対応OS</text>
+
+  <!-- Bottom Section: How to Use AI -->
+  <text x="320" y="508" class="section-title highlight-purple" text-anchor="middle">💡 AIへの依頼方法</text>
+  <rect x="30" y="517" width="580" height="175" class="bottom-box"/>
+
+  <text x="320" y="540" class="subsection-title" text-anchor="middle">具体的な指示例:</text>
+  <rect x="50" y="550" width="540" height="80" fill="#ffffff" stroke="#7b1fa2" stroke-width="1" rx="4"/>
+  <text x="70" y="572" class="item-text" font-family="monospace">「ログイン機能の</text>
+  <text x="70" y="593" class="item-text" font-family="monospace">エラー・エッジケース・</text>
+  <text x="70" y="614" class="item-text" font-family="monospace">制約を洗い出して」</text>
+
+  <text x="320" y="651" class="subsection-title" text-anchor="middle">AIの出力:</text>
+  <text x="50" y="670" class="small-text">エラーケース / エッジケース / 制約条件</text>
+
+  <!-- Bottom Section: Effect -->
+  <text x="945" y="525" class="section-title highlight-blue" text-anchor="middle">📊 効果</text>
+  <rect x="640" y="534" width="610" height="158" class="constraint-box"/>
+
+  <text x="945" y="558" class="subsection-title" text-anchor="middle">異常系も網羅 → 本番障害を大幅削減</text>
+
+  <text x="945" y="579" class="subsection-title" text-anchor="middle">網羅性チェックポイント:</text>
+  <text x="660" y="631" class="item-text">• 各入力フィールドの境界値テスト</text>
+  <text x="660" y="652" class="item-text">• 各外部連携のエラーハンドリング</text>
+  <text x="660" y="673" class="item-text">• 同時実行・競合状態の考慮</text>
+  <text x="660" y="694" class="item-text">• セキュリティ攻撃パターンの対策</text>
+
+  <!-- Bottom Summary -->
+  <rect x="30" y="698" width="1220" height="18" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="4"/>
+  <text x="640" y="710" class="small-text" text-anchor="middle" font-weight="600">洗い出しは「AIに依頼」→「人間が網羅性を確認」→「実装・テストに反映」の流れで実施</text>
+</svg>
