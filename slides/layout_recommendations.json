@@ -1,0 +1,3266 @@
+{
+  "summary": {
+    "total": 217,
+    "matches": 51,
+    "mismatches": 70,
+    "no_layout": 96,
+    "accuracy": 0.4214876033057851
+  },
+  "recommendations": [
+    {
+      "slide_number": 1,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 11,
+        "total_chars": 3802,
+        "image_count": 0,
+        "text_density": 316.8
+      }
+    },
+    {
+      "slide_number": 2,
+      "title": "AI活用研修：新規開発編",
+      "current_layout": "lead",
+      "recommended_layout": "lead",
+      "confidence": 0.95,
+      "reason": "タイトルのみまたは短い説明文のみのため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 1,
+        "total_chars": 89,
+        "image_count": 0,
+        "text_density": 37.5
+      }
+    },
+    {
+      "slide_number": 3,
+      "title": "本日の目標",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 93,
+        "image_count": 1,
+        "text_density": 86
+      }
+    },
+    {
+      "slide_number": 4,
+      "title": "AI活用の3原則",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 266,
+        "image_count": 1,
+        "text_density": 64.0
+      }
+    },
+    {
+      "slide_number": 5,
+      "title": "Vibe Coding vs Production Engineering",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 283,
+        "image_count": 1,
+        "text_density": 61.0
+      }
+    },
+    {
+      "slide_number": 6,
+      "title": "開発者の役割変化",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 261,
+        "image_count": 1,
+        "text_density": 41.8
+      }
+    },
+    {
+      "slide_number": 7,
+      "title": "5-STEPフロー全体像",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 6,
+        "paragraph_count": 0,
+        "total_chars": 361,
+        "image_count": 1,
+        "text_density": 49.6
+      }
+    },
+    {
+      "slide_number": 8,
+      "title": "AIの制約①忘れっぽい（セッション制約）",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 243,
+        "image_count": 1,
+        "text_density": 55.2
+      }
+    },
+    {
+      "slide_number": 9,
+      "title": "AIの制約②Reward Hacking（手抜き問題）",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 142,
+        "image_count": 1,
+        "text_density": 113
+      }
+    },
+    {
+      "slide_number": 10,
+      "title": "環境準備",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 90,
+        "image_count": 1,
+        "text_density": 84
+      }
+    },
+    {
+      "slide_number": 11,
+      "title": "セキュリティベストプラクティス（補足）",
+      "current_layout": "layout-horizontal-left compact",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 278,
+        "image_count": 1,
+        "text_density": 257
+      }
+    },
+    {
+      "slide_number": 12,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 13,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 62,
+        "image_count": 0,
+        "text_density": 62
+      }
+    },
+    {
+      "slide_number": 14,
+      "title": "Claude Code とは",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 360,
+        "image_count": 0,
+        "text_density": 68.8
+      }
+    },
+    {
+      "slide_number": 15,
+      "title": "セットアップ",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 355,
+        "image_count": 1,
+        "text_density": 69.4
+      }
+    },
+    {
+      "slide_number": 16,
+      "title": "4つのモード比較",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 292,
+        "image_count": 1,
+        "text_density": 56.4
+      }
+    },
+    {
+      "slide_number": 17,
+      "title": "モード詳細と使い分け",
+      "current_layout": "two-column",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 9,
+        "paragraph_count": 0,
+        "total_chars": 334,
+        "image_count": 0,
+        "text_density": 32.2
+      }
+    },
+    {
+      "slide_number": 18,
+      "title": "よくある問題と対処法",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 108,
+        "image_count": 1,
+        "text_density": 96
+      }
+    },
+    {
+      "slide_number": 19,
+      "title": "効率的な指示の出し方",
+      "current_layout": "layout-horizontal-right compact",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 240,
+        "image_count": 1,
+        "text_density": 228
+      }
+    },
+    {
+      "slide_number": 20,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 21,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 57,
+        "image_count": 0,
+        "text_density": 57
+      }
+    },
+    {
+      "slide_number": 22,
+      "title": "STEP1 要件定義とは",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 269,
+        "image_count": 0,
+        "text_density": 51.0
+      }
+    },
+    {
+      "slide_number": 23,
+      "title": "AIに質問させる手法",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 108,
+        "image_count": 1,
+        "text_density": 96
+      }
+    },
+    {
+      "slide_number": 24,
+      "title": "要件の引き出し方（文字起こしアプローチ）",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 381,
+        "image_count": 1,
+        "text_density": 359
+      }
+    },
+    {
+      "slide_number": 25,
+      "title": "MoSCoW 優先順位付け",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 6,
+        "paragraph_count": 0,
+        "total_chars": 337,
+        "image_count": 1,
+        "text_density": 46.0
+      }
+    },
+    {
+      "slide_number": 26,
+      "title": "MoSCoW実践例（ToDoアプリ）",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 123,
+        "image_count": 1,
+        "text_density": 103
+      }
+    },
+    {
+      "slide_number": 27,
+      "title": "ユーザーストーリーマッピング",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 1,
+        "total_chars": 298,
+        "image_count": 1,
+        "text_density": 47.0
+      }
+    },
+    {
+      "slide_number": 28,
+      "title": "非機能要件",
+      "current_layout": "layout-horizontal-left compact",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 278,
+        "image_count": 1,
+        "text_density": 271
+      }
+    },
+    {
+      "slide_number": 29,
+      "title": "エラー・エッジケース・制約の洗い出し",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 130,
+        "image_count": 1,
+        "text_density": 110
+      }
+    },
+    {
+      "slide_number": 30,
+      "title": "受け入れ基準（Given-When-Then）",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 224,
+        "image_count": 0,
+        "text_density": 49.8
+      }
+    },
+    {
+      "slide_number": 31,
+      "title": "プロトタイプ駆動開発（Vibe Coding）",
+      "current_layout": null,
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 6,
+        "paragraph_count": 0,
+        "total_chars": 297,
+        "image_count": 0,
+        "text_density": 38.9
+      }
+    },
+    {
+      "slide_number": 32,
+      "title": "STEP1のまとめ",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 105,
+        "image_count": 1,
+        "text_density": 94
+      }
+    },
+    {
+      "slide_number": 33,
+      "title": "STEP1 チェックリスト",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 7,
+        "paragraph_count": 0,
+        "total_chars": 275,
+        "image_count": 1,
+        "text_density": 32.5
+      }
+    },
+    {
+      "slide_number": 34,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 35,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 63,
+        "image_count": 0,
+        "text_density": 63
+      }
+    },
+    {
+      "slide_number": 36,
+      "title": "STEP2 設計ドキュメントとは",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 285,
+        "image_count": 0,
+        "text_density": 53.4
+      }
+    },
+    {
+      "slide_number": 37,
+      "title": "設計ドキュメントの構造",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 7,
+        "paragraph_count": 0,
+        "total_chars": 394,
+        "image_count": 1,
+        "text_density": 47.6
+      }
+    },
+    {
+      "slide_number": 38,
+      "title": "Tech Stack Setup",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 272,
+        "image_count": 0,
+        "text_density": 63.5
+      }
+    },
+    {
+      "slide_number": 39,
+      "title": "データベーススキーマ設計",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 290,
+        "image_count": 1,
+        "text_density": 69.0
+      }
+    },
+    {
+      "slide_number": 40,
+      "title": "API仕様の明確化",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 198,
+        "image_count": 0,
+        "text_density": 62.3
+      }
+    },
+    {
+      "slide_number": 41,
+      "title": "Mermaid記法とSVG生成でビジュアル化",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 278,
+        "image_count": 1,
+        "text_density": 63.5
+      }
+    },
+    {
+      "slide_number": 42,
+      "title": "ER図が開発をスムーズにする理由",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 200,
+        "image_count": 1,
+        "text_density": 60.7
+      }
+    },
+    {
+      "slide_number": 43,
+      "title": "シーケンス図がAI実装を助ける理由",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 234,
+        "image_count": 1,
+        "text_density": 53.8
+      }
+    },
+    {
+      "slide_number": 44,
+      "title": "受け入れ条件の詳細化",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 295,
+        "image_count": 0,
+        "text_density": 70.8
+      }
+    },
+    {
+      "slide_number": 45,
+      "title": "STEP2のまとめ",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 104,
+        "image_count": 1,
+        "text_density": 93
+      }
+    },
+    {
+      "slide_number": 46,
+      "title": "STEP2 チェックリスト",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 8,
+        "paragraph_count": 0,
+        "total_chars": 254,
+        "image_count": 1,
+        "text_density": 26.6
+      }
+    },
+    {
+      "slide_number": 47,
+      "title": "Untitled",
+      "current_layout": "two-column",
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 13,
+        "paragraph_count": 0,
+        "total_chars": 426,
+        "image_count": 0,
+        "text_density": 30.4
+      }
+    },
+    {
+      "slide_number": 48,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 50,
+        "image_count": 0,
+        "text_density": 50
+      }
+    },
+    {
+      "slide_number": 49,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 11,
+        "total_chars": 3720,
+        "image_count": 0,
+        "text_density": 310.0
+      }
+    },
+    {
+      "slide_number": 50,
+      "title": "Day 1-2: タスク分解 + 実装 + 品質担保 + リファクタリング (13:00-14:50)",
+      "current_layout": null,
+      "recommended_layout": "lead",
+      "confidence": 0.95,
+      "reason": "タイトルのみまたは短い説明文のみのため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 55,
+        "image_count": 0,
+        "text_density": 2
+      }
+    },
+    {
+      "slide_number": 51,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 45,
+        "image_count": 0,
+        "text_density": 45
+      }
+    },
+    {
+      "slide_number": 52,
+      "title": "STEP3 タスク分解とは",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 117,
+        "image_count": 1,
+        "text_density": 102
+      }
+    },
+    {
+      "slide_number": 53,
+      "title": "タスク分解 = AIの思考を言語化（重要）",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 137,
+        "image_count": 1,
+        "text_density": 114
+      }
+    },
+    {
+      "slide_number": 54,
+      "title": "計画書作成による可視化（重要）",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 152,
+        "image_count": 0,
+        "text_density": 45.0
+      }
+    },
+    {
+      "slide_number": 55,
+      "title": "Phase分け戦略（Phase 1-4）",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 6,
+        "paragraph_count": 0,
+        "total_chars": 370,
+        "image_count": 1,
+        "text_density": 49.7
+      }
+    },
+    {
+      "slide_number": 56,
+      "title": "タスク粒度（30分〜2時間）",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 117,
+        "image_count": 1,
+        "text_density": 101
+      }
+    },
+    {
+      "slide_number": 57,
+      "title": "依存関係の可視化",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 340,
+        "image_count": 1,
+        "text_density": 55.0
+      }
+    },
+    {
+      "slide_number": 58,
+      "title": "タスク一覧テンプレート",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 349,
+        "image_count": 1,
+        "text_density": 56.0
+      }
+    },
+    {
+      "slide_number": 59,
+      "title": "AI活用でタスク自動生成",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 232,
+        "image_count": 0,
+        "text_density": 36.3
+      }
+    },
+    {
+      "slide_number": 60,
+      "title": "STEP3のまとめ",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 105,
+        "image_count": 1,
+        "text_density": 94
+      }
+    },
+    {
+      "slide_number": 61,
+      "title": "STEP3 チェックリスト",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 7,
+        "paragraph_count": 0,
+        "total_chars": 238,
+        "image_count": 1,
+        "text_density": 27.9
+      }
+    },
+    {
+      "slide_number": 62,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 63,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 42,
+        "image_count": 0,
+        "text_density": 42
+      }
+    },
+    {
+      "slide_number": 64,
+      "title": "実装の3原則（AIの制約に対応）",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 124,
+        "image_count": 1,
+        "text_density": 106
+      }
+    },
+    {
+      "slide_number": 65,
+      "title": "実装の標準ワークフロー",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 111,
+        "image_count": 1,
+        "text_density": 98
+      }
+    },
+    {
+      "slide_number": 66,
+      "title": "TDD/BDD統合ワークフロー",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 376,
+        "image_count": 1,
+        "text_density": 59.8
+      }
+    },
+    {
+      "slide_number": 67,
+      "title": "AIにTDD/BDDで実装させる",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 1,
+        "total_chars": 362,
+        "image_count": 1,
+        "text_density": 57.3
+      }
+    },
+    {
+      "slide_number": 68,
+      "title": "セキュリティベストプラクティス（重要）",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 390,
+        "image_count": 1,
+        "text_density": 123.0
+      }
+    },
+    {
+      "slide_number": 69,
+      "title": "パスワード・JWT認証の実装",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 119,
+        "image_count": 1,
+        "text_density": 103
+      }
+    },
+    {
+      "slide_number": 70,
+      "title": "セキュアなコードの指示方法（重要）",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 212,
+        "image_count": 0,
+        "text_density": 48.2
+      }
+    },
+    {
+      "slide_number": 71,
+      "title": "インクリメンタル開発とは",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 239,
+        "image_count": 1,
+        "text_density": 75.0
+      }
+    },
+    {
+      "slide_number": 72,
+      "title": "インクリメンタル実装の実例",
+      "current_layout": null,
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 252,
+        "image_count": 0,
+        "text_density": 39.5
+      }
+    },
+    {
+      "slide_number": 73,
+      "title": "AI自己レビュー必須化（重要）",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 339,
+        "image_count": 1,
+        "text_density": 80.5
+      }
+    },
+    {
+      "slide_number": 74,
+      "title": "STEP4のまとめ",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 105,
+        "image_count": 1,
+        "text_density": 94
+      }
+    },
+    {
+      "slide_number": 75,
+      "title": "STEP4 チェックリスト",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 7,
+        "paragraph_count": 0,
+        "total_chars": 250,
+        "image_count": 1,
+        "text_density": 29.4
+      }
+    },
+    {
+      "slide_number": 76,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 77,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 53,
+        "image_count": 0,
+        "text_density": 53
+      }
+    },
+    {
+      "slide_number": 78,
+      "title": "STEP5 品質担保＆ドキュメント反映とは",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 355,
+        "image_count": 0,
+        "text_density": 66.4
+      }
+    },
+    {
+      "slide_number": 79,
+      "title": "テスト駆動開発とAI活用の相乗効果（重要）",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 202,
+        "image_count": 0,
+        "text_density": 35.8
+      }
+    },
+    {
+      "slide_number": 80,
+      "title": "E2Eテスト重視の戦略",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 115,
+        "image_count": 0,
+        "text_density": 34.0
+      }
+    },
+    {
+      "slide_number": 81,
+      "title": "Playwright によるE2Eテスト",
+      "current_layout": null,
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 240,
+        "image_count": 0,
+        "text_density": 36.3
+      }
+    },
+    {
+      "slide_number": 82,
+      "title": "ビジュアルリグレッションテスト",
+      "current_layout": null,
+      "recommended_layout": "lead",
+      "confidence": 0.95,
+      "reason": "タイトルのみまたは短い説明文のみのため",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 116,
+        "image_count": 0,
+        "text_density": 33.0
+      }
+    },
+    {
+      "slide_number": 83,
+      "title": "MCP関連ツール",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 150,
+        "image_count": 0,
+        "text_density": 46.7
+      }
+    },
+    {
+      "slide_number": 84,
+      "title": "AI自己レビュー4種類の使い分け",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 126,
+        "image_count": 1,
+        "text_density": 108
+      }
+    },
+    {
+      "slide_number": 85,
+      "title": "AI自己レビュー①一般レビュー",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 146,
+        "image_count": 0,
+        "text_density": 32.2
+      }
+    },
+    {
+      "slide_number": 86,
+      "title": "AI自己レビュー②セキュリティ特化",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 184,
+        "image_count": 0,
+        "text_density": 41.2
+      }
+    },
+    {
+      "slide_number": 87,
+      "title": "AI自己レビュー③パフォーマンス特化",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 156,
+        "image_count": 0,
+        "text_density": 34.0
+      }
+    },
+    {
+      "slide_number": 88,
+      "title": "AI自己レビュー④テストカバレッジ",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 253,
+        "image_count": 1,
+        "text_density": 58.5
+      }
+    },
+    {
+      "slide_number": 89,
+      "title": "自己レビューの実例",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 234,
+        "image_count": 0,
+        "text_density": 55.8
+      }
+    },
+    {
+      "slide_number": 90,
+      "title": "STEP5のまとめ",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 105,
+        "image_count": 1,
+        "text_density": 94
+      }
+    },
+    {
+      "slide_number": 91,
+      "title": "STEP5 チェックリスト",
+      "current_layout": "layout-horizontal-left compact",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 9,
+        "paragraph_count": 0,
+        "total_chars": 307,
+        "image_count": 1,
+        "text_density": 29.2
+      }
+    },
+    {
+      "slide_number": 92,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 1,
+        "total_chars": 328,
+        "image_count": 0,
+        "text_density": 54.7
+      }
+    },
+    {
+      "slide_number": 93,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 443,
+        "image_count": 0,
+        "text_density": 88.6
+      }
+    },
+    {
+      "slide_number": 94,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 155,
+        "image_count": 0,
+        "text_density": 51.7
+      }
+    },
+    {
+      "slide_number": 95,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 1,
+        "image_count": 0,
+        "text_density": 1
+      }
+    },
+    {
+      "slide_number": 96,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 41,
+        "image_count": 0,
+        "text_density": 41
+      }
+    },
+    {
+      "slide_number": 97,
+      "title": "Part 2のキーポイント",
+      "current_layout": "card-grid",
+      "recommended_layout": "compact",
+      "confidence": 0.85,
+      "reason": "コンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 5,
+        "total_chars": 299,
+        "image_count": 0,
+        "text_density": 47.3
+      }
+    },
+    {
+      "slide_number": 98,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 11,
+        "total_chars": 3720,
+        "image_count": 0,
+        "text_density": 310.0
+      }
+    },
+    {
+      "slide_number": 99,
+      "title": "Day 1-3: まとめ + 演習 (15:00-17:00)",
+      "current_layout": null,
+      "recommended_layout": "lead",
+      "confidence": 0.95,
+      "reason": "タイトルのみまたは短い説明文のみのため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 35,
+        "image_count": 0,
+        "text_density": 2
+      }
+    },
+    {
+      "slide_number": 100,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 35,
+        "image_count": 0,
+        "text_density": 35
+      }
+    },
+    {
+      "slide_number": 101,
+      "title": "1日目の振り返り",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 186,
+        "image_count": 1,
+        "text_density": 176
+      }
+    },
+    {
+      "slide_number": 102,
+      "title": "よくある失敗①いきなりコード",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 120,
+        "image_count": 1,
+        "text_density": 104
+      }
+    },
+    {
+      "slide_number": 103,
+      "title": "よくある失敗②AI自己レビュースキップ",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 161,
+        "image_count": 0,
+        "text_density": 35.0
+      }
+    },
+    {
+      "slide_number": 104,
+      "title": "よくある失敗③リファクタリング後回し",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 143,
+        "image_count": 0,
+        "text_density": 30.8
+      }
+    },
+    {
+      "slide_number": 105,
+      "title": "1日目のキーメッセージ",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 112,
+        "image_count": 1,
+        "text_density": 99
+      }
+    },
+    {
+      "slide_number": 106,
+      "title": "演習課題の説明（TODOアプリ）",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 124,
+        "image_count": 1,
+        "text_density": 106
+      }
+    },
+    {
+      "slide_number": 107,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 108,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 42,
+        "image_count": 0,
+        "text_density": 42
+      }
+    },
+    {
+      "slide_number": 109,
+      "title": "演習の目的と課題",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 102,
+        "image_count": 1,
+        "text_density": 92
+      }
+    },
+    {
+      "slide_number": 110,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 16,
+        "paragraph_count": 0,
+        "total_chars": 614,
+        "image_count": 0,
+        "text_density": 36.1
+      }
+    },
+    {
+      "slide_number": 111,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 9,
+        "paragraph_count": 0,
+        "total_chars": 253,
+        "image_count": 0,
+        "text_density": 25.3
+      }
+    },
+    {
+      "slide_number": 112,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 113,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 47,
+        "image_count": 0,
+        "text_density": 47
+      }
+    },
+    {
+      "slide_number": 114,
+      "title": "つまずきポイントと対処法",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 114,
+        "image_count": 1,
+        "text_density": 100
+      }
+    },
+    {
+      "slide_number": 115,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 116,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 40,
+        "image_count": 0,
+        "text_density": 40
+      }
+    },
+    {
+      "slide_number": 117,
+      "title": "演習成功のチェックリスト①",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 118,
+        "image_count": 1,
+        "text_density": 103
+      }
+    },
+    {
+      "slide_number": 118,
+      "title": "演習成功のチェックリスト②",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 117,
+        "image_count": 1,
+        "text_density": 102
+      }
+    },
+    {
+      "slide_number": 119,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 120,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 38,
+        "image_count": 0,
+        "text_density": 38
+      }
+    },
+    {
+      "slide_number": 121,
+      "title": "演習で体感できること",
+      "current_layout": "two-column",
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 11,
+        "paragraph_count": 0,
+        "total_chars": 480,
+        "image_count": 0,
+        "text_density": 39.0
+      }
+    },
+    {
+      "slide_number": 122,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 123,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 34,
+        "image_count": 0,
+        "text_density": 34
+      }
+    },
+    {
+      "slide_number": 124,
+      "title": "成果物：ディレクトリ構成",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 200,
+        "image_count": 0,
+        "text_density": 186
+      }
+    },
+    {
+      "slide_number": 125,
+      "title": "成果物：品質基準",
+      "current_layout": "two-column",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 8,
+        "paragraph_count": 0,
+        "total_chars": 210,
+        "image_count": 0,
+        "text_density": 22.2
+      }
+    },
+    {
+      "slide_number": 126,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 127,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 38,
+        "image_count": 0,
+        "text_density": 38
+      }
+    },
+    {
+      "slide_number": 128,
+      "title": "1日目全体の振り返り",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 108,
+        "image_count": 1,
+        "text_density": 96
+      }
+    },
+    {
+      "slide_number": 129,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 130,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 9,
+        "paragraph_count": 0,
+        "total_chars": 197,
+        "image_count": 0,
+        "text_density": 19.7
+      }
+    },
+    {
+      "slide_number": 131,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 11,
+        "total_chars": 3720,
+        "image_count": 0,
+        "text_density": 310.0
+      }
+    },
+    {
+      "slide_number": 132,
+      "title": "Day 2-1: リバースエンジニアリング + テストシナリオ (10:00-12:00)",
+      "current_layout": null,
+      "recommended_layout": "lead",
+      "confidence": 0.95,
+      "reason": "タイトルのみまたは短い説明文のみのため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 49,
+        "image_count": 0,
+        "text_density": 2
+      }
+    },
+    {
+      "slide_number": 133,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 41,
+        "image_count": 0,
+        "text_density": 41
+      }
+    },
+    {
+      "slide_number": 134,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 239,
+        "image_count": 0,
+        "text_density": 39.8
+      }
+    },
+    {
+      "slide_number": 135,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 146,
+        "image_count": 0,
+        "text_density": 29.2
+      }
+    },
+    {
+      "slide_number": 136,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 1,
+        "paragraph_count": 1,
+        "total_chars": 226,
+        "image_count": 0,
+        "text_density": 75.3
+      }
+    },
+    {
+      "slide_number": 137,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 138,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 52,
+        "image_count": 0,
+        "text_density": 52
+      }
+    },
+    {
+      "slide_number": 139,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 264,
+        "image_count": 1,
+        "text_density": 52.8
+      }
+    },
+    {
+      "slide_number": 140,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 419,
+        "image_count": 0,
+        "text_density": 83.8
+      }
+    },
+    {
+      "slide_number": 141,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 142,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 262,
+        "image_count": 1,
+        "text_density": 87.3
+      }
+    },
+    {
+      "slide_number": 143,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 144,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 339,
+        "image_count": 1,
+        "text_density": 56.5
+      }
+    },
+    {
+      "slide_number": 145,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 414,
+        "image_count": 0,
+        "text_density": 82.8
+      }
+    },
+    {
+      "slide_number": 146,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-left compact",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 277,
+        "image_count": 1,
+        "text_density": 69.2
+      }
+    },
+    {
+      "slide_number": 147,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 148,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 57,
+        "image_count": 0,
+        "text_density": 57
+      }
+    },
+    {
+      "slide_number": 149,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 317,
+        "image_count": 1,
+        "text_density": 63.4
+      }
+    },
+    {
+      "slide_number": 150,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 151,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 391,
+        "image_count": 1,
+        "text_density": 78.2
+      }
+    },
+    {
+      "slide_number": 152,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 153,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 51,
+        "image_count": 0,
+        "text_density": 51
+      }
+    },
+    {
+      "slide_number": 154,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 345,
+        "image_count": 0,
+        "text_density": 57.5
+      }
+    },
+    {
+      "slide_number": 155,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 156,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 361,
+        "image_count": 0,
+        "text_density": 72.2
+      }
+    },
+    {
+      "slide_number": 157,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 158,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 297,
+        "image_count": 1,
+        "text_density": 99.0
+      }
+    },
+    {
+      "slide_number": 159,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 160,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 307,
+        "image_count": 1,
+        "text_density": 51.2
+      }
+    },
+    {
+      "slide_number": 161,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 162,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 326,
+        "image_count": 1,
+        "text_density": 54.3
+      }
+    },
+    {
+      "slide_number": 163,
+      "title": "テストシナリオ作成の実例",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 114,
+        "image_count": 1,
+        "text_density": 100
+      }
+    },
+    {
+      "slide_number": 164,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 165,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 71,
+        "image_count": 0,
+        "text_density": 71
+      }
+    },
+    {
+      "slide_number": 166,
+      "title": "テストコード基礎（復習）",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 112,
+        "image_count": 1,
+        "text_density": 98
+      }
+    },
+    {
+      "slide_number": 167,
+      "title": "テストシナリオからテストコードへ",
+      "current_layout": "two-column",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 3,
+        "total_chars": 254,
+        "image_count": 0,
+        "text_density": 33.7
+      }
+    },
+    {
+      "slide_number": 168,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 2,
+        "paragraph_count": 0,
+        "total_chars": 250,
+        "image_count": 0,
+        "text_density": 83.3
+      }
+    },
+    {
+      "slide_number": 169,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 250,
+        "image_count": 0,
+        "text_density": 62.5
+      }
+    },
+    {
+      "slide_number": 170,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 338,
+        "image_count": 0,
+        "text_density": 84.5
+      }
+    },
+    {
+      "slide_number": 171,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 11,
+        "total_chars": 3720,
+        "image_count": 0,
+        "text_density": 310.0
+      }
+    },
+    {
+      "slide_number": 172,
+      "title": "Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)",
+      "current_layout": null,
+      "recommended_layout": "lead",
+      "confidence": 0.95,
+      "reason": "タイトルのみまたは短い説明文のみのため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 44,
+        "image_count": 0,
+        "text_density": 2
+      }
+    },
+    {
+      "slide_number": 173,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 40,
+        "image_count": 0,
+        "text_density": 40
+      }
+    },
+    {
+      "slide_number": 174,
+      "title": "3つの演習課題から選択",
+      "current_layout": "layout-diagram-only",
+      "recommended_layout": "layout-diagram-only",
+      "confidence": 0.9,
+      "reason": "画像メイン、テキスト最小限のため",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 111,
+        "image_count": 1,
+        "text_density": 98
+      }
+    },
+    {
+      "slide_number": 175,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 176,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 380,
+        "image_count": 1,
+        "text_density": 63.3
+      }
+    },
+    {
+      "slide_number": 177,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 178,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 9,
+        "paragraph_count": 0,
+        "total_chars": 297,
+        "image_count": 0,
+        "text_density": 29.7
+      }
+    },
+    {
+      "slide_number": 179,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 180,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 37,
+        "image_count": 0,
+        "text_density": 37
+      }
+    },
+    {
+      "slide_number": 181,
+      "title": "Untitled",
+      "current_layout": "three-column",
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 217,
+        "image_count": 0,
+        "text_density": 43.4
+      }
+    },
+    {
+      "slide_number": 182,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 183,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 11,
+        "paragraph_count": 0,
+        "total_chars": 461,
+        "image_count": 0,
+        "text_density": 38.4
+      }
+    },
+    {
+      "slide_number": 184,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 185,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 29,
+        "image_count": 0,
+        "text_density": 29
+      }
+    },
+    {
+      "slide_number": 186,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.6,
+      "reason": "標準的なテキストスライドのため（デフォルト）",
+      "metrics": {
+        "bullet_count": 6,
+        "paragraph_count": 0,
+        "total_chars": 268,
+        "image_count": 0,
+        "text_density": 38.3
+      }
+    },
+    {
+      "slide_number": 187,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 6,
+        "paragraph_count": 0,
+        "total_chars": 320,
+        "image_count": 0,
+        "text_density": 45.7
+      }
+    },
+    {
+      "slide_number": 188,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 288,
+        "image_count": 1,
+        "text_density": 48.0
+      }
+    },
+    {
+      "slide_number": 189,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-left",
+      "recommended_layout": "layout-horizontal-left",
+      "confidence": 0.75,
+      "reason": "図表が重要で説明文が中程度のため",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 317,
+        "image_count": 1,
+        "text_density": 79.2
+      }
+    },
+    {
+      "slide_number": 190,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 191,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 192,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 31,
+        "image_count": 0,
+        "text_density": 31
+      }
+    },
+    {
+      "slide_number": 193,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 8,
+        "paragraph_count": 0,
+        "total_chars": 370,
+        "image_count": 0,
+        "text_density": 41.1
+      }
+    },
+    {
+      "slide_number": 194,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 195,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 18,
+        "image_count": 0,
+        "text_density": 18
+      }
+    },
+    {
+      "slide_number": 196,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 8,
+        "paragraph_count": 0,
+        "total_chars": 315,
+        "image_count": 0,
+        "text_density": 35.0
+      }
+    },
+    {
+      "slide_number": 197,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 7,
+        "paragraph_count": 0,
+        "total_chars": 311,
+        "image_count": 0,
+        "text_density": 38.9
+      }
+    },
+    {
+      "slide_number": 198,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 5,
+        "paragraph_count": 0,
+        "total_chars": 387,
+        "image_count": 1,
+        "text_density": 64.5
+      }
+    },
+    {
+      "slide_number": 199,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 200,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 46,
+        "image_count": 0,
+        "text_density": 46
+      }
+    },
+    {
+      "slide_number": 201,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 79,
+        "image_count": 0,
+        "text_density": 15.8
+      }
+    },
+    {
+      "slide_number": 202,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 47,
+        "image_count": 0,
+        "text_density": 11.8
+      }
+    },
+    {
+      "slide_number": 203,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 74,
+        "image_count": 0,
+        "text_density": 14.8
+      }
+    },
+    {
+      "slide_number": 204,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 3,
+        "paragraph_count": 0,
+        "total_chars": 59,
+        "image_count": 0,
+        "text_density": 14.8
+      }
+    },
+    {
+      "slide_number": 205,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 206,
+      "title": "Untitled",
+      "current_layout": "lead",
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 36,
+        "image_count": 0,
+        "text_density": 36
+      }
+    },
+    {
+      "slide_number": 207,
+      "title": "2日間の総まとめ",
+      "current_layout": "image-top-compact",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 1,
+        "total_chars": 389,
+        "image_count": 1,
+        "text_density": 63.2
+      }
+    },
+    {
+      "slide_number": 208,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 209,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 12,
+        "paragraph_count": 0,
+        "total_chars": 324,
+        "image_count": 0,
+        "text_density": 24.9
+      }
+    },
+    {
+      "slide_number": 210,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 211,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 8,
+        "paragraph_count": 0,
+        "total_chars": 407,
+        "image_count": 1,
+        "text_density": 45.2
+      }
+    },
+    {
+      "slide_number": 212,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 213,
+      "title": "Untitled",
+      "current_layout": "two-column compact",
+      "recommended_layout": "two-column compact",
+      "confidence": 0.85,
+      "reason": "比較構造でコンテンツ量が多いため",
+      "metrics": {
+        "bullet_count": 10,
+        "paragraph_count": 0,
+        "total_chars": 304,
+        "image_count": 0,
+        "text_density": 27.6
+      }
+    },
+    {
+      "slide_number": 214,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 215,
+      "title": "Untitled",
+      "current_layout": "layout-horizontal-right",
+      "recommended_layout": "two-column",
+      "confidence": 0.8,
+      "reason": "比較構造のため",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 332,
+        "image_count": 1,
+        "text_density": 66.4
+      }
+    },
+    {
+      "slide_number": 216,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 0,
+        "paragraph_count": 0,
+        "total_chars": 0,
+        "image_count": 0,
+        "text_density": 0
+      }
+    },
+    {
+      "slide_number": 217,
+      "title": "Untitled",
+      "current_layout": null,
+      "recommended_layout": null,
+      "confidence": 0.5,
+      "reason": "明確な推奨なし（デフォルト）",
+      "metrics": {
+        "bullet_count": 4,
+        "paragraph_count": 0,
+        "total_chars": 84,
+        "image_count": 0,
+        "text_density": 16.8
+      }
+    }
+  ]
+}
