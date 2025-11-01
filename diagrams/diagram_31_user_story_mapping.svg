@@ -1,23 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1200" preserveAspectRatio="xMidYMid meet">
   <defs>
     <style>
-      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #333333; }
-      .activity-title { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; font-weight: bold; fill: white; }
-      .activity-subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; fill: white; }
-      .section-header { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E; font-weight: bold; }
-      .story-text { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: white; }
-      .story-title { font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: white; font-weight: bold; }
-      .sprint-title { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: white; font-weight: bold; }
-      .sprint-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; fill: white; }
-      .sprint-detail { font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: white; }
-      .benefit-title { font-family: 'Noto Sans JP', sans-serif; font-size: 34px; fill: white; font-weight: bold; }
-      .benefit-text { font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: white; }
-      .mvp-label { font-family: 'Noto Sans JP', sans-serif; font-size: 30px; fill: #CC0000; font-weight: bold; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: bold; fill: #333333; }
+      .activity-title { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: bold; fill: white; }
+      .activity-subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 26px; fill: white; }
+      .section-header { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; font-weight: bold; }
+      .story-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; fill: white; }
+      .story-title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: white; font-weight: bold; }
+      .sprint-title { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: white; font-weight: bold; }
+      .sprint-text { font-family: 'Noto Sans JP', sans-serif; font-size: 26px; fill: white; }
+      .sprint-detail { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: white; }
+      .benefit-title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; fill: white; font-weight: bold; }
+      .benefit-text { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: white; }
+      .mvp-label { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #CC0000; font-weight: bold; }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="1920" height="1080" fill="#FFFFFF"/>
+  <rect width="2000" height="1200" fill="#FFFFFF"/>
 
   <!-- Title -->
   <text x="960" y="50" class="title" text-anchor="middle">ユーザーストーリーマッピング構造（ECサイト例）</text>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 1600" preserveAspectRatio="xMidYMid meet">
   <defs>
     <style>
       .title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: #333333; }
@@ -14,14 +14,17 @@
   <text x="910" y="80" class="title" text-anchor="middle">文字起こしアプローチ（Claude Code対話モード活用）</text>
 
   <!-- Concept -->
-  <rect x="50" y="120" width="1720" height="90" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
-  <text x="910" y="175" style="font-family: 'Noto Sans JP', sans-serif; font-size: 52px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    対話履歴 = トライアル知識の宝庫 → チーム共有で全員が即戦力に
+  <rect x="50" y="120" width="1720" height="110" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="910" y="160" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    対話履歴 = トライアル知識の宝庫
+  </text>
+  <text x="910" y="210" style="font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    → チーム共有で全員が即戦力に
   </text>
 
   <!-- Flow -->
   <!-- Step 1 -->
-  <rect x="100" y="250" width="350" height="280" fill="#00AFF0" rx="10"/>
+  <rect x="100" y="260" width="350" height="280" fill="#00AFF0" rx="10"/>
   <text x="275" y="300" class="step-title" text-anchor="middle">1. 対話しながら開発</text>
   <text x="275" y="345" class="step-title" text-anchor="middle" font-size="32">(Claude Code 対話モード)</text>
 
@@ -63,24 +66,24 @@
   <polygon points="1300,390 1290,385 1290,395" fill="#003399"/>
 
   <!-- Step 4 -->
-  <rect x="1300" y="250" width="420" height="280" fill="#66D9FF" rx="10"/>
-  <text x="1510" y="300" style="font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+  <rect x="1300" y="260" width="420" height="280" fill="#66D9FF" rx="10"/>
+  <text x="1510" y="310" style="font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: bold; fill: #00146E; text-anchor: middle;">
     4. チーム共有
   </text>
-  <text x="1510" y="345" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #00146E; text-anchor: middle;">
+  <text x="1510" y="355" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; font-weight: bold; fill: #00146E; text-anchor: middle;">
     (全員が即活用)
   </text>
 
-  <text x="1320" y="395" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E; font-weight: bold;">
+  <text x="1320" y="405" style="font-family: 'Noto Sans JP', sans-serif; font-size: 38px; fill: #00146E; font-weight: bold;">
     活用方法:
   </text>
-  <text x="1330" y="437" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E;">
-    • 同じ課題の解決時に参照
+  <text x="1330" y="445" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E;">
+    • 同じ課題で参照
   </text>
-  <text x="1330" y="476" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E;">
-    • 新メンバー教育
+  <text x="1330" y="482" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E;">
+    • 新人教育
   </text>
-  <text x="1330" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 42px; fill: #00146E;">
+  <text x="1330" y="519" style="font-family: 'Noto Sans JP', sans-serif; font-size: 36px; fill: #00146E;">
     • プロンプト再利用
   </text>
 
