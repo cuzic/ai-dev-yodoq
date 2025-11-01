@@ -252,7 +252,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 5-STEPフロー全体像
 
-![5-STEPフロー](diagrams/diagram_03_5step_flow.svg)
+![width:1100px](diagrams/diagram_03_5step_flow.svg)
 
 - **STEP1: 要件定義** - 何を作るか明確化（Guardrails構築）
 - **STEP2: 設計** - どう作るか定義（AI外部メモリ）
@@ -624,7 +624,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # データベーススキーマ設計
 
-![ER図の例](diagrams/diagram_07_er_diagram.svg)
+![width:900px](diagrams/diagram_07_er_diagram.svg)
 
 - **なぜスキーマ定義が必要か**
   - 後から変更すると影響範囲が非常に大きい
@@ -665,7 +665,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # ER図が開発をスムーズにする理由
 
-![ER図からコード生成](diagrams/diagram_08_er_to_code.svg)
+![width:1000px](diagrams/diagram_08_er_to_code.svg)
 
 - **AIの実装**: CREATE TABLE自動生成、JOIN処理、外部キー、ORMモデル
 - **人間の恩恵**: 全体像一目把握、リレーション検証、正規化問題発見
@@ -704,7 +704,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # STEP2のまとめ
 
-![STEP2のまとめ](diagrams/diagram_46_step2_summary.svg)
+![width:1000px](diagrams/diagram_46_step2_summary.svg)
 
 ---
 
@@ -1322,7 +1322,7 @@ style: |
 
 # AI自己レビュー④テストカバレッジ
 
-![テストカバレッジ80%ルール](diagrams/diagram_26_test_coverage_80_rule.svg)
+![width:900px](diagrams/diagram_26_test_coverage_80_rule.svg)
 
 - **プロンプト:** 「テストレビュー。エッジケース・異常系・境界値・独立性・Given-When-Thenをチェック」
 - **検出:** テストケース漏れ（null、空文字、MAX値）、異常系不足
@@ -1649,7 +1649,7 @@ style: |
 
 # 1日目の振り返り
 
-![5-STEPフロー全体](diagrams/diagram_03_5step_flow.svg)
+![width:1100px](diagrams/diagram_03_5step_flow.svg)
 
 **5-STEPフロー:** 要件定義 → 設計 → タスク分解 → 実装 → 品質担保
 
@@ -2154,7 +2154,7 @@ style: |
 
 ### リバースエンジニアリングとは
 
-![リバースエンジニアリングのプロセス](diagrams/diagram_12_reverse_engineering.svg)
+![width:1100px](diagrams/diagram_12_reverse_engineering.svg)
 
 - **既存コードから仕様を読み解く技術**
 - **なぜ必要か:** AIは過去実装を記憶できない、仕様書なしで推測実装→デグレ
@@ -2671,7 +2671,7 @@ style: |
 
 ### 演習の進め方（ワークフロー）
 
-![演習ワークフロー](diagrams/diagram_17_workshop_workflow.svg)
+![width:1100px](diagrams/diagram_17_workshop_workflow.svg)
 
 **保守開発の4ステップワークフロー:**
 - **STEP1: リバースエンジニアリング（30分）** 仕様把握、ドキュメント自動生成
@@ -2912,7 +2912,7 @@ style: |
 
 #### ドキュメント反映
 
-![ドキュメント自動生成Before/After](diagrams/diagram_43_doc_automation_before_after.svg)
+![width:1100px](diagrams/diagram_43_doc_automation_before_after.svg)
 
 - **architecture.md更新:** テーブル、API、画面記録
   - AI指示: 「変更内容をarchitecture.mdに反映して」
