@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
   <defs>
     <style>
@@ -19,100 +20,66 @@
       .highlight-purple { fill: #6a1b9a; }
     </style>
   </defs>
-
-  <!-- Title -->
   <text x="640" y="40" class="title" text-anchor="middle">MoSCoW実践例(ToDoアプリ)</text>
-
-  <!-- Left Column -->
   <g transform="translate(30, 75)">
-    <!-- Must -->
-    <text x="285" y="0" class="section-title highlight-green" text-anchor="middle">🚀 Must (Phase 1: MVP)</text>
-    <rect x="0" y="10" width="570" height="250" class="must-box"/>
-
-    <text x="285" y="40" class="subsection-title" text-anchor="middle">必須機能のみ - これがないと成立しない</text>
-
-    <text x="285" y="75" class="subsection-title" text-anchor="middle">コア機能:</text>
+    <text x="285" y="11.7" class="section-title highlight-green" text-anchor="middle">🚀 Must (Phase 1: MVP)</text>
+    <rect x="0" y="10" width="570" height="250" class="must-box" />
+    <text x="285" y="75.1" class="subsection-title" text-anchor="middle">必須機能のみ - これがないと成立しない</text>
+    <text x="285" y="106.8" class="subsection-title" text-anchor="middle">コア機能:</text>
     <text x="20" y="100" class="item-text">✅ タスク追加</text>
     <text x="20" y="123" class="item-text">✅ タスク完了</text>
     <text x="20" y="146" class="item-text">✅ タスク削除</text>
-
-    <text x="285" y="181" class="subsection-title" text-anchor="middle">セキュリティ必須:</text>
+    <text x="285" y="199.3" class="subsection-title" text-anchor="middle">セキュリティ必須:</text>
     <text x="20" y="206" class="item-text">✅ ユーザー登録</text>
     <text x="20" y="229" class="item-text">✅ ログイン</text>
     <text x="20" y="252" class="item-text">✅ パスワードハッシュ化(bcrypt)</text>
-
-    <!-- Should -->
     <text x="285" y="295" class="section-title highlight-blue" text-anchor="middle">📊 Should (Phase 2)</text>
-    <rect x="0" y="305" width="570" height="150" class="should-box"/>
-
+    <rect x="0" y="305" width="570" height="150" class="should-box" />
     <text x="285" y="335" class="subsection-title" text-anchor="middle">重要機能 - あるべきだが、なくても動く</text>
     <text x="20" y="365" class="item-text">• カテゴリ分類</text>
     <text x="20" y="388" class="item-text">• 優先度設定</text>
     <text x="20" y="411" class="item-text">• 期限設定</text>
     <text x="20" y="434" class="item-text">• タスク編集</text>
   </g>
-
-  <!-- Right Column -->
   <g transform="translate(630, 75)">
-    <!-- Could -->
     <text x="310" y="0" class="section-title highlight-orange" text-anchor="middle">🌟 Could (Phase 3)</text>
-    <rect x="0" y="10" width="620" height="150" class="could-box"/>
-
+    <rect x="0" y="10" width="620" height="150" class="could-box" />
     <text x="310" y="40" class="subsection-title" text-anchor="middle">あれば嬉しい - ユーザー体験向上</text>
     <text x="20" y="70" class="item-text">• タグ機能</text>
     <text x="20" y="93" class="item-text">• 検索機能</text>
     <text x="20" y="116" class="item-text">• ダークモード</text>
     <text x="20" y="139" class="item-text">• 並び替え</text>
-
-    <!-- Won't -->
     <text x="310" y="185" class="section-title highlight-gray" text-anchor="middle">🚫 Won't (スコープ外)</text>
-    <rect x="0" y="195" width="620" height="150" class="wont-box"/>
-
+    <rect x="0" y="195" width="620" height="150" class="wont-box" />
     <text x="310" y="225" class="subsection-title" text-anchor="middle">今回はやらない - 将来的には考える</text>
     <text x="20" y="255" class="item-text">• タスク共有</text>
     <text x="20" y="278" class="item-text">• チーム機能</text>
     <text x="20" y="301" class="item-text">• リマインダー</text>
     <text x="20" y="324" class="item-text">• カレンダー連携</text>
-
-    <!-- Effect -->
     <text x="310" y="370" class="section-title highlight-purple" text-anchor="middle">🎯 効果</text>
-    <rect x="0" y="380" width="620" height="155" class="effect-box"/>
-
+    <rect x="0" y="380" width="620" height="155" class="effect-box" />
     <text x="310" y="410" class="subsection-title" text-anchor="middle">Mustのみに集中 → 開発期間を大幅短縮</text>
     <text x="20" y="445" class="item-text">• Phase 1 (Must): 2週間</text>
     <text x="20" y="468" class="item-text">• Phase 2 (Should): +1週間</text>
     <text x="20" y="491" class="item-text">• Phase 3 (Could): +1週間</text>
     <text x="20" y="524" class="small-text" font-weight="600">→ 段階的リリースで早期フィードバック獲得</text>
   </g>
-
-  <!-- Bottom Section: MoSCoW Pyramid Visual -->
   <g transform="translate(30, 540)">
     <text x="285" y="0" class="section-title" text-anchor="middle">MoSCoW優先順位の考え方</text>
-
-    <!-- Pyramid -->
     <g transform="translate(70, 20)">
-      <!-- Won't -->
-      <polygon points="250,0 190,50 310,50" fill="#bdbdbd"/>
+      <polygon points="250,0 190,50 310,50" fill="#bdbdbd" />
       <text x="250" y="35" style="font-size: 18px; font-weight: 600; fill: white; text-anchor: middle;">Won't</text>
-
-      <!-- Could -->
-      <polygon points="190,50 130,100 370,100" fill="#ff9800"/>
-      <text x="250" y="85" style="font-size: 18px; font-weight: 600; fill: white; text-anchor: middle;">Could</text>
-
-      <!-- Should -->
-      <polygon points="130,100 70,150 430,150" fill="#2196f3"/>
-      <text x="250" y="135" style="font-size: 18px; font-weight: 600; fill: white; text-anchor: middle;">Should</text>
-
-      <!-- Must -->
-      <polygon points="70,150 10,200 490,200" fill="#43a047"/>
-      <text x="250" y="185" style="font-size: 22px; font-weight: 700; fill: white; text-anchor: middle;">Must (20-30%)</text>
+      <polygon points="190,50 130,100 370,100" fill="#ff9800" />
+      <text x="250" y="98.4" style="font-size: 18px; font-weight: 600; fill: white; text-anchor: middle;">Could</text>
+      <polygon points="130,100 70,150 430,150" fill="#2196f3" />
+      <text x="250" y="193.5" style="font-size: 18px; font-weight: 600; fill: white; text-anchor: middle;">Should</text>
+      <polygon points="70,150 10,200 490,200" fill="#43a047" />
+      <text x="250" y="222.6" style="font-size: 22px; font-weight: 700; fill: white; text-anchor: middle;">Must (20-30%)</text>
     </g>
-
-    <!-- Description -->
     <g transform="translate(550, 40)">
       <text x="0" y="0" class="subsection-title">優先順位の原則:</text>
-      <text x="0" y="30" class="item-text">• Must = 機能の20-30%に絞る</text>
-      <text x="0" y="53" class="item-text">• 「これがないと成立しない」のみ</text>
+      <text x="0" y="31.7" class="item-text">• Must = 機能の20-30%に絞る</text>
+      <text x="0" y="53.0" class="item-text">• 「これがないと成立しない」のみ</text>
       <text x="0" y="76" class="item-text">• セキュリティは常にMust</text>
       <text x="0" y="99" class="item-text">• 最速でユーザーに届ける</text>
       <text x="0" y="122" class="item-text">• Should以降は反応を見て判断</text>

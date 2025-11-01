@@ -40,7 +40,7 @@
   <text x="100" y="387" class="doc-text">• 作成時間: 2時間</text>
   <text x="100" y="402" class="doc-text">• 更新時間: 1時間/回</text>
 
-  <text x="90" y="427" class="doc-text" font-size="12px" font-weight="bold">
+  <text x="90" y="427" class="doc-text" font-size="18px" font-weight="bold">
     合計: 15時間（初回）+ 6時間/回（更新）
   </text>
 
@@ -96,7 +96,7 @@
   <text x="760" y="412" class="doc-text" font-weight="bold">5. JavaDoc（HTML）</text>
   <text x="770" y="430" class="doc-text">• 作成: コメントから自動生成</text>
 
-  <text x="760" y="455" class="doc-text" font-size="12px" font-weight="bold">
+  <text x="760" y="455" class="doc-text" font-size="18px" font-weight="bold">
     合計: 15分（初回）+ 0-5分（更新）
   </text>
 

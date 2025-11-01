@@ -756,6 +756,7 @@ AI駆動開発で開発期間を大幅短縮
 **Part 1 終了 - 昼休憩（12:00-13:00）**
 
 **スライド数: 35枚**
+
 ---
 marp: true
 theme: default
@@ -1422,7 +1423,7 @@ style: |
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # Part 2のキーポイント
 
@@ -1440,6 +1441,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ### ⑤リファクタリング＆ドキュメント（STEP6）
 技術的負債の早期解消、Living Documentationで知見蓄積
+
 ---
 marp: true
 theme: default
@@ -1805,7 +1807,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # 演習で体感できること
 
@@ -1855,7 +1857,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # 成果物：品質基準
 
@@ -1908,6 +1910,7 @@ style: |
 - TODOアプリ機能追加
 - 自プロジェクトで5-STEP
 - AI自己レビュー習慣化
+
 ---
 marp: true
 theme: default
@@ -2392,7 +2395,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # テストシナリオからテストコードへ
 
@@ -2451,6 +2454,7 @@ style: |
   - テストシナリオの作成（全体像の把握）
   - 生成されたテストコードのレビュー
   - 不足しているケースの追加指示
+
 ---
 marp: true
 theme: default

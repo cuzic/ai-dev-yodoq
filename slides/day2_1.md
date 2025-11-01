@@ -482,7 +482,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # テストシナリオからテストコードへ
 

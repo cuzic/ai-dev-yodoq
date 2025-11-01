@@ -363,7 +363,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # 演習で体感できること
 
@@ -413,7 +413,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # 成果物：品質基準
 

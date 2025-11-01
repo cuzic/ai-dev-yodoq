@@ -3,6 +3,9 @@
     <style>
       .step { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; text-anchor: middle; }
       .arrow { font-family: Arial, sans-serif; font-size: 100px; fill: #00AFF0; font-weight: bold; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: white; text-anchor: middle; }
+      .time { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: white; text-anchor: middle; }
+      .point { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: #333333; text-anchor: middle; }
     </style>
   </defs>
 
@@ -68,8 +71,8 @@
   <text x="940" y="105" class="title" font-size="26">ドキュメント反映</text>
   <text x="940" y="125" class="time">所要時間: 1日</text>
 
-  <text x="940" y="165" class="point" font-size="12">Trust but Verify</text>
-  <text x="940" y="178" class="point" font-size="12">Living Documentation</text>
+  <text x="940" y="165" class="point">Trust but Verify</text>
+  <text x="940" y="178" class="point">Living Documentation</text>
 
   <!-- Timeline bar -->
   <rect x="20" y="220" width="1040" height="40" fill="#E6E6E6" rx="5"/>

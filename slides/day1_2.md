@@ -664,7 +664,7 @@ style: |
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # Part 2のキーポイント
 

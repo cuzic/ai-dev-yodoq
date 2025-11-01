@@ -1,71 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 910">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 950">
   <defs>
     <style>
-      .title { font-family: sans-serif; font-size: 81px; font-weight: bold; fill: #333; }
-      .table-title { font-family: sans-serif; font-size: 70px; font-weight: bold; fill: white; }
-      .field { font-family: monospace; font-size: 54px; fill: #333; }
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: #333; }
+      .table-title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: white; }
+      .field { font-family: monospace; font-size: 48px; fill: #333; }
+      .label { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #00146E; }
+      .note-title { font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #00146E; font-weight: bold; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 52px; fill: #333; }
     </style>
   </defs>
-  <rect width="1000" height="700" fill="#FFF"/>
-  <text x="500" y="30" class="title" text-anchor="middle">ToDoアプリ ER図</text>
-  
+
+  <!-- Background -->
+  <rect width="1300" height="950" fill="#FFF"/>
+
+  <!-- Title -->
+  <text x="650" y="60" class="title" text-anchor="middle">ToDoアプリ ER図</text>
+
   <!-- users table -->
-  <rect x="50" y="100" width="200" height="150" fill="#00146E" rx="5"/>
-  <text x="150" y="125" class="table-title" text-anchor="middle">users</text>
-  <rect x="50" y="130" width="200" height="120" fill="#FFF"/>
-  <text x="60" y="150" class="field">🔑 id (PK)</text>
-  <text x="60" y="170" class="field">email (UNIQUE)</text>
-  <text x="60" y="190" class="field">password_hash</text>
-  <text x="60" y="210" class="field">created_at</text>
-  
+  <rect x="50" y="120" width="280" height="90" fill="#00146E" rx="5"/>
+  <text x="190" y="175" class="table-title" text-anchor="middle">users</text>
+  <rect x="50" y="210" width="280" height="300" fill="#FFF" stroke="#00146E" stroke-width="2"/>
+  <text x="70" y="255" class="field">🔑 id (PK)</text>
+  <text x="70" y="315" class="field">email (UNIQUE)</text>
+  <text x="70" y="375" class="field">password_hash</text>
+  <text x="70" y="435" class="field">created_at</text>
+
   <!-- tasks table -->
-  <rect x="400" y="100" width="200" height="180" fill="#00146E" rx="5"/>
-  <text x="500" y="125" class="table-title" text-anchor="middle">tasks</text>
-  <rect x="400" y="130" width="200" height="150" fill="#FFF"/>
-  <text x="410" y="150" class="field">🔑 id (PK)</text>
-  <text x="410" y="170" class="field">🔗 user_id (FK)</text>
-  <text x="410" y="190" class="field">title</text>
-  <text x="410" y="210" class="field">completed</text>
-  <text x="410" y="230" class="field">created_at</text>
-  <text x="410" y="250" class="field">updated_at</text>
-  
+  <rect x="510" y="120" width="280" height="90" fill="#00146E" rx="5"/>
+  <text x="650" y="175" class="table-title" text-anchor="middle">tasks</text>
+  <rect x="510" y="210" width="280" height="360" fill="#FFF" stroke="#00146E" stroke-width="2"/>
+  <text x="530" y="255" class="field">🔑 id (PK)</text>
+  <text x="530" y="315" class="field">🔗 user_id (FK)</text>
+  <text x="530" y="375" class="field">title</text>
+  <text x="530" y="435" class="field">completed</text>
+  <text x="530" y="495" class="field">created_at</text>
+  <text x="530" y="555" class="field">updated_at</text>
+
   <!-- categories table -->
-  <rect x="750" y="100" width="200" height="150" fill="#00146E" rx="5"/>
-  <text x="850" y="125" class="table-title" text-anchor="middle">categories</text>
-  <rect x="750" y="130" width="200" height="120" fill="#FFF"/>
-  <text x="760" y="150" class="field">🔑 id (PK)</text>
-  <text x="760" y="170" class="field">🔗 user_id (FK)</text>
-  <text x="760" y="190" class="field">name</text>
-  <text x="760" y="210" class="field">created_at</text>
-  
+  <rect x="970" y="120" width="280" height="90" fill="#00146E" rx="5"/>
+  <text x="1110" y="175" class="table-title" text-anchor="middle">categories</text>
+  <rect x="970" y="210" width="280" height="300" fill="#FFF" stroke="#00146E" stroke-width="2"/>
+  <text x="990" y="255" class="field">🔑 id (PK)</text>
+  <text x="990" y="315" class="field">🔗 user_id (FK)</text>
+  <text x="990" y="375" class="field">name</text>
+  <text x="990" y="435" class="field">created_at</text>
+
   <!-- task_categories junction table -->
-  <rect x="400" y="400" width="200" height="120" fill="#00AFF0" rx="5"/>
-  <text x="500" y="425" class="table-title" text-anchor="middle">task_categories</text>
-  <rect x="400" y="430" width="200" height="90" fill="#FFF"/>
-  <text x="410" y="450" class="field">🔗 task_id (FK)</text>
-  <text x="410" y="470" class="field">🔗 category_id (FK)</text>
-  <text x="410" y="500" class="field" fill="#00146E">多対多の中間テーブル</text>
-  
+  <rect x="510" y="620" width="280" height="90" fill="#00AFF0" rx="5"/>
+  <text x="650" y="675" class="table-title" text-anchor="middle">task_categories</text>
+  <rect x="510" y="710" width="280" height="180" fill="#FFF" stroke="#00AFF0" stroke-width="2"/>
+  <text x="530" y="755" class="field">🔗 task_id (FK)</text>
+  <text x="530" y="815" class="field">🔗 category_id (FK)</text>
+  <text x="650" y="870" class="note-text" text-anchor="middle" fill="#00146E" font-size="42px">多対多の中間テーブル</text>
+
   <!-- Relationships -->
-  <line x1="250" y1="175" x2="400" y2="175" stroke="#00AFF0" stroke-width="3"/>
-  <text x="325" y="165" style="font-size: 60px; fill: #00146E;">1</text>
-  <text x="380" y="165" style="font-size: 60px; fill: #00146E;">*</text>
-  
-  <line x1="250" y1="200" x2="750" y2="200" stroke="#00AFF0" stroke-width="3"/>
-  <text x="270" y="190" style="font-size: 60px; fill: #00146E;">1</text>
-  <text x="730" y="190" style="font-size: 60px; fill: #00146E;">*</text>
-  
-  <line x1="500" y1="280" x2="500" y2="400" stroke="#00AFF0" stroke-width="3"/>
-  <text x="510" y="340" style="font-size: 60px; fill: #00146E;">*</text>
-  
-  <line x1="750" y1="225" x2="600" y2="460" stroke="#00AFF0" stroke-width="3"/>
-  <text x="680" y="350" style="font-size: 60px; fill: #00146E;">*</text>
-  
-  <rect x="50" y="600" width="900" height="80" fill="#E6E6E6" rx="5"/>
-  <text x="500" y="630" style="font-family: sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
-    リレーション: 1対多、多対多（中間テーブル）
-  </text>
-  <text x="500" y="655" style="font-family: sans-serif; font-size: 60px; fill: #333; text-anchor: middle;">
-    PK=主キー、FK=外部キー、UNIQUE=一意制約
+  <!-- users to tasks: 1 to many -->
+  <line x1="330" y1="300" x2="510" y2="300" stroke="#00AFF0" stroke-width="3"/>
+  <text x="350" y="285" class="label">1</text>
+  <text x="480" y="285" class="label">*</text>
+
+  <!-- users to categories: 1 to many -->
+  <line x1="330" y1="350" x2="970" y2="350" stroke="#00AFF0" stroke-width="3"/>
+  <text x="360" y="335" class="label">1</text>
+  <text x="935" y="335" class="label">*</text>
+
+  <!-- tasks to task_categories: many -->
+  <line x1="650" y1="570" x2="650" y2="620" stroke="#00AFF0" stroke-width="3"/>
+  <text x="670" y="600" class="label">*</text>
+
+  <!-- categories to task_categories: many -->
+  <line x1="970" y1="450" x2="790" y2="710" stroke="#00AFF0" stroke-width="3"/>
+  <text x="880" y="580" class="label">*</text>
+
+  <!-- Bottom notes - with proper spacing -->
+  <text x="650" y="930" class="note-title" text-anchor="middle">
+    リレーション: 1対多、多対多（中間テーブル） | PK=主キー、FK=外部キー、UNIQUE=一意制約
   </text>
 </svg>
