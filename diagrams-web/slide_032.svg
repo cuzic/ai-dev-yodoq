@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .section-title { font-size: 22px; font-weight: 700; fill: #1976d2; }
+      .item-text { font-size: 16px; }
+      .section-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 6; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">Summary</text>
+
+  <!-- Section: 2日目への準備 -->
+  <g transform="translate(40, 90)">
+    <text x="290" y="0" class="section-title" text-anchor="middle">2日目への準備</text>
+    <rect x="0" y="10" width="580" height="450" class="section-box"/>
+    <text x="15" y="35" class="item-text">• リバースエンジニアリング（既存コードから仕様を読み解く）</text>
+    <text x="15" y="60" class="item-text">• テストシナリオ一覧作成（モレ・ヌケ防止）</text>
+    <text x="15" y="85" class="item-text">• デグレ防止（既存機能が壊れないことを保証）</text>
+    <text x="15" y="110" class="item-text">• 既存システムへの機能追加（実プロジェクトベース）</text>
+    <text x="15" y="135" class="item-text">• 1日目: 新規開発（ゼロから作る）</text>
+    <text x="15" y="160" class="item-text">• 2日目: 既存システム改修（理解→追加）</text>
+    <text x="15" y="185" class="item-text">• ✅ 5-STEPフローの各ステップの目的</text>
+    <text x="15" y="210" class="item-text">• ✅ AI制約（Jagged Intelligence、Reward Hacking、忘れっぽさ）</text>
+    <text x="15" y="235" class="item-text">• ✅ Trust but Verify原則</text>
+    <text x="15" y="260" class="item-text">• ✅ TDD/BDDのRed-Green-Refactorサイクル</text>
+    <text x="15" y="285" class="item-text">• ✅ AI自己レビューの4つの観点</text>
+    <text x="15" y="310" class="item-text">• ✅ Living Documentationの概念</text>
+    <text x="15" y="335" class="item-text">• ✅ セキュリティベストプラクティス</text>
+    <text x="15" y="360" class="item-text">• 演習で作成したTODOアプリに機能追加してみる</text>
+    <text x="15" y="385" class="item-text">• 自分のプロジェクトで5-STEPフローを試してみる</text>
+    <text x="15" y="410" class="item-text">• AI自己レビューを習慣化してみる</text>
+    <text x="15" y="435" class="item-text">• 成功したプロンプトをCLAUDE.mdに記録</text>
+  </g>
+</svg>

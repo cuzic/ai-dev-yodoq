@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .section-title { font-size: 22px; font-weight: 700; fill: #1976d2; }
+      .item-text { font-size: 16px; }
+      .section-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 6; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">STEP1のまとめ</text>
+
+  <!-- Section: 📋 要件定義の6ステップ -->
+  <g transform="translate(40, 90)">
+    <text x="290" y="0" class="section-title" text-anchor="middle">📋 要件定義の6ステップ</text>
+    <rect x="0" y="10" width="580" height="400" class="section-box"/>
+    <text x="15" y="35" class="item-text">• AIに質問させる手法</text>
+    <text x="15" y="60" class="item-text">• 文字起こしアプローチ</text>
+    <text x="15" y="85" class="item-text">• MoSCoW優先順位付け</text>
+    <text x="15" y="110" class="item-text">• Mustは20-30%に絞る</text>
+    <text x="15" y="135" class="item-text">• ユーザーストーリーマッピング</text>
+    <text x="15" y="160" class="item-text">• ジャーニーマップ</text>
+    <text x="15" y="185" class="item-text">• ⚡ パフォーマンス</text>
+    <text x="15" y="210" class="item-text">• 🔒 セキュリティ</text>
+    <text x="15" y="235" class="item-text">• 📈 スケーラビリティ</text>
+    <text x="15" y="260" class="item-text">• エラーケース</text>
+    <text x="15" y="285" class="item-text">• エッジケース</text>
+    <text x="15" y="310" class="item-text">• 制約条件</text>
+    <text x="15" y="335" class="item-text">• Given-When-Then受け入れ基準</text>
+    <text x="15" y="360" class="item-text">• Vibe Codingプロトタイプ</text>
+    <text x="15" y="385" class="item-text">• docs/requirements.md作成</text>
+  </g>
+
+  <!-- Section: 🎯 なぜこの順序か -->
+  <g transform="translate(700, 90)">
+    <text x="290" y="0" class="section-title" text-anchor="middle">🎯 なぜこの順序か</text>
+    <rect x="0" y="10" width="580" height="75" class="section-box"/>
+    <text x="15" y="35" class="item-text">• 明確な要件 = AIが迷わない</text>
+    <text x="15" y="60" class="item-text">• 受け入れ基準 = 手抜き防止</text>
+  </g>
+</svg>

@@ -28,10 +28,7 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 19px;
-  }
-  section.layout-horizontal-left li {
-    margin-bottom: 5px;
+    font-size: 22px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -52,11 +49,8 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 19px;
+    font-size: 22px;
     grid-column: 1;
-  }
-  section.layout-horizontal-right li {
-    margin-bottom: 5px;
   }
 
   /* 図のみレイアウト：図を最大化 */
@@ -80,49 +74,13 @@ style: |
   /* 3カラムレイアウト：チェックリスト、比較表など */
   section.three-column {
     columns: 3;
-    column-gap: 25px;
-    font-size: 18px;
+    column-gap: 30px;
   }
-  section.three-column h1 {
-    font-size: 32px;
+  section.three-column h1, section.three-column h2, section.three-column h3 {
     column-span: all;
-  }
-  section.three-column h2, section.three-column h3 {
-    column-span: all;
-    font-size: 22px;
   }
   section.three-column ul, section.three-column ol {
     break-inside: avoid-column;
-  }
-  section.three-column li {
-    margin-bottom: 3px;
-  }
-
-  /* Compactレイアウト：オーバーフロー回避用 */
-  section.compact {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  section.compact h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-  section.compact h2 {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 8px;
-  }
-  section.compact h3 {
-    font-size: 18px;
-    margin-top: 8px;
-    margin-bottom: 6px;
-  }
-  section.compact li {
-    margin-bottom: 2px;
-  }
-  section.compact ul, section.compact ol {
-    margin-top: 5px;
-    margin-bottom: 5px;
   }
 
   /* 画像2枚横並び：Before/After、比較用 */
@@ -200,11 +158,28 @@ style: |
 ## 実践演習の説明（10分）
 
 ---
-<!-- _class: layout-diagram-only -->
+
+<!-- _class: two-column -->
 
 # 3つの演習課題から選択
 
-![3つの演習課題から選択](../diagrams-web/slide_003_3つの演習課題から選択.svg)
+### ①マスター追加（商品カテゴリマスタのCRUD）
+- 新しいマスタテーブル追加（CREATE TABLE）
+- CRUD機能実装（Controller、Service、Repository、Entity、View）
+- 既存マスタとの関連付け（外部キー）
+- **難易度: 中**（デグレリスク低）
+
+### ②項目追加（顧客に電話番号カラム追加）
+- 既存テーブルへのカラム追加（ALTER TABLE）
+- 関連画面・API修正（登録、更新、一覧、詳細）
+- バリデーション追加（電話番号形式チェック）
+- **難易度: 高**（影響大、デグレリスク高）
+
+### ③検索条件追加（日付範囲指定検索）
+- 既存検索への条件追加（WHERE句拡張）
+- UI・API・SQL修正（日付ピッカー、パラメータ、クエリ）
+- 境界値処理（開始日・終了日チェック）
+- **難易度: 中**（既存検索への影響あり）
 
 ---
 
@@ -227,7 +202,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 ### 演習のゴール
 
@@ -272,7 +247,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 ### STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
@@ -315,7 +290,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 #### 新機能のテストシナリオ作成
 
@@ -376,7 +351,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 #### テストコード実装（30分）
 
@@ -404,7 +379,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 #### TDDで実装
 
@@ -428,7 +403,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 #### テスト実行・デバッグ
 
@@ -535,7 +510,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 ### 実務での活用ポイント
 
@@ -591,7 +566,7 @@ style: |
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 ### 実務で明日から実践できること（Top 5）
 

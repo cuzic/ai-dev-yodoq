@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .group-title { font-size: 20px; font-weight: 700; fill: #388e3c; }
+      .item-text { font-size: 17px; }
+      .checkbox { fill: none; stroke: #388e3c; stroke-width: 2; }
+      .checkmark { fill: none; stroke: #388e3c; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">演習成功のチェックリスト</text>
+
+  <!-- Group: STEP1-2: 要件定義・設計 -->
+  <g transform="translate(40, 90)">
+    <text x="0" y="0" class="group-title">STEP1-2: 要件定義・設計</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">AIに質問させて曖昧さ排除</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">ユーザーストーリー作成</text>
+    <rect x="0" y="72" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="86" class="item-text">エラー・エッジケース洗い出し</text>
+    <rect x="0" y="100" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="114" class="item-text">受け入れ基準（Given-When-Then）</text>
+    <rect x="0" y="128" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="142" class="item-text">Tech Stack Setup決定</text>
+  </g>
+
+  <!-- Group: STEP3: タスク分解 -->
+  <g transform="translate(40, 280)">
+    <text x="0" y="0" class="group-title">STEP3: タスク分解</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">タスク一覧をAI生成</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">Phase分け確認</text>
+    <rect x="0" y="72" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="86" class="item-text">タスク粒度調整（30分〜2時間）</text>
+    <rect x="0" y="100" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="114" class="item-text">依存関係可視化</text>
+  </g>
+
+  <!-- Group: STEP4: 実装 -->
+  <g transform="translate(40, 442)">
+    <text x="0" y="0" class="group-title">STEP4: 実装</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">TDD/BDD実装</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">Given-When-Then形式テスト</text>
+    <rect x="0" y="72" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="86" class="item-text">インクリメンタル開発</text>
+    <rect x="0" y="100" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="114" class="item-text">環境変数で秘密情報管理</text>
+  </g>
+</svg>
+

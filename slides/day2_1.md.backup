@@ -28,10 +28,7 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 19px;
-  }
-  section.layout-horizontal-left li {
-    margin-bottom: 5px;
+    font-size: 22px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -52,11 +49,8 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 19px;
+    font-size: 22px;
     grid-column: 1;
-  }
-  section.layout-horizontal-right li {
-    margin-bottom: 5px;
   }
 
   /* 図のみレイアウト：図を最大化 */
@@ -80,49 +74,13 @@ style: |
   /* 3カラムレイアウト：チェックリスト、比較表など */
   section.three-column {
     columns: 3;
-    column-gap: 25px;
-    font-size: 18px;
+    column-gap: 30px;
   }
-  section.three-column h1 {
-    font-size: 32px;
+  section.three-column h1, section.three-column h2, section.three-column h3 {
     column-span: all;
-  }
-  section.three-column h2, section.three-column h3 {
-    column-span: all;
-    font-size: 22px;
   }
   section.three-column ul, section.three-column ol {
     break-inside: avoid-column;
-  }
-  section.three-column li {
-    margin-bottom: 3px;
-  }
-
-  /* Compactレイアウト：オーバーフロー回避用 */
-  section.compact {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  section.compact h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-  section.compact h2 {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 8px;
-  }
-  section.compact h3 {
-    font-size: 18px;
-    margin-top: 8px;
-    margin-bottom: 6px;
-  }
-  section.compact li {
-    margin-bottom: 2px;
-  }
-  section.compact ul, section.compact ol {
-    margin-top: 5px;
-    margin-bottom: 5px;
   }
 
   /* 画像2枚横並び：Before/After、比較用 */
@@ -191,7 +149,7 @@ style: |
   }
 ---
 
-# Day 2-1: リバースエンジニアリング + テストシナリオ (10:00-12:00)
+# Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎 (10:00-12:00)
 
 ---
 
@@ -313,15 +271,22 @@ style: |
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 ### リバースエンジニアリング → 網羅的テスト生成（重要）
 
 ![リバースエンジニアリングから網羅的テスト生成](diagrams/diagram_44_reverse_to_comprehensive_test.svg)
 
-- **❌ 従来:** コード追認のみ→実装済み機能のみカバー、バグも追認
-- **✅ 逆生成:** コード→要件・ストーリー逆生成→網羅テスト
-- **💡 価値:** 「あるべき姿」基準、正常・異常・境界すべて、バグ発見
+- **❌ 従来のアプローチ（コード追認のみ）**
+  - 既存コード→直接テスト生成→実装済み機能のみカバー
+  - 問題: 既存バグも追認、エッジケース見落とし、仕様外の動作を検出できない
+- **✅ リバースエンジニアリング（仕様逆生成）**
+  - 既存コード→要件定義書・ユーザーストーリー逆生成→網羅的テストシナリオ
+  - 効果: あるべき仕様に基づくテスト、未実装のエッジケースも検出、仕様外の動作を発見
+- **💡 核心的価値:**
+  - コードの追認ではなく「あるべき姿」に基づいたテストが可能
+  - AIは仕様から網羅的にテストを生成（正常系・異常系・境界値すべて）
+  - 既存コードのバグや仕様外の動作を発見できる
 
 ---
 
@@ -457,11 +422,25 @@ style: |
 - **効果:** 全観点網羅→本番障害大幅削減
 
 ---
-<!-- _class: layout-diagram-only -->
+
+<!-- _class: two-column -->
 
 # テストシナリオ作成の実例
 
-![テストシナリオ作成の実例](../diagrams-web/slide_032_テストシナリオ作成の実例.svg)
+### ①既存機能（デグレ防止）
+- **目的:** 既存機能動作確認
+- **対象:** 主要機能Happy Path
+- **例:** ログイン、ユーザー登録、一覧、検索
+
+### ②新機能（品質担保）
+- **目的:** 新機能仕様通り動作確認
+- **対象:** 正常系・異常系・境界値・例外
+- **例:** パスワードリセット全テストケース
+
+### ③デグレ防止（連携確認）
+- **目的:** 既存と新機能の連携確認
+- **対象:** インターフェース、データ整合性
+- **例:** ユーザー管理とパスワードリセット連携
 
 ---
 
@@ -474,15 +453,33 @@ style: |
 ### テストコード基礎（復習）
 
 ---
-<!-- _class: layout-diagram-only -->
+
+<!-- _class: two-column -->
 
 # テストコード基礎（復習）
 
-![テストコード基礎（復習）](../diagrams-web/slide_035_テストコード基礎復習.svg)
+### TDD/BDD
+- **Red**: 失敗するテスト先書き
+- **Green**: 最小実装でテスト通過
+- **Refactor**: 品質向上（重複削除、可読性）
+
+### Given-When-Then形式
+- **Given**: テストデータ準備（前提条件）
+- **When**: テスト対象メソッド実行
+- **Then**: 期待結果アサーション
+
+### テストの独立性
+- 各テスト独立実行可能（順序依存NG）
+  - 他のテストに影響を与えない（副作用NG）
+  - @BeforeEach、@AfterEachで初期化・クリーンアップ
+- **テストカバレッジ**
+  - 80%以上を目標（100%は非現実的）
+  - 重要なビジネスロジックを優先
+- **効果:** 品質保証、リファクタリングの安全性、ドキュメントとしての価値
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # テストシナリオからテストコードへ
 

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .section-title { font-size: 22px; font-weight: 700; fill: #1976d2; }
+      .item-text { font-size: 16px; }
+      .section-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 6; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">本日の目標</text>
+
+  <!-- Section: ⏰ タイムテーブル -->
+  <g transform="translate(40, 90)">
+    <text x="290" y="0" class="section-title" text-anchor="middle">⏰ タイムテーブル</text>
+    <rect x="0" y="10" width="580" height="100" class="section-box"/>
+    <text x="15" y="35" class="item-text">• 午前2時間（Part 1）：基礎+STEP1-2</text>
+    <text x="15" y="60" class="item-text">• 午後2時間（Part 2）：STEP3-6</text>
+    <text x="15" y="85" class="item-text">• 演習2時間（Part 3）：実践演習</text>
+  </g>
+
+  <!-- Section: 📚 再現可能な開発手法の習得 -->
+  <g transform="translate(700, 90)">
+    <text x="290" y="0" class="section-title" text-anchor="middle">📚 再現可能な開発手法の習得</text>
+    <rect x="0" y="10" width="580" height="275" class="section-box"/>
+    <text x="15" y="35" class="item-text">• 成功するAIへの指示方法</text>
+    <text x="15" y="60" class="item-text">• Trust but Verify の実践</text>
+    <text x="15" y="85" class="item-text">• STEP1: 要件定義</text>
+    <text x="15" y="110" class="item-text">• STEP2: 設計</text>
+    <text x="15" y="135" class="item-text">• STEP3: タスク分解</text>
+    <text x="15" y="160" class="item-text">• STEP4: 実装</text>
+    <text x="15" y="185" class="item-text">• STEP5: 品質担保＆ドキュメント反映</text>
+    <text x="15" y="210" class="item-text">• Jagged Intelligence（得意/苦手の把握）</text>
+    <text x="15" y="235" class="item-text">• Reward Hacking（手抜き防止）</text>
+    <text x="15" y="260" class="item-text">• 忘れっぽさ（ドキュメント化）</text>
+  </g>
+</svg>

@@ -13,22 +13,28 @@ def analyze_slide_structure(html_path):
     with open(html_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Split into slides
-    slide_pattern = r'<section[^>]*?data-marpit-pagination="(\d+)"[^>]*?>(.*?)</section>'
+    # Split into slides - capture section element with its attributes
+    slide_pattern = r'<section([^>]*?)>(.*?)</section>'
     slides = re.findall(slide_pattern, content, re.DOTALL)
 
     overflow_candidates = []
 
-    for page_num, slide_content in slides:
+    for section_attrs, slide_content in slides:
+        # Extract page number
+        page_match = re.search(r'data-marpit-pagination="(\d+)"', section_attrs)
+        if not page_match:
+            continue
+        page_num = page_match.group(1)
+
         # Extract slide title
         title_match = re.search(r'<h1[^>]*>(.*?)</h1>', slide_content, re.DOTALL)
         title = ""
         if title_match:
             title = re.sub(r'<[^>]+>', '', title_match.group(1)).strip()
 
-        # Check class for layout type
-        class_matches = re.findall(r'class="([^"]*)"', slide_content)
-        classes = ' '.join(class_matches)
+        # Check class attribute on the section element itself
+        section_class_match = re.search(r'class="([^"]*)"', section_attrs)
+        classes = section_class_match.group(1) if section_class_match else ""
 
         # Count content elements
         h2_count = len(re.findall(r'<h2[^>]*>', slide_content))
@@ -72,8 +78,11 @@ def analyze_slide_structure(html_path):
         # Check for two-column or three-column layouts
         is_multi_column = any(x in classes for x in ['two-column', 'three-column', 'card-grid'])
         is_diagram_only = 'layout-diagram-only' in classes or 'layout-horizontal' in classes
+        is_compact = 'compact' in classes
 
         # Adjust for layout
+        if is_compact:
+            estimated_height *= 0.7  # Compact reduces font sizes and spacing significantly
         if is_multi_column:
             estimated_height *= 0.5  # Content is split across columns
         elif is_diagram_only:

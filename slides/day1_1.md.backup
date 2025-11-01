@@ -30,10 +30,7 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 19px;
-  }
-  section.layout-horizontal-left li {
-    margin-bottom: 5px;
+    font-size: 22px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -54,11 +51,8 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 19px;
+    font-size: 22px;
     grid-column: 1;
-  }
-  section.layout-horizontal-right li {
-    margin-bottom: 5px;
   }
 
   /* 図のみレイアウト：図を最大化 */
@@ -82,49 +76,13 @@ style: |
   /* 3カラムレイアウト：チェックリスト、比較表など */
   section.three-column {
     columns: 3;
-    column-gap: 25px;
-    font-size: 18px;
+    column-gap: 30px;
   }
-  section.three-column h1 {
-    font-size: 32px;
+  section.three-column h1, section.three-column h2, section.three-column h3 {
     column-span: all;
-  }
-  section.three-column h2, section.three-column h3 {
-    column-span: all;
-    font-size: 22px;
   }
   section.three-column ul, section.three-column ol {
     break-inside: avoid-column;
-  }
-  section.three-column li {
-    margin-bottom: 3px;
-  }
-
-  /* Compactレイアウト：オーバーフロー回避用 */
-  section.compact {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-  section.compact h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-  section.compact h2 {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 8px;
-  }
-  section.compact h3 {
-    font-size: 18px;
-    margin-top: 8px;
-    margin-bottom: 6px;
-  }
-  section.compact li {
-    margin-bottom: 2px;
-  }
-  section.compact ul, section.compact ol {
-    margin-top: 5px;
-    margin-bottom: 5px;
   }
 
   /* 画像2枚横並び：Before/After、比較用 */
@@ -202,11 +160,40 @@ style: |
 AI駆動開発で開発期間を大幅短縮
 
 ---
-<!-- _class: layout-diagram-only -->
+
+<!-- _class: two-column -->
 
 # 本日の目標
 
-![本日の目標](../diagrams-web/slide_002_本日の目標.svg)
+## 🎯 1日目のゴール
+**5-STEPフローを理解し、新規開発の基本を習得**
+
+## ⏰ タイムテーブル
+- 午前2時間（Part 1）：基礎+STEP1-2
+- 午後2時間（Part 2）：STEP3-6
+- 演習2時間（Part 3）：実践演習
+
+## 📚 再現可能な開発手法の習得
+
+**①プロンプトパターンの習得**
+- 成功するAIへの指示方法
+- Trust but Verify の実践
+
+**②5-STEPフローのマスター**
+- STEP1: 要件定義
+- STEP2: 設計
+- STEP3: タスク分解
+- STEP4: 実装
+- STEP5: 品質担保＆ドキュメント反映
+
+**③AI制約への対応**
+- Jagged Intelligence（得意/苦手の把握）
+- Reward Hacking（手抜き防止）
+- 忘れっぽさ（ドキュメント化）
+
+## 🚀 効果
+✅ 明日から実務で使える
+✅ チーム展開可能
 
 ---
 
@@ -282,15 +269,47 @@ AI駆動開発で開発期間を大幅短縮
 ![Reward Hacking問題と対策](diagrams/diagram_39_reward_hacking_examples.svg)
 
 ---
-<!-- _class: layout-diagram-only -->
+
+<!-- _class: two-column -->
 
 # 環境準備
 
-![環境準備](../diagrams-web/slide_009_環境準備.svg)
+## ✅ 必須ツール
+
+**📦 Claude Code**
+- AI開発環境
+- プロジェクト全体を扱うAIアシスタント
+- **なぜ必要:** プロジェクト全体の文脈を理解、複数ファイル一括操作
+
+**🔧 GitHub**
+- バージョン管理
+- 頻繁なコミットで暴走対策
+- **なぜ必要:** AIの暴走から回復可能
+
+**💻 VS Code**
+- エディタ
+- Mermaid Preview拡張推奨
+- **なぜ必要:** 図の即座確認、開発体験向上
+
+## 🌟 推奨ツール
+
+**🐳 Dev Container**
+- 環境統一化
+- dangerously-skip-permissionsモードの安全利用
+- **なぜ推奨:**
+  - 環境の再現性（全員同じ環境）
+  - 実験の安全性（コンテナ内で隔離）
+  - チーム開発でのトラブル防止
+
+## 📋 セットアップチェックリスト
+- [ ] Claude Code インストール
+- [ ] GitHub アカウント
+- [ ] VS Code + Mermaid Preview
+- [ ] (推奨) Dev Container
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-diagram-only -->
 
 # セキュリティベストプラクティス（補足）
 
@@ -298,13 +317,25 @@ AI駆動開発で開発期間を大幅短縮
 
 **AIに必ず指示すべきセキュリティ要件:**
 
-**🔒 認証・認可:** bcrypt、JWT、環境変数
+**🔒 認証・認可:**
+- bcrypt でパスワードハッシュ化
+- JWT または セッション認証
+- 環境変数で秘密鍵管理
 
-**🛡️ 入力検証:** SQLi/XSS対策、CSRF
+**🛡️ 入力検証:**
+- SQL injection 対策（PreparedStatement）
+- XSS 対策（エスケープ処理）
+- CSRF トークン
 
-**🔐 データ保護:** HTTPS、機密情報は環境変数
+**🔐 データ保護:**
+- HTTPS 必須
+- 機密情報は環境変数
+- ログに機密情報を出さない
 
-**📊 監視:** レート制限、異常検知
+**📊 監視:**
+- ログイン失敗回数制限
+- レート制限
+- 異常アクセス検知
 
 ---
 
@@ -380,25 +411,78 @@ AI駆動開発で開発期間を大幅短縮
 - Dev Container推奨: コンテナ内→安全化
 
 ---
-<!-- _class: layout-diagram-only -->
+
+<!-- _class: two-column -->
 
 # よくある問題と対処法
 
-![よくある問題と対処法](../diagrams-web/slide_017_よくある問題と対処法.svg)
+## 🚫 問題①「ファイルが多すぎる」
+
+**症状:**
+- Claude Codeが反応しない
+- トークン制限エラー頻発
+
+**原因:**
+- node_modules等を読もうとする
+- ビルド成果物を含んでいる
+
+**✅ 対処法:**
+```bash
+# .claudeignore に追加
+node_modules/
+dist/
+build/
+.git/
+*.log
+```
+
+## ⏱️ 問題②「トークン制限」
+
+**症状:**
+- 「コンテキストが満杯」エラー
+- 処理が途中で止まる
+
+**原因:**
+- コンテキストウィンドウ超過
+- 長いセッションの継続
+
+**✅ 対処法:**
+1. `/compact` コマンド実行
+2. タスクを分割して新セッション
+3. 不要なファイルを .claudeignore
+
+## 🎯 問題③「AIが間違った方向」
+
+**症状:**
+- 意図しない実装
+- 想定外のコード生成
+
+**原因:**
+- 曖昧な指示
+- コンテキスト不足
+
+**✅ 対処法:**
+1. `n` で即座に止める
+2. 明確に再指示（具体例を示す）
+3. プランモード活用（確認→実行）
+4. 「確認したいことはある?」と質問促す
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # 効率的な指示の出し方
 
 ![プロンプトパターン（良い例vs悪い例）](diagrams/diagram_30_prompt_patterns.svg)
 
-**❌ 悪い:** 「ログイン機能を作って」
-
-**✅ 良い:** 制約明示（bcrypt、環境変数、@Valid）、段階的実装、質問促す、AI自己レビュー
-
-**サイクル:** 指示→実装→レビュー→テスト→コミット
+- **❌ 悪い指示:** 「ログイン機能を作って」
+- **✅ 良い指示:**
+  - 制約を明示（bcrypt、環境変数、バリデーション、レート制限）
+  - 段階的に進める（1機能ずつ）
+  - 質問を促す（「確認したいことはある？」）
+  - 自己レビュー依頼（実装後必ず）
+- **毎回のサイクル:**
+  - 指示 → 実装 → AI自己レビュー → 修正 → テスト → コミット
 
 ---
 
@@ -422,11 +506,48 @@ AI駆動開発で開発期間を大幅短縮
 - **効果:** 後工程の手戻り防止
 
 ---
-<!-- _class: layout-diagram-only -->
+
+<!-- _class: two-column -->
 
 # AIに質問させる手法
 
-![AIに質問させる手法](../diagrams-web/slide_022_AIに質問させる手法.svg)
+## ❌ 問題: AIは「良きに計らう」
+
+**Jagged Intelligence（能力のギザギザ）:**
+- ✅ 得意: コード生成、テスト作成、リファクタリング、技術設計
+- ❌ 苦手: ビジネス要件の解釈、ステークホルダー間の優先順位判断、ドメイン固有ルール
+- 結果: 曖昧な指示では勝手に推測して間違った方向へ
+
+**具体例:**
+- 「ログイン機能を作って」
+  → AIが勝手にJWT選択
+  → 実はセッション認証が要件だった
+  → 手戻り発生
+
+## ✅ 解決策: AIに質問させる
+
+**プロンプトパターン:**
+```
+「ログイン機能を実装する前に、
+確認したいことはある？」
+```
+
+**AIの反応:**
+- 認証方式は？（セッション vs JWT）
+- パスワードポリシーは？
+- 多要素認証は必要？
+- セッション期限は？
+
+**対話で仕様を固める:**
+- 人間が判断（ビジネス要件に基づく）
+- AIが実装（技術的実現）
+
+## 📊 効果
+
+✅ 曖昧さ排除
+✅ 人間が判断、AIが実装
+✅ 手戻りゼロ
+✅ 実装スピード大幅向上
 
 ---
 
@@ -436,21 +557,49 @@ AI駆動開発で開発期間を大幅短縮
 
 ![文字起こし→AI抽出フロー](diagrams/diagram_40_transcript_approach.svg)
 
-## なぜ強力か
+## 🎯 なぜこの手法が強力か
 
-**顧客の言葉をそのまま記録:** 解釈のズレゼロ、「言った/言わない」問題の解消
+**顧客の言葉をそのまま記録:**
+- 解釈のズレゼロ
+- 「言った/言わない」問題の解消
+- 顧客の本当のニーズを捉える
 
-**AIが要件構造化:** 漏れ・ヌケ防止、自動優先順位付け
+**AIが要件構造化:**
+- 漏れ・ヌケ防止
+- 自動で優先順位付け
+- **不明点リスト**も自動生成
 
-## 4ステップ
+## 🔄 4ステップワークフロー
 
-**STEP1: 録音** Zoom/Google Meet録画
+**STEP1: 録音**
+- Zoom/Google Meet録画
+- 音声だけでもOK
 
-**STEP2: 文字起こし** Whisper API、Claude Code直接音声入力
+**STEP2: 文字起こし**
+- Whisper API（高精度）
+- Google Docs音声入力
+- Claude Codeに直接音声入力
 
-**STEP3: AI抽出** 「この文字起こしから要件を抽出して」
+**STEP3: AI抽出依頼**
+```
+「この文字起こしから
+要件を抽出して」
+```
 
-**STEP4: 確認** ユーザーストーリー、MoSCoW分類、不明点確認
+**STEP4: AI出力確認**
+- ユーザーストーリー
+- 機能一覧（MoSCoW分類済み）
+- **不明点リスト** → クライアント確認
+
+## 💡 実践例
+
+**顧客の言葉:**
+「営業が顧客管理したい。スマホ対応。Excel同時編集で困ってる」
+
+**AI抽出結果:**
+- Must: 顧客CRUD、モバイル対応
+- 不明点: 顧客項目定義？ステータス管理？
+→ クライアント確認
 
 ---
 
@@ -493,21 +642,48 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # 非機能要件
 
 ![非機能要件チェックリスト](diagrams/diagram_32_nonfunctional_requirements.svg)
 
-**なぜ重要か:** 機能要件だけでは本番で使えない（性能・セキュリティ・拡張性）
+## 🎯 なぜ非機能要件が重要か
 
-**⚡ パフォーマンス:** 1000件快適、200ms以内
+**機能要件だけでは本番で使えない:**
+- 性能不足（遅い、落ちる）
+- セキュリティ脆弱性
+- 拡張性の欠如
 
-**🔒 セキュリティ:** JWT、bcrypt、HTTPS
+**AIは明示しないと考慮しない:**
+- Reward Hacking → 手抜き実装
+- 非機能要件 = Guardrails
 
-**📈 スケーラビリティ:** 同時100人
+## 📊 4つの重要カテゴリ
 
-**📱 モバイル:** レスポンシブ
+**⚡ パフォーマンス**
+- 1000件まで快適動作
+- レスポンス200ms以内
+- N+1クエリ禁止
+
+**🔒 セキュリティ**
+- JWT認証
+- bcryptハッシュ化
+- HTTPS必須
+- OWASP Top 10対応
+
+**📈 スケーラビリティ**
+- 同時接続100人
+- 将来1000人対応可能な設計
+- 水平スケール考慮
+
+**📱 モバイル対応**
+- レスポンシブデザイン必須
+- タッチ操作最適化
+- オフライン対応考慮
+
+## 💡 AIへの指示
+**「非機能要件も満たして実装」と明示**
 
 ---
 
@@ -545,28 +721,81 @@ AI駆動開発で開発期間を大幅短縮
 - **メリット:** クライアントとの認識合わせが簡単
 
 ---
-<!-- _class: layout-diagram-only -->
+
+<!-- _class: two-column -->
 
 # STEP1のまとめ
 
-![STEP1のまとめ](../diagrams-web/slide_031_STEP1のまとめ.svg)
+## 📋 要件定義の6ステップ
+
+**STEP1-1: 要件引き出し**
+- AIに質問させる手法
+- 文字起こしアプローチ
+
+**STEP1-2: 整理**
+- MoSCoW優先順位付け
+- Mustは20-30%に絞る
+
+**STEP1-3: 構造化**
+- ユーザーストーリーマッピング
+- ジャーニーマップ
+
+**STEP1-4: 非機能要件定義**
+- ⚡ パフォーマンス
+- 🔒 セキュリティ
+- 📈 スケーラビリティ
+
+**STEP1-5: エッジケース洗い出し**
+- エラーケース
+- エッジケース
+- 制約条件
+- Given-When-Then受け入れ基準
+
+**STEP1-6: 可視化・文書化**
+- Vibe Codingプロトタイプ
+- docs/requirements.md作成
+
+## 🎯 なぜこの順序か
+
+**段階的に曖昧さを排除:**
+1. 何を作るか（引き出し）
+2. 優先順位（絞り込み）
+3. ユーザー視点（構造化）
+4. 品質基準（非機能要件）
+5. 異常系（エッジケース）
+6. 可視化（プロトタイプ）
+
+**AIへのGuardrails構築:**
+- 明確な要件 = AIが迷わない
+- 受け入れ基準 = 手抜き防止
+
+## 📊 効果
+
+✅ 後工程の手戻り防止
+✅ 開発期間短縮
+✅ AIが正確に実装
+✅ 品質の安定化
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-diagram-only -->
 
 # STEP1 チェックリスト
 
 ![STEP1チェックリスト](diagrams/diagram_34_step1_checklist.svg)
 
 **必ず確認:**
-- [ ] AIに質問させて曖昧さ排除
-- [ ] MoSCoW優先順位付け
-- [ ] ユーザーストーリー作成
-- [ ] 非機能要件定義
-- [ ] エラー・エッジケース洗い出し
-- [ ] Given-When-Then基準作成
-- [ ] docs/requirements.md文書化
+- [ ] 要件をAIに質問させて曖昧さを排除した
+- [ ] MoSCoWで優先順位付け（Mustは20-30%）
+- [ ] ユーザーストーリーマッピング作成
+- [ ] 非機能要件（性能・セキュリティ・拡張性）定義
+- [ ] エラー・エッジケースを洗い出した
+- [ ] Given-When-Then受け入れ基準作成
+- [ ] Vibe Codingでプロトタイプ確認
+- [ ] docs/requirements.md に文書化
+
+**次のステップ:**
+→ STEP2: 設計ドキュメント作成へ
 
 ---
 
@@ -708,21 +937,24 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-diagram-only -->
 
 # STEP2 チェックリスト
 
 ![STEP2チェックリスト](diagrams/diagram_35_step2_checklist.svg)
 
 **必ず確認:**
-- [ ] Tech Stack確定
-- [ ] アーキテクチャ図作成
-- [ ] ER図作成
-- [ ] API仕様定義
-- [ ] シーケンス図作成
-- [ ] 受入条件詳細化
-- [ ] セキュリティ設計
-- [ ] docs/spec.md作成
+- [ ] Tech Stack確定（フロント・バック・DB・ライブラリ）
+- [ ] システムアーキテクチャ図作成（Mermaid/SVG）
+- [ ] ER図作成（テーブル・カラム・制約・インデックス）
+- [ ] API仕様定義（全エンドポイント）
+- [ ] シーケンス図作成（複雑な処理フロー）
+- [ ] 受入条件詳細化（具体的な値で）
+- [ ] セキュリティ設計（認証・認可・入力検証）
+- [ ] docs/spec.md 作成完了
+
+**次のステップ:**
+→ STEP3: タスク分解へ（Part 2）
 
 ---
 

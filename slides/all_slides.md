@@ -30,7 +30,10 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 22px;
+    font-size: 19px;
+  }
+  section.layout-horizontal-left li {
+    margin-bottom: 5px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -51,8 +54,11 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 22px;
+    font-size: 19px;
     grid-column: 1;
+  }
+  section.layout-horizontal-right li {
+    margin-bottom: 5px;
   }
 
   /* 図のみレイアウト：図を最大化 */
@@ -76,13 +82,49 @@ style: |
   /* 3カラムレイアウト：チェックリスト、比較表など */
   section.three-column {
     columns: 3;
-    column-gap: 30px;
+    column-gap: 25px;
+    font-size: 18px;
   }
-  section.three-column h1, section.three-column h2, section.three-column h3 {
+  section.three-column h1 {
+    font-size: 32px;
     column-span: all;
+  }
+  section.three-column h2, section.three-column h3 {
+    column-span: all;
+    font-size: 22px;
   }
   section.three-column ul, section.three-column ol {
     break-inside: avoid-column;
+  }
+  section.three-column li {
+    margin-bottom: 3px;
+  }
+
+  /* Compactレイアウト：オーバーフロー回避用 */
+  section.compact {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  section.compact h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  section.compact h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  section.compact h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+  section.compact li {
+    margin-bottom: 2px;
+  }
+  section.compact ul, section.compact ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   /* 画像2枚横並び：Before/After、比較用 */
@@ -160,40 +202,11 @@ style: |
 AI駆動開発で開発期間を大幅短縮
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # 本日の目標
 
-## 🎯 1日目のゴール
-**5-STEPフローを理解し、新規開発の基本を習得**
-
-## ⏰ タイムテーブル
-- 午前2時間（Part 1）：基礎+STEP1-2
-- 午後2時間（Part 2）：STEP3-6
-- 演習2時間（Part 3）：実践演習
-
-## 📚 再現可能な開発手法の習得
-
-**①プロンプトパターンの習得**
-- 成功するAIへの指示方法
-- Trust but Verify の実践
-
-**②5-STEPフローのマスター**
-- STEP1: 要件定義
-- STEP2: 設計
-- STEP3: タスク分解
-- STEP4: 実装
-- STEP5: 品質担保＆ドキュメント反映
-
-**③AI制約への対応**
-- Jagged Intelligence（得意/苦手の把握）
-- Reward Hacking（手抜き防止）
-- 忘れっぽさ（ドキュメント化）
-
-## 🚀 効果
-✅ 明日から実務で使える
-✅ チーム展開可能
+![本日の目標](../diagrams-web/slide_002_本日の目標.svg)
 
 ---
 
@@ -269,47 +282,15 @@ AI駆動開発で開発期間を大幅短縮
 ![Reward Hacking問題と対策](diagrams/diagram_39_reward_hacking_examples.svg)
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # 環境準備
 
-## ✅ 必須ツール
-
-**📦 Claude Code**
-- AI開発環境
-- プロジェクト全体を扱うAIアシスタント
-- **なぜ必要:** プロジェクト全体の文脈を理解、複数ファイル一括操作
-
-**🔧 GitHub**
-- バージョン管理
-- 頻繁なコミットで暴走対策
-- **なぜ必要:** AIの暴走から回復可能
-
-**💻 VS Code**
-- エディタ
-- Mermaid Preview拡張推奨
-- **なぜ必要:** 図の即座確認、開発体験向上
-
-## 🌟 推奨ツール
-
-**🐳 Dev Container**
-- 環境統一化
-- dangerously-skip-permissionsモードの安全利用
-- **なぜ推奨:**
-  - 環境の再現性（全員同じ環境）
-  - 実験の安全性（コンテナ内で隔離）
-  - チーム開発でのトラブル防止
-
-## 📋 セットアップチェックリスト
-- [ ] Claude Code インストール
-- [ ] GitHub アカウント
-- [ ] VS Code + Mermaid Preview
-- [ ] (推奨) Dev Container
+![環境準備](../diagrams-web/slide_009_環境準備.svg)
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-horizontal-left compact -->
 
 # セキュリティベストプラクティス（補足）
 
@@ -317,25 +298,13 @@ AI駆動開発で開発期間を大幅短縮
 
 **AIに必ず指示すべきセキュリティ要件:**
 
-**🔒 認証・認可:**
-- bcrypt でパスワードハッシュ化
-- JWT または セッション認証
-- 環境変数で秘密鍵管理
+**🔒 認証・認可:** bcrypt、JWT、環境変数
 
-**🛡️ 入力検証:**
-- SQL injection 対策（PreparedStatement）
-- XSS 対策（エスケープ処理）
-- CSRF トークン
+**🛡️ 入力検証:** SQLi/XSS対策、CSRF
 
-**🔐 データ保護:**
-- HTTPS 必須
-- 機密情報は環境変数
-- ログに機密情報を出さない
+**🔐 データ保護:** HTTPS、機密情報は環境変数
 
-**📊 監視:**
-- ログイン失敗回数制限
-- レート制限
-- 異常アクセス検知
+**📊 監視:** レート制限、異常検知
 
 ---
 
@@ -411,78 +380,25 @@ AI駆動開発で開発期間を大幅短縮
 - Dev Container推奨: コンテナ内→安全化
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # よくある問題と対処法
 
-## 🚫 問題①「ファイルが多すぎる」
-
-**症状:**
-- Claude Codeが反応しない
-- トークン制限エラー頻発
-
-**原因:**
-- node_modules等を読もうとする
-- ビルド成果物を含んでいる
-
-**✅ 対処法:**
-```bash
-# .claudeignore に追加
-node_modules/
-dist/
-build/
-.git/
-*.log
-```
-
-## ⏱️ 問題②「トークン制限」
-
-**症状:**
-- 「コンテキストが満杯」エラー
-- 処理が途中で止まる
-
-**原因:**
-- コンテキストウィンドウ超過
-- 長いセッションの継続
-
-**✅ 対処法:**
-1. `/compact` コマンド実行
-2. タスクを分割して新セッション
-3. 不要なファイルを .claudeignore
-
-## 🎯 問題③「AIが間違った方向」
-
-**症状:**
-- 意図しない実装
-- 想定外のコード生成
-
-**原因:**
-- 曖昧な指示
-- コンテキスト不足
-
-**✅ 対処法:**
-1. `n` で即座に止める
-2. 明確に再指示（具体例を示す）
-3. プランモード活用（確認→実行）
-4. 「確認したいことはある?」と質問促す
+![よくある問題と対処法](../diagrams-web/slide_017_よくある問題と対処法.svg)
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 効率的な指示の出し方
 
 ![プロンプトパターン（良い例vs悪い例）](diagrams/diagram_30_prompt_patterns.svg)
 
-- **❌ 悪い指示:** 「ログイン機能を作って」
-- **✅ 良い指示:**
-  - 制約を明示（bcrypt、環境変数、バリデーション、レート制限）
-  - 段階的に進める（1機能ずつ）
-  - 質問を促す（「確認したいことはある？」）
-  - 自己レビュー依頼（実装後必ず）
-- **毎回のサイクル:**
-  - 指示 → 実装 → AI自己レビュー → 修正 → テスト → コミット
+**❌ 悪い:** 「ログイン機能を作って」
+
+**✅ 良い:** 制約明示（bcrypt、環境変数、@Valid）、段階的実装、質問促す、AI自己レビュー
+
+**サイクル:** 指示→実装→レビュー→テスト→コミット
 
 ---
 
@@ -506,48 +422,11 @@ build/
 - **効果:** 後工程の手戻り防止
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # AIに質問させる手法
 
-## ❌ 問題: AIは「良きに計らう」
-
-**Jagged Intelligence（能力のギザギザ）:**
-- ✅ 得意: コード生成、テスト作成、リファクタリング、技術設計
-- ❌ 苦手: ビジネス要件の解釈、ステークホルダー間の優先順位判断、ドメイン固有ルール
-- 結果: 曖昧な指示では勝手に推測して間違った方向へ
-
-**具体例:**
-- 「ログイン機能を作って」
-  → AIが勝手にJWT選択
-  → 実はセッション認証が要件だった
-  → 手戻り発生
-
-## ✅ 解決策: AIに質問させる
-
-**プロンプトパターン:**
-```
-「ログイン機能を実装する前に、
-確認したいことはある？」
-```
-
-**AIの反応:**
-- 認証方式は？（セッション vs JWT）
-- パスワードポリシーは？
-- 多要素認証は必要？
-- セッション期限は？
-
-**対話で仕様を固める:**
-- 人間が判断（ビジネス要件に基づく）
-- AIが実装（技術的実現）
-
-## 📊 効果
-
-✅ 曖昧さ排除
-✅ 人間が判断、AIが実装
-✅ 手戻りゼロ
-✅ 実装スピード大幅向上
+![AIに質問させる手法](../diagrams-web/slide_022_AIに質問させる手法.svg)
 
 ---
 
@@ -557,49 +436,21 @@ build/
 
 ![文字起こし→AI抽出フロー](diagrams/diagram_40_transcript_approach.svg)
 
-## 🎯 なぜこの手法が強力か
+## なぜ強力か
 
-**顧客の言葉をそのまま記録:**
-- 解釈のズレゼロ
-- 「言った/言わない」問題の解消
-- 顧客の本当のニーズを捉える
+**顧客の言葉をそのまま記録:** 解釈のズレゼロ、「言った/言わない」問題の解消
 
-**AIが要件構造化:**
-- 漏れ・ヌケ防止
-- 自動で優先順位付け
-- **不明点リスト**も自動生成
+**AIが要件構造化:** 漏れ・ヌケ防止、自動優先順位付け
 
-## 🔄 4ステップワークフロー
+## 4ステップ
 
-**STEP1: 録音**
-- Zoom/Google Meet録画
-- 音声だけでもOK
+**STEP1: 録音** Zoom/Google Meet録画
 
-**STEP2: 文字起こし**
-- Whisper API（高精度）
-- Google Docs音声入力
-- Claude Codeに直接音声入力
+**STEP2: 文字起こし** Whisper API、Claude Code直接音声入力
 
-**STEP3: AI抽出依頼**
-```
-「この文字起こしから
-要件を抽出して」
-```
+**STEP3: AI抽出** 「この文字起こしから要件を抽出して」
 
-**STEP4: AI出力確認**
-- ユーザーストーリー
-- 機能一覧（MoSCoW分類済み）
-- **不明点リスト** → クライアント確認
-
-## 💡 実践例
-
-**顧客の言葉:**
-「営業が顧客管理したい。スマホ対応。Excel同時編集で困ってる」
-
-**AI抽出結果:**
-- Must: 顧客CRUD、モバイル対応
-- 不明点: 顧客項目定義？ステータス管理？
-→ クライアント確認
+**STEP4: 確認** ユーザーストーリー、MoSCoW分類、不明点確認
 
 ---
 
@@ -642,48 +493,21 @@ build/
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 非機能要件
 
 ![非機能要件チェックリスト](diagrams/diagram_32_nonfunctional_requirements.svg)
 
-## 🎯 なぜ非機能要件が重要か
+**なぜ重要か:** 機能要件だけでは本番で使えない（性能・セキュリティ・拡張性）
 
-**機能要件だけでは本番で使えない:**
-- 性能不足（遅い、落ちる）
-- セキュリティ脆弱性
-- 拡張性の欠如
+**⚡ パフォーマンス:** 1000件快適、200ms以内
 
-**AIは明示しないと考慮しない:**
-- Reward Hacking → 手抜き実装
-- 非機能要件 = Guardrails
+**🔒 セキュリティ:** JWT、bcrypt、HTTPS
 
-## 📊 4つの重要カテゴリ
+**📈 スケーラビリティ:** 同時100人
 
-**⚡ パフォーマンス**
-- 1000件まで快適動作
-- レスポンス200ms以内
-- N+1クエリ禁止
-
-**🔒 セキュリティ**
-- JWT認証
-- bcryptハッシュ化
-- HTTPS必須
-- OWASP Top 10対応
-
-**📈 スケーラビリティ**
-- 同時接続100人
-- 将来1000人対応可能な設計
-- 水平スケール考慮
-
-**📱 モバイル対応**
-- レスポンシブデザイン必須
-- タッチ操作最適化
-- オフライン対応考慮
-
-## 💡 AIへの指示
-**「非機能要件も満たして実装」と明示**
+**📱 モバイル:** レスポンシブ
 
 ---
 
@@ -721,81 +545,28 @@ build/
 - **メリット:** クライアントとの認識合わせが簡単
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # STEP1のまとめ
 
-## 📋 要件定義の6ステップ
-
-**STEP1-1: 要件引き出し**
-- AIに質問させる手法
-- 文字起こしアプローチ
-
-**STEP1-2: 整理**
-- MoSCoW優先順位付け
-- Mustは20-30%に絞る
-
-**STEP1-3: 構造化**
-- ユーザーストーリーマッピング
-- ジャーニーマップ
-
-**STEP1-4: 非機能要件定義**
-- ⚡ パフォーマンス
-- 🔒 セキュリティ
-- 📈 スケーラビリティ
-
-**STEP1-5: エッジケース洗い出し**
-- エラーケース
-- エッジケース
-- 制約条件
-- Given-When-Then受け入れ基準
-
-**STEP1-6: 可視化・文書化**
-- Vibe Codingプロトタイプ
-- docs/requirements.md作成
-
-## 🎯 なぜこの順序か
-
-**段階的に曖昧さを排除:**
-1. 何を作るか（引き出し）
-2. 優先順位（絞り込み）
-3. ユーザー視点（構造化）
-4. 品質基準（非機能要件）
-5. 異常系（エッジケース）
-6. 可視化（プロトタイプ）
-
-**AIへのGuardrails構築:**
-- 明確な要件 = AIが迷わない
-- 受け入れ基準 = 手抜き防止
-
-## 📊 効果
-
-✅ 後工程の手戻り防止
-✅ 開発期間短縮
-✅ AIが正確に実装
-✅ 品質の安定化
+![STEP1のまとめ](../diagrams-web/slide_031_STEP1のまとめ.svg)
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-horizontal-left -->
 
 # STEP1 チェックリスト
 
 ![STEP1チェックリスト](diagrams/diagram_34_step1_checklist.svg)
 
 **必ず確認:**
-- [ ] 要件をAIに質問させて曖昧さを排除した
-- [ ] MoSCoWで優先順位付け（Mustは20-30%）
-- [ ] ユーザーストーリーマッピング作成
-- [ ] 非機能要件（性能・セキュリティ・拡張性）定義
-- [ ] エラー・エッジケースを洗い出した
-- [ ] Given-When-Then受け入れ基準作成
-- [ ] Vibe Codingでプロトタイプ確認
-- [ ] docs/requirements.md に文書化
-
-**次のステップ:**
-→ STEP2: 設計ドキュメント作成へ
+- [ ] AIに質問させて曖昧さ排除
+- [ ] MoSCoW優先順位付け
+- [ ] ユーザーストーリー作成
+- [ ] 非機能要件定義
+- [ ] エラー・エッジケース洗い出し
+- [ ] Given-When-Then基準作成
+- [ ] docs/requirements.md文書化
 
 ---
 
@@ -937,24 +708,21 @@ build/
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-horizontal-left -->
 
 # STEP2 チェックリスト
 
 ![STEP2チェックリスト](diagrams/diagram_35_step2_checklist.svg)
 
 **必ず確認:**
-- [ ] Tech Stack確定（フロント・バック・DB・ライブラリ）
-- [ ] システムアーキテクチャ図作成（Mermaid/SVG）
-- [ ] ER図作成（テーブル・カラム・制約・インデックス）
-- [ ] API仕様定義（全エンドポイント）
-- [ ] シーケンス図作成（複雑な処理フロー）
-- [ ] 受入条件詳細化（具体的な値で）
-- [ ] セキュリティ設計（認証・認可・入力検証）
-- [ ] docs/spec.md 作成完了
-
-**次のステップ:**
-→ STEP3: タスク分解へ（Part 2）
+- [ ] Tech Stack確定
+- [ ] アーキテクチャ図作成
+- [ ] ER図作成
+- [ ] API仕様定義
+- [ ] シーケンス図作成
+- [ ] 受入条件詳細化
+- [ ] セキュリティ設計
+- [ ] docs/spec.md作成
 
 ---
 
@@ -1018,7 +786,10 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 22px;
+    font-size: 19px;
+  }
+  section.layout-horizontal-left li {
+    margin-bottom: 5px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -1039,8 +810,11 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 22px;
+    font-size: 19px;
     grid-column: 1;
+  }
+  section.layout-horizontal-right li {
+    margin-bottom: 5px;
   }
 
   /* 図のみレイアウト：図を最大化 */
@@ -1064,13 +838,49 @@ style: |
   /* 3カラムレイアウト：チェックリスト、比較表など */
   section.three-column {
     columns: 3;
-    column-gap: 30px;
+    column-gap: 25px;
+    font-size: 18px;
   }
-  section.three-column h1, section.three-column h2, section.three-column h3 {
+  section.three-column h1 {
+    font-size: 32px;
     column-span: all;
+  }
+  section.three-column h2, section.three-column h3 {
+    column-span: all;
+    font-size: 22px;
   }
   section.three-column ul, section.three-column ol {
     break-inside: avoid-column;
+  }
+  section.three-column li {
+    margin-bottom: 3px;
+  }
+
+  /* Compactレイアウト：オーバーフロー回避用 */
+  section.compact {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  section.compact h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  section.compact h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  section.compact h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+  section.compact li {
+    margin-bottom: 2px;
+  }
+  section.compact ul, section.compact ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   /* 画像2枚横並び：Before/After、比較用 */
@@ -1148,69 +958,18 @@ style: |
 ## STEP3: タスク分解（35分）
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # STEP3 タスク分解とは
 
-## 🎯 目的
-**大きな機能を実装可能な小さなタスクに分解**
-
-## 🚨 なぜタスク分解が必要か
-
-**AIの思考を言語化:**
-- AIは忘れっぽい→全体像を把握しづらい
-- Reward Hacking→いきなり実装すると手抜きしがち
-- **計画書＝AIの思考を可視化**
-
-**人間の役割:**
-- AIの計画をレビュー
-- 実装前に軌道修正
-- 「あっ、そっちじゃない」が言える
-
-## 📊 効果
-
-✅ 実装前に方向性確認
-✅ 手戻り防止
-✅ 開発リスク最小化
-✅ 進捗の可視化
+![STEP3 タスク分解とは](../diagrams-web/slide_003_STEP3_タスク分解とは.svg)
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # タスク分解 = AIの思考を言語化（重要）
 
-## 🧠 AIに計画を立てさせる理由
-
-**Trust but Verify:**
-- AIにもエラーあり
-- 実装前に確認必須
-- AIが「何をしようとしているか」を事前に把握
-
-**人間の思考整理と同じ:**
-- 人間：頭の中を整理してから実装
-- AI：計画を立ててから実装
-- **整理せずに実装 = 迷走**
-
-## 💡 プロンプト例
-
-```
-「この設計書（docs/spec.md）に基づいて、
-実装タスク一覧を作成してください。
-
-- Phase分けして
-- 各タスクは30分〜2時間で完了
-- 依存関係を明示
-- 完了条件を具体的に」
-```
-
-## 📊 効果
-
-✅ AIの思考が可視化される
-✅ 実装前に方向性確認
-✅ 計画段階で軌道修正
-✅ コスト削減・時間短縮
+![タスク分解 = AIの思考を言語化（重要）](../diagrams-web/slide_004_タスク分解_AIの思考を言語化重要.svg)
 
 ---
 
@@ -1240,48 +999,11 @@ style: |
 - **効果:** リスク最小化、確実な進捗
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # タスク粒度（30分〜2時間）
 
-## 🎯 なぜ適切な粒度が重要か
-
-**❌ 大きすぎるタスク:**
-- 進捗が見えない
-- AIが全体像を見失う
-- 問題発見が遅れる
-- モチベーション低下
-
-**❌ 小さすぎるタスク:**
-- 管理コストが増大
-- オーバーヘッド増加
-- タスク切り替えの手間
-
-## ✅ 適切な粒度
-
-**時間:** 30分〜2時間
-**頻度:** 1日で3-5タスク程度
-**判断基準:** 1回のコミットで完結できるか？
-
-## 📋 良い例 vs 悪い例
-
-**✅ 良い例（適切な粒度）:**
-- ユーザー登録API実装
-- ログイン機能のテスト作成
-- パスワードリセットメール送信
-
-**❌ 悪い例（大きすぎ）:**
-- バックエンド全部
-- 認証システム全体
-- ユーザー管理機能一式
-
-## 📊 効果
-
-✅ モチベーション維持
-✅ 問題の早期発見
-✅ 進捗の可視化
-✅ 達成感を継続的に得られる
+![タスク粒度（30分〜2時間）](../diagrams-web/slide_007_タスク粒度30分2時間.svg)
 
 ---
 
@@ -1325,72 +1047,28 @@ style: |
 - **Trust but Verify:** AI生成後、必ず人間が確認・調整
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # STEP3のまとめ
 
-## 📋 タスク分解の本質
-
-**タスク分解＝AIの思考を言語化:**
-- 計画を可視化
-- 人間が軌道修正できる
-- 実装前に「あっ、そっちじゃない」
-
-## 🎯 5つのキーポイント
-
-**①Phase分け戦略**
-- Phase 1: 基盤
-- Phase 2: コア機能
-- Phase 3: 拡張機能
-- Phase 4: 仕上げ
-
-**②適切な粒度**
-- 30分〜2時間で1タスク
-- 1日で3-5タスク
-- 進捗が見える
-
-**③依存関係の明示**
-- 手戻り防止
-- 効率的なスケジューリング
-- 並行作業の特定
-
-**④タスク一覧テンプレート**
-- Phase・タスク名・所要時間
-- 依存関係・完了条件
-- Markdown形式でGit管理
-
-**⑤AI活用**
-- 計画作成時間を大幅短縮
-- 人間はレビューに集中
-
-## 📊 効果
-
-✅ 実装前に方向性確認
-✅ リスク最小化
-✅ 進捗の可視化
-✅ 手戻り防止
+![STEP3のまとめ](../diagrams-web/slide_011_STEP3のまとめ.svg)
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-horizontal-left -->
 
 # STEP3 チェックリスト
 
 ![STEP3チェックリスト](diagrams/diagram_37_step3_checklist.svg)
 
 **必ず確認:**
-- [ ] タスク一覧をAIに生成させた
-- [ ] Phase分け（Phase 1-4）
-- [ ] 各タスクは30分〜2時間
-- [ ] 依存関係を明示
-- [ ] 完了条件を具体的に記載
-- [ ] 並行作業可能なタスクを特定
-- [ ] テンプレート形式で記載
-- [ ] docs/tasks.md に文書化
-
-**次のステップ:**
-→ STEP4: 実装へ
+- [ ] タスク一覧AI生成
+- [ ] Phase分け
+- [ ] タスク粒度30分〜2時間
+- [ ] 依存関係明示
+- [ ] 完了条件記載
+- [ ] 並行作業特定
+- [ ] docs/tasks.md文書化
 
 ---
 
@@ -1401,71 +1079,18 @@ style: |
 ## STEP4: 実装（40分）
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # 実装の3原則（AIの制約に対応）
 
-### ①小さく作る（Increment）
-- **理由:** AIは忘れっぽいので小刻みに
-- **方法:** 1タスク30分〜2時間で完了
-- **効果:** 常に動く状態を維持、問題を早期発見
-
-### ②テスト駆動（TDD/BDD）
-- **理由:** Trust but Verify、AIが自己完結
-- **方法:** Red-Green-Refactorサイクル
-- **効果:** AIが自動でテスト→修正を繰り返す
-
-### ③AI自己レビュー必須
-- **理由:** Reward Hacking対策、手抜き検出
-- **方法:** 「このコードをレビューして」と毎回指示
-- **効果:** 多くのバグを自動検出
+![実装の3原則（AIの制約に対応）](../diagrams-web/slide_015_実装の3原則AIの制約に対応.svg)
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # 実装の標準ワークフロー
 
-## 🔄 1タスクごとの7ステップサイクル
-
-**STEP1: タスク選択**
-- タスク一覧から次のタスクを選ぶ
-- 依存関係を確認
-
-**STEP2: テスト作成（Red）**
-- 失敗するテストを書く
-- Given-When-Then形式
-
-**STEP3: 実装（Green）**
-- 最小実装でテストを通す
-- 過剰実装しない
-
-**STEP4: AI自己レビュー**
-```
-「このコードをレビューして」
-```
-
-**STEP5: 修正**
-- レビュー指摘事項を修正
-- セキュリティ・エッジケース対応
-
-**STEP6: 動作確認**
-- 実際に動かして確認
-- E2Eテスト実行
-
-**STEP7: コミット**
-- Git管理
-- 明確なコミットメッセージ
-
-## 🔁 繰り返し
-
-**1タスク完了 → 次のタスク**
-
-このサイクルを繰り返すことで:
-- ✅ 常に動く状態を維持
-- ✅ 問題を早期発見
-- ✅ 品質を継続的に保証
+![実装の標準ワークフロー](../diagrams-web/slide_016_実装の標準ワークフロー.svg)
 
 ---
 
@@ -1517,63 +1142,11 @@ style: |
   - .env作成、.gitignore追加、.env.example用意
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # パスワード・JWT認証の実装
 
-## ❌ NG例（Reward Hacking）
-
-**AIが手抜きする典型例:**
-- 平文パスワード保存
-- APIキーをハードコーディング
-- 「とりあえず動く」実装
-- セキュリティ無視
-
-**なぜこうなるか:**
-- タスク完了を最優先（Reward Hacking）
-- セキュリティへの報酬がない
-- セキュリティベストプラクティスは知っているが、明示しないと省略
-
-## ✅ ベストプラクティス
-
-**パスワード処理:**
-```java
-// 登録時
-String hashed = passwordEncoder.encode(password);
-user.setPassword(hashed);
-
-// ログイン時
-boolean matches = passwordEncoder.matches(
-  inputPassword,
-  user.getPassword()
-);
-```
-
-**JWT秘密鍵管理:**
-```java
-@Value("${jwt.secret}")
-private String jwtSecret;
-```
-
-**.envファイル:**
-```bash
-JWT_SECRET=your-256-bit-secret-key
-DATABASE_PASSWORD=secure-password
-```
-
-## 💡 プロンプトに必ず明記
-
-```
-「ユーザー登録APIを実装。
-以下を必須で守ること:
-- BCryptでパスワードハッシュ化
-- JWT秘密鍵は環境変数から取得
-- .envファイルを使用
-- .gitignoreに.envを追加」
-```
-
-**明示しないとAIは手抜きする！**
+![パスワード・JWT認証の実装](../diagrams-web/slide_020_パスワードJWT認証の実装.svg)
 
 ---
 
@@ -1625,80 +1198,28 @@ DATABASE_PASSWORD=secure-password
 - 追加コストほぼゼロで品質大幅向上
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # STEP4のまとめ
 
-## 🎯 実装の3原則
-
-**①小さく作る（Increment）**
-- AIは忘れっぽい対策
-- 30分〜2時間で1タスク
-- 常に動く状態を維持
-
-**②テスト駆動（TDD/BDD）**
-- Trust but Verify自動化
-- AIが自己完結
-- Red-Green-Refactorサイクル
-
-**③AI自己レビュー必須**
-- Reward Hacking対策
-- 手抜き検出
-- 40-60%のバグを自動検出
-
-## 🔒 セキュリティファースト
-
-**必須項目:**
-- ✅ BCryptパスワードハッシュ化
-- ✅ 環境変数で機密情報管理
-- ✅ @Validバリデーション
-- ✅ OWASP Top 10対応
-
-**プロンプトに明示:**
-```
-「BCrypt・環境変数・@Valid必須」
-```
-
-## 🔄 標準ワークフロー
-
-**7ステップサイクル:**
-1. タスク選択
-2. テスト作成（Red）
-3. 実装（Green）
-4. AI自己レビュー
-5. 修正
-6. 動作確認
-7. コミット
-
-## 📊 効果
-
-✅ 早期問題発見
-✅ セキュアな実装
-✅ AIが自己完結
-✅ 品質の自動保証
+![STEP4のまとめ](../diagrams-web/slide_025_STEP4のまとめ.svg)
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-horizontal-left -->
 
 # STEP4 チェックリスト
 
 ![STEP4チェックリスト](diagrams/diagram_38_step4_checklist.svg)
 
 **必ず確認:**
-- [ ] 1タスク30分〜2時間で完了
-- [ ] Given-When-Thenテストを先に作成
-- [ ] 最小実装でテストを通した
-- [ ] AI自己レビュー実施
-- [ ] セキュリティ要件を満たした（BCrypt・環境変数・@Valid）
-- [ ] エラーハンドリング実装
-- [ ] エッジケース対応
-- [ ] 動作確認完了
+- [ ] タスク30分〜2時間
+- [ ] Given-When-Thenテスト先行
+- [ ] 最小実装でテスト通過
+- [ ] AI自己レビュー
+- [ ] セキュリティ要件満たす
+- [ ] エラーハンドリング
 - [ ] コミット実施
-
-**次のステップ:**
-→ STEP5: 品質担保＆ドキュメント反映へ
 
 ---
 
@@ -1767,30 +1288,11 @@ DATABASE_PASSWORD=secure-password
 - Serena：大規模プロジェクト高速検索、Browser DevTools：コンソールエラー自動キャプチャ
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # AI自己レビュー4種類の使い分け
 
-**なぜ観点別レビューが必要か**
-- 一般レビューだけでは専門的な問題を見落とす
-- 観点別レビューで検出率が大幅向上
-
-**①一般**
-- 実装直後（毎回必須）
-- ロジックエラー、エッジケース、命名規則
-
-**②セキュリティ**
-- 認証・データ処理時
-- SQL injection、XSS、CSRF、平文パスワード
-
-**③パフォーマンス**
-- DB操作・大量データ処理時
-- N+1問題、インデックス欠如、メモリリーク
-
-**④テスト**
-- テストコード作成後
-- テストカバレッジ、境界値、モック不備
+![AI自己レビュー4種類の使い分け](../diagrams-web/slide_035_AI自己レビュー4種類の使い分け.svg)
 
 ---
 
@@ -1838,131 +1340,34 @@ DATABASE_PASSWORD=secure-password
 - **改善率:** 多くのバグ検出、追加コストほぼゼロ
 
 ---
-
-<!-- _class: three-column -->
+<!-- _class: layout-diagram-only -->
 
 # STEP5のまとめ
 
-## 🎯 品質担保の核心
-
-**TDDとAI活用の相乗効果:**
-- AIが自己完結
-- 人間の負担が劇的に軽減
-- テスト→エラー検知→修正を自動化
-
-## 🧪 4つのテスト戦略
-
-**①ユニットテスト（TDD）**
-- Given-When-Then形式
-- Red-Green-Refactor
-
-**②E2Eテスト**
-- Playwright使用
-- ユーザー視点の検証
-
-**③ビジュアルリグレッション**
-- スクリーンショット比較
-- UI崩れ自動検出
-
-**④MCP関連ツール**
-- Context 7: 最新ドキュメント参照
-- Serena: 高速検索
-- Browser DevTools: エラー自動キャプチャ
-
-## 🔍 AI自己レビュー4種類
-
-**①一般レビュー**
-- 実装直後（毎回必須）
-- ロジックエラー・エッジケース
-
-**②セキュリティ特化**
-- OWASP Top 10チェック
-- 脆弱性大幅削減
-
-**③パフォーマンス特化**
-- N+1問題・メモリリーク
-- レスポンス大幅改善（N+1解消など）
-
-**④テストカバレッジ**
-- エッジケース・異常系
-- テストカバレッジ向上
-
-## 🔧 リファクタリング3つの観点
-
-**①重複コード削除**
-- コピペで生成された重複を削減
-- 保守コスト削減
-
-**②デザインパターン適用**
-- if-else → Strategy
-- オブジェクト生成 → Factory
-- 拡張容易な構造に
-
-**③ライブラリ活用**
-- 車輪の再発明を避ける
-- エッジケーステスト済み
-- セキュリティパッチ自動適用
-
-## 📚 Living Documentation
-
-**なぜ必要か:**
-- AIは忘れっぽい
-- ドキュメント＝AIの外部メモリ
-- 実装と同期（常に信頼できる）
-
-**3種類のドキュメント:**
-
-**①architecture.md**
-- システム全体像
-- 構成・ディレクトリ
-- 設計判断の理由
-
-**②README.md**
-- セットアップ手順
-- 使い方
-- トラブルシューティング
-
-**③CLAUDE.md**
-- 成功したプロンプトパターン
-- ハマった点と回避策
-- 再現性の確保
-
-## 📊 効果
-
-✅ Trust but Verify自動化
-✅ 技術的負債の早期解消
-✅ AIの外部メモリとして機能
-✅ 知見の蓄積
+![STEP5のまとめ](../diagrams-web/slide_041_STEP5のまとめ.svg)
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-horizontal-left compact -->
 
 # STEP5 チェックリスト
 
 ![STEP5チェックリスト](diagrams/diagram_39_step5_checklist.svg)
 
 **品質担保:**
-- [ ] ユニットテストカバレッジ80%以上
-- [ ] E2Eテスト（Playwright）実施
-- [ ] ビジュアルリグレッションテスト実施
-- [ ] AI一般レビュー実施
-- [ ] AIセキュリティレビュー実施（OWASP Top 10）
-- [ ] AIパフォーマンスレビュー実施（N+1チェック）
-- [ ] AIテストカバレッジレビュー実施
-- [ ] 全テスト通過確認
+- [ ] カバレッジ80%+
+- [ ] E2Eテスト
+- [ ] AI一般レビュー
+- [ ] AIセキュリティレビュー
 
-**リファクタリング＆ドキュメント:**
+**リファクタリング:**
 - [ ] 重複コード削除
-- [ ] デザインパターン適用検討
-- [ ] ライブラリ活用検討
-- [ ] architecture.md 更新（システム全体像）
-- [ ] README.md 更新（セットアップ・使い方）
-- [ ] CLAUDE.md 更新（成功パターン・ハマった点）
-- [ ] 頻繁にコミット実施
+- [ ] パターン適用
 
-**完了:**
-→ 1つの機能開発サイクル完了！
+**ドキュメント:**
+- [ ] architecture.md
+- [ ] README.md
+- [ ] CLAUDE.md
 
 ---
 
@@ -2017,7 +1422,7 @@ DATABASE_PASSWORD=secure-password
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # Part 2のキーポイント
 
@@ -2065,7 +1470,10 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 22px;
+    font-size: 19px;
+  }
+  section.layout-horizontal-left li {
+    margin-bottom: 5px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -2086,8 +1494,11 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 22px;
+    font-size: 19px;
     grid-column: 1;
+  }
+  section.layout-horizontal-right li {
+    margin-bottom: 5px;
   }
 
   /* 図のみレイアウト：図を最大化 */
@@ -2111,13 +1522,49 @@ style: |
   /* 3カラムレイアウト：チェックリスト、比較表など */
   section.three-column {
     columns: 3;
-    column-gap: 30px;
+    column-gap: 25px;
+    font-size: 18px;
   }
-  section.three-column h1, section.three-column h2, section.three-column h3 {
+  section.three-column h1 {
+    font-size: 32px;
     column-span: all;
+  }
+  section.three-column h2, section.three-column h3 {
+    column-span: all;
+    font-size: 22px;
   }
   section.three-column ul, section.three-column ol {
     break-inside: avoid-column;
+  }
+  section.three-column li {
+    margin-bottom: 3px;
+  }
+
+  /* Compactレイアウト：オーバーフロー回避用 */
+  section.compact {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  section.compact h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  section.compact h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  section.compact h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+  section.compact li {
+    margin-bottom: 2px;
+  }
+  section.compact ul, section.compact ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   /* 画像2枚横並び：Before/After、比較用 */
@@ -2202,53 +1649,16 @@ style: |
 
 ![5-STEPフロー全体](diagrams/diagram_03_5step_flow.svg)
 
-## 🎯 5-STEPフロー全体の確認
+**5-STEPフロー:** 要件定義 → 設計 → タスク分解 → 実装 → 品質担保
 
-**STEP1: 要件定義** → **STEP2: 設計** → **STEP3: タスク分解** → **STEP4: 実装** → **STEP5: 品質担保** → **STEP6: リファクタリング＆ドキュメント**
-
-## 🔑 成功の鍵
-**各ステップを確実に実行すること**
-- 飛ばさない
-- 急がば回れ
-- AIの制約を理解して対処
+**成功の鍵:** 各ステップを確実に実行、飛ばさない、AIの制約を理解
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # よくある失敗①いきなりコード
 
-## ❌ なぜ失敗するか
-
-**Jagged Intelligence（能力のギザギザ）:**
-- コード生成・技術設計は人間超え、だがビジネス要件の解釈は苦手
-- 曖昧な要件のまま実装開始
-- 勝手に推測して間違った方向
-
-**Reward Hacking:**
-- 手抜きで「とりあえず動く」を選択
-- セキュリティ・品質は二の次
-
-**結果:**
-- 何度も作り直し
-- 手戻り多発
-- 時間がかかる
-
-## ✅ 正しいアプローチ
-
-**急がば回れ:**
-前工程を丁寧にやることが結果的に最速
-
-**STEP1-2で曖昧さを排除:**
-- 要件定義で「何を作るか」を明確化
-- 設計で「どう作るか」を明確化
-- Guardrails設定
-
-## 📊 効果
-
-✅ 手戻りゼロ
-✅ 実装スピード大幅向上
-✅ 品質の安定化
+![よくある失敗①いきなりコード](../diagrams-web/slide_004_よくある失敗①いきなりコード.svg)
 
 ---
 
@@ -2277,50 +1687,11 @@ style: |
 ![1日目のキーメッセージ](diagrams/diagram_48_day1_key_messages.svg)
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # 演習課題の説明（TODOアプリ）
 
-## 🎯 課題内容
-
-**TODOアプリを5-STEPで開発**
-
-**5-STEPフロー全体を体験:**
-1. 要件定義
-2. 設計
-3. タスク分解
-4. 実装
-5. 品質担保
-6. リファクタリング＆ドキュメント反映
-
-**技術スタック:**
-- Spring Boot ベース
-- DB連携
-- バリデーション
-- TDD/BDD
-
-## 📋 要件
-
-**コア機能:**
-- ✅ タスク追加
-- ✅ タスク編集
-- ✅ タスク削除
-- ✅ タスク一覧表示
-
-**品質要件:**
-- ✅ BCryptパスワードハッシュ化
-- ✅ 環境変数管理
-- ✅ バリデーション
-- ✅ テストカバレッジ80%以上
-
-## ⏰ 時間配分（115分）
-
-**環境セットアップ**: 10分
-**STEP1-2**: 20分
-**STEP3**: 15分
-**STEP4**: 30分
-**STEP5**: 40分
+![演習課題の説明（TODOアプリ）](../diagrams-web/slide_008_演習課題の説明TODOアプリ.svg)
 
 ---
 
@@ -2331,29 +1702,15 @@ style: |
 ## 演習（115分 ≒ 2時間）
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # 演習の目的と課題
 
-### 演習の目的
-- 5-STEPフロー実践
-- AI駆動開発の効果体感
-- 前工程の重要性・TDD・AI自己レビュー効果実感
-
-### 課題：TODOアプリ開発（Spring Boot）
-
-**要件:**
-- タスク追加・編集・削除・一覧
-- Spring Boot、DB連携、バリデーション
-
-**なぜTODOアプリ？**
-- シンプルだが実用的、CRUD網羅
-- 2時間で5-STEP全体体験可能
+![演習の目的と課題](../diagrams-web/slide_011_演習の目的と課題.svg)
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 ### 演習の進め方（時間配分）
 
@@ -2385,7 +1742,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 ### 演習のゴール
 - **5-STEPの流れを体験する**
@@ -2409,34 +1766,11 @@ style: |
 ## 演習でよくあるつまずきポイントと対処法
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # つまずきポイントと対処法
 
-### ① 要件が曖昧で手が止まる
-- **原因：** AIに質問させていない
-- **対処法：** 「曖昧な点を質問して」→AIが逆質問
-
-### ② いきなり実装を始める
-- **原因：** 前工程の重要性を忘れている
-- **対処法：** STEP1-2必須実施、急がば回れ
-
-### ③ テストを後回しにする
-- **原因：** TDD重要性の理解不足
-- **対処法：** Red-Green-Refactorサイクル厳守
-
-### ④ AI自己レビューをスキップ
-- **原因：** 時間がないと感じる
-- **対処法：** 数秒で多くのバグ検出、時間節約
-
-### ⑤ トークン制限エラー
-- **原因：** .claudeignore不十分
-- **対処法：** node_modules等除外、/compact実行
-
-### ⑥ AIが間違った方向に進む
-- **原因：** 受け入れ条件が不明確
-- **対処法：** こまめに確認・軌道修正
+![つまずきポイントと対処法](../diagrams-web/slide_016_つまずきポイントと対処法.svg)
 
 ---
 
@@ -2448,50 +1782,18 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # 演習成功のチェックリスト①
 
-### STEP1-2: 要件定義・設計
-- ✅ AIに質問させて曖昧さ排除
-- ✅ ユーザーストーリー作成
-- ✅ エラー・エッジケース洗い出し
-- ✅ 受け入れ基準（Given-When-Then）
-- ✅ Tech Stack Setup決定
-- ✅ DBスキーマ設計
-- ✅ API仕様定義
-
-### STEP3: タスク分解
-- ✅ タスク一覧をAI生成
-- ✅ Phase分け確認
-- ✅ タスク粒度調整（30分〜2時間）
-- ✅ 依存関係可視化
-- ✅ 計画レビュー・調整
+![演習成功のチェックリスト①](../diagrams-web/slide_019_演習成功のチェックリスト①.svg)
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # 演習成功のチェックリスト②
 
-**STEP4: 実装**
-- ✅ TDD/BDD実装（Red-Green-Refactor）
-- ✅ Given-When-Then形式テスト
-- ✅ インクリメンタル開発
-- ✅ 環境変数で秘密情報管理
-- ✅ 入力値バリデーション
-- ✅ AI自己レビュー実施
-- ✅ 頻繁にコミット
-
-**STEP5: 品質担保＆ドキュメント反映**
-- ✅ カバレッジ80%以上確認
-- ✅ E2Eテスト実施
-- ✅ AI観点別レビュー（一般・セキュリティ・パフォーマンス・テスト）
-- ✅ 冗長・重複コード削除
-- ✅ リファクタリング実施
-- ✅ architecture.md生成
-- ✅ README.md作成
-- ✅ CLAUDE.md更新（成功パターン・ハマった点）
+![演習成功のチェックリスト②](../diagrams-web/slide_020_演習成功のチェックリスト②.svg)
 
 ---
 
@@ -2503,7 +1805,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 演習で体感できること
 
@@ -2553,7 +1855,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 成果物：品質基準
 
@@ -2578,84 +1880,34 @@ style: |
 ## 1日目全体の振り返り
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # 1日目全体の振り返り
 
-### 🌅 午前（Part 1）で学んだこと
-**基礎とSTEP1-2**
-- AI活用の3原則（Jagged Intelligence、Trust but Verify、Guardrails）
-- Claude Codeの使い方（3つのモード）
-- STEP1: 要件定義（曖昧さ排除）
-- STEP2: 設計ドキュメント（Spec-Driven）
-
-### 🌤️ 午後前半（Part 2）で学んだこと
-**STEP3-5実践**
-- STEP3: タスク分解（AI思考言語化）
-- STEP4: 実装（小さく・TDD・AI自己レビュー）
-- STEP5: 品質担保＆ドキュメント反映（TDDとAI相乗効果、Living Documentation）
-
-### 🌆 午後後半（Part 3）で体験したこと
-**5-STEPフロー実践**
-- 5-STEPフロー全体実践
-- 前工程の重要性、TDDの威力
-- AI自己レビュー効果
-- Living Documentationの価値
-
-### 🎯 キーメッセージ
-1. **曖昧さ徹底排除:** STEP1-2を丁寧に
-2. **AI思考可視化:** STEP3で計画作成
-3. **TDD自己完結:** STEP4-5でAI自律
-4. **知見蓄積:** STEP6でドキュメント化
-5. **急がば回れ:** 前工程が結果的に最速
+![1日目全体の振り返り](../diagrams-web/slide_030_1日目全体の振り返り.svg)
 
 ---
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 ## 2日目への準備
 
-<!-- _class: two-column -->
+**📅 2日目の内容**
+- リバースエンジニアリング
+- テストシナリオ作成
+- デグレ防止
 
-### 📅 2日目の内容（予告）
+**📚 復習推奨**
+- 5-STEP フロー
+- AI制約対策
+- TDD/BDD
 
-**既存システムへの機能追加:**
-- リバースエンジニアリング（既存コードから仕様を読み解く）
-- テストシナリオ一覧作成（モレ・ヌケ防止）
-- デグレ防止（既存機能が壊れないことを保証）
-- 既存システムへの機能追加（実プロジェクトベース）
-
-**1日目との違い:**
-- 1日目: 新規開発（ゼロから作る）
-- 2日目: 既存システム改修（理解→追加）
-
-### 📚 1日目の復習推奨項目
-
-**重要概念:**
-- ✅ 5-STEPフローの各ステップの目的
-- ✅ AI制約（Jagged Intelligence、Reward Hacking、忘れっぽさ）
-- ✅ Trust but Verify原則
-
-**実践手法:**
-- ✅ TDD/BDDのRed-Green-Refactorサイクル
-- ✅ AI自己レビューの4つの観点
-- ✅ Living Documentationの概念
-- ✅ セキュリティベストプラクティス
-
-### 🏠 宿題（任意）
-
-**レベル1: 基礎固め**
-- 演習で作成したTODOアプリに機能追加してみる
-
-**レベル2: 実践**
-- 自分のプロジェクトで5-STEPフローを試してみる
-
-**レベル3: 習慣化**
-- AI自己レビューを習慣化してみる
-- 成功したプロンプトをCLAUDE.mdに記録
+**🏠 宿題**
+- TODOアプリ機能追加
+- 自プロジェクトで5-STEP
+- AI自己レビュー習慣化
 ---
 marp: true
 theme: default
@@ -2686,7 +1938,10 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 22px;
+    font-size: 19px;
+  }
+  section.layout-horizontal-left li {
+    margin-bottom: 5px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -2707,8 +1962,11 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 22px;
+    font-size: 19px;
     grid-column: 1;
+  }
+  section.layout-horizontal-right li {
+    margin-bottom: 5px;
   }
 
   /* 図のみレイアウト：図を最大化 */
@@ -2732,13 +1990,49 @@ style: |
   /* 3カラムレイアウト：チェックリスト、比較表など */
   section.three-column {
     columns: 3;
-    column-gap: 30px;
+    column-gap: 25px;
+    font-size: 18px;
   }
-  section.three-column h1, section.three-column h2, section.three-column h3 {
+  section.three-column h1 {
+    font-size: 32px;
     column-span: all;
+  }
+  section.three-column h2, section.three-column h3 {
+    column-span: all;
+    font-size: 22px;
   }
   section.three-column ul, section.three-column ol {
     break-inside: avoid-column;
+  }
+  section.three-column li {
+    margin-bottom: 3px;
+  }
+
+  /* Compactレイアウト：オーバーフロー回避用 */
+  section.compact {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  section.compact h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  section.compact h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  section.compact h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+  section.compact li {
+    margin-bottom: 2px;
+  }
+  section.compact ul, section.compact ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   /* 画像2枚横並び：Before/After、比較用 */
@@ -2807,7 +2101,7 @@ style: |
   }
 ---
 
-# Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎 (10:00-12:00)
+# Day 2-1: リバースエンジニアリング + テストシナリオ (10:00-12:00)
 
 ---
 
@@ -2929,22 +2223,15 @@ style: |
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 ### リバースエンジニアリング → 網羅的テスト生成（重要）
 
 ![リバースエンジニアリングから網羅的テスト生成](diagrams/diagram_44_reverse_to_comprehensive_test.svg)
 
-- **❌ 従来のアプローチ（コード追認のみ）**
-  - 既存コード→直接テスト生成→実装済み機能のみカバー
-  - 問題: 既存バグも追認、エッジケース見落とし、仕様外の動作を検出できない
-- **✅ リバースエンジニアリング（仕様逆生成）**
-  - 既存コード→要件定義書・ユーザーストーリー逆生成→網羅的テストシナリオ
-  - 効果: あるべき仕様に基づくテスト、未実装のエッジケースも検出、仕様外の動作を発見
-- **💡 核心的価値:**
-  - コードの追認ではなく「あるべき姿」に基づいたテストが可能
-  - AIは仕様から網羅的にテストを生成（正常系・異常系・境界値すべて）
-  - 既存コードのバグや仕様外の動作を発見できる
+- **❌ 従来:** コード追認のみ→実装済み機能のみカバー、バグも追認
+- **✅ 逆生成:** コード→要件・ストーリー逆生成→網羅テスト
+- **💡 価値:** 「あるべき姿」基準、正常・異常・境界すべて、バグ発見
 
 ---
 
@@ -3080,25 +2367,11 @@ style: |
 - **効果:** 全観点網羅→本番障害大幅削減
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # テストシナリオ作成の実例
 
-### ①既存機能（デグレ防止）
-- **目的:** 既存機能動作確認
-- **対象:** 主要機能Happy Path
-- **例:** ログイン、ユーザー登録、一覧、検索
-
-### ②新機能（品質担保）
-- **目的:** 新機能仕様通り動作確認
-- **対象:** 正常系・異常系・境界値・例外
-- **例:** パスワードリセット全テストケース
-
-### ③デグレ防止（連携確認）
-- **目的:** 既存と新機能の連携確認
-- **対象:** インターフェース、データ整合性
-- **例:** ユーザー管理とパスワードリセット連携
+![テストシナリオ作成の実例](../diagrams-web/slide_032_テストシナリオ作成の実例.svg)
 
 ---
 
@@ -3111,33 +2384,15 @@ style: |
 ### テストコード基礎（復習）
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # テストコード基礎（復習）
 
-### TDD/BDD
-- **Red**: 失敗するテスト先書き
-- **Green**: 最小実装でテスト通過
-- **Refactor**: 品質向上（重複削除、可読性）
-
-### Given-When-Then形式
-- **Given**: テストデータ準備（前提条件）
-- **When**: テスト対象メソッド実行
-- **Then**: 期待結果アサーション
-
-### テストの独立性
-- 各テスト独立実行可能（順序依存NG）
-  - 他のテストに影響を与えない（副作用NG）
-  - @BeforeEach、@AfterEachで初期化・クリーンアップ
-- **テストカバレッジ**
-  - 80%以上を目標（100%は非現実的）
-  - 重要なビジネスロジックを優先
-- **効果:** 品質保証、リファクタリングの安全性、ドキュメントとしての価値
+![テストコード基礎（復習）](../diagrams-web/slide_035_テストコード基礎復習.svg)
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # テストシナリオからテストコードへ
 
@@ -3226,7 +2481,10 @@ style: |
     margin: 0;
   }
   section.layout-horizontal-left > :not(h1):not(img) {
-    font-size: 22px;
+    font-size: 19px;
+  }
+  section.layout-horizontal-left li {
+    margin-bottom: 5px;
   }
 
   /* 左右レイアウト：図を右に */
@@ -3247,8 +2505,11 @@ style: |
     grid-row: 2;
   }
   section.layout-horizontal-right > :not(h1):not(img) {
-    font-size: 22px;
+    font-size: 19px;
     grid-column: 1;
+  }
+  section.layout-horizontal-right li {
+    margin-bottom: 5px;
   }
 
   /* 図のみレイアウト：図を最大化 */
@@ -3272,13 +2533,49 @@ style: |
   /* 3カラムレイアウト：チェックリスト、比較表など */
   section.three-column {
     columns: 3;
-    column-gap: 30px;
+    column-gap: 25px;
+    font-size: 18px;
   }
-  section.three-column h1, section.three-column h2, section.three-column h3 {
+  section.three-column h1 {
+    font-size: 32px;
     column-span: all;
+  }
+  section.three-column h2, section.three-column h3 {
+    column-span: all;
+    font-size: 22px;
   }
   section.three-column ul, section.three-column ol {
     break-inside: avoid-column;
+  }
+  section.three-column li {
+    margin-bottom: 3px;
+  }
+
+  /* Compactレイアウト：オーバーフロー回避用 */
+  section.compact {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  section.compact h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  section.compact h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  section.compact h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+  section.compact li {
+    margin-bottom: 2px;
+  }
+  section.compact ul, section.compact ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   /* 画像2枚横並び：Before/After、比較用 */
@@ -3356,28 +2653,11 @@ style: |
 ## 実践演習の説明（10分）
 
 ---
-
-<!-- _class: two-column -->
+<!-- _class: layout-diagram-only -->
 
 # 3つの演習課題から選択
 
-### ①マスター追加（商品カテゴリマスタのCRUD）
-- 新しいマスタテーブル追加（CREATE TABLE）
-- CRUD機能実装（Controller、Service、Repository、Entity、View）
-- 既存マスタとの関連付け（外部キー）
-- **難易度: 中**（デグレリスク低）
-
-### ②項目追加（顧客に電話番号カラム追加）
-- 既存テーブルへのカラム追加（ALTER TABLE）
-- 関連画面・API修正（登録、更新、一覧、詳細）
-- バリデーション追加（電話番号形式チェック）
-- **難易度: 高**（影響大、デグレリスク高）
-
-### ③検索条件追加（日付範囲指定検索）
-- 既存検索への条件追加（WHERE句拡張）
-- UI・API・SQL修正（日付ピッカー、パラメータ、クエリ）
-- 境界値処理（開始日・終了日チェック）
-- **難易度: 中**（既存検索への影響あり）
+![3つの演習課題から選択](../diagrams-web/slide_003_3つの演習課題から選択.svg)
 
 ---
 
@@ -3400,7 +2680,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 ### 演習のゴール
 
@@ -3445,7 +2725,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 ### STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
@@ -3488,7 +2768,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 #### 新機能のテストシナリオ作成
 
@@ -3549,7 +2829,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 #### テストコード実装（30分）
 
@@ -3577,7 +2857,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 #### TDDで実装
 
@@ -3601,7 +2881,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 #### テスト実行・デバッグ
 
@@ -3708,7 +2988,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 ### 実務での活用ポイント
 
@@ -3764,7 +3044,7 @@ style: |
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 ### 実務で明日から実践できること（Top 5）
 

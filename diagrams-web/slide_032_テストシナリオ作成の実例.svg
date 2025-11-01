@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .section-title { font-size: 22px; font-weight: 700; fill: #1976d2; }
+      .item-text { font-size: 16px; }
+      .section-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 6; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">テストシナリオ作成の実例</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .group-title { font-size: 20px; font-weight: 700; fill: #388e3c; }
+      .item-text { font-size: 17px; }
+      .checkbox { fill: none; stroke: #388e3c; stroke-width: 2; }
+      .checkmark { fill: none; stroke: #388e3c; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">環境準備</text>
+
+  <!-- Group: 📦 Claude Code -->
+  <g transform="translate(40, 90)">
+    <text x="0" y="0" class="group-title">📦 Claude Code</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">AI開発環境</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">プロジェクト全体を扱うAIアシスタント</text>
+    <rect x="0" y="72" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="86" class="item-text">**なぜ必要:** プロジェクト全体の文脈を理解、複数ファイル一括操作</text>
+  </g>
+
+  <!-- Group: 🔧 GitHub -->
+  <g transform="translate(40, 224)">
+    <text x="0" y="0" class="group-title">🔧 GitHub</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">バージョン管理</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">頻繁なコミットで暴走対策</text>
+    <rect x="0" y="72" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="86" class="item-text">**なぜ必要:** AIの暴走から回復可能</text>
+  </g>
+
+  <!-- Group: 💻 VS Code -->
+  <g transform="translate(40, 358)">
+    <text x="0" y="0" class="group-title">💻 VS Code</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">エディタ</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">Mermaid Preview拡張推奨</text>
+    <rect x="0" y="72" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="86" class="item-text">**なぜ必要:** 図の即座確認、開発体験向上</text>
+  </g>
+
+  <!-- Group: 🐳 Dev Container -->
+  <g transform="translate(40, 492)">
+    <text x="0" y="0" class="group-title">🐳 Dev Container</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">環境統一化</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">dangerously-skip-permissionsモードの安全利用</text>
+    <rect x="0" y="72" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="86" class="item-text">**なぜ推奨:**</text>
+    <rect x="0" y="100" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="114" class="item-text">環境の再現性（全員同じ環境）</text>
+    <rect x="0" y="128" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="142" class="item-text">実験の安全性（コンテナ内で隔離）</text>
+    <rect x="0" y="156" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="170" class="item-text">チーム開発でのトラブル防止</text>
+    <rect x="0" y="184" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="198" class="item-text">Claude Code インストール</text>
+    <rect x="0" y="212" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="226" class="item-text">GitHub アカウント</text>
+    <rect x="0" y="240" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="254" class="item-text">VS Code + Mermaid Preview</text>
+    <rect x="0" y="268" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="282" class="item-text">(推奨) Dev Container</text>
+  </g>
+</svg>
