@@ -1,0 +1,4485 @@
+{
+  "summary": {
+    "total": 49,
+    "pass": 21,
+    "warn": 0,
+    "fail": 28
+  },
+  "results": [
+    {
+      "svg_path": "diagrams/diagram_01_ai_principles.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1400.0,
+        600.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 80.0,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "Guardrails",
+          "position": {
+            "x": 1150.0,
+            "y": 350.0,
+            "left": 1150.0,
+            "right": 1480.0,
+            "top": 296.0,
+            "bottom": 368.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 80.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 80.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=80, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_02_role_change.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1200.0,
+        600.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_03_5step_flow.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1800.0,
+        400.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 1591.2000000000003,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    合計所要時間（小規模プロジェクト1週間の場合）\n  ",
+          "position": {
+            "x": 600.0,
+            "y": 245.0,
+            "left": 600.0,
+            "right": 2640.5,
+            "top": 182.0,
+            "bottom": 266.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 840.5,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 840.5,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=840, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    効果：手戻りなし、品質保証、持続可能な開発\n  ",
+          "position": {
+            "x": 540.0,
+            "y": 310.0,
+            "left": 540.0,
+            "right": 2520.0,
+            "top": 245.2,
+            "bottom": 331.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 720.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 720.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=720, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    前工程（STEP1-2）を丁寧にすることで、後工程がスムーズに進む\n  ",
+          "position": {
+            "x": 540.0,
+            "y": 340.0,
+            "left": 540.0,
+            "right": 2898.4,
+            "top": 282.4,
+            "bottom": 359.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 1098.4,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 1098.4,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=1098, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    AIの制約（忘れっぽい・Reward Hacking・Jagged Intelligenc",
+          "position": {
+            "x": 540.0,
+            "y": 365.0,
+            "left": 540.0,
+            "right": 3391.2000000000003,
+            "top": 307.4,
+            "bottom": 384.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 1591.2000000000003,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 1591.2000000000003,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=1591, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_04_ai_memory.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1200.0,
+        680.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_05_moscow.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1000.0,
+        700.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_06_spec_structure.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1040.0,
+        780.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_07_er_diagram.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1300.0,
+        950.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 1769.0000000000002,
+      "max_overflow_y": 4.799999999999997,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "ToDoアプリ ER図",
+          "position": {
+            "x": 650.0,
+            "y": 60.0,
+            "left": 353.0,
+            "right": 947.0,
+            "top": -4.799999999999997,
+            "bottom": 81.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 0,
+            "top": 4.799999999999997,
+            "bottom": 0,
+            "total_x": 0,
+            "total_y": 4.799999999999997
+          },
+          "message": "ViewBox超過: L=0, R=0, T=5, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "🔗 user_id (FK)",
+          "position": {
+            "x": 990.0,
+            "y": 315.0,
+            "left": 990.0,
+            "right": 1386.0,
+            "top": 271.8,
+            "bottom": 329.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 86.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 86.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=86, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    リレーション: 1対多、多対多（中間テーブル） | PK=主キー、FK=外部キー、UNIQ",
+          "position": {
+            "x": 650.0,
+            "y": 930.0,
+            "left": -884.5000000000002,
+            "right": 2184.5,
+            "top": 876.0,
+            "bottom": 948.0
+          },
+          "overflow": {
+            "left": 884.5000000000002,
+            "right": 884.5,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 1769.0000000000002,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=885, R=884, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_08_er_to_code.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1300.0,
+        545.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 778.5,
+      "max_overflow_y": 42.900000000000006,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "ER図からコード生成への流れ",
+          "position": {
+            "x": 500.0,
+            "y": 30.0,
+            "left": 500.0,
+            "right": 1658.3000000000002,
+            "top": -42.900000000000006,
+            "bottom": 54.3
+          },
+          "overflow": {
+            "left": 0,
+            "right": 358.3000000000002,
+            "top": 42.900000000000006,
+            "bottom": 0,
+            "total_x": 358.3000000000002,
+            "total_y": 42.900000000000006
+          },
+          "message": "ViewBox超過: L=0, R=358, T=43, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "生成コード（出力）",
+          "position": {
+            "x": 825.0,
+            "y": 110.0,
+            "left": 825.0,
+            "right": 1537.8000000000002,
+            "top": 45.2,
+            "bottom": 131.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 237.80000000000018,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 237.80000000000018,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=238, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "効果: データ構造の全体像把握 → 正確な実装",
+          "position": {
+            "x": 500.0,
+            "y": 395.3,
+            "left": 500.0,
+            "right": 2078.5,
+            "top": 332.3,
+            "bottom": 416.3
+          },
+          "overflow": {
+            "left": 0,
+            "right": 778.5,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 778.5,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=778, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_09_sequence_login.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1040.0,
+        1150.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 219.20000000000005,
+      "max_overflow_y": 6.7999999999999545,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "ログイン機能シーケンス図",
+          "position": {
+            "x": 520.0,
+            "y": 45.0,
+            "left": 520.0,
+            "right": 1259.2,
+            "top": -5.399999999999999,
+            "bottom": 61.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 219.20000000000005,
+            "top": 5.399999999999999,
+            "bottom": 0,
+            "total_x": 219.20000000000005,
+            "total_y": 5.399999999999999
+          },
+          "message": "ViewBox超過: L=0, R=219, T=5, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "効果: 処理順序の明確化",
+          "position": {
+            "x": 520.0,
+            "y": 1083.0,
+            "left": 520.0,
+            "right": 1076.6,
+            "top": 1041.6,
+            "bottom": 1096.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 36.59999999999991,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 36.59999999999991,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=37, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "→ AIが正確に実装",
+          "position": {
+            "x": 520.0,
+            "y": 1143.0,
+            "left": 520.0,
+            "right": 924.8,
+            "top": 1101.6,
+            "bottom": 1156.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 6.7999999999999545,
+            "total_x": 0,
+            "total_y": 6.7999999999999545
+          },
+          "message": "ViewBox超過: L=0, R=0, T=0, B=7"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "rect",
+          "text_content": "rect",
+          "position": {
+            "x": 80.0,
+            "y": 1060.0,
+            "width": 880.0,
+            "height": 100.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 10.0
+          },
+          "message": "Rect超過: L=0, R=0, T=0, B=10"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_10_phase_breakdown.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1600.0,
+        820.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_11_tdd_cycle.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        780.0,
+        600.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 490.0,
+      "max_overflow_y": 15.399999999999999,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "TDD Red-Green-Refactorサイクル",
+          "position": {
+            "x": 300.0,
+            "y": 35.0,
+            "left": -162.00000000000006,
+            "right": 762.0,
+            "top": -15.399999999999999,
+            "bottom": 51.8
+          },
+          "overflow": {
+            "left": 162.00000000000006,
+            "right": 0,
+            "top": 15.399999999999999,
+            "bottom": 0,
+            "total_x": 162.00000000000006,
+            "total_y": 15.399999999999999
+          },
+          "message": "ViewBox超過: L=162, R=0, T=15, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    継続的な改善サイクルで高品質なコードを実現\n  ",
+          "position": {
+            "x": 390.0,
+            "y": 90.0,
+            "left": 390.0,
+            "right": 1270.0,
+            "top": 61.2,
+            "bottom": 99.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 490.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 490.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=490, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_12_reverse_engineering.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1600.0,
+        700.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 1535.2000000000003,
+      "max_overflow_y": 4.799999999999997,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "リバースエンジニアリングのプロセス",
+          "position": {
+            "x": 800.0,
+            "y": 60.0,
+            "left": 126.79999999999995,
+            "right": 1473.2,
+            "top": -4.799999999999997,
+            "bottom": 81.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 0,
+            "top": 4.799999999999997,
+            "bottom": 0,
+            "total_x": 0,
+            "total_y": 4.799999999999997
+          },
+          "message": "ViewBox超過: L=0, R=0, T=5, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "5. 新機能追加",
+          "position": {
+            "x": 1310.0,
+            "y": 140.0,
+            "left": 1310.0,
+            "right": 1767.6,
+            "top": 82.4,
+            "bottom": 159.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 167.5999999999999,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 167.5999999999999,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=168, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "仕様に基づいて実装:",
+          "position": {
+            "x": 1090.0,
+            "y": 200.0,
+            "left": 1090.0,
+            "right": 1633.4,
+            "top": 153.2,
+            "bottom": 215.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 33.40000000000009,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 33.40000000000009,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=33, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• デグレ防止テスト作成",
+          "position": {
+            "x": 1100.0,
+            "y": 300.0,
+            "left": 1100.0,
+            "right": 1656.6,
+            "top": 258.6,
+            "bottom": 313.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 56.59999999999991,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 56.59999999999991,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=57, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "• 既存パターンに従う",
+          "position": {
+            "x": 1100.0,
+            "y": 400.0,
+            "left": 1100.0,
+            "right": 1606.0,
+            "top": 358.6,
+            "bottom": 413.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 6.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 6.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=6, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    ドキュメント化 = AIの外部メモリ構築 = 知見の蓄積\n  ",
+          "position": {
+            "x": 790.0,
+            "y": 545.0,
+            "left": 790.0,
+            "right": 2761.2000000000003,
+            "top": 487.4,
+            "bottom": 564.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 1161.2000000000003,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 1161.2000000000003,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=1161, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    仕様書がないシステムでも、リバースエンジニアリングでGuardrailsを構築できる\n  ",
+          "position": {
+            "x": 790.0,
+            "y": 615.0,
+            "left": 790.0,
+            "right": 3135.2000000000003,
+            "top": 568.2,
+            "bottom": 630.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 1535.2000000000003,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 1535.2000000000003,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=1535, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_13_impact_analysis.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1040.0,
+        1100.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 384.10000000000014,
+      "max_overflow_y": 19.0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "影響範囲調査の可視化",
+          "position": {
+            "x": 400.0,
+            "y": 35.0,
+            "left": 70.0,
+            "right": 730.0,
+            "top": -19.0,
+            "bottom": 53.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 0,
+            "top": 19.0,
+            "bottom": 0,
+            "total_x": 0,
+            "total_y": 19.0
+          },
+          "message": "ViewBox超過: L=0, R=0, T=19, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "影響範囲を事前に把握 → デグレ防止、テスト計画立案",
+          "position": {
+            "x": 400.0,
+            "y": 955.0,
+            "left": 400.0,
+            "right": 1424.1000000000001,
+            "top": 920.8,
+            "bottom": 966.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 384.10000000000014,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 384.10000000000014,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=384, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "AIへの指示: 「この変更の影響範囲を調査して」",
+          "position": {
+            "x": 400.0,
+            "y": 1020.0,
+            "left": 400.0,
+            "right": 1368.0,
+            "top": 984.0,
+            "bottom": 1032.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 328.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 328.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=328, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_14_scenario_to_code.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1800.0,
+        850.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_15_test_classification.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1040.0,
+        1040.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 464.8000000000002,
+      "max_overflow_y": 14.799999999999997,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "テストシナリオの4分類（2×2マトリクス）",
+          "position": {
+            "x": 520.0,
+            "y": 50.0,
+            "left": -232.4000000000001,
+            "right": 1272.4,
+            "top": -14.799999999999997,
+            "bottom": 71.6
+          },
+          "overflow": {
+            "left": 232.4000000000001,
+            "right": 232.4000000000001,
+            "top": 14.799999999999997,
+            "bottom": 0,
+            "total_x": 464.8000000000002,
+            "total_y": 14.799999999999997
+          },
+          "message": "ViewBox超過: L=232, R=232, T=15, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    4分類で網羅的なテスト設計\n  ",
+          "position": {
+            "x": 520.0,
+            "y": 910.0,
+            "left": 520.0,
+            "right": 1463.8000000000002,
+            "top": 863.2,
+            "bottom": 925.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 423.8000000000002,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 423.8000000000002,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=424, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    AIに「この4分類でシナリオ作成」と指示すれば\n  ",
+          "position": {
+            "x": 520.0,
+            "y": 965.0,
+            "left": 520.0,
+            "right": 1193.2,
+            "top": 943.4,
+            "bottom": 972.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 153.20000000000005,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 153.20000000000005,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=153, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    漏れのないテストケースが自動生成される\n  ",
+          "position": {
+            "x": 520.0,
+            "y": 995.0,
+            "left": 520.0,
+            "right": 1127.2,
+            "top": 973.4,
+            "bottom": 1002.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 87.20000000000005,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 87.20000000000005,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=87, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_16_regression_prevention.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1040.0,
+        1500.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 96.0,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    → AIにテストコード生成させて、自動実行で品質担保\n  ",
+          "position": {
+            "x": 520.0,
+            "y": 1248.0,
+            "left": 520.0,
+            "right": 1136.0,
+            "top": 1230.0,
+            "bottom": 1254.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 96.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 96.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=96, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_17_workshop_workflow.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1560.0,
+        820.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 580.0,
+      "max_overflow_y": 41.0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "演習の進め方（5ステップワークフロー）",
+          "position": {
+            "x": 600.0,
+            "y": 35.0,
+            "left": -224.17500000000007,
+            "right": 1424.1750000000002,
+            "top": -37.900000000000006,
+            "bottom": 59.3
+          },
+          "overflow": {
+            "left": 224.17500000000007,
+            "right": 0,
+            "top": 37.900000000000006,
+            "bottom": 0,
+            "total_x": 224.17500000000007,
+            "total_y": 37.900000000000006
+          },
+          "message": "ViewBox超過: L=224, R=0, T=38, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "\n    • AIとの対話で改善していく\n  ",
+          "position": {
+            "x": 80.0,
+            "y": 811.0,
+            "left": 80.0,
+            "right": 1202.0,
+            "top": 757.0,
+            "bottom": 829.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 9.0,
+            "total_x": 0,
+            "total_y": 9.0
+          },
+          "message": "ViewBox超過: L=0, R=0, T=0, B=9"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    • 成功パターンを横展開\n  ",
+          "position": {
+            "x": 450.0,
+            "y": 827.0,
+            "left": 450.0,
+            "right": 1440.0,
+            "top": 773.0,
+            "bottom": 845.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 25.0,
+            "total_x": 0,
+            "total_y": 25.0
+          },
+          "message": "ViewBox超過: L=0, R=0, T=0, B=25"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    時間管理\n  ",
+          "position": {
+            "x": 970.0,
+            "y": 479.0,
+            "left": 970.0,
+            "right": 1586.0,
+            "top": 416.0,
+            "bottom": 500.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 26.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 26.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=26, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    • 各STEPの時間を意識\n  ",
+          "position": {
+            "x": 820.0,
+            "y": 609.0,
+            "left": 820.0,
+            "right": 1744.0,
+            "top": 555.0,
+            "bottom": 627.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 184.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 184.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=184, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    • 詰まったら次に進む判断も必要\n  ",
+          "position": {
+            "x": 820.0,
+            "y": 687.0,
+            "left": 820.0,
+            "right": 2074.0,
+            "top": 633.0,
+            "bottom": 705.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 514.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 514.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=514, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    • タイムボックス内で最善を尽くす\n  ",
+          "position": {
+            "x": 820.0,
+            "y": 765.0,
+            "left": 820.0,
+            "right": 2140.0,
+            "top": 711.0,
+            "bottom": 783.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 580.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 580.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=580, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    • 全体で100分を目安に\n  ",
+          "position": {
+            "x": 820.0,
+            "y": 843.0,
+            "left": 820.0,
+            "right": 1777.0,
+            "top": 789.0,
+            "bottom": 861.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 217.0,
+            "top": 0,
+            "bottom": 41.0,
+            "total_x": 217.0,
+            "total_y": 41.0
+          },
+          "message": "ViewBox超過: L=0, R=217, T=0, B=41"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_18_fit_gap_analysis.svg",
+      "viewbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "ERROR",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_19_common_failures.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1200.0,
+        1150.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_20_2day_summary.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1560.0,
+        1240.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 45.59999999999991,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "STEP2: 設計書作成（11:30-12:30）",
+          "position": {
+            "x": 405.0,
+            "y": 590.0,
+            "left": -17.400000000000034,
+            "right": 827.4000000000001,
+            "top": 546.8,
+            "bottom": 604.4
+          },
+          "overflow": {
+            "left": 17.400000000000034,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 17.400000000000034,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=17, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "STEP3: タスク分解（13:30-14:30）",
+          "position": {
+            "x": 405.0,
+            "y": 785.0,
+            "left": -17.400000000000034,
+            "right": 827.4000000000001,
+            "top": 741.8,
+            "bottom": 799.4
+          },
+          "overflow": {
+            "left": 17.400000000000034,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 17.400000000000034,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=17, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• テストシナリオ→テストコード自動変換",
+          "position": {
+            "x": 850.0,
+            "y": 367.0,
+            "left": 850.0,
+            "right": 1582.6,
+            "top": 334.6,
+            "bottom": 377.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 22.59999999999991,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 22.59999999999991,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=23, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "STEP5: 品質担保＆ドキュメント反映",
+          "position": {
+            "x": 1170.0,
+            "y": 475.0,
+            "left": 734.4,
+            "right": 1605.6,
+            "top": 431.8,
+            "bottom": 489.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 45.59999999999991,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 45.59999999999991,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=46, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• リファクタリング後の全テスト実行",
+          "position": {
+            "x": 850.0,
+            "y": 699.0,
+            "left": 850.0,
+            "right": 1598.0,
+            "top": 663.0,
+            "bottom": 711.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 38.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 38.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=38, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "総括と次のステップ（14:30-15:00）",
+          "position": {
+            "x": 1170.0,
+            "y": 840.0,
+            "left": 734.4,
+            "right": 1605.6,
+            "top": 796.8,
+            "bottom": 854.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 45.59999999999991,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 45.59999999999991,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=46, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• よくある失敗と対策（6パターン）",
+          "position": {
+            "x": 850.0,
+            "y": 895.0,
+            "left": 850.0,
+            "right": 1576.0,
+            "top": 859.0,
+            "bottom": 907.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 16.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 16.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=16, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_21_learning_roadmap.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1900.0,
+        1100.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 166.2500000000001,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "学習ロードマップ（3段階ステップ図）",
+          "position": {
+            "x": 700.0,
+            "y": 110.0,
+            "left": -166.2500000000001,
+            "right": 1566.25,
+            "top": 29.0,
+            "bottom": 137.0
+          },
+          "overflow": {
+            "left": 166.2500000000001,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 166.2500000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=166, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "マイルストーン",
+          "position": {
+            "x": 220.0,
+            "y": 510.0,
+            "left": -11.000000000000028,
+            "right": 451.0,
+            "top": 456.0,
+            "bottom": 528.0
+          },
+          "overflow": {
+            "left": 11.000000000000028,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 11.000000000000028,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=11, R=0, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_22_vibe_vs_production.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1200.0,
+        800.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 401.0,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    速度: ★★★★☆ 品質: ★★★★★\n  ",
+          "position": {
+            "x": 985.0,
+            "y": 640.0,
+            "left": 985.0,
+            "right": 1291.9,
+            "top": 623.8,
+            "bottom": 645.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 91.90000000000009,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 91.90000000000009,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=92, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    Guardrails（設計書・テスト）を設定することで、速さと品質を両立\n  ",
+          "position": {
+            "x": 600.0,
+            "y": 715.0,
+            "left": 600.0,
+            "right": 1601.0,
+            "top": 691.6,
+            "bottom": 722.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 401.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 401.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=401, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    従来8週間 → Vibe Coding with Guardrailsで2週間（4倍の生産",
+          "position": {
+            "x": 600.0,
+            "y": 752.0,
+            "left": 600.0,
+            "right": 1434.9,
+            "top": 732.2,
+            "bottom": 758.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 234.9000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 234.9000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=235, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_23_security_best_practices.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1000.0,
+        800.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_24_incremental_timeline.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1900.0,
+        780.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 180.0000000000001,
+      "max_overflow_y": 17.6,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "インクリメンタル開発のタイムライン（ToDoアプリ例）",
+          "position": {
+            "x": 700.0,
+            "y": 40.0,
+            "left": -180.0000000000001,
+            "right": 1580.0,
+            "top": -17.6,
+            "bottom": 59.2
+          },
+          "overflow": {
+            "left": 180.0000000000001,
+            "right": 0,
+            "top": 17.6,
+            "bottom": 0,
+            "total_x": 180.0000000000001,
+            "total_y": 17.6
+          },
+          "message": "ViewBox超過: L=180, R=0, T=18, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "\n    ✗ 一度に全部作る場合（NG）\n  ",
+          "position": {
+            "x": 1010.0,
+            "y": 395.0,
+            "left": 1010.0,
+            "right": 1907.6,
+            "top": 351.8,
+            "bottom": 409.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 7.599999999999909,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 7.599999999999909,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=8, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_25_ai_self_review_flow.svg",
+      "viewbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "ERROR",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_26_test_coverage_80_rule.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1300.0,
+        1600.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 1719.5000000000005,
+      "max_overflow_y": 41.0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "テストカバレッジ80%ルール（何をテストし、何をテストしないか）",
+          "position": {
+            "x": 500.0,
+            "y": 40.0,
+            "left": -1009.7500000000002,
+            "right": 2009.7500000000002,
+            "top": -41.0,
+            "bottom": 67.0
+          },
+          "overflow": {
+            "left": 1009.7500000000002,
+            "right": 709.7500000000002,
+            "top": 41.0,
+            "bottom": 0,
+            "total_x": 1719.5000000000005,
+            "total_y": 41.0
+          },
+          "message": "ViewBox超過: L=1010, R=710, T=41, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    テスト不要領域（20%）\n  ",
+          "position": {
+            "x": 500.0,
+            "y": 200.0,
+            "left": 500.0,
+            "right": 1616.5,
+            "top": 137.0,
+            "bottom": 221.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 316.5,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 316.5,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=316, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    Getter/Setter、定数、シンプルな代入\n  ",
+          "position": {
+            "x": 500.0,
+            "y": 420.0,
+            "left": 500.0,
+            "right": 1777.1000000000001,
+            "top": 371.4,
+            "bottom": 436.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 477.10000000000014,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 477.10000000000014,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=477, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    フレームワーク提供機能\n  ",
+          "position": {
+            "x": 500.0,
+            "y": 511.0,
+            "left": 500.0,
+            "right": 1391.0,
+            "top": 462.4,
+            "bottom": 527.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 91.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 91.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=91, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    詳細内訳\n  ",
+          "position": {
+            "x": 880.0,
+            "y": 110.0,
+            "left": 880.0,
+            "right": 1496.0,
+            "top": 47.0,
+            "bottom": 131.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 196.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 196.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=196, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "ビジネスロジック:",
+          "position": {
+            "x": 805.0,
+            "y": 310.0,
+            "left": 805.0,
+            "right": 1309.9,
+            "top": 261.4,
+            "bottom": 326.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 9.900000000000091,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 9.900000000000091,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=10, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• 境界値（0, MAX）",
+          "position": {
+            "x": 815.0,
+            "y": 1002.0,
+            "left": 815.0,
+            "right": 1349.6,
+            "top": 953.4,
+            "bottom": 1018.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 49.59999999999991,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 49.59999999999991,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=50, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    テスト不要\n  ",
+          "position": {
+            "x": 880.0,
+            "y": 1081.0,
+            "left": 880.0,
+            "right": 1474.0,
+            "top": 1027.0,
+            "bottom": 1099.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 174.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 174.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=174, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    // Getter/Setter\n  ",
+          "position": {
+            "x": 815.0,
+            "y": 1270.0,
+            "left": 815.0,
+            "right": 1527.8000000000002,
+            "top": 1221.4,
+            "bottom": 1286.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 227.80000000000018,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 227.80000000000018,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=228, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    getName() { return name; }\n  ",
+          "position": {
+            "x": 815.0,
+            "y": 1350.0,
+            "left": 815.0,
+            "right": 1750.0,
+            "top": 1305.0,
+            "bottom": 1365.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 450.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 450.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=450, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    MAX_SIZE = 100;\n  ",
+          "position": {
+            "x": 815.0,
+            "y": 1530.0,
+            "left": 815.0,
+            "right": 1447.5,
+            "top": 1485.0,
+            "bottom": 1545.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 147.5,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 147.5,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=148, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    80%ルールの実践\n  ",
+          "position": {
+            "x": 500.0,
+            "y": 1236.0,
+            "left": 500.0,
+            "right": 1436.1,
+            "top": 1169.4,
+            "bottom": 1258.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 136.0999999999999,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 136.0999999999999,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=136, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    1. ビジネスロジックを優先的にテスト → 本番障害防止の効果が高い\n  ",
+          "position": {
+            "x": 500.0,
+            "y": 1333.0,
+            "left": 500.0,
+            "right": 1924.5000000000002,
+            "top": 1299.7,
+            "bottom": 1344.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 624.5000000000002,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 624.5000000000002,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=625, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    2. Getter/Setterはテストしない → コスト削減、重要な箇所に集中\n  ",
+          "position": {
+            "x": 500.0,
+            "y": 1417.0,
+            "left": 500.0,
+            "right": 1904.15,
+            "top": 1383.7,
+            "bottom": 1428.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 604.1500000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 604.1500000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=604, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    3. JaCoCoで確認 → 80%未満の箇所を特定してAIに追加テスト依頼\n  ",
+          "position": {
+            "x": 500.0,
+            "y": 1501.0,
+            "left": 500.0,
+            "right": 1863.45,
+            "top": 1467.7,
+            "bottom": 1512.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 563.45,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 563.45,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=563, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_27_refactoring_timing_in_tdd.svg",
+      "viewbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "ERROR",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_28_claude_code_modes.svg",
+      "viewbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "ERROR",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_29_claudeignore_importance.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1400.0,
+        1300.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 447.0,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    ✓ .claudeignore あり（推奨）\n  ",
+          "position": {
+            "x": 1055.0,
+            "y": 178.0,
+            "left": 1055.0,
+            "right": 1847.0,
+            "top": 142.0,
+            "bottom": 190.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 447.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 447.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=447, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    🎯 AI精度向上\n  ",
+          "position": {
+            "x": 1120.0,
+            "y": 703.0,
+            "left": 1120.0,
+            "right": 1466.5,
+            "top": 676.0,
+            "bottom": 712.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 66.5,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 66.5,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=66, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    .claudeignore ベストプラクティス\n  ",
+          "position": {
+            "x": 715.0,
+            "y": 900.0,
+            "left": 715.0,
+            "right": 1551.0,
+            "top": 865.8,
+            "bottom": 911.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 151.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 151.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=151, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    .claudeignore設定 = トークン80%削減 + 応答5倍高速 + AI精度向上",
+          "position": {
+            "x": 700.0,
+            "y": 1242.0,
+            "left": 700.0,
+            "right": 1742.8000000000002,
+            "top": 1220.4,
+            "bottom": 1249.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 342.8000000000002,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 342.8000000000002,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=343, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_30_prompt_patterns.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1820.0,
+        2100.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 498.8000000000002,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    ✓ 良い例：具体的な指示\n  ",
+          "position": {
+            "x": 1055.0,
+            "y": 220.0,
+            "left": 1055.0,
+            "right": 2045.0,
+            "top": 166.0,
+            "bottom": 238.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 225.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 225.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=225, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    「ログイン機能を実装して。要件:\n  ",
+          "position": {
+            "x": 780.0,
+            "y": 420.0,
+            "left": 780.0,
+            "right": 1852.5,
+            "top": 375.0,
+            "bottom": 435.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 32.5,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 32.5,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=32, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "\n    - BCryptでパスワードハッシュ化\n  ",
+          "position": {
+            "x": 780.0,
+            "y": 485.0,
+            "left": 780.0,
+            "right": 1825.0,
+            "top": 440.0,
+            "bottom": 500.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 5.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 5.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=5, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    ✓ 良い例：インクリメンタル\n  ",
+          "position": {
+            "x": 1055.0,
+            "y": 790.0,
+            "left": 1055.0,
+            "right": 2177.0,
+            "top": 736.0,
+            "bottom": 808.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 357.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 357.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=357, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    プロンプトベストプラクティス\n  ",
+          "position": {
+            "x": 715.0,
+            "y": 1370.0,
+            "left": 715.0,
+            "right": 2318.8,
+            "top": 1297.1,
+            "bottom": 1394.3
+          },
+          "overflow": {
+            "left": 0,
+            "right": 498.8000000000002,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 498.8000000000002,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=499, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    3. 期待する成果物\n  ",
+          "position": {
+            "x": 1140.0,
+            "y": 1675.0,
+            "left": 1140.0,
+            "right": 1965.0,
+            "top": 1621.0,
+            "bottom": 1693.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 145.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 145.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=145, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_31_user_story_mapping.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        2000.0,
+        1200.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0.3999999999999986,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_32_nonfunctional_requirements.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1820.0,
+        1700.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 175.79999999999995,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    🎨 使いやすさ\n  ",
+          "position": {
+            "x": 1580.0,
+            "y": 110.0,
+            "left": 1580.0,
+            "right": 1995.8,
+            "top": 77.6,
+            "bottom": 120.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 175.79999999999995,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 175.79999999999995,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=176, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    🔐 機密管理\n  ",
+          "position": {
+            "x": 1580.0,
+            "y": 520.0,
+            "left": 1580.0,
+            "right": 1956.2,
+            "top": 487.6,
+            "bottom": 530.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 136.20000000000005,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 136.20000000000005,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=136, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    AIへの指示例（非機能要件を含める）\n  ",
+          "position": {
+            "x": 920.0,
+            "y": 950.0,
+            "left": 920.0,
+            "right": 1890.2,
+            "top": 912.2,
+            "bottom": 962.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 70.20000000000005,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 70.20000000000005,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=70, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_33_given_when_then.svg",
+      "viewbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "ERROR",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_34_task_list_template.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1600.0,
+        1340.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 525.0,
+      "max_overflow_y": 11.0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "タスク一覧テンプレート例（ToDoアプリ開発）",
+          "position": {
+            "x": 800.0,
+            "y": 70.0,
+            "left": -239.5,
+            "right": 1839.5,
+            "top": -11.0,
+            "bottom": 97.0
+          },
+          "overflow": {
+            "left": 239.5,
+            "right": 239.5,
+            "top": 11.0,
+            "bottom": 0,
+            "total_x": 479.0,
+            "total_y": 11.0
+          },
+          "message": "ViewBox超過: L=240, R=240, T=11, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    想定工数: 8時間（1日）\n  ",
+          "position": {
+            "x": 1300.0,
+            "y": 150.0,
+            "left": 1300.0,
+            "right": 2125.0,
+            "top": 105.0,
+            "bottom": 165.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 525.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 525.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=525, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "\n    工数（分）\n  ",
+          "position": {
+            "x": 1210.0,
+            "y": 222.0,
+            "left": 1210.0,
+            "right": 1606.0,
+            "top": 186.0,
+            "bottom": 234.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 6.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 6.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=6, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    優先度\n  ",
+          "position": {
+            "x": 1310.0,
+            "y": 222.0,
+            "left": 1310.0,
+            "right": 1618.0,
+            "top": 186.0,
+            "bottom": 234.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 18.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 18.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=18, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    成果物\n  ",
+          "position": {
+            "x": 1455.0,
+            "y": 222.0,
+            "left": 1455.0,
+            "right": 1763.0,
+            "top": 186.0,
+            "bottom": 234.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 163.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 163.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=163, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "V1__create_tasks.sql",
+          "position": {
+            "x": 1370.0,
+            "y": 270.0,
+            "left": 1370.0,
+            "right": 1645.0,
+            "top": 247.5,
+            "bottom": 277.5
+          },
+          "overflow": {
+            "left": 0,
+            "right": 45.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 45.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=45, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "TaskRepository.java",
+          "position": {
+            "x": 1370.0,
+            "y": 380.0,
+            "left": 1370.0,
+            "right": 1631.25,
+            "top": 357.5,
+            "bottom": 387.5
+          },
+          "overflow": {
+            "left": 0,
+            "right": 31.25,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 31.25,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=31, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "TaskController.java",
+          "position": {
+            "x": 1370.0,
+            "y": 415.0,
+            "left": 1370.0,
+            "right": 1610.35,
+            "top": 394.3,
+            "bottom": 421.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 10.349999999999909,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 10.349999999999909,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=10, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "JUnit テスト（80%以上）",
+          "position": {
+            "x": 1370.0,
+            "y": 477.0,
+            "left": 1370.0,
+            "right": 1648.3,
+            "top": 457.2,
+            "bottom": 483.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 48.299999999999955,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 48.299999999999955,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=48, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "GlobalExceptionHandler",
+          "position": {
+            "x": 1370.0,
+            "y": 536.0,
+            "left": 1370.0,
+            "right": 1636.2,
+            "top": 516.2,
+            "bottom": 542.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 36.200000000000045,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 36.200000000000045,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=36, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    タスク一覧テンプレートの活用ポイント\n  ",
+          "position": {
+            "x": 800.0,
+            "y": 995.0,
+            "left": 800.0,
+            "right": 2010.0,
+            "top": 950.0,
+            "bottom": 1010.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 410.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 410.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=410, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    2. 依存関係の可視化\n  ",
+          "position": {
+            "x": 1165.0,
+            "y": 1062.0,
+            "left": 1165.0,
+            "right": 1729.3000000000002,
+            "top": 1027.8,
+            "bottom": 1073.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 129.30000000000018,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 129.30000000000018,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=129, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    前提タスク列により、どのタスクから着手すべきか一目瞭然。\n  ",
+          "position": {
+            "x": 820.0,
+            "y": 1093.0,
+            "left": 820.0,
+            "right": 1735.2,
+            "top": 1069.6,
+            "bottom": 1100.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 135.20000000000005,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 135.20000000000005,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=135, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    4. インクリメンタル開発との連携\n  ",
+          "position": {
+            "x": 1165.0,
+            "y": 1212.0,
+            "left": 1165.0,
+            "right": 1937.2,
+            "top": 1179.6,
+            "bottom": 1222.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 337.20000000000005,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 337.20000000000005,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=337, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    T-03完了時点で「一覧表示」が動作確認可能（Increment 1）\n  ",
+          "position": {
+            "x": 820.0,
+            "y": 1242.0,
+            "left": 820.0,
+            "right": 1686.25,
+            "top": 1219.5,
+            "bottom": 1249.5
+          },
+          "overflow": {
+            "left": 0,
+            "right": 86.25,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 86.25,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=86, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_35_dependency_graph.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1820.0,
+        1650.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 544.8000000000002,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "タスク依存関係グラフ（実装順序の可視化）",
+          "position": {
+            "x": 700.0,
+            "y": 74.0,
+            "left": -114.00000000000011,
+            "right": 1514.0,
+            "top": 7.3999999999999915,
+            "bottom": 96.2
+          },
+          "overflow": {
+            "left": 114.00000000000011,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 114.00000000000011,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=114, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    依存関係グラフの活用\n  ",
+          "position": {
+            "x": 1463.0,
+            "y": 268.0,
+            "left": 1463.0,
+            "right": 2325.4,
+            "top": 217.6,
+            "bottom": 284.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 505.4000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 505.4000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=505, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    1. クリティカルパスの特定\n  ",
+          "position": {
+            "x": 1463.0,
+            "y": 365.0,
+            "left": 1463.0,
+            "right": 2297.9,
+            "top": 323.6,
+            "bottom": 378.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 477.9000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 477.9000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=478, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    最長経路（T-01 → T-02 → T-03 → T-04 → T-05\n  ",
+          "position": {
+            "x": 1203.0,
+            "y": 416.0,
+            "left": 1203.0,
+            "right": 2220.5,
+            "top": 382.7,
+            "bottom": 427.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 400.5,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 400.5,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=400, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    → T-06）が完了時間を決定 = 合計285分\n  ",
+          "position": {
+            "x": 1203.0,
+            "y": 458.0,
+            "left": 1203.0,
+            "right": 2098.4,
+            "top": 424.7,
+            "bottom": 469.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 278.4000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 278.4000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=278, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    → この経路を優先的に進める\n  ",
+          "position": {
+            "x": 1203.0,
+            "y": 500.0,
+            "left": 1203.0,
+            "right": 1894.9,
+            "top": 466.7,
+            "bottom": 511.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 74.90000000000009,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 74.90000000000009,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=75, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    2. 並行作業の可能性\n  ",
+          "position": {
+            "x": 1463.0,
+            "y": 593.0,
+            "left": 1463.0,
+            "right": 2146.1,
+            "top": 551.6,
+            "bottom": 606.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 326.0999999999999,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 326.0999999999999,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=326, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    Layer 1（T-01, T-09, T-10）は並行実行可能\n  ",
+          "position": {
+            "x": 1203.0,
+            "y": 644.0,
+            "left": 1203.0,
+            "right": 2200.15,
+            "top": 610.7,
+            "bottom": 655.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 380.1500000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 380.1500000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=380, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    → 複数人で分担可能、全体完了時間を短縮\n  ",
+          "position": {
+            "x": 1203.0,
+            "y": 686.0,
+            "left": 1203.0,
+            "right": 2139.1,
+            "top": 652.7,
+            "bottom": 697.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 319.0999999999999,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 319.0999999999999,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=319, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    3. 手戻り防止\n  ",
+          "position": {
+            "x": 1463.0,
+            "y": 806.0,
+            "left": 1463.0,
+            "right": 1994.3000000000002,
+            "top": 764.6,
+            "bottom": 819.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 174.30000000000018,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 174.30000000000018,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=174, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    依存先タスクが完了していないと、\n  ",
+          "position": {
+            "x": 1203.0,
+            "y": 857.0,
+            "left": 1203.0,
+            "right": 2017.0,
+            "top": 823.7,
+            "bottom": 868.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 197.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 197.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=197, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    依存元タスクで手戻りが発生。グラフで順序を可視化\n  ",
+          "position": {
+            "x": 1203.0,
+            "y": 899.0,
+            "left": 1203.0,
+            "right": 2342.6000000000004,
+            "top": 865.7,
+            "bottom": 910.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 522.6000000000004,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 522.6000000000004,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=523, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    4. AIへの指示が明確に\n  ",
+          "position": {
+            "x": 1463.0,
+            "y": 1019.0,
+            "left": 1463.0,
+            "right": 2196.7,
+            "top": 977.6,
+            "bottom": 1032.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 376.6999999999998,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 376.6999999999998,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=377, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    「T-04を実装して（T-03完了済み）」\n  ",
+          "position": {
+            "x": 1203.0,
+            "y": 1070.0,
+            "left": 1203.0,
+            "right": 2057.7,
+            "top": 1036.7,
+            "bottom": 1081.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 237.69999999999982,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 237.69999999999982,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=238, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    → AIが前提条件を理解、スムーズに実装\n  ",
+          "position": {
+            "x": 1203.0,
+            "y": 1112.0,
+            "left": 1203.0,
+            "right": 2098.4,
+            "top": 1078.7,
+            "bottom": 1123.1
+          },
+          "overflow": {
+            "left": 0,
+            "right": 278.4000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 278.4000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=278, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    直接依存（前提タスク完了必須）\n  ",
+          "position": {
+            "x": 1300.0,
+            "y": 1398.0,
+            "left": 1300.0,
+            "right": 2219.6,
+            "top": 1358.4,
+            "bottom": 1411.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 399.5999999999999,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 399.5999999999999,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=400, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    間接依存（完了推奨だが必須ではない）\n  ",
+          "position": {
+            "x": 1300.0,
+            "y": 1481.0,
+            "left": 1300.0,
+            "right": 2364.8,
+            "top": 1441.4,
+            "bottom": 1494.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 544.8000000000002,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 544.8000000000002,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=545, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_36_living_documentation.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1820.0,
+        1270.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 635.6000000000004,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "Living Documentation 構造（常に最新のドキュメント）",
+          "position": {
+            "x": 700.0,
+            "y": 65.0,
+            "left": -141.5000000000001,
+            "right": 1541.5,
+            "top": 11.0,
+            "bottom": 83.0
+          },
+          "overflow": {
+            "left": 141.5000000000001,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 141.5000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=142, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    コードから自動生成 → 常に最新 → メンテナンス不要\n  ",
+          "position": {
+            "x": 700.0,
+            "y": 140.0,
+            "left": 700.0,
+            "right": 2301.6000000000004,
+            "top": 93.19999999999999,
+            "bottom": 155.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 481.60000000000036,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 481.60000000000036,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=482, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    Layer 1: ソースコード（唯一の真実の源）\n  ",
+          "position": {
+            "x": 700.0,
+            "y": 220.0,
+            "left": 700.0,
+            "right": 2147.6000000000004,
+            "top": 169.6,
+            "bottom": 236.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 327.60000000000036,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 327.60000000000036,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=328, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    Layer 2: 自動生成ドキュメント（コードと100%同期）\n  ",
+          "position": {
+            "x": 700.0,
+            "y": 495.0,
+            "left": 700.0,
+            "right": 2455.6000000000004,
+            "top": 444.6,
+            "bottom": 511.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 635.6000000000004,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 635.6000000000004,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=636, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    ✓ Living Documentation\n  ",
+          "position": {
+            "x": 1035.0,
+            "y": 740.0,
+            "left": 1035.0,
+            "right": 1959.0,
+            "top": 689.6,
+            "bottom": 756.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 139.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 139.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=139, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_37_five_step_detailed.svg",
+      "viewbox": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "status": "ERROR",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_38_jagged_intelligence_examples.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1820.0,
+        1680.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 468.4000000000001,
+      "max_overflow_y": 12.0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "Jagged Intelligence 具体例（AIの得意/不得意領域）",
+          "position": {
+            "x": 910.0,
+            "y": 60.0,
+            "left": -168.0,
+            "right": 1988.0,
+            "top": -12.0,
+            "bottom": 84.0
+          },
+          "overflow": {
+            "left": 168.0,
+            "right": 168.0,
+            "top": 12.0,
+            "bottom": 0,
+            "total_x": 336.0,
+            "total_y": 12.0
+          },
+          "message": "ViewBox超過: L=168, R=168, T=12, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "✓ AIが得意な領域（積極的に活用）",
+          "position": {
+            "x": 490.0,
+            "y": 275.0,
+            "left": -108.40000000000009,
+            "right": 1088.4,
+            "top": 213.8,
+            "bottom": 295.4
+          },
+          "overflow": {
+            "left": 108.40000000000009,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 108.40000000000009,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=108, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "1. ボイラープレート",
+          "position": {
+            "x": 290.0,
+            "y": 340.0,
+            "left": -2.6000000000000227,
+            "right": 582.6,
+            "top": 289.6,
+            "bottom": 356.8
+          },
+          "overflow": {
+            "left": 2.6000000000000227,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 2.6000000000000227,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=3, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "3. ドキュメント生成",
+          "position": {
+            "x": 290.0,
+            "y": 555.0,
+            "left": -2.6000000000000227,
+            "right": 582.6,
+            "top": 504.6,
+            "bottom": 571.8
+          },
+          "overflow": {
+            "left": 2.6000000000000227,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 2.6000000000000227,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=3, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "✗ AIが苦手な領域（人間が補完必須）",
+          "position": {
+            "x": 1330.0,
+            "y": 275.0,
+            "left": 694.1999999999999,
+            "right": 1965.8000000000002,
+            "top": 213.8,
+            "bottom": 295.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 145.80000000000018,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 145.80000000000018,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=146, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "→ 人間がビジネス判断",
+          "position": {
+            "x": 1350.0,
+            "y": 715.0,
+            "left": 1350.0,
+            "right": 1834.0,
+            "top": 675.4,
+            "bottom": 728.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 14.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 14.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=14, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "「ログイン機能を実装。BCrypt、JWT、@Valid、JUnitテスト含む。失敗5回で30分ロッ",
+          "position": {
+            "x": 150.0,
+            "y": 1240.0,
+            "left": 150.0,
+            "right": 2288.4,
+            "top": 1196.8,
+            "bottom": 1254.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 468.4000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 468.4000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=468, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_39_reward_hacking_examples.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1400.0,
+        1050.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_40_transcript_approach.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1820.0,
+        1600.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 690.4000000000001,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "文字起こしアプローチ（Claude Code対話モード活用）",
+          "position": {
+            "x": 910.0,
+            "y": 80.0,
+            "left": -60.200000000000045,
+            "right": 1880.2,
+            "top": 15.200000000000003,
+            "bottom": 101.6
+          },
+          "overflow": {
+            "left": 60.200000000000045,
+            "right": 60.200000000000045,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 120.40000000000009,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=60, R=60, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    対話履歴 = トライアル知識の宝庫\n  ",
+          "position": {
+            "x": 910.0,
+            "y": 160.0,
+            "left": 910.0,
+            "right": 1853.8000000000002,
+            "top": 120.4,
+            "bottom": 173.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 33.80000000000018,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 33.80000000000018,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=34, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "1. 対話しながら開発",
+          "position": {
+            "x": 275.0,
+            "y": 300.0,
+            "left": -17.600000000000023,
+            "right": 567.6,
+            "top": 249.6,
+            "bottom": 316.8
+          },
+          "overflow": {
+            "left": 17.600000000000023,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 17.600000000000023,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=18, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    4. チーム共有\n  ",
+          "position": {
+            "x": 1510.0,
+            "y": 310.0,
+            "left": 1510.0,
+            "right": 2156.8,
+            "top": 259.6,
+            "bottom": 326.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 336.8000000000002,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 336.8000000000002,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=337, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    (全員が即活用)\n  ",
+          "position": {
+            "x": 1510.0,
+            "y": 355.0,
+            "left": 1510.0,
+            "right": 2018.2,
+            "top": 317.2,
+            "bottom": 367.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 198.20000000000005,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 198.20000000000005,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=198, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    • プロンプト再利用\n  ",
+          "position": {
+            "x": 1330.0,
+            "y": 519.0,
+            "left": 1330.0,
+            "right": 1844.8000000000002,
+            "top": 486.6,
+            "bottom": 529.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 24.800000000000182,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 24.800000000000182,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=25, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    実践例：ログイン機能実装の文字起こし\n  ",
+          "position": {
+            "x": 910.0,
+            "y": 635.0,
+            "left": 910.0,
+            "right": 2458.8,
+            "top": 577.4,
+            "bottom": 654.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 638.8000000000002,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 638.8000000000002,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=639, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    文字起こしアプローチのメリット\n  ",
+          "position": {
+            "x": 1340.0,
+            "y": 735.0,
+            "left": 1340.0,
+            "right": 2510.4,
+            "top": 684.6,
+            "bottom": 751.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 690.4000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 690.4000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=690, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "\n    1. トライアル知識の可視化\n  ",
+          "position": {
+            "x": 950.0,
+            "y": 800.0,
+            "left": 950.0,
+            "right": 1821.2,
+            "top": 756.8,
+            "bottom": 814.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 1.2000000000000455,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 1.2000000000000455,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=1, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    4. ドキュメント作成コストゼロ\n  ",
+          "position": {
+            "x": 950.0,
+            "y": 1400.0,
+            "left": 950.0,
+            "right": 1926.8000000000002,
+            "top": 1356.8,
+            "bottom": 1414.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 106.80000000000018,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 106.80000000000018,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=107, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_41_mermaid_vs_svg.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1400.0,
+        900.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 547.4000000000001,
+      "max_overflow_y": 0.3999999999999986,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    Mermaid（テキストベース）\n  ",
+          "position": {
+            "x": 375.0,
+            "y": 145.0,
+            "left": 375.0,
+            "right": 1464.0,
+            "top": 91.0,
+            "bottom": 163.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 64.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 64.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=64, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    SVG（ベクター画像）\n  ",
+          "position": {
+            "x": 1045.0,
+            "y": 145.0,
+            "left": 1045.0,
+            "right": 1936.0,
+            "top": 91.0,
+            "bottom": 163.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 536.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 536.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=536, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    使い分け基準（判断フローチャート）\n  ",
+          "position": {
+            "x": 700.0,
+            "y": 520.0,
+            "left": 700.0,
+            "right": 1947.4,
+            "top": 471.4,
+            "bottom": 536.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 547.4000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 547.4000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=547, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    ハイブリッド（推奨）\n  ",
+          "position": {
+            "x": 1120.0,
+            "y": 582.0,
+            "left": 1120.0,
+            "right": 1828.4,
+            "top": 540.6,
+            "bottom": 595.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 428.4000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 428.4000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=428, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    1. Mermaidプロトタイプ\n  ",
+          "position": {
+            "x": 930.0,
+            "y": 620.0,
+            "left": 930.0,
+            "right": 1590.0,
+            "top": 584.0,
+            "bottom": 632.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 190.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 190.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=190, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    2. レビュー判断\n  ",
+          "position": {
+            "x": 930.0,
+            "y": 680.0,
+            "left": 930.0,
+            "right": 1436.0,
+            "top": 644.0,
+            "bottom": 692.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 36.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 36.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=36, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    適材適所で使い分け\n  ",
+          "position": {
+            "x": 1120.0,
+            "y": 850.0,
+            "left": 1120.0,
+            "right": 1634.8000000000002,
+            "top": 817.6,
+            "bottom": 860.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 234.80000000000018,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 234.80000000000018,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=235, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_42_regression_mechanism.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1400.0,
+        1700.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 285.60000000000014,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "デグレ発生メカニズムと防止策（TDDで根絶）",
+          "position": {
+            "x": 700.0,
+            "y": 70.0,
+            "left": -66.70000000000005,
+            "right": 1466.7,
+            "top": 8.799999999999997,
+            "bottom": 90.4
+          },
+          "overflow": {
+            "left": 66.70000000000005,
+            "right": 66.70000000000005,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 133.4000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=67, R=67, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "初期状態：正常動作",
+          "position": {
+            "x": 200.0,
+            "y": 225.0,
+            "left": -7.900000000000006,
+            "right": 407.9,
+            "top": 187.2,
+            "bottom": 237.6
+          },
+          "overflow": {
+            "left": 7.900000000000006,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 7.900000000000006,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=8, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "1. Red：テスト作成",
+          "position": {
+            "x": 200.0,
+            "y": 555.0,
+            "left": -7.900000000000006,
+            "right": 407.9,
+            "top": 517.2,
+            "bottom": 567.6
+          },
+          "overflow": {
+            "left": 7.900000000000006,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 7.900000000000006,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=8, R=0, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "デグレ防止の効果（実データ）",
+          "position": {
+            "x": 700.0,
+            "y": 880.0,
+            "left": 700.0,
+            "right": 1685.6000000000001,
+            "top": 822.4,
+            "bottom": 899.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 285.60000000000014,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 285.60000000000014,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=286, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "✓ TDDありの場合",
+          "position": {
+            "x": 1020.0,
+            "y": 970.0,
+            "left": 1020.0,
+            "right": 1482.0,
+            "top": 919.6,
+            "bottom": 986.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 82.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 82.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=82, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "検出タイミング: コミット前（開発時）",
+          "position": {
+            "x": 760.0,
+            "y": 1230.0,
+            "left": 760.0,
+            "right": 1591.6,
+            "top": 1192.2,
+            "bottom": 1242.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 191.5999999999999,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 191.5999999999999,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=192, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_43_doc_automation_before_after.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1820.0,
+        1300.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 640.4000000000001,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    ✓ After：自動生成（Living Doc）\n  ",
+          "position": {
+            "x": 1345.0,
+            "y": 140.0,
+            "left": 1345.0,
+            "right": 2460.4,
+            "top": 93.19999999999999,
+            "bottom": 155.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 640.4000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 640.4000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=640, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    コスト比較（1年間、10機能追加の場合）\n  ",
+          "position": {
+            "x": 910.0,
+            "y": 695.0,
+            "left": 910.0,
+            "right": 2296.0,
+            "top": 644.6,
+            "bottom": 711.8
+          },
+          "overflow": {
+            "left": 0,
+            "right": 476.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 476.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=476, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    After：自動生成のコスト\n  ",
+          "position": {
+            "x": 1330.0,
+            "y": 775.0,
+            "left": 1330.0,
+            "right": 2216.6,
+            "top": 728.2,
+            "bottom": 790.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 396.5999999999999,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 396.5999999999999,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=397, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    合計: 2時間/年（98.5%削減！）\n  ",
+          "position": {
+            "x": 1320.0,
+            "y": 1197.0,
+            "left": 1320.0,
+            "right": 2296.8,
+            "top": 1153.8,
+            "bottom": 1211.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 476.8000000000002,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 476.8000000000002,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=477, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "\n    → 年間133時間削減（約17営業日）→ 新機能開発に集中可能！\n  ",
+          "position": {
+            "x": 910.0,
+            "y": 1270.0,
+            "left": 910.0,
+            "right": 2434.6000000000004,
+            "top": 1230.4,
+            "bottom": 1283.2
+          },
+          "overflow": {
+            "left": 0,
+            "right": 614.6000000000004,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 614.6000000000004,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=615, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_44_reverse_to_comprehensive_test.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1400.0,
+        800.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_45_error_edge_constraint.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1280.0,
+        720.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_46_step2_summary.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1280.0,
+        720.0
+      ],
+      "status": "FAIL",
+      "max_overflow_x": 590.2,
+      "max_overflow_y": 17.899999999999977,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• AIが参照する設計書",
+          "position": {
+            "x": 60.0,
+            "y": 734.0,
+            "left": 60.0,
+            "right": 203.0,
+            "top": 722.3,
+            "bottom": 737.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 17.899999999999977,
+            "total_x": 0,
+            "total_y": 17.899999999999977
+          },
+          "message": "ViewBox超過: L=0, R=0, T=0, B=18"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• 大きな決定から小さな決定へ",
+          "position": {
+            "x": 1670.0,
+            "y": 185.0,
+            "left": 1670.0,
+            "right": 1870.2,
+            "top": 173.3,
+            "bottom": 188.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 590.2,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 590.2,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=590, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• 手戻りを最小化",
+          "position": {
+            "x": 1670.0,
+            "y": 213.0,
+            "left": 1670.0,
+            "right": 1784.4,
+            "top": 201.3,
+            "bottom": 216.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 504.4000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 504.4000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=504, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• AIが迷わない設計図",
+          "position": {
+            "x": 1670.0,
+            "y": 241.0,
+            "left": 1670.0,
+            "right": 1813.0,
+            "top": 229.3,
+            "bottom": 244.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 533.0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 533.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=533, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• AIは設計書に従って実装",
+          "position": {
+            "x": 1670.0,
+            "y": 307.0,
+            "left": 1670.0,
+            "right": 1841.6,
+            "top": 295.3,
+            "bottom": 310.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 561.5999999999999,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 561.5999999999999,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=562, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• 一貫性のある構造",
+          "position": {
+            "x": 1670.0,
+            "y": 377.0,
+            "left": 1670.0,
+            "right": 1798.7,
+            "top": 365.3,
+            "bottom": 380.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 518.7,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 518.7,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=519, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "• セキュリティ・品質を担保",
+          "position": {
+            "x": 1670.0,
+            "y": 447.0,
+            "left": 1670.0,
+            "right": 1855.9,
+            "top": 435.3,
+            "bottom": 450.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 575.9000000000001,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 575.9000000000001,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=576, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "✅ AIが一貫性のある実装",
+          "position": {
+            "x": 1670.0,
+            "y": 612.0,
+            "left": 1670.0,
+            "right": 1827.3,
+            "top": 600.3,
+            "bottom": 615.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 547.3,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 547.3,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=547, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "✅ 手戻りなし",
+          "position": {
+            "x": 1670.0,
+            "y": 637.0,
+            "left": 1670.0,
+            "right": 1755.8,
+            "top": 625.3,
+            "bottom": 640.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 475.79999999999995,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 475.79999999999995,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=476, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "✅ セキュリティ・品質担保",
+          "position": {
+            "x": 1670.0,
+            "y": 662.0,
+            "left": 1670.0,
+            "right": 1841.6,
+            "top": 650.3,
+            "bottom": 665.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 561.5999999999999,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 561.5999999999999,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=562, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "text",
+          "text_content": "✅ 全員が同じ設計書を参照",
+          "position": {
+            "x": 1670.0,
+            "y": 687.0,
+            "left": 1670.0,
+            "right": 1841.6,
+            "top": 675.3,
+            "bottom": 690.9
+          },
+          "overflow": {
+            "left": 0,
+            "right": 561.5999999999999,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 561.5999999999999,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=562, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-OVF",
+          "severity": "FAIL",
+          "element_type": "rect",
+          "text_content": "step-box",
+          "position": {
+            "x": 45.0,
+            "y": 660.0,
+            "width": 580.0,
+            "height": 80.0
+          },
+          "overflow": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "bottom": 20.0
+          },
+          "message": "Rect超過: L=0, R=0, T=0, B=20"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_47_moscow_example.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1280.0,
+        850.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_48_day1_key_messages.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1280.0,
+        900.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_49_practical_tips_and_roadmap.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1280.0,
+        720.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    }
+  ]
+}
