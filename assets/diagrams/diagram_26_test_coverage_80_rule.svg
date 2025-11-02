@@ -1,0 +1,43 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .box { fill: #F0F8FF; stroke: #00146E; stroke-width: 2; }
+      .covered { fill: #228B22; opacity: 0.8; }
+      .not-covered { fill: #CCCCCC; opacity: 0.6; }
+      .label-covered { fill: #FFFFFF; font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: 700; }
+      .label-not { fill: #666666; font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="45" class="title" text-anchor="middle">テストカバレッジ80%ルール</text>
+
+  <!-- Coverage visualization -->
+  <rect x="50" y="80" width="600" height="150" stroke="#00146E" stroke-width="3" fill="none" rx="10"/>
+
+  <!-- 80% covered -->
+  <rect x="50" y="80" width="480" height="150" class="covered" rx="10"/>
+  <text x="290" y="165" class="label-covered" text-anchor="middle">80% カバー</text>
+
+  <!-- 20% not covered -->
+  <rect x="530" y="80" width="120" height="150" class="not-covered" rx="10"/>
+  <text x="590" y="160" class="label-not" text-anchor="middle">20%</text>
+
+  <!-- 80% section details -->
+  <rect x="50" y="270" width="600" height="120" fill="#228B22" opacity="0.1" stroke="#228B22" stroke-width="2" rx="10"/>
+  <text x="350" y="305" class="heading" text-anchor="middle" fill="#228B22">80%でカバーすべき範囲</text>
+
+  <text x="70" y="340" class="body" fill="#228B22">主要機能とエッジケース</text>
+  <text x="90" y="370" class="note" fill="#228B22">ビジネスロジック、バリデーション、境界値、異常系</text>
+
+  <!-- 20% section details -->
+  <rect x="50" y="410" width="600" height="110" fill="#CCCCCC" opacity="0.1" stroke="#666666" stroke-width="2" rx="10"/>
+  <text x="350" y="445" class="heading" text-anchor="middle" fill="#666666">残り20%（低リスク）</text>
+
+  <text x="70" y="480" class="body" fill="#666666">Getter/Setter、簡単な補助関数</text>
+  <text x="90" y="505" class="note" fill="#666666">テストコストに見合わない箇所</text>
+</svg>

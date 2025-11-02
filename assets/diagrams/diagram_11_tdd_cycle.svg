@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 31px;
+        font-weight: bold;
+        fill: #00146E;
+      }
+      .phase-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+        fill: #FFFFFF;
+        text-anchor: middle;
+      }
+      .phase-subtitle {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        fill: #FFFFFF;
+        text-anchor: middle;
+      }
+      .desc-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
+        fill: #FFFFFF;
+      }
+      .red-box { fill: #DC143C; stroke: #00146E; stroke-width: 3; rx: 10; }
+      .green-box { fill: #228B22; stroke: #00146E; stroke-width: 3; rx: 10; }
+      .refactor-box { fill: #00AFF0; stroke: #00146E; stroke-width: 3; rx: 10; }
+      .arrow {
+        stroke: #00146E;
+        stroke-width: 4;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+      .cycle-arrow {
+        stroke: #666666;
+        stroke-width: 3;
+        fill: none;
+        stroke-dasharray: 8,4;
+        marker-end: url(#cycle-arrowhead);
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <polygon points="0 0, 12 3, 0 6" fill="#00146E" />
+    </marker>
+    <marker id="cycle-arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <polygon points="0 0, 12 3, 0 6" fill="#666666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="20" y="35" class="title">TDD Red-Green-Refactorサイクル</text>
+
+  <!-- Red Phase -->
+  <rect x="50" y="80" width="200" height="140" class="red-box"/>
+  <text x="150" y="110" class="phase-title">1. Red</text>
+  <text x="150" y="140" class="phase-subtitle">失敗するテスト</text>
+  <text x="70" y="170" class="desc-text">• テストを先に書く</text>
+  <text x="70" y="195" class="desc-text">• 仕様を定義</text>
+  <text x="70" y="215" class="desc-text" style="font-size: 14px;">（実装前なので失敗）</text>
+
+  <!-- Arrow Red to Green -->
+  <path d="M 250 150 L 300 150 L 300 230 L 330 230" class="arrow"/>
+  <text x="260" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #00146E; font-weight: bold;">実装</text>
+
+  <!-- Green Phase -->
+  <rect x="330" y="160" width="200" height="140" class="green-box"/>
+  <text x="430" y="190" class="phase-title">2. Green</text>
+  <text x="430" y="220" class="phase-subtitle">最小実装</text>
+  <text x="350" y="250" class="desc-text">• テストを通す</text>
+  <text x="350" y="275" class="desc-text">• 最小限のコード</text>
+  <text x="350" y="295" class="desc-text" style="font-size: 14px;">（動けばOK）</text>
+
+  <!-- Arrow Green to Refactor -->
+  <path d="M 430 300 L 430 340 L 330 340" class="arrow"/>
+  <text x="440" y="325" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #00146E; font-weight: bold;">改善</text>
+
+  <!-- Refactor Phase -->
+  <rect x="130" y="270" width="200" height="140" class="refactor-box"/>
+  <text x="230" y="300" class="phase-title">3. Refactor</text>
+  <text x="230" y="330" class="phase-subtitle">品質向上</text>
+  <text x="150" y="360" class="desc-text">• 重複コード削減</text>
+  <text x="150" y="385" class="desc-text">• 可読性向上</text>
+  <text x="150" y="405" class="desc-text" style="font-size: 14px;">（テストで保証）</text>
+
+  <!-- Cycle Arrow -->
+  <path d="M 150 270 Q 100 200 150 130" class="cycle-arrow"/>
+  <text x="90" y="200" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #666666; font-weight: bold;">繰り返し</text>
+
+  <!-- Benefits Box -->
+  <rect x="50" y="440" width="600" height="85" style="fill: #F0F8FF; stroke: #00146E; stroke-width: 2; rx: 8;"/>
+  <text x="350" y="465" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #00146E; text-anchor: middle; font-weight: bold;">TDDの効果</text>
+  <text x="70" y="490" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #333333;">✓ AIが自動テスト実行→エラー検知→自己修正（自己完結）</text>
+  <text x="70" y="512" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #333333;">✓ テストが保証するから安心してリファクタリング可能</text>
+
+  <!-- BDD Note -->
+  <rect x="560" y="80" width="120" height="100" style="fill: #FFF3CD; stroke: #FF8C00; stroke-width: 2; rx: 5;"/>
+  <text x="620" y="100" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #333333; text-anchor: middle; font-weight: bold;">BDD形式</text>
+  <text x="570" y="125" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333333;">Given</text>
+  <text x="570" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333333;">When</text>
+  <text x="570" y="165" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #333333;">Then</text>
+</svg>

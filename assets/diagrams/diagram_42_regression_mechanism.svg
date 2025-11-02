@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .error-box { fill: #FFE6E6; stroke: #DC143C; stroke-width: 2; }
+      .solution-box { fill: #E6F7E6; stroke: #228B22; stroke-width: 2; }
+      .cause-box { fill: #FFF4E6; stroke: #FF8C00; stroke-width: 2; }
+      .arrow { stroke: #333333; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333333" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="35" class="title" text-anchor="middle">デグレ発生メカニズムとTDD予防</text>
+
+  <!-- Regression Problem Section -->
+  <rect x="30" y="60" width="640" height="40" fill="#DC143C" rx="3"/>
+  <text x="350" y="85" class="heading" text-anchor="middle" fill="white">デグレが起きる3つの原因</text>
+
+  <!-- Cause 1: Forgetfulness -->
+  <rect x="30" y="115" width="200" height="130" class="cause-box" rx="5"/>
+  <text x="130" y="140" class="heading" text-anchor="middle">忘れっぽい</text>
+  <text x="45" y="170" class="body">🧠 AIは記憶なし</text>
+  <text x="45" y="195" class="body">📋 既存仕様忘却</text>
+  <text x="45" y="220" class="body">⚠️ セッション依存</text>
+
+  <!-- Cause 2: Jagged Intelligence -->
+  <rect x="250" y="115" width="200" height="130" class="cause-box" rx="5"/>
+  <text x="350" y="140" class="heading" text-anchor="middle">判断力の欠如</text>
+  <text x="265" y="170" class="body">🎯 影響範囲不明</text>
+  <text x="265" y="195" class="body">🌐 連鎖反応見えず</text>
+  <text x="265" y="220" class="body">📊 Jagged Intel</text>
+
+  <!-- Cause 3: Reward Hacking -->
+  <rect x="470" y="115" width="200" height="130" class="cause-box" rx="5"/>
+  <text x="570" y="140" class="heading" text-anchor="middle">手抜き最適化</text>
+  <text x="485" y="170" class="body">🎮 新機能優先</text>
+  <text x="485" y="195" class="body">⏩ 既存機能軽視</text>
+  <text x="485" y="220" class="body">🔧 Reward Hack</text>
+
+  <!-- Arrow down -->
+  <path d="M 350 250 L 350 280" class="arrow"/>
+
+  <!-- TDD Solution Section -->
+  <rect x="30" y="290" width="640" height="40" fill="#228B22" rx="3"/>
+  <text x="350" y="315" class="heading" text-anchor="middle" fill="white">TDDによる予防</text>
+
+  <!-- TDD Benefits -->
+  <rect x="30" y="345" width="310" height="160" class="solution-box" rx="5"/>
+  <text x="185" y="375" class="heading" text-anchor="middle">テストがあれば</text>
+  <text x="50" y="405" class="body">✅ AI自動検証</text>
+  <text x="50" y="435" class="body">🛡️ デグレ大幅削減</text>
+  <text x="50" y="465" class="body">🔄 即座にフィードバック</text>
+  <text x="185" y="493" class="note" text-anchor="middle">テスト＝AIの記憶装置</text>
+
+  <!-- Effect -->
+  <rect x="360" y="345" width="310" height="160" class="solution-box" rx="5"/>
+  <text x="515" y="375" class="heading" text-anchor="middle">効果</text>
+  <text x="380" y="405" class="body">🎯 安心して機能追加</text>
+  <text x="380" y="435" class="body">📈 品質保証</text>
+  <text x="380" y="465" class="body">⚡ 開発速度向上</text>
+  <text x="515" y="493" class="note" text-anchor="middle">継続的インテグレーション</text>
+</svg>

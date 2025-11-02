@@ -1,0 +1,72 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .body-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .doc-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 2; }
+      .problem-box { fill: #FFE4E1; stroke: #DC143C; stroke-width: 2; }
+      .solution-box { fill: #E8F5E9; stroke: #228B22; stroke-width: 2; }
+      .sync-arrow { fill: none; stroke: #228B22; stroke-width: 3; marker-end: url(#arrowhead-green); }
+    </style>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#228B22" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="title">Living Documentation</text>
+
+  <!-- Problem section -->
+  <rect x="30" y="70" width="300" height="115" rx="8" class="problem-box"/>
+  <text x="180" y="100" text-anchor="middle" class="heading">従来の問題</text>
+  <text x="50" y="130" class="body-text">• 実装と乖離</text>
+  <text x="50" y="155" class="body-text">• 誰も信用しない</text>
+  <text x="50" y="175" class="note-text">AIはセッション超えると忘却</text>
+
+  <!-- Solution section -->
+  <rect x="370" y="70" width="300" height="115" rx="8" class="solution-box"/>
+  <text x="520" y="100" text-anchor="middle" class="heading">Living方式</text>
+  <text x="390" y="130" class="body-text">• 実装と同期</text>
+  <text x="390" y="155" class="body-text">• 常に信頼できる</text>
+  <text x="390" y="175" class="note-text">AIの外部メモリとして機能</text>
+
+  <!-- Three types -->
+  <text x="350" y="230" text-anchor="middle" class="heading">3種類のドキュメント</text>
+
+  <!-- architecture.md -->
+  <rect x="30" y="250" width="200" height="130" rx="8" class="doc-box"/>
+  <text x="130" y="280" text-anchor="middle" class="body-text" font-weight="700">architecture.md</text>
+  <text x="50" y="305" class="note-text">• システム全体像</text>
+  <text x="50" y="328" class="note-text">• 構成・ディレクトリ</text>
+  <text x="50" y="351" class="note-text">• 設計判断の理由</text>
+  <text x="50" y="374" class="note-text">→ AIが全体把握</text>
+
+  <!-- README.md -->
+  <rect x="250" y="250" width="200" height="130" rx="8" class="doc-box"/>
+  <text x="350" y="280" text-anchor="middle" class="body-text" font-weight="700">README.md</text>
+  <text x="270" y="305" class="note-text">• セットアップ手順</text>
+  <text x="270" y="328" class="note-text">• 使い方</text>
+  <text x="270" y="351" class="note-text">• 依存関係</text>
+  <text x="270" y="374" class="note-text">→ 再現可能性</text>
+
+  <!-- CLAUDE.md -->
+  <rect x="470" y="250" width="200" height="130" rx="8" class="doc-box"/>
+  <text x="570" y="280" text-anchor="middle" class="body-text" font-weight="700">CLAUDE.md</text>
+  <text x="490" y="305" class="note-text">• プロンプト集</text>
+  <text x="490" y="328" class="note-text">• ハマった点</text>
+  <text x="490" y="351" class="note-text">• 解決方法</text>
+  <text x="490" y="374" class="note-text">→ 知見蓄積</text>
+
+  <!-- Sync -->
+  <rect x="30" y="400" width="640" height="80" rx="8" class="solution-box"/>
+  <text x="350" y="425" text-anchor="middle" class="body-text">コード変更</text>
+  <path d="M 295 435 L 405 435" class="sync-arrow"/>
+  <text x="350" y="458" text-anchor="middle" class="body-text">ドキュメント更新</text>
+  <text x="350" y="473" text-anchor="middle" class="note-text">実装とドキュメントを常に同期（AI活用で自動化可能）</text>
+
+  <!-- Effect -->
+  <rect x="30" y="495" width="640" height="35" rx="4" class="doc-box"/>
+  <text x="350" y="518" text-anchor="middle" class="note-text">効果：次セッションでもAIが正確に理解、チーム全体で知見共有</text>
+</svg>

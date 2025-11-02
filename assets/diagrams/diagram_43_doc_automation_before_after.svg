@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 610">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: 400; fill: #666666; }
+      .before-box { fill: #FFE6E6; stroke: #DC143C; stroke-width: 3; }
+      .after-box { fill: #E6F7E6; stroke: #228B22; stroke-width: 3; }
+      .arrow { stroke: #00AFF0; stroke-width: 4; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#00AFF0" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="625" y="60" class="title" text-anchor="middle">ドキュメント自動生成 Before/After</text>
+
+  <!-- Before Section -->
+  <rect x="50" y="100" width="500" height="450" class="before-box" rx="8"/>
+  <text x="300" y="150" class="heading" text-anchor="middle" fill="#DC143C">❌ Before</text>
+  <text x="300" y="200" class="heading" text-anchor="middle">従来の開発</text>
+
+  <!-- Before Problems -->
+  <text x="80" y="250" class="body">📝 手動でドキュメント作成</text>
+  <text x="80" y="300" class="body">⏰ 時間がかかる</text>
+  <text x="80" y="350" class="body">🔄 実装と乖離</text>
+  <text x="80" y="400" class="body">😞 誰も信用しない</text>
+  <text x="80" y="450" class="body">🗑️ メンテナンスされない</text>
+
+  <text x="300" y="520" class="note" text-anchor="middle" font-weight="700">ドキュメント=死んだ情報</text>
+
+  <!-- Arrow -->
+  <path d="M 570 325 L 660 325" class="arrow"/>
+  <text x="615" y="310" class="heading" fill="#00AFF0" text-anchor="middle">AI活用</text>
+
+  <!-- After Section -->
+  <rect x="700" y="100" width="500" height="450" class="after-box" rx="8"/>
+  <text x="950" y="150" class="heading" text-anchor="middle" fill="#228B22">✅ After</text>
+  <text x="950" y="200" class="heading" text-anchor="middle">AI自動生成</text>
+
+  <!-- After Benefits -->
+  <text x="730" y="250" class="body">🤖 AI自動生成</text>
+  <text x="730" y="300" class="body">⚡ 数秒で完成</text>
+  <text x="730" y="350" class="body">🔗 実装と同期</text>
+  <text x="730" y="400" class="body">✨ 常に信頼できる</text>
+  <text x="730" y="450" class="body">💾 AIの外部メモリ化</text>
+
+  <text x="950" y="520" class="note" text-anchor="middle" font-weight="700">Living Documentation</text>
+
+  <!-- Bottom Note -->
+  <rect x="200" y="565" width="850" height="40" fill="#F0F8FF" stroke="#00AFF0" stroke-width="2" rx="5"/>
+  <text x="625" y="592" class="note" text-anchor="middle">実装→即時ドキュメント更新→AIが参照→品質向上サイクル</text>
+</svg>

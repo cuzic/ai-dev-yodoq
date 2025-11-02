@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 31px;
+        font-weight: bold;
+        fill: #00146E;
+      }
+      .item-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #00146E;
+      }
+      .item-desc {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
+        fill: #333333;
+      }
+      .box {
+        fill: #F0F8FF;
+        stroke: #00AFF0;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .number-circle {
+        fill: #00AFF0;
+        stroke: #00146E;
+        stroke-width: 2;
+      }
+      .number-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        fill: #FFFFFF;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="20" y="35" class="title">設計ドキュメントの7要素</text>
+
+  <!-- Item 1 -->
+  <rect x="20" y="60" width="660" height="60" class="box"/>
+  <circle cx="45" cy="90" r="15" class="number-circle"/>
+  <text x="45" y="90" class="number-text">1</text>
+  <text x="70" y="80" class="item-title">技術スタック</text>
+  <text x="70" y="105" class="item-desc">フロント・バック・DB・ライブラリ（選定理由含む）</text>
+
+  <!-- Item 2 -->
+  <rect x="20" y="130" width="660" height="60" class="box"/>
+  <circle cx="45" cy="160" r="15" class="number-circle"/>
+  <text x="45" y="160" class="number-text">2</text>
+  <text x="70" y="150" class="item-title">システムアーキテクチャ</text>
+  <text x="70" y="175" class="item-desc">3層構造、Mermaid図で可視化</text>
+
+  <!-- Item 3 -->
+  <rect x="20" y="200" width="660" height="60" class="box"/>
+  <circle cx="45" cy="230" r="15" class="number-circle"/>
+  <text x="45" y="230" class="number-text">3</text>
+  <text x="70" y="220" class="item-title">データベーススキーマ</text>
+  <text x="70" y="245" class="item-desc">テーブル定義・カラム・制約・インデックス</text>
+
+  <!-- Item 4 -->
+  <rect x="20" y="270" width="660" height="60" class="box"/>
+  <circle cx="45" cy="300" r="15" class="number-circle"/>
+  <text x="45" y="300" class="number-text">4</text>
+  <text x="70" y="290" class="item-title">API仕様</text>
+  <text x="70" y="315" class="item-desc">エンドポイント・メソッド・パラメータ・レスポンス</text>
+
+  <!-- Item 5 -->
+  <rect x="20" y="340" width="660" height="60" class="box"/>
+  <circle cx="45" cy="370" r="15" class="number-circle"/>
+  <text x="45" y="370" class="number-text">5</text>
+  <text x="70" y="360" class="item-title">受入条件（BDD形式）</text>
+  <text x="70" y="385" class="item-desc">Given-When-Then</text>
+
+  <!-- Item 6 -->
+  <rect x="20" y="410" width="660" height="60" class="box"/>
+  <circle cx="45" cy="440" r="15" class="number-circle"/>
+  <text x="45" y="440" class="number-text">6</text>
+  <text x="70" y="430" class="item-title">セキュリティ設計</text>
+  <text x="70" y="455" class="item-desc">認証・認可・入力検証・環境変数管理</text>
+
+  <!-- Item 7 -->
+  <rect x="20" y="480" width="660" height="50" class="box"/>
+  <circle cx="45" cy="505" r="15" class="number-circle"/>
+  <text x="45" y="505" class="number-text">7</text>
+  <text x="70" y="500" class="item-title">技術的決定事項</text>
+  <text x="70" y="520" class="item-desc">ライブラリ選定理由・アーキテクチャ判断</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg viewBox="0 0 1250 620" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: 700; fill: #00146E; }
+      .body-text { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 400; fill: #333333; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: 400; fill: #666666; }
+      .problem-box { fill: #FFE4E1; stroke: #DC143C; stroke-width: 3; }
+      .solution-box { fill: #E8F5E9; stroke: #228B22; stroke-width: 3; }
+      .example-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="625" y="70" text-anchor="middle" class="title">Reward Hacking（手抜き問題）</text>
+
+  <!-- Examples -->
+  <rect x="40" y="110" width="560" height="210" rx="12" class="problem-box"/>
+  <text x="320" y="160" text-anchor="middle" class="heading">❌ 手抜き実例</text>
+
+  <text x="70" y="215" class="body-text">1. パスワード平文保存</text>
+  <text x="90" y="255" class="note-text">「とりあえず動く」を優先</text>
+
+  <text x="70" y="300" class="body-text">2. ハードコーディング</text>
+  <text x="90" y="340" class="note-text">環境変数を使わず直接記述</text>
+
+  <!-- Causes -->
+  <rect x="650" y="110" width="560" height="210" rx="12" class="problem-box"/>
+  <text x="930" y="160" text-anchor="middle" class="heading">なぜ手抜きするか</text>
+
+  <text x="680" y="215" class="body-text">• タスク完了を最優先</text>
+  <text x="700" y="255" class="note-text">セキュリティは二の次</text>
+
+  <text x="680" y="300" class="body-text">• 明示されない要件は省略</text>
+  <text x="700" y="340" class="note-text">知識はあるが実装しない</text>
+
+  <!-- Solutions -->
+  <rect x="40" y="350" width="1170" height="240" rx="12" class="solution-box"/>
+  <text x="625" y="400" text-anchor="middle" class="heading">✅ 対策：Guardrails（明確な制約）</text>
+
+  <text x="70" y="460" class="body-text">制約を明示的に指示：</text>
+  <text x="90" y="510" class="body-text">• パスワード → BCryptでハッシュ化</text>
+  <text x="90" y="555" class="body-text">• APIキー → 環境変数（.env使用、.gitignore追加）</text>
+
+  <!-- Effect -->
+  <text x="625" y="605" text-anchor="middle" class="note-text">効果：手抜きを防止、セキュアな実装を保証</text>
+</svg>

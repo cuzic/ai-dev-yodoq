@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 31px;
+        font-weight: bold;
+        fill: #00146E;
+      }
+      .section-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+      }
+      .item-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 17px;
+        fill: #333333;
+      }
+      .benefit-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 17px;
+        fill: #FFFFFF;
+      }
+      .er-box {
+        fill: #F0F8FF;
+        stroke: #00AFF0;
+        stroke-width: 3;
+        rx: 8;
+      }
+      .ai-box {
+        fill: #00AFF0;
+        stroke: #00146E;
+        stroke-width: 3;
+        rx: 8;
+      }
+      .human-box {
+        fill: #228B22;
+        stroke: #00146E;
+        stroke-width: 3;
+        rx: 8;
+      }
+      .arrow {
+        stroke: #00146E;
+        stroke-width: 3;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+      .code-text {
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        fill: #333333;
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00146E" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="20" y="35" class="title">ER図からコード生成</text>
+
+  <!-- ER Diagram Box -->
+  <rect x="250" y="70" width="200" height="80" class="er-box"/>
+  <text x="350" y="95" class="section-title">ER図</text>
+  <text x="270" y="120" class="code-text">Users (id, email)</text>
+  <text x="270" y="138" class="code-text">Tasks (id, user_id)</text>
+
+  <!-- Arrow down -->
+  <path d="M 350 150 L 350 180" class="arrow"/>
+  <text x="360" y="170" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #00146E; font-weight: bold;">AI生成</text>
+
+  <!-- AI Implementation Box -->
+  <rect x="30" y="190" width="320" height="180" class="ai-box"/>
+  <text x="190" y="215" class="section-title" style="fill: #FFFFFF;">AIの実装</text>
+
+  <text x="50" y="245" class="benefit-text">✓ CREATE TABLE自動生成</text>
+  <text x="70" y="268" class="code-text" style="fill: #FFFFFF;">CREATE TABLE users (...</text>
+
+  <text x="50" y="295" class="benefit-text">✓ JOIN処理</text>
+  <text x="70" y="318" class="code-text" style="fill: #FFFFFF;">SELECT * FROM tasks</text>
+  <text x="70" y="333" class="code-text" style="fill: #FFFFFF;">JOIN users ON ...</text>
+
+  <text x="50" y="355" class="benefit-text">✓ ORMモデル自動生成</text>
+
+  <!-- Human Benefits Box -->
+  <rect x="370" y="190" width="310" height="180" class="human-box"/>
+  <text x="525" y="215" class="section-title" style="fill: #FFFFFF;">人間の恩恵</text>
+
+  <text x="390" y="250" class="benefit-text">✓ 全体像を一目で把握</text>
+  <text x="410" y="275" style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; fill: #FFFFFF;">テーブル間の関係性が明確</text>
+
+  <text x="390" y="305" class="benefit-text">✓ リレーション検証</text>
+  <text x="410" y="330" style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; fill: #FFFFFF;">外部キーの整合性確認</text>
+
+  <text x="390" y="355" class="benefit-text">✓ 正規化問題の早期発見</text>
+
+  <!-- Bottom Benefits -->
+  <rect x="50" y="400" width="600" height="110" style="fill: #F0F8FF; stroke: #00146E; stroke-width: 2; rx: 8;"/>
+  <text x="350" y="425" style="font-family: 'Noto Sans JP', sans-serif; font-size: 22px; fill: #00146E; text-anchor: middle; font-weight: bold;">ER図の効果</text>
+
+  <text x="70" y="455" class="item-text">• 設計ミスを実装前に発見（手戻り防止）</text>
+  <text x="70" y="478" class="item-text">• AIが正確なSQL・ORM実装を生成</text>
+  <text x="70" y="501" class="item-text">• カラム名・型・制約の一貫性を保証</text>
+</svg>

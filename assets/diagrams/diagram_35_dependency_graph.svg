@@ -1,0 +1,71 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .body-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .task-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 2; }
+      .parallel-box { fill: #E8F5E9; stroke: #228B22; stroke-width: 2; }
+      .arrow { fill: none; stroke: #00AFF0; stroke-width: 3; marker-end: url(#arrowhead); }
+      .parallel-arrow { fill: none; stroke: #228B22; stroke-width: 2; stroke-dasharray: 5,5; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00AFF0" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="title">タスク依存関係グラフ</text>
+
+  <!-- Sequential tasks -->
+  <text x="30" y="80" class="heading">順序必須</text>
+
+  <rect x="30" y="90" width="150" height="60" rx="8" class="task-box"/>
+  <text x="105" y="115" text-anchor="middle" class="body-text">1. DB設計</text>
+  <text x="105" y="137" text-anchor="middle" class="note-text">ER図作成</text>
+
+  <path d="M 190 120 L 220 120" class="arrow"/>
+
+  <rect x="225" y="90" width="180" height="60" rx="8" class="task-box"/>
+  <text x="315" y="115" text-anchor="middle" class="body-text">2. マイグレーション</text>
+  <text x="315" y="137" text-anchor="middle" class="note-text">テーブル作成</text>
+
+  <path d="M 415 120 L 445 120" class="arrow"/>
+
+  <rect x="450" y="90" width="150" height="60" rx="8" class="task-box"/>
+  <text x="525" y="115" text-anchor="middle" class="body-text">3. API実装</text>
+  <text x="525" y="137" text-anchor="middle" class="note-text">CRUD操作</text>
+
+  <!-- Parallel tasks -->
+  <text x="30" y="210" class="heading">並行作業可能</text>
+
+  <!-- Base task -->
+  <rect x="180" y="220" width="180" height="60" rx="8" class="task-box"/>
+  <text x="270" y="245" text-anchor="middle" class="body-text">認証基盤完成</text>
+  <text x="270" y="267" text-anchor="middle" class="note-text">JWT発行可能</text>
+
+  <!-- Parallel branch 1 -->
+  <path d="M 270 290 L 150 340" class="parallel-arrow"/>
+  <rect x="30" y="340" width="170" height="60" rx="8" class="parallel-box"/>
+  <text x="115" y="365" text-anchor="middle" class="body-text">フロント開発</text>
+  <text x="115" y="387" text-anchor="middle" class="note-text">React UI</text>
+
+  <!-- Parallel branch 2 -->
+  <path d="M 270 290 L 310 340" class="parallel-arrow"/>
+  <rect x="225" y="340" width="170" height="60" rx="8" class="parallel-box"/>
+  <text x="310" y="365" text-anchor="middle" class="body-text">バック開発</text>
+  <text x="310" y="387" text-anchor="middle" class="note-text">ビジネスロジック</text>
+
+  <!-- Parallel branch 3 -->
+  <path d="M 270 290 L 470 340" class="parallel-arrow"/>
+  <rect x="420" y="340" width="170" height="60" rx="8" class="parallel-box"/>
+  <text x="505" y="365" text-anchor="middle" class="body-text">テスト作成</text>
+  <text x="505" y="387" text-anchor="middle" class="note-text">E2Eシナリオ</text>
+
+  <!-- Benefits -->
+  <rect x="30" y="430" width="640" height="90" rx="8" class="task-box"/>
+  <text x="350" y="460" text-anchor="middle" class="heading">効果</text>
+  <text x="50" y="488" class="body-text">✓ 手戻り防止（正しい順序で実装）</text>
+  <text x="50" y="510" class="body-text">✓ 効率的スケジューリング（並行作業で時間短縮）</text>
+</svg>

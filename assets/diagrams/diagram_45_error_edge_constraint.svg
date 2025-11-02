@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 610">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: 400; fill: #666666; }
+      .error-box { fill: #FFE6E6; stroke: #DC143C; stroke-width: 3; }
+      .edge-box { fill: #FFF4E6; stroke: #FF8C00; stroke-width: 3; }
+      .constraint-box { fill: #E6F7FF; stroke: #00AFF0; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="625" y="60" class="title" text-anchor="middle">エラー・エッジケース・制約の洗い出し</text>
+
+  <!-- Error Handling Section -->
+  <rect x="50" y="100" width="350" height="440" class="error-box" rx="8"/>
+  <text x="225" y="150" class="heading" text-anchor="middle" fill="#DC143C">❌ エラーケース</text>
+
+  <text x="80" y="205" class="body">🚫 入力値エラー</text>
+  <text x="100" y="250" class="note">• 必須項目未入力</text>
+  <text x="100" y="285" class="note">• 不正なフォーマット</text>
+  <text x="100" y="320" class="note">• 型不一致</text>
+
+  <text x="80" y="370" class="body">💥 実行時エラー</text>
+  <text x="100" y="415" class="note">• DB接続失敗</text>
+  <text x="100" y="450" class="note">• ネットワークエラー</text>
+  <text x="100" y="485" class="note">• タイムアウト</text>
+
+  <!-- Edge Cases Section -->
+  <rect x="450" y="100" width="350" height="440" class="edge-box" rx="8"/>
+  <text x="625" y="150" class="heading" text-anchor="middle" fill="#FF8C00">⚠️ エッジケース</text>
+
+  <text x="480" y="205" class="body">📊 境界値</text>
+  <text x="500" y="250" class="note">• 最小値（0, 空配列）</text>
+  <text x="500" y="285" class="note">• 最大値（上限）</text>
+  <text x="500" y="320" class="note">• 境界付近（±1）</text>
+
+  <text x="480" y="370" class="body">🔄 特殊状態</text>
+  <text x="500" y="415" class="note">• NULL/undefined</text>
+  <text x="500" y="450" class="note">• 空文字列</text>
+  <text x="500" y="485" class="note">• 重複データ</text>
+
+  <!-- Constraints Section -->
+  <rect x="850" y="100" width="350" height="440" class="constraint-box" rx="8"/>
+  <text x="1025" y="150" class="heading" text-anchor="middle" fill="#00AFF0">🛡️ 制約条件</text>
+
+  <text x="880" y="205" class="body">📏 非機能要件</text>
+  <text x="900" y="250" class="note">• パフォーマンス</text>
+  <text x="900" y="285" class="note">• セキュリティ</text>
+  <text x="900" y="320" class="note">• 可用性</text>
+
+  <text x="880" y="370" class="body">🔐 ビジネスルール</text>
+  <text x="900" y="415" class="note">• アクセス権限</text>
+  <text x="900" y="450" class="note">• データ整合性</text>
+  <text x="900" y="485" class="note">• トランザクション</text>
+
+  <!-- Bottom Warning -->
+  <rect x="50" y="555" width="1150" height="45" fill="#FFE6CC" stroke="#FF8C00" stroke-width="2" rx="5"/>
+  <text x="625" y="587" class="body" text-anchor="middle" font-weight="700">⚡ AIは明示しないと考慮しない→Reward Hacking対策が必須</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .body-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .category-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 2; }
+      .warning-box { fill: #FFF3E0; stroke: #FF8C00; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="title">非機能要件チェックリスト</text>
+
+  <!-- Security -->
+  <rect x="30" y="70" width="310" height="120" rx="8" class="category-box"/>
+  <text x="185" y="100" text-anchor="middle" class="heading">セキュリティ</text>
+  <text x="50" y="130" class="body-text">• BCryptでハッシュ化</text>
+  <text x="50" y="155" class="body-text">• 環境変数で秘密管理</text>
+  <text x="50" y="180" class="body-text">• @Validでバリデーション</text>
+
+  <!-- Performance -->
+  <rect x="360" y="70" width="310" height="120" rx="8" class="category-box"/>
+  <text x="515" y="100" text-anchor="middle" class="heading">性能</text>
+  <text x="380" y="130" class="body-text">• レスポンス時間</text>
+  <text x="380" y="155" class="body-text">• 同時接続数</text>
+  <text x="380" y="180" class="body-text">• インデックス設計</text>
+
+  <!-- Scalability -->
+  <rect x="30" y="210" width="310" height="120" rx="8" class="category-box"/>
+  <text x="185" y="240" text-anchor="middle" class="heading">拡張性</text>
+  <text x="50" y="270" class="body-text">• ステートレス設計</text>
+  <text x="50" y="295" class="body-text">• 水平スケール対応</text>
+  <text x="50" y="320" class="body-text">• キャッシュ戦略</text>
+
+  <!-- Reliability -->
+  <rect x="360" y="210" width="310" height="120" rx="8" class="category-box"/>
+  <text x="515" y="240" text-anchor="middle" class="heading">信頼性</text>
+  <text x="380" y="270" class="body-text">• エラーハンドリング</text>
+  <text x="380" y="295" class="body-text">• ログ出力</text>
+  <text x="380" y="320" class="body-text">• トランザクション管理</text>
+
+  <!-- Maintainability -->
+  <rect x="30" y="350" width="310" height="95" rx="8" class="category-box"/>
+  <text x="185" y="380" text-anchor="middle" class="heading">保守性</text>
+  <text x="50" y="410" class="body-text">• コード可読性</text>
+  <text x="50" y="435" class="body-text">• テストカバレッジ80%</text>
+
+  <!-- Usability -->
+  <rect x="360" y="350" width="310" height="95" rx="8" class="category-box"/>
+  <text x="515" y="380" text-anchor="middle" class="heading">使いやすさ</text>
+  <text x="380" y="410" class="body-text">• エラーメッセージ</text>
+  <text x="380" y="435" class="body-text">• レスポンシブ対応</text>
+
+  <!-- Warning -->
+  <rect x="30" y="465" width="640" height="60" rx="8" class="warning-box"/>
+  <text x="350" y="490" text-anchor="middle" class="body-text" font-weight="700">AIは明示しないと考慮しない</text>
+  <text x="350" y="515" text-anchor="middle" class="note-text">非機能要件 = Guardrails（手抜き防止）</text>
+</svg>

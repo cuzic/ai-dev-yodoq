@@ -1,0 +1,77 @@
+<svg viewBox="0 0 720 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .box { fill: #F0F8FF; stroke: #00146E; stroke-width: 2; }
+      .arrow { stroke: #00AFF0; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .timeline-line { stroke: #00AFF0; stroke-width: 4; fill: none; }
+      .checkpoint { fill: #228B22; }
+      .increment-box { fill: #E0F7FA; stroke: #00AFF0; stroke-width: 2; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00AFF0" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="45" class="title" text-anchor="middle">インクリメンタル開発タイムライン</text>
+
+  <!-- Timeline -->
+  <line x1="80" y1="100" x2="620" y2="100" class="timeline-line"/>
+
+  <!-- Increment 1 -->
+  <circle cx="110" cy="100" r="12" class="checkpoint"/>
+  <rect x="50" y="125" width="160" height="85" class="increment-box" rx="8"/>
+  <text x="130" y="150" class="heading" text-anchor="middle">①一覧</text>
+  <text x="60" y="175" class="note">API実装</text>
+  <text x="60" y="195" class="note">テスト</text>
+
+  <!-- Commit -->
+  <text x="130" y="225" class="body" text-anchor="middle" fill="#228B22">✓</text>
+
+  <!-- Increment 2 -->
+  <circle cx="250" cy="100" r="12" class="checkpoint"/>
+  <rect x="190" y="125" width="160" height="85" class="increment-box" rx="8"/>
+  <text x="270" y="150" class="heading" text-anchor="middle">②新規</text>
+  <text x="200" y="175" class="note">作成機能</text>
+  <text x="200" y="195" class="note">バリデーション</text>
+
+  <!-- Commit -->
+  <text x="270" y="225" class="body" text-anchor="middle" fill="#228B22">✓</text>
+
+  <!-- Increment 3 -->
+  <circle cx="390" cy="100" r="12" class="checkpoint"/>
+  <rect x="330" y="125" width="160" height="85" class="increment-box" rx="8"/>
+  <text x="410" y="150" class="heading" text-anchor="middle">③更新</text>
+  <text x="340" y="175" class="note">編集機能</text>
+  <text x="340" y="195" class="note">権限チェック</text>
+
+  <!-- Commit -->
+  <text x="410" y="225" class="body" text-anchor="middle" fill="#228B22">✓</text>
+
+  <!-- Increment 4 -->
+  <circle cx="530" cy="100" r="12" class="checkpoint"/>
+  <rect x="470" y="125" width="160" height="85" class="increment-box" rx="8"/>
+  <text x="550" y="150" class="heading" text-anchor="middle">④削除</text>
+  <text x="480" y="175" class="note">削除機能</text>
+  <text x="480" y="195" class="note">確認ダイアログ</text>
+
+  <!-- Commit -->
+  <text x="550" y="225" class="body" text-anchor="middle" fill="#228B22">✓</text>
+
+  <!-- Benefits box -->
+  <rect x="50" y="280" width="600" height="230" class="box" rx="10"/>
+  <text x="350" y="315" class="heading" text-anchor="middle">小さく作るメリット</text>
+
+  <text x="70" y="360" class="body">早期フィードバック</text>
+  <text x="90" y="390" class="note">動かして確認→問題を早期発見</text>
+
+  <text x="70" y="430" class="body">進捗の可視化</text>
+  <text x="90" y="460" class="note">常に動く状態→モチベーション維持</text>
+
+  <text x="70" y="500" class="body">リスク低減</text>
+  <text x="90" y="525" class="note">AIが迷子にならない→完成まで確実</text>
+</svg>

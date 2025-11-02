@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 610">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 36px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: 400; fill: #666666; }
+      .key-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 3; }
+      .highlight-box { fill: #FFF9E6; stroke: #FFD700; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="625" y="60" class="title" text-anchor="middle">1日目のキーメッセージ</text>
+
+  <!-- Top Message -->
+  <rect x="50" y="90" width="1150" height="70" class="highlight-box" rx="8"/>
+  <text x="625" y="135" class="heading" text-anchor="middle">🎯 Vibe Coding with Guardrails = 速さと品質の両立</text>
+
+  <!-- Three Principles -->
+  <rect x="50" y="180" width="1150" height="110" class="key-box" rx="8"/>
+  <text x="625" y="215" class="heading" text-anchor="middle" fill="#00AFF0">AI活用の3原則</text>
+  <text x="70" y="250" class="body">1️⃣ Jagged Intelligence: 得意・苦手を理解</text>
+  <text x="70" y="280" class="body">2️⃣ Trust but Verify: AI自己レビュー</text>
+
+  <!-- 5-STEP Flow -->
+  <rect x="50" y="305" width="1150" height="250" class="key-box" rx="8"/>
+  <text x="625" y="345" class="heading" text-anchor="middle" fill="#00AFF0">5-STEPフロー</text>
+
+  <text x="70" y="390" class="body">STEP1: 要件定義（Guardrails構築）</text>
+  <text x="100" y="425" class="note">• MoSCoW優先順位 • ユーザーストーリー • エラー・エッジケース洗い出し</text>
+
+  <text x="70" y="470" class="body">STEP2: 設計（AI外部メモリ）</text>
+  <text x="100" y="505" class="note">• Spec-Driven Development • 技術スタック • ER図・API仕様 • 受入条件</text>
+
+  <!-- Role Change -->
+  <rect x="50" y="565" width="570" height="40" class="key-box" rx="5"/>
+  <text x="335" y="592" class="body" text-anchor="middle">👨‍💻 開発者=ナビゲーター</text>
+
+  <!-- Living Documentation -->
+  <rect x="630" y="565" width="570" height="40" class="key-box" rx="5"/>
+  <text x="915" y="592" class="body" text-anchor="middle">📚 Living Documentation</text>
+</svg>

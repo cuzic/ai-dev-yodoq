@@ -1,0 +1,59 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .body-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .step-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 2; }
+      .benefit-box { fill: #E8F5E9; stroke: #228B22; stroke-width: 2; }
+      .arrow { fill: none; stroke: #00AFF0; stroke-width: 3; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00AFF0" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="title">文字起こしアプローチ</text>
+
+  <!-- Step 1 -->
+  <rect x="30" y="70" width="200" height="100" rx="8" class="step-box"/>
+  <text x="130" y="100" text-anchor="middle" class="heading">1. 録音</text>
+  <text x="50" y="130" class="body-text">顧客との</text>
+  <text x="50" y="155" class="body-text">会議を録音</text>
+
+  <path d="M 240 120 L 270 120" class="arrow"/>
+
+  <!-- Step 2 -->
+  <rect x="275" y="70" width="180" height="100" rx="8" class="step-box"/>
+  <text x="365" y="100" text-anchor="middle" class="heading">2. 文字起こし</text>
+  <text x="295" y="130" class="body-text">音声→</text>
+  <text x="295" y="155" class="body-text">テキスト変換</text>
+
+  <path d="M 465 120 L 495 120" class="arrow"/>
+
+  <!-- Step 3 -->
+  <rect x="500" y="70" width="170" height="100" rx="8" class="step-box"/>
+  <text x="585" y="100" text-anchor="middle" class="heading">3. AI抽出</text>
+  <text x="520" y="130" class="body-text">要件・</text>
+  <text x="520" y="155" class="body-text">ストーリー生成</text>
+
+  <!-- Benefits -->
+  <rect x="30" y="195" width="640" height="165" rx="8" class="benefit-box"/>
+  <text x="350" y="225" text-anchor="middle" class="heading">なぜこの手法が強力か</text>
+
+  <text x="50" y="255" class="body-text">✓ 解釈のズレゼロ</text>
+  <text x="60" y="280" class="note-text">顧客の言葉をそのまま記録</text>
+
+  <text x="50" y="310" class="body-text">✓ 「言った/言わない」問題の解消</text>
+  <text x="60" y="335" class="note-text">証拠として残る</text>
+
+  <!-- Use cases -->
+  <rect x="30" y="380" width="640" height="140" rx="8" class="step-box"/>
+  <text x="350" y="410" text-anchor="middle" class="heading">活用シーン</text>
+
+  <text x="50" y="440" class="body-text">• 要件ヒアリング → ユーザーストーリー生成</text>
+  <text x="50" y="470" class="body-text">• トライアル知識共有 → ベストプラクティス抽出</text>
+  <text x="50" y="500" class="body-text">• ドキュメント自動生成 → OpenAPI・DB定義書作成</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .body-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .given-box { fill: #E3F2FD; stroke: #00AFF0; stroke-width: 2; }
+      .when-box { fill: #FFF3E0; stroke: #FF8C00; stroke-width: 2; }
+      .then-box { fill: #E8F5E9; stroke: #228B22; stroke-width: 2; }
+      .example-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 2; }
+      .arrow { fill: none; stroke: #666666; stroke-width: 3; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="title">Given-When-Then形式</text>
+
+  <!-- Structure -->
+  <rect x="30" y="70" width="200" height="90" rx="8" class="given-box"/>
+  <text x="130" y="100" text-anchor="middle" class="heading">Given</text>
+  <text x="130" y="130" text-anchor="middle" class="body-text">前提条件</text>
+  <text x="130" y="150" text-anchor="middle" class="note-text">初期状態</text>
+
+  <path d="M 240 115 L 270 115" class="arrow"/>
+
+  <rect x="275" y="70" width="190" height="90" rx="8" class="when-box"/>
+  <text x="370" y="100" text-anchor="middle" class="heading">When</text>
+  <text x="370" y="130" text-anchor="middle" class="body-text">アクション</text>
+  <text x="370" y="150" text-anchor="middle" class="note-text">実行操作</text>
+
+  <path d="M 475 115 L 505 115" class="arrow"/>
+
+  <rect x="510" y="70" width="160" height="90" rx="8" class="then-box"/>
+  <text x="590" y="100" text-anchor="middle" class="heading">Then</text>
+  <text x="590" y="130" text-anchor="middle" class="body-text">期待結果</text>
+  <text x="590" y="150" text-anchor="middle" class="note-text">検証事項</text>
+
+  <!-- Normal case -->
+  <rect x="30" y="180" width="640" height="130" rx="8" class="example-box"/>
+  <text x="350" y="210" text-anchor="middle" class="heading">正常系の例</text>
+  <text x="50" y="240" class="body-text">Given: 登録済みユーザー</text>
+  <text x="50" y="270" class="body-text">When: 正しいメール・パスワードでログイン</text>
+  <text x="50" y="300" class="body-text">Then: トークン発行、ダッシュボードへリダイレクト</text>
+
+  <!-- Error case -->
+  <rect x="30" y="330" width="640" height="155" rx="8" class="example-box"/>
+  <text x="350" y="360" text-anchor="middle" class="heading">異常系の例</text>
+  <text x="50" y="390" class="body-text">Given: 登録済みユーザー</text>
+  <text x="50" y="420" class="body-text">When: 間違ったパスワードでログイン</text>
+  <text x="50" y="450" class="body-text">Then: エラーメッセージ表示、5回失敗でアカウントロック</text>
+  <text x="50" y="475" class="note-text">効果：「完成の定義」を明確化、AIが仕様を正確に理解</text>
+</svg>

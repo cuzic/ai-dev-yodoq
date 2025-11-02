@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 31px;
+        font-weight: bold;
+        fill: #00146E;
+      }
+      .step-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #00146E;
+      }
+      .step-desc {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
+        fill: #333333;
+      }
+      .benefit-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 17px;
+        fill: #333333;
+      }
+      .step-box {
+        fill: #F0F8FF;
+        stroke: #00AFF0;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .number-circle {
+        fill: #00AFF0;
+        stroke: #00146E;
+        stroke-width: 2;
+      }
+      .number-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        fill: #FFFFFF;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .arrow {
+        stroke: #00146E;
+        stroke-width: 3;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00146E" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="20" y="35" class="title">リバースエンジニアリングのプロセス</text>
+
+  <!-- Step 1: Read Code -->
+  <rect x="50" y="70" width="280" height="80" class="step-box"/>
+  <circle cx="80" cy="110" r="20" class="number-circle"/>
+  <text x="80" y="110" class="number-text">1</text>
+  <text x="115" y="100" class="step-title">既存コードを読む</text>
+  <text x="115" y="125" class="step-desc">Claude Codeでプロジェクト</text>
+  <text x="115" y="145" class="step-desc">全体をスキャン</text>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 190 150 L 190 180" class="arrow"/>
+
+  <!-- Step 2: Extract Structure -->
+  <rect x="50" y="180" width="280" height="80" class="step-box"/>
+  <circle cx="80" cy="220" r="20" class="number-circle"/>
+  <text x="80" y="220" class="number-text">2</text>
+  <text x="115" y="210" class="step-title">構造を抽出</text>
+  <text x="115" y="235" class="step-desc">アーキテクチャパターン、</text>
+  <text x="115" y="255" class="step-desc">テーブル定義、API仕様</text>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 190 260 L 190 290" class="arrow"/>
+
+  <!-- Step 3: Generate Docs -->
+  <rect x="50" y="290" width="280" height="80" class="step-box"/>
+  <circle cx="80" cy="330" r="20" class="number-circle"/>
+  <text x="80" y="330" class="number-text">3</text>
+  <text x="115" y="320" class="step-title">ドキュメント生成</text>
+  <text x="115" y="345" class="step-desc">要件定義書・内部仕様書</text>
+  <text x="115" y="365" class="step-desc">をAIが自動生成</text>
+
+  <!-- Arrow 3 to 4 -->
+  <path d="M 190 370 L 190 400" class="arrow"/>
+
+  <!-- Step 4: Use for Development -->
+  <rect x="50" y="400" width="280" height="80" class="step-box"/>
+  <circle cx="80" cy="440" r="20" class="number-circle"/>
+  <text x="80" y="440" class="number-text">4</text>
+  <text x="115" y="430" class="step-title">新機能追加に活用</text>
+  <text x="115" y="455" class="step-desc">既存仕様との整合性保証</text>
+  <text x="115" y="475" class="step-desc">デグレ防止</text>
+
+  <!-- Benefits Box -->
+  <rect x="370" y="70" width="310" height="410" style="fill: #F0F8FF; stroke: #00146E; stroke-width: 3; rx: 8;"/>
+  <text x="525" y="100" style="font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: #00146E; text-anchor: middle; font-weight: bold;">効果</text>
+
+  <!-- Benefit 1 -->
+  <rect x="390" y="120" width="270" height="70" style="fill: #FFFFFF; stroke: #228B22; stroke-width: 2; rx: 5;"/>
+  <text x="525" y="145" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: #228B22; text-anchor: middle; font-weight: bold;">✓ 仕様の正確把握</text>
+  <text x="400" y="168" class="benefit-text" style="font-size: 15px;">コードが真実を語る</text>
+  <text x="400" y="185" class="benefit-text" style="font-size: 15px;">推測ではなく事実に基づく</text>
+
+  <!-- Benefit 2 -->
+  <rect x="390" y="205" width="270" height="70" style="fill: #FFFFFF; stroke: #228B22; stroke-width: 2; rx: 5;"/>
+  <text x="525" y="230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: #228B22; text-anchor: middle; font-weight: bold;">✓ デグレ防止</text>
+  <text x="400" y="253" class="benefit-text" style="font-size: 15px;">既存機能の動作を理解</text>
+  <text x="400" y="270" class="benefit-text" style="font-size: 15px;">影響範囲を事前把握</text>
+
+  <!-- Benefit 3 -->
+  <rect x="390" y="290" width="270" height="70" style="fill: #FFFFFF; stroke: #228B22; stroke-width: 2; rx: 5;"/>
+  <text x="525" y="315" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: #228B22; text-anchor: middle; font-weight: bold;">✓ 適切な機能追加</text>
+  <text x="400" y="338" class="benefit-text" style="font-size: 15px;">既存との整合性保証</text>
+  <text x="400" y="355" class="benefit-text" style="font-size: 15px;">一貫したアーキテクチャ</text>
+
+  <!-- Benefit 4 -->
+  <rect x="390" y="375" width="270" height="90" style="fill: #FFFFFF; stroke: #228B22; stroke-width: 2; rx: 5;"/>
+  <text x="525" y="400" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: #228B22; text-anchor: middle; font-weight: bold;">✓ AIの外部メモリ化</text>
+  <text x="400" y="423" class="benefit-text" style="font-size: 15px;">ドキュメント化で知見蓄積</text>
+  <text x="400" y="440" class="benefit-text" style="font-size: 15px;">次のセッションで参照可能</text>
+  <text x="400" y="457" class="benefit-text" style="font-size: 15px;">忘れっぽさ対策</text>
+
+  <!-- Bottom note -->
+  <text x="350" y="510" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: #00146E; text-anchor: middle; font-weight: bold;">基本原則：コードが真実を語る</text>
+</svg>

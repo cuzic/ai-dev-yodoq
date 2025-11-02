@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 610">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 26px; font-weight: 400; fill: #666666; }
+      .step-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 3; }
+      .highlight-box { fill: #FFF9E6; stroke: #FFD700; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="625" y="60" class="title" text-anchor="middle">STEP2のまとめ：設計ドキュメント作成</text>
+
+  <!-- Core Concept -->
+  <rect x="50" y="90" width="1150" height="70" class="highlight-box" rx="8"/>
+  <text x="625" y="135" class="heading" text-anchor="middle">📐 設計図＝AIの外部メモリ（Spec-Driven Development）</text>
+
+  <!-- 7 Components Grid -->
+  <text x="625" y="190" class="heading" text-anchor="middle" fill="#00AFF0">設計ドキュメントの7要素</text>
+
+  <!-- Row 1: Tech Stack, Architecture, DB Schema -->
+  <rect x="50" y="210" width="360" height="120" class="step-box" rx="5"/>
+  <text x="230" y="245" class="body" text-anchor="middle" font-weight="700">1️⃣ 技術スタック</text>
+  <text x="70" y="280" class="note">フロント・バック・DB</text>
+  <text x="70" y="310" class="note">選定理由も明記</text>
+
+  <rect x="445" y="210" width="360" height="120" class="step-box" rx="5"/>
+  <text x="625" y="245" class="body" text-anchor="middle" font-weight="700">2️⃣ アーキテクチャ</text>
+  <text x="465" y="280" class="note">3層構造</text>
+  <text x="465" y="310" class="note">Mermaid図で可視化</text>
+
+  <rect x="840" y="210" width="360" height="120" class="step-box" rx="5"/>
+  <text x="1020" y="245" class="body" text-anchor="middle" font-weight="700">3️⃣ DBスキーマ</text>
+  <text x="860" y="280" class="note">ER図・テーブル定義</text>
+  <text x="860" y="310" class="note">制約・インデックス</text>
+
+  <!-- Row 2: API Spec, Acceptance Criteria, Security -->
+  <rect x="50" y="345" width="360" height="120" class="step-box" rx="5"/>
+  <text x="230" y="380" class="body" text-anchor="middle" font-weight="700">4️⃣ API仕様</text>
+  <text x="70" y="415" class="note">エンドポイント定義</text>
+  <text x="70" y="445" class="note">並行開発可能に</text>
+
+  <rect x="445" y="345" width="360" height="120" class="step-box" rx="5"/>
+  <text x="625" y="380" class="body" text-anchor="middle" font-weight="700">5️⃣ 受入条件</text>
+  <text x="465" y="415" class="note">Given-When-Then</text>
+  <text x="465" y="445" class="note">正常・異常・境界値</text>
+
+  <rect x="840" y="345" width="360" height="120" class="step-box" rx="5"/>
+  <text x="1020" y="380" class="body" text-anchor="middle" font-weight="700">6️⃣ セキュリティ</text>
+  <text x="860" y="415" class="note">認証・認可・検証</text>
+  <text x="860" y="445" class="note">環境変数管理</text>
+
+  <!-- Row 3: Technical Decisions -->
+  <rect x="345" y="480" width="560" height="80" class="step-box" rx="5"/>
+  <text x="625" y="515" class="body" text-anchor="middle" font-weight="700">7️⃣ 技術的決定事項</text>
+  <text x="365" y="547" class="note">ライブラリ選定理由・アーキテクチャ判断の根拠</text>
+
+  <!-- Key Takeaway -->
+  <rect x="50" y="570" width="1150" height="35" fill="#E6F7E6" stroke="#228B22" stroke-width="2" rx="5"/>
+  <text x="625" y="595" class="body" text-anchor="middle" font-weight="700">✅ 設計なし=AI手抜き実装 / 設計あり=正確な実装</text>
+</svg>
