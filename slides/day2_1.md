@@ -110,7 +110,7 @@ paginate: true
 
 # リバースエンジニアリングとは
 
-![リバースエンジニアリングのプロセス](../assets/diagrams/diagram_12_reverse_engineering.svg)
+![リバースエンジニアリングのプロセス](./assets/diagrams/diagram_12_reverse_engineering.svg)
 
 **既存コードから仕様を読み解く技術**
 
@@ -158,7 +158,7 @@ paginate: true
 
 # AIの制約を理解する（Jagged Intelligence）
 
-![Jagged Intelligence実例](../assets/diagrams/diagram_38_jagged_intelligence_examples.svg)
+![Jagged Intelligence実例](./assets/diagrams/diagram_38_jagged_intelligence_examples.svg)
 
 **AIの得意・不得意を理解**
 
@@ -181,7 +181,7 @@ paginate: true
 
 # ドキュメント自動生成（Guardrails構築）
 
-![文字起こしアプローチ（トライアル知識の共有）](../assets/diagrams/diagram_40_transcript_approach.svg)
+![文字起こしアプローチ（トライアル知識の共有）](./assets/diagrams/diagram_40_transcript_approach.svg)
 
 **APIドキュメント（OpenAPI）:**
 仕様明確化、既存API整合性保証
@@ -232,7 +232,7 @@ paginate: true
 
 # リバースエンジニアリング → 網羅的テスト生成（重要）
 
-![リバースエンジニアリングから網羅的テスト生成](../assets/diagrams/diagram_44_reverse_to_comprehensive_test.svg)
+![リバースエンジニアリングから網羅的テスト生成](./assets/diagrams/diagram_44_reverse_to_comprehensive_test.svg)
 
 ### ❌ 従来のアプローチ（コード追認のみ）
 - 既存コード→直接テスト生成→実装済み機能のみカバー
@@ -259,7 +259,7 @@ paginate: true
 
 # 既存機能のフィットギャップ分析
 
-![フィットギャップ分析](../assets/diagrams/diagram_18_fit_gap_analysis.svg)
+![フィットギャップ分析](./assets/diagrams/diagram_18_fit_gap_analysis.svg)
 
 **目的:** 既存vs新機能比較、追加開発範囲明確化
 
@@ -280,7 +280,7 @@ paginate: true
 
 # 影響範囲調査の手法
 
-![影響範囲調査の可視化](../assets/diagrams/diagram_13_impact_analysis.svg)
+![影響範囲調査の可視化](./assets/diagrams/diagram_13_impact_analysis.svg)
 
 **なぜ必要:**
 AIは局所変更のみ見る→全体影響見落とし→デグレ
@@ -379,7 +379,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 # テストシナリオ → テストコードの順序
 
-![テストシナリオからテストコードへの流れ](../assets/diagrams/diagram_14_scenario_to_code.svg)
+![テストシナリオからテストコードへの流れ](./assets/diagrams/diagram_14_scenario_to_code.svg)
 
 ### テストシナリオを先に作成（Guardrails構築）
 - 全体像を把握→AIは忘れっぽい対策
@@ -396,7 +396,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 # デグレ防止の重要性
 
-![Reward Hacking実例](../assets/diagrams/diagram_39_reward_hacking_examples.svg)
+![Reward Hacking実例](./assets/diagrams/diagram_39_reward_hacking_examples.svg)
 
 **既存機能が壊れていないことを保証（Trust but Verify）**
 
@@ -420,7 +420,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 # テストシナリオの分類
 
-![テストシナリオの4分類](../assets/diagrams/diagram_15_test_classification.svg)
+![テストシナリオの4分類](./assets/diagrams/diagram_15_test_classification.svg)
 
 **正常系（Happy Path）:**
 想定入力→期待結果（最重要、最頻使用）

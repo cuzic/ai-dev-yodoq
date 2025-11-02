@@ -45,7 +45,7 @@ paginate: true
 
 # 演習の進め方（ワークフロー）
 
-![演習ワークフロー](../assets/diagrams/diagram_17_workshop_workflow.svg)
+![演習ワークフロー](./assets/diagrams/diagram_17_workshop_workflow.svg)
 
 **保守開発の4ステップワークフロー:**
 - **STEP1: リバースエンジニアリング（30分）** 仕様把握、ドキュメント自動生成
@@ -201,7 +201,7 @@ Given-When-Then形式でシナリオ記述
 
 # デグレ防止のテストシナリオ
 
-![デグレ防止の3層構造](../assets/diagrams/diagram_16_regression_prevention.svg)
+![デグレ防止の3層構造](./assets/diagrams/diagram_16_regression_prevention.svg)
 
 **目的:** 既存と新機能の連携確認
 
@@ -227,7 +227,7 @@ Given-When-Then形式でシナリオ記述
 
 # デグレ発生メカニズムとTDDによる予防
 
-![デグレ発生メカニズムとTDD予防](../assets/diagrams/diagram_42_regression_mechanism.svg)
+![デグレ発生メカニズムとTDD予防](./assets/diagrams/diagram_42_regression_mechanism.svg)
 
 ### デグレが起きる3つの原因
 - AIは忘れっぽい→既存仕様を忘れる
@@ -362,7 +362,7 @@ Given-When-Then形式でシナリオ記述
 
 # ドキュメント反映
 
-![ドキュメント自動生成Before/After](../assets/diagrams/diagram_43_doc_automation_before_after.svg)
+![ドキュメント自動生成Before/After](./assets/diagrams/diagram_43_doc_automation_before_after.svg)
 
 **architecture.md更新:**
 テーブル、API、画面記録
@@ -465,7 +465,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 # 2日間の総まとめ
 
-![2日間の学習構造](../assets/diagrams/diagram_20_2day_summary.svg)
+![2日間の学習構造](./assets/diagrams/diagram_20_2day_summary.svg)
 
 ### 1日目：新規開発の5-STEP
 - STEP1-2: 要件・設計（Guardrails、曖昧さ排除）
@@ -511,7 +511,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 # よくある失敗と対策
 
-![よくある失敗パターンと対策](../assets/diagrams/diagram_19_common_failures.svg)
+![よくある失敗パターンと対策](./assets/diagrams/diagram_19_common_failures.svg)
 
 ### ①いきなりコード
 - **失敗:** STEP1-2スキップ→何度も作り直し
@@ -563,7 +563,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 # 今後の学習ロードマップ
 
-![学習ロードマップ](../assets/diagrams/diagram_21_learning_roadmap.svg)
+![学習ロードマップ](./assets/diagrams/diagram_21_learning_roadmap.svg)
 
 ### ステップ1: 小プロジェクト3つ
 TODO/メモ/簡易ECなど、5-STEP実践、TDD習慣化

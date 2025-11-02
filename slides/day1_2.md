@@ -35,7 +35,7 @@ paginate: true
 
 # タスク分解 = AIの思考を言語化（重要）
 
-![タスク分解_AIの思考を言語化重要](../assets/diagrams-web/slide_004_タスク分解_AIの思考を言語化重要.svg)
+![タスク分解_AIの思考を言語化重要](./assets/diagrams-web/slide_004_タスク分解_AIの思考を言語化重要.svg)
 
 ---
 
@@ -71,7 +71,7 @@ paginate: true
 
 # Phase分け戦略（Phase 1-4）
 
-![Phase分け戦略](../assets/diagrams/diagram_10_phase_breakdown.svg)
+![Phase分け戦略](./assets/diagrams/diagram_10_phase_breakdown.svg)
 
 - **なぜPhase分けが必要か**
   - 全部一度に作ると依存関係が複雑化→AIが混乱（忘れっぽい）
@@ -88,7 +88,7 @@ paginate: true
 
 # タスク粒度（30分〜2時間）
 
-![タスク粒度30分2時間](../assets/diagrams-web/slide_007_タスク粒度30分2時間.svg)
+![タスク粒度30分2時間](./assets/diagrams-web/slide_007_タスク粒度30分2時間.svg)
 
 ---
 
@@ -96,7 +96,7 @@ paginate: true
 
 # 依存関係の可視化
 
-![タスク依存関係グラフ](../assets/diagrams/diagram_35_dependency_graph.svg)
+![タスク依存関係グラフ](./assets/diagrams/diagram_35_dependency_graph.svg)
 
 - **なぜ依存関係の可視化が必要か**
   - 順序を間違えると手戻りが発生（DB未作成でAPI実装できない）
@@ -112,7 +112,7 @@ paginate: true
 
 # タスク一覧テンプレート
 
-![タスク一覧テンプレート](../assets/diagrams/diagram_34_task_list_template.svg)
+![タスク一覧テンプレート](./assets/diagrams/diagram_34_task_list_template.svg)
 
 - **必須項目:** Phase・タスク名・所要時間・依存関係・完了条件
 - **なぜテンプレート化が必要か**
@@ -166,7 +166,7 @@ AI生成後、必ず人間が確認・調整
 
 # STEP3のまとめ
 
-![STEP3のまとめ](../assets/diagrams-web/slide_011_STEP3のまとめ.svg)
+![STEP3のまとめ](./assets/diagrams-web/slide_011_STEP3のまとめ.svg)
 
 ---
 
@@ -244,7 +244,7 @@ AI生成後、必ず人間が確認・調整
 
 # TDD/BDD統合ワークフロー
 
-![TDD Red-Green-Refactorサイクル](../assets/diagrams/diagram_11_tdd_cycle.svg)
+![TDD Red-Green-Refactorサイクル](./assets/diagrams/diagram_11_tdd_cycle.svg)
 
 - **なぜTDD/BDDが必要か**
   - テストなし→AIが作る→人間が手動テスト→エラー→修正（無限ループ）
@@ -260,7 +260,7 @@ AI生成後、必ず人間が確認・調整
 
 # AIにTDD/BDDで実装させる
 
-![Given-When-Then構造](../assets/diagrams/diagram_33_given_when_then.svg)
+![Given-When-Then構造](./assets/diagrams/diagram_33_given_when_then.svg)
 
 - **プロンプト例:** 「POST /api/register を TDD で実装して。Given-When-Then形式のテストを書き、正常系・異常系をカバー」
 - **AIが自動で行うこと:**
@@ -276,7 +276,7 @@ AI生成後、必ず人間が確認・調整
 
 # セキュリティベストプラクティス（重要）
 
-![セキュリティベストプラクティス](../assets/diagrams/diagram_23_security_best_practices.svg)
+![セキュリティベストプラクティス](./assets/diagrams/diagram_23_security_best_practices.svg)
 
 - **なぜセキュリティが後回しになるか（Reward Hacking）**
   - AIは「タスク完了」を最優先→セキュリティは二の次
@@ -293,7 +293,7 @@ AI生成後、必ず人間が確認・調整
 
 # パスワード・JWT認証の実装
 
-![パスワードJWT認証の実装](../assets/diagrams-web/slide_020_パスワードJWT認証の実装.svg)
+![パスワードJWT認証の実装](./assets/diagrams-web/slide_020_パスワードJWT認証の実装.svg)
 
 ---
 
@@ -331,7 +331,7 @@ AI生成後、必ず人間が確認・調整
 
 # インクリメンタル開発とは
 
-![インクリメンタル開発タイムライン](../assets/diagrams/diagram_24_incremental_timeline.svg)
+![インクリメンタル開発タイムライン](./assets/diagrams/diagram_24_incremental_timeline.svg)
 
 - **なぜ小さく作るべきか（AIは忘れっぽい対策）**
   - 全部一度に作る→完成まで動かない→問題発見が遅れる
@@ -372,7 +372,7 @@ AI生成後、必ず人間が確認・調整
 
 # AI自己レビュー必須化（重要）
 
-![AI自己レビューフロー](../assets/diagrams/diagram_25_ai_self_review_flow.svg)
+![AI自己レビューフロー](./assets/diagrams/diagram_25_ai_self_review_flow.svg)
 
 - **なぜAI自己レビューが重要か（Trust but Verify）**
   - AIにもエラーあり→自己レビューで多くを検出
@@ -387,7 +387,7 @@ AI生成後、必ず人間が確認・調整
 
 # STEP4のまとめ
 
-![STEP4のまとめ](../assets/diagrams-web/slide_025_STEP4のまとめ.svg)
+![STEP4のまとめ](./assets/diagrams-web/slide_025_STEP4のまとめ.svg)
 
 ---
 
@@ -498,7 +498,7 @@ UIバグ・統合問題を自動検出
 
 # AI自己レビュー4種類の使い分け
 
-![AI自己レビュー4種類の使い分け](../assets/diagrams-web/slide_035_AI自己レビュー4種類の使い分け.svg)
+![AI自己レビュー4種類の使い分け](./assets/diagrams-web/slide_035_AI自己レビュー4種類の使い分け.svg)
 
 ---
 
@@ -544,7 +544,7 @@ UIバグ・統合問題を自動検出
 
 # テストカバレッジ80%ルール
 
-![テストカバレッジ80%ルール](../assets/diagrams/diagram_26_test_coverage_80_rule.svg)
+![テストカバレッジ80%ルール](./assets/diagrams/diagram_26_test_coverage_80_rule.svg)
 
 - **なぜ80%なのか:** 100%は非現実的（Getter/Setterまでテスト不要）、80%で主要な機能とエッジケースをカバー
 - **残り20%:** リスクの低い箇所
@@ -624,7 +624,7 @@ UIバグ・統合問題を自動検出
 
 # Living Documentation（AIの外部メモリ）
 
-![Living Documentation](../assets/diagrams/diagram_36_living_documentation.svg)
+![Living Documentation](./assets/diagrams/diagram_36_living_documentation.svg)
 
 ## なぜLiving Documentationが必要か
 
@@ -639,7 +639,7 @@ UIバグ・統合問題を自動検出
 
 # ドキュメント自動生成Before/After
 
-![ドキュメント自動生成Before/After](../assets/diagrams/diagram_43_doc_automation_before_after.svg)
+![ドキュメント自動生成Before/After](./assets/diagrams/diagram_43_doc_automation_before_after.svg)
 
 ---
 
@@ -742,7 +742,7 @@ UIバグ・統合問題を自動検出
 
 # STEP5のまとめ
 
-![STEP5のまとめ](../assets/diagrams-web/slide_041_STEP5のまとめ.svg)
+![STEP5のまとめ](./assets/diagrams-web/slide_041_STEP5のまとめ.svg)
 
 ---
 

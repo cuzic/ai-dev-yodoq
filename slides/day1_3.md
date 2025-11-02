@@ -18,7 +18,7 @@ paginate: true
 
 # 1日目の振り返り
 
-![5-STEPフロー全体](../assets/diagrams/diagram_03_5step_flow.svg)
+![5-STEPフロー全体](./assets/diagrams/diagram_03_5step_flow.svg)
 
 ## 🎯 5-STEPフロー全体の確認
 
@@ -122,7 +122,7 @@ paginate: true
 
 # 1日目のキーメッセージ
 
-![1日目のキーメッセージ](../assets/diagrams/diagram_48_day1_key_messages.svg)
+![1日目のキーメッセージ](./assets/diagrams/diagram_48_day1_key_messages.svg)
 
 ---
 
