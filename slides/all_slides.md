@@ -22,28 +22,26 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # AI活用の3原則
 
 ![AI活用の3原則](./assets/diagrams/diagram_01_ai_principles.svg)
 
-- **Jagged Intelligence**: 得意（コード生成・テスト・アーキテクチャ設計）、苦手（ビジネス要件の解釈・トレードオフ判断）
-- **Trust but Verify**: AIにもエラーあり、AI自己レビューで品質向上
-- **Guardrails**: ドキュメント駆動、受入条件で手戻り防止
+**Jagged Intelligence:** 得意（コード生成・テスト・設計）、苦手（ビジネス要件・判断）
+**Trust but Verify:** AIにもエラーあり、AI自己レビューで品質向上
+**Guardrails:** ドキュメント駆動、受入条件で手戻り防止
 
 ---
 
-<!-- _class: layout-comparison compact -->
+<!-- _class: layout-comparison supercompact -->
 
 # Vibe Coding vs Production Engineering
 
 <div>
 
 ### Vibe Coding
-- 速い（30分〜1時間）
-- 品質バラバラ
-- プロトタイプ向き
+速い（30分〜1時間）、品質バラバラ、プロトタイプ向き
 
 </div>
 
@@ -52,9 +50,7 @@ AI駆動開発で開発期間を大幅短縮
 <div>
 
 ### Production Engineering
-- 構造化
-- 品質保証
-- 本番向き
+構造化、品質保証、本番向き
 
 </div>
 
@@ -340,21 +336,19 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # 受け入れ基準（Given-When-Then）
 
 ![Given-When-Then形式](./assets/diagrams/diagram_33_given_when_then.svg)
 
-- **正常系:**
-  - Given: 登録済みユーザー
-  - When: 正しいメール・パスワードでログイン
-  - Then: トークン発行、ダッシュボードへリダイレクト
-- **異常系:**
-  - Given: 登録済みユーザー
-  - When: 間違ったパスワードでログイン
-  - Then: エラーメッセージ、5回失敗でロック
-- **効果:** 「完成の定義」を明確化
+**正常系:**
+- Given: 登録済みユーザー | When: 正しいメール・パスワードでログイン | Then: トークン発行、ダッシュボードへリダイレクト
+
+**異常系:**
+- Given: 登録済みユーザー | When: 間違ったパスワードでログイン | Then: エラーメッセージ、5回失敗でロック
+
+**効果:** 「完成の定義」を明確化
 
 ---
 
@@ -432,7 +426,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # Tech Stack Setup
 
@@ -442,17 +436,16 @@ AI駆動開発で開発期間を大幅短縮
 
 ## 例
 
-**フロントエンド:** Thymeleaf / JSP
-**バックエンド:** Spring Boot
-**データベース:** PostgreSQL / MySQL
-**認証:** Spring Security + JWT
-**日付処理:** Java 8 Date/Time API
-  ↳ 理由: 標準ライブラリ
-**テスト:** JUnit 5 + Mockito
+**フロント:** Thymeleaf/JSP
+**バック:** Spring Boot
+**DB:** PostgreSQL/MySQL
+**認証:** Spring Security+JWT
+**日付:** Java 8 Date/Time API (標準ライブラリ)
+**テスト:** JUnit 5+Mockito
 
 ## 重要
 
-選定理由も明記 → 技術的判断の根拠を残す
+選定理由も明記→技術的判断の根拠を残す
 
 ---
 
@@ -659,12 +652,9 @@ paginate: true
 
 ![Phase分け戦略](./assets/diagrams/diagram_10_phase_breakdown.svg)
 
-- **なぜ必要か:** 依存関係複雑化を防ぐ、早期問題発見
-- **Phase 1:** DB接続・認証・基本CRUD
-- **Phase 2:** ビジネスロジック・主要API
-- **Phase 3:** 検索・フィルタ・通知
-- **Phase 4:** 最適化・E2Eテスト
-- **効果:** リスク最小化、確実な進捗
+**なぜ:** 依存関係複雑化防止、早期問題発見
+**Phase 1:** DB接続・認証・基本CRUD | **Phase 2:** ビジネスロジック・主要API | **Phase 3:** 検索・フィルタ・通知 | **Phase 4:** 最適化・E2Eテスト
+**効果:** リスク最小化、確実な進捗
 
 ---
 
@@ -817,19 +807,18 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # TDD/BDD統合ワークフロー
 
 ![TDD Red-Green-Refactorサイクル](./assets/diagrams/diagram_11_tdd_cycle.svg)
 
-- **なぜTDD/BDDが必要か**
-  - テストなし→AIが作る→人間が手動テスト→エラー→修正（無限ループ）
-  - テストあり→AIが作る→自動テスト→エラー→AI自己修正（自己完結）
-- **Red（失敗するテストを書く）:** テストが仕様を定義
-- **Green（最小実装）:** テストを通す最小コード
-- **Refactor（改善）:** テストが保証するから安心してリファクタリング
-- **BDD形式（Given-When-Then）:** 人間が読める仕様書になる
+**なぜTDD/BDD:**
+- テストなし→無限ループ | テストあり→AI自己完結
+**Red:** 失敗するテスト先書き（仕様定義）
+**Green:** 最小実装でテスト通過
+**Refactor:** 安心してリファクタリング
+**BDD (Given-When-Then):** 人間が読める仕様書
 
 ---
 
@@ -879,21 +868,14 @@ AI生成後、必ず人間が確認・調整
 # セキュアなコードの指示方法
 
 ```
-「ユーザー登録APIを実装。
-必須:
-- BCryptでパスワードハッシュ化
-- JWT秘密鍵は環境変数
-- .envファイル使用
-- .gitignoreに.env追加
-- @Validでバリデーション
-- レート制限
-- エラーメッセージ一般化」
+「ユーザー登録API実装。必須:
+BCrypt、JWT秘密鍵環境変数、.env使用、
+.gitignore追加、@Validバリデ、
+レート制限、エラー一般化」
 ```
 
-**なぜ明確な指示が必要か**
-AIは暗黙の前提を理解できない
-
-**効果:** 明確な制約＝安全な実装
+**なぜ:** AI暗黙前提理解不可
+**効果:** 明確な制約＝安全実装
 
 ---
 
@@ -1088,15 +1070,15 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # テストカバレッジ80%ルール
 
 ![テストカバレッジ80%ルール](./assets/diagrams/diagram_26_test_coverage_80_rule.svg)
 
-- **なぜ80%なのか:** 100%は非現実的（Getter/Setterまでテスト不要）、80%で主要な機能とエッジケースをカバー
-- **残り20%:** リスクの低い箇所
-- **効果:** テストカバレッジ向上、リファクタリング時の安全性確保
+**なぜ80%:** 100%非現実的（Getter/Setter不要）、80%で主要機能とエッジケースをカバー
+**残り20%:** リスク低い箇所
+**効果:** カバレッジ向上、リファクタリング安全性確保
 
 ---
 
@@ -1751,7 +1733,7 @@ theme: ai-seminar
 paginate: true
 ---
 
-<!-- _class: title compact -->
+<!-- _class: title supercompact -->
 
 # Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎
 
@@ -1904,26 +1886,17 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # ドキュメント自動生成（Guardrails構築）
 
 ![文字起こしアプローチ（トライアル知識の共有）](./assets/diagrams/diagram_40_transcript_approach.svg)
 
-**APIドキュメント（OpenAPI）:**
-仕様明確化、既存API整合性保証
-
-**DB定義書:**
-正確なSQL生成、デグレ防止
-
-**JavaDoc/コメント:**
-設計意図伝達、適切な拡張
-
-**インデックス（README/architecture.md）:**
-全体像把握、一貫性確保
-
-**自動生成:**
-「OpenAPI仕様書を生成」「テーブル定義書を生成」
+**APIドキュメント (OpenAPI):** 仕様明確化、API整合性保証
+**DB定義書:** 正確SQL生成、デグレ防止
+**JavaDoc/コメント:** 設計意図伝達、適切拡張
+**インデックス (README/architecture.md):** 全体像把握、一貫性確保
+**自動生成:** 「OpenAPI仕様書を生成」「テーブル定義書を生成」
 
 ---
 
@@ -1955,24 +1928,22 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # リバースエンジニアリング → 網羅的テスト生成（重要）
 
 ![リバースエンジニアリングから網羅的テスト生成](./assets/diagrams/diagram_44_reverse_to_comprehensive_test.svg)
 
-### ❌ 従来のアプローチ（コード追認のみ）
-- 既存コード→直接テスト生成→実装済み機能のみカバー
-- **問題:** 既存バグも追認、エッジケース見落とし、仕様外の動作を検出できない
+### ❌ 従来（コード追認）
+既存コード→直接テスト生成→実装済みのみカバー
+**問題:** 既存バグ追認、エッジケース見落とし
 
-### ✅ リバースエンジニアリング（仕様逆生成）
-- 既存コード→要件定義書・ユーザーストーリー逆生成→網羅的テストシナリオ
-- **効果:** あるべき仕様に基づくテスト、未実装のエッジケースも検出、仕様外の動作を発見
+### ✅ リバースエンジニアリング
+既存コード→要件定義書逆生成→網羅的テストシナリオ
+**効果:** あるべき仕様に基づくテスト、未実装検出
 
 ### 💡 核心的価値
-- コードの追認ではなく「あるべき姿」に基づいたテストが可能
-- AIは仕様から網羅的にテストを生成（正常系・異常系・境界値すべて）
-- 既存コードのバグや仕様外の動作を発見できる
+「あるべき姿」に基づいたテスト、AIが網羅的に生成（正常系・異常系・境界値）、既存バグ・仕様外動作を発見
 
 ---
 
@@ -2319,30 +2290,21 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # 3つの演習課題から選択
 
-### ①マスター追加（商品カテゴリマスタのCRUD）
-**新しいマスタテーブル追加**
-- CREATE TABLE
-- CRUD機能実装（Controller、Service、Repository、Entity、View）
-- 既存マスタとの関連付け（外部キー）
-- **難易度: 中**（デグレリスク低）
+### ①マスター追加（商品カテゴリマスタCRUD）
+CREATE TABLE、CRUD機能実装、外部キー関連付け
+**難易度: 中**（デグレリスク低）
 
-### ②項目追加（顧客に電話番号カラム追加）
-**既存テーブルへのカラム追加**
-- ALTER TABLE
-- 関連画面・API修正（登録、更新、一覧、詳細）
-- バリデーション追加（電話番号形式チェック）
-- **難易度: 高**（影響大、デグレリスク高）
+### ②項目追加（顧客に電話番号カラム）
+ALTER TABLE、関連画面・API修正、バリデーション追加
+**難易度: 高**（影響大、デグレリスク高）
 
 ### ③検索条件追加（日付範囲指定検索）
-**既存検索への条件追加**
-- WHERE句拡張
-- UI・API・SQL修正（日付ピッカー、パラメータ、クエリ）
-- 境界値処理（開始日・終了日チェック）
-- **難易度: 中**（既存検索への影響あり）
+WHERE句拡張、UI・API・SQL修正、境界値処理
+**難易度: 中**（既存検索への影響あり）
 
 ---
 
@@ -2431,7 +2393,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">✅</div>
 
@@ -2441,19 +2403,15 @@ paginate: true
 
 **目的:** 既存機能が壊れていないことを保証（デグレ防止）
 
-**対象:** 既存機能の主要な機能をカバー
-- ログイン、ユーザー登録、データ一覧、検索など
-- よく使われる機能を優先
+**対象:** 既存機能の主要な機能（ログイン、ユーザー登録、一覧、検索など）
 
 **観点:** 正常系・異常系・境界値
 
-**AIへの指示:**
-- 「既存のログイン機能のテストシナリオを作成して」
-- 「正常系、異常系、境界値を含めて」
+**AI指示:** 「既存のログイン機能のテストシナリオを作成。正常系、異常系、境界値含む」
 
-**出力形式:** Markdown形式でテストシナリオ一覧
+**出力:** Markdown形式
 
-**効果:** デグレ防止、安心して変更可能
+**効果:** デグレ防止、安心変更
 
 </div>
 
@@ -2645,28 +2603,17 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # ドキュメント反映
 
 ![ドキュメント自動生成Before/After](./assets/diagrams/diagram_43_doc_automation_before_after.svg)
 
-**architecture.md更新:**
-テーブル、API、画面記録
-- AI指示: 「変更内容をarchitecture.mdに反映して」
-
-**README.md更新:**
-セットアップ、使い方記録
-- AI指示: 「新機能の使い方をREADME.mdに追加」
-
-**知見の記録:**
-ハマった点、解決方法、ベストプラクティス
-
-**Living Documentation:**
-ドキュメント＝AIの外部メモリ
-
-**効果:**
-知見蓄積、チーム共有、再現可能な開発
+**architecture.md更新:** テーブル、API、画面記録
+**README.md更新:** セットアップ、使い方記録
+**知見の記録:** ハマった点、解決方法、ベストプラクティス
+**Living Documentation:** ドキュメント＝AIの外部メモリ
+**効果:** 知見蓄積、チーム共有、再現可能な開発
 
 ---
 
@@ -2751,23 +2698,17 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # 2日間の総まとめ
 
 ![2日間の学習構造](./assets/diagrams/diagram_20_2day_summary.svg)
 
 ### 1日目：新規開発の5-STEP
-- STEP1-2: 要件・設計（Guardrails、曖昧さ排除）
-- STEP3: タスク分解（AI思考言語化）
-- STEP4: 実装（TDD、AI自己レビュー）
-- STEP5: 品質担保＆ドキュメント（Living Documentation）
+STEP1-2: 要件・設計（Guardrails、曖昧さ排除）| STEP3: タスク分解（AI思考言語化）| STEP4: 実装（TDD、AI自己レビュー）| STEP5: 品質担保＆Doc
 
 ### 2日目：保守開発の4ステップ
-1. リバースエンジニアリング（既存仕様読解）
-2. フィットギャップ分析＆影響範囲調査
-3. テストシナリオ作成（モレ・ヌケ防止）
-4. テストコード実装＋機能追加（デグレ防止）
+1.リバースエンジニアリング 2.フィットギャップ分析＆影響範囲調査 3.テストシナリオ作成 4.テストコード実装＋機能追加
 
 ---
 

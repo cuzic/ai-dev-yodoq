@@ -73,12 +73,9 @@ paginate: true
 
 ![Phase分け戦略](./assets/diagrams/diagram_10_phase_breakdown.svg)
 
-- **なぜ必要か:** 依存関係複雑化を防ぐ、早期問題発見
-- **Phase 1:** DB接続・認証・基本CRUD
-- **Phase 2:** ビジネスロジック・主要API
-- **Phase 3:** 検索・フィルタ・通知
-- **Phase 4:** 最適化・E2Eテスト
-- **効果:** リスク最小化、確実な進捗
+**なぜ:** 依存関係複雑化防止、早期問題発見
+**Phase 1:** DB接続・認証・基本CRUD | **Phase 2:** ビジネスロジック・主要API | **Phase 3:** 検索・フィルタ・通知 | **Phase 4:** 最適化・E2Eテスト
+**効果:** リスク最小化、確実な進捗
 
 ---
 
@@ -231,19 +228,18 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # TDD/BDD統合ワークフロー
 
 ![TDD Red-Green-Refactorサイクル](./assets/diagrams/diagram_11_tdd_cycle.svg)
 
-- **なぜTDD/BDDが必要か**
-  - テストなし→AIが作る→人間が手動テスト→エラー→修正（無限ループ）
-  - テストあり→AIが作る→自動テスト→エラー→AI自己修正（自己完結）
-- **Red（失敗するテストを書く）:** テストが仕様を定義
-- **Green（最小実装）:** テストを通す最小コード
-- **Refactor（改善）:** テストが保証するから安心してリファクタリング
-- **BDD形式（Given-When-Then）:** 人間が読める仕様書になる
+**なぜTDD/BDD:**
+- テストなし→無限ループ | テストあり→AI自己完結
+**Red:** 失敗するテスト先書き（仕様定義）
+**Green:** 最小実装でテスト通過
+**Refactor:** 安心してリファクタリング
+**BDD (Given-When-Then):** 人間が読める仕様書
 
 ---
 
@@ -293,21 +289,14 @@ AI生成後、必ず人間が確認・調整
 # セキュアなコードの指示方法
 
 ```
-「ユーザー登録APIを実装。
-必須:
-- BCryptでパスワードハッシュ化
-- JWT秘密鍵は環境変数
-- .envファイル使用
-- .gitignoreに.env追加
-- @Validでバリデーション
-- レート制限
-- エラーメッセージ一般化」
+「ユーザー登録API実装。必須:
+BCrypt、JWT秘密鍵環境変数、.env使用、
+.gitignore追加、@Validバリデ、
+レート制限、エラー一般化」
 ```
 
-**なぜ明確な指示が必要か**
-AIは暗黙の前提を理解できない
-
-**効果:** 明確な制約＝安全な実装
+**なぜ:** AI暗黙前提理解不可
+**効果:** 明確な制約＝安全実装
 
 ---
 
@@ -502,15 +491,15 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # テストカバレッジ80%ルール
 
 ![テストカバレッジ80%ルール](./assets/diagrams/diagram_26_test_coverage_80_rule.svg)
 
-- **なぜ80%なのか:** 100%は非現実的（Getter/Setterまでテスト不要）、80%で主要な機能とエッジケースをカバー
-- **残り20%:** リスクの低い箇所
-- **効果:** テストカバレッジ向上、リファクタリング時の安全性確保
+**なぜ80%:** 100%非現実的（Getter/Setter不要）、80%で主要機能とエッジケースをカバー
+**残り20%:** リスク低い箇所
+**効果:** カバレッジ向上、リファクタリング安全性確保
 
 ---
 

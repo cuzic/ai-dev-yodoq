@@ -4,7 +4,7 @@ theme: ai-seminar
 paginate: true
 ---
 
-<!-- _class: title compact -->
+<!-- _class: title supercompact -->
 
 # Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎
 
@@ -157,26 +157,17 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # ドキュメント自動生成（Guardrails構築）
 
 ![文字起こしアプローチ（トライアル知識の共有）](./assets/diagrams/diagram_40_transcript_approach.svg)
 
-**APIドキュメント（OpenAPI）:**
-仕様明確化、既存API整合性保証
-
-**DB定義書:**
-正確なSQL生成、デグレ防止
-
-**JavaDoc/コメント:**
-設計意図伝達、適切な拡張
-
-**インデックス（README/architecture.md）:**
-全体像把握、一貫性確保
-
-**自動生成:**
-「OpenAPI仕様書を生成」「テーブル定義書を生成」
+**APIドキュメント (OpenAPI):** 仕様明確化、API整合性保証
+**DB定義書:** 正確SQL生成、デグレ防止
+**JavaDoc/コメント:** 設計意図伝達、適切拡張
+**インデックス (README/architecture.md):** 全体像把握、一貫性確保
+**自動生成:** 「OpenAPI仕様書を生成」「テーブル定義書を生成」
 
 ---
 
@@ -208,24 +199,22 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # リバースエンジニアリング → 網羅的テスト生成（重要）
 
 ![リバースエンジニアリングから網羅的テスト生成](./assets/diagrams/diagram_44_reverse_to_comprehensive_test.svg)
 
-### ❌ 従来のアプローチ（コード追認のみ）
-- 既存コード→直接テスト生成→実装済み機能のみカバー
-- **問題:** 既存バグも追認、エッジケース見落とし、仕様外の動作を検出できない
+### ❌ 従来（コード追認）
+既存コード→直接テスト生成→実装済みのみカバー
+**問題:** 既存バグ追認、エッジケース見落とし
 
-### ✅ リバースエンジニアリング（仕様逆生成）
-- 既存コード→要件定義書・ユーザーストーリー逆生成→網羅的テストシナリオ
-- **効果:** あるべき仕様に基づくテスト、未実装のエッジケースも検出、仕様外の動作を発見
+### ✅ リバースエンジニアリング
+既存コード→要件定義書逆生成→網羅的テストシナリオ
+**効果:** あるべき仕様に基づくテスト、未実装検出
 
 ### 💡 核心的価値
-- コードの追認ではなく「あるべき姿」に基づいたテストが可能
-- AIは仕様から網羅的にテストを生成（正常系・異常系・境界値すべて）
-- 既存コードのバグや仕様外の動作を発見できる
+「あるべき姿」に基づいたテスト、AIが網羅的に生成（正常系・異常系・境界値）、既存バグ・仕様外動作を発見
 
 ---
 

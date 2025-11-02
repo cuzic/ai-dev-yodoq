@@ -22,28 +22,26 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # AI活用の3原則
 
 ![AI活用の3原則](./assets/diagrams/diagram_01_ai_principles.svg)
 
-- **Jagged Intelligence**: 得意（コード生成・テスト・アーキテクチャ設計）、苦手（ビジネス要件の解釈・トレードオフ判断）
-- **Trust but Verify**: AIにもエラーあり、AI自己レビューで品質向上
-- **Guardrails**: ドキュメント駆動、受入条件で手戻り防止
+**Jagged Intelligence:** 得意（コード生成・テスト・設計）、苦手（ビジネス要件・判断）
+**Trust but Verify:** AIにもエラーあり、AI自己レビューで品質向上
+**Guardrails:** ドキュメント駆動、受入条件で手戻り防止
 
 ---
 
-<!-- _class: layout-comparison compact -->
+<!-- _class: layout-comparison supercompact -->
 
 # Vibe Coding vs Production Engineering
 
 <div>
 
 ### Vibe Coding
-- 速い（30分〜1時間）
-- 品質バラバラ
-- プロトタイプ向き
+速い（30分〜1時間）、品質バラバラ、プロトタイプ向き
 
 </div>
 
@@ -52,9 +50,7 @@ AI駆動開発で開発期間を大幅短縮
 <div>
 
 ### Production Engineering
-- 構造化
-- 品質保証
-- 本番向き
+構造化、品質保証、本番向き
 
 </div>
 
@@ -340,21 +336,19 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # 受け入れ基準（Given-When-Then）
 
 ![Given-When-Then形式](./assets/diagrams/diagram_33_given_when_then.svg)
 
-- **正常系:**
-  - Given: 登録済みユーザー
-  - When: 正しいメール・パスワードでログイン
-  - Then: トークン発行、ダッシュボードへリダイレクト
-- **異常系:**
-  - Given: 登録済みユーザー
-  - When: 間違ったパスワードでログイン
-  - Then: エラーメッセージ、5回失敗でロック
-- **効果:** 「完成の定義」を明確化
+**正常系:**
+- Given: 登録済みユーザー | When: 正しいメール・パスワードでログイン | Then: トークン発行、ダッシュボードへリダイレクト
+
+**異常系:**
+- Given: 登録済みユーザー | When: 間違ったパスワードでログイン | Then: エラーメッセージ、5回失敗でロック
+
+**効果:** 「完成の定義」を明確化
 
 ---
 
@@ -432,7 +426,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # Tech Stack Setup
 
@@ -442,17 +436,16 @@ AI駆動開発で開発期間を大幅短縮
 
 ## 例
 
-**フロントエンド:** Thymeleaf / JSP
-**バックエンド:** Spring Boot
-**データベース:** PostgreSQL / MySQL
-**認証:** Spring Security + JWT
-**日付処理:** Java 8 Date/Time API
-  ↳ 理由: 標準ライブラリ
-**テスト:** JUnit 5 + Mockito
+**フロント:** Thymeleaf/JSP
+**バック:** Spring Boot
+**DB:** PostgreSQL/MySQL
+**認証:** Spring Security+JWT
+**日付:** Java 8 Date/Time API (標準ライブラリ)
+**テスト:** JUnit 5+Mockito
 
 ## 重要
 
-選定理由も明記 → 技術的判断の根拠を残す
+選定理由も明記→技術的判断の根拠を残す
 
 ---
 

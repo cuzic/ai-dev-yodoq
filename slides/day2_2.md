@@ -16,30 +16,21 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # 3つの演習課題から選択
 
-### ①マスター追加（商品カテゴリマスタのCRUD）
-**新しいマスタテーブル追加**
-- CREATE TABLE
-- CRUD機能実装（Controller、Service、Repository、Entity、View）
-- 既存マスタとの関連付け（外部キー）
-- **難易度: 中**（デグレリスク低）
+### ①マスター追加（商品カテゴリマスタCRUD）
+CREATE TABLE、CRUD機能実装、外部キー関連付け
+**難易度: 中**（デグレリスク低）
 
-### ②項目追加（顧客に電話番号カラム追加）
-**既存テーブルへのカラム追加**
-- ALTER TABLE
-- 関連画面・API修正（登録、更新、一覧、詳細）
-- バリデーション追加（電話番号形式チェック）
-- **難易度: 高**（影響大、デグレリスク高）
+### ②項目追加（顧客に電話番号カラム）
+ALTER TABLE、関連画面・API修正、バリデーション追加
+**難易度: 高**（影響大、デグレリスク高）
 
 ### ③検索条件追加（日付範囲指定検索）
-**既存検索への条件追加**
-- WHERE句拡張
-- UI・API・SQL修正（日付ピッカー、パラメータ、クエリ）
-- 境界値処理（開始日・終了日チェック）
-- **難易度: 中**（既存検索への影響あり）
+WHERE句拡張、UI・API・SQL修正、境界値処理
+**難易度: 中**（既存検索への影響あり）
 
 ---
 
@@ -128,7 +119,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">✅</div>
 
@@ -138,19 +129,15 @@ paginate: true
 
 **目的:** 既存機能が壊れていないことを保証（デグレ防止）
 
-**対象:** 既存機能の主要な機能をカバー
-- ログイン、ユーザー登録、データ一覧、検索など
-- よく使われる機能を優先
+**対象:** 既存機能の主要な機能（ログイン、ユーザー登録、一覧、検索など）
 
 **観点:** 正常系・異常系・境界値
 
-**AIへの指示:**
-- 「既存のログイン機能のテストシナリオを作成して」
-- 「正常系、異常系、境界値を含めて」
+**AI指示:** 「既存のログイン機能のテストシナリオを作成。正常系、異常系、境界値含む」
 
-**出力形式:** Markdown形式でテストシナリオ一覧
+**出力:** Markdown形式
 
-**効果:** デグレ防止、安心して変更可能
+**効果:** デグレ防止、安心変更
 
 </div>
 
@@ -342,28 +329,17 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # ドキュメント反映
 
 ![ドキュメント自動生成Before/After](./assets/diagrams/diagram_43_doc_automation_before_after.svg)
 
-**architecture.md更新:**
-テーブル、API、画面記録
-- AI指示: 「変更内容をarchitecture.mdに反映して」
-
-**README.md更新:**
-セットアップ、使い方記録
-- AI指示: 「新機能の使い方をREADME.mdに追加」
-
-**知見の記録:**
-ハマった点、解決方法、ベストプラクティス
-
-**Living Documentation:**
-ドキュメント＝AIの外部メモリ
-
-**効果:**
-知見蓄積、チーム共有、再現可能な開発
+**architecture.md更新:** テーブル、API、画面記録
+**README.md更新:** セットアップ、使い方記録
+**知見の記録:** ハマった点、解決方法、ベストプラクティス
+**Living Documentation:** ドキュメント＝AIの外部メモリ
+**効果:** 知見蓄積、チーム共有、再現可能な開発
 
 ---
 
@@ -448,23 +424,17 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # 2日間の総まとめ
 
 ![2日間の学習構造](./assets/diagrams/diagram_20_2day_summary.svg)
 
 ### 1日目：新規開発の5-STEP
-- STEP1-2: 要件・設計（Guardrails、曖昧さ排除）
-- STEP3: タスク分解（AI思考言語化）
-- STEP4: 実装（TDD、AI自己レビュー）
-- STEP5: 品質担保＆ドキュメント（Living Documentation）
+STEP1-2: 要件・設計（Guardrails、曖昧さ排除）| STEP3: タスク分解（AI思考言語化）| STEP4: 実装（TDD、AI自己レビュー）| STEP5: 品質担保＆Doc
 
 ### 2日目：保守開発の4ステップ
-1. リバースエンジニアリング（既存仕様読解）
-2. フィットギャップ分析＆影響範囲調査
-3. テストシナリオ作成（モレ・ヌケ防止）
-4. テストコード実装＋機能追加（デグレ防止）
+1.リバースエンジニアリング 2.フィットギャップ分析＆影響範囲調査 3.テストシナリオ作成 4.テストコード実装＋機能追加
 
 ---
 
