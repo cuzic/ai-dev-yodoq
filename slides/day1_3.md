@@ -8,15 +8,9 @@ paginate: true
 
 ---
 
-<!-- _class: lead compact -->
-
-## まとめ（5分）
-
----
-
 <!-- _class: layout-diagram-only -->
 
-# 1日目の振り返り
+# 1日目の振り返り（5分）
 
 ![5-STEPフロー全体](./assets/diagrams/diagram_03_5step_flow.svg)
 

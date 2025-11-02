@@ -1347,15 +1347,9 @@ paginate: true
 
 ---
 
-<!-- _class: lead compact -->
-
-## まとめ（5分）
-
----
-
 <!-- _class: layout-diagram-only -->
 
-# 1日目の振り返り
+# 1日目の振り返り（5分）
 
 ![5-STEPフロー全体](./assets/diagrams/diagram_03_5step_flow.svg)
 
@@ -2192,33 +2186,21 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 安心追加、品質保証、障害防止
 
 ---
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # テストシナリオの分類
 
 ![テストシナリオの4分類](./assets/diagrams/diagram_15_test_classification.svg)
 
-**正常系（Happy Path）:**
-想定入力→期待結果（最重要、最頻使用）
+**正常系:** 想定入力→期待結果
 
-**異常系（Error Handling）:**
-不正入力→エラー処理確認（本番障害多発箇所）
+**異常系:** 不正入力→エラー処理確認
 
-**境界値（Boundary）:**
-0/MAX/MIN確認（バグ多発ポイント）
+**境界値:** 0/MAX/MIN確認
 
-**例外処理（Exception）:**
-ネットワーク/DB/タイムアウトエラー確認
+**例外処理:** ネットワーク/DB/タイムアウトエラー確認
 
-**効果:**
-全観点網羅→本番障害大幅削減
+**効果:** 全観点網羅→本番障害削減
 
 ---
 
@@ -2538,7 +2520,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # デグレ防止のテストシナリオ
 
@@ -2547,20 +2529,15 @@ Given-When-Then形式でシナリオ記述
 **目的:** 既存と新機能の連携確認
 
 **対象:**
-- 既存機能動作確認
-- インターフェース
-- データ整合性
+既存機能動作、インターフェース、データ整合性
 
-**具体例（電話番号追加）:**
-- 既存顧客登録動作
-- 既存データ表示
-- 新規登録保存
+**具体例:**
+既存顧客登録動作、既存データ表示、新規登録保存
 
 **AI指示:**
-「顧客管理と電話番号カラムの連携テストシナリオ作成」
+「連携テストシナリオ作成」
 
-**効果:**
-デグレゼロ、シームレス統合
+**効果:** デグレゼロ、シームレス統合
 
 ---
 

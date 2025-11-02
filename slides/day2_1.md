@@ -392,33 +392,21 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 安心追加、品質保証、障害防止
 
 ---
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # テストシナリオの分類
 
 ![テストシナリオの4分類](./assets/diagrams/diagram_15_test_classification.svg)
 
-**正常系（Happy Path）:**
-想定入力→期待結果（最重要、最頻使用）
+**正常系:** 想定入力→期待結果
 
-**異常系（Error Handling）:**
-不正入力→エラー処理確認（本番障害多発箇所）
+**異常系:** 不正入力→エラー処理確認
 
-**境界値（Boundary）:**
-0/MAX/MIN確認（バグ多発ポイント）
+**境界値:** 0/MAX/MIN確認
 
-**例外処理（Exception）:**
-ネットワーク/DB/タイムアウトエラー確認
+**例外処理:** ネットワーク/DB/タイムアウトエラー確認
 
-**効果:**
-全観点網羅→本番障害大幅削減
+**効果:** 全観点網羅→本番障害削減
 
 ---
 
