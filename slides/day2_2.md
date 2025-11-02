@@ -3,6 +3,7 @@ marp: true
 theme: ai-seminar
 paginate: true
 ---
+<!-- _class: compact -->
 
 # Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)
 
@@ -77,7 +78,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">🔍</div>
 
@@ -398,7 +399,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # うまくいったポイント共有
 
@@ -416,7 +417,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # 全体ディスカッション
 

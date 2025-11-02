@@ -131,7 +131,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # リバースエンジニアリングの第一歩
 
@@ -423,7 +423,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テストシナリオ作成の実例
 

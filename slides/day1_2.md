@@ -389,7 +389,7 @@ Trust but Verify自動化 + Living Documentation
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison supercompact -->
 
 # テスト駆動開発とAI活用の相乗効果
 
@@ -419,7 +419,7 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # E2Eテスト重視の戦略
 
@@ -571,7 +571,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # Living Documentation（AIの外部メモリ）
 
@@ -586,7 +586,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # ドキュメント自動生成Before/After
 
@@ -594,7 +594,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # Living Documentation 3種類
 
@@ -696,11 +696,11 @@ Playwrightテストを作成」
 ![STEP5のまとめ](./assets/diagrams-web/slide_041_STEP5のまとめ.svg)
 
 ---
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
 
 ---

@@ -1008,7 +1008,7 @@ Trust but Verify自動化 + Living Documentation
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison supercompact -->
 
 # テスト駆動開発とAI活用の相乗効果
 
@@ -1038,7 +1038,7 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # E2Eテスト重視の戦略
 
@@ -1190,7 +1190,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # Living Documentation（AIの外部メモリ）
 
@@ -1205,7 +1205,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # ドキュメント自動生成Before/After
 
@@ -1213,7 +1213,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # Living Documentation 3種類
 
@@ -1315,11 +1315,11 @@ Playwrightテストを作成」
 ![STEP5のまとめ](./assets/diagrams-web/slide_041_STEP5のまとめ.svg)
 
 ---
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
 
 ---
@@ -1479,7 +1479,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 演習課題の説明（TODOアプリ）
 
@@ -1509,7 +1509,7 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # 演習の目的と課題
 
@@ -1944,7 +1944,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # リバースエンジニアリングの第一歩
 
@@ -2236,7 +2236,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テストシナリオ作成の実例
 
@@ -2387,6 +2387,7 @@ marp: true
 theme: ai-seminar
 paginate: true
 ---
+<!-- _class: compact -->
 
 # Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)
 
@@ -2461,7 +2462,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">🔍</div>
 
@@ -2782,7 +2783,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # うまくいったポイント共有
 
@@ -2800,7 +2801,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # 全体ディスカッション
 

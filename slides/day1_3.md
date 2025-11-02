@@ -129,7 +129,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 演習課題の説明（TODOアプリ）
 
@@ -159,7 +159,7 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # 演習の目的と課題
 
