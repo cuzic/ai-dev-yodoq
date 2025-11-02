@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 705 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+      }
+      .section-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+      }
+      .desc-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
+        fill: #333333;
+        text-anchor: start;
+      }
+      .problem-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        fill: #DC143C;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+      .solution-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        fill: #228B22;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+      .memory-box {
+        fill: #FFE4E1;
+        stroke: #DC143C;
+        stroke-width: 3;
+        rx: 8;
+        stroke-dasharray: 10,5;
+      }
+      .document-box {
+        fill: #E8F5E9;
+        stroke: #228B22;
+        stroke-width: 3;
+        rx: 8;
+      }
+      .arrow {
+        stroke: #00146E;
+        stroke-width: 3;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+      .icon {
+        font-size: 40px;
+        text-anchor: middle;
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00146E" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="705" height="540" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="35" class="title">AI外部メモリの必要性</text>
+
+  <!-- Short-term Memory (Volatile) -->
+  <rect x="50" y="80" width="600" height="130" class="memory-box"/>
+  <text x="100" y="105" class="icon">🧠</text>
+  <text x="180" y="105" class="section-title" style="text-anchor: start; fill: #DC143C;">短期記憶（揮発性）</text>
+
+  <text x="70" y="135" class="desc-text">• セッション内のみ記憶</text>
+  <text x="70" y="158" class="desc-text">• ブラウザ閉じる → 全忘却</text>
+  <text x="70" y="181" class="desc-text">• 20万トークン超過 → 古い情報忘却</text>
+
+  <!-- Problem -->
+  <text x="350" y="240" class="problem-text">❌ 問題</text>
+  <rect x="80" y="255" width="540" height="55" style="fill: #FFF0F0; stroke: #DC143C; stroke-width: 2; rx: 5;"/>
+  <text x="350" y="280" class="desc-text" style="text-anchor: middle;">同じバグ繰り返し / 成功方法忘却</text>
+
+  <!-- Arrow down -->
+  <path d="M 350 310 L 350 345" class="arrow"/>
+
+  <!-- Solution -->
+  <text x="350" y="370" class="solution-text">✅ 対策：外部メモリ化</text>
+
+  <!-- External Memory (Persistent) -->
+  <rect x="50" y="390" width="600" height="130" class="document-box"/>
+  <text x="100" y="415" class="icon">📝</text>
+  <text x="180" y="415" class="section-title" style="text-anchor: start; fill: #228B22;">外部メモリ（永続化）</text>
+
+  <text x="70" y="445" class="desc-text" style="fill: #228B22; font-weight: bold;">ドキュメント化 = 知見蓄積</text>
+  <text x="70" y="468" class="desc-text">• architecture.md - 設計方針</text>
+  <text x="70" y="491" class="desc-text">• README.md - プロジェクト知識</text>
+</svg>

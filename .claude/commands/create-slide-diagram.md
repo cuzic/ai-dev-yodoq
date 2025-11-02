@@ -1,285 +1,226 @@
-# Marpスライド用ダイアグラム作成
+# Marpスライド用ダイアグラム並列作成
 
-Marpスライドの特定レイアウトに最適化されたSVGダイアグラムを作成します。
+複数の専門エージェントを並列起動して、Marpスライドに必要なSVGダイアグラムを効率的に作成します。
 
-## 目的
+## 概要
 
-Marpスライド（ai-seminar テーマ）に埋め込むSVGダイアグラムを、以下の原則に従って作成します：
+このコマンドは以下を自動実行します：
 
-1. **レイアウトに適合**: レイアウトクラスに応じた最適な縦横比
-2. **視覚的補完**: テキストをそのまま画像化するのではなく、理解を深める視覚表現
-3. **情報の構造化**: 複雑な関係性やフローを一目で理解できる形式
-4. **コンテキスト活用**: スライドのテーマと内容に適したダイアグラム形式
+1. **不足SVGの特定**: スライドから参照されているが存在しないSVGをリストアップ
+2. **エージェント分割**: SVGをグループ化し、複数のエージェントに割り当て
+3. **並列作成**: Taskツールで複数エージェントを同時起動し、並列作成
+4. **検証**: 各SVGのオーバーフロー・オーバーラップをチェック
+5. **統合**: 作成結果をまとめてコミット
 
-## ダイアグラムの役割
+## 実行手順
 
-### ❌ 避けるべき（悪い例）
+### Step 1: 不足SVGの特定
 
-**単なるテキストの画像化:**
+```bash
+# スライドから参照されている全SVGを抽出
+grep -h "!\[.*\](.*\.svg)" slides/day*.md | \
+  sed 's/.*(\(.*\))/\1/' | \
+  sed 's/^\.\.\///' | \
+  sort -u > /tmp/required_svgs.txt
+
+# 存在しないSVGを特定
+python3 << 'EOF'
+from pathlib import Path
+
+required = Path('/tmp/required_svgs.txt').read_text().splitlines()
+missing = []
+
+for svg_path in required:
+    if not Path(svg_path).exists():
+        missing.append(svg_path)
+
+# グループ化（10-15個ずつ）
+group_size = 12
+for i in range(0, len(missing), group_size):
+    group = missing[i:i+group_size]
+    print(f"\n=== Group {i//group_size + 1} ({len(group)} SVGs) ===")
+    for svg in group:
+        basename = Path(svg).stem
+        print(f"- {basename}")
+EOF
 ```
-テキスト「AIの3原則は...」
-↓
-画像にそのまま同じテキストを書く
+
+### Step 2: グループごとのコンテキスト抽出
+
+各グループのSVGについて、スライドから文脈を抽出：
+
+```python
+from pathlib import Path
+
+def extract_svg_context(svg_filename):
+    """SVGのコンテキストをスライドから抽出"""
+    slides_dir = Path('slides')
+    context = {}
+
+    for slide_file in slides_dir.glob('day*.md'):
+        content = slide_file.read_text()
+
+        # SVG参照の前後10行を取得
+        lines = content.split('\n')
+        for i, line in enumerate(lines):
+            if svg_filename in line:
+                start = max(0, i-10)
+                end = min(len(lines), i+10)
+                context_lines = lines[start:end]
+
+                # レイアウトクラスを抽出
+                layout_class = None
+                for j in range(i, max(0, i-15), -1):
+                    if '<!-- _class:' in lines[j]:
+                        layout_class = lines[j].split('_class:')[1].split('-->')[0].strip()
+                        break
+
+                context = {
+                    'file': slide_file.name,
+                    'layout': layout_class,
+                    'context_lines': context_lines,
+                    'title': None
+                }
+
+                # タイトル抽出
+                for line in context_lines:
+                    if line.startswith('# '):
+                        context['title'] = line[2:].strip()
+                        break
+
+                return context
+
+    return None
+
+# 使用例
+# context = extract_svg_context('diagram_01_ai_principles.svg')
 ```
-→ 理解が深まらない、冗長
 
-### ✅ 推奨（良い例）
+### Step 3: エージェント並列実行
 
-**視覚的な構造化と関係性の明示:**
-```
-テキスト「AIの3原則は...」
-↓
-3つの原則を図形で表現し、相互関係を矢印で示す
-各原則の影響や結果を視覚的に配置
-```
-→ 理解が深まる、記憶に残る
+**重要**: 以下のTaskツール呼び出しを**1つのメッセージで全て送信**してください（並列実行のため）。
 
-## 前提条件の確認
-
-### 1. ターゲットスライドの特定
-
-**必須情報:**
-- スライドファイル名（例: `day1_2.md`）
-- スライド番号または見出し
-- 使用するレイアウトクラス
-
-**レイアウトクラスの確認方法:**
 ```markdown
-<!-- _class: layout-diagram-only -->
-# スライドタイトル
+エージェント1-4を並列起動して、不足しているSVGダイアグラムを作成してください。
 
-![ダイアグラム説明](../assets/diagrams/diagram_XX_name.svg)
+各エージェントは以下のガイドラインに従ってSVGを作成すること：
+
+[エージェント共通ガイドラインを以下に記載]
 ```
 
-### 2. レイアウトクラスごとの仕様
+### Step 4: 検証と統合
+
+全エージェント完了後：
+
+```bash
+# 1. 全SVGの検証
+cd assets
+python ../scripts/slides/validate_svg_bounds.py
+
+# 2. FAILがある場合は修正
+# 3. 全PASS後にコミット
+git add assets/diagrams/diagram_*.svg
+git commit -m "feat: Add missing SVG diagrams (parallel generation)
+
+- Created X SVGs for Marp slides
+- All diagrams validated (no overflow/overlap)
+- Optimized for layout-specific aspect ratios
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+```
+
+## エージェント共通ガイドライン
+
+各エージェントは以下の仕様に従ってSVGを作成してください。
+
+### レイアウト別仕様
 
 #### layout-diagram-only（全画面ダイアグラム）
-- **使用頻度:** ★★★★★ (20回使用)
 - **縦横比:** 2.05:1（かなり横長）
 - **推奨viewBox:** 1250×610
-- **表示領域:** スライドほぼ全体（1254px × 612px）
-- **適したダイアグラム:**
-  - 全体フロー図（5-STEPフローなど）
-  - 複雑な関係図（相互依存関係）
-  - タイムライン（時系列の流れ）
-  - 大規模な構成図
+- **表示領域:** 1254px × 612px
+- **フォントサイズ:** base=40px → タイトル72px, 見出し56px, 本文40px, 注釈28px
+- **適した内容:** 全体フロー図、複雑な関係図、タイムライン、大規模構成図
 - **情報量:** 30-50要素
-- **注意:** かなり横長を活かしたレイアウト、横方向の流れを重視
 
 #### layout-horizontal-right（右側ダイアグラム）
-- **使用頻度:** ★★★★★ (23回使用)
 - **縦横比:** 1.30:1（やや横長）
 - **推奨viewBox:** 700×540
-- **表示領域:** スライドの右側55%（694px × 540px）
-- **適したダイアグラム:**
-  - プロセス図（上から下の流れ）
-  - 階層構造（トップダウン）
-  - 状態遷移図
-  - 概念図（関係性の表現）
+- **表示領域:** 694px × 540px
+- **フォントサイズ:** base=22px → タイトル40px, 見出し31px, 本文22px, 注釈15px
+- **適した内容:** プロセス図、階層構造、状態遷移図、概念図
 - **情報量:** 15-25要素
-- **注意:** やや横長だが、上から下への流れも活用可能
 
 #### layout-horizontal-left（左側ダイアグラム）
-- **使用頻度:** ★★★★★ (19回使用)
-- **縦横比:** 1.30:1（やや横長）
-- **推奨viewBox:** 700×540
-- **表示領域:** スライドの左側55%（694px × 540px）
-- **適したダイアグラム:** layout-horizontal-rightと同様
-- **情報量:** 15-25要素
-- **注意:** 右側のテキストとの対応を考慮
+- **仕様:** layout-horizontal-rightと同じ
+- **注意点:** 右側のテキストとの対応を考慮
 
-**注意:** layout-comparison、layout-callout、card-grid は主にテキストベースのレイアウトであり、通常は独立したSVGダイアグラムを使用しません。これらのレイアウトでは、HTMLやMarkdown内の装飾要素として視覚的な表現を行います。
+### ダイアグラム作成原則
 
-### 3. ダイアグラムの種類と適用例
+#### ✅ 推奨：視覚的補完
 
-#### フローチャート（全体の流れ）
-**適したレイアウト:** layout-diagram-only, layout-horizontal-right/left
-**視覚的補完の例:**
-- スライドのテキスト: 「5-STEPで開発を進めます」
-- ダイアグラム: 5つのステップを矢印でつなぎ、各ステップの所要時間、成果物、注意点を視覚的に配置
-- **補完効果:** 順序、タイミング、依存関係が一目でわかる
-
-#### 関係図（相互作用）
-**適したレイアウト:** layout-diagram-only
-**視覚的補完の例:**
-- スライドのテキスト: 「AIの3つの制約と対策」
-- ダイアグラム: 3つの制約を円で表現し、それぞれの影響を矢印で示し、対策をボックスで囲む
-- **補完効果:** 制約間の相互関係、因果関係が明確になる
-
-#### プロセス図（段階的な手順）
-**適したレイアウト:** layout-horizontal-right/left
-**視覚的補完の例:**
-- スライドのテキスト: 「リバースエンジニアリングの手法」
-- ダイアグラム: 縦方向に手順を配置し、各段階での入力・出力・判断ポイントを明示
-- **補完効果:** 手順の流れ、分岐点、判断基準が視覚的に理解できる
-
-#### 比較図（対比）
-**適したレイアウト:** layout-comparison
-**視覚的補完の例:**
-- スライドのテキスト: 「TDDあり vs なし」
-- ダイアグラム: 左右に分けて、開発フローの違いを視覚的に対比
-- **補完効果:** 違いが明確に、選択の基準が理解しやすい
-
-#### 概念図（抽象概念の具体化）
-**適したレイアウト:** layout-horizontal-right/left, layout-callout
-**視覚的補完の例:**
-- スライドのテキスト: 「Living Documentation とは」
-- ダイアグラム: ドキュメントとコードの循環関係を図示
-- **補完効果:** 抽象的な概念が具体的にイメージできる
-
-### 4. テキストと画像の適切な分担
-
-#### ❌ 悪い例：テキストの単純な複製
-
-**スライドのテキスト:**
+**良い例:**
 ```
-STEP1: 要件定義
-- 曖昧さの排除
-- ユーザーストーリー作成
-- 受け入れ条件の定義
+スライドのテキスト: "AIの3原則は..."
+↓
+ダイアグラム: 3つの原則を図形で表現し、相互関係を矢印で示す
+              各原則の影響や結果を視覚的に配置
+→ 理解が深まる、記憶に残る
 ```
 
-**ダイアグラム（悪い例）:**
-```svg
-<text>STEP1: 要件定義</text>
-<text>- 曖昧さの排除</text>
-<text>- ユーザーストーリー作成</text>
-<text>- 受け入れ条件の定義</text>
+#### ❌ 避ける：テキストの複製
+
+**悪い例:**
 ```
-→ **問題点:** テキストと全く同じ、視覚的な価値がない、冗長
-
-#### ✅ 良い例：視覚的な構造化と関係性の追加
-
-**スライドのテキスト:**（同上）
-
-**ダイアグラム（良い例）:**
-```svg
-<!-- STEP1を大きなボックスで表現 -->
-<rect class="step-box"/>
-<text class="step-title">STEP1: 要件定義</text>
-
-<!-- 3つの活動を矢印で接続 -->
-<rect class="activity">曖昧さ排除</rect>
-  ↓ (矢印)
-<rect class="activity">ユーザーストーリー</rect>
-  ↓ (矢印)
-<rect class="activity">受け入れ条件</rect>
-
-<!-- 成果物を吹き出しで -->
-<ellipse class="output">明確な仕様書</ellipse>
-
-<!-- 注意点をアイコンで -->
-<circle class="warning-icon">⚠️</circle>
-<text>前工程を丁寧に</text>
+スライドのテキスト: "STEP1: 要件定義"
+↓
+ダイアグラム: そのまま同じテキストを画像化
+→ 理解が深まらない、冗長
 ```
-→ **改善点:**
-  - 活動の順序が視覚的に明確
-  - 成果物が区別されている
-  - 注意点がアイコンで強調されている
-  - テキストを補完する情報を追加
 
-## 作成手順
+### 必須計算式
 
-### Step 1: レイアウトクラスに基づく設定
-
-スライドのレイアウトクラスを確認し、対応するviewBoxを選択：
+#### テキスト幅推定
 
 ```python
-# レイアウトマッピング（SVGを使用するレイアウトのみ）
-LAYOUT_SPECS = {
-    'layout-diagram-only': {'viewBox': (1250, 610), 'aspect': '2.05:1'},
-    'layout-horizontal-right': {'viewBox': (700, 540), 'aspect': '1.30:1'},
-    'layout-horizontal-left': {'viewBox': (700, 540), 'aspect': '1.30:1'},
-}
-
-# 指定されたレイアウトから設定を取得
-layout_class = 'layout-diagram-only'  # 例
-spec = LAYOUT_SPECS[layout_class]
-viewBox_width, viewBox_height = spec['viewBox']
-```
-
-### Step 2: コンテンツ要件の確認
-
-以下を明確にしてください：
-
-**必須情報:**
-1. ダイアグラムのタイトル
-2. 主要な要素リスト（テキスト、図形）
-3. 各要素の階層・重要度
-4. 要素間の関係（矢印、グループ化など）
-
-**推奨情報:**
-5. カラースキーム（ai-seminar テーマに合わせる）
-6. 強調すべきポイント
-7. 参考となる既存ダイアグラム
-
-### Step 3: レイアウト計算（重要）
-
-**必ず以下の計算を実行してください:**
-
-```python
-# テキスト幅推定式（Noto Sans JP基準）
 def estimate_text_width(text, font_size):
+    """日本語/英語を考慮したテキスト幅推定"""
     japanese_chars = sum(1 for c in text if ord(c) > 0x3000)
     latin_chars = len(text) - japanese_chars
     # 日本語: 1.0倍、英数字: 0.5倍、安全マージン: 1.15倍
     return (japanese_chars * font_size * 1.0 +
             latin_chars * font_size * 0.5) * 1.15
+```
 
-# レイアウトごとの安全領域
+#### 垂直・水平間隔
+
+```python
+# 垂直間隔（テキスト行間）
+vertical_gap = max(font_size_1, font_size_2) * 1.5
+
+# 水平間隔（要素間）
+horizontal_gap = max(15, font_size * 0.25)
+```
+
+#### 安全領域
+
+```python
 safe_area_ratio = {
     'layout-diagram-only': 0.90,      # 90%使用可
     'layout-horizontal-right': 0.85,  # 85%使用可
-    'layout-horizontal-left': 0.85,
-    'layout-comparison': 0.80,        # 80%使用可
-    'layout-callout': 0.75,           # 75%使用可
-    'card-grid': 0.70,                # 70%使用可（小さいため余白重要）
+    'layout-horizontal-left': 0.85,   # 85%使用可
 }
 
-safe_width = viewBox_width * safe_area_ratio[layout_class]
-safe_height = viewBox_height * safe_area_ratio[layout_class]
-
-# 垂直間隔の計算
-def vertical_gap(font_size_1, font_size_2):
-    return max(font_size_1, font_size_2) * 1.5
-
-# 水平間隔の計算
-def horizontal_gap(font_size):
-    return max(15, font_size * 0.25)
+safe_width = viewBox_width * safe_area_ratio[layout]
+safe_height = viewBox_height * safe_area_ratio[layout]
 ```
 
-### Step 4: フォントサイズの決定
-
-viewBoxサイズに応じたフォントサイズ指定：
-
-```python
-# viewBox幅に基づく基本フォントサイズ
-base_font_size = viewBox_width * 0.032  # 約3.2%
-
-# 階層別フォントサイズ
-FONT_SIZES = {
-    'title': base_font_size * 1.8,      # タイトル
-    'heading': base_font_size * 1.4,    # 見出し
-    'body': base_font_size * 1.0,       # 本文
-    'note': base_font_size * 0.7,       # 注釈
-}
-
-# 制約チェック
-max_allowed_font = viewBox_width * 0.06
-for key, size in FONT_SIZES.items():
-    if size > max_allowed_font:
-        FONT_SIZES[key] = max_allowed_font
-```
-
-**具体例:**
-- **layout-diagram-only (1250×610)**: base=40px → タイトル72px, 見出し56px, 本文40px, 注釈28px
-- **layout-horizontal-right (700×540)**: base=22px → タイトル40px, 見出し31px, 本文22px, 注釈15px
-- **layout-horizontal-left (700×540)**: base=22px → タイトル40px, 見出し31px, 本文22px, 注釈15px
-
-### Step 5: SVG構造の生成
+### SVGテンプレート
 
 ```xml
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {viewBox_width} {viewBox_height}">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}">
   <defs>
     <style>
       .title {
@@ -315,11 +256,19 @@ for key, size in FONT_SIZES.items():
         stroke-width: 2;
         rx: 5;
       }
+      .arrow {
+        stroke: #00146E;
+        stroke-width: 3;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
     </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00146E" />
+    </marker>
   </defs>
 
-  <!-- 背景 -->
-  <rect width="{viewBox_width}" height="{viewBox_height}" fill="#FFFFFF"/>
+  <rect width="{width}" height="{height}" fill="#FFFFFF"/>
 
   <!-- コンテンツ（計算された座標を使用） -->
   <text x="{x}" y="{y}" class="title">タイトル</text>
@@ -327,144 +276,102 @@ for key, size in FONT_SIZES.items():
 </svg>
 ```
 
-### Step 6: 品質検証（必須）
-
-SVG作成後、以下を実行：
-
-```bash
-# 1. オーバーフロー・オーバーラップチェック
-python scripts/slides/validate_svg_bounds.py assets/diagrams/diagram_XX_name.svg
-
-# 2. スライドに埋め込んで視覚確認
-# day*.md に以下を追加
-![テスト](../assets/diagrams/diagram_XX_name.svg)
-
-# 3. Marpでレンダリング
-cd slides
-marp day1_2.md --html --allow-local-files -o test.html
-
-# 4. ブラウザで確認
-# test.html を開いて、レイアウト内での見え方を確認
-```
-
-## 出力先
-
-**重要: 以下の両方に保存してください:**
-
-```
-assets/diagrams/diagram_XX_descriptive_name.svg
-```
-
-命名規則：
-- `diagram_` で始まる
-- 2桁の連番（01-99）
-- アンダースコア区切り
-- 内容を表す英語名（スネークケース）
-- 例: `diagram_03_5step_flow.svg`, `diagram_48_day1_key_messages.svg`
-
-## カラーパレット（ai-seminarテーマ）
+### カラーパレット（ai-seminarテーマ）
 
 ```css
-/* プライマリカラー */
+/* プライマリ */
 --color-primary: #00146E;      /* 濃紺（タイトル、重要要素） */
 --color-secondary: #00AFF0;    /* 水色（強調、アクション） */
 
-/* テキストカラー */
+/* テキスト */
 --color-text: #333333;         /* ダークグレー（本文） */
 --color-text-light: #666666;   /* グレー（注釈） */
 
-/* 背景カラー */
+/* 背景 */
 --color-bg: #FFFFFF;           /* 白（背景） */
 --color-bg-accent: #F0F8FF;    /* アリスブルー（ボックス背景） */
 
-/* ステータスカラー */
+/* ステータス */
 --color-success: #228B22;      /* グリーン */
 --color-warning: #FF8C00;      /* オレンジ */
 --color-error: #DC143C;        /* 赤 */
 --color-info: #4169E1;         /* ブルー */
 ```
 
-## 検証チェックリスト
+### 検証方法
 
-- [ ] レイアウトクラスに適した縦横比を使用
-- [ ] すべてのテキストが安全領域内
-- [ ] 垂直間隔: font_size × 1.5 以上
-- [ ] 水平間隔: 15px または font_size × 0.25 以上
-- [ ] viewBox利用率が適切（50-90%）
-- [ ] フォントサイズがレイアウトに適切
-- [ ] 日本語フォント（Noto Sans JP）を使用
-- [ ] カラーパレットがai-seminarテーマに準拠
-- [ ] `validate_svg_bounds.py` で検証済み
-- [ ] Marpでレンダリングして視覚確認済み
+各SVG作成後、必ず検証：
+
+```bash
+cd assets
+python ../scripts/slides/validate_svg_bounds.py
+```
+
+**期待される出力:**
+```
+✅ PASS (または WARNING以下)
+```
+
+**FAILの場合:**
+- viewBoxを推奨サイズに拡大
+- またはフォントサイズを縮小
+- テキストを簡略化
+
+### 命名規則
+
+```
+assets/diagrams/diagram_{番号}_{内容}.svg
+```
+
+例:
+- `diagram_01_ai_principles.svg`
+- `diagram_03_5step_flow.svg`
+- `diagram_12_reverse_engineering.svg`
+
+## 並列実行例
+
+**1つのメッセージで全エージェントを起動**（これが重要）：
+
+```
+Task 1: diagram_01-12を作成
+Task 2: diagram_13-24を作成
+Task 3: diagram_25-36を作成
+Task 4: diagram_37-48を作成
+```
+
+各Taskで以下を実行：
+1. スライドからコンテキスト抽出
+2. 適切なレイアウト判定
+3. SVG作成（計算式使用）
+4. 検証
+5. 必要に応じて修正
 
 ## トラブルシューティング
 
-### 問題: テキストがはみ出る
+### オーバーフロー発生
+- viewBoxを10-20%拡大
+- フォントサイズを縮小
+- テキストを簡略化
 
-**原因:** viewBoxサイズの見積もり不足
+### テキスト重なり
+- 垂直間隔: `font_size × 1.5`以上確保
+- 水平間隔: `max(15px, font_size × 0.25)`以上確保
 
-**解決策:**
-1. `estimate_text_width()` で幅を再計算
-2. viewBoxを10-20%拡大
-3. またはフォントサイズを縮小
-
-### 問題: 情報が多すぎて入らない
-
-**原因:** レイアウトに対してコンテンツが過剰
-
-**解決策:**
-1. レイアウトクラスを変更（より大きなものに）
-2. コンテンツを削減・簡略化
-3. 複数のダイアグラムに分割
-
-### 問題: レイアウト内で小さく見える
-
-**原因:** 縦横比の不一致
-
-**解決策:**
-1. レイアウトクラスに対応するviewBoxを再確認
-2. LAYOUT_SPECSを参照して正しい縦横比を使用
-
-## 使用例
-
-### 例1: layout-diagram-only でフロー図を作成
-
-```markdown
-<!-- スライド: day1_2.md -->
-<!-- _class: layout-diagram-only -->
-
-# 5-STEPフロー全体
-
-![5-STEPフロー](../assets/diagrams/diagram_03_5step_flow.svg)
-```
-
-**SVG仕様:**
-- viewBox: 1250×610 (2.05:1)
-- タイトル: 72px
-- フロー要素: 5つのステップ + 矢印
-- 各ステップ: 見出し56px、説明40px
-
-### 例2: layout-horizontal-right でプロセス図を作成
-
-```markdown
-<!-- スライド: day2_1.md -->
-<!-- _class: layout-horizontal-right -->
-
-# リバースエンジニアリングのプロセス
-
-![リバースエンジニアリングのプロセス](../assets/diagrams/diagram_12_reverse_engineering.svg)
-
-**説明テキストがここに表示される（左側）**
-```
-
-**SVG仕様:**
-- viewBox: 700×540 (1.30:1)
-- タイトル: 40px
-- プロセス要素: 3-4ステップ
-- 各ステップ: 見出し31px、説明22px
+### レイアウトに合わない
+- レイアウトクラスを再確認
+- 正しいviewBox仕様を使用
 
 ## 参考資料
 
-- [ai-seminar.css](/assets/themes/ai-seminar.css) - テーマのCSS定義
-- [validate_svg_bounds.py](/scripts/slides/validate_svg_bounds.py) - SVG検証スクリプト
-- [既存ダイアグラム](/assets/diagrams-web/) - 参考になるSVG例
+- [ai-seminar.css](../assets/themes/ai-seminar.css) - テーマCSS定義
+- [validate_svg_bounds.py](../scripts/slides/validate_svg_bounds.py) - SVG検証スクリプト
+- [既存ダイアグラム](../assets/diagrams-web/) - 参考SVG例
+
+## 成功基準
+
+✅ 全SVGが以下を満たすこと：
+- レイアウトに適した縦横比
+- テキストと補完関係にある
+- 視覚的に理解を深める
+- オーバーフロー・オーバーラップなし
+- 検証スクリプトでPASSまたはWARN以下
