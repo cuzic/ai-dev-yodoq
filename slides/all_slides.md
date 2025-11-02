@@ -147,8 +147,6 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
----
-
 <!-- _class: lead -->
 
 ## Claude Code の使い方（10:30-10:50, 20分）
@@ -1332,19 +1330,24 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: card-grid -->
 
 # Part 2のキーポイント
 
-**①計画可視化**: タスク分解で思考言語化
+### ①計画可視化
+タスク分解で思考言語化
 
-**②セキュリティ**: BCrypt・環境変数・@Valid明示
+### ②セキュリティ
+BCrypt・環境変数・@Valid明示
 
-**③TDD自己完結**: テストでAI自動デバッグ
+### ③TDD自己完結
+テストでAI自動デバッグ
 
-**④自己レビュー**: 観点別で検出率向上
+### ④自己レビュー
+観点別で検出率向上
 
-**⑤リファクタ&Doc**: 負債解消、知見蓄積
+### ⑤リファクタ&Doc
+負債解消、知見蓄積
 ---
 marp: true
 theme: ai-seminar
@@ -1694,15 +1697,24 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: card-grid -->
 
 # 演習で体感できること
 
-①**前工程**: 丁寧→スムーズ、省略→迷う・手戻り
-②**TDD**: テストあり→AI自己完結、なし→無限ループ
-③**AI自己レビュー**: 数秒で多数バグ検出、コストゼロ
-④**インクリメンタル**: 小さく→常に動作確認、全部→不安
-⑤**Living Doc**: AIが参照可能、忘れない、間違い防止
+### ①前工程の重要性
+丁寧にやる→スムーズ、省略→迷う・手戻り
+
+### ②TDDの威力
+テストあり→AI自己完結、なし→無限ループ
+
+### ③AI自己レビュー効果
+数秒で多数バグ検出、コストゼロ
+
+### ④インクリメンタル開発
+小さく→常に動作確認、全部→不安
+
+### ⑤Living Documentation
+AIが参照可能、忘れない、間違い防止
 
 ---
 
@@ -1903,10 +1915,7 @@ paginate: true
 ---
 <!-- _class: two-column -->
 
-<!-- _class: two-column -->
-
-
-<!-- _class: two-column compact -->
+<!-- _class: lead compact -->
 
 ## STEP1: リバースエンジニアリング（30分）
 
@@ -1954,7 +1963,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: layout-horizontal-right -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -1968,7 +1977,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: layout-horizontal-right -->
 
 # ドキュメント自動生成（Guardrails構築）
 
@@ -2086,10 +2095,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 ---
 <!-- _class: two-column -->
 
-<!-- _class: two-column -->
-
-
-<!-- _class: two-column -->
+<!-- _class: lead compact -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 

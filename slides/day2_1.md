@@ -102,10 +102,7 @@ paginate: true
 ---
 <!-- _class: two-column -->
 
-<!-- _class: two-column -->
-
-
-<!-- _class: two-column compact -->
+<!-- _class: lead compact -->
 
 ## STEP1: リバースエンジニアリング（30分）
 
@@ -153,7 +150,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: layout-horizontal-right -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -167,7 +164,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: layout-horizontal-right -->
 
 # ドキュメント自動生成（Guardrails構築）
 
@@ -285,10 +282,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 ---
 <!-- _class: two-column -->
 
-<!-- _class: two-column -->
-
-
-<!-- _class: two-column -->
+<!-- _class: lead compact -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
