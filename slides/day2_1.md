@@ -4,67 +4,62 @@ theme: ai-seminar
 paginate: true
 ---
 
-# Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎 (10:00-12:00)
+<!-- _class: title compact -->
+
+# Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎
+
+## (10:00-12:00)
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 1日目の振り返り（10分）
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 5-STEPフローの復習（AI制約への対応）
 
 ### STEP1: 要件定義
 **Guardrails、曖昧さの排除**
-- AIの制約を理解した上での明確な指示
 
 ### STEP2: 設計ドキュメント
-**Guardrails、AIは忘れっぽい対策**
-- 外部記憶としてのドキュメント化
+**外部記憶としてのドキュメント化**
 
 ### STEP3: タスク分解
-**AIの思考を言語化、全体像把握**
-- 計画の可視化で手戻り防止
+**計画の可視化で手戻り防止**
 
 ### STEP4: 実装
-**小さく作る・TDD・AI自己レビュー必須**
-- インクリメンタル開発で品質担保
+**小さく作る・TDD・自己レビュー**
 
 ### STEP5: 品質担保＆ドキュメント反映
-**Trust but Verify自動化、Living Documentation＝外部メモリ**
-- 継続的な品質改善と知見蓄積
+**Trust but Verify自動化、外部メモリ更新**
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 昨日の演習での気づき共有
 
 ### 前工程の重要性を実感
-**Guardrails設定の効果**
-- 曖昧さを排除することで実装がスムーズに
+**Guardrails設定で実装スムーズ**
 
-### TDDでAIが自己完結する様子を体験
-**Trust but Verify自動化**
-- AIが自動でテスト実行→修正→成功
+### TDDでAIが自己完結
+**テスト実行→修正→成功を自動化**
 
-### AI自己レビューの効果を確認
-**多くのバグを検出**
-- 追加コストほぼゼロで品質向上
+### AI自己レビューの効果
+**ゼロコストで品質向上**
 
 ### インクリメンタル開発の安心感
-**AIは忘れっぽい対策**
-- 小さく確実に進めることで手戻り防止
+**小さく確実に進め手戻り防止**
 
 ---
 
-<!-- _class: layout-timeline supercompact -->
+<!-- _class: layout-timeline compact -->
 
-# 2日目のゴール：既存システムへの機能追加を高品質に行う
+# 2日目のゴール：既存システムへの高品質な機能追加
 
 <div class="timeline">
 
@@ -72,21 +67,21 @@ paginate: true
 <div class="step-number">1</div>
 <h3>リバースエンジニアリング</h3>
 <p><strong>30分</strong></p>
-<p>既存コードから仕様を読み解く</p>
+<p>既存コードから仕様読み解き</p>
 </div>
 
 <div class="step">
 <div class="step-number">2</div>
 <h3>フィットギャップ分析<br>＆影響範囲調査</h3>
 <p><strong>20分</strong></p>
-<p>追加開発範囲の明確化</p>
+<p>追加開発範囲明確化</p>
 </div>
 
 <div class="step">
 <div class="step-number">3</div>
 <h3>テストシナリオ作成</h3>
 <p><strong>30分</strong></p>
-<p>既存機能・新機能・デグレ防止を網羅</p>
+<p>既存・新機能・デグレ防止網羅</p>
 </div>
 
 <div class="step">
@@ -100,13 +95,13 @@ paginate: true
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## STEP1: リバースエンジニアリング（30分）
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # リバースエンジニアリングとは
 
@@ -129,55 +124,40 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # リバースエンジニアリングの第一歩
 
 ### ソースコード読み込み
-**Claude Codeでプロジェクト全体を読み込む**
-- プロジェクトルートで`claude`コマンド実行
-- 自動的に全ファイルスキャン
+**プロジェクトルートで`claude`実行**
 
-### .claudeignoreで不要ファイルを除外（重要）
-**トークン消費を最小化**
-- node_modules、.git、ビルド成果物、ログファイルを除外
-- コスト削減＋AIの集中力維持
-- 例: `echo "node_modules/\ndist/\n.git/\n*.log" > .claudeignore`
+### .claudeignoreで除外（重要）
+**トークン消費最小化**
+- node_modules、.git、dist、*.log除外
 
 ### AIへの指示例
-- 「このプロジェクトの構造を教えて」
-- 「主要なファイルとその役割をリストアップして」
-- 「アーキテクチャパターンは何を使っている？」
+「プロジェクト構造を教えて」「主要ファイルの役割は？」「アーキテクチャパターンは？」
 
 ### 効果
-プロジェクト全体像の把握、次のステップ（ドキュメント生成）への準備
+全体像把握、ドキュメント生成準備
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
 ![Jagged Intelligence実例](./assets/diagrams/diagram_38_jagged_intelligence_examples.svg)
 
-**AIの得意・不得意を理解**
+**得意:** コード生成、パターン認識、テスト生成
 
-**得意:**
-- コード生成
-- パターン認識
-- テスト生成
+**不得意:** ビジネス判断、設計判断、全体影響判断
 
-**不得意:**
-- ビジネス判断
-- 設計判断
-- 全体への影響判断
-
-**対策:**
-明確な指示とGuardrails
+**対策:** 明確な指示とGuardrails
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # ドキュメント自動生成（Guardrails構築）
 
@@ -228,7 +208,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left compact -->
 
 # リバースエンジニアリング → 網羅的テスト生成（重要）
 
@@ -249,13 +229,15 @@ paginate: true
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
-## STEP2: フィットギャップ分析＆影響範囲調査（20分）
+## STEP2: フィットギャップ分析＆影響範囲調査
+
+### （20分）
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 既存機能のフィットギャップ分析
 
@@ -263,16 +245,14 @@ paginate: true
 
 **目的:** 既存vs新機能比較、追加開発範囲明確化
 
-**分析項目:**
-- **Fit:** そのまま使える機能、流用コード
-- **Gap:** 新規実装、既存拡張、修正箇所
-- **Impact:** 既存への影響、連鎖的変更
+**分析:**
+- **Fit:** そのまま使える機能
+- **Gap:** 新規実装、拡張箇所
+- **Impact:** 既存への影響
 
-**AIへの指示:**
-「既存○○と新規△△のフィットギャップ分析」
+**指示:** 「既存○○と新規△△のフィットギャップ分析」
 
-**効果:**
-工数見積もり、リスク管理、効率的実装計画
+**効果:** 工数見積もり、効率的実装計画
 
 ---
 
@@ -315,19 +295,11 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 **「何をテストすべきか」の一覧（Guardrails）**
 
-**なぜ必要か:**
-- テストコード生成は得意だが、テストシナリオの網羅性保証は苦手（見落とし多発）
-- シナリオなし→AIが推測でテスト作成→モレ・ヌケ、重複、偏り
-- シナリオあり→網羅的にテスト生成、品質担保
+**なぜ必要:** テストコード生成は得意、シナリオ網羅性は苦手
 
-**テストシナリオの役割:**
-- AIへのテスト設計のGuardrails（何をテストするか明示）
-- テストケースの抜け漏れ防止（正常系・異常系・境界値を網羅）
-- レビューのしやすさ（人間が確認しやすい形式）
+**役割:** AIへのGuardrails、抜け漏れ防止
 
-**重要:** 実装前に作成（実装後だと実装に引きずられる）
-
-**効果:** 高品質なテスト、バグ検出率向上、デグレ防止
+**重要:** 実装前に作成
 
 </div>
 
@@ -342,7 +314,6 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 ## テストシナリオ：企画書（What）
 
 **「何をテストするか」を記述**
-- 例: 「ログイン機能の正常系」
 
 **人間が読みやすい形式**
 - Markdown、Excelなど
@@ -350,7 +321,6 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 **ビジネス要件との対応が明確**
 
 **レビューが容易**
-- ステークホルダーも確認可能
 
 </div>
 
@@ -361,7 +331,6 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 ## テストコード：実装物（How）
 
 **「どうテストするか」を記述**
-- 例: `@Test void testLoginSuccess() {...}`
 
 **実行可能なコード**
 - JUnit、Mockitoなど
@@ -369,7 +338,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 **CI/CDで自動実行**
 
 **関係性:**
-テストシナリオ（設計図）→ テストコード（実装）
+シナリオ（設計図）→ コード（実装）
 
 </div>
 
@@ -416,7 +385,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # テストシナリオの分類
 
@@ -439,7 +408,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # テストシナリオ作成の実例
 
@@ -460,7 +429,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## STEP4: テストコード実装＋機能追加（60分）
 
@@ -468,7 +437,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # テストコード基礎（復習）
 
@@ -500,26 +469,22 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # テストシナリオからテストコードへ
 
 ### なぜシナリオから始める？
 **全体像把握→モレ・ヌケ防止**
-- 設計書としてAIがコード生成
-- 人間がレビューしやすい
 
 ### 変換プロセス
-**トレーサビリティ確保**
-1. シナリオ1つ→テストメソッド1つ
-2. Given-When-Then形式で記述
-3. シナリオIDとテストメソッドの対応
+**シナリオ1つ→テストメソッド1つ**
+Given-When-Then形式で記述
 
 ### AIへの指示
-「このテストシナリオ一覧に基づいてJUnitテストコード生成」
+「シナリオからJUnitテスト生成」
 
 ### 効果
-漏れなく実装、品質担保、保守性向上
+漏れなく実装、品質担保
 
 ---
 
@@ -545,7 +510,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # テストカバレッジの考え方（80%以上）
 

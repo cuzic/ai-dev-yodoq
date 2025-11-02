@@ -4,7 +4,6 @@ theme: ai-seminar
 paginate: true
 ---
 
-
 <!-- _class: lead compact -->
 
 # AI活用研修：新規開発編
@@ -15,7 +14,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only -->
 
 # 本日の目標
 
@@ -23,7 +22,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # AI活用の3原則
 
@@ -63,7 +62,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # 開発者の役割変化
 
@@ -77,7 +76,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # 5-STEPフロー全体像
 
@@ -104,7 +103,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # AIの制約②Reward Hacking（手抜き問題）
 
@@ -112,7 +111,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # 環境準備
 
@@ -120,38 +119,31 @@ AI駆動開発で開発期間を大幅短縮
 
 **📦 Claude Code**
 - AI開発環境
-- プロジェクト全体を扱うAIアシスタント
-- **なぜ必要:** プロジェクト全体の文脈を理解、複数ファイル一括操作
+- プロジェクト全体文脈理解
 
 **🔧 GitHub**
-- バージョン管理
-- 頻繁なコミットで暴走対策
-- **なぜ必要:** AIの暴走から回復可能
+- バージョン管理、頻繁commit
+- AI暴走から回復
 
 **💻 VS Code**
-- エディタ
-- Mermaid Preview拡張推奨
-- **なぜ必要:** 図の即座確認、開発体験向上
+- エディタ、Mermaid Preview
+- 図の即座確認
 
-## 🌟 推奨ツール
+## 🌟 推奨
 
 **🐳 Dev Container**
-- 環境統一化
-- dangerously-skip-permissionsモードの安全利用
-- **なぜ推奨:**
-  - 環境の再現性（全員同じ環境）
-  - 実験の安全性（コンテナ内で隔離）
-  - チーム開発でのトラブル防止
+- 環境統一化、権限スキップ
+- 再現性、安全性、トラブル防止
 
-## 📋 セットアップチェックリスト
-- [ ] Claude Code インストール
-- [ ] GitHub アカウント
-- [ ] VS Code + Mermaid Preview
-- [ ] (推奨) Dev Container
+## 📋 セットアップ
+- Claude Code
+- GitHub
+- VS Code + Mermaid
+- (推奨) Dev Container
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # セキュリティベストプラクティス（補足）
 
@@ -205,14 +197,14 @@ AI駆動開発で開発期間を大幅短縮
 
 ![Claude Codeモード比較](./assets/diagrams/diagram_28_claude_code_modes.svg)
 
-- **通常モード:** 毎回確認 (y/n)、最も安全
-- **YOLOモード（Shift+Tab）:** 自動実行、確認時間を大幅削減、Git管理済み推奨
-- **プランモード（Shift+Tab×2）:** 計画→確認→実行、大規模タスク向き
-- **dangerously-skip-permissions:** 全確認スキップ（超危険）
+- **通常:** 毎回確認、最も安全
+- **YOLO（Shift+Tab）:** 自動実行、Git管理済み推奨
+- **プラン（Shift+Tab×2）:** 計画→確認→実行
+- **dangerously-skip:** 全スキップ（超危険）
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only compact -->
 
 # よくある問題と対処法
 
@@ -226,14 +218,12 @@ AI駆動開発で開発期間を大幅短縮
 
 ![プロンプトパターン（良い例vs悪い例）](./assets/diagrams/diagram_30_prompt_patterns.svg)
 
-- **❌ 悪い指示:** 「ログイン機能を作って」
-- **✅ 良い指示:**
-  - 制約を明示（bcrypt、環境変数、バリデーション、レート制限）
-  - 段階的に進める（1機能ずつ）
-  - 質問を促す（「確認したいことはある？」）
-  - 自己レビュー依頼（実装後必ず）
-- **毎回のサイクル:**
-  - 指示 → 実装 → AI自己レビュー → 修正 → テスト → コミット
+- **❌ 悪い:** 「ログイン機能作って」
+- **✅ 良い:**
+  - 制約明示（bcrypt、環境変数）
+  - 段階的（1機能ずつ）
+  - 質問促す/AI自己レビュー
+- **サイクル:** 指示→実装→レビュー→修正
 
 ---
 
@@ -262,7 +252,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only compact -->
 
 # AIに質問させる手法
 
@@ -313,19 +303,16 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # ユーザーストーリーマッピング
 
 ![ユーザーストーリーマッピング](./assets/diagrams/diagram_31_user_story_mapping.svg)
 
 - **フォーマット:** `<誰が> <何をしたい> <なぜ>`
-- **例:** ユーザーとして、タスクを追加したい（忘れないため）
-- **ユーザーの旅:**
-  1. タスク管理（追加・完了・削除）
-  2. タスク整理（カテゴリ・優先度）
-  3. 進捗確認（完了数・期限）
-- **効果:** AIが「なぜ」を理解→本質的な価値を実装
+- **例:** タスク追加（忘れないため）
+- **旅:** 1.管理 2.整理 3.進捗確認
+- **効果:** AIが本質的価値を実装
 
 ---
 
@@ -335,20 +322,17 @@ AI駆動開発で開発期間を大幅短縮
 
 ![非機能要件チェックリスト](./assets/diagrams/diagram_32_nonfunctional_requirements.svg)
 
-## 🎯 なぜ非機能要件が重要か
+## 🎯 重要性
 
-**機能要件だけでは本番で使えない:**
-- 性能不足（遅い、落ちる）
-- セキュリティ脆弱性
-- 拡張性の欠如
+**本番では不可欠:**
+- 性能/セキュリティ/拡張性
 
-**AIは明示しないと考慮しない:**
-- Reward Hacking → 手抜き実装
+**AIは明示必須:**
 - 非機能要件 = Guardrails
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only compact -->
 
 # エラー・エッジケース・制約の洗い出し
 
@@ -356,7 +340,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # 受け入れ基準（Given-When-Then）
 
@@ -400,7 +384,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # STEP1のまとめ
 
@@ -416,7 +400,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">📐</div>
 
@@ -426,14 +410,13 @@ AI駆動開発で開発期間を大幅短縮
 「どのように作るか」を明確にする設計図＝AIの外部メモリ
 </div>
 
-- AIは忘れっぽい→セッション超えると設計意図を忘れる
-- Reward Hacking→設計がないと手抜き実装
-- 設計書＝AIが何度でも参照できる道しるべ
-- **Spec-Driven Development**: Code-First → Spec-First へ
+- AIは忘れっぽい→設計意図忘却
+- Reward Hacking→手抜き実装
+- **Spec-Driven Development**: Spec-First へ
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # 設計ドキュメントの構造
 
@@ -473,7 +456,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # データベーススキーマ設計
 
@@ -507,7 +490,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # Mermaid記法とSVG生成でビジュアル化
 
@@ -519,7 +502,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # ER図が開発をスムーズにする理由
 
@@ -530,7 +513,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # シーケンス図がAI実装を助ける理由
 
@@ -565,7 +548,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # STEP2のまとめ
 
@@ -601,8 +584,11 @@ AI駆動開発で開発期間を大幅短縮
 ---
 
 **Part 1 終了 - 昼休憩（12:00-13:00）**
-
-
+---
+marp: true
+theme: ai-seminar
+paginate: true
+---
 
 # Day 1-2: タスク分解 + 実装 + 品質担保 + リファクタリング (13:00-14:50)
 
@@ -639,52 +625,50 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: two-column ultracompact -->
 
-# 計画書作成による可視化（重要）
+# 計画書作成による可視化
 
-## 早い段階での軌道修正が可能
+## 早期の軌道修正
 
-- 実装後に修正するより、計画段階で修正する方が効率的
-- コスト削減・時間短縮の効果
+- 計画段階で修正する方が効率的
+- コスト削減・時間短縮
 
-## Guardrailsとしての計画書
+## Guardrails
 
-- AIが道を外れたら、計画書で元に戻せる
-- 手戻りコストを大幅に削減
+- AIが道を外れたら計画書で元に戻す
+- 手戻りコスト削減
 
 ## プロンプト例
 
 ```
-「この設計書（docs/spec.md）に基づいて、
-実装タスク一覧を作成してください。
+「設計書に基づいて
+実装タスク一覧を作成。
 
 - Phase分けして
-- 各タスクは30分〜2時間で完了
+- 各30分〜2時間で完了
 - 依存関係を明示
 - 完了条件を具体的に」
 ```
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left ultracompact -->
 
-# Phase分け戦略（Phase 1-4）
+# Phase分け戦略
 
 ![Phase分け戦略](./assets/diagrams/diagram_10_phase_breakdown.svg)
 
-- **なぜPhase分けが必要か**
-  - 全部一度に作ると依存関係が複雑化→AIが混乱（忘れっぽい）
-  - 段階的に作れば各Phaseで動作確認→早期問題発見
-- **Phase 1（基盤）:** DB接続・認証基盤・基本CRUD
-- **Phase 2（コア機能）:** ビジネスロジック・主要API
-- **Phase 3（拡張機能）:** 検索・フィルタ・通知
-- **Phase 4（仕上げ）:** パフォーマンス最適化・E2Eテスト
+- **なぜ必要か:** 依存関係複雑化を防ぐ、早期問題発見
+- **Phase 1:** DB接続・認証・基本CRUD
+- **Phase 2:** ビジネスロジック・主要API
+- **Phase 3:** 検索・フィルタ・通知
+- **Phase 4:** 最適化・E2Eテスト
 - **効果:** リスク最小化、確実な進捗
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # タスク粒度（30分〜2時間）
 
@@ -698,17 +682,15 @@ AI駆動開発で開発期間を大幅短縮
 
 ![タスク依存関係グラフ](./assets/diagrams/diagram_35_dependency_graph.svg)
 
-- **なぜ依存関係の可視化が必要か**
-  - 順序を間違えると手戻りが発生（DB未作成でAPI実装できない）
-  - AIは依存関係の判断が苦手（タスク実行は得意だが順序判断は苦手）
-- **並行作業可能なタスク:** フロントとバックを同時進行
-- **順序が必要なタスク:** DB設計→マイグレーション→API実装
-- **AIへの指示:** 「依存関係を明示してタスク一覧を作成して」
-- **効果:** 効率的なスケジューリング、手戻り防止
+- **なぜ必要:** 順序間違い→手戻り、AIは順序判断苦手
+- **並行可能:** フロント・バック同時
+- **順序必須:** DB設計→マイグレ→API
+- **AI指示:** 「依存関係明示してタスク一覧作成」
+- **効果:** 効率化、手戻り防止
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # タスク一覧テンプレート
 
@@ -762,7 +744,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # STEP3のまとめ
 
@@ -772,25 +754,25 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead ultracompact -->
 
 ## STEP4: 実装（40分）
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: layout-callout ultracompact -->
 
 <div class="icon">⚡</div>
 
-# 実装の3原則（AIの制約に対応）
+# 実装の3原則
 
 <div class="message">
 小さく作る・TDD・AI自己レビュー
 </div>
 
-- **①小さく作る（Increment）** - AIは忘れっぽいので小刻みに、常に動く状態を維持
-- **②テスト駆動（TDD/BDD）** - Trust but Verify、AIが自己完結
-- **③AI自己レビュー必須** - Reward Hacking対策、手抜き検出、40-60%のバグを自動検出
+- **①小さく作る** - AIは忘れっぽい、常に動く状態を維持
+- **②テスト駆動** - Trust but Verify、AIが自己完結
+- **③AI自己レビュー** - 手抜き検出、40-60%のバグを自動検出
 
 ---
 
@@ -802,7 +784,6 @@ AI生成後、必ず人間が確認・調整
   <div class="step">
     <div class="step-number">1</div>
     <h3>タスク選択</h3>
-    <p>依存関係確認</p>
   </div>
   <div class="step">
     <div class="step-number">2</div>
@@ -816,31 +797,27 @@ AI生成後、必ず人間が確認・調整
   </div>
   <div class="step">
     <div class="step-number">4</div>
-    <h3>AI自己レビュー</h3>
-    <p>「レビューして」</p>
+    <h3>レビュー</h3>
+    <p>Refactor</p>
   </div>
   <div class="step">
     <div class="step-number">5</div>
     <h3>修正</h3>
-    <p>指摘対応</p>
   </div>
   <div class="step">
     <div class="step-number">6</div>
-    <h3>動作確認</h3>
-    <p>E2Eテスト</p>
+    <h3>確認</h3>
+    <p>E2E</p>
   </div>
   <div class="step">
     <div class="step-number">7</div>
     <h3>コミット</h3>
-    <p>Git管理</p>
   </div>
 </div>
 
-**このサイクルを繰り返すことで:** 常に動く状態を維持、問題を早期発見、品質を継続的に保証
-
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # TDD/BDD統合ワークフロー
 
@@ -856,7 +833,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # AIにTDD/BDDで実装させる
 
@@ -872,7 +849,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # セキュリティベストプラクティス（重要）
 
@@ -889,7 +866,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # パスワード・JWT認証の実装
 
@@ -897,33 +874,26 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-code-focus supercompact -->
+<!-- _class: layout-code-focus ultracompact -->
 
-# セキュアなコードの指示方法（重要）
+# セキュアなコードの指示方法
 
 ```
-プロンプト例:
 「ユーザー登録APIを実装。
-以下を必須で守ること:
+必須:
 - BCryptでパスワードハッシュ化
-- JWT秘密鍵は環境変数から取得
-- .envファイルを使用
-- .gitignoreに.envを追加
+- JWT秘密鍵は環境変数
+- .envファイル使用
+- .gitignoreに.env追加
 - @Validでバリデーション
 - レート制限
 - エラーメッセージ一般化」
 ```
 
-<div class="notes">
-  <div>
-    <h3>なぜ明確な指示が必要か</h3>
-    AIは暗黙の前提を理解できない。セキュリティ要件は明示しないと実装されない。
-  </div>
-  <div>
-    <h3>効果</h3>
-    明確な制約＝AIが安全な実装を行う
-  </div>
-</div>
+**なぜ明確な指示が必要か**
+AIは暗黙の前提を理解できない
+
+**効果:** 明確な制約＝安全な実装
 
 ---
 
@@ -940,7 +910,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-timeline supercompact -->
+<!-- _class: layout-timeline -->
 
 # インクリメンタル実装の実例
 
@@ -968,7 +938,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # AI自己レビュー必須化（重要）
 
@@ -983,7 +953,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # STEP4のまとめ
 
@@ -999,7 +969,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">✅</div>
 
@@ -1046,31 +1016,29 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: two-column ultracompact -->
 
 # E2Eテスト重視の戦略
 
-## なぜE2Eテストを重視すべきか
+## なぜE2Eか
 
-- 実装詳細のテスト→リファクタリングで壊れる
-- E2Eテスト→ユーザー体験を検証、リファクタリングに強い
-- 本当の価値（ユーザー体験）を保証
+- 実装詳細テスト→リファクタリングで壊れる
+- E2Eテスト→ユーザー体験を保証
 
-## Playwright によるE2Eテスト
+## Playwright活用
 
 **なぜPlaywrightか:**
-- ユーザー視点のテスト自動化
+- ユーザー視点の自動化
 - 実ブラウザで動作確認
-- AIが自動でテストコード生成可能
+- AIが自動生成可能
 
 **プロンプト例:**
 ```
-「ログイン→ダッシュボード表示の
-Playwrightテストを作成して」
+「ログイン→ダッシュボードの
+Playwrightテストを作成」
 ```
 
-**効果:**
-UIバグ・統合問題を自動検出
+**効果:** UIバグ・統合問題を自動検出
 
 ---
 
@@ -1094,7 +1062,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # AI自己レビュー4種類の使い分け
 
@@ -1102,41 +1070,21 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # AI自己レビューの4つの観点
 
 ### ①一般レビュー（毎回必須）
-
-**タイミング:** 実装直後
-
-**プロンプト:** 「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」
-
-**検出:** ロジックエラー、エッジケース見落とし（null、空配列）、命名規則違反
+**検出:** ロジックエラー、エッジケース見落とし、命名規則違反
 
 ### ②セキュリティ特化
-
-**タイミング:** 認証・データ処理時
-
-**プロンプト:** 「OWASP Top 10でセキュリティレビュー。SQL injection・XSS・CSRF・機密情報・認証認可・バリデーションをチェック」
-
-**検出:** SQL injection、XSS、CSRF、平文パスワード、ハードコーディングされたAPIキー
+**検出:** SQLi・XSS・CSRF・平文PW・ハードコーディング
 
 ### ③パフォーマンス特化
-
-**タイミング:** DB操作・大量データ処理時
-
-**プロンプト:** 「パフォーマンスレビュー。N+1クエリ・メモリリーク・キャッシュ・インデックス・非同期処理をチェック」
-
 **検出:** N+1クエリ、無駄な全件取得、キャッシュ未活用
 
 ### ④テストカバレッジ
-
-**タイミング:** テストコード作成後
-
-**プロンプト:** 「テストレビュー。エッジケース・異常系・境界値・独立性・Given-When-Thenをチェック」
-
-**検出:** テストケース漏れ（null、空文字、MAX値）、異常系不足
+**検出:** テストケース漏れ、異常系不足、境界値未検証
 
 ---
 
@@ -1188,39 +1136,27 @@ UIバグ・統合問題を自動検出
 
 # リファクタリング（内部品質向上）
 
-## なぜリファクタリングが必要か
+## なぜ必要か
 
 **Reward Hacking対策:**
-- AIは「とりあえず動く」を優先
-- コピペで重複コード生成
-- 最適化提案は得意だが、トレードオフ判断（可読性 vs 性能）は苦手
+- AIは「動く」を優先
+- コピペで重複生成
 
-## リファクタリングの3観点
+## 3つの観点
 
-**①重複コード削除**
-- コピペで生成された重複を削減
-- 保守コスト削減
+**①重複削除** - 保守コスト削減
 
-**②デザインパターン適用**
-- if-else → Strategy
-- オブジェクト生成 → Factory
-- 拡張容易な構造に
+**②パターン適用**
+- if-else→Strategy
+- 生成→Factory
 
-**③ライブラリ活用**
-- 車輪の再発明を避ける
-- エッジケーステスト済み
-- セキュリティパッチ自動適用
+**③ライブラリ活用** - 再発明回避
 
-## AIへの指示
-
-```
-「不要・冗長・重複コードを
-指摘して」
-```
+**AI指示:** 「不要・冗長・重複コード指摘」
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # Living Documentation（AIの外部メモリ）
 
@@ -1235,7 +1171,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-diagram-only ultracompact -->
+<!-- _class: layout-diagram-only -->
 
 # ドキュメント自動生成Before/After
 
@@ -1348,49 +1284,42 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## Part 2 全体のまとめ
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid ultracompact -->
 
 # Part 2のキーポイント
 
-### ①計画の可視化（STEP3）
+**①計画可視化**: タスク分解で思考言語化
 
-タスク分解でAIの思考を言語化、早期軌道修正
+**②セキュリティ**: BCrypt・環境変数・@Valid明示
 
-### ②セキュリティファースト（STEP4）
+**③TDD自己完結**: テストでAI自動デバッグ
 
-BCrypt・環境変数・@Valid、明示しないとAIは手抜き
+**④自己レビュー**: 観点別で検出率向上
 
-### ③TDDでAI自己完結（STEP4-5）
-
-テストがあれば、AIが自分でデバッグ・修正
-
-### ④AI自己レビュー必須（STEP5）
-
-観点別レビューで検出率大幅向上
-
-### ⑤リファクタリング＆ドキュメント（STEP5）
-
-技術的負債の早期解消、Living Documentationで知見蓄積
-
-
+**⑤リファクタ&Doc**: 負債解消、知見蓄積
+---
+marp: true
+theme: ai-seminar
+paginate: true
+---
 
 # Day 1-3: まとめ + 演習 (15:00-17:00)
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## まとめ（5分）
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only compact -->
 
 # 1日目の振り返り
 
@@ -1401,14 +1330,11 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 **STEP1: 要件定義** → **STEP2: 設計** → **STEP3: タスク分解** → **STEP4: 実装** → **STEP5: 品質担保** → **STEP6: リファクタリング＆ドキュメント**
 
 ## 🔑 成功の鍵
-**各ステップを確実に実行すること**
-- 飛ばさない
-- 急がば回れ
-- AIの制約を理解して対処
+各ステップを確実に実行（飛ばさない・急がば回れ・AIの制約を理解）
 
 ---
 
-<!-- _class: layout-comparison supercompact -->
+<!-- _class: layout-comparison compact -->
 
 # よくある失敗①いきなりコード
 
@@ -1456,7 +1382,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">⚠️</div>
 
@@ -1475,7 +1401,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">⚠️</div>
 
@@ -1494,7 +1420,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # 1日目のキーメッセージ
 
@@ -1502,13 +1428,13 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: lead ultracompact -->
+<!-- _class: lead compact -->
 
 ## 演習課題の説明（TODOアプリ）
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # 演習課題の説明（TODOアプリ）
 
@@ -1516,51 +1442,29 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 **TODOアプリを5-STEPで開発**
 
-**5-STEPフロー全体を体験:**
-1. 要件定義
-2. 設計
-3. タスク分解
-4. 実装
-5. 品質担保
-6. リファクタリング＆ドキュメント反映
+**フロー:** 1.要件定義 2.設計 3.タスク分解 4.実装 5.品質担保 6.リファクタ＆Doc
 
-**技術スタック:**
-- Spring Boot ベース
-- DB連携
-- バリデーション
-- TDD/BDD
+**技術:** Spring Boot、DB、バリデーション、TDD/BDD
 
 ### 📋 要件
 
-**コア機能:**
-- ✅ タスク追加
-- ✅ タスク編集
-- ✅ タスク削除
-- ✅ タスク一覧表示
+**機能:** 追加・編集・削除・一覧
 
-**品質要件:**
-- ✅ BCryptパスワードハッシュ化
-- ✅ 環境変数管理
-- ✅ バリデーション
-- ✅ テストカバレッジ80%以上
+**品質:** BCrypt・環境変数・バリデーション・カバレッジ80%+
 
-### ⏰ 時間配分（115分）
+### ⏰ 時間（115分）
 
-**環境セットアップ**: 10分
-**STEP1-2**: 20分
-**STEP3**: 15分
-**STEP4**: 30分
-**STEP5**: 40分
+Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 演習（115分 ≒ 2時間）
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # 演習の目的と課題
 
@@ -1626,7 +1530,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 演習のゴール
 
@@ -1659,7 +1563,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # つまずきポイントと対処法
 
@@ -1695,7 +1599,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 演習成功のチェックリスト①
 
@@ -1717,260 +1621,192 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
-# 演習成功のチェックリスト②
+# 演習成功チェックリスト②
 
-### STEP4: 実装
-- ✅ TDD/BDD実装（Red-Green-Refactor）
+**STEP4: 実装**
+- ✅ TDD/BDD (Red-Green-Refactor)
 - ✅ Given-When-Then形式テスト
-- ✅ インクリメンタル開発
-- ✅ 環境変数で秘密情報管理
-- ✅ 入力値バリデーション
+- ✅ インクリメンタル開発、頻繁commit
+- ✅ 環境変数管理、入力値バリデーション
 - ✅ AI自己レビュー実施
-- ✅ 頻繁にコミット
 
-### STEP5: 品質担保＆ドキュメント反映
-- ✅ カバレッジ80%以上確認
-- ✅ E2Eテスト実施
-- ✅ AI観点別レビュー（一般・セキュリティ・パフォーマンス・テスト）
-- ✅ 冗長・重複コード削除
+**STEP5: 品質担保＆Doc**
+- ✅ カバレッジ80%+、E2Eテスト
+- ✅ AI観点別レビュー4観点
 - ✅ リファクタリング実施
-- ✅ architecture.md生成
-- ✅ README.md作成
-- ✅ CLAUDE.md更新（成功パターン・ハマった点）
+- ✅ Doc生成 (arch/README/CLAUDE)
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 演習で体感できること
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # 演習で体感できること
 
-### ① 前工程の重要性
-**STEP1-2丁寧実施：** スムーズ、手戻り少、完成早い
-**STEP1-2省略：** 迷う、手戻り多発、遅い
-
-### ② TDDの威力
-**テストなし：** 人間実行→エラー確認→コピペ→AI伝達→修正（無限ループ）
-**テストあり：** AI自動テスト→検知→修正→成功（自己完結）
-
-### ③ AI自己レビューの効果
-**Before：** バグだらけ
-**After：** 多くのバグ検出・修正
-**追加コスト：** ほぼゼロ（数秒）
-
-### ④ インクリメンタル開発の安心感
-**全部一度：** 動くまで不安、原因特定困難
-**小さく作る：** 常に動作確認、原因特定容易、進捗見える
-
-### ⑤ Living Documentationの価値
-**ドキュメントなし：** AIが忘れる、同じ間違い繰り返す
-**ドキュメントあり：** AI参照可能、間違い防止、引き継ぎ容易
+①**前工程**: 丁寧→スムーズ、省略→迷う・手戻り
+②**TDD**: テストあり→AI自己完結、なし→無限ループ
+③**AI自己レビュー**: 数秒で多数バグ検出、コストゼロ
+④**インクリメンタル**: 小さく→常に動作確認、全部→不安
+⑤**Living Doc**: AIが参照可能、忘れない、間違い防止
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 演習の成果物
 
 ---
 
-<!-- _class: layout-code-focus compact -->
+<!-- _class: layout-code-focus supercompact -->
 
 # 成果物：ディレクトリ構成
 
 ```
-プロジェクトディレクトリ/
-├── docs/               # 要件・設計・タスク・完成図面
+project/
+├── docs/     # 要件・設計
 ├── src/
-│   ├── main/java/      # 本番コード
-│   └── test/java/      # テストコード
+│   ├── main/ # 本番
+│   └── test/ # テスト
 ├── README.md
 ├── .env.example
 └── .gitignore
 ```
 
-<div class="notes">
-
-<div>
-
-### 📄 ドキュメント品質
-- 曖昧さがない（誰が読んでも同じ解釈）
-- 受け入れ条件が明確（Given-When-Then形式）
-- エラー・エッジケースを網羅
-- 設計判断の理由を記録
-
-</div>
-
-<div>
-
-### 💻 コード品質
-- テストカバレッジ80%以上
-- セキュリティベストプラクティス適用
-- 環境変数で秘密情報管理
-- リファクタリング済み
-
-</div>
-
-</div>
+**📄 Doc:** Given-When-Then、エッジケース網羅
+**💻 Code:** カバレッジ80%+、セキュリティ、環境変数
 
 ---
 
-<!-- _class: lead ultracompact -->
+<!-- _class: lead compact -->
 
 ## 1日目全体の振り返り
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid ultracompact -->
 
 # 1日目全体の振り返り
 
-### 🌅 午前（Part 1）で学んだこと
-**基礎とSTEP1-2**
-- AI活用の3原則（Jagged Intelligence、Trust but Verify、Guardrails）
-- Claude Codeの使い方（3つのモード）
-- STEP1: 要件定義（曖昧さ排除）
-- STEP2: 設計ドキュメント（Spec-Driven）
+### 🌅 午前（Part 1）基礎とSTEP1-2
+- AI活用3原則（Jagged Intelligence、Trust but Verify、Guardrails）
+- Claude Code使い方（3モード）
+- STEP1: 要件定義（曖昧さ排除）、STEP2: 設計ドキュメント（Spec-Driven）
 
-### 🌤️ 午後前半（Part 2）で学んだこと
-**STEP3-5実践**
+### 🌤️ 午後前半（Part 2）STEP3-5実践
 - STEP3: タスク分解（AI思考言語化）
 - STEP4: 実装（小さく・TDD・AI自己レビュー）
 - STEP5: 品質担保＆ドキュメント反映（TDDとAI相乗効果、Living Documentation）
 
-### 🌆 午後後半（Part 3）で体験したこと
-**5-STEPフロー実践**
-- 5-STEPフロー全体実践
-- 前工程の重要性、TDDの威力
-- AI自己レビュー効果
-- Living Documentationの価値
+### 🌆 午後後半（Part 3）5-STEPフロー実践
+- 5-STEPフロー全体実践、前工程の重要性、TDDの威力
+- AI自己レビュー効果、Living Documentationの価値
 
 ### 🎯 キーメッセージ
-1. **曖昧さ徹底排除:** STEP1-2を丁寧に
-2. **AI思考可視化:** STEP3で計画作成
-3. **TDD自己完結:** STEP4-5でAI自律
-4. **知見蓄積:** STEP6でドキュメント化
-5. **急がば回れ:** 前工程が結果的に最速
+1.**曖昧さ徹底排除:** STEP1-2を丁寧に 2.**AI思考可視化:** STEP3で計画作成 3.**TDD自己完結:** STEP4-5でAI自律 4.**知見蓄積:** STEP6でドキュメント化 5.**急がば回れ:** 前工程が結果的に最速
 
 ---
 
-<!-- _class: lead ultracompact -->
+<!-- _class: lead -->
 
 ## 2日目への準備
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # 2日目への準備
 
 ### 📅 2日目の内容（予告）
 
-**既存システムへの機能追加:**
-- リバースエンジニアリング（既存コードから仕様を読み解く）
+**既存システム改修:**
+- リバースエンジニアリング（既存コードから仕様読み解き）
 - テストシナリオ一覧作成（モレ・ヌケ防止）
-- デグレ防止（既存機能が壊れないことを保証）
-- 既存システムへの機能追加（実プロジェクトベース）
+- デグレ防止（既存機能保証）
+- 機能追加（実プロジェクトベース）
 
 **1日目との違い:**
-- 1日目: 新規開発（ゼロから作る）
-- 2日目: 既存システム改修（理解→追加）
+1日目は新規開発、2日目は既存改修（理解→追加）
 
-### 📚 1日目の復習推奨項目
+### 📚 1日目の復習推奨
 
 **重要概念:**
-- ✅ 5-STEPフローの各ステップの目的
-- ✅ AI制約（Jagged Intelligence、Reward Hacking、忘れっぽさ）
-- ✅ Trust but Verify原則
+✅ 5-STEPフロー各ステップ目的 ✅ AI制約（Jagged Intelligence、Reward Hacking、忘れっぽさ） ✅ Trust but Verify原則
 
 **実践手法:**
-- ✅ TDD/BDDのRed-Green-Refactorサイクル
-- ✅ AI自己レビューの4つの観点
-- ✅ Living Documentationの概念
-- ✅ セキュリティベストプラクティス
+✅ TDD/BDD Red-Green-Refactor ✅ AI自己レビュー4観点 ✅ Living Documentation ✅ セキュリティベストプラクティス
 
 ### 🏠 宿題（任意）
 
-**レベル1: 基礎固め**
-- 演習で作成したTODOアプリに機能追加してみる
+**Lv1:** TODOアプリ機能追加 **Lv2:** 自分のプロジェクトで5-STEP実践 **Lv3:** AI自己レビュー習慣化、成功プロンプトをCLAUDE.mdに記録
+---
+marp: true
+theme: ai-seminar
+paginate: true
+---
 
-**レベル2: 実践**
-- 自分のプロジェクトで5-STEPフローを試してみる
+<!-- _class: title compact -->
 
-**レベル3: 習慣化**
-- AI自己レビューを習慣化してみる
-- 成功したプロンプトをCLAUDE.mdに記録
+# Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎
 
-
-
-# Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎 (10:00-12:00)
+## (10:00-12:00)
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 1日目の振り返り（10分）
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 5-STEPフローの復習（AI制約への対応）
 
 ### STEP1: 要件定義
 **Guardrails、曖昧さの排除**
-- AIの制約を理解した上での明確な指示
 
 ### STEP2: 設計ドキュメント
-**Guardrails、AIは忘れっぽい対策**
-- 外部記憶としてのドキュメント化
+**外部記憶としてのドキュメント化**
 
 ### STEP3: タスク分解
-**AIの思考を言語化、全体像把握**
-- 計画の可視化で手戻り防止
+**計画の可視化で手戻り防止**
 
 ### STEP4: 実装
-**小さく作る・TDD・AI自己レビュー必須**
-- インクリメンタル開発で品質担保
+**小さく作る・TDD・自己レビュー**
 
 ### STEP5: 品質担保＆ドキュメント反映
-**Trust but Verify自動化、Living Documentation＝外部メモリ**
-- 継続的な品質改善と知見蓄積
+**Trust but Verify自動化、外部メモリ更新**
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 昨日の演習での気づき共有
 
 ### 前工程の重要性を実感
-**Guardrails設定の効果**
-- 曖昧さを排除することで実装がスムーズに
+**Guardrails設定で実装スムーズ**
 
-### TDDでAIが自己完結する様子を体験
-**Trust but Verify自動化**
-- AIが自動でテスト実行→修正→成功
+### TDDでAIが自己完結
+**テスト実行→修正→成功を自動化**
 
-### AI自己レビューの効果を確認
-**多くのバグを検出**
-- 追加コストほぼゼロで品質向上
+### AI自己レビューの効果
+**ゼロコストで品質向上**
 
 ### インクリメンタル開発の安心感
-**AIは忘れっぽい対策**
-- 小さく確実に進めることで手戻り防止
+**小さく確実に進め手戻り防止**
 
 ---
 
-<!-- _class: layout-timeline supercompact -->
+<!-- _class: layout-timeline compact -->
 
-# 2日目のゴール：既存システムへの機能追加を高品質に行う
+# 2日目のゴール：既存システムへの高品質な機能追加
 
 <div class="timeline">
 
@@ -1978,21 +1814,21 @@ Red-Green-Refactorサイクルの威力
 <div class="step-number">1</div>
 <h3>リバースエンジニアリング</h3>
 <p><strong>30分</strong></p>
-<p>既存コードから仕様を読み解く</p>
+<p>既存コードから仕様読み解き</p>
 </div>
 
 <div class="step">
 <div class="step-number">2</div>
 <h3>フィットギャップ分析<br>＆影響範囲調査</h3>
 <p><strong>20分</strong></p>
-<p>追加開発範囲の明確化</p>
+<p>追加開発範囲明確化</p>
 </div>
 
 <div class="step">
 <div class="step-number">3</div>
 <h3>テストシナリオ作成</h3>
 <p><strong>30分</strong></p>
-<p>既存機能・新機能・デグレ防止を網羅</p>
+<p>既存・新機能・デグレ防止網羅</p>
 </div>
 
 <div class="step">
@@ -2006,13 +1842,13 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## STEP1: リバースエンジニアリング（30分）
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # リバースエンジニアリングとは
 
@@ -2035,55 +1871,40 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # リバースエンジニアリングの第一歩
 
 ### ソースコード読み込み
-**Claude Codeでプロジェクト全体を読み込む**
-- プロジェクトルートで`claude`コマンド実行
-- 自動的に全ファイルスキャン
+**プロジェクトルートで`claude`実行**
 
-### .claudeignoreで不要ファイルを除外（重要）
-**トークン消費を最小化**
-- node_modules、.git、ビルド成果物、ログファイルを除外
-- コスト削減＋AIの集中力維持
-- 例: `echo "node_modules/\ndist/\n.git/\n*.log" > .claudeignore`
+### .claudeignoreで除外（重要）
+**トークン消費最小化**
+- node_modules、.git、dist、*.log除外
 
 ### AIへの指示例
-- 「このプロジェクトの構造を教えて」
-- 「主要なファイルとその役割をリストアップして」
-- 「アーキテクチャパターンは何を使っている？」
+「プロジェクト構造を教えて」「主要ファイルの役割は？」「アーキテクチャパターンは？」
 
 ### 効果
-プロジェクト全体像の把握、次のステップ（ドキュメント生成）への準備
+全体像把握、ドキュメント生成準備
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left compact -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
 ![Jagged Intelligence実例](./assets/diagrams/diagram_38_jagged_intelligence_examples.svg)
 
-**AIの得意・不得意を理解**
+**得意:** コード生成、パターン認識、テスト生成
 
-**得意:**
-- コード生成
-- パターン認識
-- テスト生成
+**不得意:** ビジネス判断、設計判断、全体影響判断
 
-**不得意:**
-- ビジネス判断
-- 設計判断
-- 全体への影響判断
-
-**対策:**
-明確な指示とGuardrails
+**対策:** 明確な指示とGuardrails
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # ドキュメント自動生成（Guardrails構築）
 
@@ -2106,7 +1927,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: layout-callout ultracompact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">📋</div>
 
@@ -2134,7 +1955,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left compact -->
 
 # リバースエンジニアリング → 網羅的テスト生成（重要）
 
@@ -2155,13 +1976,15 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
-## STEP2: フィットギャップ分析＆影響範囲調査（20分）
+## STEP2: フィットギャップ分析＆影響範囲調査
+
+### （20分）
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 既存機能のフィットギャップ分析
 
@@ -2169,20 +1992,18 @@ Red-Green-Refactorサイクルの威力
 
 **目的:** 既存vs新機能比較、追加開発範囲明確化
 
-**分析項目:**
-- **Fit:** そのまま使える機能、流用コード
-- **Gap:** 新規実装、既存拡張、修正箇所
-- **Impact:** 既存への影響、連鎖的変更
+**分析:**
+- **Fit:** そのまま使える機能
+- **Gap:** 新規実装、拡張箇所
+- **Impact:** 既存への影響
 
-**AIへの指示:**
-「既存○○と新規△△のフィットギャップ分析」
+**指示:** 「既存○○と新規△△のフィットギャップ分析」
 
-**効果:**
-工数見積もり、リスク管理、効率的実装計画
+**効果:** 工数見積もり、効率的実装計画
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # 影響範囲調査の手法
 
@@ -2205,7 +2026,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
@@ -2221,25 +2042,17 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 **「何をテストすべきか」の一覧（Guardrails）**
 
-**なぜ必要か:**
-- テストコード生成は得意だが、テストシナリオの網羅性保証は苦手（見落とし多発）
-- シナリオなし→AIが推測でテスト作成→モレ・ヌケ、重複、偏り
-- シナリオあり→網羅的にテスト生成、品質担保
+**なぜ必要:** テストコード生成は得意、シナリオ網羅性は苦手
 
-**テストシナリオの役割:**
-- AIへのテスト設計のGuardrails（何をテストするか明示）
-- テストケースの抜け漏れ防止（正常系・異常系・境界値を網羅）
-- レビューのしやすさ（人間が確認しやすい形式）
+**役割:** AIへのGuardrails、抜け漏れ防止
 
-**重要:** 実装前に作成（実装後だと実装に引きずられる）
-
-**効果:** 高品質なテスト、バグ検出率向上、デグレ防止
+**重要:** 実装前に作成
 
 </div>
 
 ---
 
-<!-- _class: layout-comparison supercompact -->
+<!-- _class: layout-comparison compact -->
 
 # テストシナリオとテストコードの違い
 
@@ -2248,7 +2061,6 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 ## テストシナリオ：企画書（What）
 
 **「何をテストするか」を記述**
-- 例: 「ログイン機能の正常系」
 
 **人間が読みやすい形式**
 - Markdown、Excelなど
@@ -2256,7 +2068,6 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 **ビジネス要件との対応が明確**
 
 **レビューが容易**
-- ステークホルダーも確認可能
 
 </div>
 
@@ -2267,7 +2078,6 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 ## テストコード：実装物（How）
 
 **「どうテストするか」を記述**
-- 例: `@Test void testLoginSuccess() {...}`
 
 **実行可能なコード**
 - JUnit、Mockitoなど
@@ -2275,13 +2085,13 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 **CI/CDで自動実行**
 
 **関係性:**
-テストシナリオ（設計図）→ テストコード（実装）
+シナリオ（設計図）→ コード（実装）
 
 </div>
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # テストシナリオ → テストコードの順序
 
@@ -2322,7 +2132,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # テストシナリオの分類
 
@@ -2345,7 +2155,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # テストシナリオ作成の実例
 
@@ -2366,7 +2176,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## STEP4: テストコード実装＋機能追加（60分）
 
@@ -2374,7 +2184,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # テストコード基礎（復習）
 
@@ -2406,30 +2216,26 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # テストシナリオからテストコードへ
 
 ### なぜシナリオから始める？
 **全体像把握→モレ・ヌケ防止**
-- 設計書としてAIがコード生成
-- 人間がレビューしやすい
 
 ### 変換プロセス
-**トレーサビリティ確保**
-1. シナリオ1つ→テストメソッド1つ
-2. Given-When-Then形式で記述
-3. シナリオIDとテストメソッドの対応
+**シナリオ1つ→テストメソッド1つ**
+Given-When-Then形式で記述
 
 ### AIへの指示
-「このテストシナリオ一覧に基づいてJUnitテストコード生成」
+「シナリオからJUnitテスト生成」
 
 ### 効果
-漏れなく実装、品質担保、保守性向上
+漏れなく実装、品質担保
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">💡</div>
 
@@ -2451,7 +2257,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # テストカバレッジの考え方（80%以上）
 
@@ -2495,20 +2301,25 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 - 不足しているケースの追加指示
 
 </div>
+---
+marp: true
+theme: ai-seminar
+paginate: true
+---
 
-
+<!-- _class: lead -->
 
 # Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 実践演習の説明（10分）
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 3つの演習課題から選択
 
@@ -2535,7 +2346,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 演習の進め方（ワークフロー）
 
@@ -2550,7 +2361,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid -->
 
 # 演習のゴール
 
@@ -2574,13 +2385,13 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 実践演習（3時間）
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout ultracompact -->
 
 <div class="icon">🔍</div>
 
@@ -2588,19 +2399,9 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 <div class="message">
 
-**既存コードから仕様を読み解く**
-
-**AI指示:**
-- 「内部仕様書作成」「要件定義書作成」
-
-**出力:**
-- 技術スタック、アーキテクチャ、DB/API仕様
-
-**保存先:**
-- docs/architecture.md、requirements.md
-
-**効果:**
-全体像把握、整合性保証
+**AI指示**: 「内部仕様書作成」「要件定義書作成」
+**出力**: 技術スタック、アーキ、DB/API → docs/architecture.md
+**効果**: 全体像把握、整合性保証
 
 </div>
 
@@ -2611,34 +2412,26 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 # STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
 ### 既存機能の理解
-**全体像の把握**
-- **テーブル:** 「全テーブル定義をMarkdown出力」
-- **API:** 「全エンドポイントをOpenAPI出力」
-- **画面:** 「画面一覧と遷移図作成」
-- **ビジネスロジック:** 「○○機能を説明」
+- テーブル/API/画面定義・遷移図
+- ロジック機能説明
 
 ### 影響範囲調査
-**変更箇所・影響把握、デグレ防止**
-- **目的:** 変更箇所・影響把握、デグレ防止
-- **調査項目:** 変更ファイル、影響テーブル、連鎖影響、テスト箇所
-- **AI指示:** 「電話番号カラム追加の影響範囲調査」
+- 変更ファイル、影響テーブル、連鎖、テスト箇所
+- **AI:** 「電話番号追加の影響範囲調査」
 
 ### フィットギャップ分析
-**追加開発範囲明確化**
-- **目的:** 追加開発範囲明確化
-- **プロセス:** 現状確認→要件比較→Fit/Gap明確化
-- **AI指示:** 「顧客管理と電話番号追加のフィットギャップ分析」
-- **出力例:** Fit=既存CRUD流用、Gap=カラム追加/バリデーション/画面修正
+- 現状→要件比較→Fit/Gap明確化
+- **出力:** Fit=既存CRUD、Gap=カラム/バリデ/画面
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">✅</div>
 
@@ -2666,7 +2459,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+<!-- _class: card-grid -->
 
 # 新機能のテストシナリオ作成
 
@@ -2691,7 +2484,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # デグレ防止のテストシナリオ
 
@@ -2717,7 +2510,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # デグレ発生メカニズムとTDDによる予防
 
@@ -2743,7 +2536,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-timeline supercompact -->
+<!-- _class: layout-timeline -->
 
 # テストコード実装（30分）
 
@@ -2782,7 +2575,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-timeline supercompact -->
+<!-- _class: layout-timeline compact -->
 
 # 機能追加実装：TDDで実装（30分）
 
@@ -2824,7 +2617,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # テスト実行・デバッグ
 
@@ -2852,7 +2645,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # ドキュメント反映
 
@@ -2877,13 +2670,13 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 成果発表・ディスカッション（20分）
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 代表者2-3名の成果発表
 
@@ -2901,7 +2694,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # つまづいたポイント共有
 
@@ -2916,7 +2709,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid -->
 
 # うまくいったポイント共有
 
@@ -2939,23 +2732,26 @@ TDD、AI自己レビュー、デグレ防止の実践
 # 全体ディスカッション
 
 ### 他の参加者からの質問
-実装内容、工夫、解決方法についての質問
+- 実装の工夫
+- 解決方法
 
 ### 講師からのフィードバック
-良かった点、改善点、ベストプラクティス
+- 良かった点
+- 改善ポイント
 
 ### ベストプラクティスの共有
-成功パターンの抽出、プロンプト共有
+- 成功事例
+- 効果的なプロンプト
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead -->
 
 ## まとめ（30分）
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only compact -->
 
 # 2日間の総まとめ
 
@@ -2965,43 +2761,43 @@ TDD、AI自己レビュー、デグレ防止の実践
 - STEP1-2: 要件・設計（Guardrails、曖昧さ排除）
 - STEP3: タスク分解（AI思考言語化）
 - STEP4: 実装（TDD、AI自己レビュー）
-- STEP5: 品質担保＆ドキュメント反映（Trust but Verify、Living Documentation）
+- STEP5: 品質担保＆ドキュメント（Living Documentation）
 
 ### 2日目：保守開発の4ステップ
 1. リバースエンジニアリング（既存仕様読解）
-2. フィットギャップ分析＆影響範囲調査（追加開発範囲明確化）
+2. フィットギャップ分析＆影響範囲調査
 3. テストシナリオ作成（モレ・ヌケ防止）
 4. テストコード実装＋機能追加（デグレ防止）
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+<!-- _class: card-grid compact -->
 
 # 実務での活用ポイント
 
 ### 曖昧さを排除
-**STEP1-2を丁寧に実施**
-- AIに質問させる手法を活用
+- STEP1-2を丁寧に実施
+- AIに質問させる手法活用
 - 受け入れ条件を明確化
 
 ### AIの思考を可視化
-**タスク分解で計画を作成**
-- 早い段階での軌道修正
+- タスク分解で計画作成
+- 早期の軌道修正
 - 計画図面と完成図面
 
 ### TDDで品質担保
-**Red-Green-Refactorサイクル**
+- Red-Green-Refactor
 - AIの自己完結性向上
-- テストカバレッジ80%以上
+- カバレッジ80%以上
 
 ### 知見を蓄積
-**Living Documentation**
-- architecture.md、README.md
-- プロンプトパターンの蓄積（CLAUDE.md）
+- Living Documentation
+- architecture.md、README
+- CLAUDE.mdにプロンプト蓄積
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # よくある失敗と対策
 
@@ -3027,33 +2823,19 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
-# 実務で明日から実践できること（Top 5）
+# 実務で明日から実践（Top 5）
 
-### ①AI自己レビューの習慣化
-**実装後必ず「このコードをレビューして」**
-- バグ検出率向上
-
-### ②受け入れ条件の明確化
-**Given-When-Then形式**
-- 曖昧さ排除→AI制約対策
-
-### ③環境変数管理の徹底
-**.envで秘密情報管理**
-- .env.exampleをGitコミット
-
-### ④頻繁なコミット
-**1機能完了→コミット**
-- AI暴走対策
-
-### ⑤テストシナリオを先に作る
-**シナリオ→テストコード**
-- モレ・ヌケ防止
+①**AI自己レビュー**: 「コードをレビューして」習慣化
+②**受入条件**: Given-When-Then形式で曖昧さ排除
+③**環境変数**: .envで秘密管理、.env.exampleコミット
+④**頻繁commit**: 1機能→即コミット、AI暴走防止
+⑤**テスト先行**: シナリオ→コード、モレヌケ防止
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # 今後の学習ロードマップ
 
@@ -3073,7 +2855,7 @@ TODO/メモ/簡易ECなど、5-STEP実践、TDD習慣化
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">❓</div>
 
@@ -3090,4 +2872,3 @@ TODO/メモ/簡易ECなど、5-STEP実践、TDD習慣化
 **その他、AIを活用した開発全般について**
 
 </div>
-

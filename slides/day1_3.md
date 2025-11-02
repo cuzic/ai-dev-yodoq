@@ -14,7 +14,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # 1日目の振り返り
 
@@ -25,14 +25,11 @@ paginate: true
 **STEP1: 要件定義** → **STEP2: 設計** → **STEP3: タスク分解** → **STEP4: 実装** → **STEP5: 品質担保** → **STEP6: リファクタリング＆ドキュメント**
 
 ## 🔑 成功の鍵
-**各ステップを確実に実行すること**
-- 飛ばさない
-- 急がば回れ
-- AIの制約を理解して対処
+各ステップを確実に実行（飛ばさない・急がば回れ・AIの制約を理解）
 
 ---
 
-<!-- _class: layout-comparison supercompact -->
+<!-- _class: layout-comparison compact -->
 
 # よくある失敗①いきなりコード
 
@@ -132,7 +129,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid ultracompact -->
 
 # 演習課題の説明（TODOアプリ）
 
@@ -140,45 +137,23 @@ paginate: true
 
 **TODOアプリを5-STEPで開発**
 
-**5-STEPフロー全体を体験:**
-1. 要件定義
-2. 設計
-3. タスク分解
-4. 実装
-5. 品質担保
-6. リファクタリング＆ドキュメント反映
+**フロー:** 1.要件定義 2.設計 3.タスク分解 4.実装 5.品質担保 6.リファクタ＆Doc
 
-**技術スタック:**
-- Spring Boot ベース
-- DB連携
-- バリデーション
-- TDD/BDD
+**技術:** Spring Boot、DB、バリデーション、TDD/BDD
 
 ### 📋 要件
 
-**コア機能:**
-- ✅ タスク追加
-- ✅ タスク編集
-- ✅ タスク削除
-- ✅ タスク一覧表示
+**機能:** 追加・編集・削除・一覧
 
-**品質要件:**
-- ✅ BCryptパスワードハッシュ化
-- ✅ 環境変数管理
-- ✅ バリデーション
-- ✅ テストカバレッジ80%以上
+**品質:** BCrypt・環境変数・バリデーション・カバレッジ80%+
 
-### ⏰ 時間配分（115分）
+### ⏰ 時間（115分）
 
-**環境セットアップ**: 10分
-**STEP1-2**: 20分
-**STEP3**: 15分
-**STEP4**: 30分
-**STEP5**: 40分
+Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 演習（115分 ≒ 2時間）
 
@@ -250,7 +225,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 演習のゴール
 
@@ -283,7 +258,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # つまずきポイントと対処法
 
@@ -341,147 +316,95 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
-# 演習成功のチェックリスト②
+# 演習成功チェックリスト②
 
-### STEP4: 実装
-- ✅ TDD/BDD実装（Red-Green-Refactor）
+**STEP4: 実装**
+- ✅ TDD/BDD (Red-Green-Refactor)
 - ✅ Given-When-Then形式テスト
-- ✅ インクリメンタル開発
-- ✅ 環境変数で秘密情報管理
-- ✅ 入力値バリデーション
+- ✅ インクリメンタル開発、頻繁commit
+- ✅ 環境変数管理、入力値バリデーション
 - ✅ AI自己レビュー実施
-- ✅ 頻繁にコミット
 
-### STEP5: 品質担保＆ドキュメント反映
-- ✅ カバレッジ80%以上確認
-- ✅ E2Eテスト実施
-- ✅ AI観点別レビュー（一般・セキュリティ・パフォーマンス・テスト）
-- ✅ 冗長・重複コード削除
+**STEP5: 品質担保＆Doc**
+- ✅ カバレッジ80%+、E2Eテスト
+- ✅ AI観点別レビュー4観点
 - ✅ リファクタリング実施
-- ✅ architecture.md生成
-- ✅ README.md作成
-- ✅ CLAUDE.md更新（成功パターン・ハマった点）
+- ✅ Doc生成 (arch/README/CLAUDE)
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 演習で体感できること
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid ultracompact -->
 
 # 演習で体感できること
 
-### ① 前工程の重要性
-**STEP1-2丁寧実施：** スムーズ、手戻り少、完成早い
-**STEP1-2省略：** 迷う、手戻り多発、遅い
-
-### ② TDDの威力
-**テストなし：** 人間実行→エラー確認→コピペ→AI伝達→修正（無限ループ）
-**テストあり：** AI自動テスト→検知→修正→成功（自己完結）
-
-### ③ AI自己レビューの効果
-**Before：** バグだらけ
-**After：** 多くのバグ検出・修正
-**追加コスト：** ほぼゼロ（数秒）
-
-### ④ インクリメンタル開発の安心感
-**全部一度：** 動くまで不安、原因特定困難
-**小さく作る：** 常に動作確認、原因特定容易、進捗見える
-
-### ⑤ Living Documentationの価値
-**ドキュメントなし：** AIが忘れる、同じ間違い繰り返す
-**ドキュメントあり：** AI参照可能、間違い防止、引き継ぎ容易
+①**前工程**: 丁寧→スムーズ、省略→迷う・手戻り
+②**TDD**: テストあり→AI自己完結、なし→無限ループ
+③**AI自己レビュー**: 数秒で多数バグ検出、コストゼロ
+④**インクリメンタル**: 小さく→常に動作確認、全部→不安
+⑤**Living Doc**: AIが参照可能、忘れない、間違い防止
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 演習の成果物
 
 ---
 
-<!-- _class: layout-code-focus -->
+<!-- _class: layout-code-focus supercompact -->
 
 # 成果物：ディレクトリ構成
 
 ```
-プロジェクトディレクトリ/
-├── docs/               # 要件・設計・タスク・完成図面
+project/
+├── docs/     # 要件・設計
 ├── src/
-│   ├── main/java/      # 本番コード
-│   └── test/java/      # テストコード
+│   ├── main/ # 本番
+│   └── test/ # テスト
 ├── README.md
 ├── .env.example
 └── .gitignore
 ```
 
-<div class="notes">
-
-<div>
-
-### 📄 ドキュメント品質
-- 曖昧さがない（誰が読んでも同じ解釈）
-- 受け入れ条件が明確（Given-When-Then形式）
-- エラー・エッジケースを網羅
-- 設計判断の理由を記録
-
-</div>
-
-<div>
-
-### 💻 コード品質
-- テストカバレッジ80%以上
-- セキュリティベストプラクティス適用
-- 環境変数で秘密情報管理
-- リファクタリング済み
-
-</div>
-
-</div>
+**📄 Doc:** Given-When-Then、エッジケース網羅
+**💻 Code:** カバレッジ80%+、セキュリティ、環境変数
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 1日目全体の振り返り
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid ultracompact -->
 
 # 1日目全体の振り返り
 
-### 🌅 午前（Part 1）で学んだこと
-**基礎とSTEP1-2**
-- AI活用の3原則（Jagged Intelligence、Trust but Verify、Guardrails）
-- Claude Codeの使い方（3つのモード）
-- STEP1: 要件定義（曖昧さ排除）
-- STEP2: 設計ドキュメント（Spec-Driven）
+### 🌅 午前（Part 1）基礎とSTEP1-2
+- AI活用3原則（Jagged Intelligence、Trust but Verify、Guardrails）
+- Claude Code使い方（3モード）
+- STEP1: 要件定義（曖昧さ排除）、STEP2: 設計ドキュメント（Spec-Driven）
 
-### 🌤️ 午後前半（Part 2）で学んだこと
-**STEP3-5実践**
+### 🌤️ 午後前半（Part 2）STEP3-5実践
 - STEP3: タスク分解（AI思考言語化）
 - STEP4: 実装（小さく・TDD・AI自己レビュー）
 - STEP5: 品質担保＆ドキュメント反映（TDDとAI相乗効果、Living Documentation）
 
-### 🌆 午後後半（Part 3）で体験したこと
-**5-STEPフロー実践**
-- 5-STEPフロー全体実践
-- 前工程の重要性、TDDの威力
-- AI自己レビュー効果
-- Living Documentationの価値
+### 🌆 午後後半（Part 3）5-STEPフロー実践
+- 5-STEPフロー全体実践、前工程の重要性、TDDの威力
+- AI自己レビュー効果、Living Documentationの価値
 
 ### 🎯 キーメッセージ
-1. **曖昧さ徹底排除:** STEP1-2を丁寧に
-2. **AI思考可視化:** STEP3で計画作成
-3. **TDD自己完結:** STEP4-5でAI自律
-4. **知見蓄積:** STEP6でドキュメント化
-5. **急がば回れ:** 前工程が結果的に最速
+1.**曖昧さ徹底排除:** STEP1-2を丁寧に 2.**AI思考可視化:** STEP3で計画作成 3.**TDD自己完結:** STEP4-5でAI自律 4.**知見蓄積:** STEP6でドキュメント化 5.**急がば回れ:** 前工程が結果的に最速
 
 ---
 
@@ -491,43 +414,29 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid ultracompact -->
 
 # 2日目への準備
 
 ### 📅 2日目の内容（予告）
 
-**既存システムへの機能追加:**
-- リバースエンジニアリング（既存コードから仕様を読み解く）
+**既存システム改修:**
+- リバースエンジニアリング（既存コードから仕様読み解き）
 - テストシナリオ一覧作成（モレ・ヌケ防止）
-- デグレ防止（既存機能が壊れないことを保証）
-- 既存システムへの機能追加（実プロジェクトベース）
+- デグレ防止（既存機能保証）
+- 機能追加（実プロジェクトベース）
 
 **1日目との違い:**
-- 1日目: 新規開発（ゼロから作る）
-- 2日目: 既存システム改修（理解→追加）
+1日目は新規開発、2日目は既存改修（理解→追加）
 
-### 📚 1日目の復習推奨項目
+### 📚 1日目の復習推奨
 
 **重要概念:**
-- ✅ 5-STEPフローの各ステップの目的
-- ✅ AI制約（Jagged Intelligence、Reward Hacking、忘れっぽさ）
-- ✅ Trust but Verify原則
+✅ 5-STEPフロー各ステップ目的 ✅ AI制約（Jagged Intelligence、Reward Hacking、忘れっぽさ） ✅ Trust but Verify原則
 
 **実践手法:**
-- ✅ TDD/BDDのRed-Green-Refactorサイクル
-- ✅ AI自己レビューの4つの観点
-- ✅ Living Documentationの概念
-- ✅ セキュリティベストプラクティス
+✅ TDD/BDD Red-Green-Refactor ✅ AI自己レビュー4観点 ✅ Living Documentation ✅ セキュリティベストプラクティス
 
 ### 🏠 宿題（任意）
 
-**レベル1: 基礎固め**
-- 演習で作成したTODOアプリに機能追加してみる
-
-**レベル2: 実践**
-- 自分のプロジェクトで5-STEPフローを試してみる
-
-**レベル3: 習慣化**
-- AI自己レビューを習慣化してみる
-- 成功したプロンプトをCLAUDE.mdに記録
+**Lv1:** TODOアプリ機能追加 **Lv2:** 自分のプロジェクトで5-STEP実践 **Lv3:** AI自己レビュー習慣化、成功プロンプトをCLAUDE.mdに記録

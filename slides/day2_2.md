@@ -4,17 +4,19 @@ theme: ai-seminar
 paginate: true
 ---
 
+<!-- _class: lead -->
+
 # Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 実践演習の説明（10分）
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 3つの演習課題から選択
 
@@ -41,7 +43,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 演習の進め方（ワークフロー）
 
@@ -80,13 +82,13 @@ paginate: true
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## 実践演習（3時間）
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout ultracompact -->
 
 <div class="icon">🔍</div>
 
@@ -94,19 +96,9 @@ paginate: true
 
 <div class="message">
 
-**既存コードから仕様を読み解く**
-
-**AI指示:**
-- 「内部仕様書作成」「要件定義書作成」
-
-**出力:**
-- 技術スタック、アーキテクチャ、DB/API仕様
-
-**保存先:**
-- docs/architecture.md、requirements.md
-
-**効果:**
-全体像把握、整合性保証
+**AI指示**: 「内部仕様書作成」「要件定義書作成」
+**出力**: 技術スタック、アーキ、DB/API → docs/architecture.md
+**効果**: 全体像把握、整合性保証
 
 </div>
 
@@ -117,28 +109,20 @@ paginate: true
 # STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
 ### 既存機能の理解
-**全体像の把握**
-- **テーブル:** 「全テーブル定義をMarkdown出力」
-- **API:** 「全エンドポイントをOpenAPI出力」
-- **画面:** 「画面一覧と遷移図作成」
-- **ビジネスロジック:** 「○○機能を説明」
+- テーブル/API/画面定義・遷移図
+- ロジック機能説明
 
 ### 影響範囲調査
-**変更箇所・影響把握、デグレ防止**
-- **目的:** 変更箇所・影響把握、デグレ防止
-- **調査項目:** 変更ファイル、影響テーブル、連鎖影響、テスト箇所
-- **AI指示:** 「電話番号カラム追加の影響範囲調査」
+- 変更ファイル、影響テーブル、連鎖、テスト箇所
+- **AI:** 「電話番号追加の影響範囲調査」
 
 ### フィットギャップ分析
-**追加開発範囲明確化**
-- **目的:** 追加開発範囲明確化
-- **プロセス:** 現状確認→要件比較→Fit/Gap明確化
-- **AI指示:** 「顧客管理と電話番号追加のフィットギャップ分析」
-- **出力例:** Fit=既存CRUD流用、Gap=カラム追加/バリデーション/画面修正
+- 現状→要件比較→Fit/Gap明確化
+- **出力:** Fit=既存CRUD、Gap=カラム/バリデ/画面
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
@@ -197,7 +181,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # デグレ防止のテストシナリオ
 
@@ -288,7 +272,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-timeline supercompact -->
+<!-- _class: layout-timeline compact -->
 
 # 機能追加実装：TDDで実装（30分）
 
@@ -330,7 +314,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # テスト実行・デバッグ
 
@@ -358,7 +342,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # ドキュメント反映
 
@@ -383,13 +367,13 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead compact -->
 
 ## 成果発表・ディスカッション（20分）
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # 代表者2-3名の成果発表
 
@@ -407,7 +391,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # つまづいたポイント共有
 
@@ -440,18 +424,21 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 全体ディスカッション
 
 ### 他の参加者からの質問
-実装内容、工夫、解決方法についての質問
+- 実装の工夫
+- 解決方法
 
 ### 講師からのフィードバック
-良かった点、改善点、ベストプラクティス
+- 良かった点
+- 改善ポイント
 
 ### ベストプラクティスの共有
-成功パターンの抽出、プロンプト共有
+- 成功事例
+- 効果的なプロンプト
 
 ---
 
@@ -461,7 +448,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # 2日間の総まとめ
 
@@ -471,39 +458,39 @@ TDD、AI自己レビュー、デグレ防止の実践
 - STEP1-2: 要件・設計（Guardrails、曖昧さ排除）
 - STEP3: タスク分解（AI思考言語化）
 - STEP4: 実装（TDD、AI自己レビュー）
-- STEP5: 品質担保＆ドキュメント反映（Trust but Verify、Living Documentation）
+- STEP5: 品質担保＆ドキュメント（Living Documentation）
 
 ### 2日目：保守開発の4ステップ
 1. リバースエンジニアリング（既存仕様読解）
-2. フィットギャップ分析＆影響範囲調査（追加開発範囲明確化）
+2. フィットギャップ分析＆影響範囲調査
 3. テストシナリオ作成（モレ・ヌケ防止）
 4. テストコード実装＋機能追加（デグレ防止）
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # 実務での活用ポイント
 
 ### 曖昧さを排除
-**STEP1-2を丁寧に実施**
-- AIに質問させる手法を活用
+- STEP1-2を丁寧に実施
+- AIに質問させる手法活用
 - 受け入れ条件を明確化
 
 ### AIの思考を可視化
-**タスク分解で計画を作成**
-- 早い段階での軌道修正
+- タスク分解で計画作成
+- 早期の軌道修正
 - 計画図面と完成図面
 
 ### TDDで品質担保
-**Red-Green-Refactorサイクル**
+- Red-Green-Refactor
 - AIの自己完結性向上
-- テストカバレッジ80%以上
+- カバレッジ80%以上
 
 ### 知見を蓄積
-**Living Documentation**
-- architecture.md、README.md
-- プロンプトパターンの蓄積（CLAUDE.md）
+- Living Documentation
+- architecture.md、README
+- CLAUDE.mdにプロンプト蓄積
 
 ---
 
@@ -533,29 +520,15 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid ultracompact -->
 
-# 実務で明日から実践できること（Top 5）
+# 実務で明日から実践（Top 5）
 
-### ①AI自己レビューの習慣化
-**実装後必ず「このコードをレビューして」**
-- バグ検出率向上
-
-### ②受け入れ条件の明確化
-**Given-When-Then形式**
-- 曖昧さ排除→AI制約対策
-
-### ③環境変数管理の徹底
-**.envで秘密情報管理**
-- .env.exampleをGitコミット
-
-### ④頻繁なコミット
-**1機能完了→コミット**
-- AI暴走対策
-
-### ⑤テストシナリオを先に作る
-**シナリオ→テストコード**
-- モレ・ヌケ防止
+①**AI自己レビュー**: 「コードをレビューして」習慣化
+②**受入条件**: Given-When-Then形式で曖昧さ排除
+③**環境変数**: .envで秘密管理、.env.exampleコミット
+④**頻繁commit**: 1機能→即コミット、AI暴走防止
+⑤**テスト先行**: シナリオ→コード、モレヌケ防止
 
 ---
 

@@ -111,7 +111,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # 環境準備
 
@@ -119,34 +119,27 @@ AI駆動開発で開発期間を大幅短縮
 
 **📦 Claude Code**
 - AI開発環境
-- プロジェクト全体を扱うAIアシスタント
-- **なぜ必要:** プロジェクト全体の文脈を理解、複数ファイル一括操作
+- プロジェクト全体文脈理解
 
 **🔧 GitHub**
-- バージョン管理
-- 頻繁なコミットで暴走対策
-- **なぜ必要:** AIの暴走から回復可能
+- バージョン管理、頻繁commit
+- AI暴走から回復
 
 **💻 VS Code**
-- エディタ
-- Mermaid Preview拡張推奨
-- **なぜ必要:** 図の即座確認、開発体験向上
+- エディタ、Mermaid Preview
+- 図の即座確認
 
-## 🌟 推奨ツール
+## 🌟 推奨
 
 **🐳 Dev Container**
-- 環境統一化
-- dangerously-skip-permissionsモードの安全利用
-- **なぜ推奨:**
-  - 環境の再現性（全員同じ環境）
-  - 実験の安全性（コンテナ内で隔離）
-  - チーム開発でのトラブル防止
+- 環境統一化、権限スキップ
+- 再現性、安全性、トラブル防止
 
-## 📋 セットアップチェックリスト
-- [ ] Claude Code インストール
-- [ ] GitHub アカウント
-- [ ] VS Code + Mermaid Preview
-- [ ] (推奨) Dev Container
+## 📋 セットアップ
+- Claude Code
+- GitHub
+- VS Code + Mermaid
+- (推奨) Dev Container
 
 ---
 
@@ -204,14 +197,14 @@ AI駆動開発で開発期間を大幅短縮
 
 ![Claude Codeモード比較](./assets/diagrams/diagram_28_claude_code_modes.svg)
 
-- **通常モード:** 毎回確認 (y/n)、最も安全
-- **YOLOモード（Shift+Tab）:** 自動実行、確認時間を大幅削減、Git管理済み推奨
-- **プランモード（Shift+Tab×2）:** 計画→確認→実行、大規模タスク向き
-- **dangerously-skip-permissions:** 全確認スキップ（超危険）
+- **通常:** 毎回確認、最も安全
+- **YOLO（Shift+Tab）:** 自動実行、Git管理済み推奨
+- **プラン（Shift+Tab×2）:** 計画→確認→実行
+- **dangerously-skip:** 全スキップ（超危険）
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only compact -->
 
 # よくある問題と対処法
 
@@ -219,20 +212,18 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 効率的な指示の出し方
 
 ![プロンプトパターン（良い例vs悪い例）](./assets/diagrams/diagram_30_prompt_patterns.svg)
 
-- **❌ 悪い指示:** 「ログイン機能を作って」
-- **✅ 良い指示:**
-  - 制約を明示（bcrypt、環境変数、バリデーション、レート制限）
-  - 段階的に進める（1機能ずつ）
-  - 質問を促す（「確認したいことはある？」）
-  - 自己レビュー依頼（実装後必ず）
-- **毎回のサイクル:**
-  - 指示 → 実装 → AI自己レビュー → 修正 → テスト → コミット
+- **❌ 悪い:** 「ログイン機能作って」
+- **✅ 良い:**
+  - 制約明示（bcrypt、環境変数）
+  - 段階的（1機能ずつ）
+  - 質問促す/AI自己レビュー
+- **サイクル:** 指示→実装→レビュー→修正
 
 ---
 
@@ -261,7 +252,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only compact -->
 
 # AIに質問させる手法
 
@@ -312,19 +303,16 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # ユーザーストーリーマッピング
 
 ![ユーザーストーリーマッピング](./assets/diagrams/diagram_31_user_story_mapping.svg)
 
 - **フォーマット:** `<誰が> <何をしたい> <なぜ>`
-- **例:** ユーザーとして、タスクを追加したい（忘れないため）
-- **ユーザーの旅:**
-  1. タスク管理（追加・完了・削除）
-  2. タスク整理（カテゴリ・優先度）
-  3. 進捗確認（完了数・期限）
-- **効果:** AIが「なぜ」を理解→本質的な価値を実装
+- **例:** タスク追加（忘れないため）
+- **旅:** 1.管理 2.整理 3.進捗確認
+- **効果:** AIが本質的価値を実装
 
 ---
 
@@ -334,20 +322,17 @@ AI駆動開発で開発期間を大幅短縮
 
 ![非機能要件チェックリスト](./assets/diagrams/diagram_32_nonfunctional_requirements.svg)
 
-## 🎯 なぜ非機能要件が重要か
+## 🎯 重要性
 
-**機能要件だけでは本番で使えない:**
-- 性能不足（遅い、落ちる）
-- セキュリティ脆弱性
-- 拡張性の欠如
+**本番では不可欠:**
+- 性能/セキュリティ/拡張性
 
-**AIは明示しないと考慮しない:**
-- Reward Hacking → 手抜き実装
+**AIは明示必須:**
 - 非機能要件 = Guardrails
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only compact -->
 
 # エラー・エッジケース・制約の洗い出し
 
@@ -415,7 +400,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">📐</div>
 
@@ -425,10 +410,9 @@ AI駆動開発で開発期間を大幅短縮
 「どのように作るか」を明確にする設計図＝AIの外部メモリ
 </div>
 
-- AIは忘れっぽい→セッション超えると設計意図を忘れる
-- Reward Hacking→設計がないと手抜き実装
-- 設計書＝AIが何度でも参照できる道しるべ
-- **Spec-Driven Development**: Code-First → Spec-First へ
+- AIは忘れっぽい→設計意図忘却
+- Reward Hacking→手抜き実装
+- **Spec-Driven Development**: Spec-First へ
 
 ---
 
