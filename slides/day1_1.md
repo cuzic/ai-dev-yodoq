@@ -107,35 +107,28 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # 環境準備
 
-## ✅ 必須ツール
+## 必須ツール
 
-**📦 Claude Code**
-- AI開発環境
-- プロジェクト全体文脈理解
+**Claude Code**
+AI開発環境、プロジェクト全体文脈理解
 
-**🔧 GitHub**
-- バージョン管理、頻繁commit
-- AI暴走から回復
+**GitHub**
+バージョン管理、頻繁commit、AI暴走から回復
 
-**💻 VS Code**
-- エディタ、Mermaid Preview
-- 図の即座確認
+**VS Code**
+エディタ、Mermaid Preview、図の即座確認
 
-## 🌟 推奨
+## 推奨
 
-**🐳 Dev Container**
-- 環境統一化、権限スキップ
-- 再現性、安全性、トラブル防止
+**Dev Container**
+環境統一化、再現性、安全性
 
-## 📋 セットアップ
-- Claude Code
-- GitHub
-- VS Code + Mermaid
-- (推奨) Dev Container
+## セットアップ
+Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 

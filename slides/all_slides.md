@@ -107,35 +107,28 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # 環境準備
 
-## ✅ 必須ツール
+## 必須ツール
 
-**📦 Claude Code**
-- AI開発環境
-- プロジェクト全体文脈理解
+**Claude Code**
+AI開発環境、プロジェクト全体文脈理解
 
-**🔧 GitHub**
-- バージョン管理、頻繁commit
-- AI暴走から回復
+**GitHub**
+バージョン管理、頻繁commit、AI暴走から回復
 
-**💻 VS Code**
-- エディタ、Mermaid Preview
-- 図の即座確認
+**VS Code**
+エディタ、Mermaid Preview、図の即座確認
 
-## 🌟 推奨
+## 推奨
 
-**🐳 Dev Container**
-- 環境統一化、権限スキップ
-- 再現性、安全性、トラブル防止
+**Dev Container**
+環境統一化、再現性、安全性
 
-## 📋 セットアップ
-- Claude Code
-- GitHub
-- VS Code + Mermaid
-- (推奨) Dev Container
+## セットアップ
+Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
@@ -720,19 +713,22 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left ultracompact -->
 
 # タスク一覧テンプレート
 
 ![タスク一覧テンプレート](./assets/diagrams/diagram_34_task_list_template.svg)
 
-- **必須項目:** Phase・タスク名・所要時間・依存関係・完了条件
-- **なぜテンプレート化が必要か**
-  - 曖昧な計画→AIが勝手に解釈（構造化タスクは得意だが自由形式は苦手）
-  - 明確なフォーマット→AIが一貫した出力
-- **進捗管理:** 一覧表でステータス可視化（未着手・進行中・完了）
-- **チーム共有:** Markdown形式でGit管理、誰でも参照可能
-- **AIへの指示:** 「このテンプレートでタスク一覧を作成して」
+**必須項目:** Phase・タスク名・所要時間・依存・完了条件
+
+**なぜ必要:**
+曖昧な計画→AI勝手解釈、明確なフォーマット→一貫出力
+
+**進捗管理:** ステータス可視化（未着手・進行中・完了）
+
+**チーム共有:** Markdown形式でGit管理
+
+**AI指示:** 「このテンプレートでタスク一覧作成」
 
 ---
 
@@ -790,7 +786,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">⚡</div>
 
@@ -800,9 +796,11 @@ AI生成後、必ず人間が確認・調整
 小さく作る・TDD・AI自己レビュー
 </div>
 
-- **①小さく作る** - AIは忘れっぽい、常に動く状態を維持
-- **②テスト駆動** - Trust but Verify、AIが自己完結
-- **③AI自己レビュー** - 手抜き検出、40-60%のバグを自動検出
+**①小さく作る** - AIは忘れっぽい、常に動く状態維持
+
+**②テスト駆動** - Trust but Verify、AI自己完結
+
+**③AI自己レビュー** - 手抜き検出、40-60%バグ自動検出
 
 ---
 
@@ -1343,7 +1341,11 @@ theme: ai-seminar
 paginate: true
 ---
 
-# Day 1-3: まとめ + 演習 (15:00-17:00)
+<!-- _class: lead -->
+
+## Day 1-3
+# まとめ + 演習
+(15:00-17:00)
 
 ---
 
@@ -1492,13 +1494,11 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead ultracompact -->
 
 # 演習の目的
 
-- **5-STEPフロー実践**
-- **AI駆動開発の効果体感**
-- **前工程の重要性・TDD・AI自己レビュー効果実感**
+5-STEPフロー実践、AI駆動開発の効果体感、前工程の重要性・TDD・AI自己レビュー効果実感
 
 ---
 
@@ -1738,25 +1738,21 @@ project/
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # 1日目全体の振り返り
 
-### 🌅 午前: 基礎とSTEP1-2
-- AI活用3原則
-- STEP1: 要件定義、STEP2: 設計
+### 午前: 基礎
+AI活用3原則、要件定義、設計
 
-### 🌤️ 午後前半: STEP3-5実践
-- STEP3: タスク分解
-- STEP4: 実装
-- STEP5: 品質担保＆Doc反映
+### 午後前半: 実践
+タスク分解、実装、品質担保
 
-### 🌆 午後後半: 5-STEP実践
-- フロー全体実践
-- TDDの威力、Living Documentation
+### 午後後半: 演習
+5-STEPフロー、TDD、Living Doc
 
-### 🎯 キーメッセージ
-曖昧さ排除、AI思考可視化、TDD自己完結、知見蓄積、急がば回れ
+### キーメッセージ
+曖昧さ排除、AI思考可視化、急がば回れ
 
 ---
 
@@ -2186,7 +2182,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 安心追加、品質保証、障害防止
 
 ---
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right ultracompact -->
 
 # テストシナリオの分類
 
@@ -2194,13 +2190,13 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 **正常系:** 想定入力→期待結果
 
-**異常系:** 不正入力→エラー処理確認
+**異常系:** 不正入力→エラー処理
 
 **境界値:** 0/MAX/MIN確認
 
-**例外処理:** ネットワーク/DB/タイムアウトエラー確認
+**例外処理:** ネットワーク/DB/タイムアウト
 
-**効果:** 全観点網羅→本番障害削減
+**効果:** 全観点網羅
 
 ---
 
@@ -2520,7 +2516,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right ultracompact -->
 
 # デグレ防止のテストシナリオ
 
@@ -2529,15 +2525,14 @@ Given-When-Then形式でシナリオ記述
 **目的:** 既存と新機能の連携確認
 
 **対象:**
-既存機能動作、インターフェース、データ整合性
+既存機能、インターフェース、データ整合性
 
 **具体例:**
-既存顧客登録動作、既存データ表示、新規登録保存
+既存登録動作、データ表示、新規保存
 
-**AI指示:**
-「連携テストシナリオ作成」
+**AI指示:** 連携テストシナリオ作成
 
-**効果:** デグレゼロ、シームレス統合
+**効果:** デグレゼロ
 
 ---
 

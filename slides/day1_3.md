@@ -4,7 +4,11 @@ theme: ai-seminar
 paginate: true
 ---
 
-# Day 1-3: まとめ + 演習 (15:00-17:00)
+<!-- _class: lead -->
+
+## Day 1-3
+# まとめ + 演習
+(15:00-17:00)
 
 ---
 
@@ -153,13 +157,11 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead ultracompact -->
 
 # 演習の目的
 
-- **5-STEPフロー実践**
-- **AI駆動開発の効果体感**
-- **前工程の重要性・TDD・AI自己レビュー効果実感**
+5-STEPフロー実践、AI駆動開発の効果体感、前工程の重要性・TDD・AI自己レビュー効果実感
 
 ---
 
@@ -399,25 +401,21 @@ project/
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # 1日目全体の振り返り
 
-### 🌅 午前: 基礎とSTEP1-2
-- AI活用3原則
-- STEP1: 要件定義、STEP2: 設計
+### 午前: 基礎
+AI活用3原則、要件定義、設計
 
-### 🌤️ 午後前半: STEP3-5実践
-- STEP3: タスク分解
-- STEP4: 実装
-- STEP5: 品質担保＆Doc反映
+### 午後前半: 実践
+タスク分解、実装、品質担保
 
-### 🌆 午後後半: 5-STEP実践
-- フロー全体実践
-- TDDの威力、Living Documentation
+### 午後後半: 演習
+5-STEPフロー、TDD、Living Doc
 
-### 🎯 キーメッセージ
-曖昧さ排除、AI思考可視化、TDD自己完結、知見蓄積、急がば回れ
+### キーメッセージ
+曖昧さ排除、AI思考可視化、急がば回れ
 
 ---
 
