@@ -20,12 +20,11 @@ cat slides/day1_2.md | grep -A 5 "<!-- _class:"
 ### レイアウトクラスの特定
 
 スライド内の `<!-- _class: XXX -->` を確認：
-- `layout-diagram-only` - 全画面（16:9）
-- `layout-horizontal-right` - 右側（8:9）
-- `layout-horizontal-left` - 左側（8:9）
-- `layout-comparison` - 比較（1:1）
-- `layout-callout` - 強調（3:2）
-- `card-grid` - カード（5:3）
+- `layout-diagram-only` - 全画面（2.05:1, 1250×610）
+- `layout-horizontal-right` - 右側55%（1.30:1, 700×540）
+- `layout-horizontal-left` - 左側55%（1.30:1, 700×540）
+
+**注意:** layout-comparison、layout-callout、card-grid は主にテキストベースのレイアウトで、通常は独立したSVGダイアグラムを使用しません。
 
 ### コンテキストの理解
 
@@ -161,7 +160,7 @@ git add slides/day1_2.md  # スライドも更新した場合
 
 git commit -m "feat: Add diagram_XX_name for layout-diagram-only
 
-- viewBox: 1600×900 (16:9)
+- viewBox: 1250×610 (2.05:1)
 - 用途: 5-STEPフロー全体の視覚化
 - テキストと補完関係: フローの順序と成果物を視覚的に表現
 - 品質: オーバーフロー・オーバーラップなし"
