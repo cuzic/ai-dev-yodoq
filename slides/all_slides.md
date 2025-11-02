@@ -4,7 +4,7 @@ theme: ai-seminar
 paginate: true
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 # AI活用研修：新規開発編
 
@@ -740,7 +740,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: lead ultracompact -->
+<!-- _class: lead -->
 
 ## STEP4: 実装（40分）
 
@@ -1262,7 +1262,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead -->
 
 ## Part 2 全体のまとめ
 
@@ -1287,7 +1287,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## まとめ（5分）
 
@@ -1402,7 +1402,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## 演習課題の説明（TODOアプリ）
 
@@ -1432,7 +1432,7 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## 演習（115分 ≒ 2時間）
 
@@ -1614,7 +1614,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## 演習で体感できること
 
@@ -1632,7 +1632,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## 演習の成果物
 
@@ -1658,7 +1658,7 @@ project/
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## 1日目全体の振り返り
 
@@ -1721,7 +1721,7 @@ project/
 **Lv1:** TODOアプリ機能追加 **Lv2:** 自分のプロジェクトで5-STEP実践 **Lv3:** AI自己レビュー習慣化、成功プロンプトをCLAUDE.mdに記録
 
 ---
-<!-- _class: title supercompact -->
+<!-- _class: title -->
 
 # Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎
 
@@ -1729,7 +1729,7 @@ project/
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## 1日目の振り返り（10分）
 
@@ -1812,7 +1812,7 @@ project/
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## STEP1: リバースエンジニアリング（30分）
 
@@ -1935,7 +1935,7 @@ project/
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## STEP2: フィットギャップ分析＆影響範囲調査
 
@@ -2135,7 +2135,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## STEP4: テストコード実装＋機能追加（60分）
 
@@ -2268,7 +2268,7 @@ Given-When-Then形式で記述
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## 実践演習の説明（10分）
 
@@ -2331,7 +2331,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## 実践演習（3時間）
 
@@ -2371,7 +2371,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
@@ -2601,7 +2601,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead -->
 
 ## 成果発表・ディスカッション（20分）
 

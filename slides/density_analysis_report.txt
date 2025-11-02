@@ -1,0 +1,6 @@
+INFORMATION DENSITY ANALYSIS REPORT
+================================================================================
+
+Total slides analyzed: 173
+Problematic slides found: 0
+
