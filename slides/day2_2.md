@@ -8,13 +8,13 @@ paginate: true
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 実践演習の説明（10分）
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 3つの演習課題から選択
 
@@ -41,7 +41,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # 演習の進め方（ワークフロー）
 
@@ -112,7 +112,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
@@ -138,7 +138,7 @@ paginate: true
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
@@ -288,7 +288,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: layout-timeline supercompact -->
 
 # 機能追加実装：TDDで実装（30分）
 
@@ -330,7 +330,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テスト実行・デバッグ
 
@@ -358,7 +358,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # ドキュメント反映
 
@@ -383,13 +383,13 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 成果発表・ディスカッション（20分）
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 代表者2-3名の成果発表
 

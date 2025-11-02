@@ -137,6 +137,68 @@ section.compact ul, section.compact ol {
   margin-bottom: 5px;
 }
 
+/* Super Compactレイアウト：深刻なオーバーフロー対策 */
+section.supercompact {
+  font-size: 14px;
+  line-height: 1.3;
+}
+section.supercompact h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+section.supercompact h2 {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+section.supercompact h3 {
+  font-size: 16px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+section.supercompact li {
+  margin-bottom: 1px;
+}
+section.supercompact ul, section.supercompact ol {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+section.supercompact p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+/* Ultra Compactレイアウト：極度のオーバーフロー対策 */
+section.ultracompact {
+  font-size: 12px;
+  line-height: 1.2;
+}
+section.ultracompact h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+section.ultracompact h2 {
+  font-size: 16px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+section.ultracompact h3 {
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+section.ultracompact li {
+  margin-bottom: 0px;
+}
+section.ultracompact ul, section.ultracompact ol {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+section.ultracompact p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 /* 画像2枚横並び：Before/After、比較用 */
 section.two-images-horizontal {
   display: grid;

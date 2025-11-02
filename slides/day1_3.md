@@ -8,7 +8,7 @@ paginate: true
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## まとめ（5分）
 
@@ -32,7 +32,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison supercompact -->
 
 # よくある失敗①いきなりコード
 
@@ -126,7 +126,7 @@ paginate: true
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## 演習課題の説明（TODOアプリ）
 
@@ -178,7 +178,7 @@ paginate: true
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 演習（115分 ≒ 2時間）
 
@@ -205,7 +205,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: layout-timeline compact -->
 
 # 演習の進め方（時間配分）
 
@@ -250,7 +250,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 演習のゴール
 
@@ -283,7 +283,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # つまずきポイントと対処法
 
@@ -319,7 +319,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # 演習成功のチェックリスト①
 
@@ -366,7 +366,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 演習で体感できること
 
@@ -399,7 +399,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 演習の成果物
 
@@ -446,13 +446,13 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 1日目全体の振り返り
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # 1日目全体の振り返り
 

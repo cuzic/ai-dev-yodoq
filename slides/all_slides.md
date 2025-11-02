@@ -5,7 +5,7 @@ paginate: true
 ---
 
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 # AI活用研修：新規開発編
 
@@ -15,7 +15,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # 本日の目標
 
@@ -23,7 +23,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # AI活用の3原則
 
@@ -35,7 +35,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison compact -->
 
 # Vibe Coding vs Production Engineering
 
@@ -63,7 +63,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 開発者の役割変化
 
@@ -77,7 +77,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 5-STEPフロー全体像
 
@@ -92,7 +92,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # AIの制約①忘れっぽい（セッション制約）
 
@@ -104,7 +104,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # AIの制約②Reward Hacking（手抜き問題）
 
@@ -151,7 +151,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # セキュリティベストプラクティス（補足）
 
@@ -167,7 +167,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">💡</div>
 
@@ -184,7 +184,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # セットアップ
 
@@ -199,7 +199,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 4つのモード比較
 
@@ -212,7 +212,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # よくある問題と対処法
 
@@ -220,7 +220,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 効率的な指示の出し方
 
@@ -245,7 +245,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">📋</div>
 
@@ -262,7 +262,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # AIに質問させる手法
 
@@ -270,7 +270,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 要件の引き出し方（文字起こしアプローチ）
 
@@ -290,7 +290,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # MoSCoW 優先順位付け
 
@@ -305,7 +305,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # MoSCoW実践例（ToDoアプリ）
 
@@ -313,7 +313,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # ユーザーストーリーマッピング
 
@@ -329,7 +329,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 非機能要件
 
@@ -348,7 +348,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # エラー・エッジケース・制約の洗い出し
 
@@ -356,7 +356,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 受け入れ基準（Given-When-Then）
 
@@ -400,7 +400,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # STEP1のまとめ
 
@@ -416,7 +416,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">📐</div>
 
@@ -433,7 +433,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 設計ドキュメントの構造
 
@@ -473,7 +473,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # データベーススキーマ設計
 
@@ -507,7 +507,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # Mermaid記法とSVG生成でビジュアル化
 
@@ -519,7 +519,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # ER図が開発をスムーズにする理由
 
@@ -530,7 +530,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # シーケンス図がAI実装を助ける理由
 
@@ -565,7 +565,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # STEP2のまとめ
 
@@ -614,7 +614,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">📋</div>
 
@@ -631,7 +631,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # タスク分解 = AIの思考を言語化（重要）
 
@@ -639,7 +639,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # 計画書作成による可視化（重要）
 
@@ -667,7 +667,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # Phase分け戦略（Phase 1-4）
 
@@ -684,7 +684,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # タスク粒度（30分〜2時間）
 
@@ -692,7 +692,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # 依存関係の可視化
 
@@ -708,7 +708,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # タスク一覧テンプレート
 
@@ -762,7 +762,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # STEP3のまとめ
 
@@ -772,13 +772,13 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## STEP4: 実装（40分）
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">⚡</div>
 
@@ -794,7 +794,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: layout-timeline supercompact -->
 
 # 実装の標準ワークフロー
 
@@ -840,7 +840,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # TDD/BDD統合ワークフロー
 
@@ -856,7 +856,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # AIにTDD/BDDで実装させる
 
@@ -872,7 +872,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # セキュリティベストプラクティス（重要）
 
@@ -889,7 +889,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # パスワード・JWT認証の実装
 
@@ -897,7 +897,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-code-focus -->
+<!-- _class: layout-code-focus supercompact -->
 
 # セキュアなコードの指示方法（重要）
 
@@ -927,7 +927,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # インクリメンタル開発とは
 
@@ -940,7 +940,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: layout-timeline supercompact -->
 
 # インクリメンタル実装の実例
 
@@ -968,7 +968,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # AI自己レビュー必須化（重要）
 
@@ -983,7 +983,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # STEP4のまとめ
 
@@ -999,7 +999,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">✅</div>
 
@@ -1016,7 +1016,7 @@ Trust but Verify自動化 + Living Documentation
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison compact -->
 
 # テスト駆動開発とAI活用の相乗効果
 
@@ -1046,7 +1046,7 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # E2Eテスト重視の戦略
 
@@ -1094,7 +1094,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # AI自己レビュー4種類の使い分け
 
@@ -1102,7 +1102,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # AI自己レビューの4つの観点
 
@@ -1140,7 +1140,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # テストカバレッジ80%ルール
 
@@ -1152,7 +1152,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison compact -->
 
 # 自己レビューの実例
 
@@ -1184,7 +1184,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # リファクタリング（内部品質向上）
 
@@ -1220,7 +1220,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # Living Documentation（AIの外部メモリ）
 
@@ -1235,7 +1235,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only ultracompact -->
 
 # ドキュメント自動生成Before/After
 
@@ -1243,7 +1243,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # Living Documentation 3種類
 
@@ -1338,7 +1338,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # STEP5のまとめ
 
@@ -1348,13 +1348,13 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## Part 2 全体のまとめ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # Part 2のキーポイント
 
@@ -1384,13 +1384,13 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## まとめ（5分）
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # 1日目の振り返り
 
@@ -1408,7 +1408,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison supercompact -->
 
 # よくある失敗①いきなりコード
 
@@ -1456,7 +1456,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">⚠️</div>
 
@@ -1475,7 +1475,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">⚠️</div>
 
@@ -1494,7 +1494,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # 1日目のキーメッセージ
 
@@ -1502,13 +1502,13 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead ultracompact -->
 
 ## 演習課題の説明（TODOアプリ）
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 演習課題の説明（TODOアプリ）
 
@@ -1554,13 +1554,13 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 演習（115分 ≒ 2時間）
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 演習の目的と課題
 
@@ -1581,7 +1581,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: layout-timeline compact -->
 
 # 演習の進め方（時間配分）
 
@@ -1626,7 +1626,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 演習のゴール
 
@@ -1659,7 +1659,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # つまずきポイントと対処法
 
@@ -1695,7 +1695,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 演習成功のチェックリスト①
 
@@ -1717,7 +1717,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 演習成功のチェックリスト②
 
@@ -1742,13 +1742,13 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 演習で体感できること
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 演習で体感できること
 
@@ -1775,13 +1775,13 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 演習の成果物
 
 ---
 
-<!-- _class: layout-code-focus -->
+<!-- _class: layout-code-focus compact -->
 
 # 成果物：ディレクトリ構成
 
@@ -1822,13 +1822,13 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead ultracompact -->
 
 ## 1日目全体の振り返り
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # 1日目全体の振り返り
 
@@ -1861,13 +1861,13 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead ultracompact -->
 
 ## 2日目への準備
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 2日目への準備
 
@@ -1914,13 +1914,13 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 1日目の振り返り（10分）
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 5-STEPフローの復習（AI制約への対応）
 
@@ -1946,7 +1946,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 昨日の演習での気づき共有
 
@@ -1968,7 +1968,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: layout-timeline supercompact -->
 
 # 2日目のゴール：既存システムへの機能追加を高品質に行う
 
@@ -2006,13 +2006,13 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## STEP1: リバースエンジニアリング（30分）
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # リバースエンジニアリングとは
 
@@ -2035,7 +2035,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # リバースエンジニアリングの第一歩
 
@@ -2060,7 +2060,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -2083,7 +2083,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # ドキュメント自動生成（Guardrails構築）
 
@@ -2106,7 +2106,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout ultracompact -->
 
 <div class="icon">📋</div>
 
@@ -2134,7 +2134,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # リバースエンジニアリング → 網羅的テスト生成（重要）
 
@@ -2155,13 +2155,13 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # 既存機能のフィットギャップ分析
 
@@ -2182,7 +2182,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 影響範囲調査の手法
 
@@ -2205,13 +2205,13 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">📝</div>
 
@@ -2239,7 +2239,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison supercompact -->
 
 # テストシナリオとテストコードの違い
 
@@ -2281,7 +2281,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # テストシナリオ → テストコードの順序
 
@@ -2298,7 +2298,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # デグレ防止の重要性
 
@@ -2322,7 +2322,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # テストシナリオの分類
 
@@ -2345,7 +2345,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テストシナリオ作成の実例
 
@@ -2366,7 +2366,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## STEP4: テストコード実装＋機能追加（60分）
 
@@ -2374,7 +2374,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テストコード基礎（復習）
 
@@ -2406,7 +2406,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テストシナリオからテストコードへ
 
@@ -2429,7 +2429,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">💡</div>
 
@@ -2451,7 +2451,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テストカバレッジの考え方（80%以上）
 
@@ -2472,7 +2472,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">🤖</div>
 
@@ -2502,13 +2502,13 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 実践演習の説明（10分）
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 3つの演習課題から選択
 
@@ -2535,7 +2535,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # 演習の進め方（ワークフロー）
 
@@ -2550,7 +2550,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 演習のゴール
 
@@ -2574,13 +2574,13 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 実践演習（3時間）
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">🔍</div>
 
@@ -2606,7 +2606,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
@@ -2632,13 +2632,13 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">✅</div>
 
@@ -2666,7 +2666,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid ultracompact -->
 
 # 新機能のテストシナリオ作成
 
@@ -2691,7 +2691,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # デグレ防止のテストシナリオ
 
@@ -2717,7 +2717,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # デグレ発生メカニズムとTDDによる予防
 
@@ -2743,7 +2743,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: layout-timeline supercompact -->
 
 # テストコード実装（30分）
 
@@ -2782,7 +2782,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: layout-timeline supercompact -->
 
 # 機能追加実装：TDDで実装（30分）
 
@@ -2824,7 +2824,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テスト実行・デバッグ
 
@@ -2852,7 +2852,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # ドキュメント反映
 
@@ -2877,13 +2877,13 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 成果発表・ディスカッション（20分）
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 代表者2-3名の成果発表
 
@@ -2901,7 +2901,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # つまづいたポイント共有
 
@@ -2916,7 +2916,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # うまくいったポイント共有
 
@@ -2934,7 +2934,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 全体ディスカッション
 
@@ -2949,13 +2949,13 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## まとめ（30分）
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # 2日間の総まとめ
 
@@ -2975,7 +2975,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid ultracompact -->
 
 # 実務での活用ポイント
 
@@ -3001,7 +3001,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # よくある失敗と対策
 
@@ -3027,7 +3027,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 実務で明日から実践できること（Top 5）
 
@@ -3053,7 +3053,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 今後の学習ロードマップ
 
@@ -3073,7 +3073,7 @@ TODO/メモ/簡易ECなど、5-STEP実践、TDD習慣化
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">❓</div>
 

@@ -1,0 +1,714 @@
+{
+  "summary": {
+    "total": 45,
+    "pass": 41,
+    "warn": 4,
+    "fail": 0
+  },
+  "results": [
+    {
+      "svg_path": "diagrams/diagram_01_ai_principles.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_02_role_change.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_03_5step_flow.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1350.0,
+        610.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 1.0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_04_ai_memory.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        705.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_05_moscow.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        850.0,
+        540.0
+      ],
+      "status": "WARN",
+      "max_overflow_x": 6.2000000000000455,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "Won't Have（今回はやらない）",
+          "position": {
+            "x": 425.0,
+            "y": 420.0,
+            "left": 425.0,
+            "right": 856.2,
+            "top": 394.8,
+            "bottom": 428.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 6.2000000000000455,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 6.2000000000000455,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=6, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_06_spec_structure.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_07_er_diagram.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "WARN",
+      "max_overflow_x": 6.5,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "Tasks（タスク）",
+          "position": {
+            "x": 525.0,
+            "y": 95.0,
+            "left": 525.0,
+            "right": 706.5,
+            "top": 75.2,
+            "bottom": 101.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 6.5,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 6.5,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=6, T=0, B=0"
+        },
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "Task_Categories",
+          "position": {
+            "x": 525.0,
+            "y": 365.0,
+            "left": 525.0,
+            "right": 706.5,
+            "top": 345.2,
+            "bottom": 371.6
+          },
+          "overflow": {
+            "left": 0,
+            "right": 6.5,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 6.5,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=6, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_08_er_to_code.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_09_sequence_login.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_10_phase_breakdown.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        780.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_11_tdd_cycle.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_12_reverse_engineering.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "WARN",
+      "max_overflow_x": 3.2000000000000455,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "✓ AIの外部メモリ化",
+          "position": {
+            "x": 525.0,
+            "y": 400.0,
+            "left": 525.0,
+            "right": 703.2,
+            "top": 383.8,
+            "bottom": 405.4
+          },
+          "overflow": {
+            "left": 0,
+            "right": 3.2000000000000455,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 3.2000000000000455,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=0, R=3, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_13_impact_analysis.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        900.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_14_scenario_to_code.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_15_test_classification.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        950.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_16_regression_prevention.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_17_workshop_workflow.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_18_fit_gap_analysis.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_19_common_failures.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        780.0,
+        590.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_20_2day_summary.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1400.0,
+        660.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_21_learning_roadmap.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_23_security_best_practices.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1250.0,
+        610.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_24_incremental_timeline.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        720.0,
+        560.0
+      ],
+      "status": "WARN",
+      "max_overflow_x": 2.0,
+      "max_overflow_y": 0,
+      "violations": [
+        {
+          "rule_id": "R-BOUND-TIGHT",
+          "severity": "WARN",
+          "element_type": "text",
+          "text_content": "インクリメンタル開発タイムライン",
+          "position": {
+            "x": 350.0,
+            "y": 45.0,
+            "left": -2.0,
+            "right": 702.0,
+            "top": 9.0,
+            "bottom": 57.0
+          },
+          "overflow": {
+            "left": 2.0,
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "total_x": 2.0,
+            "total_y": 0
+          },
+          "message": "ViewBox超過: L=2, R=0, T=0, B=0"
+        }
+      ]
+    },
+    {
+      "svg_path": "diagrams/diagram_25_ai_self_review_flow.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_26_test_coverage_80_rule.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_28_claude_code_modes.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_29_claudeignore_importance.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_30_prompt_patterns.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_31_user_story_mapping.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_32_nonfunctional_requirements.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_33_given_when_then.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_34_task_list_template.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_35_dependency_graph.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_36_living_documentation.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_38_jagged_intelligence_examples.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_39_reward_hacking_examples.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1250.0,
+        620.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_40_transcript_approach.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_41_mermaid_vs_svg.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_42_regression_mechanism.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_43_doc_automation_before_after.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1250.0,
+        610.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_44_reverse_to_comprehensive_test.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        700.0,
+        540.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_45_error_edge_constraint.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1250.0,
+        610.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_46_step2_summary.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1250.0,
+        610.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_47_moscow_example.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1250.0,
+        610.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    },
+    {
+      "svg_path": "diagrams/diagram_48_day1_key_messages.svg",
+      "viewbox": [
+        0.0,
+        0.0,
+        1250.0,
+        610.0
+      ],
+      "status": "PASS",
+      "max_overflow_x": 0,
+      "max_overflow_y": 0,
+      "violations": []
+    }
+  ]
+}

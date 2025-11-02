@@ -8,13 +8,13 @@ paginate: true
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## 1日目の振り返り（10分）
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 5-STEPフローの復習（AI制約への対応）
 
@@ -40,7 +40,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # 昨日の演習での気づき共有
 
@@ -62,7 +62,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: layout-timeline supercompact -->
 
 # 2日目のゴール：既存システムへの機能追加を高品質に行う
 
@@ -106,7 +106,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # リバースエンジニアリングとは
 
@@ -129,7 +129,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # リバースエンジニアリングの第一歩
 
@@ -177,7 +177,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # ドキュメント自動生成（Guardrails構築）
 
@@ -228,7 +228,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # リバースエンジニアリング → 網羅的テスト生成（重要）
 
@@ -249,13 +249,13 @@ paginate: true
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # 既存機能のフィットギャップ分析
 
@@ -305,7 +305,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">📝</div>
 
@@ -333,7 +333,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison compact -->
 
 # テストシナリオとテストコードの違い
 
@@ -392,7 +392,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # デグレ防止の重要性
 
@@ -416,7 +416,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # テストシナリオの分類
 
@@ -460,7 +460,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## STEP4: テストコード実装＋機能追加（60分）
 
@@ -468,7 +468,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テストコード基礎（復習）
 
@@ -500,7 +500,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テストシナリオからテストコードへ
 
@@ -545,7 +545,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid supercompact -->
 
 # テストカバレッジの考え方（80%以上）
 
@@ -566,7 +566,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">🤖</div>
 

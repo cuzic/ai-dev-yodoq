@@ -4,7 +4,7 @@ theme: ai-seminar
 paginate: true
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 # AI活用研修：新規開発編
 
@@ -34,7 +34,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison compact -->
 
 # Vibe Coding vs Production Engineering
 
@@ -91,7 +91,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # AIの制約①忘れっぽい（セッション制約）
 
@@ -166,7 +166,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">💡</div>
 
@@ -183,7 +183,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # セットアップ
 
@@ -198,7 +198,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 4つのモード比較
 
@@ -211,7 +211,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # よくある問題と対処法
 
@@ -244,7 +244,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">📋</div>
 
@@ -261,7 +261,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # AIに質問させる手法
 
@@ -269,7 +269,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 要件の引き出し方（文字起こしアプローチ）
 
@@ -289,7 +289,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # MoSCoW 優先順位付け
 
@@ -304,7 +304,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # MoSCoW実践例（ToDoアプリ）
 
@@ -312,7 +312,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # ユーザーストーリーマッピング
 
@@ -328,7 +328,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 非機能要件
 
@@ -347,7 +347,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # エラー・エッジケース・制約の洗い出し
 
@@ -415,7 +415,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">📐</div>
 

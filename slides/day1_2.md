@@ -14,7 +14,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">📋</div>
 
@@ -31,7 +31,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # タスク分解 = AIの思考を言語化（重要）
 
@@ -39,7 +39,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # 計画書作成による可視化（重要）
 
@@ -67,7 +67,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # Phase分け戦略（Phase 1-4）
 
@@ -92,7 +92,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 依存関係の可視化
 
@@ -172,13 +172,13 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## STEP4: 実装（40分）
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">⚡</div>
 
@@ -194,7 +194,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: layout-timeline compact -->
 
 # 実装の標準ワークフロー
 
@@ -240,7 +240,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # TDD/BDD統合ワークフロー
 
@@ -297,7 +297,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-code-focus -->
+<!-- _class: layout-code-focus supercompact -->
 
 # セキュアなコードの指示方法（重要）
 
@@ -327,7 +327,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # インクリメンタル開発とは
 
@@ -416,7 +416,7 @@ Trust but Verify自動化 + Living Documentation
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison compact -->
 
 # テスト駆動開発とAI活用の相乗効果
 
@@ -446,7 +446,7 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # E2Eテスト重視の戦略
 
@@ -540,7 +540,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # テストカバレッジ80%ルール
 
@@ -552,7 +552,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-comparison compact -->
 
 # 自己レビューの実例
 
@@ -584,7 +584,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 # リファクタリング（内部品質向上）
 
@@ -643,7 +643,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # Living Documentation 3種類
 
@@ -738,7 +738,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # STEP5のまとめ
 
@@ -748,13 +748,13 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead supercompact -->
 
 ## Part 2 全体のまとめ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # Part 2のキーポイント
 
