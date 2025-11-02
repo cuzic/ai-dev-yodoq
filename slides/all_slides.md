@@ -1038,29 +1038,32 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: lead supercompact -->
 
 # E2Eテスト重視の戦略
 
 ## なぜE2Eか
 
-- 実装詳細テスト→リファクタリングで壊れる
-- E2Eテスト→ユーザー体験を保証
+- **実装詳細テスト**→リファクタリングで壊れる
+- **E2Eテスト**→ユーザー体験を保証
 
-## Playwright活用
+---
 
-**なぜPlaywrightか:**
+<!-- _class: card-grid supercompact -->
+
+# Playwright活用
+
+### なぜPlaywrightか
 - ユーザー視点の自動化
 - 実ブラウザで動作確認
 - AIが自動生成可能
 
-**プロンプト例:**
-```
+### プロンプト例
 「ログイン→ダッシュボードの
 Playwrightテストを作成」
-```
 
-**効果:** UIバグ・統合問題を自動検出
+### 効果
+UIバグ・統合問題を自動検出
 
 ---
 
@@ -1192,15 +1195,15 @@ Playwrightテストを作成」
 
 <!-- _class: layout-horizontal-left supercompact -->
 
-# Living Documentation（AIの外部メモリ）
+# Living Documentation
+## AIの外部メモリ
 
 ![Living Documentation](./assets/diagrams/diagram_36_living_documentation.svg)
 
-## なぜLiving Documentationが必要か
+## なぜ必要か
 
-- **AIは忘れっぽい:** セッション超えると全て忘れる
-- **従来:** 実装と乖離→誰も信用しない
-- **Living:** 実装と同期→常に信頼できる
+- **AIは忘れっぽい** → セッション超えると全て忘れる
+- **Living** → 実装と同期、常に信頼できる
 - **ドキュメント＝AIの外部メモリ**
 
 ---
@@ -1315,24 +1318,10 @@ Playwrightテストを作成」
 ![STEP5のまとめ](./assets/diagrams-web/slide_041_STEP5のまとめ.svg)
 
 ---
-<!-- _class: two-column supercompact -->
-
-<!-- _class: two-column supercompact -->
-
-<!-- _class: two-column supercompact -->
-
-
----
-
-<!-- _class: lead supercompact -->
-
-## Part 2 全体のまとめ
-
----
 
 <!-- _class: card-grid -->
 
-# Part 2のキーポイント
+# Part 2 全体のまとめ：キーポイント
 
 ### ①計画可視化
 タスク分解で思考言語化
@@ -1509,24 +1498,29 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: lead supercompact -->
 
-# 演習の目的と課題
+# 演習の目的
 
-### 演習の目的
-- 5-STEPフロー実践
-- AI駆動開発の効果体感
-- 前工程の重要性・TDD・AI自己レビュー効果実感
+- **5-STEPフロー実践**
+- **AI駆動開発の効果体感**
+- **前工程の重要性・TDD・AI自己レビュー効果実感**
 
-### 課題：TODOアプリ開発（Spring Boot）
+---
 
-**要件:**
+<!-- _class: card-grid supercompact -->
+
+# 課題：TODOアプリ開発
+
+### 要件
 - タスク追加・編集・削除・一覧
 - Spring Boot、DB連携、バリデーション
 
-**なぜTODOアプリ？**
-- シンプルだが実用的、CRUD網羅
-- 2時間で5-STEP全体体験可能
+### なぜTODOアプリ？
+シンプルだが実用的、CRUD網羅
+
+### 目標
+2時間で5-STEP全体体験
 
 ---
 
@@ -1749,33 +1743,26 @@ project/
 ## 1日目全体の振り返り
 
 ---
-<!-- _class: two-column compact -->
 
-<!-- _class: two-column compact -->
-
-<!-- _class: two-column compact -->
-
-
-<!-- _class: two-column compact -->
+<!-- _class: card-grid supercompact -->
 
 # 1日目全体の振り返り
 
-### 🌅 午前（Part 1）基礎とSTEP1-2
-- AI活用3原則（Jagged Intelligence、Trust but Verify、Guardrails）
-- Claude Code使い方（3モード）
-- STEP1: 要件定義（曖昧さ排除）、STEP2: 設計ドキュメント（Spec-Driven）
+### 🌅 午前: 基礎とSTEP1-2
+- AI活用3原則
+- STEP1: 要件定義、STEP2: 設計
 
-### 🌤️ 午後前半（Part 2）STEP3-5実践
-- STEP3: タスク分解（AI思考言語化）
-- STEP4: 実装（小さく・TDD・AI自己レビュー）
-- STEP5: 品質担保＆ドキュメント反映（TDDとAI相乗効果、Living Documentation）
+### 🌤️ 午後前半: STEP3-5実践
+- STEP3: タスク分解
+- STEP4: 実装
+- STEP5: 品質担保＆Doc反映
 
-### 🌆 午後後半（Part 3）5-STEPフロー実践
-- 5-STEPフロー全体実践、前工程の重要性、TDDの威力
-- AI自己レビュー効果、Living Documentationの価値
+### 🌆 午後後半: 5-STEP実践
+- フロー全体実践
+- TDDの威力、Living Documentation
 
 ### 🎯 キーメッセージ
-1.**曖昧さ徹底排除:** STEP1-2を丁寧に 2.**AI思考可視化:** STEP3で計画作成 3.**TDD自己完結:** STEP4-5でAI自律 4.**知見蓄積:** STEP6でドキュメント化 5.**急がば回れ:** 前工程が結果的に最速
+曖昧さ排除、AI思考可視化、TDD自己完結、知見蓄積、急がば回れ
 
 ---
 
@@ -1944,19 +1931,18 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # リバースエンジニアリングの第一歩
 
 ### ソースコード読み込み
-**プロジェクトルートで`claude`実行**
+プロジェクトルートで`claude`実行
 
-### .claudeignoreで除外（重要）
-**トークン消費最小化**
-- node_modules、.git、dist、*.log除外
+### .claudeignoreで除外
+node_modules、.git、dist、*.log除外
 
 ### AIへの指示例
-「プロジェクト構造を教えて」「主要ファイルの役割は？」「アーキテクチャパターンは？」
+「プロジェクト構造を教えて」「主要ファイルの役割は？」
 
 ### 効果
 全体像把握、ドキュメント生成準備
@@ -2297,16 +2283,15 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: card-grid supercompact -->
 
 # テストシナリオからテストコードへ
 
-### なぜシナリオから始める？
-**全体像把握→モレ・ヌケ防止**
+### なぜシナリオから？
+全体像把握→モレ・ヌケ防止
 
 ### 変換プロセス
-**シナリオ1つ→テストメソッド1つ**
-Given-When-Then形式で記述
+シナリオ1つ→テストメソッド1つ
 
 ### AIへの指示
 「シナリオからJUnitテスト生成」
@@ -2387,9 +2372,11 @@ marp: true
 theme: ai-seminar
 paginate: true
 ---
-<!-- _class: compact -->
+<!-- _class: lead supercompact -->
 
-# Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)
+## Day 2-2
+# 実践演習 + 成果発表 + まとめ
+(13:00-17:00)
 
 ---
 
@@ -2462,7 +2449,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">🔍</div>
 
@@ -2470,7 +2457,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 <div class="message">
 
-**AI指示**: 「内部仕様書作成」「要件定義書作成」
+**AI指示**: 「内部仕様書作成」
 **出力**: 技術スタック、アーキ、DB/API → docs/architecture.md
 **効果**: 全体像把握、整合性保証
 
@@ -2783,39 +2770,36 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # うまくいったポイント共有
 
-### リバースエンジニアリングの成功事例
+### リバースエンジニアリング
 効果的だったAIへの指示
 
-### テストシナリオ作成の工夫
+### テストシナリオ作成
 網羅性を高める方法
 
 ### AIの活用方法
 生産性を上げたプロンプト
 
 ### デグレ防止の工夫
-テストで既存機能を守る方法
+既存機能を守るテスト
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: card-grid supercompact -->
 
 # 全体ディスカッション
 
-### 他の参加者からの質問
-- 実装の工夫
-- 解決方法
+### 参加者からの質問
+実装の工夫、解決方法
 
-### 講師からのフィードバック
-- 良かった点
-- 改善ポイント
+### 講師フィードバック
+良かった点、改善ポイント
 
-### ベストプラクティスの共有
-- 成功事例
-- 効果的なプロンプト
+### ベストプラクティス
+成功事例、効果的なプロンプト
 
 ---
 

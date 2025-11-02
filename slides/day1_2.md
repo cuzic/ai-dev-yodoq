@@ -419,29 +419,32 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: lead supercompact -->
 
 # E2Eテスト重視の戦略
 
 ## なぜE2Eか
 
-- 実装詳細テスト→リファクタリングで壊れる
-- E2Eテスト→ユーザー体験を保証
+- **実装詳細テスト**→リファクタリングで壊れる
+- **E2Eテスト**→ユーザー体験を保証
 
-## Playwright活用
+---
 
-**なぜPlaywrightか:**
+<!-- _class: card-grid supercompact -->
+
+# Playwright活用
+
+### なぜPlaywrightか
 - ユーザー視点の自動化
 - 実ブラウザで動作確認
 - AIが自動生成可能
 
-**プロンプト例:**
-```
+### プロンプト例
 「ログイン→ダッシュボードの
 Playwrightテストを作成」
-```
 
-**効果:** UIバグ・統合問題を自動検出
+### 効果
+UIバグ・統合問題を自動検出
 
 ---
 
@@ -573,15 +576,15 @@ Playwrightテストを作成」
 
 <!-- _class: layout-horizontal-left supercompact -->
 
-# Living Documentation（AIの外部メモリ）
+# Living Documentation
+## AIの外部メモリ
 
 ![Living Documentation](./assets/diagrams/diagram_36_living_documentation.svg)
 
-## なぜLiving Documentationが必要か
+## なぜ必要か
 
-- **AIは忘れっぽい:** セッション超えると全て忘れる
-- **従来:** 実装と乖離→誰も信用しない
-- **Living:** 実装と同期→常に信頼できる
+- **AIは忘れっぽい** → セッション超えると全て忘れる
+- **Living** → 実装と同期、常に信頼できる
 - **ドキュメント＝AIの外部メモリ**
 
 ---
@@ -696,24 +699,10 @@ Playwrightテストを作成」
 ![STEP5のまとめ](./assets/diagrams-web/slide_041_STEP5のまとめ.svg)
 
 ---
-<!-- _class: two-column supercompact -->
-
-<!-- _class: two-column supercompact -->
-
-<!-- _class: two-column supercompact -->
-
-
----
-
-<!-- _class: lead supercompact -->
-
-## Part 2 全体のまとめ
-
----
 
 <!-- _class: card-grid -->
 
-# Part 2のキーポイント
+# Part 2 全体のまとめ：キーポイント
 
 ### ①計画可視化
 タスク分解で思考言語化

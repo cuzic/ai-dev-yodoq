@@ -3,9 +3,11 @@ marp: true
 theme: ai-seminar
 paginate: true
 ---
-<!-- _class: compact -->
+<!-- _class: lead supercompact -->
 
-# Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)
+## Day 2-2
+# 実践演習 + 成果発表 + まとめ
+(13:00-17:00)
 
 ---
 
@@ -78,7 +80,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">🔍</div>
 
@@ -86,7 +88,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 <div class="message">
 
-**AI指示**: 「内部仕様書作成」「要件定義書作成」
+**AI指示**: 「内部仕様書作成」
 **出力**: 技術スタック、アーキ、DB/API → docs/architecture.md
 **効果**: 全体像把握、整合性保証
 
@@ -399,39 +401,36 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # うまくいったポイント共有
 
-### リバースエンジニアリングの成功事例
+### リバースエンジニアリング
 効果的だったAIへの指示
 
-### テストシナリオ作成の工夫
+### テストシナリオ作成
 網羅性を高める方法
 
 ### AIの活用方法
 生産性を上げたプロンプト
 
 ### デグレ防止の工夫
-テストで既存機能を守る方法
+既存機能を守るテスト
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: card-grid supercompact -->
 
 # 全体ディスカッション
 
-### 他の参加者からの質問
-- 実装の工夫
-- 解決方法
+### 参加者からの質問
+実装の工夫、解決方法
 
-### 講師からのフィードバック
-- 良かった点
-- 改善ポイント
+### 講師フィードバック
+良かった点、改善ポイント
 
-### ベストプラクティスの共有
-- 成功事例
-- 効果的なプロンプト
+### ベストプラクティス
+成功事例、効果的なプロンプト
 
 ---
 

@@ -159,24 +159,29 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: lead supercompact -->
 
-# 演習の目的と課題
+# 演習の目的
 
-### 演習の目的
-- 5-STEPフロー実践
-- AI駆動開発の効果体感
-- 前工程の重要性・TDD・AI自己レビュー効果実感
+- **5-STEPフロー実践**
+- **AI駆動開発の効果体感**
+- **前工程の重要性・TDD・AI自己レビュー効果実感**
 
-### 課題：TODOアプリ開発（Spring Boot）
+---
 
-**要件:**
+<!-- _class: card-grid supercompact -->
+
+# 課題：TODOアプリ開発
+
+### 要件
 - タスク追加・編集・削除・一覧
 - Spring Boot、DB連携、バリデーション
 
-**なぜTODOアプリ？**
-- シンプルだが実用的、CRUD網羅
-- 2時間で5-STEP全体体験可能
+### なぜTODOアプリ？
+シンプルだが実用的、CRUD網羅
+
+### 目標
+2時間で5-STEP全体体験
 
 ---
 
@@ -399,33 +404,26 @@ project/
 ## 1日目全体の振り返り
 
 ---
-<!-- _class: two-column compact -->
 
-<!-- _class: two-column compact -->
-
-<!-- _class: two-column compact -->
-
-
-<!-- _class: two-column compact -->
+<!-- _class: card-grid supercompact -->
 
 # 1日目全体の振り返り
 
-### 🌅 午前（Part 1）基礎とSTEP1-2
-- AI活用3原則（Jagged Intelligence、Trust but Verify、Guardrails）
-- Claude Code使い方（3モード）
-- STEP1: 要件定義（曖昧さ排除）、STEP2: 設計ドキュメント（Spec-Driven）
+### 🌅 午前: 基礎とSTEP1-2
+- AI活用3原則
+- STEP1: 要件定義、STEP2: 設計
 
-### 🌤️ 午後前半（Part 2）STEP3-5実践
-- STEP3: タスク分解（AI思考言語化）
-- STEP4: 実装（小さく・TDD・AI自己レビュー）
-- STEP5: 品質担保＆ドキュメント反映（TDDとAI相乗効果、Living Documentation）
+### 🌤️ 午後前半: STEP3-5実践
+- STEP3: タスク分解
+- STEP4: 実装
+- STEP5: 品質担保＆Doc反映
 
-### 🌆 午後後半（Part 3）5-STEPフロー実践
-- 5-STEPフロー全体実践、前工程の重要性、TDDの威力
-- AI自己レビュー効果、Living Documentationの価値
+### 🌆 午後後半: 5-STEP実践
+- フロー全体実践
+- TDDの威力、Living Documentation
 
 ### 🎯 キーメッセージ
-1.**曖昧さ徹底排除:** STEP1-2を丁寧に 2.**AI思考可視化:** STEP3で計画作成 3.**TDD自己完結:** STEP4-5でAI自律 4.**知見蓄積:** STEP6でドキュメント化 5.**急がば回れ:** 前工程が結果的に最速
+曖昧さ排除、AI思考可視化、TDD自己完結、知見蓄積、急がば回れ
 
 ---
 

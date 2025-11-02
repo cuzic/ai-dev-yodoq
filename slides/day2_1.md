@@ -131,19 +131,18 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # リバースエンジニアリングの第一歩
 
 ### ソースコード読み込み
-**プロジェクトルートで`claude`実行**
+プロジェクトルートで`claude`実行
 
-### .claudeignoreで除外（重要）
-**トークン消費最小化**
-- node_modules、.git、dist、*.log除外
+### .claudeignoreで除外
+node_modules、.git、dist、*.log除外
 
 ### AIへの指示例
-「プロジェクト構造を教えて」「主要ファイルの役割は？」「アーキテクチャパターンは？」
+「プロジェクト構造を教えて」「主要ファイルの役割は？」
 
 ### 効果
 全体像把握、ドキュメント生成準備
@@ -484,16 +483,15 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: card-grid supercompact -->
 
 # テストシナリオからテストコードへ
 
-### なぜシナリオから始める？
-**全体像把握→モレ・ヌケ防止**
+### なぜシナリオから？
+全体像把握→モレ・ヌケ防止
 
 ### 変換プロセス
-**シナリオ1つ→テストメソッド1つ**
-Given-When-Then形式で記述
+シナリオ1つ→テストメソッド1つ
 
 ### AIへの指示
 「シナリオからJUnitテスト生成」
