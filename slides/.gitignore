@@ -1,0 +1,13 @@
+# Archive directory for old/unused scripts
+archive/
+
+# Temporary Python scripts
+*.pyc
+__pycache__/
+
+# Node modules
+node_modules/
+
+# Build output
+*.html
+!index.html
