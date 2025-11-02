@@ -196,79 +196,235 @@ Looks good? (yes/no/adjust)
 
 ## Phase 4: LAYOUT 🎨（レイアウト選択）
 
-### 自動レイアウト選択
+### 利用可能なレイアウト（全15種類）
+
+**テーマファイル**: `themes/ai-seminar.css`
+
+#### 既存レイアウト（10種類）
+1. **lead** - タイトル・セクション区切り
+2. **layout-horizontal-left** - 図左55%、テキスト右45%
+3. **layout-horizontal-right** - テキスト左45%、図右55%
+4. **layout-diagram-only** - 図のみ最大化
+5. **two-column** - 2カラムテキスト（8-18 bullets）
+6. **three-column** - 3カラムテキスト（15-27 bullets）
+7. **compact** - フォントサイズ縮小（≥9 bullets or ≥800 chars）
+8. **two-images-horizontal** - 画像2枚横並び比較
+9. **image-top-compact** - 画像上、テキスト下
+10. **card-grid** - カード型2列グリッド（3-4 sections）
+
+#### 新規レイアウト（5種類）✨
+11. **layout-comparison** - 2つの概念を左右対比（vs, Before/After）
+12. **layout-callout** - 重要メッセージを紫グラデーション背景で強調
+13. **layout-timeline** - 3-7ステップの手順を円形番号で横並び表示
+14. **layout-code-focus** - コードブロック60%、説明2列
+15. **layout-split-vertical** - 画像上60%、テキスト下40%
+
+---
+
+### 自動レイアウト選択ロジック
 
 各スライドの内容を分析し、最適なレイアウトを自動選択：
 
-#### 選択ロジック
+#### 選択優先順位
 
 ```python
 def select_layout(slide_content: str) -> str:
     """
     スライド内容に基づいてレイアウトを選択
 
-    優先順位:
-    1. lead: H1のみ、短い説明
-    2. layout-diagram-only: 画像メイン
-    3. two-column: 比較構造
-    4. layout-horizontal-left/right: 画像 + 説明
-    5. compact: コンテンツ量が多い
-    6. default: 標準
+    優先順位（上から順に判定）:
+    1. lead: H1のみ、セクション区切り
+    2. layout-callout: 重要メッセージ強調（キーワード検出）
+    3. layout-comparison: 2つの概念比較（vs, Before/After）
+    4. layout-timeline: 手順・フロー（3-7ステップ）
+    5. layout-code-focus: コード例メイン
+    6. layout-diagram-only: 図のみ（説明最小限）
+    7. layout-horizontal-*: 図 + 説明（3-8 bullets）
+    8. two-column / three-column: 箇条書き数に応じて
+    9. card-grid: 3-4の独立セクション
+    10. compact: 内容量多い（≥9 bullets）
+    11. default: 標準
     """
     analysis = analyze_content(slide_content)
 
-    # Rule 1: lead
+    # Rule 1: lead（セクションタイトル）
     if analysis['has_h1'] and not analysis['has_h2']:
-        if analysis['bullet_count'] <= 3 and analysis['total_chars'] < 100:
+        if analysis['bullet_count'] <= 3 and analysis['total_chars'] < 150:
             return 'lead'
 
-    # Rule 2: diagram-only
+    # Rule 2: layout-callout（重要メッセージ強調）
+    # キーワード: "重要", "原則", "必須", "警告", "注意", "キーポイント"
+    if has_callout_keywords(slide_content):
+        if analysis['bullet_count'] <= 6 and not analysis['has_image']:
+            return 'layout-callout'
+
+    # Rule 3: layout-comparison（比較）
+    # キーワード: "vs", "VS", "対", "Before", "After", "従来", "AI時代"
+    # または H3が2つ並列している構造
+    if has_comparison_structure(slide_content):
+        if not analysis['has_image'] and 4 <= analysis['bullet_count'] <= 16:
+            return 'layout-comparison'
+
+    # Rule 4: layout-timeline（手順・フロー）
+    # キーワード: "ステップ", "フロー", "手順", "サイクル"
+    # または 番号付きリスト（3-7項目）
+    if has_timeline_structure(slide_content):
+        if 3 <= analysis['step_count'] <= 7:
+            return 'layout-timeline'
+
+    # Rule 5: layout-code-focus（コード重視）
+    if analysis['has_code_block']:
+        if analysis['code_lines'] >= 10:
+            return 'layout-code-focus'
+
+    # Rule 6: layout-diagram-only（図のみ）
     if analysis['has_image']:
-        if analysis['bullet_count'] <= 3:
+        if analysis['bullet_count'] <= 2:
             return 'layout-diagram-only'
 
-    # Rule 3: two-column
-    if analysis['has_comparison']:
-        return 'two-column' if analysis['bullet_count'] < 10 else 'two-column compact'
-
-    # Rule 4: horizontal
+    # Rule 7: layout-horizontal-*（図 + 説明）
     if analysis['has_image'] and 3 <= analysis['bullet_count'] <= 8:
-        return 'layout-horizontal-left'  # デフォルトは左配置
+        # 左右の選択は画像の重要度で決定
+        if analysis['image_is_primary']:
+            return 'layout-horizontal-left'  # 図を左（55%）
+        else:
+            return 'layout-horizontal-right'  # 図を右（55%）
 
-    # Rule 5: compact
+    # Rule 8: two-images-horizontal（2画像比較）
+    if analysis['image_count'] == 2:
+        if analysis['bullet_count'] <= 4:
+            return 'two-images-horizontal'
+
+    # Rule 9: card-grid（カード型グリッド）
+    if has_card_structure(slide_content):
+        if 3 <= analysis['section_count'] <= 4:
+            return 'card-grid'
+
+    # Rule 10: three-column（3カラム）
+    if 15 <= analysis['bullet_count'] <= 27:
+        return 'three-column'
+
+    # Rule 11: two-column（2カラム）
+    if 8 <= analysis['bullet_count'] <= 18:
+        return 'two-column'
+
+    # Rule 12: compact（コンテンツ量多い）
     if analysis['bullet_count'] >= 9 or analysis['total_chars'] >= 800:
         return 'compact'
 
-    # Rule 6: default
-    return None
+    # Rule 13: image-top-compact（画像上、説明下）
+    if analysis['has_image']:
+        if 3 <= analysis['bullet_count'] <= 6:
+            return 'image-top-compact'
+
+    # Rule 14: layout-split-vertical（画像上60%、説明下40%）
+    if analysis['has_large_image']:
+        if analysis['bullet_count'] <= 5:
+            return 'layout-split-vertical'
+
+    # Rule 15: default（標準）
+    return None  # Marpデフォルト
+```
+
+#### 検出ヘルパー関数
+
+```python
+def has_callout_keywords(content: str) -> bool:
+    """重要メッセージ強調のキーワードを検出"""
+    keywords = ['重要', '原則', '必須', '警告', '注意', 'キーポイント',
+                '⚠️', '💡', '🔒', '✅', 'IMPORTANT', 'WARNING']
+    return any(kw in content for kw in keywords)
+
+def has_comparison_structure(content: str) -> bool:
+    """比較構造を検出"""
+    # キーワードベース
+    comparison_keywords = ['vs', 'VS', '対', 'Before', 'After', '従来', 'AI時代']
+    if any(kw in content for kw in comparison_keywords):
+        return True
+
+    # H3が2つ並列しているパターン
+    h3_count = content.count('### ')
+    return h3_count == 2
+
+def has_timeline_structure(content: str) -> bool:
+    """タイムライン・フロー構造を検出"""
+    timeline_keywords = ['ステップ', 'STEP', 'フロー', '手順', 'サイクル',
+                         'Phase', 'プロセス']
+    return any(kw in content for kw in timeline_keywords)
+
+def has_card_structure(content: str) -> bool:
+    """カード型構造を検出"""
+    # H3が3-4個あり、それぞれに箇条書きがある
+    h3_count = content.count('### ')
+    return 3 <= h3_count <= 4
+
+def analyze_content(slide_content: str) -> dict:
+    """スライド内容を詳細分析"""
+    return {
+        'has_h1': '# ' in slide_content,
+        'has_h2': '## ' in slide_content,
+        'has_image': '![' in slide_content,
+        'has_code_block': '```' in slide_content,
+        'image_count': slide_content.count('!['),
+        'bullet_count': slide_content.count('\n- ') + slide_content.count('\n* '),
+        'section_count': slide_content.count('### '),
+        'step_count': count_numbered_steps(slide_content),
+        'code_lines': count_code_lines(slide_content),
+        'total_chars': len(slide_content),
+        'has_large_image': 'height:' in slide_content or 'width:1000' in slide_content,
+        'image_is_primary': estimate_image_importance(slide_content),
+    }
 ```
 
 ### レイアウト選択結果
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎨 LAYOUT SELECTION
+🎨 LAYOUT SELECTION (15 layouts available)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Slide #42: lead
-  → H1のみ、テキスト最小限
+  → H1のみ、セクション区切り
 
-Slide #43: (default)
-  → 標準テキスト (5 bullets, 320 chars)
+Slide #43: layout-callout ✨
+  → 重要メッセージ強調 (キーワード: "原則" 検出)
 
-Slide #44: layout-horizontal-left
+Slide #44: layout-comparison ✨
+  → 2つの概念比較 (キーワード: "vs" 検出, 12 bullets)
+
+Slide #45: layout-timeline ✨
+  → 手順フロー (5 steps 検出)
+
+Slide #46: layout-code-focus ✨
+  → コード重視 (25 code lines)
+
+Slide #47: layout-horizontal-left
   → 画像 + 説明 (4 bullets, 1 image)
 
-Slide #45: compact
-  → 箇条書き多数 (9 bullets, 650 chars)
+Slide #48: two-column
+  → 2カラムテキスト (10 bullets)
+
+Slide #49: compact
+  → 箇条書き多数 (12 bullets, 650 chars)
+
+Slide #50: (default)
+  → 標準テキスト (5 bullets, 320 chars)
 
 ...
 
 Summary:
-  - lead: [N]
-  - layout-horizontal-left: [N]
-  - compact: [N]
-  - default: [N]
+  - lead: 1 slide
+  - layout-callout: 2 slides ✨
+  - layout-comparison: 3 slides ✨
+  - layout-timeline: 2 slides ✨
+  - layout-code-focus: 1 slide ✨
+  - layout-horizontal-left: 4 slides
+  - two-column: 3 slides
+  - compact: 2 slides
+  - default: 7 slides
+
+New Layouts: 8 slides (32%)
+Traditional Layouts: 17 slides (68%)
 
 Layouts OK? (yes/no/adjust)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -359,6 +515,163 @@ Layouts OK? (yes/no/adjust)
 ---
 ```
 
+#### 比較スライド（layout-comparison）✨
+
+```markdown
+---
+
+<!-- _class: layout-comparison -->
+
+# [比較タイトル（例: Vibe Coding vs Production Engineering）]
+
+<div>
+
+### [左側の概念]
+- [ポイント1]
+- [ポイント2]
+- [ポイント3]
+
+</div>
+
+<div>VS</div>
+
+<div>
+
+### [右側の概念]
+- [ポイント1]
+- [ポイント2]
+- [ポイント3]
+
+</div>
+
+<!-- TODO: /slide-tdd で内容充実 -->
+
+---
+```
+
+#### 強調メッセージスライド（layout-callout）✨
+
+```markdown
+---
+
+<!-- _class: layout-callout -->
+
+<div class="icon">💡</div>
+
+# [重要な原則・メッセージ]
+
+<div class="message">
+[キーメッセージを1文で]
+</div>
+
+- [補足ポイント1]
+- [補足ポイント2]
+- [補足ポイント3]
+
+<!-- TODO: /slide-tdd で詳細化 -->
+
+---
+```
+
+#### タイムラインスライド（layout-timeline）✨
+
+```markdown
+---
+
+<!-- _class: layout-timeline -->
+
+# [手順・フローのタイトル]
+
+<div class="timeline">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>[ステップ名]</h3>
+<p>[簡潔な説明]</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>[ステップ名]</h3>
+<p>[簡潔な説明]</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>[ステップ名]</h3>
+<p>[簡潔な説明]</p>
+</div>
+
+<!-- 3-7ステップを配置 -->
+
+</div>
+
+<!-- TODO: /slide-tdd で詳細化 -->
+
+---
+```
+
+#### コード重視スライド（layout-code-focus）✨
+
+```markdown
+---
+
+<!-- _class: layout-code-focus -->
+
+# [コード例のタイトル]
+
+\`\`\`[言語]
+[コード例を記載]
+\`\`\`
+
+<div class="notes">
+
+<div>
+<h3>[左側の説明]</h3>
+- [ポイント1]
+- [ポイント2]
+</div>
+
+<div>
+<h3>[右側の説明]</h3>
+- [ポイント1]
+- [ポイント2]
+</div>
+
+</div>
+
+<!-- TODO: /slide-tdd でコード例と説明を充実 -->
+
+---
+```
+
+#### 上下分割スライド（layout-split-vertical）✨
+
+```markdown
+---
+
+<!-- _class: layout-split-vertical -->
+
+<div class="image-area">
+![アーキテクチャ図](diagrams/diagram_XX_placeholder.svg)
+</div>
+
+<div class="content-area">
+
+# [スライドタイトル]
+
+- [ポイント1]
+- [ポイント2]
+- [ポイント3]
+
+</div>
+
+<!-- TODO: /slide-tdd でSVG作成 -->
+<!-- SVG内容: [図表の説明] -->
+
+---
+```
+
 ### TODOコメントの活用
 
 各スライドに以下の情報をTODOコメントとして記録：
@@ -380,21 +693,33 @@ Layouts OK? (yes/no/adjust)
 📤 OUTPUT COMPLETE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✅ Generated [N] slide scaffolds
-📄 Added to: all_slides.md (slides #42-#50)
+✅ Generated 25 slide scaffolds
+📄 Added to: all_slides.md (slides #42-#66)
 
 Layout Distribution:
-  - lead: 1 slide (#42)
-  - layout-horizontal-left: 3 slides (#44, #46, #48)
-  - compact: 2 slides (#45, #49)
-  - default: 3 slides (#43, #47, #50)
+  Traditional Layouts:
+    - lead: 1 slide (#42)
+    - layout-horizontal-left: 4 slides (#47, #51, #55, #59)
+    - two-column: 3 slides (#48, #52, #62)
+    - compact: 2 slides (#49, #63)
+    - default: 7 slides (#50, #53, #57, #60, #64, #65, #66)
+
+  New Layouts ✨:
+    - layout-callout: 2 slides (#43, #56)
+    - layout-comparison: 3 slides (#44, #54, #61)
+    - layout-timeline: 2 slides (#45, #58)
+    - layout-code-focus: 1 slide (#46)
+
+  New Layout Coverage: 8/25 slides (32%)
 
 📋 Next Steps:
   For each slide, run /slide-tdd to:
   1. Define acceptance criteria
   2. Create SVG diagrams (where needed)
-  3. Refine content
+  3. Refine content with new layouts
   4. Measure and improve quality
+
+🎨 Theme: themes/ai-seminar.css (15 layouts available)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -411,21 +736,40 @@ Ready to start with /slide-tdd? (yes/no)
 
 ### Slides Needing /slide-tdd
 
+#### Section & New Layouts (High Priority)
 - [ ] Slide #42: [セクションタイトル] (lead)
-- [ ] Slide #43: [トピック1] (default)
-- [ ] Slide #44: [トピック2] (horizontal-left) - **SVG needed**
-- [ ] Slide #45: [トピック3] (compact)
-- [ ] Slide #46: [トピック4] (horizontal-left) - **SVG needed**
-- [ ] Slide #47: [トピック5] (default)
-- [ ] Slide #48: [トピック6] (horizontal-left) - **SVG needed**
-- [ ] Slide #49: [トピック7] (compact)
-- [ ] Slide #50: [トピック8] (default)
+- [ ] Slide #43: [重要原則] (layout-callout) ✨ - **New layout**
+- [ ] Slide #44: [比較] (layout-comparison) ✨ - **New layout**
+- [ ] Slide #45: [手順] (layout-timeline) ✨ - **New layout**
+- [ ] Slide #46: [コード例] (layout-code-focus) ✨ - **New layout**
+
+#### Traditional Layouts with SVG
+- [ ] Slide #47: [トピック1] (horizontal-left) - **SVG needed**
+- [ ] Slide #51: [トピック2] (horizontal-left) - **SVG needed**
+- [ ] Slide #55: [トピック3] (horizontal-left) - **SVG needed**
+- [ ] Slide #59: [トピック4] (horizontal-left) - **SVG needed**
+
+#### Content Slides
+- [ ] Slide #48: [トピック5] (two-column)
+- [ ] Slide #49: [トピック6] (compact)
+- [ ] Slide #50: [トピック7] (default)
+- [ ] Slide #52: [トピック8] (two-column)
+- [ ] Slide #53: [トピック9] (default)
 
 ### Priority
 
-1. High: Slides with SVG diagrams (#44, #46, #48)
-2. Medium: Section slides (#42)
-3. Normal: Content slides (#43, #45, #47, #49, #50)
+1. **High**: New layout slides (#43-#46) - Learn and test new layouts
+2. **High**: Section slides (#42) - Define overall structure
+3. **Medium**: SVG diagram slides (#47, #51, #55, #59) - Time-consuming
+4. **Normal**: Content slides - Standard refinement
+
+### New Layout Focus
+
+新規レイアウト（✨）のスライドは特に注意して作成：
+- layout-callout: アイコンとメッセージの選定
+- layout-comparison: 左右の対比を明確に
+- layout-timeline: ステップ数を3-7に調整
+- layout-code-focus: コード例の読みやすさ重視
 ```
 
 ---
