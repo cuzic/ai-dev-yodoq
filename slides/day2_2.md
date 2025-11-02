@@ -16,7 +16,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # 3つの演習課題から選択
 
@@ -34,7 +34,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # 演習の進め方（ワークフロー）
 
@@ -49,7 +49,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid -->
 
 # 演習のゴール
 
@@ -79,7 +79,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-callout ultracompact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">🔍</div>
 
@@ -95,7 +95,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid -->
 
 # STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
@@ -119,7 +119,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">✅</div>
 
@@ -168,7 +168,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # デグレ防止のテストシナリオ
 
@@ -259,7 +259,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-timeline compact -->
+<!-- _class: layout-timeline -->
 
 # 機能追加実装：TDDで実装（30分）
 
@@ -301,7 +301,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # テスト実行・デバッグ
 
@@ -329,7 +329,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # ドキュメント反映
 
@@ -349,7 +349,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid -->
 
 # 代表者2-3名の成果発表
 
@@ -367,7 +367,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid -->
 
 # つまづいたポイント共有
 
@@ -400,7 +400,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # 全体ディスカッション
 
@@ -424,7 +424,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # 2日間の総まとめ
 
@@ -438,7 +438,7 @@ STEP1-2: 要件・設計（Guardrails、曖昧さ排除）| STEP3: タスク分�
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # 実務での活用ポイント
 
@@ -490,7 +490,7 @@ STEP1-2: 要件・設計（Guardrails、曖昧さ排除）| STEP3: タスク分�
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+<!-- _class: card-grid -->
 
 # 実務で明日から実践（Top 5）
 

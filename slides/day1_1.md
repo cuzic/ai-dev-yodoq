@@ -22,7 +22,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left -->
 
 # AI活用の3原則
 
@@ -34,7 +34,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-comparison compact -->
+<!-- _class: layout-comparison -->
 
 # Vibe Coding vs Production Engineering
 
@@ -58,7 +58,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # 開発者の役割変化
 
@@ -87,7 +87,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # AIの制約①忘れっぽい（セッション制約）
 
@@ -107,7 +107,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: two-column compact -->
 
 # 環境準備
 
@@ -155,7 +155,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">💡</div>
 
@@ -172,7 +172,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # セットアップ
 
@@ -187,7 +187,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # 4つのモード比較
 
@@ -200,7 +200,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only -->
 
 # よくある問題と対処法
 
@@ -208,7 +208,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # 効率的な指示の出し方
 
@@ -231,7 +231,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">📋</div>
 
@@ -248,7 +248,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only -->
 
 # AIに質問させる手法
 
@@ -256,7 +256,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left -->
 
 # 要件の引き出し方（文字起こしアプローチ）
 
@@ -276,7 +276,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # MoSCoW 優先順位付け
 
@@ -291,7 +291,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only -->
 
 # MoSCoW実践例（ToDoアプリ）
 
@@ -299,7 +299,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # ユーザーストーリーマッピング
 
@@ -312,7 +312,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left -->
 
 # 非機能要件
 
@@ -328,7 +328,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only -->
 
 # エラー・エッジケース・制約の洗い出し
 
@@ -336,7 +336,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left -->
 
 # 受け入れ基準（Given-When-Then）
 
@@ -352,7 +352,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # プロトタイプ駆動開発（Vibe Coding）
 
@@ -394,7 +394,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">📐</div>
 
@@ -410,7 +410,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # 設計ドキュメントの構造
 
@@ -426,7 +426,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # Tech Stack Setup
 
@@ -449,7 +449,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # データベーススキーマ設計
 
@@ -465,7 +465,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # API仕様の明確化
 
@@ -483,7 +483,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # Mermaid記法とSVG生成でビジュアル化
 
@@ -518,7 +518,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # 受け入れ条件の詳細化
 

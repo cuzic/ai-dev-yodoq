@@ -14,7 +14,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">📋</div>
 
@@ -31,7 +31,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only -->
 
 # タスク分解 = AIの思考を言語化（重要）
 
@@ -39,7 +39,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column ultracompact -->
+<!-- _class: two-column -->
 
 # 計画書作成による可視化
 
@@ -67,7 +67,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left ultracompact compact -->
+<!-- _class: layout-horizontal-left -->
 
 # Phase分け戦略
 
@@ -79,7 +79,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only -->
 
 # タスク粒度（30分〜2時間）
 
@@ -87,7 +87,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # 依存関係の可視化
 
@@ -171,7 +171,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-callout ultracompact compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">⚡</div>
 
@@ -187,7 +187,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-timeline compact -->
+<!-- _class: layout-timeline -->
 
 # 実装の標準ワークフロー
 
@@ -228,7 +228,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # TDD/BDD統合ワークフロー
 
@@ -284,7 +284,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-code-focus ultracompact compact -->
+<!-- _class: layout-code-focus -->
 
 # セキュアなコードの指示方法
 
@@ -300,7 +300,7 @@ BCrypt、JWT秘密鍵環境変数、.env使用、
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # インクリメンタル開発とは
 
@@ -389,7 +389,7 @@ Trust but Verify自動化 + Living Documentation
 
 ---
 
-<!-- _class: layout-comparison compact -->
+<!-- _class: layout-comparison -->
 
 # テスト駆動開発とAI活用の相乗効果
 
@@ -419,7 +419,7 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: two-column ultracompact -->
+<!-- _class: two-column -->
 
 # E2Eテスト重視の戦略
 
@@ -445,7 +445,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # ビジュアルリグレッションテスト
 
@@ -473,7 +473,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # AI自己レビューの4つの観点
 
@@ -491,7 +491,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # テストカバレッジ80%ルール
 
@@ -503,7 +503,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-comparison compact -->
+<!-- _class: layout-comparison -->
 
 # 自己レビューの実例
 
@@ -535,7 +535,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: two-column -->
 
 # リファクタリング（内部品質向上）
 
@@ -559,7 +559,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left -->
 
 # Living Documentation（AIの外部メモリ）
 
@@ -582,7 +582,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # Living Documentation 3種類
 
@@ -617,7 +617,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # 計画図面 vs 完成図面（重要）
 
@@ -651,7 +651,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 # 頻繁なコミット（重要）
 
@@ -677,7 +677,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only -->
 
 # STEP5のまとめ
 
@@ -693,7 +693,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: card-grid ultracompact supercompact -->
+<!-- _class: card-grid -->
 
 # Part 2のキーポイント
 

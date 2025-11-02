@@ -43,3 +43,4 @@ build/
 
 # mise
 .mise.local.toml
+slides/.logs/screenshots/

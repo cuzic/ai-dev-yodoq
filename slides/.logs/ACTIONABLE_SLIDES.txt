@@ -1,0 +1,460 @@
+ACTIONABLE PROBLEMATIC SLIDES (Non-lead, with content, >60% whitespace)
+================================================================================
+Total: 76 slides
+
+1. SLIDE 44 - CRITICAL
+   Whitespace: 95.4% | Coverage: 4.6% | Quality: 9.3/100
+   Content: 5 words, 0h + 1p + 0li + 0img
+   Classes: none
+   Screenshot: slides/.logs/screenshots/slide_044.png
+
+2. SLIDE 58 - CRITICAL
+   Whitespace: 92.7% | Coverage: 7.3% | Quality: 18.4/100
+   Content: 14 words, 1h + 0p + 3li + 0img
+   Classes: layout-callout, ultracompact, compact
+   Screenshot: slides/.logs/screenshots/slide_058.png
+
+3. SLIDE 89 - CRITICAL
+   Whitespace: 91.3% | Coverage: 8.7% | Quality: 17.5/100
+   Content: 6 words, 1h + 0p + 0li + 0img
+   Classes: none
+   Screenshot: slides/.logs/screenshots/slide_089.png
+
+4. SLIDE 108 - CRITICAL
+   Whitespace: 88.9% | Coverage: 11.1% | Quality: 23.6/100
+   Content: 12 words, 1h + 1p + 0li + 0img
+   Classes: card-grid, ultracompact
+   Screenshot: slides/.logs/screenshots/slide_108.png
+
+5. SLIDE 170 - CRITICAL
+   Whitespace: 88.9% | Coverage: 11.1% | Quality: 23.6/100
+   Content: 12 words, 1h + 1p + 0li + 0img
+   Classes: card-grid, ultracompact
+   Screenshot: slides/.logs/screenshots/slide_170.png
+
+6. SLIDE 45 - CRITICAL
+   Whitespace: 84.4% | Coverage: 15.6% | Quality: 28.3/100
+   Content: 10 words, 1h + 0p + 0li + 0img
+   Classes: none
+   Screenshot: slides/.logs/screenshots/slide_045.png
+
+7. SLIDE 13 - CRITICAL
+   Whitespace: 81.6% | Coverage: 18.4% | Quality: 35.6/100
+   Content: 10 words, 1h + 0p + 4li + 0img
+   Classes: layout-callout, compact
+   Screenshot: slides/.logs/screenshots/slide_013.png
+
+8. SLIDE 88 - CRITICAL
+   Whitespace: 81.5% | Coverage: 18.5% | Quality: 40.7/100
+   Content: 12 words, 1h + 5p + 0li + 0img
+   Classes: card-grid, ultracompact, supercompact
+   Screenshot: slides/.logs/screenshots/slide_088.png
+
+9. SLIDE 149 - CRITICAL
+   Whitespace: 81.1% | Coverage: 18.9% | Quality: 35.2/100
+   Content: 11 words, 1h + 1p + 0li + 0img
+   Classes: layout-callout, ultracompact
+   Screenshot: slides/.logs/screenshots/slide_149.png
+
+10. SLIDE 150 - CRITICAL
+   Whitespace: 80.3% | Coverage: 19.7% | Quality: 43.4/100
+   Content: 13 words, 4h + 0p + 6li + 0img
+   Classes: card-grid, supercompact
+   Screenshot: slides/.logs/screenshots/slide_150.png
+
+11. SLIDE 33 - CRITICAL
+   Whitespace: 79.9% | Coverage: 20.1% | Quality: 37.4/100
+   Content: 11 words, 1h + 0p + 3li + 0img
+   Classes: layout-callout, compact
+   Screenshot: slides/.logs/screenshots/slide_033.png
+
+12. SLIDE 37 - CRITICAL
+   Whitespace: 79.9% | Coverage: 20.1% | Quality: 43.7/100
+   Content: 9 words, 3h + 0p + 6li + 0img
+   Classes: two-column, compact
+   Screenshot: slides/.logs/screenshots/slide_037.png
+
+13. SLIDE 79 - CRITICAL
+   Whitespace: 79.6% | Coverage: 20.4% | Quality: 51.2/100
+   Content: 18 words, 3h + 5p + 4li + 0img
+   Classes: two-column, supercompact
+   Screenshot: slides/.logs/screenshots/slide_079.png
+
+14. SLIDE 165 - CRITICAL
+   Whitespace: 78.8% | Coverage: 21.2% | Quality: 45.4/100
+   Content: 10 words, 4h + 0p + 6li + 0img
+   Classes: two-column, compact
+   Screenshot: slides/.logs/screenshots/slide_165.png
+
+15. SLIDE 160 - CRITICAL
+   Whitespace: 78.6% | Coverage: 21.4% | Quality: 47.1/100
+   Content: 12 words, 1h + 2p + 0li + 1img
+   Classes: layout-horizontal-right, supercompact
+   Screenshot: slides/.logs/screenshots/slide_160.png
+
+16. SLIDE 73 - CRITICAL
+   Whitespace: 78.5% | Coverage: 21.5% | Quality: 59.3/100
+   Content: 14 words, 3h + 3p + 5li + 0img
+   Classes: two-column, ultracompact
+   Screenshot: slides/.logs/screenshots/slide_073.png
+
+17. SLIDE 20 - CRITICAL
+   Whitespace: 78.5% | Coverage: 21.5% | Quality: 40.4/100
+   Content: 11 words, 1h + 0p + 4li + 0img
+   Classes: layout-callout, compact
+   Screenshot: slides/.logs/screenshots/slide_020.png
+
+18. SLIDE 47 - CRITICAL
+   Whitespace: 77.9% | Coverage: 22.1% | Quality: 41.3/100
+   Content: 12 words, 1h + 0p + 4li + 0img
+   Classes: layout-callout, compact
+   Screenshot: slides/.logs/screenshots/slide_047.png
+
+19. SLIDE 163 - CRITICAL
+   Whitespace: 77.8% | Coverage: 22.2% | Quality: 47.8/100
+   Content: 7 words, 4h + 3p + 0li + 0img
+   Classes: card-grid, supercompact
+   Screenshot: slides/.logs/screenshots/slide_163.png
+
+20. SLIDE 74 - CRITICAL
+   Whitespace: 77.3% | Coverage: 22.7% | Quality: 50.9/100
+   Content: 16 words, 3h + 1p + 7li + 0img
+   Classes: two-column, compact
+   Screenshot: slides/.logs/screenshots/slide_074.png
+
+21. SLIDE 115 - CRITICAL
+   Whitespace: 77.3% | Coverage: 22.7% | Quality: 42.9/100
+   Content: 10 words, 2h + 0p + 0li + 0img
+   Classes: title
+   Screenshot: slides/.logs/screenshots/slide_115.png
+
+22. SLIDE 43 - CRITICAL
+   Whitespace: 74.9% | Coverage: 25.1% | Quality: 61.8/100
+   Content: 53 words, 1h + 4p + 13li + 0img
+   Classes: two-column, compact
+   Screenshot: slides/.logs/screenshots/slide_043.png
+
+23. SLIDE 29 - CRITICAL
+   Whitespace: 74.3% | Coverage: 25.7% | Quality: 64.7/100
+   Content: 27 words, 3h + 6p + 0li + 0img
+   Classes: two-column, compact
+   Screenshot: slides/.logs/screenshots/slide_029.png
+
+24. SLIDE 134 - CRITICAL
+   Whitespace: 72.9% | Coverage: 27.1% | Quality: 62.2/100
+   Content: 14 words, 1h + 6p + 3li + 1img
+   Classes: layout-horizontal-right, supercompact
+   Screenshot: slides/.logs/screenshots/slide_134.png
+
+25. SLIDE 35 - CRITICAL
+   Whitespace: 72.9% | Coverage: 27.1% | Quality: 56.9/100
+   Content: 27 words, 4h + 3p + 0li + 0img
+   Classes: two-column, compact
+   Screenshot: slides/.logs/screenshots/slide_035.png
+
+26. SLIDE 25 - CRITICAL
+   Whitespace: 72.2% | Coverage: 27.8% | Quality: 61.9/100
+   Content: 13 words, 1h + 1p + 4li + 1img
+   Classes: layout-horizontal-right, supercompact
+   Screenshot: slides/.logs/screenshots/slide_025.png
+
+27. SLIDE 84 - CRITICAL
+   Whitespace: 72.1% | Coverage: 27.9% | Quality: 62.8/100
+   Content: 13 words, 4h + 4p + 5li + 0img
+   Classes: two-column, compact
+   Screenshot: slides/.logs/screenshots/slide_084.png
+
+28. SLIDE 162 - CRITICAL
+   Whitespace: 71.9% | Coverage: 28.1% | Quality: 58.9/100
+   Content: 9 words, 5h + 4p + 0li + 0img
+   Classes: card-grid, supercompact
+   Screenshot: slides/.logs/screenshots/slide_162.png
+
+29. SLIDE 135 - CRITICAL
+   Whitespace: 71.8% | Coverage: 28.2% | Quality: 61.3/100
+   Content: 13 words, 1h + 6p + 0li + 1img
+   Classes: layout-horizontal-right, supercompact
+   Screenshot: slides/.logs/screenshots/slide_135.png
+
+30. SLIDE 52 - CRITICAL
+   Whitespace: 71.8% | Coverage: 28.2% | Quality: 59.2/100
+   Content: 11 words, 1h + 1p + 5li + 1img
+   Classes: layout-horizontal-right, supercompact
+   Screenshot: slides/.logs/screenshots/slide_052.png
+
+31. SLIDE 124 - CRITICAL
+   Whitespace: 71.5% | Coverage: 28.5% | Quality: 57.8/100
+   Content: 13 words, 1h + 2p + 0li + 1img
+   Classes: layout-horizontal-right, supercompact
+   Screenshot: slides/.logs/screenshots/slide_124.png
+
+32. SLIDE 41 - CRITICAL
+   Whitespace: 71.5% | Coverage: 28.5% | Quality: 70.7/100
+   Content: 14 words, 4h + 1p + 6li + 2img
+   Classes: two-column, compact
+   Screenshot: slides/.logs/screenshots/slide_041.png
+
+33. SLIDE 123 - CRITICAL
+   Whitespace: 71.3% | Coverage: 28.7% | Quality: 61.7/100
+   Content: 8 words, 1h + 4p + 0li + 1img
+   Classes: layout-horizontal-left, supercompact
+   Screenshot: slides/.logs/screenshots/slide_123.png
+
+34. SLIDE 136 - CRITICAL
+   Whitespace: 71.3% | Coverage: 28.7% | Quality: 58.9/100
+   Content: 23 words, 4h + 3p + 0li + 0img
+   Classes: card-grid, supercompact
+   Screenshot: slides/.logs/screenshots/slide_136.png
+
+35. SLIDE 139 - CRITICAL
+   Whitespace: 70.8% | Coverage: 29.2% | Quality: 60.6/100
+   Content: 10 words, 5h + 4p + 0li + 0img
+   Classes: card-grid, supercompact
+   Screenshot: slides/.logs/screenshots/slide_139.png
+
+36. SLIDE 122 - CRITICAL
+   Whitespace: 70.8% | Coverage: 29.2% | Quality: 65.4/100
+   Content: 10 words, 5h + 4p + 1li + 0img
+   Classes: card-grid, supercompact
+   Screenshot: slides/.logs/screenshots/slide_122.png
+
+37. SLIDE 129 - CRITICAL
+   Whitespace: 70.3% | Coverage: 29.7% | Quality: 67.0/100
+   Content: 16 words, 1h + 5p + 4li + 1img
+   Classes: layout-horizontal-right, supercompact
+   Screenshot: slides/.logs/screenshots/slide_129.png
+
+38. SLIDE 3 - CRITICAL
+   Whitespace: 70.3% | Coverage: 29.7% | Quality: 59.4/100
+   Content: 10 words, 1h + 2p + 0li + 1img
+   Classes: layout-horizontal-left, supercompact
+   Screenshot: slides/.logs/screenshots/slide_003.png
+
+39. SLIDE 50 - CRITICAL
+   Whitespace: 70.2% | Coverage: 29.8% | Quality: 60.3/100
+   Content: 20 words, 1h + 2p + 0li + 1img
+   Classes: layout-horizontal-left, ultracompact, compact
+   Screenshot: slides/.logs/screenshots/slide_050.png
+
+40. SLIDE 145 - HIGH
+   Whitespace: 70.0% | Coverage: 30.0% | Quality: 60.3/100
+   Content: 15 words, 4h + 3p + 0li + 0img
+   Classes: card-grid, compact
+   Screenshot: slides/.logs/screenshots/slide_145.png
+
+41. SLIDE 49 - HIGH
+   Whitespace: 69.9% | Coverage: 30.1% | Quality: 65.8/100
+   Content: 18 words, 4h + 0p + 4li + 0img
+   Classes: two-column, ultracompact
+   Screenshot: slides/.logs/screenshots/slide_049.png
+
+42. SLIDE 128 - HIGH
+   Whitespace: 69.8% | Coverage: 30.2% | Quality: 66.9/100
+   Content: 14 words, 1h + 5p + 3li + 1img
+   Classes: layout-horizontal-right, supercompact
+   Screenshot: slides/.logs/screenshots/slide_128.png
+
+43. SLIDE 80 - HIGH
+   Whitespace: 69.3% | Coverage: 30.7% | Quality: 66.1/100
+   Content: 11 words, 2h + 1p + 4li + 1img
+   Classes: layout-horizontal-left, supercompact
+   Screenshot: slides/.logs/screenshots/slide_080.png
+
+44. SLIDE 131 - HIGH
+   Whitespace: 69.2% | Coverage: 30.8% | Quality: 59.0/100
+   Content: 9 words, 1h + 4p + 0li + 0img
+   Classes: layout-callout, supercompact
+   Screenshot: slides/.logs/screenshots/slide_131.png
+
+45. SLIDE 23 - HIGH
+   Whitespace: 69.1% | Coverage: 30.9% | Quality: 65.1/100
+   Content: 24 words, 1h + 1p + 6li + 1img
+   Classes: layout-horizontal-left, compact
+   Screenshot: slides/.logs/screenshots/slide_023.png
+
+46. SLIDE 7 - HIGH
+   Whitespace: 68.7% | Coverage: 31.3% | Quality: 61.9/100
+   Content: 7 words, 1h + 1p + 3li + 1img
+   Classes: layout-horizontal-right, compact
+   Screenshot: slides/.logs/screenshots/slide_007.png
+
+47. SLIDE 38 - HIGH
+   Whitespace: 68.6% | Coverage: 31.4% | Quality: 62.2/100
+   Content: 9 words, 1h + 1p + 3li + 1img
+   Classes: layout-horizontal-right, compact
+   Screenshot: slides/.logs/screenshots/slide_038.png
+
+48. SLIDE 26 - HIGH
+   Whitespace: 68.4% | Coverage: 31.6% | Quality: 75.6/100
+   Content: 8 words, 2h + 3p + 2li + 2img
+   Classes: layout-horizontal-left, supercompact
+   Screenshot: slides/.logs/screenshots/slide_026.png
+
+49. SLIDE 106 - HIGH
+   Whitespace: 68.4% | Coverage: 31.6% | Quality: 75.9/100
+   Content: 16 words, 1h + 2p + 9li + 9img
+   Classes: card-grid, compact
+   Screenshot: slides/.logs/screenshots/slide_106.png
+
+50. SLIDE 28 - HIGH
+   Whitespace: 67.5% | Coverage: 32.5% | Quality: 70.0/100
+   Content: 21 words, 1h + 4p + 2li + 1img
+   Classes: layout-horizontal-left, supercompact
+   Screenshot: slides/.logs/screenshots/slide_028.png
+
+51. SLIDE 15 - HIGH
+   Whitespace: 67.5% | Coverage: 32.5% | Quality: 64.7/100
+   Content: 9 words, 1h + 1p + 4li + 1img
+   Classes: layout-horizontal-left, compact
+   Screenshot: slides/.logs/screenshots/slide_015.png
+
+52. SLIDE 60 - HIGH
+   Whitespace: 67.4% | Coverage: 32.6% | Quality: 64.8/100
+   Content: 14 words, 1h + 2p + 1li + 1img
+   Classes: layout-horizontal-right, compact
+   Screenshot: slides/.logs/screenshots/slide_060.png
+
+53. SLIDE 146 - HIGH
+   Whitespace: 67.3% | Coverage: 32.7% | Quality: 68.4/100
+   Content: 16 words, 1h + 2p + 5li + 1img
+   Classes: layout-horizontal-right, supercompact
+   Screenshot: slides/.logs/screenshots/slide_146.png
+
+54. SLIDE 77 - HIGH
+   Whitespace: 67.2% | Coverage: 32.8% | Quality: 63.8/100
+   Content: 7 words, 1h + 2p + 0li + 1img
+   Classes: layout-horizontal-left, compact
+   Screenshot: slides/.logs/screenshots/slide_077.png
+
+55. SLIDE 76 - HIGH
+   Whitespace: 67.0% | Coverage: 33.0% | Quality: 66.6/100
+   Content: 13 words, 5h + 4p + 0li + 0img
+   Classes: card-grid, compact
+   Screenshot: slides/.logs/screenshots/slide_076.png
+
+56. SLIDE 118 - HIGH
+   Whitespace: 67.0% | Coverage: 33.0% | Quality: 66.3/100
+   Content: 9 words, 5h + 4p + 0li + 0img
+   Classes: card-grid, compact
+   Screenshot: slides/.logs/screenshots/slide_118.png
+
+57. SLIDE 6 - HIGH
+   Whitespace: 66.7% | Coverage: 33.3% | Quality: 68.8/100
+   Content: 26 words, 1h + 1p + 6li + 1img
+   Classes: layout-horizontal-left
+   Screenshot: slides/.logs/screenshots/slide_006.png
+
+58. SLIDE 141 - HIGH
+   Whitespace: 66.4% | Coverage: 33.6% | Quality: 70.3/100
+   Content: 15 words, 4h + 3p + 6li + 0img
+   Classes: card-grid, compact
+   Screenshot: slides/.logs/screenshots/slide_141.png
+
+59. SLIDE 133 - HIGH
+   Whitespace: 66.4% | Coverage: 33.6% | Quality: 71.2/100
+   Content: 11 words, 3h + 1p + 5li + 1img
+   Classes: layout-horizontal-right, compact
+   Screenshot: slides/.logs/screenshots/slide_133.png
+
+60. SLIDE 5 - HIGH
+   Whitespace: 66.3% | Coverage: 33.7% | Quality: 67.6/100
+   Content: 13 words, 1h + 1p + 5li + 1img
+   Classes: layout-horizontal-left, compact
+   Screenshot: slides/.logs/screenshots/slide_005.png
+
+61. SLIDE 121 - HIGH
+   Whitespace: 66.2% | Coverage: 33.8% | Quality: 75.3/100
+   Content: 12 words, 1h + 5p + 7li + 1img
+   Classes: layout-horizontal-right, supercompact
+   Screenshot: slides/.logs/screenshots/slide_121.png
+
+62. SLIDE 168 - HIGH
+   Whitespace: 65.9% | Coverage: 34.1% | Quality: 68.6/100
+   Content: 18 words, 5h + 0p + 12li + 0img
+   Classes: card-grid, compact
+   Screenshot: slides/.logs/screenshots/slide_168.png
+
+63. SLIDE 71 - HIGH
+   Whitespace: 65.7% | Coverage: 34.3% | Quality: 60.2/100
+   Content: 20 words, 1h + 0p + 4li + 0img
+   Classes: layout-callout
+   Screenshot: slides/.logs/screenshots/slide_071.png
+
+64. SLIDE 147 - HIGH
+   Whitespace: 65.7% | Coverage: 34.3% | Quality: 73.5/100
+   Content: 15 words, 5h + 4p + 6li + 0img
+   Classes: card-grid, supercompact
+   Screenshot: slides/.logs/screenshots/slide_147.png
+
+65. SLIDE 83 - HIGH
+   Whitespace: 65.6% | Coverage: 34.4% | Quality: 71.3/100
+   Content: 25 words, 5h + 9p + 2li + 0img
+   Classes: two-column, compact
+   Screenshot: slides/.logs/screenshots/slide_083.png
+
+66. SLIDE 112 - HIGH
+   Whitespace: 65.2% | Coverage: 34.8% | Quality: 83.6/100
+   Content: 37 words, 5h + 1p + 8li + 4img
+   Classes: card-grid, ultracompact
+   Screenshot: slides/.logs/screenshots/slide_112.png
+
+67. SLIDE 22 - HIGH
+   Whitespace: 64.7% | Coverage: 35.3% | Quality: 84.6/100
+   Content: 10 words, 2h + 3p + 6li + 2img
+   Classes: layout-horizontal-left, supercompact
+   Screenshot: slides/.logs/screenshots/slide_022.png
+
+68. SLIDE 65 - HIGH
+   Whitespace: 64.6% | Coverage: 35.4% | Quality: 68.9/100
+   Content: 6 words, 1h + 1p + 4li + 1img
+   Classes: layout-horizontal-left, compact
+   Screenshot: slides/.logs/screenshots/slide_065.png
+
+69. SLIDE 14 - HIGH
+   Whitespace: 64.0% | Coverage: 36.0% | Quality: 80.2/100
+   Content: 17 words, 1h + 1p + 6li + 1img
+   Classes: layout-horizontal-right, compact
+   Screenshot: slides/.logs/screenshots/slide_014.png
+
+70. SLIDE 99 - HIGH
+   Whitespace: 63.8% | Coverage: 36.2% | Quality: 73.0/100
+   Content: 14 words, 3h + 2p + 7li + 0img
+   Classes: two-column
+   Screenshot: slides/.logs/screenshots/slide_099.png
+
+71. SLIDE 34 - HIGH
+   Whitespace: 63.0% | Coverage: 37.0% | Quality: 74.9/100
+   Content: 22 words, 1h + 1p + 7li + 1img
+   Classes: layout-horizontal-right, compact
+   Screenshot: slides/.logs/screenshots/slide_034.png
+
+72. SLIDE 39 - HIGH
+   Whitespace: 62.9% | Coverage: 37.1% | Quality: 69.8/100
+   Content: 6 words, 1h + 1p + 2li + 1img
+   Classes: layout-horizontal-left
+   Screenshot: slides/.logs/screenshots/slide_039.png
+
+73. SLIDE 40 - HIGH
+   Whitespace: 62.4% | Coverage: 37.6% | Quality: 71.4/100
+   Content: 7 words, 1h + 1p + 3li + 1img
+   Classes: layout-horizontal-right
+   Screenshot: slides/.logs/screenshots/slide_040.png
+
+74. SLIDE 17 - HIGH
+   Whitespace: 61.9% | Coverage: 38.1% | Quality: 80.6/100
+   Content: 9 words, 1h + 1p + 6li + 3img
+   Classes: layout-horizontal-right, compact
+   Screenshot: slides/.logs/screenshots/slide_017.png
+
+75. SLIDE 105 - HIGH
+   Whitespace: 61.9% | Coverage: 38.1% | Quality: 86.7/100
+   Content: 19 words, 3h + 0p + 12li + 12img
+   Classes: card-grid, compact
+   Screenshot: slides/.logs/screenshots/slide_105.png
+
+76. SLIDE 97 - HIGH
+   Whitespace: 60.4% | Coverage: 39.6% | Quality: 89.1/100
+   Content: 20 words, 4h + 6p + 0li + 3img
+   Classes: card-grid, ultracompact
+   Screenshot: slides/.logs/screenshots/slide_097.png
+

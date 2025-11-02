@@ -14,7 +14,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only -->
 
 # 1日目の振り返り
 
@@ -129,7 +129,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+<!-- _class: card-grid -->
 
 # 演習課題の説明（TODOアプリ）
 
@@ -180,7 +180,7 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: layout-timeline compact -->
+<!-- _class: layout-timeline -->
 
 # 演習の進め方（時間配分）
 
@@ -225,7 +225,7 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # 演習のゴール
 
@@ -316,7 +316,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # 演習成功チェックリスト②
 
@@ -341,7 +341,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+<!-- _class: card-grid -->
 
 # 演習で体感できること
 
@@ -359,7 +359,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: layout-code-focus supercompact -->
+<!-- _class: layout-code-focus compact -->
 
 # 成果物：ディレクトリ構成
 
@@ -385,7 +385,7 @@ project/
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+<!-- _class: card-grid compact -->
 
 # 1日目全体の振り返り
 
@@ -414,7 +414,7 @@ project/
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+<!-- _class: card-grid compact -->
 
 # 2日目への準備
 

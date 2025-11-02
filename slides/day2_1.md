@@ -18,7 +18,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # 5-STEPフローの復習（AI制約への対応）
 
@@ -39,7 +39,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # 昨日の演習での気づき共有
 
@@ -57,7 +57,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-timeline supercompact -->
+<!-- _class: layout-timeline -->
 
 # 2日目のゴール：既存システムへの高品質な機能追加
 
@@ -101,7 +101,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # リバースエンジニアリングとは
 
@@ -124,7 +124,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid -->
 
 # リバースエンジニアリングの第一歩
 
@@ -143,7 +143,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -157,7 +157,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # ドキュメント自動生成（Guardrails構築）
 
@@ -199,7 +199,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # リバースエンジニアリング → 網羅的テスト生成（重要）
 
@@ -226,7 +226,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # 既存機能のフィットギャップ分析
 
@@ -245,7 +245,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # 影響範囲調査の手法
 
@@ -274,7 +274,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">📝</div>
 
@@ -294,7 +294,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-comparison supercompact -->
+<!-- _class: layout-comparison -->
 
 # テストシナリオとテストコードの違い
 
@@ -333,7 +333,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # テストシナリオ → テストコードの順序
 
@@ -350,7 +350,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # デグレ防止の重要性
 
@@ -374,7 +374,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right -->
 
 # テストシナリオの分類
 
@@ -397,7 +397,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid -->
 
 # テストシナリオ作成の実例
 
@@ -426,7 +426,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid compact -->
 
 # テストコード基礎（復習）
 
@@ -458,7 +458,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid -->
 
 # テストシナリオからテストコードへ
 
@@ -477,7 +477,7 @@ Given-When-Then形式で記述
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">💡</div>
 
@@ -499,7 +499,7 @@ Given-When-Then形式で記述
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid -->
 
 # テストカバレッジの考え方（80%以上）
 
@@ -520,7 +520,7 @@ Given-When-Then形式で記述
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout -->
 
 <div class="icon">🤖</div>
 
