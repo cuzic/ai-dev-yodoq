@@ -18,7 +18,7 @@ paginate: true
 
 # 1日目の振り返り
 
-![5-STEPフロー全体](diagrams/diagram_03_5step_flow.svg)
+![5-STEPフロー全体](../assets/diagrams/diagram_03_5step_flow.svg)
 
 **5-STEPフロー:** 要件定義 → 設計 → タスク分解 → 実装 → 品質担保
 
@@ -55,7 +55,7 @@ paginate: true
 
 # 1日目のキーメッセージ
 
-![1日目のキーメッセージ](diagrams/diagram_48_day1_key_messages.svg)
+![1日目のキーメッセージ](../assets/diagrams/diagram_48_day1_key_messages.svg)
 
 ---
 <!-- _class: layout-diagram-only -->

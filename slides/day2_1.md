@@ -54,7 +54,7 @@ paginate: true
 
 ### リバースエンジニアリングとは
 
-![リバースエンジニアリングのプロセス](diagrams/diagram_12_reverse_engineering.svg)
+![リバースエンジニアリングのプロセス](../assets/diagrams/diagram_12_reverse_engineering.svg)
 
 - **既存コードから仕様を読み解く技術**
 - **なぜ必要か:** AIは過去実装を記憶できない、仕様書なしで推測実装→デグレ
@@ -85,7 +85,7 @@ paginate: true
 
 ### AIの制約を理解する（Jagged Intelligence）
 
-![Jagged Intelligence実例](diagrams/diagram_38_jagged_intelligence_examples.svg)
+![Jagged Intelligence実例](../assets/diagrams/diagram_38_jagged_intelligence_examples.svg)
 
 - **AIの得意・不得意を理解**
   - 得意: コード生成、パターン認識、テスト生成
@@ -100,7 +100,7 @@ paginate: true
 
 ### ドキュメント自動生成（Guardrails構築）
 
-![文字起こしアプローチ（トライアル知識の共有）](diagrams/diagram_40_transcript_approach.svg)
+![文字起こしアプローチ（トライアル知識の共有）](../assets/diagrams/diagram_40_transcript_approach.svg)
 
 - **APIドキュメント（OpenAPI）:** 仕様明確化、既存API整合性保証
 - **DB定義書:** 正確なSQL生成、デグレ防止
@@ -130,7 +130,7 @@ paginate: true
 
 ### リバースエンジニアリング → 網羅的テスト生成（重要）
 
-![リバースエンジニアリングから網羅的テスト生成](diagrams/diagram_44_reverse_to_comprehensive_test.svg)
+![リバースエンジニアリングから網羅的テスト生成](../assets/diagrams/diagram_44_reverse_to_comprehensive_test.svg)
 
 - **❌ 従来:** コード追認のみ→実装済み機能のみカバー、バグも追認
 - **✅ 逆生成:** コード→要件・ストーリー逆生成→網羅テスト
@@ -150,7 +150,7 @@ paginate: true
 
 ### 既存機能のフィットギャップ分析
 
-![フィットギャップ分析](diagrams/diagram_18_fit_gap_analysis.svg)
+![フィットギャップ分析](../assets/diagrams/diagram_18_fit_gap_analysis.svg)
 
 - **目的:** 既存vs新機能比較、追加開発範囲明確化
 - **分析項目:**
@@ -168,7 +168,7 @@ paginate: true
 
 ### 影響範囲調査の手法
 
-![影響範囲調査の可視化](diagrams/diagram_13_impact_analysis.svg)
+![影響範囲調査の可視化](../assets/diagrams/diagram_13_impact_analysis.svg)
 
 - **なぜ必要:** AIは局所変更のみ見る→全体影響見落とし→デグレ
 - **調査項目:**
@@ -227,7 +227,7 @@ paginate: true
 
 ### テストシナリオ → テストコードの順序
 
-![テストシナリオからテストコードへの流れ](diagrams/diagram_14_scenario_to_code.svg)
+![テストシナリオからテストコードへの流れ](../assets/diagrams/diagram_14_scenario_to_code.svg)
 
 - **テストシナリオを先に作成（Guardrails構築）**
   - 全体像を把握→AIは忘れっぽい対策
@@ -245,7 +245,7 @@ paginate: true
 
 ### デグレ防止の重要性
 
-![Reward Hacking実例](diagrams/diagram_39_reward_hacking_examples.svg)
+![Reward Hacking実例](../assets/diagrams/diagram_39_reward_hacking_examples.svg)
 
 - **既存機能が壊れていないことを保証（Trust but Verify）**
 - **なぜデグレ:** AI忘れっぽい→既存仕様忘却、全体影響判断不可、新機能優先で既存軽視
@@ -261,7 +261,7 @@ paginate: true
 
 ### テストシナリオの分類
 
-![テストシナリオの4分類](diagrams/diagram_15_test_classification.svg)
+![テストシナリオの4分類](../assets/diagrams/diagram_15_test_classification.svg)
 
 - **正常系（Happy Path）:** 想定入力→期待結果（最重要、最頻使用）
 - **異常系（Error Handling）:** 不正入力→エラー処理確認（本番障害多発箇所）

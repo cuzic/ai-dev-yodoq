@@ -27,7 +27,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # AI活用の3原則
 
-![AI活用の3原則](diagrams/diagram_01_ai_principles.svg)
+![AI活用の3原則](../assets/diagrams/diagram_01_ai_principles.svg)
 
 - **Jagged Intelligence**: 得意（コード生成・テスト・アーキテクチャ設計）、苦手（ビジネス要件の解釈・トレードオフ判断）
 - **Trust but Verify**: AIにもエラーあり、AI自己レビューで品質向上
@@ -39,7 +39,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # Vibe Coding vs Production Engineering
 
-![3つのアプローチ比較](diagrams/diagram_22_vibe_vs_production.svg)
+![3つのアプローチ比較](../assets/diagrams/diagram_22_vibe_vs_production.svg)
 
 - **Vibe Coding**: 速い（30分〜1時間）、品質バラバラ、プロトタイプ向き
 - **Production Engineering**: 構造化、品質保証、本番向き
@@ -51,7 +51,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 開発者の役割変化
 
-![開発者の役割変化](diagrams/diagram_02_role_change.svg)
+![開発者の役割変化](../assets/diagrams/diagram_02_role_change.svg)
 
 - **従来：運転手** - コード1行ずつ、全実装詳細把握
 - **AI時代：ナビゲーター** - 方向指示、AIが実装
@@ -65,7 +65,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 5-STEPフロー全体像
 
-![width:1100px](diagrams/diagram_03_5step_flow.svg)
+![width:1100px](../assets/diagrams/diagram_03_5step_flow.svg)
 
 - **STEP1: 要件定義** - 何を作るか明確化（Guardrails構築）
 - **STEP2: 設計** - どう作るか定義（AI外部メモリ）
@@ -80,7 +80,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # AIの制約①忘れっぽい（セッション制約）
 
-![AIの外部メモリ](diagrams/diagram_04_ai_memory.svg)
+![AIの外部メモリ](../assets/diagrams/diagram_04_ai_memory.svg)
 
 - **セッション内のみ記憶**: ブラウザ閉じる→全忘却、20万トークン超過→古い情報忘却
 - **問題**: 同じバグ繰り返し、成功方法忘却
@@ -92,7 +92,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # AIの制約②Reward Hacking（手抜き問題）
 
-![Reward Hacking問題と対策](diagrams/diagram_39_reward_hacking_examples.svg)
+![Reward Hacking問題と対策](../assets/diagrams/diagram_39_reward_hacking_examples.svg)
 
 ---
 <!-- _class: layout-diagram-only -->
@@ -107,7 +107,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # セキュリティベストプラクティス（補足）
 
-![セキュリティベストプラクティス](diagrams/diagram_36_security_best_practices.svg)
+![セキュリティベストプラクティス](../assets/diagrams/diagram_36_security_best_practices.svg)
 
 **AIに必ず指示すべきセキュリティ要件:**
 
@@ -147,7 +147,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # セットアップ
 
-![.claudeignoreの重要性](diagrams/diagram_29_claudeignore_importance.svg)
+![.claudeignoreの重要性](../assets/diagrams/diagram_29_claudeignore_importance.svg)
 
 - **インストール:** `npm install -g @anthropic-ai/claude-code`
 - **APIキー取得:** https://console.anthropic.com
@@ -162,7 +162,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 4つのモード比較
 
-![Claude Codeモード比較](diagrams/diagram_28_claude_code_modes.svg)
+![Claude Codeモード比較](../assets/diagrams/diagram_28_claude_code_modes.svg)
 
 - **通常モード:** 毎回確認 (y/n)、最も安全
 - **YOLOモード（Shift+Tab）:** 自動実行、確認時間を大幅削減、Git管理済み推奨
@@ -205,7 +205,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 効率的な指示の出し方
 
-![プロンプトパターン（良い例vs悪い例）](diagrams/diagram_30_prompt_patterns.svg)
+![プロンプトパターン（良い例vs悪い例）](../assets/diagrams/diagram_30_prompt_patterns.svg)
 
 **❌ 悪い:** 「ログイン機能を作って」
 
@@ -247,7 +247,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 要件の引き出し方（文字起こしアプローチ）
 
-![文字起こし→AI抽出フロー](diagrams/diagram_40_transcript_approach.svg)
+![文字起こし→AI抽出フロー](../assets/diagrams/diagram_40_transcript_approach.svg)
 
 ## なぜ強力か
 
@@ -271,7 +271,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # MoSCoW 優先順位付け
 
-![MoSCoW優先順位](diagrams/diagram_05_moscow.svg)
+![MoSCoW優先順位](../assets/diagrams/diagram_05_moscow.svg)
 
 - **Must（必須）:** プロダクト成立に不可欠な機能 → Phase 1 (MVP)
 - **Should（重要）:** あるべきだが、なくても動く → Phase 2
@@ -286,7 +286,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # MoSCoW実践例（ToDoアプリ）
 
-![MoSCoW実践例（ToDoアプリ）](diagrams/diagram_47_moscow_example.svg)
+![MoSCoW実践例（ToDoアプリ）](../assets/diagrams/diagram_47_moscow_example.svg)
 
 ---
 
@@ -294,7 +294,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # ユーザーストーリーマッピング
 
-![ユーザーストーリーマッピング](diagrams/diagram_31_user_story_mapping.svg)
+![ユーザーストーリーマッピング](../assets/diagrams/diagram_31_user_story_mapping.svg)
 
 - **フォーマット:** `<誰が> <何をしたい> <なぜ>`
 - **例:** ユーザーとして、タスクを追加したい（忘れないため）
@@ -310,7 +310,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 非機能要件
 
-![非機能要件チェックリスト](diagrams/diagram_32_nonfunctional_requirements.svg)
+![非機能要件チェックリスト](../assets/diagrams/diagram_32_nonfunctional_requirements.svg)
 
 **なぜ重要か:** 機能要件だけでは本番で使えない（性能・セキュリティ・拡張性）
 
@@ -328,7 +328,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # エラー・エッジケース・制約の洗い出し
 
-![エラー・エッジケース・制約の洗い出し](diagrams/diagram_45_error_edge_constraint.svg)
+![エラー・エッジケース・制約の洗い出し](../assets/diagrams/diagram_45_error_edge_constraint.svg)
 
 ---
 
@@ -370,7 +370,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # STEP1 チェックリスト
 
-![STEP1チェックリスト](diagrams/diagram_34_step1_checklist.svg)
+![STEP1チェックリスト](../assets/diagrams/diagram_34_step1_checklist.svg)
 
 **必ず確認:**
 - [ ] AIに質問させて曖昧さ排除
@@ -408,7 +408,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 設計ドキュメントの構造
 
-![設計ドキュメントの7要素](diagrams/diagram_06_spec_structure.svg)
+![設計ドキュメントの7要素](../assets/diagrams/diagram_06_spec_structure.svg)
 
 - **1. 技術スタック:** フロント・バック・DB・ライブラリ（選定理由含む）
 - **2. システムアーキテクチャ:** 3層構造、Mermaid図で可視化
@@ -437,7 +437,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # データベーススキーマ設計
 
-![width:900px](diagrams/diagram_07_er_diagram.svg)
+![width:900px](../assets/diagrams/diagram_07_er_diagram.svg)
 
 - **なぜスキーマ定義が必要か**
   - 後から変更すると影響範囲が非常に大きい
@@ -466,7 +466,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # Mermaid記法とSVG生成でビジュアル化
 
-![Mermaid vs SVG使い分け](diagrams/diagram_41_mermaid_vs_svg.svg)
+![Mermaid vs SVG使い分け](../assets/diagrams/diagram_41_mermaid_vs_svg.svg)
 
 - **Mermaid**: テキストで図描画、Git管理可、AI自動生成、GitHub/VS Code表示
 - **SVG生成magic word**: 「SVGで書いて」→AI生成→即可視化、記法不要
@@ -478,7 +478,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # ER図が開発をスムーズにする理由
 
-![width:1000px](diagrams/diagram_08_er_to_code.svg)
+![width:1000px](../assets/diagrams/diagram_08_er_to_code.svg)
 
 - **AIの実装**: CREATE TABLE自動生成、JOIN処理、外部キー、ORMモデル
 - **人間の恩恵**: 全体像一目把握、リレーション検証、正規化問題発見
@@ -489,7 +489,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # シーケンス図がAI実装を助ける理由
 
-![シーケンス図の例（ログインフロー）](diagrams/diagram_09_sequence_login.svg)
+![シーケンス図の例（ログインフロー）](../assets/diagrams/diagram_09_sequence_login.svg)
 
 - **AIの実装**: 処理順序理解→正確コードフロー、エラー処理タイミング、依存関係、トランザクション境界
 - **図なしの問題**: 処理順序推測ミス、ロールバック漏れ
@@ -517,7 +517,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # STEP2のまとめ
 
-![width:1000px](diagrams/diagram_46_step2_summary.svg)
+![width:1000px](../assets/diagrams/diagram_46_step2_summary.svg)
 
 ---
 
@@ -525,7 +525,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # STEP2 チェックリスト
 
-![STEP2チェックリスト](diagrams/diagram_35_step2_checklist.svg)
+![STEP2チェックリスト](../assets/diagrams/diagram_35_step2_checklist.svg)
 
 **必ず確認:**
 - [ ] Tech Stack確定
@@ -801,7 +801,7 @@ style: |
 
 # Phase分け戦略（Phase 1-4）
 
-![Phase分け戦略](diagrams/diagram_10_phase_breakdown.svg)
+![Phase分け戦略](../assets/diagrams/diagram_10_phase_breakdown.svg)
 
 - **なぜPhase分けが必要か**
   - 全部一度に作ると依存関係が複雑化→AIが混乱（忘れっぽい）
@@ -825,7 +825,7 @@ style: |
 
 # 依存関係の可視化
 
-![タスク依存関係グラフ](diagrams/diagram_35_dependency_graph.svg)
+![タスク依存関係グラフ](../assets/diagrams/diagram_35_dependency_graph.svg)
 
 - **なぜ依存関係の可視化が必要か**
   - 順序を間違えると手戻りが発生（DB未作成でAPI実装できない）
@@ -841,7 +841,7 @@ style: |
 
 # タスク一覧テンプレート
 
-![タスク一覧テンプレート](diagrams/diagram_34_task_list_template.svg)
+![タスク一覧テンプレート](../assets/diagrams/diagram_34_task_list_template.svg)
 
 - **必須項目:** Phase・タスク名・所要時間・依存関係・完了条件
 - **なぜテンプレート化が必要か**
@@ -873,7 +873,7 @@ style: |
 
 # STEP3 チェックリスト
 
-![STEP3チェックリスト](diagrams/diagram_37_step3_checklist.svg)
+![STEP3チェックリスト](../assets/diagrams/diagram_37_step3_checklist.svg)
 
 **必ず確認:**
 - [ ] タスク一覧AI生成
@@ -912,7 +912,7 @@ style: |
 
 # TDD/BDD統合ワークフロー
 
-![TDD Red-Green-Refactorサイクル](diagrams/diagram_11_tdd_cycle.svg)
+![TDD Red-Green-Refactorサイクル](../assets/diagrams/diagram_11_tdd_cycle.svg)
 
 - **なぜTDD/BDDが必要か**
   - テストなし→AIが作る→人間が手動テスト→エラー→修正（無限ループ）
@@ -928,7 +928,7 @@ style: |
 
 # AIにTDD/BDDで実装させる
 
-![Given-When-Then構造](diagrams/diagram_33_given_when_then.svg)
+![Given-When-Then構造](../assets/diagrams/diagram_33_given_when_then.svg)
 
 - **プロンプト例:** 「POST /api/register を TDD で実装して。Given-When-Then形式のテストを書き、正常系・異常系をカバー」
 - **AIが自動で行うこと:**
@@ -944,7 +944,7 @@ style: |
 
 # セキュリティベストプラクティス（重要）
 
-![セキュリティベストプラクティス](diagrams/diagram_23_security_best_practices.svg)
+![セキュリティベストプラクティス](../assets/diagrams/diagram_23_security_best_practices.svg)
 
 - **なぜセキュリティが後回しになるか（Reward Hacking）**
   - AIは「タスク完了」を最優先→セキュリティは二の次
@@ -977,7 +977,7 @@ style: |
 
 # インクリメンタル開発とは
 
-![インクリメンタル開発タイムライン](diagrams/diagram_24_incremental_timeline.svg)
+![インクリメンタル開発タイムライン](../assets/diagrams/diagram_24_incremental_timeline.svg)
 
 - **なぜ小さく作るべきか（AIは忘れっぽい対策）**
   - 全部一度に作る→完成まで動かない→問題発見が遅れる
@@ -1002,7 +1002,7 @@ style: |
 
 # AI自己レビュー必須化（重要）
 
-![AI自己レビューフロー](diagrams/diagram_25_ai_self_review_flow.svg)
+![AI自己レビューフロー](../assets/diagrams/diagram_25_ai_self_review_flow.svg)
 
 - **なぜAI自己レビューが重要か（Trust but Verify）**
   - AIにもエラーあり→自己レビューで多くを検出
@@ -1024,7 +1024,7 @@ style: |
 
 # STEP4 チェックリスト
 
-![STEP4チェックリスト](diagrams/diagram_38_step4_checklist.svg)
+![STEP4チェックリスト](../assets/diagrams/diagram_38_step4_checklist.svg)
 
 **必ず確認:**
 - [ ] タスク30分〜2時間
@@ -1135,7 +1135,7 @@ style: |
 
 # AI自己レビュー④テストカバレッジ
 
-![width:900px](diagrams/diagram_26_test_coverage_80_rule.svg)
+![width:900px](../assets/diagrams/diagram_26_test_coverage_80_rule.svg)
 
 - **プロンプト:** 「テストレビュー。エッジケース・異常系・境界値・独立性・Given-When-Thenをチェック」
 - **検出:** テストケース漏れ（null、空文字、MAX値）、異常系不足
@@ -1166,7 +1166,7 @@ style: |
 
 # STEP5 チェックリスト
 
-![STEP5チェックリスト](diagrams/diagram_39_step5_checklist.svg)
+![STEP5チェックリスト](../assets/diagrams/diagram_39_step5_checklist.svg)
 
 **品質担保:**
 - [ ] カバレッジ80%+
@@ -1462,7 +1462,7 @@ style: |
 
 # 1日目の振り返り
 
-![width:1100px](diagrams/diagram_03_5step_flow.svg)
+![width:1100px](../assets/diagrams/diagram_03_5step_flow.svg)
 
 **5-STEPフロー:** 要件定義 → 設計 → タスク分解 → 実装 → 品質担保
 
@@ -1499,7 +1499,7 @@ style: |
 
 # 1日目のキーメッセージ
 
-![1日目のキーメッセージ](diagrams/diagram_48_day1_key_messages.svg)
+![1日目のキーメッセージ](../assets/diagrams/diagram_48_day1_key_messages.svg)
 
 ---
 <!-- _class: layout-diagram-only -->
@@ -1967,7 +1967,7 @@ style: |
 
 ### リバースエンジニアリングとは
 
-![width:1100px](diagrams/diagram_12_reverse_engineering.svg)
+![width:1100px](../assets/diagrams/diagram_12_reverse_engineering.svg)
 
 - **既存コードから仕様を読み解く技術**
 - **なぜ必要か:** AIは過去実装を記憶できない、仕様書なしで推測実装→デグレ
@@ -1998,7 +1998,7 @@ style: |
 
 ### AIの制約を理解する（Jagged Intelligence）
 
-![Jagged Intelligence実例](diagrams/diagram_38_jagged_intelligence_examples.svg)
+![Jagged Intelligence実例](../assets/diagrams/diagram_38_jagged_intelligence_examples.svg)
 
 - **AIの得意・不得意を理解**
   - 得意: コード生成、パターン認識、テスト生成
@@ -2013,7 +2013,7 @@ style: |
 
 ### ドキュメント自動生成（Guardrails構築）
 
-![文字起こしアプローチ（トライアル知識の共有）](diagrams/diagram_40_transcript_approach.svg)
+![文字起こしアプローチ（トライアル知識の共有）](../assets/diagrams/diagram_40_transcript_approach.svg)
 
 - **APIドキュメント（OpenAPI）:** 仕様明確化、既存API整合性保証
 - **DB定義書:** 正確なSQL生成、デグレ防止
@@ -2043,7 +2043,7 @@ style: |
 
 ### リバースエンジニアリング → 網羅的テスト生成（重要）
 
-![リバースエンジニアリングから網羅的テスト生成](diagrams/diagram_44_reverse_to_comprehensive_test.svg)
+![リバースエンジニアリングから網羅的テスト生成](../assets/diagrams/diagram_44_reverse_to_comprehensive_test.svg)
 
 - **❌ 従来:** コード追認のみ→実装済み機能のみカバー、バグも追認
 - **✅ 逆生成:** コード→要件・ストーリー逆生成→網羅テスト
@@ -2063,7 +2063,7 @@ style: |
 
 ### 既存機能のフィットギャップ分析
 
-![フィットギャップ分析](diagrams/diagram_18_fit_gap_analysis.svg)
+![フィットギャップ分析](../assets/diagrams/diagram_18_fit_gap_analysis.svg)
 
 - **目的:** 既存vs新機能比較、追加開発範囲明確化
 - **分析項目:**
@@ -2081,7 +2081,7 @@ style: |
 
 ### 影響範囲調査の手法
 
-![影響範囲調査の可視化](diagrams/diagram_13_impact_analysis.svg)
+![影響範囲調査の可視化](../assets/diagrams/diagram_13_impact_analysis.svg)
 
 - **なぜ必要:** AIは局所変更のみ見る→全体影響見落とし→デグレ
 - **調査項目:**
@@ -2140,7 +2140,7 @@ style: |
 
 ### テストシナリオ → テストコードの順序
 
-![テストシナリオからテストコードへの流れ](diagrams/diagram_14_scenario_to_code.svg)
+![テストシナリオからテストコードへの流れ](../assets/diagrams/diagram_14_scenario_to_code.svg)
 
 - **テストシナリオを先に作成（Guardrails構築）**
   - 全体像を把握→AIは忘れっぽい対策
@@ -2158,7 +2158,7 @@ style: |
 
 ### デグレ防止の重要性
 
-![Reward Hacking実例](diagrams/diagram_39_reward_hacking_examples.svg)
+![Reward Hacking実例](../assets/diagrams/diagram_39_reward_hacking_examples.svg)
 
 - **既存機能が壊れていないことを保証（Trust but Verify）**
 - **なぜデグレ:** AI忘れっぽい→既存仕様忘却、全体影響判断不可、新機能優先で既存軽視
@@ -2174,7 +2174,7 @@ style: |
 
 ### テストシナリオの分類
 
-![テストシナリオの4分類](diagrams/diagram_15_test_classification.svg)
+![テストシナリオの4分類](../assets/diagrams/diagram_15_test_classification.svg)
 
 - **正常系（Happy Path）:** 想定入力→期待結果（最重要、最頻使用）
 - **異常系（Error Handling）:** 不正入力→エラー処理確認（本番障害多発箇所）
@@ -2484,7 +2484,7 @@ style: |
 
 ### 演習の進め方（ワークフロー）
 
-![width:1100px](diagrams/diagram_17_workshop_workflow.svg)
+![width:1100px](../assets/diagrams/diagram_17_workshop_workflow.svg)
 
 **保守開発の4ステップワークフロー:**
 - **STEP1: リバースエンジニアリング（30分）** 仕様把握、ドキュメント自動生成
@@ -2611,7 +2611,7 @@ style: |
 
 #### デグレ防止のテストシナリオ
 
-![デグレ防止の3層構造](diagrams/diagram_16_regression_prevention.svg)
+![デグレ防止の3層構造](../assets/diagrams/diagram_16_regression_prevention.svg)
 
 - **目的:** 既存と新機能の連携確認
 - **対象:** 既存機能動作確認、インターフェース、データ整合性
@@ -2625,7 +2625,7 @@ style: |
 
 #### デグレ発生メカニズムとTDDによる予防
 
-![デグレ発生メカニズムとTDD予防](diagrams/diagram_42_regression_mechanism.svg)
+![デグレ発生メカニズムとTDD予防](../assets/diagrams/diagram_42_regression_mechanism.svg)
 
 - **デグレが起きる3つの原因**
   - AIは忘れっぽい→既存仕様を忘れる
@@ -2725,7 +2725,7 @@ style: |
 
 #### ドキュメント反映
 
-![width:1100px](diagrams/diagram_43_doc_automation_before_after.svg)
+![width:1100px](../assets/diagrams/diagram_43_doc_automation_before_after.svg)
 
 - **architecture.md更新:** テーブル、API、画面記録
   - AI指示: 「変更内容をarchitecture.mdに反映して」
@@ -2787,7 +2787,7 @@ style: |
 
 # 2日間の総まとめ
 
-![2日間の学習構造](diagrams/diagram_20_2day_summary.svg)
+![2日間の学習構造](../assets/diagrams/diagram_20_2day_summary.svg)
 
 ### 1日目：新規開発の5-STEP
 - STEP1-2: 要件・設計（Guardrails、曖昧さ排除）
@@ -2837,7 +2837,7 @@ style: |
 
 ### よくある失敗と対策
 
-![よくある失敗パターンと対策](diagrams/diagram_19_common_failures.svg)
+![よくある失敗パターンと対策](../assets/diagrams/diagram_19_common_failures.svg)
 
 #### ①いきなりコード
 - 失敗: STEP1-2スキップ→何度も作り直し
@@ -2893,7 +2893,7 @@ style: |
 
 ### 今後の学習ロードマップ
 
-![学習ロードマップ](diagrams/diagram_21_learning_roadmap.svg)
+![学習ロードマップ](../assets/diagrams/diagram_21_learning_roadmap.svg)
 
 #### ステップ1: 小プロジェクト3つ
 - TODO/メモ/簡易ECなど、5-STEP実践、TDD習慣化

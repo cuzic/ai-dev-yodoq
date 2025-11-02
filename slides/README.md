@@ -170,7 +170,7 @@ The build system performs the following steps:
 ### Adding New Diagrams
 
 1. Add SVG file to `../diagrams/` directory
-2. Reference in markdown: `![Description](diagrams/your_diagram.svg)`
+2. Reference in markdown: `![Description](../assets/diagrams/your_diagram.svg)`
 3. Run `make build`
 
 ### Build Configuration

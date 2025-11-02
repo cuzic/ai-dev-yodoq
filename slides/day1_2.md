@@ -42,7 +42,7 @@ paginate: true
 
 # Phase分け戦略（Phase 1-4）
 
-![Phase分け戦略](diagrams/diagram_10_phase_breakdown.svg)
+![Phase分け戦略](../assets/diagrams/diagram_10_phase_breakdown.svg)
 
 - **なぜPhase分けが必要か**
   - 全部一度に作ると依存関係が複雑化→AIが混乱（忘れっぽい）
@@ -66,7 +66,7 @@ paginate: true
 
 # 依存関係の可視化
 
-![タスク依存関係グラフ](diagrams/diagram_35_dependency_graph.svg)
+![タスク依存関係グラフ](../assets/diagrams/diagram_35_dependency_graph.svg)
 
 - **なぜ依存関係の可視化が必要か**
   - 順序を間違えると手戻りが発生（DB未作成でAPI実装できない）
@@ -82,7 +82,7 @@ paginate: true
 
 # タスク一覧テンプレート
 
-![タスク一覧テンプレート](diagrams/diagram_34_task_list_template.svg)
+![タスク一覧テンプレート](../assets/diagrams/diagram_34_task_list_template.svg)
 
 - **必須項目:** Phase・タスク名・所要時間・依存関係・完了条件
 - **なぜテンプレート化が必要か**
@@ -114,7 +114,7 @@ paginate: true
 
 # STEP3 チェックリスト
 
-![STEP3チェックリスト](diagrams/diagram_37_step3_checklist.svg)
+![STEP3チェックリスト](../assets/diagrams/diagram_37_step3_checklist.svg)
 
 **必ず確認:**
 - [ ] タスク一覧AI生成
@@ -153,7 +153,7 @@ paginate: true
 
 # TDD/BDD統合ワークフロー
 
-![TDD Red-Green-Refactorサイクル](diagrams/diagram_11_tdd_cycle.svg)
+![TDD Red-Green-Refactorサイクル](../assets/diagrams/diagram_11_tdd_cycle.svg)
 
 - **なぜTDD/BDDが必要か**
   - テストなし→AIが作る→人間が手動テスト→エラー→修正（無限ループ）
@@ -169,7 +169,7 @@ paginate: true
 
 # AIにTDD/BDDで実装させる
 
-![Given-When-Then構造](diagrams/diagram_33_given_when_then.svg)
+![Given-When-Then構造](../assets/diagrams/diagram_33_given_when_then.svg)
 
 - **プロンプト例:** 「POST /api/register を TDD で実装して。Given-When-Then形式のテストを書き、正常系・異常系をカバー」
 - **AIが自動で行うこと:**
@@ -185,7 +185,7 @@ paginate: true
 
 # セキュリティベストプラクティス（重要）
 
-![セキュリティベストプラクティス](diagrams/diagram_23_security_best_practices.svg)
+![セキュリティベストプラクティス](../assets/diagrams/diagram_23_security_best_practices.svg)
 
 - **なぜセキュリティが後回しになるか（Reward Hacking）**
   - AIは「タスク完了」を最優先→セキュリティは二の次
@@ -218,7 +218,7 @@ paginate: true
 
 # インクリメンタル開発とは
 
-![インクリメンタル開発タイムライン](diagrams/diagram_24_incremental_timeline.svg)
+![インクリメンタル開発タイムライン](../assets/diagrams/diagram_24_incremental_timeline.svg)
 
 - **なぜ小さく作るべきか（AIは忘れっぽい対策）**
   - 全部一度に作る→完成まで動かない→問題発見が遅れる
@@ -243,7 +243,7 @@ paginate: true
 
 # AI自己レビュー必須化（重要）
 
-![AI自己レビューフロー](diagrams/diagram_25_ai_self_review_flow.svg)
+![AI自己レビューフロー](../assets/diagrams/diagram_25_ai_self_review_flow.svg)
 
 - **なぜAI自己レビューが重要か（Trust but Verify）**
   - AIにもエラーあり→自己レビューで多くを検出
@@ -265,7 +265,7 @@ paginate: true
 
 # STEP4 チェックリスト
 
-![STEP4チェックリスト](diagrams/diagram_38_step4_checklist.svg)
+![STEP4チェックリスト](../assets/diagrams/diagram_38_step4_checklist.svg)
 
 **必ず確認:**
 - [ ] タスク30分〜2時間
@@ -376,7 +376,7 @@ paginate: true
 
 # AI自己レビュー④テストカバレッジ
 
-![テストカバレッジ80%ルール](diagrams/diagram_26_test_coverage_80_rule.svg)
+![テストカバレッジ80%ルール](../assets/diagrams/diagram_26_test_coverage_80_rule.svg)
 
 - **プロンプト:** 「テストレビュー。エッジケース・異常系・境界値・独立性・Given-When-Thenをチェック」
 - **検出:** テストケース漏れ（null、空文字、MAX値）、異常系不足
@@ -407,7 +407,7 @@ paginate: true
 
 # STEP5 チェックリスト
 
-![STEP5チェックリスト](diagrams/diagram_39_step5_checklist.svg)
+![STEP5チェックリスト](../assets/diagrams/diagram_39_step5_checklist.svg)
 
 **品質担保:**
 - [ ] カバレッジ80%+

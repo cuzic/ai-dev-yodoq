@@ -27,7 +27,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # AI活用の3原則
 
-![AI活用の3原則](diagrams/diagram_01_ai_principles.svg)
+![AI活用の3原則](../assets/diagrams/diagram_01_ai_principles.svg)
 
 - **Jagged Intelligence**: 得意（コード生成・テスト・アーキテクチャ設計）、苦手（ビジネス要件の解釈・トレードオフ判断）
 - **Trust but Verify**: AIにもエラーあり、AI自己レビューで品質向上
@@ -39,7 +39,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # Vibe Coding vs Production Engineering
 
-![3つのアプローチ比較](diagrams/diagram_22_vibe_vs_production.svg)
+![3つのアプローチ比較](../assets/diagrams/diagram_22_vibe_vs_production.svg)
 
 - **Vibe Coding**: 速い（30分〜1時間）、品質バラバラ、プロトタイプ向き
 - **Production Engineering**: 構造化、品質保証、本番向き
@@ -51,7 +51,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 開発者の役割変化
 
-![開発者の役割変化](diagrams/diagram_02_role_change.svg)
+![開発者の役割変化](../assets/diagrams/diagram_02_role_change.svg)
 
 - **従来：運転手** - コード1行ずつ、全実装詳細把握
 - **AI時代：ナビゲーター** - 方向指示、AIが実装
@@ -65,7 +65,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 5-STEPフロー全体像
 
-![5-STEPフロー](diagrams/diagram_03_5step_flow.svg)
+![5-STEPフロー](../assets/diagrams/diagram_03_5step_flow.svg)
 
 - **STEP1: 要件定義** - 何を作るか明確化（Guardrails構築）
 - **STEP2: 設計** - どう作るか定義（AI外部メモリ）
@@ -80,7 +80,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # AIの制約①忘れっぽい（セッション制約）
 
-![AIの外部メモリ](diagrams/diagram_04_ai_memory.svg)
+![AIの外部メモリ](../assets/diagrams/diagram_04_ai_memory.svg)
 
 - **セッション内のみ記憶**: ブラウザ閉じる→全忘却、20万トークン超過→古い情報忘却
 - **問題**: 同じバグ繰り返し、成功方法忘却
@@ -92,7 +92,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # AIの制約②Reward Hacking（手抜き問題）
 
-![Reward Hacking問題と対策](diagrams/diagram_39_reward_hacking_examples.svg)
+![Reward Hacking問題と対策](../assets/diagrams/diagram_39_reward_hacking_examples.svg)
 
 ---
 <!-- _class: layout-diagram-only -->
@@ -107,7 +107,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # セキュリティベストプラクティス（補足）
 
-![セキュリティベストプラクティス](diagrams/diagram_36_security_best_practices.svg)
+![セキュリティベストプラクティス](../assets/diagrams/diagram_36_security_best_practices.svg)
 
 **AIに必ず指示すべきセキュリティ要件:**
 
@@ -147,7 +147,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # セットアップ
 
-![.claudeignoreの重要性](diagrams/diagram_29_claudeignore_importance.svg)
+![.claudeignoreの重要性](../assets/diagrams/diagram_29_claudeignore_importance.svg)
 
 - **インストール:** `npm install -g @anthropic-ai/claude-code`
 - **APIキー取得:** https://console.anthropic.com
@@ -162,7 +162,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 4つのモード比較
 
-![Claude Codeモード比較](diagrams/diagram_28_claude_code_modes.svg)
+![Claude Codeモード比較](../assets/diagrams/diagram_28_claude_code_modes.svg)
 
 - **通常モード:** 毎回確認 (y/n)、最も安全
 - **YOLOモード（Shift+Tab）:** 自動実行、確認時間を大幅削減、Git管理済み推奨
@@ -205,7 +205,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 効率的な指示の出し方
 
-![プロンプトパターン（良い例vs悪い例）](diagrams/diagram_30_prompt_patterns.svg)
+![プロンプトパターン（良い例vs悪い例）](../assets/diagrams/diagram_30_prompt_patterns.svg)
 
 **❌ 悪い:** 「ログイン機能を作って」
 
@@ -247,7 +247,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 要件の引き出し方（文字起こしアプローチ）
 
-![文字起こし→AI抽出フロー](diagrams/diagram_40_transcript_approach.svg)
+![文字起こし→AI抽出フロー](../assets/diagrams/diagram_40_transcript_approach.svg)
 
 ## なぜ強力か
 
@@ -271,7 +271,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # MoSCoW 優先順位付け
 
-![MoSCoW優先順位](diagrams/diagram_05_moscow.svg)
+![MoSCoW優先順位](../assets/diagrams/diagram_05_moscow.svg)
 
 - **Must（必須）:** プロダクト成立に不可欠な機能 → Phase 1 (MVP)
 - **Should（重要）:** あるべきだが、なくても動く → Phase 2
@@ -286,7 +286,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # MoSCoW実践例（ToDoアプリ）
 
-![MoSCoW実践例（ToDoアプリ）](diagrams/diagram_47_moscow_example.svg)
+![MoSCoW実践例（ToDoアプリ）](../assets/diagrams/diagram_47_moscow_example.svg)
 
 ---
 
@@ -294,7 +294,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # ユーザーストーリーマッピング
 
-![ユーザーストーリーマッピング](diagrams/diagram_31_user_story_mapping.svg)
+![ユーザーストーリーマッピング](../assets/diagrams/diagram_31_user_story_mapping.svg)
 
 - **フォーマット:** `<誰が> <何をしたい> <なぜ>`
 - **例:** ユーザーとして、タスクを追加したい（忘れないため）
@@ -310,7 +310,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 非機能要件
 
-![非機能要件チェックリスト](diagrams/diagram_32_nonfunctional_requirements.svg)
+![非機能要件チェックリスト](../assets/diagrams/diagram_32_nonfunctional_requirements.svg)
 
 **なぜ重要か:** 機能要件だけでは本番で使えない（性能・セキュリティ・拡張性）
 
@@ -328,7 +328,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # エラー・エッジケース・制約の洗い出し
 
-![エラー・エッジケース・制約の洗い出し](diagrams/diagram_45_error_edge_constraint.svg)
+![エラー・エッジケース・制約の洗い出し](../assets/diagrams/diagram_45_error_edge_constraint.svg)
 
 ---
 
@@ -370,7 +370,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # STEP1 チェックリスト
 
-![STEP1チェックリスト](diagrams/diagram_34_step1_checklist.svg)
+![STEP1チェックリスト](../assets/diagrams/diagram_34_step1_checklist.svg)
 
 **必ず確認:**
 - [ ] AIに質問させて曖昧さ排除
@@ -408,7 +408,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 設計ドキュメントの構造
 
-![設計ドキュメントの7要素](diagrams/diagram_06_spec_structure.svg)
+![設計ドキュメントの7要素](../assets/diagrams/diagram_06_spec_structure.svg)
 
 - **1. 技術スタック:** フロント・バック・DB・ライブラリ（選定理由含む）
 - **2. システムアーキテクチャ:** 3層構造、Mermaid図で可視化
@@ -437,7 +437,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # データベーススキーマ設計
 
-![ER図の例](diagrams/diagram_07_er_diagram.svg)
+![ER図の例](../assets/diagrams/diagram_07_er_diagram.svg)
 
 - **なぜスキーマ定義が必要か**
   - 後から変更すると影響範囲が非常に大きい
@@ -466,7 +466,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # Mermaid記法とSVG生成でビジュアル化
 
-![Mermaid vs SVG使い分け](diagrams/diagram_41_mermaid_vs_svg.svg)
+![Mermaid vs SVG使い分け](../assets/diagrams/diagram_41_mermaid_vs_svg.svg)
 
 - **Mermaid**: テキストで図描画、Git管理可、AI自動生成、GitHub/VS Code表示
 - **SVG生成magic word**: 「SVGで書いて」→AI生成→即可視化、記法不要
@@ -478,7 +478,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # ER図が開発をスムーズにする理由
 
-![ER図からコード生成](diagrams/diagram_08_er_to_code.svg)
+![ER図からコード生成](../assets/diagrams/diagram_08_er_to_code.svg)
 
 - **AIの実装**: CREATE TABLE自動生成、JOIN処理、外部キー、ORMモデル
 - **人間の恩恵**: 全体像一目把握、リレーション検証、正規化問題発見
@@ -489,7 +489,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # シーケンス図がAI実装を助ける理由
 
-![シーケンス図の例（ログインフロー）](diagrams/diagram_09_sequence_login.svg)
+![シーケンス図の例（ログインフロー）](../assets/diagrams/diagram_09_sequence_login.svg)
 
 - **AIの実装**: 処理順序理解→正確コードフロー、エラー処理タイミング、依存関係、トランザクション境界
 - **図なしの問題**: 処理順序推測ミス、ロールバック漏れ
@@ -517,7 +517,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # STEP2のまとめ
 
-![STEP2のまとめ](diagrams/diagram_46_step2_summary.svg)
+![STEP2のまとめ](../assets/diagrams/diagram_46_step2_summary.svg)
 
 ---
 
@@ -525,7 +525,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # STEP2 チェックリスト
 
-![STEP2チェックリスト](diagrams/diagram_35_step2_checklist.svg)
+![STEP2チェックリスト](../assets/diagrams/diagram_35_step2_checklist.svg)
 
 **必ず確認:**
 - [ ] Tech Stack確定
