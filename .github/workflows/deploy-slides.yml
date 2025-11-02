@@ -40,7 +40,7 @@ jobs:
       - name: Generate HTML slides
         run: |
           cd slides
-          marp all_slides.md --html --allow-local-files -o ../docs/index.html
+          marp all_slides.md --html --allow-local-files --theme-set ../assets/themes/ai-seminar.css --theme ai-seminar -o ../docs/index.html
 
       - name: Copy assets
         run: |
