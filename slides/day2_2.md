@@ -13,11 +13,28 @@ paginate: true
 ## 実践演習の説明（10分）
 
 ---
-<!-- _class: layout-diagram-only -->
+
+<!-- _class: two-column -->
 
 # 3つの演習課題から選択
 
-![3つの演習課題から選択](../diagrams-web/slide_003_3つの演習課題から選択.svg)
+### ①マスター追加（商品カテゴリマスタのCRUD）
+- 新しいマスタテーブル追加（CREATE TABLE）
+- CRUD機能実装（Controller、Service、Repository、Entity、View）
+- 既存マスタとの関連付け（外部キー）
+- **難易度: 中**（デグレリスク低）
+
+### ②項目追加（顧客に電話番号カラム追加）
+- 既存テーブルへのカラム追加（ALTER TABLE）
+- 関連画面・API修正（登録、更新、一覧、詳細）
+- バリデーション追加（電話番号形式チェック）
+- **難易度: 高**（影響大、デグレリスク高）
+
+### ③検索条件追加（日付範囲指定検索）
+- 既存検索への条件追加（WHERE句拡張）
+- UI・API・SQL修正（日付ピッカー、パラメータ、クエリ）
+- 境界値処理（開始日・終了日チェック）
+- **難易度: 中**（既存検索への影響あり）
 
 ---
 
@@ -40,7 +57,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 ### 演習のゴール
 
@@ -85,7 +102,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 ### STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
@@ -128,7 +145,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 #### 新機能のテストシナリオ作成
 
@@ -189,7 +206,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 #### テストコード実装（30分）
 
@@ -217,7 +234,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 #### TDDで実装
 
@@ -241,7 +258,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 #### テスト実行・デバッグ
 
@@ -348,7 +365,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 ### 実務での活用ポイント
 
@@ -404,7 +421,7 @@ paginate: true
 
 ---
 
-<!-- _class: two-column compact -->
+<!-- _class: two-column -->
 
 ### 実務で明日から実践できること（Top 5）
 

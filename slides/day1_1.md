@@ -2,8 +2,6 @@
 marp: true
 theme: ai-seminar
 paginate: true
-header: 'AI活用研修：新規開発編 - Day 1 Part 1'
-footer: '© 2024 AI Development Seminar'
 ---
 
 <!-- _class: lead -->
@@ -15,11 +13,12 @@ footer: '© 2024 AI Development Seminar'
 AI駆動開発で開発期間を大幅短縮
 
 ---
+
 <!-- _class: layout-diagram-only -->
 
 # 本日の目標
 
-![本日の目標](../diagrams-web/slide_002_本日の目標.svg)
+![本日の目標](../assets/diagrams-web/slide_002_本日の目標.svg)
 
 ---
 
@@ -35,15 +34,31 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-comparison -->
 
 # Vibe Coding vs Production Engineering
 
-![3つのアプローチ比較](../assets/diagrams/diagram_22_vibe_vs_production.svg)
+<div>
 
-- **Vibe Coding**: 速い（30分〜1時間）、品質バラバラ、プロトタイプ向き
-- **Production Engineering**: 構造化、品質保証、本番向き
-- **Vibe Coding with Guardrails**: 速さと品質両立、設計書で導く
+### Vibe Coding
+- 速い（30分〜1時間）
+- 品質バラバラ
+- プロトタイプ向き
+
+</div>
+
+<div>VS</div>
+
+<div>
+
+### Production Engineering
+- 構造化
+- 品質保証
+- 本番向き
+
+</div>
+
+**結論**: Vibe Coding with Guardrails で速さと品質を両立
 
 ---
 
@@ -95,29 +110,51 @@ AI駆動開発で開発期間を大幅短縮
 ![Reward Hacking問題と対策](../assets/diagrams/diagram_39_reward_hacking_examples.svg)
 
 ---
-<!-- _class: layout-diagram-only -->
+
+<!-- _class: two-column compact -->
 
 # 環境準備
 
-![環境準備](../diagrams-web/slide_009_環境準備.svg)
+## ✅ 必須ツール
+
+**📦 Claude Code**
+- AI開発環境
+- プロジェクト全体を扱うAIアシスタント
+- **なぜ必要:** プロジェクト全体の文脈を理解、複数ファイル一括操作
+
+**🔧 GitHub**
+- バージョン管理
+- 頻繁なコミットで暴走対策
+- **なぜ必要:** AIの暴走から回復可能
+
+**💻 VS Code**
+- エディタ
+- Mermaid Preview拡張推奨
+- **なぜ必要:** 図の即座確認、開発体験向上
+
+## 🌟 推奨ツール
+
+**🐳 Dev Container**
+- 環境統一化
+- dangerously-skip-permissionsモードの安全利用
+- **なぜ推奨:**
+  - 環境の再現性（全員同じ環境）
+  - 実験の安全性（コンテナ内で隔離）
+  - チーム開発でのトラブル防止
+
+## 📋 セットアップチェックリスト
+- [ ] Claude Code インストール
+- [ ] GitHub アカウント
+- [ ] VS Code + Mermaid Preview
+- [ ] (推奨) Dev Container
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-diagram-only -->
 
 # セキュリティベストプラクティス（補足）
 
-![セキュリティベストプラクティス](../assets/diagrams/diagram_36_security_best_practices.svg)
-
-**AIに必ず指示すべきセキュリティ要件:**
-
-**🔒 認証・認可:** bcrypt、JWT、環境変数
-
-**🛡️ 入力検証:** SQLi/XSS対策、CSRF
-
-**🔐 データ保護:** HTTPS、機密情報は環境変数
-
-**📊 監視:** レート制限、異常検知
+![セキュリティベストプラクティス](../assets/diagrams/diagram_23_security_best_practices.svg)
 
 ---
 
@@ -129,17 +166,20 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
+<!-- _class: layout-callout -->
+
+<div class="icon">💡</div>
+
 # Claude Code とは
-- **概要:** プロジェクト全体を扱うAI開発アシスタント、ターミナルから直接コード生成・修正・テスト
-- **なぜClaude Codeが重要か:**
-  - プロジェクト全体の文脈を理解（複数ファイルの関係性を把握）
-  - 単一ファイル編集ではなく、関連ファイルを一括操作
-  - Git統合で安全性を確保（コミット履歴、ロールバック可能）
-- **他ツールとの違い:**
-  - ChatGPT: 単一会話、ファイル手動アップロード、コンテキスト限定的
-  - Cursor: エディタ内、部分編集、ファイル単位
-  - Claude Code: プロジェクト全体、複数ファイル一括、Git統合、長期文脈保持
-- **効果:** プロジェクト全体の一貫性を保ちながら開発
+
+<div class="message">
+プロジェクト全体を扱うAI開発アシスタント
+</div>
+
+- プロジェクト全体の文脈を理解（複数ファイルの関係性を把握）
+- 単一ファイル編集ではなく、関連ファイルを一括操作
+- Git統合で安全性を確保（コミット履歴、ロールバック可能）
+- **効果**: プロジェクト全体の一貫性を保ちながら開発
 
 ---
 
@@ -171,47 +211,28 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column -->
-
-# モード詳細と使い分け
-
-**通常モード（デフォルト）**
-- 毎回確認 (y/n)、初心者向け、安全第一
-
-**YOLOモード（Shift+Tab）**
-- 自動実行、確認作業を省略して効率化
-- 条件: Git管理済み、タスク明確
-- 使用例: プロトタイプ、新機能開発
-
-**プランモード（Shift+Tab×2）**
-- 計画→確認→実行の3段階
-- 大規模タスク、複雑なリファクタリング向き
-
-**dangerously-skip-permissionsモード**
-- 全確認スキップ（超危険）
-- 用途: CI/CD、デモ、最高速開発
-- Dev Container推奨: コンテナ内→安全化
-
----
 <!-- _class: layout-diagram-only -->
 
 # よくある問題と対処法
 
-![よくある問題と対処法](../diagrams-web/slide_017_よくある問題と対処法.svg)
+![よくある問題と対処法](../assets/diagrams-web/slide_017_よくある問題と対処法.svg)
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right -->
 
 # 効率的な指示の出し方
 
 ![プロンプトパターン（良い例vs悪い例）](../assets/diagrams/diagram_30_prompt_patterns.svg)
 
-**❌ 悪い:** 「ログイン機能を作って」
-
-**✅ 良い:** 制約明示（bcrypt、環境変数、@Valid）、段階的実装、質問促す、AI自己レビュー
-
-**サイクル:** 指示→実装→レビュー→テスト→コミット
+- **❌ 悪い指示:** 「ログイン機能を作って」
+- **✅ 良い指示:**
+  - 制約を明示（bcrypt、環境変数、バリデーション、レート制限）
+  - 段階的に進める（1機能ずつ）
+  - 質問を促す（「確認したいことはある？」）
+  - 自己レビュー依頼（実装後必ず）
+- **毎回のサイクル:**
+  - 指示 → 実装 → AI自己レビュー → 修正 → テスト → コミット
 
 ---
 
@@ -223,23 +244,28 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
+<!-- _class: layout-callout -->
+
+<div class="icon">📋</div>
+
 # STEP1 要件定義とは
-- **目的:** 「何を作るか」を明確化
-- **なぜ最初に要件定義が必要か（Guardrails）**
-  - AIはJagged Intelligence（技術実装は得意だがビジネス要件の解釈は苦手）
-  - Reward Hacking→曖昧な仕様だと手抜き実装
-  - 明確な要件＝AIが道を外れない境界線
-- **成果物:**
-  - 要件定義ドキュメント（docs/requirements.md）
-  - ユーザーストーリー、機能一覧、受け入れ基準
-- **効果:** 後工程の手戻り防止
+
+<div class="message">
+「何を作るか」を明確化し、AIへのGuardrailsを構築
+</div>
+
+- AIはJagged Intelligence（技術実装は得意だがビジネス要件の解釈は苦手）
+- Reward Hacking→曖昧な仕様だと手抜き実装
+- 明確な要件＝AIが道を外れない境界線
+- **成果物**: docs/requirements.md（ユーザーストーリー、機能一覧、受け入れ基準）
 
 ---
+
 <!-- _class: layout-diagram-only -->
 
 # AIに質問させる手法
 
-![AIに質問させる手法](../diagrams-web/slide_022_AIに質問させる手法.svg)
+![AIに質問させる手法](../assets/diagrams-web/slide_022_AIに質問させる手法.svg)
 
 ---
 
@@ -249,21 +275,17 @@ AI駆動開発で開発期間を大幅短縮
 
 ![文字起こし→AI抽出フロー](../assets/diagrams/diagram_40_transcript_approach.svg)
 
-## なぜ強力か
+## 🎯 なぜこの手法が強力か
 
-**顧客の言葉をそのまま記録:** 解釈のズレゼロ、「言った/言わない」問題の解消
+**顧客の言葉をそのまま記録:**
+- 解釈のズレゼロ
+- 「言った/言わない」問題の解消
+- 顧客の本当のニーズを捉える
 
-**AIが要件構造化:** 漏れ・ヌケ防止、自動優先順位付け
-
-## 4ステップ
-
-**STEP1: 録音** Zoom/Google Meet録画
-
-**STEP2: 文字起こし** Whisper API、Claude Code直接音声入力
-
-**STEP3: AI抽出** 「この文字起こしから要件を抽出して」
-
-**STEP4: 確認** ユーザーストーリー、MoSCoW分類、不明点確認
+**AIが要件構造化:**
+- 漏れ・ヌケ防止
+- 自動で優先順位付け
+- **不明点リスト**も自動生成
 
 ---
 
@@ -306,21 +328,22 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left -->
 
 # 非機能要件
 
 ![非機能要件チェックリスト](../assets/diagrams/diagram_32_nonfunctional_requirements.svg)
 
-**なぜ重要か:** 機能要件だけでは本番で使えない（性能・セキュリティ・拡張性）
+## 🎯 なぜ非機能要件が重要か
 
-**⚡ パフォーマンス:** 1000件快適、200ms以内
+**機能要件だけでは本番で使えない:**
+- 性能不足（遅い、落ちる）
+- セキュリティ脆弱性
+- 拡張性の欠如
 
-**🔒 セキュリティ:** JWT、bcrypt、HTTPS
-
-**📈 スケーラビリティ:** 同時100人
-
-**📱 モバイル:** レスポンシブ
+**AIは明示しないと考慮しない:**
+- Reward Hacking → 手抜き実装
+- 非機能要件 = Guardrails
 
 ---
 
@@ -332,7 +355,12 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
+<!-- _class: layout-horizontal-left -->
+
 # 受け入れ基準（Given-When-Then）
+
+![Given-When-Then形式](../assets/diagrams/diagram_33_given_when_then.svg)
+
 - **正常系:**
   - Given: 登録済みユーザー
   - When: 正しいメール・パスワードでログイン
@@ -345,41 +373,37 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
+<!-- _class: two-column compact -->
+
 # プロトタイプ駆動開発（Vibe Coding）
-- **従来:** 文章 → 実装 → 「イメージと違う」
-- **Vibe Coding:** ビジュアルで確認しながら調整
-- **ツール:** Claude Code（Thymeleaf/HTML/Bootstrap）
-- **指示例:**
-  ```
-  「ToDoアプリのプロトタイプをThymeleafで作って。
-  タスク追加フォーム、一覧表示、削除ボタン。Bootstrap使用」
-  ```
-- **ステップ:** 確認 → 修正指示 → 即座に反映 → OK!
-- **メリット:** クライアントとの認識合わせが簡単
+
+## 従来のアプローチ
+
+文章 → 実装 → 「イメージと違う」
+
+## Vibe Coding
+
+ビジュアルで確認しながら調整
+
+**ツール:** Claude Code（Thymeleaf/HTML/Bootstrap）
+
+**指示例:**
+```
+「ToDoアプリのプロトタイプをThymeleafで作って。
+タスク追加フォーム、一覧表示、削除ボタン。Bootstrap使用」
+```
+
+**ステップ:** 確認 → 修正指示 → 即座に反映 → OK!
+
+**メリット:** クライアントとの認識合わせが簡単
 
 ---
+
 <!-- _class: layout-diagram-only -->
 
 # STEP1のまとめ
 
-![STEP1のまとめ](../diagrams-web/slide_031_STEP1のまとめ.svg)
-
----
-
-<!-- _class: layout-horizontal-left -->
-
-# STEP1 チェックリスト
-
-![STEP1チェックリスト](../assets/diagrams/diagram_34_step1_checklist.svg)
-
-**必ず確認:**
-- [ ] AIに質問させて曖昧さ排除
-- [ ] MoSCoW優先順位付け
-- [ ] ユーザーストーリー作成
-- [ ] 非機能要件定義
-- [ ] エラー・エッジケース洗い出し
-- [ ] Given-When-Then基準作成
-- [ ] docs/requirements.md文書化
+![STEP1のまとめ](../assets/diagrams-web/slide_031_STEP1のまとめ.svg)
 
 ---
 
@@ -391,16 +415,20 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
+<!-- _class: layout-callout -->
+
+<div class="icon">📐</div>
+
 # STEP2 設計ドキュメントとは
-- **目的:** 「どのように作るか」を明確にする設計図
-- **なぜ設計書が必要か（Guardrails + 忘れっぽさ対策）**
-  - AIは忘れっぽい→セッション超えると設計意図を忘れる
-  - Reward Hacking→設計がないと手抜き実装
-  - 設計書＝AIが何度でも参照できる道しるべ
-- **Spec-Driven Development:**
-  - Code-First → Spec-First へ
-  - 設計書がAIのガードレール
-- **効果:** AIが設計に従って実装、一貫性のある構造
+
+<div class="message">
+「どのように作るか」を明確にする設計図＝AIの外部メモリ
+</div>
+
+- AIは忘れっぽい→セッション超えると設計意図を忘れる
+- Reward Hacking→設計がないと手抜き実装
+- 設計書＝AIが何度でも参照できる道しるべ
+- **Spec-Driven Development**: Code-First → Spec-First へ
 
 ---
 
@@ -420,16 +448,27 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
+<!-- _class: two-column compact -->
+
 # Tech Stack Setup
-- **最初に固める理由:** 後から変更すると大幅な手戻り
-- **例:**
-  - フロントエンド: Thymeleaf / JSP
-  - バックエンド: Spring Boot
-  - データベース: PostgreSQL / MySQL
-  - 認証: Spring Security + JWT
-  - 日付処理: Java 8 Date/Time API（理由: 標準ライブラリ）
-  - テスト: JUnit 5 + Mockito
-- **選定理由も明記:** 技術的判断の根拠を残す
+
+## なぜ最初に固めるか
+
+後から変更すると大幅な手戻り
+
+## 例
+
+**フロントエンド:** Thymeleaf / JSP
+**バックエンド:** Spring Boot
+**データベース:** PostgreSQL / MySQL
+**認証:** Spring Security + JWT
+**日付処理:** Java 8 Date/Time API
+  ↳ 理由: 標準ライブラリ
+**テスト:** JUnit 5 + Mockito
+
+## 重要
+
+選定理由も明記 → 技術的判断の根拠を残す
 
 ---
 
@@ -446,19 +485,24 @@ AI駆動開発で開発期間を大幅短縮
   - AIが正確なSQL・ORM実装ができる
   - カラム名・型・制約の一貫性が保たれる
   - マイグレーションの自動生成が可能
-- **AIへの指示:** テーブル構造を明確に文書化
 
 ---
 
+<!-- _class: two-column compact -->
+
 # API仕様の明確化
-- **なぜAPI仕様が必要か**
-  - 仕様がないとAIがエンドポイントを勝手に決める
-  - フロントとバックで認識齟齬が発生
-- **API仕様で得られる効果**
-  - フロントエンドとバックエンドの並行開発が可能
-  - AIが仕様通りのエンドポイントを実装
-  - バリデーション・エラーハンドリングの一貫性
-  - 後からのAPI変更時に影響範囲が明確
+
+## なぜAPI仕様が必要か
+
+- 仕様がないとAIがエンドポイントを勝手に決める
+- フロントとバックで認識齟齬が発生
+
+## API仕様で得られる効果
+
+- フロントエンドとバックエンドの並行開発が可能
+- AIが仕様通りのエンドポイントを実装
+- バリデーション・エラーハンドリングの一貫性
+- 後からのAPI変更時に影響範囲が明確
 
 ---
 
@@ -497,19 +541,26 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
+<!-- _class: two-column compact -->
+
 # 受け入れ条件の詳細化
-- **なぜ受け入れ条件が必要か**
-  - AIは「タスク完了」を優先し、品質は二の次
-  - 明確な合格基準がないと手抜き実装になる
-  - 受け入れ条件 = AIの自己採点基準
-- **Given-When-Then形式の効果**
-  - AIがテストケースを自動生成できる
-  - 実装が仕様を満たしているか自己チェック可能
-  - 異常系・エッジケースも明示できる
-- **具体化の重要性**
-  - 「バリデーション」だけでは曖昧
-  - 「パスワードは8文字以上、大文字小文字数字を含む」と明示
-  - AIは具体的な条件をそのままコード化できる
+
+## なぜ受け入れ条件が必要か
+
+- AIは「タスク完了」を優先し、品質は二の次
+- 明確な合格基準がないと手抜き実装になる
+- 受け入れ条件 = AIの自己採点基準
+
+## Given-When-Then形式の効果
+
+- AIがテストケースを自動生成できる
+- 実装が仕様を満たしているか自己チェック可能
+- 異常系・エッジケースも明示できる
+
+## 具体化の重要性
+
+❌ 「バリデーション」だけでは曖昧
+✅ 「パスワードは8文字以上、大文字小文字数字を含む」と明示
 
 ---
 
@@ -521,25 +572,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-horizontal-left -->
-
-# STEP2 チェックリスト
-
-![STEP2チェックリスト](../assets/diagrams/diagram_35_step2_checklist.svg)
-
-**必ず確認:**
-- [ ] Tech Stack確定
-- [ ] アーキテクチャ図作成
-- [ ] ER図作成
-- [ ] API仕様定義
-- [ ] シーケンス図作成
-- [ ] 受入条件詳細化
-- [ ] セキュリティ設計
-- [ ] docs/spec.md作成
-
----
-
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 ## Part 1 振り返りチェックリスト
 
@@ -567,5 +600,3 @@ AI駆動開発で開発期間を大幅短縮
 ---
 
 **Part 1 終了 - 昼休憩（12:00-13:00）**
-
-**スライド数: 35枚**
