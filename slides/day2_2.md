@@ -8,7 +8,7 @@ paginate: true
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead supercompact -->
 
 ## 実践演習の説明（10分）
 
@@ -93,7 +93,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
@@ -192,7 +192,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # デグレ発生メカニズムとTDDによる予防
 
@@ -311,7 +311,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # テスト実行・デバッグ
 
@@ -345,7 +345,7 @@ Given-When-Then形式でシナリオ記述
 <!-- _class: layout-horizontal-left -->
 
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # ドキュメント反映
 
@@ -416,7 +416,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 全体ディスカッション
 

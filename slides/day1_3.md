@@ -115,7 +115,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # 1日目のキーメッセージ
 
@@ -123,7 +123,7 @@ paginate: true
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead supercompact -->
 
 ## 演習課題の説明（TODOアプリ）
 
@@ -159,7 +159,7 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 演習の目的と課題
 
@@ -288,7 +288,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## 演習成功のチェックリスト
 
@@ -390,14 +390,14 @@ project/
 ## 1日目全体の振り返り
 
 ---
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 
-<!-- _class: card-grid compact -->
+<!-- _class: two-column compact -->
 
 # 1日目全体の振り返り
 

@@ -548,7 +548,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 受け入れ条件の詳細化
 

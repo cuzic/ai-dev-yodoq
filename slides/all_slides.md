@@ -548,7 +548,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 受け入れ条件の詳細化
 
@@ -993,7 +993,7 @@ BCrypt、JWT秘密鍵環境変数、.env使用、
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">✅</div>
 
@@ -1040,7 +1040,7 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # E2Eテスト重視の戦略
 
@@ -1168,7 +1168,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
 # リファクタリング（内部品質向上）
 
@@ -1207,7 +1207,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # ドキュメント自動生成Before/After
 
@@ -1462,7 +1462,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # 1日目のキーメッセージ
 
@@ -1470,7 +1470,7 @@ paginate: true
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead supercompact -->
 
 ## 演習課題の説明（TODOアプリ）
 
@@ -1506,7 +1506,7 @@ Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 演習の目的と課題
 
@@ -1635,7 +1635,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## 演習成功のチェックリスト
 
@@ -1737,14 +1737,14 @@ project/
 ## 1日目全体の振り返り
 
 ---
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 
-<!-- _class: card-grid compact -->
+<!-- _class: two-column compact -->
 
 # 1日目全体の振り返り
 
@@ -1840,7 +1840,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # 昨日の演習での気づき共有
 
@@ -2207,7 +2207,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 <!-- _class: two-column -->
 
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # テストシナリオの分類
 
@@ -2291,7 +2291,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
 # テストシナリオからテストコードへ
 
@@ -2386,7 +2386,7 @@ paginate: true
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead supercompact -->
 
 ## 実践演習の説明（10分）
 
@@ -2471,7 +2471,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
@@ -2570,7 +2570,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # デグレ発生メカニズムとTDDによる予防
 
@@ -2689,7 +2689,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # テスト実行・デバッグ
 
@@ -2723,7 +2723,7 @@ Given-When-Then形式でシナリオ記述
 <!-- _class: layout-horizontal-left -->
 
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # ドキュメント反映
 
@@ -2794,7 +2794,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # 全体ディスカッション
 

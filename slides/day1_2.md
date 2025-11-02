@@ -372,7 +372,7 @@ BCrypt、JWT秘密鍵環境変数、.env使用、
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">✅</div>
 
@@ -419,7 +419,7 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # E2Eテスト重視の戦略
 
@@ -547,7 +547,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
 # リファクタリング（内部品質向上）
 
@@ -586,7 +586,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # ドキュメント自動生成Before/After
 

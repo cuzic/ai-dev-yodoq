@@ -39,7 +39,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # 昨日の演習での気づき共有
 
@@ -406,7 +406,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 <!-- _class: two-column -->
 
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # テストシナリオの分類
 
@@ -490,7 +490,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
 # テストシナリオからテストコードへ
 
