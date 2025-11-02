@@ -1,0 +1,159 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" viewBox="0 0 1560 820">
+  <ns0:defs>
+    <ns0:style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 74px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
+      .time-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; font-weight: bold; }
+    </ns0:style>
+  </ns0:defs>
+
+
+  <ns0:rect width="1200" height="600" fill="#FFFFFF" />
+
+
+  <ns0:text x="600" y="35" class="title" text-anchor="middle">演習の進め方（5ステップワークフロー）</ns0:text>
+
+
+  <ns0:rect x="30" y="80" width="200" height="180" fill="#00146E" rx="10" />
+  <ns0:text x="130" y="110" class="step-title" text-anchor="middle">STEP 1</ns0:text>
+  <ns0:text x="130" y="206" class="step-title" text-anchor="middle" font-size="28">要件整理</ns0:text>
+
+  <ns0:text x="50" y="165" class="step-text">やること:</ns0:text>
+  <ns0:text x="60" y="235" class="step-text">• 課題を読む</ns0:text>
+  <ns0:text x="60" y="305" class="step-text">• 不明点を質問</ns0:text>
+  <ns0:text x="60" y="375" class="step-text">• 要件リスト作成</ns0:text>
+
+  <ns0:text x="50" y="445" class="time-text">所要時間: 10分</ns0:text>
+
+
+  <ns0:line x1="230" y1="170" x2="270" y2="170" stroke="#00146E" stroke-width="4" />
+  <ns0:polygon points="270,170 260,165 260,175" fill="#00146E" />
+
+
+  <ns0:rect x="270" y="80" width="200" height="180" fill="#00AFF0" rx="10" />
+  <ns0:text x="370" y="126" class="step-title" text-anchor="middle">STEP 2</ns0:text>
+  <ns0:text x="370" y="222" class="step-title" text-anchor="middle" font-size="28">設計書作成</ns0:text>
+
+  <ns0:text x="290" y="181" class="step-text">やること:</ns0:text>
+  <ns0:text x="300" y="251" class="step-text">• ER図作成</ns0:text>
+  <ns0:text x="300" y="321" class="step-text">• API仕様定義</ns0:text>
+  <ns0:text x="300" y="391" class="step-text">• 画面遷移図</ns0:text>
+
+  <ns0:text x="290" y="461" class="time-text">所要時間: 20分</ns0:text>
+
+
+  <ns0:line x1="470" y1="170" x2="510" y2="170" stroke="#00AFF0" stroke-width="4" />
+  <ns0:polygon points="510,170 500,165 500,175" fill="#00AFF0" />
+
+
+  <ns0:rect x="510" y="80" width="200" height="180" fill="#003399" rx="10" />
+  <ns0:text x="610" y="156" class="step-title" text-anchor="middle">STEP 3</ns0:text>
+  <ns0:text x="610" y="252" class="step-title" text-anchor="middle" font-size="28">タスク分解</ns0:text>
+
+  <ns0:text x="530" y="197" class="step-text">やること:</ns0:text>
+  <ns0:text x="540" y="267" class="step-text">• Phase分け</ns0:text>
+  <ns0:text x="540" y="337" class="step-text">• タスク一覧作成</ns0:text>
+  <ns0:text x="540" y="407" class="step-text">• 優先順位付け</ns0:text>
+
+  <ns0:text x="530" y="477" class="time-text">所要時間: 15分</ns0:text>
+
+
+  <ns0:line x1="710" y1="170" x2="750" y2="170" stroke="#003399" stroke-width="4" />
+  <ns0:polygon points="750,170 740,165 740,175" fill="#003399" />
+
+
+  <ns0:rect x="750" y="80" width="200" height="180" fill="#66D9FF" rx="10" />
+  <ns0:text x="850" y="172" class="step-title" text-anchor="middle">STEP 4</ns0:text>
+  <ns0:text x="850" y="268" class="step-title" text-anchor="middle" font-size="28">実装</ns0:text>
+
+  <ns0:text x="770" y="213" class="step-text">やること:</ns0:text>
+  <ns0:text x="780" y="283" class="step-text">• TDDで実装</ns0:text>
+  <ns0:text x="780" y="368" class="step-text">• Phase毎に確認</ns0:text>
+  <ns0:text x="780" y="438" class="step-text">• AIレビュー実施</ns0:text>
+
+  <ns0:text x="770" y="508" class="time-text">所要時間: 40分</ns0:text>
+
+
+  <ns0:line x1="950" y1="170" x2="990" y2="170" stroke="#66D9FF" stroke-width="4" />
+  <ns0:polygon points="990,170 980,165 980,175" fill="#66D9FF" />
+
+
+  <ns0:rect x="990" y="80" width="180" height="180" fill="#4D6DB3" rx="10" />
+  <ns0:text x="1080" y="204" class="step-title" text-anchor="middle">STEP 5</ns0:text>
+  <ns0:text x="1080" y="300" class="step-title" text-anchor="middle" font-size="28">振り返り</ns0:text>
+
+  <ns0:text x="1010" y="245" class="step-text">やること:</ns0:text>
+  <ns0:text x="1020" y="315" class="step-text">• 成果発表</ns0:text>
+  <ns0:text x="1020" y="384" class="step-text">• 学び共有</ns0:text>
+  <ns0:text x="1020" y="454" class="step-text">• 改善点議論</ns0:text>
+
+  <ns0:text x="1010" y="524" class="time-text">所要時間: 15分</ns0:text>
+
+
+  <ns0:path d="M 1080 260 L 1080 300 L 130 300 L 130 260" fill="none" stroke="#00146E" stroke-width="3" stroke-dasharray="5,5" />
+  <ns0:polygon points="130,260 125,270 135,270" fill="#00146E" />
+  <ns0:text x="600" y="330" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #00146E; text-anchor: middle; font-style: italic;">
+    次の演習へ（繰り返し）
+  </ns0:text>
+
+
+  <ns0:rect x="30" y="350" width="1140" height="220" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10" />
+  <ns0:text x="600" y="400" style="font-family: 'Noto Sans JP', sans-serif; font-size: 72px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    演習のポイント
+  </ns0:text>
+
+
+  <ns0:rect x="60" y="405" width="340" height="140" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5" />
+  <ns0:text x="230" y="447" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    実践重視
+  </ns0:text>
+  <ns0:text x="80" y="577" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 手を動かして学ぶ
+  </ns0:text>
+  <ns0:text x="80" y="655" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 完璧を目指さず、まず動かす
+  </ns0:text>
+  <ns0:text x="80" y="733" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 失敗から学ぶことが重要
+  </ns0:text>
+  <ns0:text x="80" y="811" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • AIとの対話で改善していく
+  </ns0:text>
+
+
+  <ns0:rect x="430" y="405" width="340" height="140" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5" />
+  <ns0:text x="600" y="463" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    チーム協力
+  </ns0:text>
+  <ns0:text x="450" y="593" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 困ったら質問する
+  </ns0:text>
+  <ns0:text x="450" y="671" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 他の人の進め方を見る
+  </ns0:text>
+  <ns0:text x="450" y="749" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 知見を共有し合う
+  </ns0:text>
+  <ns0:text x="450" y="827" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 成功パターンを横展開
+  </ns0:text>
+
+
+  <ns0:rect x="800" y="405" width="340" height="140" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5" />
+  <ns0:text x="970" y="479" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    時間管理
+  </ns0:text>
+  <ns0:text x="820" y="609" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 各STEPの時間を意識
+  </ns0:text>
+  <ns0:text x="820" y="687" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 詰まったら次に進む判断も必要
+  </ns0:text>
+  <ns0:text x="820" y="765" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • タイムボックス内で最善を尽くす
+  </ns0:text>
+  <ns0:text x="820" y="843" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333;">
+    • 全体で100分を目安に
+  </ns0:text>
+</ns0:svg>

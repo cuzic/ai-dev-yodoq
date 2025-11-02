@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 31px;
+        font-weight: bold;
+        fill: #00146E;
+      }
+      .section-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #00146E;
+      }
+      .item-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
+        fill: #333333;
+      }
+      .center-box {
+        fill: #00AFF0;
+        stroke: #00146E;
+        stroke-width: 3;
+        rx: 10;
+      }
+      .impact-box {
+        fill: #F0F8FF;
+        stroke: #FF8C00;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .center-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        fill: #FFFFFF;
+        text-anchor: middle;
+      }
+      .arrow {
+        stroke: #FF8C00;
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF8C00" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="20" y="35" class="title">影響範囲調査の可視化</text>
+
+  <!-- Center: Change Point -->
+  <rect x="250" y="240" width="200" height="60" class="center-box"/>
+  <text x="350" y="265" class="center-text">機能変更</text>
+  <text x="350" y="288" class="center-text" style="font-size: 18px;">パスワードリセット追加</text>
+
+  <!-- Top Left: Files -->
+  <rect x="30" y="70" width="250" height="130" class="impact-box"/>
+  <text x="40" y="95" class="section-title">変更ファイル</text>
+  <text x="50" y="120" class="item-text">• Controller</text>
+  <text x="50" y="143" class="item-text">• Service</text>
+  <text x="50" y="166" class="item-text">• Repository</text>
+  <text x="50" y="189" class="item-text">• Entity/View</text>
+
+  <!-- Top Right: Database -->
+  <rect x="420" y="70" width="250" height="130" class="impact-box"/>
+  <text x="430" y="95" class="section-title">影響テーブル</text>
+  <text x="440" y="120" class="item-text">• Users テーブル</text>
+  <text x="450" y="143" class="item-text">- reset_token 追加</text>
+  <text x="450" y="166" class="item-text">- token_expires_at 追加</text>
+  <text x="440" y="189" class="item-text">• インデックス追加</text>
+
+  <!-- Bottom Left: Chain Impact -->
+  <rect x="30" y="340" width="250" height="150" class="impact-box"/>
+  <text x="40" y="365" class="section-title">連鎖影響</text>
+  <text x="50" y="390" class="item-text">• 他機能への影響</text>
+  <text x="60" y="413" class="item-text">- ログイン機能</text>
+  <text x="60" y="436" class="item-text">- ユーザー管理</text>
+  <text x="50" y="459" class="item-text">• API呼び出し元</text>
+  <text x="50" y="482" class="item-text">• 画面表示</text>
+
+  <!-- Bottom Right: Tests -->
+  <rect x="420" y="340" width="250" height="150" class="impact-box"/>
+  <text x="430" y="365" class="section-title">テスト箇所</text>
+  <text x="440" y="390" class="item-text">• 単体テスト</text>
+  <text x="450" y="413" class="item-text">- Service層</text>
+  <text x="450" y="436" class="item-text">- Repository層</text>
+  <text x="440" y="459" class="item-text">• 統合テスト</text>
+  <text x="440" y="482" class="item-text">• E2Eテスト</text>
+
+  <!-- Arrows from center to boxes -->
+  <path d="M 260 260 L 200 180" class="arrow"/>
+  <path d="M 440 260 L 500 200" class="arrow"/>
+  <path d="M 260 280 L 200 390" class="arrow"/>
+  <path d="M 440 280 L 500 390" class="arrow"/>
+
+  <!-- Bottom warning -->
+  <rect x="50" y="505" width="600" height="25" style="fill: #FFF3CD; stroke: #FF8C00; stroke-width: 2; rx: 5;"/>
+  <text x="350" y="522" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #333333; text-anchor: middle; font-weight: bold;">AIは局所変更のみ→全体影響見落とし→デグレ防止のため必須</text>
+</svg>

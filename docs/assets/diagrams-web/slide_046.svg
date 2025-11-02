@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 32px; font-weight: 700; }
+      .group-title { font-size: 20px; font-weight: 700; fill: #388e3c; }
+      .item-text { font-size: 17px; }
+      .checkbox { fill: none; stroke: #388e3c; stroke-width: 2; }
+      .checkmark { fill: none; stroke: #388e3c; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="640" y="45" class="title" text-anchor="middle">Checklist</text>
+
+  <!-- Group: AI活用の基本 -->
+  <g transform="translate(40, 90)">
+    <text x="0" y="0" class="group-title">AI活用の基本</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">AI活用の3原則を説明できる</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">Reward Hacking対策を実践できる</text>
+  </g>
+
+  <!-- Group: Claude Code -->
+  <g transform="translate(40, 196)">
+    <text x="0" y="0" class="group-title">Claude Code</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">セットアップができる</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">3つのモードを使い分けられる</text>
+    <rect x="0" y="72" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="86" class="item-text">効率的な指示の出し方を実践できる</text>
+  </g>
+
+  <!-- Group: STEP1 要件定義 -->
+  <g transform="translate(40, 330)">
+    <text x="0" y="0" class="group-title">STEP1 要件定義</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">AIに質問させる手法を使える</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">MoSCoW優先順位付けができる</text>
+    <rect x="0" y="72" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="86" class="item-text">エラー・エッジケースを洗い出せる</text>
+    <rect x="0" y="100" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="114" class="item-text">受け入れ基準を書ける</text>
+  </g>
+
+  <!-- Group: STEP2 設計ドキュメント -->
+  <g transform="translate(40, 492)">
+    <text x="0" y="0" class="group-title">STEP2 設計ドキュメント</text>
+    <rect x="0" y="16" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="30" class="item-text">Spec-Driven Developmentを理解</text>
+    <rect x="0" y="44" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="58" class="item-text">Tech Stack Setupを最初に固める</text>
+    <rect x="0" y="72" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="86" class="item-text">Mermaid記法で設計図を作成できる</text>
+    <rect x="0" y="100" width="16" height="16" class="checkbox" rx="3"/>
+    <text x="25" y="114" class="item-text">受け入れ条件を詳細化できる</text>
+  </g>
+</svg>

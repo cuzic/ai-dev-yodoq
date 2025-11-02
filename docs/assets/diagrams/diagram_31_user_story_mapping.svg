@@ -1,0 +1,62 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .body-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .format-box { fill: #FFF3E0; stroke: #FF8C00; stroke-width: 2; }
+      .journey-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 2; }
+      .arrow { fill: none; stroke: #00AFF0; stroke-width: 3; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00AFF0" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="title">ユーザーストーリーマッピング</text>
+
+  <!-- Format -->
+  <rect x="30" y="70" width="640" height="100" rx="8" class="format-box"/>
+  <text x="350" y="100" text-anchor="middle" class="heading">フォーマット</text>
+  <text x="350" y="135" text-anchor="middle" class="body-text" font-weight="700">&lt;誰が&gt; &lt;何をしたい&gt; &lt;なぜ&gt;</text>
+  <text x="350" y="160" text-anchor="middle" class="note-text">例：ユーザーとして、タスクを追加したい（忘れないため）</text>
+
+  <!-- User Journey -->
+  <text x="350" y="210" text-anchor="middle" class="heading">ユーザーの旅</text>
+
+  <!-- Journey Step 1 -->
+  <rect x="30" y="230" width="195" height="130" rx="8" class="journey-box"/>
+  <text x="127.5" y="260" text-anchor="middle" class="body-text" font-weight="700">1. タスク管理</text>
+  <text x="50" y="290" class="body-text">• 追加</text>
+  <text x="50" y="315" class="body-text">• 完了</text>
+  <text x="50" y="340" class="body-text">• 削除</text>
+
+  <!-- Arrow -->
+  <path d="M 235 295 L 260 295" class="arrow"/>
+
+  <!-- Journey Step 2 -->
+  <rect x="265" y="230" width="195" height="130" rx="8" class="journey-box"/>
+  <text x="362.5" y="260" text-anchor="middle" class="body-text" font-weight="700">2. タスク整理</text>
+  <text x="285" y="290" class="body-text">• カテゴリ</text>
+  <text x="285" y="315" class="body-text">• 優先度</text>
+  <text x="285" y="340" class="body-text">• 期限設定</text>
+
+  <!-- Arrow -->
+  <path d="M 470 295 L 495 295" class="arrow"/>
+
+  <!-- Journey Step 3 -->
+  <rect x="500" y="230" width="170" height="130" rx="8" class="journey-box"/>
+  <text x="585" y="260" text-anchor="middle" class="body-text" font-weight="700">3. 進捗確認</text>
+  <text x="520" y="290" class="body-text">• 完了数</text>
+  <text x="520" y="315" class="body-text">• 期限管理</text>
+  <text x="520" y="340" class="body-text">• 統計表示</text>
+
+  <!-- Effect -->
+  <rect x="30" y="380" width="640" height="140" rx="8" class="format-box"/>
+  <text x="350" y="410" text-anchor="middle" class="heading">効果</text>
+  <text x="50" y="445" class="body-text">✓ AIが「なぜ」を理解</text>
+  <text x="50" y="475" class="body-text">✓ 本質的な価値を実装</text>
+  <text x="50" y="505" class="body-text">✓ ユーザー視点での機能設計</text>
+</svg>

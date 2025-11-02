@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 20px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .wrong-box { fill: #FFE6E6; stroke: #DC143C; stroke-width: 2; }
+      .right-box { fill: #E6F7E6; stroke: #228B22; stroke-width: 2; }
+      .value-box { fill: #FFF9E6; stroke: #FFD700; stroke-width: 2; }
+      .arrow { stroke: #333333; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333333" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="30" class="title" text-anchor="middle">リバースエンジニアリング→網羅的テスト生成</text>
+
+  <!-- Wrong Approach -->
+  <rect x="30" y="55" width="640" height="35" fill="#DC143C" rx="3"/>
+  <text x="350" y="78" class="heading" text-anchor="middle" fill="white">❌ 従来のアプローチ（コード追認のみ）</text>
+
+  <rect x="30" y="100" width="640" height="100" class="wrong-box" rx="5"/>
+
+  <!-- Flow: Code -> Direct Test -->
+  <rect x="50" y="115" width="150" height="30" fill="#FFB6C1" stroke="#DC143C" stroke-width="1" rx="3"/>
+  <text x="125" y="135" class="body" text-anchor="middle">既存コード</text>
+
+  <path d="M 205 130 L 255 130" class="arrow"/>
+
+  <rect x="260" y="115" width="150" height="30" fill="#FFB6C1" stroke="#DC143C" stroke-width="1" rx="3"/>
+  <text x="335" y="135" class="body" text-anchor="middle">直接テスト生成</text>
+
+  <path d="M 415 130 L 465 130" class="arrow"/>
+
+  <rect x="470" y="115" width="180" height="30" fill="#FFB6C1" stroke="#DC143C" stroke-width="1" rx="3"/>
+  <text x="560" y="135" class="body" text-anchor="middle">実装済み機能のみ</text>
+
+  <text x="50" y="170" class="body" fill="#DC143C">⚠️ 問題: 既存バグ追認、エッジケース見落とし</text>
+
+  <!-- Right Approach -->
+  <rect x="30" y="215" width="640" height="35" fill="#228B22" rx="3"/>
+  <text x="350" y="238" class="heading" text-anchor="middle" fill="white">✅ リバースエンジニアリング（仕様逆生成）</text>
+
+  <rect x="30" y="260" width="640" height="130" class="right-box" rx="5"/>
+
+  <!-- Flow: Code -> Specs -> Comprehensive Test -->
+  <rect x="50" y="275" width="130" height="30" fill="#90EE90" stroke="#228B22" stroke-width="1" rx="3"/>
+  <text x="115" y="295" class="body" text-anchor="middle">既存コード</text>
+
+  <path d="M 185 290 L 225 290" class="arrow"/>
+
+  <rect x="230" y="275" width="200" height="30" fill="#90EE90" stroke="#228B22" stroke-width="1" rx="3"/>
+  <text x="330" y="295" class="body" text-anchor="middle">要件定義書・US逆生成</text>
+
+  <path d="M 435 290 L 475 290" class="arrow"/>
+
+  <rect x="480" y="275" width="170" height="30" fill="#90EE90" stroke="#228B22" stroke-width="1" rx="3"/>
+  <text x="565" y="295" class="body" text-anchor="middle">網羅的テストシナリオ</text>
+
+  <text x="50" y="330" class="body" fill="#228B22">✨ 効果: あるべき仕様に基づくテスト</text>
+  <text x="50" y="360" class="body" fill="#228B22">📋 未実装エッジケース検出、仕様外動作発見</text>
+
+  <!-- Core Value -->
+  <rect x="30" y="405" width="640" height="115" class="value-box" rx="5"/>
+  <text x="350" y="435" class="heading" text-anchor="middle" fill="#FF8C00">💡 核心的価値</text>
+
+  <text x="50" y="465" class="body">🎯 コード追認ではなく「あるべき姿」でテスト</text>
+  <text x="50" y="495" class="body">🤖 AIは仕様から網羅的に生成（正常・異常・境界値）</text>
+</svg>

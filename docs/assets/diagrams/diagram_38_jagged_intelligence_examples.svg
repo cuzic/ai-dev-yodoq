@@ -1,0 +1,54 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .body-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .good-box { fill: #E8F5E9; stroke: #228B22; stroke-width: 2; }
+      .bad-box { fill: #FFE4E1; stroke: #DC143C; stroke-width: 2; }
+      .solution-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="title">Jagged Intelligence実例</text>
+
+  <!-- Good side -->
+  <rect x="30" y="70" width="310" height="200" rx="8" class="good-box"/>
+  <text x="185" y="100" text-anchor="middle" class="heading">✅ 得意なこと</text>
+
+  <text x="50" y="135" class="body-text">• コード生成</text>
+  <text x="60" y="160" class="note-text">パターン認識が得意</text>
+
+  <text x="50" y="190" class="body-text">• テスト生成</text>
+  <text x="60" y="215" class="note-text">網羅的にカバー可能</text>
+
+  <text x="50" y="245" class="body-text">• リファクタリング</text>
+  <text x="60" y="265" class="note-text">構造化タスクが得意</text>
+
+  <!-- Bad side -->
+  <rect x="360" y="70" width="310" height="200" rx="8" class="bad-box"/>
+  <text x="515" y="100" text-anchor="middle" class="heading">❌ 不得意なこと</text>
+
+  <text x="380" y="135" class="body-text">• ビジネス判断</text>
+  <text x="390" y="160" class="note-text">要件解釈が曖昧</text>
+
+  <text x="380" y="190" class="body-text">• 設計判断</text>
+  <text x="390" y="215" class="note-text">トレードオフ理解不足</text>
+
+  <text x="380" y="245" class="body-text">• 全体への影響判断</text>
+  <text x="390" y="265" class="note-text">局所的視点に偏る</text>
+
+  <!-- Example -->
+  <rect x="30" y="290" width="640" height="115" rx="8" class="solution-box"/>
+  <text x="350" y="320" text-anchor="middle" class="heading">実例</text>
+  <text x="50" y="350" class="body-text">得意：「このコードをリファクタリングして」→完璧</text>
+  <text x="50" y="380" class="body-text">不得意：「ユーザーが使いやすいUIにして」→解釈バラバラ</text>
+
+  <!-- Solution -->
+  <rect x="30" y="425" width="640" height="95" rx="8" class="solution-box"/>
+  <text x="350" y="455" text-anchor="middle" class="heading">対策：明確な指示とGuardrails</text>
+  <text x="50" y="480" class="body-text">✓ 技術的制約を明示（bcrypt、環境変数、@Valid）</text>
+  <text x="50" y="505" class="body-text">✓ 受け入れ基準を具体化（Given-When-Then）</text>
+</svg>

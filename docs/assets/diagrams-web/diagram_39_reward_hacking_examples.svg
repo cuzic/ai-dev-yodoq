@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 759" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      text { font-family: 'Noto Sans JP', sans-serif; fill: #1a1a1a; }
+      .title { font-size: 28px; font-weight: 700; }
+      .section-title { font-size: 22px; font-weight: 700; }
+      .subsection-title { font-size: 18px; font-weight: 600; }
+      .item-text { font-size: 15px; }
+      .small-text { font-size: 14px; }
+      .problem-box { fill: #ffebee; stroke: #d32f2f; stroke-width: 2; rx: 6; }
+      .solution-box { fill: #e8f5e9; stroke: #388e3c; stroke-width: 2; rx: 6; }
+      .result-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 6; }
+      .highlight-red { fill: #d32f2f; }
+      .highlight-green { fill: #388e3c; }
+      .highlight-blue { fill: #1976d2; }
+    </style>
+  </defs>
+
+  
+  <text x="640" y="35" class="title" text-anchor="middle">AIの制約②Reward Hacking(手抜き問題)</text>
+
+  
+  <g transform="translate(30, 70)">
+    <text x="175" y="0" class="section-title highlight-red" text-anchor="middle">🚨 問題の本質</text>
+
+    <rect x="0" y="10" width="350" height="130" class="problem-box" />
+    <text x="175" y="35" class="subsection-title" text-anchor="middle">AIは「楽な解決策」を選びがち</text>
+    <text x="15" y="60" class="item-text">• タスク完了を最優先</text>
+    <text x="15" y="80" class="item-text">• セキュリティ・品質は二の次</text>
+
+    <text x="175" y="110" class="subsection-title" text-anchor="middle">発生理由:</text>
+    <text x="15" y="133.4" class="small-text">報酬=タスク完了 / 品質への報酬なし</text>
+
+    
+    <text x="175" y="168.4" class="section-title highlight-red" text-anchor="middle">❌ NG実装の具体例</text>
+    <rect x="0" y="175" width="350" height="455" class="problem-box" />
+
+    <text x="175" y="203.4" class="subsection-title" text-anchor="middle">セキュリティ:</text>
+    <text x="15" y="226.8" class="item-text">• パスワード平文保存</text>
+    <text x="15" y="246.3" class="item-text">• APIキーのハードコーディング</text>
+    <text x="15" y="265.8" class="item-text">• SQL injection対策なし</text>
+    <text x="15" y="285.3" class="item-text">• 認証なしでAPI公開</text>
+
+    <text x="175" y="315.3" class="subsection-title" text-anchor="middle">エラー処理:</text>
+    <text x="15" y="338.7" class="item-text">• エラーハンドリング省略</text>
+    <text x="15" y="358.2" class="item-text">• エラーで機密情報を表示</text>
+    <text x="15" y="377.7" class="item-text">• 例外を無視して続行</text>
+
+    <text x="175" y="407.7" class="subsection-title" text-anchor="middle">品質:</text>
+    <text x="15" y="431.1" class="item-text">• 入力バリデーション不足</text>
+    <text x="15" y="450.6" class="item-text">• テスト未実装で納品</text>
+    <text x="15" y="470.1" class="item-text">• エッジケース考慮なし</text>
+
+    <text x="175" y="500.1" class="subsection-title" text-anchor="middle">設計:</text>
+    <text x="15" y="523.5" class="item-text">• N+1クエリ問題</text>
+    <text x="15" y="543.0" class="item-text">• インデックス未設定</text>
+    <text x="15" y="562.5" class="item-text">• トランザクション処理省略</text>
+
+    <text x="175" y="592.5" class="subsection-title" text-anchor="middle">保守性:</text>
+    <text x="15" y="615.9" class="item-text">• コメント・ドキュメントなし</text>
+    <text x="15" y="635.4" class="item-text">• マジックナンバー多用</text>
+    <text x="15" y="654.9" class="item-text">• 重複コード放置</text>
+  </g>
+
+  
+  <g transform="translate(410, 70)">
+    <text x="215" y="0" class="section-title highlight-green" text-anchor="middle">✅ 対策</text>
+
+    <text x="215" y="30" class="subsection-title" text-anchor="middle">1. 明確な制約を与える</text>
+    <rect x="0" y="40" width="430" height="250" class="solution-box" />
+
+    <text x="215" y="65" class="subsection-title" text-anchor="middle">セキュリティ制約:</text>
+    <text x="15" y="88.4" class="item-text">• bcryptでパスワードハッシュ化</text>
+    <text x="15" y="107.9" class="item-text">• 環境変数で機密情報管理</text>
+    <text x="15" y="127.4" class="item-text">• JWT認証の実装</text>
+
+    <text x="215" y="157.4" class="subsection-title" text-anchor="middle">品質制約:</text>
+    <text x="15" y="180.8" class="item-text">• 入力バリデーション必須(@Valid)</text>
+    <text x="15" y="200.3" class="item-text">• エラーハンドリング必須(try-catch)</text>
+    <text x="15" y="219.8" class="item-text">• テストカバレッジ80%以上</text>
+
+    <text x="215" y="249.8" class="subsection-title" text-anchor="middle">設計制約:</text>
+    <text x="15" y="273.2" class="item-text">• N+1対策(FetchJoin)</text>
+    <text x="15" y="292.7" class="item-text">• インデックス設定必須</text>
+
+    <text x="215" y="332.7" class="subsection-title" text-anchor="middle">2. AI自己レビュー必須化</text>
+    <rect x="0" y="325" width="430" height="185" class="solution-box" />
+    <text x="15" y="367.7" class="item-text">• 実装後「このコードをレビューして」</text>
+    <text x="15" y="387.7" class="item-text">• セキュリティ観点でチェック依頼</text>
+    <text x="15" y="407.7" class="item-text">• 「制約を満たしているか確認」</text>
+    <text x="15" y="427.7" class="item-text">• 「エッジケースを検証」</text>
+    <text x="15" y="447.7" class="item-text">• 「本番で問題ないか確認」</text>
+    <text x="15" y="467.7" class="item-text">• 定期的に全体レビュー依頼</text>
+    <text x="15" y="502.7" class="small-text" font-weight="600">→ 40-60%のバグを自動検出</text>
+
+    <text x="215" y="557.7" class="subsection-title" text-anchor="middle">3. 設計ドキュメントを先に作る</text>
+    <rect x="0" y="550" width="430" height="80" class="solution-box" />
+    <text x="15" y="592.7" class="item-text">• ER図 → テーブル設計明確化</text>
+    <text x="15" y="612.7" class="item-text">• API仕様 → エンドポイント明確化</text>
+    <text x="15" y="632.7" class="item-text">• シーケンス図 → フロー明確化</text>
+  </g>
+
+  
+  <g transform="translate(870, 70)">
+    <text x="190" y="0" class="section-title highlight-blue" text-anchor="middle">📊 効果</text>
+
+    <rect x="0" y="10" width="380" height="110" class="result-box" />
+    <text x="15" y="35" class="item-text">• 多くのバグを自動検出</text>
+    <text x="15" y="55" class="item-text">• 追加コストほぼゼロ</text>
+    <text x="15" y="75" class="item-text">• 本番障害を大幅削減</text>
+    <text x="15" y="95" class="item-text">• 品質が大幅向上</text>
+    <text x="15" y="115" class="item-text">• セキュリティ問題の早期発見</text>
+
+    <text x="190" y="155" class="section-title highlight-blue" text-anchor="middle">💡 実践のコツ</text>
+    <rect x="0" y="165" width="380" height="230" class="result-box" />
+
+    <text x="190" y="190" class="subsection-title" text-anchor="middle">制約の書き方:</text>
+    <text x="15" y="213.4" class="item-text">• 制約は具体的に書く</text>
+    <text x="15" y="233.4" class="small-text">  ✗「セキュアに」</text>
+    <text x="15" y="251.6" class="small-text">  ✓「bcryptでハッシュ化」</text>
+    <text x="15" y="271.6" class="item-text">• 技術用語を明示</text>
+    <text x="15" y="291.1" class="item-text">• 数値基準を提示</text>
+    <text x="15" y="310.6" class="small-text">  例: カバレッジ80%以上</text>
+
+    <text x="190" y="340.6" class="subsection-title" text-anchor="middle">レビューの方法:</text>
+    <text x="15" y="364.0" class="item-text">• 機能完成後すぐにレビュー</text>
+    <text x="15" y="383.5" class="item-text">• セキュリティは特に重点的に</text>
+    <text x="15" y="403.0" class="item-text">• レビュー結果を次の指示に反映</text>
+
+    <text x="190" y="438.0" class="section-title highlight-blue" text-anchor="middle">⚠️ 注意点</text>
+    <rect x="0" y="435" width="380" height="195" class="result-box" />
+    <text x="15" y="473.0" class="item-text">• AIの提案を鵜呑みにしない</text>
+    <text x="15" y="493.0" class="item-text">• 人間の最終確認は必須</text>
+    <text x="15" y="513.0" class="item-text">• セキュリティは特に慎重に</text>
+    <text x="15" y="533.0" class="item-text">• ビジネスロジックは人間が検証</text>
+    <text x="15" y="553.0" class="item-text">• 本番デプロイ前に必ずレビュー</text>
+    <text x="15" y="573.0" class="item-text">• AIは「楽をしたがる」を前提に</text>
+    <text x="15" y="608.0" class="small-text" font-weight="600">Trust but Verify（信頼するが検証する）</text>
+  </g>
+
+  
+  <rect x="30" y="650" width="1220" height="55" fill="#fff3e0" stroke="#ff6f00" stroke-width="3" rx="6" />
+  <text x="640" y="673" class="subsection-title" text-anchor="middle">まとめ: Reward Hackingは「制約の明示」+「AI自己レビュー」+「人間の最終確認」で防ぐ</text>
+  <text x="640" y="696.4" class="small-text" text-anchor="middle">設計ドキュメント = Guardrails（ガードレール）→ AIが勝手に手抜きできなくなる</text>
+</svg>

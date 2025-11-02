@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 780">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: bold; fill: #333333; }
+      .node-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; fill: white; font-weight: bold; }
+      .small-text { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: white; }
+      .explanation-title { font-family: 'Noto Sans JP', sans-serif; font-size: 32px; fill: #00146E; font-weight: bold; }
+      .explanation-text { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: #333333; }
+      .effect-title { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; fill: #00146E; font-weight: bold; }
+      .effect-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; fill: #333333; }
+    </style>
+  </defs>
+
+  <rect width="1040" height="780" fill="#FFFFFF"/>
+
+  <text x="520" y="60" class="title" text-anchor="middle">設計ドキュメントの構造</text>
+
+  <!-- Root -->
+  <rect x="420" y="90" width="200" height="70" fill="#00146E" rx="5"/>
+  <text x="520" y="120" class="node-text" text-anchor="middle">docs/spec.md</text>
+  <text x="520" y="145" class="small-text" text-anchor="middle">設計ドキュメント</text>
+
+  <!-- Lines from root -->
+  <line x1="520" y1="160" x2="200" y2="220" stroke="#00AFF0" stroke-width="3"/>
+  <line x1="520" y1="160" x2="360" y2="220" stroke="#00AFF0" stroke-width="3"/>
+  <line x1="520" y1="160" x2="520" y2="220" stroke="#00AFF0" stroke-width="3"/>
+  <line x1="520" y1="160" x2="680" y2="220" stroke="#00AFF0" stroke-width="3"/>
+  <line x1="520" y1="160" x2="840" y2="220" stroke="#00AFF0" stroke-width="3"/>
+
+  <!-- Level 1 nodes -->
+  <rect x="100" y="220" width="200" height="85" fill="#00AFF0" rx="5"/>
+  <text x="200" y="245" class="node-text" text-anchor="middle">1. 技術スタック</text>
+  <text x="200" y="270" class="small-text" text-anchor="middle">フロント・バック・DB</text>
+  <text x="200" y="292" class="small-text" text-anchor="middle">選定理由含む</text>
+
+  <rect x="260" y="220" width="200" height="85" fill="#00AFF0" rx="5"/>
+  <text x="360" y="245" class="node-text" text-anchor="middle">2. アーキテクチャ</text>
+  <text x="360" y="270" class="small-text" text-anchor="middle">3層構造</text>
+  <text x="360" y="292" class="small-text" text-anchor="middle">Mermaid図</text>
+
+  <rect x="470" y="220" width="100" height="85" fill="#00AFF0" rx="5"/>
+  <text x="520" y="245" class="node-text" text-anchor="middle">3. DB</text>
+  <text x="520" y="268" class="node-text" text-anchor="middle">スキーマ</text>
+  <text x="520" y="292" class="small-text" text-anchor="middle">ER図</text>
+
+  <rect x="580" y="220" width="200" height="85" fill="#00AFF0" rx="5"/>
+  <text x="680" y="245" class="node-text" text-anchor="middle">4. API仕様</text>
+  <text x="680" y="270" class="small-text" text-anchor="middle">エンドポイント</text>
+  <text x="680" y="292" class="small-text" text-anchor="middle">パラメータ</text>
+
+  <rect x="740" y="220" width="200" height="85" fill="#00AFF0" rx="5"/>
+  <text x="840" y="245" class="node-text" text-anchor="middle">5. 受入条件</text>
+  <text x="840" y="270" class="small-text" text-anchor="middle">Given-When-Then</text>
+  <text x="840" y="292" class="small-text" text-anchor="middle">BDD形式</text>
+
+  <!-- Level 2 nodes -->
+  <line x1="520" y1="305" x2="360" y2="360" stroke="#003399" stroke-width="3"/>
+  <line x1="520" y1="305" x2="680" y2="360" stroke="#003399" stroke-width="3"/>
+
+  <rect x="260" y="360" width="200" height="85" fill="#003399" rx="5"/>
+  <text x="360" y="380" class="node-text" text-anchor="middle">6. セキュリティ</text>
+  <text x="360" y="402" class="node-text" text-anchor="middle">設計</text>
+  <text x="360" y="425" class="small-text" text-anchor="middle">認証・認可</text>
+
+  <rect x="580" y="360" width="200" height="85" fill="#003399" rx="5"/>
+  <text x="680" y="380" class="node-text" text-anchor="middle">7. 技術的</text>
+  <text x="680" y="402" class="node-text" text-anchor="middle">決定事項</text>
+  <text x="680" y="425" class="small-text" text-anchor="middle">ライブラリ選定理由</text>
+
+  <!-- Bottom explanation -->
+  <rect x="100" y="480" width="840" height="260" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="520" y="520" class="explanation-title" text-anchor="middle">
+    なぜ設計ドキュメントが必要か
+  </text>
+
+  <text x="130" y="560" class="explanation-text">
+    • AIは忘れっぽい → セッション超えると設計意図を忘れる
+  </text>
+  <text x="130" y="595" class="explanation-text">
+    • Reward Hacking → 設計がないと手抜き実装
+  </text>
+  <text x="130" y="630" class="explanation-text">
+    • 設計書 = AIが何度でも参照できる道しるべ
+  </text>
+
+  <text x="520" y="675" class="effect-title" text-anchor="middle">
+    効果: AIが設計に従って実装、一貫性のある構造
+  </text>
+  <text x="520" y="710" class="effect-text" text-anchor="middle">
+    Spec-Driven Development: Code-First → Spec-First へ
+  </text>
+</svg>

@@ -1,0 +1,75 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .body-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .template-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 2; }
+      .header-box { fill: #00146E; }
+      .header-text { font-family: 'Noto Sans JP', sans-serif; font-size: 18px; font-weight: 700; fill: #FFFFFF; }
+      .benefit-box { fill: #E8F5E9; stroke: #228B22; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="title">タスク一覧テンプレート</text>
+
+  <!-- Table -->
+  <rect x="30" y="70" width="640" height="280" rx="8" class="template-box"/>
+
+  <!-- Table header -->
+  <rect x="30" y="70" width="640" height="40" rx="8" class="header-box"/>
+  <text x="70" y="95" class="header-text">Phase</text>
+  <text x="190" y="95" class="header-text">タスク名</text>
+  <text x="380" y="95" class="header-text">所要時間</text>
+  <text x="500" y="95" class="header-text">依存</text>
+  <text x="590" y="95" class="header-text">完了条件</text>
+
+  <!-- Example row 1 -->
+  <line x1="30" y1="130" x2="670" y2="130" stroke="#00AFF0" stroke-width="1"/>
+  <text x="45" y="155" class="body-text">P1</text>
+  <text x="140" y="155" class="body-text">DB設計</text>
+  <text x="385" y="155" class="body-text">1h</text>
+  <text x="505" y="155" class="body-text">なし</text>
+  <text x="595" y="155" class="note-text">ER図完成</text>
+
+  <!-- Example row 2 -->
+  <line x1="30" y1="170" x2="670" y2="170" stroke="#00AFF0" stroke-width="1"/>
+  <text x="45" y="195" class="body-text">P1</text>
+  <text x="140" y="195" class="body-text">マイグレーション</text>
+  <text x="385" y="195" class="body-text">30m</text>
+  <text x="505" y="195" class="body-text">1</text>
+  <text x="595" y="195" class="note-text">テーブル作成</text>
+
+  <!-- Example row 3 -->
+  <line x1="30" y1="210" x2="670" y2="210" stroke="#00AFF0" stroke-width="1"/>
+  <text x="45" y="235" class="body-text">P1</text>
+  <text x="140" y="235" class="body-text">認証API実装</text>
+  <text x="385" y="235" class="body-text">2h</text>
+  <text x="505" y="235" class="body-text">2</text>
+  <text x="595" y="235" class="note-text">テスト通過</text>
+
+  <!-- Example row 4 -->
+  <line x1="30" y1="250" x2="670" y2="250" stroke="#00AFF0" stroke-width="1"/>
+  <text x="45" y="275" class="body-text">P2</text>
+  <text x="140" y="275" class="body-text">タスクCRUD</text>
+  <text x="385" y="275" class="body-text">1.5h</text>
+  <text x="505" y="275" class="body-text">3</text>
+  <text x="595" y="275" class="note-text">E2Eテスト</text>
+
+  <!-- Example row 5 -->
+  <line x1="30" y1="290" x2="670" y2="290" stroke="#00AFF0" stroke-width="1"/>
+  <text x="45" y="315" class="body-text">P2</text>
+  <text x="140" y="315" class="body-text">検索機能</text>
+  <text x="385" y="315" class="body-text">1h</text>
+  <text x="505" y="315" class="body-text">4</text>
+  <text x="595" y="315" class="note-text">性能確認</text>
+
+  <!-- Benefits -->
+  <rect x="30" y="370" width="640" height="150" rx="8" class="benefit-box"/>
+  <text x="350" y="400" text-anchor="middle" class="heading">なぜテンプレート化が必要か</text>
+  <text x="50" y="430" class="body-text">✓ 曖昧な計画 → AIが勝手に解釈（手抜き）</text>
+  <text x="50" y="460" class="body-text">✓ 明確なフォーマット → AIが一貫した出力</text>
+  <text x="50" y="490" class="body-text">✓ 進捗管理が容易（未着手・進行中・完了）</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg viewBox="0 0 1400 660" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: 400; fill: #666666; }
+      .box { fill: #F0F8FF; stroke: #00146E; stroke-width: 3; }
+      .arrow { stroke: #00AFF0; stroke-width: 4; fill: none; marker-end: url(#arrowhead); }
+      .day-label { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; font-weight: 700; fill: #FFFFFF; }
+      .day1-bg { fill: #00AFF0; }
+      .day2-bg { fill: #00146E; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00AFF0" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="625" y="70" class="title" text-anchor="middle">2日間の学習構造</text>
+
+  <!-- Day 1 Section -->
+  <rect x="50" y="120" width="550" height="450" class="box" rx="15"/>
+  <rect x="50" y="120" width="550" height="80" class="day1-bg" rx="15"/>
+  <text x="325" y="170" class="day-label" text-anchor="middle">1日目：新規開発</text>
+
+  <!-- Day 1 Steps -->
+  <text x="80" y="240" class="heading">5-STEPワークフロー</text>
+
+  <text x="100" y="295" class="body">STEP1-2: 要件・設計</text>
+  <text x="120" y="335" class="note">Guardrails、曖昧さ排除</text>
+
+  <text x="100" y="385" class="body">STEP3: タスク分解</text>
+  <text x="120" y="425" class="note">AI思考言語化</text>
+
+  <text x="100" y="475" class="body">STEP4-5: 実装・品質</text>
+  <text x="120" y="515" class="note">TDD、レビュー、ドキュメント</text>
+
+  <!-- Day 2 Section -->
+  <rect x="650" y="120" width="550" height="450" class="box" rx="15"/>
+  <rect x="650" y="120" width="550" height="80" class="day2-bg" rx="15"/>
+  <text x="925" y="170" class="day-label" text-anchor="middle">2日目：保守開発</text>
+
+  <!-- Day 2 Steps -->
+  <text x="680" y="240" class="heading">4ステップワークフロー</text>
+
+  <text x="700" y="295" class="body">1. リバースエンジニアリング</text>
+  <text x="720" y="335" class="note">既存仕様読解</text>
+
+  <text x="700" y="385" class="body">2. フィットギャップ分析</text>
+  <text x="720" y="425" class="note">追加開発範囲明確化</text>
+
+  <text x="700" y="475" class="body">3. テストシナリオ作成</text>
+  <text x="720" y="515" class="note">デグレ防止</text>
+
+  <text x="700" y="555" class="body">4. 実装＋テストコード</text>
+
+  <!-- Connection Arrow -->
+  <path d="M 600 355 L 650 355" class="arrow"/>
+</svg>

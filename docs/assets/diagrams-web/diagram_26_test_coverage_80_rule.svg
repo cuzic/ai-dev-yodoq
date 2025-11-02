@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1600">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 90px; font-weight: bold; fill: #333333; }
+      .layer-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
+      .layer-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="500" y="40" class="title" text-anchor="middle">テストカバレッジ80%ルール（何をテストし、何をテストしないか）</text>
+
+  <!-- Test Coverage Pyramid -->
+  <!-- Layer 1: Must Test (80%) - Bottom -->
+  <path d="M 500 520 L 750 520 L 650 280 L 350 280 L 250 520 Z" fill="#00AFF0"/>
+  <text x="500" y="602" class="layer-title" text-anchor="middle">テストすべき領域（80%）</text>
+  <text x="500" y="693" class="layer-title" text-anchor="middle" font-size="26">(優先度: 高)</text>
+
+  <text x="500" y="784" class="layer-text" text-anchor="middle">1. ビジネスロジック（必須）</text>
+  <text x="500" y="855" class="layer-text" text-anchor="middle">2. 計算処理・データ変換</text>
+  <text x="500" y="926" class="layer-text" text-anchor="middle">3. バリデーション</text>
+  <text x="500" y="997" class="layer-text" text-anchor="middle">4. エッジケース・境界値</text>
+  <text x="500" y="1068" class="layer-text" text-anchor="middle">5. エラーハンドリング</text>
+  <text x="500" y="1139" class="layer-text" text-anchor="middle">6. セキュリティ関連処理</text>
+
+  <!-- Layer 2: Optional Test (20%) - Top -->
+  <path d="M 350 280 L 650 280 L 500 80 Z" fill="#E6E6E6"/>
+  <text x="500" y="200" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: #333333; text-anchor: middle;">
+    テスト不要領域（20%）
+  </text>
+  <text x="500" y="291" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; fill: #333333; text-anchor: middle;">
+    (優先度: 低)
+  </text>
+
+  <text x="500" y="440" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
+    Getter/Setter、定数、シンプルな代入
+  </text>
+  <text x="500" y="511" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
+    フレームワーク提供機能
+  </text>
+
+  <!-- Right side: Detailed breakdown -->
+  <rect x="780" y="80" width="200" height="440" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="880" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    詳細内訳
+  </text>
+
+  <!-- Must test details -->
+  <rect x="795" y="130" width="170" height="220" fill="#00AFF0" rx="5"/>
+  <text x="880" y="201" class="layer-title" text-anchor="middle" font-size="26">必須テスト</text>
+
+  <text x="805" y="292" class="layer-text" font-weight="bold">ビジネスロジック:</text>
+  <text x="815" y="363" class="layer-text">• 料金計算</text>
+  <text x="815" y="434" class="layer-text">• 在庫管理</text>
+  <text x="815" y="505" class="layer-text">• 注文処理</text>
+
+  <text x="805" y="576" class="layer-text" font-weight="bold">セキュリティ:</text>
+  <text x="815" y="647" class="layer-text">• 認証・認可</text>
+  <text x="815" y="718" class="layer-text">• 権限チェック</text>
+  <text x="815" y="789" class="layer-text">• 入力検証</text>
+
+  <text x="805" y="860" class="layer-text" font-weight="bold">エッジケース:</text>
+  <text x="815" y="931" class="layer-text">• null処理</text>
+  <text x="815" y="1002" class="layer-text">• 境界値（0, MAX）</text>
+
+  <!-- Optional test details -->
+  <rect x="795" y="365" width="170" height="145" fill="#CCCCCC" rx="5"/>
+  <text x="880" y="1081" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #333333; text-anchor: middle;">
+    テスト不要
+  </text>
+
+  <text x="805" y="1159" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; font-weight: bold;">
+    例:
+  </text>
+  <text x="815" y="1230" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    // Getter/Setter
+  </text>
+  <text x="815" y="1301" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333;">
+    getName() { return name; }
+  </text>
+
+  <text x="815" y="1372" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333;">
+    // 定数
+  </text>
+  <text x="815" y="1443" style="font-family: 'Noto Sans JP', sans-serif; font-size: 50px; fill: #333333;">
+    MAX_SIZE = 100;
+  </text>
+
+  <!-- Left side: Examples -->
+  <rect x="20" y="80" width="210" height="440" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="125" y="110" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    実装例
+  </text>
+
+  <!-- Good example -->
+  <rect x="35" y="130" width="180" height="220" fill="#00146E" rx="5"/>
+  <text x="125" y="201" class="layer-title" text-anchor="middle" font-size="26">✓ テスト必須</text>
+
+  <rect x="45" y="165" width="160" height="170" fill="#003399" rx="3"/>
+  <text x="55" y="292" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+    // ビジネスロジック
+  </text>
+  <text x="55" y="350" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+    calculateTotal(items) {
+  </text>
+  <text x="60" y="408" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+    if (items.length === 0)
+  </text>
+  <text x="65" y="466" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+    throw new Error();
+  </text>
+  <text x="60" y="524" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+    let total = 0;
+  </text>
+  <text x="60" y="582" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+    for (item of items) {
+  </text>
+  <text x="65" y="640" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+    total += item.price;
+  </text>
+  <text x="60" y="698" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+    }
+  </text>
+  <text x="60" y="756" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+    return total * 1.1;
+  </text>
+  <text x="55" y="814" style="font-family: 'Courier New', monospace; font-size: 44px; fill: white;">
+    }
+  </text>
+
+  <!-- Bad example -->
+  <rect x="35" y="365" width="180" height="145" fill="#CCCCCC" rx="5"/>
+  <text x="125" y="905" style="font-family: 'Noto Sans JP', sans-serif; font-size: 60px; font-weight: bold; fill: #333333; text-anchor: middle;">
+    ✗ テスト不要
+  </text>
+
+  <rect x="45" y="400" width="160" height="95" fill="#FFFFFF" rx="3"/>
+  <text x="55" y="983" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
+    // Getter/Setter
+  </text>
+  <text x="55" y="1041" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
+    getName() {
+  </text>
+  <text x="60" y="1099" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
+    return this.name;
+  </text>
+  <text x="55" y="1157" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
+    }
+  </text>
+  <text x="55" y="1215" style="font-family: 'Courier New', monospace; font-size: 44px; fill: #333333;">
+    // テスト価値なし
+  </text>
+
+  <!-- Bottom summary -->
+  <rect x="50" y="550" width="900" height="130" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="500" y="1236" style="font-family: 'Noto Sans JP', sans-serif; font-size: 74px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    80%ルールの実践
+  </text>
+
+  <text x="500" y="1333" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
+    1. ビジネスロジックを優先的にテスト → 本番障害防止の効果が高い
+  </text>
+  <text x="500" y="1417" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
+    2. Getter/Setterはテストしない → コスト削減、重要な箇所に集中
+  </text>
+  <text x="500" y="1501" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #333333; text-anchor: middle;">
+    3. JaCoCoで確認 → 80%未満の箇所を特定してAIに追加テスト依頼
+  </text>
+</svg>

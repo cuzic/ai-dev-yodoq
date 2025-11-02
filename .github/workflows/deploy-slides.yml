@@ -6,7 +6,9 @@ on:
       - main
     paths:
       - 'slides/**'
-      - 'diagrams/**'
+      - 'assets/diagrams/**'
+      - 'assets/diagrams-web/**'
+      - 'assets/themes/**'
       - '.github/workflows/deploy-slides.yml'
   workflow_dispatch:
 
@@ -40,9 +42,12 @@ jobs:
           cd slides
           marp all_slides.md --html --allow-local-files -o ../docs/index.html
 
-      - name: Copy diagrams
+      - name: Copy assets
         run: |
-          cp -r diagrams docs/
+          mkdir -p docs/assets
+          cp -r assets/diagrams docs/assets/
+          cp -r assets/diagrams-web docs/assets/
+          cp -r assets/themes docs/assets/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

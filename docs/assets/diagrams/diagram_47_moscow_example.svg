@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1250 610">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 56px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 34px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: 400; fill: #666666; }
+      .must-box { fill: #FFE6E6; stroke: #DC143C; stroke-width: 3; }
+      .should-box { fill: #FFF4E6; stroke: #FF8C00; stroke-width: 3; }
+      .could-box { fill: #FFFACD; stroke: #FFD700; stroke-width: 3; }
+      .wont-box { fill: #F0F0F0; stroke: #999999; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="625" y="60" class="title" text-anchor="middle">MoSCoW実践例：ToDoアプリ</text>
+
+  <!-- Must Have - Phase 1 (MVP) -->
+  <rect x="50" y="100" width="560" height="220" class="must-box" rx="8"/>
+  <text x="330" y="145" class="heading" text-anchor="middle" fill="#DC143C">Must（必須）- Phase 1 (MVP)</text>
+  <text x="330" y="185" class="note" text-anchor="middle">プロダクト成立に不可欠な機能</text>
+
+  <text x="80" y="230" class="body">✅ タスク追加</text>
+  <text x="80" y="270" class="body">✅ タスク一覧表示</text>
+  <text x="80" y="310" class="body">✅ タスク完了/未完了切替</text>
+
+  <!-- Should Have - Phase 2 -->
+  <rect x="640" y="100" width="560" height="220" class="should-box" rx="8"/>
+  <text x="920" y="145" class="heading" text-anchor="middle" fill="#FF8C00">Should（重要）- Phase 2</text>
+  <text x="920" y="185" class="note" text-anchor="middle">あるべきだが、なくても動く</text>
+
+  <text x="670" y="230" class="body">📝 タスク編集</text>
+  <text x="670" y="270" class="body">🗑️ タスク削除</text>
+  <text x="670" y="310" class="body">📅 期限設定</text>
+
+  <!-- Could Have - Phase 3 -->
+  <rect x="50" y="340" width="560" height="220" class="could-box" rx="8"/>
+  <text x="330" y="385" class="heading" text-anchor="middle" fill="#CC9900">Could（あれば良い）- Phase 3</text>
+  <text x="330" y="425" class="note" text-anchor="middle">あると嬉しい機能</text>
+
+  <text x="80" y="470" class="body">🏷️ カテゴリ分類</text>
+  <text x="80" y="510" class="body">⭐ 優先度設定</text>
+  <text x="80" y="550" class="body">🔔 通知機能</text>
+
+  <!-- Won't Have -->
+  <rect x="640" y="340" width="560" height="220" class="wont-box" rx="8"/>
+  <text x="920" y="385" class="heading" text-anchor="middle" fill="#666666">Won't（今回はやらない）</text>
+  <text x="920" y="425" class="note" text-anchor="middle">将来的には考える、スコープ外</text>
+
+  <text x="670" y="470" class="body">👥 チーム共有機能</text>
+  <text x="670" y="510" class="body">📊 統計レポート</text>
+  <text x="670" y="550" class="body">🔄 定期タスク自動生成</text>
+
+  <!-- Bottom Note -->
+  <rect x="50" y="570" width="1150" height="35" fill="#F0F8FF" stroke="#00AFF0" stroke-width="2" rx="5"/>
+  <text x="625" y="595" class="body" text-anchor="middle" font-weight="700">💡 Mustは全体の20-30%に絞る→段階的リリースで開発期間短縮</text>
+</svg>

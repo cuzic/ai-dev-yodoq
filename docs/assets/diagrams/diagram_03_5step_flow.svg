@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350 610">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 48px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+      }
+      .step-number {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        fill: #FFFFFF;
+        text-anchor: middle;
+      }
+      .step-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+      }
+      .step-desc {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        fill: #333333;
+        text-anchor: middle;
+      }
+      .step-box {
+        fill: #F0F8FF;
+        stroke: #00146E;
+        stroke-width: 3;
+        rx: 10;
+      }
+      .step-circle {
+        fill: #00AFF0;
+        stroke: #00146E;
+        stroke-width: 3;
+      }
+      .arrow {
+        stroke: #00146E;
+        stroke-width: 4;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+      .effect-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        fill: #00AFF0;
+        text-anchor: middle;
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#00146E" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1350" height="610" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="625" y="50" class="title">5-STEPフロー</text>
+
+  <!-- STEP 1: Requirements -->
+  <rect x="30" y="100" width="200" height="200" class="step-box"/>
+  <circle cx="130" cy="140" r="28" class="step-circle"/>
+  <text x="130" y="150" class="step-number">1</text>
+  <text x="130" y="190" class="step-title">要件定義</text>
+  <text x="130" y="220" class="step-desc">何を作るか</text>
+  <text x="130" y="245" class="step-desc">明確化</text>
+  <text x="130" y="270" class="step-desc">Guardrails</text>
+
+  <!-- Arrow 1→2 -->
+  <path d="M 230 200 L 270 200" class="arrow"/>
+
+  <!-- STEP 2: Design -->
+  <rect x="280" y="100" width="200" height="200" class="step-box"/>
+  <circle cx="380" cy="140" r="28" class="step-circle"/>
+  <text x="380" y="150" class="step-number">2</text>
+  <text x="380" y="190" class="step-title">設計</text>
+  <text x="380" y="220" class="step-desc">どう作るか</text>
+  <text x="380" y="245" class="step-desc">定義</text>
+  <text x="380" y="270" class="step-desc">外部メモリ</text>
+
+  <!-- Arrow 2→3 -->
+  <path d="M 480 200 L 520 200" class="arrow"/>
+
+  <!-- STEP 3: Task Breakdown -->
+  <rect x="530" y="100" width="200" height="200" class="step-box"/>
+  <circle cx="630" cy="140" r="28" class="step-circle"/>
+  <text x="630" y="150" class="step-number">3</text>
+  <text x="630" y="190" class="step-title">タスク分解</text>
+  <text x="630" y="220" class="step-desc">全体を</text>
+  <text x="630" y="245" class="step-desc">小さく分割</text>
+  <text x="630" y="270" class="step-desc">忘れっぽさ対策</text>
+
+  <!-- Arrow 3→4 -->
+  <path d="M 730 200 L 770 200" class="arrow"/>
+
+  <!-- STEP 4: Implementation -->
+  <rect x="780" y="100" width="200" height="200" class="step-box"/>
+  <circle cx="880" cy="140" r="28" class="step-circle"/>
+  <text x="880" y="150" class="step-number">4</text>
+  <text x="880" y="190" class="step-title">実装</text>
+  <text x="880" y="220" class="step-desc">小さく作る</text>
+  <text x="880" y="245" class="step-desc">TDD</text>
+  <text x="880" y="270" class="step-desc">AI自己レビュー</text>
+
+  <!-- Arrow 4→5 -->
+  <path d="M 980 200 L 1020 200" class="arrow"/>
+
+  <!-- STEP 5: Quality & Docs -->
+  <rect x="1020" y="100" width="200" height="200" class="step-box"/>
+  <circle cx="1120" cy="140" r="28" class="step-circle"/>
+  <text x="1120" y="150" class="step-number">5</text>
+  <text x="1120" y="190" class="step-title">品質担保</text>
+  <text x="1120" y="215" class="step-title">&amp;</text>
+  <text x="1120" y="240" class="step-title">ドキュメント</text>
+  <text x="1120" y="270" class="step-desc">Trust but Verify</text>
+
+  <!-- Effects banner -->
+  <rect x="150" y="360" width="950" height="80" style="fill: #F0F8FF; stroke: #00AFF0; stroke-width: 3; rx: 10;"/>
+  <text x="625" y="385" class="step-title" style="fill: #00AFF0;">効果</text>
+  <text x="625" y="420" class="effect-text" style="font-size: 28px;">手戻り防止 + 品質保証 + 開発期間短縮</text>
+
+  <!-- Key principles -->
+  <text x="625" y="500" class="step-desc" style="font-size: 22px; font-weight: bold;">各ステップを飛ばさない / 急がば回れ / AIの制約を理解して対処</text>
+</svg>

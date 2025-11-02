@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+      }
+      .category-label {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        fill: #FFFFFF;
+        text-anchor: middle;
+      }
+      .category-desc {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        fill: #FFFFFF;
+        text-anchor: middle;
+      }
+      .phase-label {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        fill: #FFFFFF;
+        text-anchor: middle;
+      }
+      .box {
+        stroke: #00146E;
+        stroke-width: 3;
+        rx: 8;
+      }
+      .must-box { fill: #228B22; }
+      .should-box { fill: #00AFF0; }
+      .could-box { fill: #FF8C00; }
+      .wont-box { fill: #999999; }
+      .arrow {
+        stroke: #666666;
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="425" y="40" class="title">MoSCoW優先順位付け</text>
+
+  <!-- Must Have -->
+  <rect x="50" y="80" width="750" height="90" class="box must-box"/>
+  <text x="425" y="110" class="category-label">Must Have（必須）</text>
+  <text x="425" y="140" class="category-desc">プロダクト成立に不可欠な機能</text>
+  <text x="425" y="163" class="phase-label">→ Phase 1 (MVP) | 全体の20-30%</text>
+
+  <!-- Should Have -->
+  <rect x="50" y="190" width="750" height="80" class="box should-box"/>
+  <text x="425" y="220" class="category-label">Should Have（重要）</text>
+  <text x="425" y="250" class="category-desc">あるべきだが、なくても動く → Phase 2</text>
+
+  <!-- Could Have -->
+  <rect x="50" y="290" width="750" height="80" class="box could-box"/>
+  <text x="425" y="320" class="category-label">Could Have（あれば良い）</text>
+  <text x="425" y="350" class="category-desc">あると嬉しい → Phase 3</text>
+
+  <!-- Won't Have -->
+  <rect x="50" y="390" width="750" height="80" class="box wont-box"/>
+  <text x="425" y="420" class="category-label">Won't Have（今回はやらない）</text>
+  <text x="425" y="450" class="category-desc">将来的には考える、スコープ外</text>
+
+  <!-- Bottom note -->
+  <text x="425" y="500" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #00146E; text-anchor: middle; font-weight: bold;">段階的リリースで開発期間を短縮</text>
+</svg>

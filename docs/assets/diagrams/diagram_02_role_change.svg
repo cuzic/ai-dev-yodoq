@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+      }
+      .section-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+      }
+      .role-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 18px;
+        fill: #333333;
+        text-anchor: start;
+      }
+      .highlight-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #00AFF0;
+        text-anchor: middle;
+      }
+      .box {
+        fill: #F0F8FF;
+        stroke: #00146E;
+        stroke-width: 2;
+        rx: 8;
+      }
+      .arrow-large {
+        stroke: #00AFF0;
+        stroke-width: 4;
+        fill: none;
+        marker-end: url(#arrowhead-large);
+      }
+      .icon-large {
+        font-size: 48px;
+        text-anchor: middle;
+      }
+    </style>
+    <marker id="arrowhead-large" markerWidth="12" markerHeight="12" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#00AFF0" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="540" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="350" y="40" class="title">役割の変化</text>
+
+  <!-- Before: 従来 (Left side) -->
+  <rect x="30" y="80" width="280" height="180" class="box"/>
+  <text x="170" y="110" class="section-title">従来</text>
+
+  <!-- Driver icon -->
+  <text x="170" y="165" class="icon-large">🚗</text>
+
+  <text x="170" y="200" class="highlight-text">運転手</text>
+  <text x="50" y="230" class="role-text">• コード1行ずつ</text>
+  <text x="50" y="250" class="role-text">• 全実装詳細把握</text>
+
+  <!-- Large arrow -->
+  <path d="M 320 170 L 380 170" class="arrow-large"/>
+
+  <!-- After: AI時代 (Right side) -->
+  <rect x="390" y="80" width="280" height="180" class="box"/>
+  <text x="530" y="110" class="section-title">AI時代</text>
+
+  <!-- Navigator icon -->
+  <text x="530" y="165" class="icon-large">🧭</text>
+
+  <text x="530" y="200" class="highlight-text">ナビゲーター</text>
+  <text x="410" y="230" class="role-text">• 方向指示</text>
+  <text x="410" y="250" class="role-text">• AIが実装</text>
+
+  <!-- Roles breakdown -->
+  <text x="350" y="310" class="section-title">役割分担</text>
+
+  <!-- Human role -->
+  <rect x="30" y="330" width="310" height="120" class="box"/>
+  <text x="40" y="355" class="highlight-text" style="text-anchor: start;">👤 人間</text>
+  <text x="50" y="385" class="role-text">• ビジネス要件</text>
+  <text x="50" y="408" class="role-text">• 設計判断</text>
+  <text x="50" y="431" class="role-text">• 品質・セキュリティ</text>
+
+  <!-- AI role -->
+  <rect x="360" y="330" width="310" height="120" class="box"/>
+  <text x="370" y="355" class="highlight-text" style="text-anchor: start;">🤖 AI</text>
+  <text x="380" y="385" class="role-text">• コード生成</text>
+  <text x="380" y="408" class="role-text">• テスト作成</text>
+  <text x="380" y="431" class="role-text">• ドキュメント化</text>
+
+  <!-- Effect -->
+  <text x="350" y="490" class="section-title" style="fill: #00AFF0;">→ 本質的価値創造に集中</text>
+</svg>

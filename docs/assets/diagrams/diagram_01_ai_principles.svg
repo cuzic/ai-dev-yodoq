@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+      }
+      .principle-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+      }
+      .principle-subtitle {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
+        fill: #333333;
+        text-anchor: middle;
+      }
+      .center-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        fill: #FFFFFF;
+        text-anchor: middle;
+      }
+      .principle-box {
+        fill: #F0F8FF;
+        stroke: #00146E;
+        stroke-width: 3;
+        rx: 10;
+      }
+      .center-circle {
+        fill: #00AFF0;
+        stroke: #00146E;
+        stroke-width: 3;
+      }
+      .arrow {
+        stroke: #00146E;
+        stroke-width: 3;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+      .icon-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 36px;
+        text-anchor: middle;
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00146E" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="540" fill="#FFFFFF"/>
+
+  <!-- Center circle: AI活用 -->
+  <circle cx="350" cy="270" r="70" class="center-circle"/>
+  <text x="350" y="265" class="center-text">AI活用</text>
+  <text x="350" y="290" class="center-text" style="font-size: 20px;">成功の鍵</text>
+
+  <!-- Principle 1: Jagged Intelligence (Top) -->
+  <rect x="250" y="60" width="200" height="90" class="principle-box"/>
+  <text x="350" y="90" class="principle-title">Jagged</text>
+  <text x="350" y="115" class="principle-title">Intelligence</text>
+  <text x="350" y="138" class="principle-subtitle">得意/苦手を理解</text>
+
+  <!-- Arrow from Principle 1 to center -->
+  <path d="M 350 150 L 350 200" class="arrow"/>
+
+  <!-- Principle 2: Trust but Verify (Bottom Left) -->
+  <rect x="60" y="390" width="200" height="90" class="principle-box"/>
+  <text x="160" y="420" class="principle-title">Trust but</text>
+  <text x="160" y="445" class="principle-title">Verify</text>
+  <text x="160" y="468" class="principle-subtitle">検証を忘れない</text>
+
+  <!-- Arrow from Principle 2 to center -->
+  <path d="M 220 390 L 300 320" class="arrow"/>
+
+  <!-- Principle 3: Guardrails (Bottom Right) -->
+  <rect x="440" y="390" width="200" height="90" class="principle-box"/>
+  <text x="540" y="420" class="principle-title">Guardrails</text>
+  <text x="540" y="448" class="principle-subtitle">適切な制約設定</text>
+  <text x="540" y="468" class="principle-subtitle">手戻り防止</text>
+
+  <!-- Arrow from Principle 3 to center -->
+  <path d="M 480 390 L 400 320" class="arrow"/>
+
+  <!-- Icons for each principle -->
+  <text x="220" y="95" class="icon-text">⚡</text>
+  <text x="30" y="425" class="icon-text">✓</text>
+  <text x="620" y="425" class="icon-text">🛡️</text>
+</svg>

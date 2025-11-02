@@ -1,0 +1,44 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .body-text { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .bad-box { fill: #FFE4E1; stroke: #DC143C; stroke-width: 2; }
+      .good-box { fill: #E8F5E9; stroke: #228B22; stroke-width: 2; }
+      .cycle-box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 2; }
+      .arrow { fill: none; stroke: #666666; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="40" text-anchor="middle" class="title">プロンプトパターン</text>
+
+  <!-- Bad example -->
+  <rect x="30" y="70" width="640" height="90" rx="8" class="bad-box"/>
+  <text x="50" y="100" class="heading">❌ 悪い指示（曖昧）</text>
+  <text x="50" y="135" class="body-text">「ログイン機能を作って」</text>
+
+  <!-- Problems -->
+  <rect x="30" y="175" width="640" height="80" rx="8" class="bad-box"/>
+  <text x="50" y="205" class="note-text">問題：セキュリティ仕様が不明、バリデーションなし、手抜き実装の可能性</text>
+  <text x="50" y="230" class="note-text">結果：平文パスワード、SQL injection脆弱性、エラーハンドリング不足</text>
+
+  <!-- Good example -->
+  <rect x="30" y="275" width="640" height="220" rx="8" class="good-box"/>
+  <text x="50" y="305" class="heading">✅ 良い指示（具体的・段階的）</text>
+  <text x="50" y="340" class="body-text">「ログイン機能を実装。以下の制約を守って：</text>
+  <text x="70" y="370" class="body-text">• パスワードはbcryptでハッシュ化</text>
+  <text x="70" y="395" class="body-text">• APIキーは環境変数で管理</text>
+  <text x="70" y="420" class="body-text">• バリデーション（@Valid）必須</text>
+  <text x="70" y="445" class="body-text">• レート制限実装</text>
+  <text x="70" y="470" class="body-text">1機能ずつ進めて、確認したいことは質問して」</text>
+
+  <!-- Cycle -->
+  <rect x="30" y="510" width="640" height="25" rx="4" class="cycle-box"/>
+  <text x="350" y="528" text-anchor="middle" class="note-text">指示 → 実装 → AI自己レビュー → 修正 → テスト → コミット</text>
+</svg>

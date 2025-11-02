@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 31px;
+        font-weight: bold;
+        fill: #00146E;
+      }
+      .category-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        fill: #FFFFFF;
+        text-anchor: middle;
+      }
+      .category-subtitle {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
+        fill: #FFFFFF;
+        text-anchor: middle;
+      }
+      .example-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 15px;
+        fill: #FFFFFF;
+      }
+      .happy-box { fill: #228B22; stroke: #00146E; stroke-width: 3; rx: 10; }
+      .error-box { fill: #DC143C; stroke: #00146E; stroke-width: 3; rx: 10; }
+      .boundary-box { fill: #FF8C00; stroke: #00146E; stroke-width: 3; rx: 10; }
+      .exception-box { fill: #9370DB; stroke: #00146E; stroke-width: 3; rx: 10; }
+      .number-circle {
+        fill: #FFFFFF;
+        stroke: #00146E;
+        stroke-width: 2;
+      }
+      .number-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #00146E;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="20" y="35" class="title">テストシナリオの4分類</text>
+
+  <!-- Category 1: Happy Path -->
+  <rect x="50" y="70" width="300" height="180" class="happy-box"/>
+  <circle cx="80" cy="100" r="18" class="number-circle"/>
+  <text x="80" y="100" class="number-text">1</text>
+  <text x="200" y="105" class="category-title">正常系（Happy Path）</text>
+  <text x="200" y="133" class="category-subtitle">想定通りの入力と結果</text>
+
+  <text x="70" y="165" class="example-text" style="font-weight: bold;">例: ログイン機能</text>
+  <text x="80" y="188" class="example-text">• 正しいメール・パスワード</text>
+  <text x="80" y="210" class="example-text">• トークン発行、200 OK</text>
+  <text x="80" y="232" class="example-text">• ダッシュボードへ遷移</text>
+
+  <!-- Category 2: Error Handling -->
+  <rect x="370" y="70" width="300" height="180" class="error-box"/>
+  <circle cx="400" cy="100" r="18" class="number-circle"/>
+  <text x="400" y="100" class="number-text">2</text>
+  <text x="520" y="105" class="category-title">異常系（Error Handling）</text>
+  <text x="520" y="133" class="category-subtitle">不正入力・エラー処理</text>
+
+  <text x="390" y="165" class="example-text" style="font-weight: bold;">例: ログイン機能</text>
+  <text x="400" y="188" class="example-text">• 間違ったパスワード</text>
+  <text x="400" y="210" class="example-text">• 401 Unauthorized</text>
+  <text x="400" y="232" class="example-text">• 5回失敗でアカウントロック</text>
+
+  <!-- Category 3: Boundary -->
+  <rect x="50" y="270" width="300" height="180" class="boundary-box"/>
+  <circle cx="80" cy="300" r="18" class="number-circle"/>
+  <text x="80" y="300" class="number-text">3</text>
+  <text x="200" y="305" class="category-title">境界値（Boundary）</text>
+  <text x="200" y="333" class="category-subtitle">0、MAX、MIN値の確認</text>
+
+  <text x="70" y="365" class="example-text" style="font-weight: bold;">例: パスワード長チェック</text>
+  <text x="80" y="388" class="example-text">• 7文字（NG: 最小8文字）</text>
+  <text x="80" y="410" class="example-text">• 8文字（OK: 境界値）</text>
+  <text x="80" y="432" class="example-text">• 255文字（OK: 最大値）</text>
+
+  <!-- Category 4: Exception -->
+  <rect x="370" y="270" width="300" height="180" class="exception-box"/>
+  <circle cx="400" cy="300" r="18" class="number-circle"/>
+  <text x="400" y="300" class="number-text">4</text>
+  <text x="520" y="305" class="category-title">例外処理（Exception）</text>
+  <text x="520" y="333" class="category-subtitle">システムエラー・障害</text>
+
+  <text x="390" y="365" class="example-text" style="font-weight: bold;">例: 外部依存エラー</text>
+  <text x="400" y="388" class="example-text">• DB接続エラー</text>
+  <text x="400" y="410" class="example-text">• ネットワークタイムアウト</text>
+  <text x="400" y="432" class="example-text">• 適切なエラーメッセージ</text>
+
+  <!-- Bottom benefits -->
+  <rect x="50" y="470" width="600" height="55" style="fill: #F0F8FF; stroke: #00146E; stroke-width: 3; rx: 8;"/>
+  <text x="350" y="493" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px; fill: #00146E; text-anchor: middle; font-weight: bold;">効果：全観点網羅で本番障害を大幅削減</text>
+  <text x="350" y="516" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #333333; text-anchor: middle;">AIはテストの網羅性判断が苦手→4分類で明確な指針（Guardrails）</text>
+</svg>

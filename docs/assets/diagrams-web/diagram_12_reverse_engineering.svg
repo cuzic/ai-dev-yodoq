@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 72px; font-weight: bold; fill: #333333; }
+      .step-title { font-family: 'Noto Sans JP', sans-serif; font-size: 64px; font-weight: bold; fill: white; }
+      .step-subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: bold; fill: white; }
+      .step-text { font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: white; }
+      .note-text { font-family: 'Noto Sans JP', sans-serif; font-size: 44px; fill: #333333; }
+      .label { font-family: 'Noto Sans JP', sans-serif; font-size: 52px; fill: #333333; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="700" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="800" y="60" class="title" text-anchor="middle">リバースエンジニアリングのプロセス</text>
+
+  <!-- Step 1: Existing Code -->
+  <rect x="30" y="100" width="220" height="350" fill="#E6E6E6" stroke="#333333" stroke-width="3" rx="10"/>
+  <text x="140" y="140" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">1. 既存コード</text>
+
+  <text x="50" y="190" class="label">入力:</text>
+  <text x="60" y="240" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #333;">• ソースコード</text>
+  <text x="60" y="290" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #333;">• テーブル定義</text>
+  <text x="60" y="340" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #333;">• 設定ファイル</text>
+  <text x="60" y="390" style="font-family: 'Noto Sans JP', sans-serif; font-size: 48px; fill: #333;">• 既存ドキュメント</text>
+
+  <!-- Arrow -->
+  <line x1="250" y1="275" x2="290" y2="275" stroke="#00146E" stroke-width="4"/>
+  <polygon points="290,275 280,270 280,280" fill="#00146E"/>
+
+  <!-- Step 2: Claude Code -->
+  <rect x="290" y="100" width="220" height="350" fill="#00146E" rx="10"/>
+  <text x="400" y="140" class="step-title" text-anchor="middle">2. Claude Code</text>
+  <text x="400" y="168" class="step-subtitle" text-anchor="middle">読み込み</text>
+
+  <text x="310" y="220" class="step-text">プロジェクト全体:</text>
+  <text x="320" y="270" class="step-text">• スキャン</text>
+  <text x="320" y="320" class="step-text">• .claudeignore で除外</text>
+  <text x="320" y="370" class="step-text">• トークン最適化</text>
+
+  <!-- Arrow -->
+  <line x1="510" y1="275" x2="550" y2="275" stroke="#00AFF0" stroke-width="4"/>
+  <polygon points="550,275 540,270 540,280" fill="#00AFF0"/>
+
+  <!-- Step 3: AI Analysis -->
+  <rect x="550" y="100" width="220" height="350" fill="#00AFF0" rx="10"/>
+  <text x="660" y="140" class="step-title" text-anchor="middle">3. AI分析</text>
+
+  <text x="570" y="200" class="step-text">処理:</text>
+  <text x="580" y="250" class="step-text">• 構造理解</text>
+  <text x="580" y="300" class="step-text">• パターン抽出</text>
+  <text x="580" y="350" class="step-text">• 依存関係把握</text>
+  <text x="580" y="400" class="step-text">• 技術スタック識別</text>
+
+  <!-- Arrow -->
+  <line x1="770" y1="275" x2="810" y2="275" stroke="#003399" stroke-width="4"/>
+  <polygon points="810,275 800,270 800,280" fill="#003399"/>
+
+  <!-- Step 4: Document Generation -->
+  <rect x="810" y="100" width="220" height="350" fill="#003399" rx="10"/>
+  <text x="920" y="140" class="step-title" text-anchor="middle">4. ドキュメント</text>
+  <text x="920" y="168" class="step-subtitle" text-anchor="middle">生成</text>
+
+  <text x="830" y="220" class="step-text">出力:</text>
+  <text x="840" y="270" class="step-text">• architecture.md</text>
+  <text x="840" y="320" class="step-text">• requirements.md</text>
+  <text x="840" y="370" class="step-text">• OpenAPI仕様</text>
+  <text x="840" y="420" class="step-text" font-weight="bold">= Guardrails構築</text>
+
+  <!-- Arrow -->
+  <line x1="1030" y1="275" x2="1070" y2="275" stroke="#00146E" stroke-width="4"/>
+  <polygon points="1070,275 1060,270 1060,280" fill="#00146E"/>
+
+  <!-- Step 5: New Feature -->
+  <rect x="1070" y="100" width="480" height="350" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="1310" y="140" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">5. 新機能追加</text>
+
+  <text x="1090" y="200" class="label">仕様に基づいて実装:</text>
+  <text x="1100" y="250" style="font-family: 'Noto Sans JP', sans-serif; font-size: 46px; fill: #333;">• 既存仕様を理解</text>
+  <text x="1100" y="300" style="font-family: 'Noto Sans JP', sans-serif; font-size: 46px; fill: #333;">• デグレ防止テスト作成</text>
+  <text x="1100" y="350" style="font-family: 'Noto Sans JP', sans-serif; font-size: 46px; fill: #333;">• 整合性のある実装</text>
+  <text x="1100" y="400" style="font-family: 'Noto Sans JP', sans-serif; font-size: 46px; fill: #333;">• 既存パターンに従う</text>
+
+  <!-- Bottom note -->
+  <rect x="30" y="490" width="1520" height="150" fill="#FFFFFF" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="790" y="545" style="font-family: 'Noto Sans JP', sans-serif; font-size: 64px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    ドキュメント化 = AIの外部メモリ構築 = 知見の蓄積
+  </text>
+  <text x="790" y="615" style="font-family: 'Noto Sans JP', sans-serif; font-size: 52px; fill: #333333; text-anchor: middle;">
+    仕様書がないシステムでも、リバースエンジニアリングでGuardrailsを構築できる
+  </text>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1100">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 81px; font-weight: bold; fill: #333333; }
+      .center-text { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; text-anchor: middle; }
+      .layer-title { font-family: 'Noto Sans JP', sans-serif; font-size: 70px; font-weight: bold; fill: white; }
+      .layer-text { font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: white; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="400" y="35" class="title" text-anchor="middle">影響範囲調査の可視化</text>
+
+  <!-- Center: Change Point -->
+  <circle cx="400" cy="400" r="80" fill="#00146E"/>
+  <text x="400" y="385" class="center-text">変更箇所</text>
+  <text x="400" y="476" class="center-text" font-size="26">顧客テーブルに</text>
+  <text x="400" y="510" class="center-text" font-size="26">電話番号追加</text>
+
+  <!-- Layer 1: File Layer (Top) -->
+  <path d="M 400 100 L 550 200 L 500 280 L 250 280 L 200 200 Z" fill="#00AFF0" opacity="0.9"/>
+  <text x="400" y="170" class="layer-title" text-anchor="middle">ファイル層</text>
+  <text x="240" y="210" class="layer-text">• CustomerController.java</text>
+  <text x="240" y="281" class="layer-text">• CustomerService.java</text>
+  <text x="240" y="352" class="layer-text">• CustomerRepository.java</text>
+  <text x="240" y="423" class="layer-text">• Customer.java (Entity)</text>
+
+  <!-- Arrow from center to file layer -->
+  <line x1="400" y1="320" x2="400" y2="280" stroke="#00AFF0" stroke-width="4"/>
+  <polygon points="400,280 395,290 405,290" fill="#00AFF0"/>
+
+  <!-- Layer 2: Database Layer (Right) -->
+  <path d="M 480 400 L 700 350 L 720 500 L 650 600 L 500 550 Z" fill="#003399" opacity="0.9"/>
+  <text x="620" y="420" class="layer-title" text-anchor="middle">DB層</text>
+  <text x="560" y="511" class="layer-text">• customersテーブル</text>
+  <text x="560" y="582" class="layer-text">  ALTER TABLE</text>
+  <text x="560" y="653" class="layer-text">  ADD phone VARCHAR</text>
+  <text x="560" y="724" class="layer-text">• マイグレーション</text>
+  <text x="560" y="795" class="layer-text">  スクリプト作成</text>
+
+  <!-- Arrow from center to DB layer -->
+  <line x1="480" y1="400" x2="560" y2="430" stroke="#003399" stroke-width="4"/>
+  <polygon points="560,430 550,425 555,435" fill="#003399"/>
+
+  <!-- Layer 3: Function Layer (Bottom) -->
+  <path d="M 400 480 L 550 600 L 500 680 L 250 680 L 200 600 Z" fill="#66D9FF" opacity="0.9"/>
+  <text x="400" y="601" class="layer-title" text-anchor="middle">機能層</text>
+  <text x="240" y="610" class="layer-text">• 顧客登録機能</text>
+  <text x="240" y="681" class="layer-text">• 顧客更新機能</text>
+  <text x="240" y="752" class="layer-text">• 顧客一覧表示</text>
+  <text x="240" y="823" class="layer-text">• 顧客検索機能</text>
+
+  <!-- Arrow from center to function layer -->
+  <line x1="400" y1="480" x2="400" y2="560" stroke="#66D9FF" stroke-width="4"/>
+  <polygon points="400,560 395,550 405,550" fill="#66D9FF"/>
+
+  <!-- Layer 4: Test Layer (Left) -->
+  <path d="M 320 400 L 80 350 L 60 500 L 130 600 L 280 550 Z" fill="#4D6DB3" opacity="0.9"/>
+  <text x="180" y="420" class="layer-title" text-anchor="middle">テスト層</text>
+  <text x="100" y="511" class="layer-text">• 単体テスト</text>
+  <text x="100" y="582" class="layer-text">  CustomerServiceTest</text>
+  <text x="100" y="653" class="layer-text">• 統合テスト</text>
+  <text x="100" y="724" class="layer-text">  CustomerControllerTest</text>
+  <text x="100" y="795" class="layer-text">• E2Eテスト</text>
+  <text x="100" y="866" class="layer-text">  customer_flow_test</text>
+
+  <!-- Arrow from center to test layer -->
+  <line x1="320" y1="400" x2="230" y2="430" stroke="#4D6DB3" stroke-width="4"/>
+  <polygon points="230,430 240,425 235,435" fill="#4D6DB3"/>
+
+  <!-- Bottom note -->
+  <rect x="50" y="920" width="700" height="60" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="400" y="950" style="font-family: 'Noto Sans JP', sans-serif; font-size: 70px; fill: #00146E; text-anchor: middle; font-weight: bold;">
+    影響範囲を事前に把握 → デグレ防止、テスト計画立案
+  </text>
+  <text x="400" y="1041" style="font-family: 'Noto Sans JP', sans-serif; font-size: 54px; fill: #333333; text-anchor: middle;">
+    AIへの指示: 「この変更の影響範囲を調査して」
+  </text>
+</svg>

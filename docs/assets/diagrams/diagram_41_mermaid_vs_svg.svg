@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 540">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 24px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .box { fill: #F0F8FF; stroke: #00AFF0; stroke-width: 2; }
+      .mermaid-box { fill: #E8F4FF; stroke: #00146E; stroke-width: 2; }
+      .svg-box { fill: #FFF4E6; stroke: #FF8C00; stroke-width: 2; }
+      .arrow { stroke: #333333; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333333" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="35" class="title" text-anchor="middle">Mermaid vs SVG 使い分け</text>
+
+  <!-- Mermaid Section -->
+  <rect x="30" y="70" width="300" height="200" class="mermaid-box" rx="5"/>
+  <text x="180" y="100" class="heading" text-anchor="middle">Mermaid記法</text>
+
+  <!-- Mermaid characteristics -->
+  <text x="50" y="135" class="body">📝 テキストで図描画</text>
+  <text x="50" y="165" class="body">📦 Git管理可能</text>
+  <text x="50" y="195" class="body">🤖 AI自動生成</text>
+  <text x="50" y="225" class="body">👁️ GitHub/VS Code表示</text>
+
+  <text x="180" y="255" class="note" text-anchor="middle">バージョン管理・コラボレーション</text>
+
+  <!-- SVG Section -->
+  <rect x="370" y="70" width="300" height="200" class="svg-box" rx="5"/>
+  <text x="520" y="100" class="heading" text-anchor="middle">SVG生成</text>
+
+  <!-- SVG characteristics -->
+  <text x="390" y="135" class="body">✨ "SVGで書いて"</text>
+  <text x="390" y="165" class="body">⚡ AI即生成</text>
+  <text x="390" y="195" class="body">🎨 即可視化</text>
+  <text x="390" y="225" class="body">📊 プレゼン最適</text>
+
+  <text x="520" y="255" class="note" text-anchor="middle">迅速な可視化・デザイン自由度</text>
+
+  <!-- Use Cases -->
+  <rect x="30" y="300" width="300" height="180" class="box" rx="5"/>
+  <text x="180" y="330" class="heading" text-anchor="middle">Mermaidの用途</text>
+  <text x="50" y="360" class="body">• GitHub README</text>
+  <text x="50" y="390" class="body">• ドキュメント管理</text>
+  <text x="50" y="420" class="body">• 開発者間共有</text>
+  <text x="50" y="450" class="body">• バージョン追跡</text>
+
+  <rect x="370" y="300" width="300" height="180" class="box" rx="5"/>
+  <text x="520" y="330" class="heading" text-anchor="middle">SVGの用途</text>
+  <text x="390" y="360" class="body">• プレゼン資料</text>
+  <text x="390" y="390" class="body">• 即時可視化</text>
+  <text x="390" y="420" class="body">• デザイン重視</text>
+  <text x="390" y="450" class="body">• スライド埋め込み</text>
+
+  <!-- Magic Word Highlight -->
+  <rect x="370" y="495" width="300" height="35" fill="#FFE6CC" stroke="#FF8C00" stroke-width="2" rx="3"/>
+  <text x="520" y="518" class="body" text-anchor="middle" font-weight="700">Magic Word: "SVGで書いて"</text>
+</svg>

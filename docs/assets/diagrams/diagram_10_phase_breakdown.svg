@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 540">
+  <defs>
+    <style>
+      .title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 31px;
+        font-weight: bold;
+        fill: #00146E;
+      }
+      .phase-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        fill: #FFFFFF;
+      }
+      .phase-subtitle {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
+        fill: #FFFFFF;
+      }
+      .item-text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 15px;
+        fill: #FFFFFF;
+      }
+      .phase1-box { fill: #228B22; stroke: #00146E; stroke-width: 2; rx: 8; }
+      .phase2-box { fill: #00AFF0; stroke: #00146E; stroke-width: 2; rx: 8; }
+      .phase3-box { fill: #FF8C00; stroke: #00146E; stroke-width: 2; rx: 8; }
+      .phase4-box { fill: #9370DB; stroke: #00146E; stroke-width: 2; rx: 8; }
+      .arrow {
+        stroke: #666666;
+        stroke-width: 3;
+        fill: none;
+        marker-end: url(#arrowhead);
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="20" y="35" class="title">Phase分け戦略（段階的開発）</text>
+
+  <!-- Phase 1 -->
+  <rect x="50" y="70" width="300" height="100" class="phase1-box"/>
+  <text x="200" y="95" class="phase-title" text-anchor="middle">Phase 1（基盤）MVP</text>
+  <text x="200" y="118" class="phase-subtitle" text-anchor="middle">最小限の動く仕組み</text>
+  <text x="70" y="145" class="item-text">• DB接続・認証基盤</text>
+  <text x="70" y="165" class="item-text">• 基本CRUD操作</text>
+
+  <!-- Arrow 1 to 2 -->
+  <path d="M 200 170 L 200 190" class="arrow"/>
+  <text x="210" y="185" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666666; font-weight: bold;">動作確認</text>
+
+  <!-- Phase 2 -->
+  <rect x="50" y="195" width="300" height="100" class="phase2-box"/>
+  <text x="200" y="220" class="phase-title" text-anchor="middle">Phase 2（コア機能）</text>
+  <text x="200" y="243" class="phase-subtitle" text-anchor="middle">中核のビジネスロジック</text>
+  <text x="70" y="270" class="item-text">• ビジネスロジック実装</text>
+  <text x="70" y="290" class="item-text">• 主要API開発</text>
+
+  <!-- Arrow 2 to 3 -->
+  <path d="M 200 295 L 200 315" class="arrow"/>
+  <text x="210" y="310" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666666; font-weight: bold;">動作確認</text>
+
+  <!-- Phase 3 -->
+  <rect x="50" y="320" width="300" height="100" class="phase3-box"/>
+  <text x="200" y="345" class="phase-title" text-anchor="middle">Phase 3（拡張機能）</text>
+  <text x="200" y="368" class="phase-subtitle" text-anchor="middle">ユーザー体験向上</text>
+  <text x="70" y="395" class="item-text">• 検索・フィルタ機能</text>
+  <text x="70" y="415" class="item-text">• 通知・アラート</text>
+
+  <!-- Arrow 3 to 4 -->
+  <path d="M 200 420 L 200 440" class="arrow"/>
+  <text x="210" y="435" style="font-family: 'Noto Sans JP', sans-serif; font-size: 14px; fill: #666666; font-weight: bold;">動作確認</text>
+
+  <!-- Phase 4 -->
+  <rect x="50" y="445" width="300" height="85" class="phase4-box"/>
+  <text x="200" y="470" class="phase-title" text-anchor="middle">Phase 4（仕上げ）</text>
+  <text x="200" y="493" class="phase-subtitle" text-anchor="middle">本番リリース準備</text>
+  <text x="70" y="520" class="item-text">• パフォーマンス最適化・E2Eテスト</text>
+
+  <!-- Benefits Box -->
+  <rect x="380" y="70" width="300" height="460" style="fill: #F0F8FF; stroke: #00146E; stroke-width: 3; rx: 8;"/>
+  <text x="530" y="100" style="font-family: 'Noto Sans JP', sans-serif; font-size: 24px; fill: #00146E; text-anchor: middle; font-weight: bold;">Phase分けの効果</text>
+
+  <!-- Benefit 1 -->
+  <rect x="400" y="130" width="260" height="70" style="fill: #FFFFFF; stroke: #00AFF0; stroke-width: 2; rx: 5;"/>
+  <text x="530" y="155" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: #00146E; text-anchor: middle; font-weight: bold;">リスク最小化</text>
+  <text x="410" y="178" style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; fill: #333333;">各Phaseで動作確認</text>
+  <text x="410" y="195" style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; fill: #333333;">→早期問題発見</text>
+
+  <!-- Benefit 2 -->
+  <rect x="400" y="215" width="260" height="70" style="fill: #FFFFFF; stroke: #00AFF0; stroke-width: 2; rx: 5;"/>
+  <text x="530" y="240" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: #00146E; text-anchor: middle; font-weight: bold;">AI混乱防止</text>
+  <text x="410" y="263" style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; fill: #333333;">全部一度に作る→依存</text>
+  <text x="410" y="280" style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; fill: #333333;">関係複雑化（忘れっぽい）</text>
+
+  <!-- Benefit 3 -->
+  <rect x="400" y="300" width="260" height="70" style="fill: #FFFFFF; stroke: #00AFF0; stroke-width: 2; rx: 5;"/>
+  <text x="530" y="325" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: #00146E; text-anchor: middle; font-weight: bold;">確実な進捗</text>
+  <text x="410" y="348" style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; fill: #333333;">段階的リリースで</text>
+  <text x="410" y="365" style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; fill: #333333;">開発期間短縮</text>
+
+  <!-- Benefit 4 -->
+  <rect x="400" y="385" width="260" height="70" style="fill: #FFFFFF; stroke: #00AFF0; stroke-width: 2; rx: 5;"/>
+  <text x="530" y="410" style="font-family: 'Noto Sans JP', sans-serif; font-size: 18px; fill: #00146E; text-anchor: middle; font-weight: bold;">常に動く状態</text>
+  <text x="410" y="433" style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; fill: #333333;">各Phase完了時点で</text>
+  <text x="410" y="450" style="font-family: 'Noto Sans JP', sans-serif; font-size: 15px; fill: #333333;">動作可能なシステム</text>
+
+  <!-- Bottom note -->
+  <text x="530" y="495" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #00146E; text-anchor: middle; font-weight: bold;">各Phaseで動作確認</text>
+  <text x="530" y="515" style="font-family: 'Noto Sans JP', sans-serif; font-size: 16px; fill: #00146E; text-anchor: middle; font-weight: bold;">→手戻り防止</text>
+</svg>

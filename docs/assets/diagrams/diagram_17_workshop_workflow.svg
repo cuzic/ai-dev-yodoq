@@ -1,0 +1,58 @@
+<svg viewBox="0 0 700 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 40px; font-weight: 700; fill: #00146E; }
+      .heading { font-family: 'Noto Sans JP', sans-serif; font-size: 31px; font-weight: 600; fill: #00146E; }
+      .body { font-family: 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 400; fill: #333333; }
+      .note { font-family: 'Noto Sans JP', sans-serif; font-size: 15px; font-weight: 400; fill: #666666; }
+      .box { fill: #F0F8FF; stroke: #00146E; stroke-width: 2; }
+      .arrow { stroke: #00AFF0; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .step-num { font-family: 'Noto Sans JP', sans-serif; font-size: 28px; font-weight: 700; fill: #FFFFFF; }
+      .circle { fill: #00AFF0; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00AFF0" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="45" class="title" text-anchor="middle">保守開発の4ステップワークフロー</text>
+
+  <!-- STEP 1 -->
+  <circle cx="80" cy="110" r="25" class="circle"/>
+  <text x="80" y="118" class="step-num" text-anchor="middle">1</text>
+  <rect x="120" y="80" width="550" height="65" class="box" rx="8"/>
+  <text x="140" y="108" class="heading">リバースエンジニアリング</text>
+  <text x="140" y="133" class="note">仕様把握・ドキュメント自動生成（30分）</text>
+
+  <!-- STEP 2 -->
+  <circle cx="80" cy="200" r="25" class="circle"/>
+  <text x="80" y="208" class="step-num" text-anchor="middle">2</text>
+  <rect x="120" y="170" width="550" height="65" class="box" rx="8"/>
+  <text x="140" y="198" class="heading">フィットギャップ分析</text>
+  <text x="140" y="223" class="note">追加開発範囲の明確化（20分）</text>
+
+  <!-- STEP 3 -->
+  <circle cx="80" cy="290" r="25" class="circle"/>
+  <text x="80" y="298" class="step-num" text-anchor="middle">3</text>
+  <rect x="120" y="260" width="550" height="65" class="box" rx="8"/>
+  <text x="140" y="288" class="heading">テストシナリオ作成</text>
+  <text x="140" y="313" class="note">既存・新機能・デグレ防止を網羅（30分）</text>
+
+  <!-- STEP 4 -->
+  <circle cx="80" cy="380" r="25" class="circle"/>
+  <text x="80" y="388" class="step-num" text-anchor="middle">4</text>
+  <rect x="120" y="350" width="550" height="65" class="box" rx="8"/>
+  <text x="140" y="378" class="heading">実装＋テストコード</text>
+  <text x="140" y="403" class="note">TDD・AI自己レビュー・ドキュメント反映（60分）</text>
+
+  <!-- Connecting arrows -->
+  <path d="M 80 135 L 80 175" class="arrow"/>
+  <path d="M 80 225 L 80 265" class="arrow"/>
+  <path d="M 80 315 L 80 355" class="arrow"/>
+
+  <!-- Result -->
+  <rect x="120" y="445" width="550" height="60" fill="#228B22" opacity="0.1" stroke="#228B22" stroke-width="2" rx="8"/>
+  <text x="350" y="470" class="heading" text-anchor="middle" fill="#228B22">体系的高品質追加</text>
+  <text x="350" y="495" class="note" text-anchor="middle" fill="#228B22">実務再現可能なワークフロー</text>
+</svg>

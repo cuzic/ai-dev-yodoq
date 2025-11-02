@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 850">
+  <defs>
+    <style>
+      .title { font-family: 'Noto Sans JP', sans-serif; font-size: 66px; font-weight: bold; fill: #333333; }
+      .subtitle { font-family: 'Noto Sans JP', sans-serif; font-size: 52px; font-weight: bold; }
+      .text { font-family: 'Noto Sans JP', sans-serif; font-size: 42px; }
+      .code { font-family: 'Courier New', monospace; font-size: 32px; }
+      .small-text { font-family: 'Noto Sans JP', sans-serif; font-size: 20px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1800" height="850" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="900" y="170" class="title" text-anchor="middle">テストシナリオ → テストコードの流れ</text>
+
+  <!-- Left: Test Scenario (What) -->
+  <rect x="140" y="220" width="400" height="480" fill="#E6E6E6" stroke="#00146E" stroke-width="3" rx="10"/>
+  <text x="350" y="270" class="subtitle" fill="#00146E" text-anchor="middle">テストシナリオ（What）</text>
+  <text x="350" y="335" class="text" fill="#333333" text-anchor="middle">何をテストするか</text>
+
+  <rect x="165" y="370" width="350" height="310" fill="#FFFFFF" stroke="#00AFF0" stroke-width="3" rx="5"/>
+  <text x="185" y="405" class="text" fill="#00146E" font-weight="bold">シナリオ例（Markdown形式）:</text>
+
+  <text x="185" y="465" class="text" fill="#333333" font-weight="bold">1. 正常系:</text>
+  <text x="205" y="490" class="small-text" fill="#333333">正しいメール・パスワードで</text>
+  <text x="205" y="512" class="small-text" fill="#333333">ログイン成功</text>
+
+  <text x="185" y="565" class="text" fill="#333333" font-weight="bold">2. 異常系:</text>
+  <text x="205" y="590" class="small-text" fill="#333333">間違ったパスワードで</text>
+  <text x="205" y="612" class="small-text" fill="#333333">ログイン失敗</text>
+
+  <text x="185" y="665" class="text" fill="#333333" font-weight="bold">3. 境界値:</text>
+
+  <!-- Center: AI Conversion -->
+  <rect x="595" y="330" width="350" height="200" fill="#00AFF0" rx="10"/>
+  <text x="770" y="375" class="subtitle" fill="white" text-anchor="middle">AIの変換処理</text>
+
+  <text x="615" y="430" class="text" fill="white">1. シナリオ解析</text>
+  <text x="615" y="490" class="text" fill="white">2. Given-When-Then構造化</text>
+
+  <!-- Arrows -->
+  <line x1="540" y1="425" x2="595" y2="425" stroke="#00146E" stroke-width="4"/>
+  <polygon points="595,425 585,420 585,430" fill="#00146E"/>
+
+  <line x1="945" y1="425" x2="1000" y2="425" stroke="#003399" stroke-width="4"/>
+  <polygon points="1000,425 990,420 990,430" fill="#003399"/>
+
+  <!-- Right: Test Code (How) -->
+  <rect x="1000" y="220" width="500" height="480" fill="#E6E6E6" stroke="#003399" stroke-width="3" rx="10"/>
+  <text x="1250" y="270" class="subtitle" fill="#003399" text-anchor="middle">テストコード（How）</text>
+  <text x="1250" y="335" class="text" fill="#333333" text-anchor="middle">どうテストするか</text>
+
+  <rect x="1025" y="370" width="450" height="310" fill="#003399" rx="5"/>
+  <text x="1045" y="405" class="text" fill="white" font-weight="bold">JUnit形式:</text>
+
+  <text x="1045" y="455" class="code" fill="white">@Test</text>
+  <text x="1045" y="505" class="code" fill="white">void testLoginSuccess() {</text>
+  <text x="1065" y="555" class="code" fill="#66D9FF">// Given: 登録済みユーザー</text>
+  <text x="1065" y="605" class="code" fill="white">User user = setupUser();</text>
+  <text x="1065" y="655" class="code" fill="#66D9FF">// When: 正しいパスワード</text>
+
+  <!-- Bottom note -->
+  <rect x="140" y="740" width="1520" height="70" fill="#FFFFFF" stroke="#00146E" stroke-width="3" rx="5"/>
+  <text x="900" y="785" class="text" fill="#00146E" text-anchor="middle" font-weight="bold">効果: テストシナリオで全体像把握 → AIが網羅的にテストコード生成</text>
+</svg>
