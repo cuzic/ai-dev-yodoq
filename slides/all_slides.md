@@ -13,6 +13,7 @@ paginate: true
 
 AI駆動開発で開発期間を大幅短縮
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -20,6 +21,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![本日の目標](../assets/diagrams-web/slide_002_本日の目標.svg)
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -31,6 +33,7 @@ AI駆動開発で開発期間を大幅短縮
 - **Trust but Verify**: AIにもエラーあり、AI自己レビューで品質向上
 - **Guardrails**: ドキュメント駆動、受入条件で手戻り防止
 
+---
 
 <!-- _class: layout-comparison -->
 
@@ -58,6 +61,7 @@ AI駆動開発で開発期間を大幅短縮
 
 **結論**: Vibe Coding with Guardrails で速さと品質を両立
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -71,6 +75,7 @@ AI駆動開発で開発期間を大幅短縮
 - **AIの役割**: コード生成、テスト、リファクタリング、ドキュメント
 - **効果**: 本質的価値創造に集中
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -85,6 +90,7 @@ AI駆動開発で開発期間を大幅短縮
 - **STEP5: 品質担保＆ドキュメント反映** - Trust but Verify自動化、Living Documentation
 - **効果:** 手戻り防止、品質保証、開発期間短縮
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -96,6 +102,7 @@ AI駆動開発で開発期間を大幅短縮
 - **問題**: 同じバグ繰り返し、成功方法忘却
 - **対策**: ドキュメント化＝外部メモリ、architecture.md/README.mdに知見蓄積
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -103,6 +110,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![Reward Hacking問題と対策](../assets/diagrams/diagram_39_reward_hacking_examples.svg)
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -141,6 +149,7 @@ AI駆動開発で開発期間を大幅短縮
 - [ ] VS Code + Mermaid Preview
 - [ ] (推奨) Dev Container
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -148,12 +157,15 @@ AI駆動開発で開発期間を大幅短縮
 
 ![セキュリティベストプラクティス](../assets/diagrams/diagram_23_security_best_practices.svg)
 
+---
 
+---
 
 <!-- _class: lead -->
 
 ## Claude Code の使い方（10:30-10:50, 20分）
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -170,6 +182,7 @@ AI駆動開発で開発期間を大幅短縮
 - Git統合で安全性を確保（コミット履歴、ロールバック可能）
 - **効果**: プロジェクト全体の一貫性を保ちながら開発
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -184,6 +197,7 @@ AI駆動開発で開発期間を大幅短縮
   - node_modules/, dist/, .git/, *.log を除外
   - トークン節約、コスト削減
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -196,6 +210,7 @@ AI駆動開発で開発期間を大幅短縮
 - **プランモード（Shift+Tab×2）:** 計画→確認→実行、大規模タスク向き
 - **dangerously-skip-permissions:** 全確認スキップ（超危険）
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -203,6 +218,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![よくある問題と対処法](../assets/diagrams-web/slide_017_よくある問題と対処法.svg)
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -219,12 +235,15 @@ AI駆動開発で開発期間を大幅短縮
 - **毎回のサイクル:**
   - 指示 → 実装 → AI自己レビュー → 修正 → テスト → コミット
 
+---
 
+---
 
 <!-- _class: lead -->
 
 ## STEP1: 要件定義（10:50-11:30, 40分）
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -241,6 +260,7 @@ AI駆動開発で開発期間を大幅短縮
 - 明確な要件＝AIが道を外れない境界線
 - **成果物**: docs/requirements.md（ユーザーストーリー、機能一覧、受け入れ基準）
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -248,6 +268,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![AIに質問させる手法](../assets/diagrams-web/slide_022_AIに質問させる手法.svg)
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -267,6 +288,7 @@ AI駆動開発で開発期間を大幅短縮
 - 自動で優先順位付け
 - **不明点リスト**も自動生成
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -281,6 +303,7 @@ AI駆動開発で開発期間を大幅短縮
 - **原則:** Mustは全体の20〜30%に絞る（欲張らない）
 - **効果:** Phase分けで段階的リリース、開発期間短縮
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -288,6 +311,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![MoSCoW実践例（ToDoアプリ）](../assets/diagrams/diagram_47_moscow_example.svg)
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -303,6 +327,7 @@ AI駆動開発で開発期間を大幅短縮
   3. 進捗確認（完了数・期限）
 - **効果:** AIが「なぜ」を理解→本質的な価値を実装
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -321,6 +346,7 @@ AI駆動開発で開発期間を大幅短縮
 - Reward Hacking → 手抜き実装
 - 非機能要件 = Guardrails
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -328,6 +354,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![エラー・エッジケース・制約の洗い出し](../assets/diagrams/diagram_45_error_edge_constraint.svg)
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -345,6 +372,7 @@ AI駆動開発で開発期間を大幅短縮
   - Then: エラーメッセージ、5回失敗でロック
 - **効果:** 「完成の定義」を明確化
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -370,6 +398,7 @@ AI駆動開発で開発期間を大幅短縮
 
 **メリット:** クライアントとの認識合わせが簡単
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -377,12 +406,15 @@ AI駆動開発で開発期間を大幅短縮
 
 ![STEP1のまとめ](../assets/diagrams-web/slide_031_STEP1のまとめ.svg)
 
+---
 
+---
 
 <!-- _class: lead -->
 
 ## STEP2: 設計ドキュメント作成（11:30-12:00, 30分）
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -399,6 +431,7 @@ AI駆動開発で開発期間を大幅短縮
 - 設計書＝AIが何度でも参照できる道しるべ
 - **Spec-Driven Development**: Code-First → Spec-First へ
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -414,6 +447,7 @@ AI駆動開発で開発期間を大幅短縮
 - **6. セキュリティ設計:** 認証・認可・入力検証・環境変数管理
 - **7. 技術的決定事項:** ライブラリ選定理由・アーキテクチャ判断
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -437,6 +471,7 @@ AI駆動開発で開発期間を大幅短縮
 
 選定理由も明記 → 技術的判断の根拠を残す
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -452,6 +487,7 @@ AI駆動開発で開発期間を大幅短縮
   - カラム名・型・制約の一貫性が保たれる
   - マイグレーションの自動生成が可能
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -469,6 +505,7 @@ AI駆動開発で開発期間を大幅短縮
 - バリデーション・エラーハンドリングの一貫性
 - 後からのAPI変更時に影響範囲が明確
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -480,6 +517,7 @@ AI駆動開発で開発期間を大幅短縮
 - **SVG生成magic word**: 「SVGで書いて」→AI生成→即可視化、記法不要
 - **使い分け**: Mermaid=GitHub用、SVG=即可視化・プレゼン用
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -490,6 +528,7 @@ AI駆動開発で開発期間を大幅短縮
 - **AIの実装**: CREATE TABLE自動生成、JOIN処理、外部キー、ORMモデル
 - **人間の恩恵**: 全体像一目把握、リレーション検証、正規化問題発見
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -501,6 +540,7 @@ AI駆動開発で開発期間を大幅短縮
 - **図なしの問題**: 処理順序推測ミス、ロールバック漏れ
 - **効果**: 複雑処理も正確実装
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -523,6 +563,7 @@ AI駆動開発で開発期間を大幅短縮
 ❌ 「バリデーション」だけでは曖昧
 ✅ 「パスワードは8文字以上、大文字小文字数字を含む」と明示
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -530,6 +571,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![STEP2のまとめ](../assets/diagrams/diagram_46_step2_summary.svg)
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -556,17 +598,21 @@ AI駆動開発で開発期間を大幅短縮
 - [ ] Mermaid記法で設計図を作成できる
 - [ ] 受け入れ条件を詳細化できる
 
+---
 
 **Part 1 終了 - 昼休憩（12:00-13:00）**
 
 
+
 # Day 1-2: タスク分解 + 実装 + 品質担保 + リファクタリング (13:00-14:50)
 
+---
 
 <!-- _class: lead -->
 
 ## STEP3: タスク分解（35分）
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -583,6 +629,7 @@ AI駆動開発で開発期間を大幅短縮
 - **計画書＝AIの思考を可視化**して、人間が軌道修正できる
 - **効果**: 実装前に方向性確認、手戻り防止、開発リスク最小化
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -590,6 +637,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![タスク分解_AIの思考を言語化重要](../assets/diagrams-web/slide_004_タスク分解_AIの思考を言語化重要.svg)
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -617,6 +665,7 @@ AI駆動開発で開発期間を大幅短縮
 - 完了条件を具体的に」
 ```
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -633,6 +682,7 @@ AI駆動開発で開発期間を大幅短縮
 - **Phase 4（仕上げ）:** パフォーマンス最適化・E2Eテスト
 - **効果:** リスク最小化、確実な進捗
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -640,6 +690,7 @@ AI駆動開発で開発期間を大幅短縮
 
 ![タスク粒度30分2時間](../assets/diagrams-web/slide_007_タスク粒度30分2時間.svg)
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -655,6 +706,7 @@ AI駆動開発で開発期間を大幅短縮
 - **AIへの指示:** 「依存関係を明示してタスク一覧を作成して」
 - **効果:** 効率的なスケジューリング、手戻り防止
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -670,6 +722,7 @@ AI駆動開発で開発期間を大幅短縮
 - **チーム共有:** Markdown形式でGit管理、誰でも参照可能
 - **AIへの指示:** 「このテンプレートでタスク一覧を作成して」
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -707,6 +760,7 @@ Phase分けして、
 **Trust but Verify:**
 AI生成後、必ず人間が確認・調整
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -714,12 +768,15 @@ AI生成後、必ず人間が確認・調整
 
 ![STEP3のまとめ](../assets/diagrams-web/slide_011_STEP3のまとめ.svg)
 
+---
 
+---
 
 <!-- _class: lead -->
 
 ## STEP4: 実装（40分）
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -735,6 +792,7 @@ AI生成後、必ず人間が確認・調整
 - **②テスト駆動（TDD/BDD）** - Trust but Verify、AIが自己完結
 - **③AI自己レビュー必須** - Reward Hacking対策、手抜き検出、40-60%のバグを自動検出
 
+---
 
 <!-- _class: layout-timeline -->
 
@@ -780,6 +838,7 @@ AI生成後、必ず人間が確認・調整
 
 **このサイクルを繰り返すことで:** 常に動く状態を維持、問題を早期発見、品質を継続的に保証
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -795,6 +854,7 @@ AI生成後、必ず人間が確認・調整
 - **Refactor（改善）:** テストが保証するから安心してリファクタリング
 - **BDD形式（Given-When-Then）:** 人間が読める仕様書になる
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -810,6 +870,7 @@ AI生成後、必ず人間が確認・調整
 - **人間の役割:** プロンプトで方向性を指示、結果をレビュー
 - **効果:** バグが少なく設計が良くなる、AIが自己完結
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -826,6 +887,7 @@ AI生成後、必ず人間が確認・調整
   - JWT秘密鍵→環境変数、入力値→@Valid必須
   - .env作成、.gitignore追加、.env.example用意
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -833,6 +895,7 @@ AI生成後、必ず人間が確認・調整
 
 ![パスワードJWT認証の実装](../assets/diagrams-web/slide_020_パスワードJWT認証の実装.svg)
 
+---
 
 <!-- _class: layout-code-focus -->
 
@@ -862,6 +925,7 @@ AI生成後、必ず人間が確認・調整
   </div>
 </div>
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -874,6 +938,7 @@ AI生成後、必ず人間が確認・調整
   - 小さく作る→動かす→確認→早期発見
 - **効果:** 進捗が見える、モチベーション維持、リスク低減
 
+---
 
 <!-- _class: layout-timeline -->
 
@@ -901,6 +966,7 @@ AI生成後、必ず人間が確認・調整
 
 **効果:** 常に動く状態を維持、問題を早期発見
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -915,6 +981,7 @@ AI生成後、必ず人間が確認・調整
 - 実装後必ず：「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」
 - 追加コストほぼゼロで品質大幅向上
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -922,12 +989,15 @@ AI生成後、必ず人間が確認・調整
 
 ![STEP4のまとめ](../assets/diagrams-web/slide_025_STEP4のまとめ.svg)
 
+---
 
+---
 
 <!-- _class: lead -->
 
 ## STEP5: 品質担保＆ドキュメント反映（40分）
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -944,6 +1014,7 @@ Trust but Verify自動化 + Living Documentation
 - **TDDとAI活用の相乗効果:** テストがあれば→AIが自分でバグに気づき→自分で修正→自己完結
 - **効果:** 品質保証の自動化、知見の蓄積、次セッションでの再利用
 
+---
 
 <!-- _class: layout-comparison -->
 
@@ -973,6 +1044,7 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 **結論:** テストがあれば、AIが自分でバグに気づき自分で修正、生産性が飛躍的に向上
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -1000,6 +1072,7 @@ Playwrightテストを作成して」
 **効果:**
 UIバグ・統合問題を自動検出
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -1019,6 +1092,7 @@ UIバグ・統合問題を自動検出
 - **Serena**: 大規模プロジェクト高速検索
 - **Browser DevTools**: コンソールエラー自動キャプチャ
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -1026,6 +1100,7 @@ UIバグ・統合問題を自動検出
 
 ![AI自己レビュー4種類の使い分け](../assets/diagrams-web/slide_035_AI自己レビュー4種類の使い分け.svg)
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1063,6 +1138,7 @@ UIバグ・統合問題を自動検出
 
 **検出:** テストケース漏れ（null、空文字、MAX値）、異常系不足
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -1074,6 +1150,7 @@ UIバグ・統合問題を自動検出
 - **残り20%:** リスクの低い箇所
 - **効果:** テストカバレッジ向上、リファクタリング時の安全性確保
 
+---
 
 <!-- _class: layout-comparison -->
 
@@ -1105,6 +1182,7 @@ UIバグ・統合問題を自動検出
 
 **改善率:** 多くのバグ検出、追加コストほぼゼロ
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -1140,6 +1218,7 @@ UIバグ・統合問題を自動検出
 指摘して」
 ```
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -1154,6 +1233,7 @@ UIバグ・統合問題を自動検出
 - **Living:** 実装と同期→常に信頼できる
 - **ドキュメント＝AIの外部メモリ**
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -1161,6 +1241,7 @@ UIバグ・統合問題を自動検出
 
 ![ドキュメント自動生成Before/After](../assets/diagrams/diagram_43_doc_automation_before_after.svg)
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1195,6 +1276,7 @@ UIバグ・統合問題を自動検出
 **効果:**
 - 再現性の確保、同じ失敗を繰り返さない
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -1228,6 +1310,7 @@ UIバグ・統合問題を自動検出
 
 実装と同期したドキュメント
 
+---
 
 <!-- _class: two-column compact -->
 
@@ -1253,6 +1336,7 @@ UIバグ・統合問題を自動検出
 
 明確な変更内容を記録
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -1260,12 +1344,15 @@ UIバグ・統合問題を自動検出
 
 ![STEP5のまとめ](../assets/diagrams-web/slide_041_STEP5のまとめ.svg)
 
+---
 
+---
 
 <!-- _class: lead -->
 
 ## Part 2 全体のまとめ
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1292,13 +1379,16 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 技術的負債の早期解消、Living Documentationで知見蓄積
 
 
+
 # Day 1-3: まとめ + 演習 (15:00-17:00)
 
+---
 
 <!-- _class: lead -->
 
 ## まとめ（5分）
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -1316,6 +1406,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 - 急がば回れ
 - AIの制約を理解して対処
 
+---
 
 <!-- _class: layout-comparison -->
 
@@ -1363,6 +1454,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 </div>
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -1381,6 +1473,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 </div>
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -1399,6 +1492,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 </div>
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -1406,11 +1500,13 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 ![1日目のキーメッセージ](../assets/diagrams/diagram_48_day1_key_messages.svg)
 
+---
 
 <!-- _class: lead -->
 
 ## 演習課題の説明（TODOアプリ）
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1456,11 +1552,13 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 **STEP4**: 30分
 **STEP5**: 40分
 
+---
 
 <!-- _class: lead -->
 
 ## 演習（115分 ≒ 2時間）
 
+---
 
 <!-- _class: two-column -->
 
@@ -1481,6 +1579,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 - シンプルだが実用的、CRUD網羅
 - 2時間で5-STEP全体体験可能
 
+---
 
 <!-- _class: layout-timeline -->
 
@@ -1525,6 +1624,7 @@ BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
 </div>
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1551,11 +1651,13 @@ Red-Green-Refactorサイクルの威力
 - 他の参加者と相談・情報共有OK
 - 成功したプロンプトの共有を推奨
 
+---
 
 <!-- _class: lead -->
 
 ## 演習でよくあるつまずきポイントと対処法
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1585,11 +1687,13 @@ Red-Green-Refactorサイクルの威力
 **原因：** 受け入れ条件が不明確
 **対処法：** こまめに確認・軌道修正
 
+---
 
 <!-- _class: lead -->
 
 ## 演習成功のチェックリスト
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1611,6 +1715,7 @@ Red-Green-Refactorサイクルの威力
 - ✅ 依存関係可視化
 - ✅ 計画レビュー・調整
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1635,11 +1740,13 @@ Red-Green-Refactorサイクルの威力
 - ✅ README.md作成
 - ✅ CLAUDE.md更新（成功パターン・ハマった点）
 
+---
 
 <!-- _class: lead -->
 
 ## 演習で体感できること
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1666,11 +1773,13 @@ Red-Green-Refactorサイクルの威力
 **ドキュメントなし：** AIが忘れる、同じ間違い繰り返す
 **ドキュメントあり：** AI参照可能、間違い防止、引き継ぎ容易
 
+---
 
 <!-- _class: lead -->
 
 ## 演習の成果物
 
+---
 
 <!-- _class: layout-code-focus -->
 
@@ -1711,11 +1820,13 @@ Red-Green-Refactorサイクルの威力
 
 </div>
 
+---
 
 <!-- _class: lead -->
 
 ## 1日目全体の振り返り
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1748,11 +1859,13 @@ Red-Green-Refactorサイクルの威力
 4. **知見蓄積:** STEP6でドキュメント化
 5. **急がば回れ:** 前工程が結果的に最速
 
+---
 
 <!-- _class: lead -->
 
 ## 2日目への準備
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1796,13 +1909,16 @@ Red-Green-Refactorサイクルの威力
 - 成功したプロンプトをCLAUDE.mdに記録
 
 
+
 # Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎 (10:00-12:00)
 
+---
 
 <!-- _class: lead -->
 
 ## 1日目の振り返り（10分）
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1828,6 +1944,7 @@ Red-Green-Refactorサイクルの威力
 **Trust but Verify自動化、Living Documentation＝外部メモリ**
 - 継続的な品質改善と知見蓄積
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1849,6 +1966,7 @@ Red-Green-Refactorサイクルの威力
 **AIは忘れっぽい対策**
 - 小さく確実に進めることで手戻り防止
 
+---
 
 <!-- _class: layout-timeline -->
 
@@ -1886,11 +2004,13 @@ Red-Green-Refactorサイクルの威力
 
 </div>
 
+---
 
 <!-- _class: lead -->
 
 ## STEP1: リバースエンジニアリング（30分）
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -1913,6 +2033,7 @@ Red-Green-Refactorサイクルの威力
 - デグレ防止
 - 適切な機能追加
 
+---
 
 <!-- _class: card-grid -->
 
@@ -1937,6 +2058,7 @@ Red-Green-Refactorサイクルの威力
 ### 効果
 プロジェクト全体像の把握、次のステップ（ドキュメント生成）への準備
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -1959,6 +2081,7 @@ Red-Green-Refactorサイクルの威力
 **対策:**
 明確な指示とGuardrails
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -1981,6 +2104,7 @@ Red-Green-Refactorサイクルの威力
 **自動生成:**
 「OpenAPI仕様書を生成」「テーブル定義書を生成」
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -2008,6 +2132,7 @@ Red-Green-Refactorサイクルの威力
 
 </div>
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -2028,11 +2153,13 @@ Red-Green-Refactorサイクルの威力
 - AIは仕様から網羅的にテストを生成（正常系・異常系・境界値すべて）
 - 既存コードのバグや仕様外の動作を発見できる
 
+---
 
 <!-- _class: lead -->
 
 ## STEP2: フィットギャップ分析＆影響範囲調査（20分）
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2053,6 +2180,7 @@ Red-Green-Refactorサイクルの威力
 **効果:**
 工数見積もり、リスク管理、効率的実装計画
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2075,11 +2203,13 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 **効果:**
 デグレ防止、テストシナリオ基礎、安全な追加
 
+---
 
 <!-- _class: lead -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -2107,6 +2237,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 </div>
 
+---
 
 <!-- _class: layout-comparison -->
 
@@ -2148,6 +2279,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 </div>
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2164,6 +2296,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 - シナリオに基づいてAIが自動生成
 - 確実にカバー
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2187,6 +2320,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 **効果:**
 安心追加、品質保証、障害防止
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2209,6 +2343,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 **効果:**
 全観点網羅→本番障害大幅削減
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2229,6 +2364,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 **対象:** インターフェース、データ整合性
 **例:** ユーザー管理とパスワードリセット連携
 
+---
 
 <!-- _class: lead -->
 
@@ -2236,6 +2372,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ### テストコード基礎（復習）
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2267,6 +2404,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 ### 効果
 品質保証、リファクタリングの安全性、ドキュメントとしての価値
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2289,6 +2427,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 ### 効果
 漏れなく実装、品質担保、保守性向上
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -2310,6 +2449,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 </div>
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2330,6 +2470,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 ### 効果
 リファクタリング時の安全性確保、デグレ防止の証拠
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -2356,13 +2497,16 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 </div>
 
 
+
 # Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)
 
+---
 
 <!-- _class: lead -->
 
 ## 実践演習の説明（10分）
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2389,6 +2533,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 - 境界値処理（開始日・終了日チェック）
 - **難易度: 中**（既存検索への影響あり）
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2403,6 +2548,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 - **STEP4: テストコード実装＋機能追加（60分）** TDD、Red-Green-Refactor、AI自己レビュー、ドキュメント反映
 - **効果:** 体系的高品質追加、実務再現可能
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2426,11 +2572,13 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 ### 効果
 実務で即実践、保守開発の生産性・品質向上
 
+---
 
 <!-- _class: lead -->
 
 ## 実践演習（3時間）
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -2456,6 +2604,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 </div>
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2481,11 +2630,13 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 - **AI指示:** 「顧客管理と電話番号追加のフィットギャップ分析」
 - **出力例:** Fit=既存CRUD流用、Gap=カラム追加/バリデーション/画面修正
 
+---
 
 <!-- _class: lead -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
+---
 
 <!-- _class: layout-callout -->
 
@@ -2513,6 +2664,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 </div>
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2537,6 +2689,7 @@ Given-When-Then形式でシナリオ記述
 ### 効果
 新機能の品質担保、バグ検出率向上
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2562,6 +2715,7 @@ Given-When-Then形式でシナリオ記述
 **効果:**
 デグレゼロ、シームレス統合
 
+---
 
 <!-- _class: layout-horizontal-left -->
 
@@ -2581,11 +2735,13 @@ Given-When-Then形式でシナリオ記述
 ### 効果
 安心して機能追加、品質保証
 
+---
 
 <!-- _class: lead -->
 
 ## STEP4: テストコード実装＋機能追加（60分）
 
+---
 
 <!-- _class: layout-timeline -->
 
@@ -2624,6 +2780,7 @@ Given-When-Then形式でシナリオ記述
 
 </div>
 
+---
 
 <!-- _class: layout-timeline -->
 
@@ -2665,6 +2822,7 @@ Given-When-Then形式でシナリオ記述
 
 </div>
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2692,6 +2850,7 @@ Given-When-Then形式でシナリオ記述
 ### 効果
 自動デバッグ、品質担保、継続的改善
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2716,11 +2875,13 @@ Given-When-Then形式でシナリオ記述
 **効果:**
 知見蓄積、チーム共有、再現可能な開発
 
+---
 
 <!-- _class: lead -->
 
 ## 成果発表・ディスカッション（20分）
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2738,6 +2899,7 @@ Given-When-Then形式でシナリオ記述
 ### 実装での工夫
 TDD、AI自己レビュー、デグレ防止の実践
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2752,6 +2914,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 ### 学んだこと
 この経験から得た学び
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2769,6 +2932,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 ### デグレ防止の工夫
 テストで既存機能を守る方法
 
+---
 
 <!-- _class: two-column -->
 
@@ -2783,11 +2947,13 @@ TDD、AI自己レビュー、デグレ防止の実践
 ### ベストプラクティスの共有
 成功パターンの抽出、プロンプト共有
 
+---
 
 <!-- _class: lead -->
 
 ## まとめ（30分）
 
+---
 
 <!-- _class: layout-diagram-only -->
 
@@ -2807,6 +2973,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 3. テストシナリオ作成（モレ・ヌケ防止）
 4. テストコード実装＋機能追加（デグレ防止）
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2832,6 +2999,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 - architecture.md、README.md
 - プロンプトパターンの蓄積（CLAUDE.md）
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2857,6 +3025,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 ### ⑤ドキュメント未更新
 - **対策:** Living Documentation習慣化
 
+---
 
 <!-- _class: card-grid -->
 
@@ -2882,6 +3051,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 **シナリオ→テストコード**
 - モレ・ヌケ防止
 
+---
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2901,6 +3071,7 @@ TODO/メモ/簡易ECなど、5-STEP実践、TDD習慣化
 ### ステップ4: チーム開発
 5-STEP運用、プロンプト共有、Living Documentation浸透
 
+---
 
 <!-- _class: layout-callout -->
 
