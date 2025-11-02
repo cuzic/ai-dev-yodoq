@@ -4,8 +4,6 @@ theme: ai-seminar
 paginate: true
 ---
 
-<!-- _class: lead -->
-
 # Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)
 
 ---
@@ -219,6 +217,12 @@ Given-When-Then形式でシナリオ記述
 ## STEP4: テストコード実装＋機能追加（60分）
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-timeline -->
 
@@ -258,6 +262,12 @@ Given-When-Then形式でシナリオ記述
 </div>
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-timeline -->
 
@@ -328,6 +338,12 @@ Given-When-Then形式でシナリオ記述
 自動デバッグ、品質担保、継続的改善
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-right -->
 
@@ -349,7 +365,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 代表者2-3名の成果発表
 
@@ -367,7 +383,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # つまづいたポイント共有
 

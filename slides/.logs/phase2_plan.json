@@ -1,0 +1,377 @@
+{
+  "layout_changes": [
+    {
+      "num": 45,
+      "ws": 84.4,
+      "classes": "none",
+      "h": 1,
+      "p": 0,
+      "l": 0,
+      "img": 0,
+      "words": 10
+    },
+    {
+      "num": 160,
+      "ws": 78.6,
+      "classes": "layout-horizontal-right|supercompact",
+      "h": 1,
+      "p": 2,
+      "l": 0,
+      "img": 1,
+      "words": 12
+    },
+    {
+      "num": 74,
+      "ws": 77.3,
+      "classes": "two-column|compact",
+      "h": 3,
+      "p": 1,
+      "l": 2,
+      "img": 0,
+      "words": 16
+    },
+    {
+      "num": 35,
+      "ws": 72.9,
+      "classes": "two-column|compact",
+      "h": 4,
+      "p": 3,
+      "l": 0,
+      "img": 0,
+      "words": 27
+    },
+    {
+      "num": 25,
+      "ws": 72.2,
+      "classes": "layout-horizontal-right|supercompact",
+      "h": 1,
+      "p": 1,
+      "l": 1,
+      "img": 1,
+      "words": 13
+    },
+    {
+      "num": 84,
+      "ws": 72.1,
+      "classes": "two-column|compact",
+      "h": 4,
+      "p": 4,
+      "l": 4,
+      "img": 0,
+      "words": 13
+    },
+    {
+      "num": 162,
+      "ws": 71.9,
+      "classes": "card-grid|supercompact",
+      "h": 5,
+      "p": 4,
+      "l": 0,
+      "img": 0,
+      "words": 9
+    },
+    {
+      "num": 135,
+      "ws": 71.8,
+      "classes": "layout-horizontal-right|supercompact",
+      "h": 1,
+      "p": 6,
+      "l": 0,
+      "img": 1,
+      "words": 13
+    },
+    {
+      "num": 52,
+      "ws": 71.8,
+      "classes": "layout-horizontal-right|supercompact",
+      "h": 1,
+      "p": 1,
+      "l": 1,
+      "img": 1,
+      "words": 11
+    },
+    {
+      "num": 124,
+      "ws": 71.5,
+      "classes": "layout-horizontal-right|supercompact",
+      "h": 1,
+      "p": 2,
+      "l": 0,
+      "img": 1,
+      "words": 13
+    },
+    {
+      "num": 41,
+      "ws": 71.5,
+      "classes": "two-column|compact",
+      "h": 4,
+      "p": 1,
+      "l": 2,
+      "img": 2,
+      "words": 14
+    },
+    {
+      "num": 123,
+      "ws": 71.3,
+      "classes": "layout-horizontal-left|supercompact",
+      "h": 1,
+      "p": 4,
+      "l": 0,
+      "img": 1,
+      "words": 8
+    },
+    {
+      "num": 136,
+      "ws": 71.3,
+      "classes": "card-grid|supercompact",
+      "h": 4,
+      "p": 3,
+      "l": 0,
+      "img": 0,
+      "words": 23
+    },
+    {
+      "num": 139,
+      "ws": 70.8,
+      "classes": "card-grid|supercompact",
+      "h": 5,
+      "p": 4,
+      "l": 0,
+      "img": 0,
+      "words": 10
+    },
+    {
+      "num": 122,
+      "ws": 70.8,
+      "classes": "card-grid|supercompact",
+      "h": 5,
+      "p": 4,
+      "l": 1,
+      "img": 0,
+      "words": 10
+    },
+    {
+      "num": 129,
+      "ws": 70.3,
+      "classes": "layout-horizontal-right|supercompact",
+      "h": 1,
+      "p": 5,
+      "l": 1,
+      "img": 1,
+      "words": 16
+    },
+    {
+      "num": 3,
+      "ws": 70.3,
+      "classes": "layout-horizontal-left|supercompact",
+      "h": 1,
+      "p": 2,
+      "l": 0,
+      "img": 1,
+      "words": 10
+    },
+    {
+      "num": 50,
+      "ws": 70.2,
+      "classes": "layout-horizontal-left|ultracompact|compact",
+      "h": 1,
+      "p": 2,
+      "l": 0,
+      "img": 1,
+      "words": 20
+    },
+    {
+      "num": 145,
+      "ws": 70.0,
+      "classes": "card-grid|compact",
+      "h": 4,
+      "p": 3,
+      "l": 0,
+      "img": 0,
+      "words": 15
+    },
+    {
+      "num": 49,
+      "ws": 69.9,
+      "classes": "two-column|ultracompact",
+      "h": 4,
+      "p": 0,
+      "l": 2,
+      "img": 0,
+      "words": 18
+    },
+    {
+      "num": 128,
+      "ws": 69.8,
+      "classes": "layout-horizontal-right|supercompact",
+      "h": 1,
+      "p": 5,
+      "l": 1,
+      "img": 1,
+      "words": 14
+    },
+    {
+      "num": 80,
+      "ws": 69.3,
+      "classes": "layout-horizontal-left|supercompact",
+      "h": 2,
+      "p": 1,
+      "l": 1,
+      "img": 1,
+      "words": 11
+    },
+    {
+      "num": 131,
+      "ws": 69.2,
+      "classes": "layout-callout|supercompact",
+      "h": 1,
+      "p": 4,
+      "l": 0,
+      "img": 0,
+      "words": 9
+    },
+    {
+      "num": 23,
+      "ws": 69.1,
+      "classes": "layout-horizontal-left|compact",
+      "h": 1,
+      "p": 1,
+      "l": 1,
+      "img": 1,
+      "words": 24
+    },
+    {
+      "num": 7,
+      "ws": 68.7,
+      "classes": "layout-horizontal-right|compact",
+      "h": 1,
+      "p": 1,
+      "l": 1,
+      "img": 1,
+      "words": 7
+    },
+    {
+      "num": 38,
+      "ws": 68.6,
+      "classes": "layout-horizontal-right|compact",
+      "h": 1,
+      "p": 1,
+      "l": 1,
+      "img": 1,
+      "words": 9
+    },
+    {
+      "num": 26,
+      "ws": 68.4,
+      "classes": "layout-horizontal-left|supercompact",
+      "h": 2,
+      "p": 3,
+      "l": 2,
+      "img": 2,
+      "words": 8
+    },
+    {
+      "num": 106,
+      "ws": 68.4,
+      "classes": "card-grid|compact",
+      "h": 1,
+      "p": 2,
+      "l": 2,
+      "img": 9,
+      "words": 16
+    },
+    {
+      "num": 28,
+      "ws": 67.5,
+      "classes": "layout-horizontal-left|supercompact",
+      "h": 1,
+      "p": 4,
+      "l": 2,
+      "img": 1,
+      "words": 21
+    },
+    {
+      "num": 15,
+      "ws": 67.5,
+      "classes": "layout-horizontal-left|compact",
+      "h": 1,
+      "p": 1,
+      "l": 1,
+      "img": 1,
+      "words": 9
+    }
+  ],
+  "content_additions": [
+    {
+      "num": 11,
+      "ws": 100.0,
+      "classes": "none",
+      "h": 0,
+      "p": 0,
+      "l": 0,
+      "img": 0,
+      "words": 0
+    },
+    {
+      "num": 18,
+      "ws": 100.0,
+      "classes": "none",
+      "h": 0,
+      "p": 0,
+      "l": 0,
+      "img": 0,
+      "words": 0
+    },
+    {
+      "num": 31,
+      "ws": 100.0,
+      "classes": "none",
+      "h": 0,
+      "p": 0,
+      "l": 0,
+      "img": 0,
+      "words": 0
+    },
+    {
+      "num": 56,
+      "ws": 100.0,
+      "classes": "none",
+      "h": 0,
+      "p": 0,
+      "l": 0,
+      "img": 0,
+      "words": 0
+    },
+    {
+      "num": 69,
+      "ws": 100.0,
+      "classes": "none",
+      "h": 0,
+      "p": 0,
+      "l": 0,
+      "img": 0,
+      "words": 0
+    },
+    {
+      "num": 86,
+      "ws": 100.0,
+      "classes": "none",
+      "h": 0,
+      "p": 0,
+      "l": 0,
+      "img": 0,
+      "words": 0
+    },
+    {
+      "num": 89,
+      "ws": 91.3,
+      "classes": "none",
+      "h": 1,
+      "p": 0,
+      "l": 0,
+      "img": 0,
+      "words": 6
+    }
+  ],
+  "lead_slides_ok": 28
+}

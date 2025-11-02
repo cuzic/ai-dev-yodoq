@@ -335,6 +335,12 @@ AI駆動開発で開発期間を大幅短縮
 ![エラー・エッジケース・制約の洗い出し](./assets/diagrams/diagram_45_error_edge_constraint.svg)
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-left -->
 
@@ -409,6 +415,12 @@ AI駆動開発で開発期間を大幅短縮
 - **Spec-Driven Development**: Spec-First へ
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-right -->
 
@@ -448,6 +460,12 @@ AI駆動開発で開発期間を大幅短縮
 選定理由も明記→技術的判断の根拠を残す
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-left -->
 
@@ -464,6 +482,12 @@ AI駆動開発で開発期間を大幅短縮
   - マイグレーションの自動生成が可能
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: two-column -->
 
@@ -505,6 +529,12 @@ AI駆動開発で開発期間を大幅短縮
 - **人間の恩恵**: 全体像一目把握、リレーション検証、正規化問題発見
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-right -->
 
@@ -540,6 +570,12 @@ AI駆動開発で開発期間を大幅短縮
 ✅ 「パスワードは8文字以上、大文字小文字数字を含む」と明示
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-diagram-only -->
 
@@ -548,6 +584,12 @@ AI駆動開発で開発期間を大幅短縮
 ![STEP2のまとめ](./assets/diagrams/diagram_46_step2_summary.svg)
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: two-column compact -->
 

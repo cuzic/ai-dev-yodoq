@@ -490,6 +490,12 @@ Playwrightテストを作成」
 **検出:** テストケース漏れ、異常系不足、境界値未検証
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-left -->
 
@@ -502,6 +508,12 @@ Playwrightテストを作成」
 **効果:** カバレッジ向上、リファクタリング安全性確保
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-comparison -->
 
@@ -684,6 +696,12 @@ Playwrightテストを作成」
 ![STEP5のまとめ](./assets/diagrams-web/slide_041_STEP5のまとめ.svg)
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 ---
 
@@ -693,7 +711,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # Part 2のキーポイント
 

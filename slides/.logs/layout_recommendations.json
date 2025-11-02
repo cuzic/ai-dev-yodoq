@@ -1,0 +1,502 @@
+[
+  {
+    "num": 44,
+    "whitespace": 95.4,
+    "current_layout": "(none)",
+    "structure": "1H 0Img 13bullets 5w",
+    "content_summary": "Checklist with 13 items",
+    "new_layout": "two-column",
+    "rationale": "Checklists should use two-column layout",
+    "priority": "high"
+  },
+  {
+    "num": 58,
+    "whitespace": 92.7,
+    "current_layout": "(none)",
+    "structure": "0H 0Img 0bullets 14w",
+    "content_summary": "0 headings, 0 bullets, 14 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "high"
+  },
+  {
+    "num": 89,
+    "whitespace": 91.3,
+    "current_layout": "lead supercompact",
+    "structure": "1H 0Img 0bullets 6w",
+    "content_summary": "Section header: ## Part 2 \u5168\u4f53\u306e\u307e\u3068\u3081",
+    "new_layout": "lead (keep as-is)",
+    "rationale": "Intentional section divider",
+    "priority": "skip"
+  },
+  {
+    "num": 108,
+    "whitespace": 88.9,
+    "current_layout": "(none)",
+    "structure": "3H 0Img 12bullets 12w",
+    "content_summary": "Checklist with 12 items",
+    "new_layout": "two-column",
+    "rationale": "Checklists should use two-column layout",
+    "priority": "high"
+  },
+  {
+    "num": 170,
+    "whitespace": 88.9,
+    "current_layout": "(none)",
+    "structure": "4H 0Img 6bullets 12w",
+    "content_summary": "4 sections with 6 items",
+    "new_layout": "card-grid",
+    "rationale": "Multiple distinct sections",
+    "priority": "high"
+  },
+  {
+    "num": 45,
+    "whitespace": 84.4,
+    "current_layout": "(none)",
+    "structure": "0H 0Img 0bullets 10w",
+    "content_summary": "0 headings, 0 bullets, 10 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 143,
+    "whitespace": 82.6,
+    "current_layout": "(none)",
+    "structure": "5H 0Img 0bullets 8w",
+    "content_summary": "5 headings, 0 bullets, 8 words",
+    "new_layout": "two-column",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 13,
+    "whitespace": 81.6,
+    "current_layout": "lead",
+    "structure": "1H 0Img 0bullets 10w",
+    "content_summary": "1 headings, 0 bullets, 10 words",
+    "new_layout": "lead (review manually)",
+    "rationale": "Needs manual review",
+    "priority": "low"
+  },
+  {
+    "num": 88,
+    "whitespace": 81.5,
+    "current_layout": "(none)",
+    "structure": "0H 0Img 0bullets 12w",
+    "content_summary": "0 headings, 0 bullets, 12 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 149,
+    "whitespace": 81.1,
+    "current_layout": "lead compact",
+    "structure": "1H 0Img 0bullets 11w",
+    "content_summary": "1 headings, 0 bullets, 11 words",
+    "new_layout": "lead compact (review manually)",
+    "rationale": "Needs manual review",
+    "priority": "low"
+  },
+  {
+    "num": 150,
+    "whitespace": 80.3,
+    "current_layout": "(none)",
+    "structure": "4H 0Img 0bullets 13w",
+    "content_summary": "4 headings, 0 bullets, 13 words",
+    "new_layout": "two-column",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 33,
+    "whitespace": 79.9,
+    "current_layout": "lead",
+    "structure": "1H 0Img 0bullets 11w",
+    "content_summary": "1 headings, 0 bullets, 11 words",
+    "new_layout": "lead (review manually)",
+    "rationale": "Needs manual review",
+    "priority": "low"
+  },
+  {
+    "num": 37,
+    "whitespace": 79.9,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 7bullets 9w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 79,
+    "whitespace": 79.6,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 0bullets 18w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 165,
+    "whitespace": 78.8,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 0bullets 10w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 160,
+    "whitespace": 78.6,
+    "current_layout": "(none)",
+    "structure": "4H 1Img 5bullets 12w",
+    "content_summary": "4 headings, 5 bullets, 12 words",
+    "new_layout": "two-column",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 73,
+    "whitespace": 78.5,
+    "current_layout": "(none)",
+    "structure": "1H 0Img 4bullets 14w",
+    "content_summary": "1 headings, 4 bullets, 14 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 20,
+    "whitespace": 78.5,
+    "current_layout": "lead",
+    "structure": "1H 0Img 0bullets 11w",
+    "content_summary": "1 headings, 0 bullets, 11 words",
+    "new_layout": "lead (review manually)",
+    "rationale": "Needs manual review",
+    "priority": "low"
+  },
+  {
+    "num": 47,
+    "whitespace": 77.9,
+    "current_layout": "(none)",
+    "structure": "1H 0Img 0bullets 12w",
+    "content_summary": "1 headings, 0 bullets, 12 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 163,
+    "whitespace": 77.8,
+    "current_layout": "(none)",
+    "structure": "1H 0Img 0bullets 7w",
+    "content_summary": "1 headings, 0 bullets, 7 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 74,
+    "whitespace": 77.3,
+    "current_layout": "(none)",
+    "structure": "3H 0Img 0bullets 16w",
+    "content_summary": "3 sections",
+    "new_layout": "two-column",
+    "rationale": "Two main sections",
+    "priority": "medium"
+  },
+  {
+    "num": 115,
+    "whitespace": 77.3,
+    "current_layout": "(none)",
+    "structure": "5H 0Img 8bullets 10w",
+    "content_summary": "5 sections with 8 items",
+    "new_layout": "card-grid",
+    "rationale": "Multiple distinct sections",
+    "priority": "medium"
+  },
+  {
+    "num": 43,
+    "whitespace": 74.9,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 0bullets 53w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 29,
+    "whitespace": 74.3,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 2bullets 27w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 134,
+    "whitespace": 72.9,
+    "current_layout": "lead",
+    "structure": "1H 0Img 0bullets 14w",
+    "content_summary": "1 headings, 0 bullets, 14 words",
+    "new_layout": "lead (review manually)",
+    "rationale": "Needs manual review",
+    "priority": "low"
+  },
+  {
+    "num": 35,
+    "whitespace": 72.9,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 7bullets 27w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 25,
+    "whitespace": 72.2,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 0bullets 13w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 84,
+    "whitespace": 72.1,
+    "current_layout": "(none)",
+    "structure": "4H 0Img 11bullets 13w",
+    "content_summary": "Checklist with 11 items",
+    "new_layout": "two-column",
+    "rationale": "Checklists should use two-column layout",
+    "priority": "medium"
+  },
+  {
+    "num": 162,
+    "whitespace": 71.9,
+    "current_layout": "(none)",
+    "structure": "1H 0Img 0bullets 9w",
+    "content_summary": "1 headings, 0 bullets, 9 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 135,
+    "whitespace": 71.8,
+    "current_layout": "(none)",
+    "structure": "1H 0Img 0bullets 13w",
+    "content_summary": "1 headings, 0 bullets, 13 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 52,
+    "whitespace": 71.8,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 0bullets 11w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 124,
+    "whitespace": 71.5,
+    "current_layout": "lead compact",
+    "structure": "1H 0Img 0bullets 13w",
+    "content_summary": "1 headings, 0 bullets, 13 words",
+    "new_layout": "lead compact (review manually)",
+    "rationale": "Needs manual review",
+    "priority": "low"
+  },
+  {
+    "num": 41,
+    "whitespace": 71.5,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 3bullets 14w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 123,
+    "whitespace": 71.3,
+    "current_layout": "(none)",
+    "structure": "1H 0Img 0bullets 8w",
+    "content_summary": "1 headings, 0 bullets, 8 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 136,
+    "whitespace": 71.3,
+    "current_layout": "(none)",
+    "structure": "3H 0Img 2bullets 23w",
+    "content_summary": "3 sections",
+    "new_layout": "two-column",
+    "rationale": "Two main sections",
+    "priority": "medium"
+  },
+  {
+    "num": 139,
+    "whitespace": 70.8,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 0bullets 10w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 122,
+    "whitespace": 70.8,
+    "current_layout": "(none)",
+    "structure": "5H 0Img 0bullets 10w",
+    "content_summary": "5 headings, 0 bullets, 10 words",
+    "new_layout": "two-column",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 129,
+    "whitespace": 70.3,
+    "current_layout": "(none)",
+    "structure": "1H 0Img 8bullets 16w",
+    "content_summary": "1 headings, 8 bullets, 16 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 3,
+    "whitespace": 70.3,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 0bullets 10w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 50,
+    "whitespace": 70.2,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 0bullets 20w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 145,
+    "whitespace": 70.0,
+    "current_layout": "(none)",
+    "structure": "4H 0Img 6bullets 15w",
+    "content_summary": "4 sections with 6 items",
+    "new_layout": "card-grid",
+    "rationale": "Multiple distinct sections",
+    "priority": "medium"
+  },
+  {
+    "num": 49,
+    "whitespace": 69.9,
+    "current_layout": "(none)",
+    "structure": "1H 0Img 4bullets 18w",
+    "content_summary": "1 headings, 4 bullets, 18 words",
+    "new_layout": "(none - keep default)",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  },
+  {
+    "num": 128,
+    "whitespace": 69.8,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 0bullets 14w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 80,
+    "whitespace": 69.3,
+    "current_layout": "(none)",
+    "structure": "3H 0Img 8bullets 11w",
+    "content_summary": "3 sections with 8 items",
+    "new_layout": "card-grid",
+    "rationale": "Multiple distinct sections",
+    "priority": "medium"
+  },
+  {
+    "num": 131,
+    "whitespace": 69.2,
+    "current_layout": "lead compact",
+    "structure": "2H 0Img 0bullets 9w",
+    "content_summary": "Section header: ## STEP2: \u30d5\u30a3\u30c3\u30c8\u30ae\u30e3\u30c3\u30d7\u5206\u6790\uff06\u5f71\u97ff\u7bc4\u56f2\u8abf\u67fb\n\n### \uff0820\u5206\uff09",
+    "new_layout": "lead (keep as-is)",
+    "rationale": "Intentional section divider",
+    "priority": "skip"
+  },
+  {
+    "num": 23,
+    "whitespace": 69.1,
+    "current_layout": "(none)",
+    "structure": "2H 1Img 6bullets 24w",
+    "content_summary": "2 sections",
+    "new_layout": "two-column",
+    "rationale": "Two main sections",
+    "priority": "medium"
+  },
+  {
+    "num": 7,
+    "whitespace": 68.7,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 6bullets 7w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 38,
+    "whitespace": 68.6,
+    "current_layout": "(none)",
+    "structure": "3H 0Img 6bullets 9w",
+    "content_summary": "3 sections with 6 items",
+    "new_layout": "card-grid",
+    "rationale": "Multiple distinct sections",
+    "priority": "medium"
+  },
+  {
+    "num": 26,
+    "whitespace": 68.4,
+    "current_layout": "(none)",
+    "structure": "1H 1Img 4bullets 8w",
+    "content_summary": "1 image + text",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Image + text content",
+    "priority": "medium"
+  },
+  {
+    "num": 106,
+    "whitespace": 68.4,
+    "current_layout": "(none)",
+    "structure": "7H 0Img 0bullets 16w",
+    "content_summary": "7 headings, 0 bullets, 16 words",
+    "new_layout": "two-column",
+    "rationale": "Add appropriate layout",
+    "priority": "medium"
+  }
+]

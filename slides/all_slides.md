@@ -335,6 +335,12 @@ AI駆動開発で開発期間を大幅短縮
 ![エラー・エッジケース・制約の洗い出し](./assets/diagrams/diagram_45_error_edge_constraint.svg)
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-left -->
 
@@ -409,6 +415,12 @@ AI駆動開発で開発期間を大幅短縮
 - **Spec-Driven Development**: Spec-First へ
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-right -->
 
@@ -448,6 +460,12 @@ AI駆動開発で開発期間を大幅短縮
 選定理由も明記→技術的判断の根拠を残す
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-left -->
 
@@ -464,6 +482,12 @@ AI駆動開発で開発期間を大幅短縮
   - マイグレーションの自動生成が可能
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: two-column -->
 
@@ -505,6 +529,12 @@ AI駆動開発で開発期間を大幅短縮
 - **人間の恩恵**: 全体像一目把握、リレーション検証、正規化問題発見
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-right -->
 
@@ -540,6 +570,12 @@ AI駆動開発で開発期間を大幅短縮
 ✅ 「パスワードは8文字以上、大文字小文字数字を含む」と明示
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-diagram-only -->
 
@@ -548,6 +584,12 @@ AI駆動開発で開発期間を大幅短縮
 ![STEP2のまとめ](./assets/diagrams/diagram_46_step2_summary.svg)
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: two-column compact -->
 
@@ -577,9 +619,6 @@ AI駆動開発で開発期間を大幅短縮
 ---
 
 **Part 1 終了 - 昼休憩（12:00-13:00）**
-
----
-
 ---
 marp: true
 theme: ai-seminar
@@ -1072,6 +1111,12 @@ Playwrightテストを作成」
 **検出:** テストケース漏れ、異常系不足、境界値未検証
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-left -->
 
@@ -1084,6 +1129,12 @@ Playwrightテストを作成」
 **効果:** カバレッジ向上、リファクタリング安全性確保
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-comparison -->
 
@@ -1266,6 +1317,12 @@ Playwrightテストを作成」
 ![STEP5のまとめ](./assets/diagrams-web/slide_041_STEP5のまとめ.svg)
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 ---
 
@@ -1275,7 +1332,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # Part 2のキーポイント
 
@@ -1288,9 +1345,6 @@ Playwrightテストを作成」
 **④自己レビュー**: 観点別で検出率向上
 
 **⑤リファクタ&Doc**: 負債解消、知見蓄積
-
----
-
 ---
 marp: true
 theme: ai-seminar
@@ -1586,6 +1640,12 @@ Red-Green-Refactorサイクルの威力
 ## 演習成功のチェックリスト
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: card-grid compact -->
 
@@ -1634,7 +1694,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 演習で体感できること
 
@@ -1677,6 +1737,12 @@ project/
 ## 1日目全体の振り返り
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: card-grid compact -->
 
@@ -1733,9 +1799,6 @@ project/
 ### 🏠 宿題（任意）
 
 **Lv1:** TODOアプリ機能追加 **Lv2:** 自分のプロジェクトで5-STEP実践 **Lv3:** AI自己レビュー習慣化、成功プロンプトをCLAUDE.mdに記録
-
----
-
 ---
 marp: true
 theme: ai-seminar
@@ -1794,6 +1857,12 @@ paginate: true
 **小さく確実に進め手戻り防止**
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-timeline -->
 
@@ -1832,8 +1901,12 @@ paginate: true
 </div>
 
 ---
+<!-- _class: two-column -->
 
-<!-- _class: lead compact -->
+<!-- _class: two-column -->
+
+
+<!-- _class: two-column compact -->
 
 ## STEP1: リバースエンジニアリング（30分）
 
@@ -1881,7 +1954,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: two-column -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -1895,7 +1968,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: two-column -->
 
 # ドキュメント自動生成（Guardrails構築）
 
@@ -1908,6 +1981,12 @@ paginate: true
 **自動生成:** 「OpenAPI仕様書を生成」「テーブル定義書を生成」
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-callout -->
 
@@ -1983,7 +2062,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: two-column -->
 
 # 影響範囲調査の手法
 
@@ -2005,12 +2084,22 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 デグレ防止、テストシナリオ基礎、安全な追加
 
 ---
+<!-- _class: two-column -->
 
-<!-- _class: lead -->
+<!-- _class: two-column -->
+
+
+<!-- _class: two-column -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-callout -->
 
@@ -2088,7 +2177,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: two-column -->
 
 # デグレ防止の重要性
 
@@ -2111,6 +2200,12 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 安心追加、品質保証、障害防止
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2196,7 +2291,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # テストシナリオからテストコードへ
 
@@ -2281,16 +2376,11 @@ Given-When-Then形式で記述
 - 不足しているケースの追加指示
 
 </div>
-
----
-
 ---
 marp: true
 theme: ai-seminar
 paginate: true
 ---
-
-<!-- _class: lead -->
 
 # Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)
 
@@ -2505,6 +2595,12 @@ Given-When-Then形式でシナリオ記述
 ## STEP4: テストコード実装＋機能追加（60分）
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-timeline -->
 
@@ -2544,6 +2640,12 @@ Given-When-Then形式でシナリオ記述
 </div>
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-timeline -->
 
@@ -2614,6 +2716,12 @@ Given-When-Then形式でシナリオ記述
 自動デバッグ、品質担保、継続的改善
 
 ---
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
+<!-- _class: layout-horizontal-left -->
+
 
 <!-- _class: layout-horizontal-right -->
 
@@ -2635,7 +2743,7 @@ Given-When-Then形式でシナリオ記述
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 代表者2-3名の成果発表
 
@@ -2653,7 +2761,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # つまづいたポイント共有
 

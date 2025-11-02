@@ -293,6 +293,12 @@ Red-Green-Refactorサイクルの威力
 ## 演習成功のチェックリスト
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: card-grid compact -->
 
@@ -341,7 +347,7 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 演習で体感できること
 
@@ -384,6 +390,12 @@ project/
 ## 1日目全体の振り返り
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: card-grid compact -->
 

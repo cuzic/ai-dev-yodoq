@@ -56,6 +56,12 @@ paginate: true
 **小さく確実に進め手戻り防止**
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-timeline -->
 
@@ -94,8 +100,12 @@ paginate: true
 </div>
 
 ---
+<!-- _class: two-column -->
 
-<!-- _class: lead compact -->
+<!-- _class: two-column -->
+
+
+<!-- _class: two-column compact -->
 
 ## STEP1: リバースエンジニアリング（30分）
 
@@ -143,7 +153,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: two-column -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -157,7 +167,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: two-column -->
 
 # ドキュメント自動生成（Guardrails構築）
 
@@ -170,6 +180,12 @@ paginate: true
 **自動生成:** 「OpenAPI仕様書を生成」「テーブル定義書を生成」
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-callout -->
 
@@ -245,7 +261,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: two-column -->
 
 # 影響範囲調査の手法
 
@@ -267,12 +283,22 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 デグレ防止、テストシナリオ基礎、安全な追加
 
 ---
+<!-- _class: two-column -->
 
-<!-- _class: lead -->
+<!-- _class: two-column -->
+
+
+<!-- _class: two-column -->
 
 ## STEP3: テストシナリオ一覧作成（30分）
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-callout -->
 
@@ -350,7 +376,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: two-column -->
 
 # デグレ防止の重要性
 
@@ -373,6 +399,12 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 安心追加、品質保証、障害防止
 
 ---
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
+<!-- _class: two-column -->
+
 
 <!-- _class: layout-horizontal-right -->
 
@@ -458,7 +490,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # テストシナリオからテストコードへ
 

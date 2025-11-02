@@ -1,0 +1,772 @@
+[
+  {
+    "num": 44,
+    "whitespace": 95.4,
+    "classes": "none",
+    "headings": 0,
+    "paragraphs": 1,
+    "lists": 0,
+    "images": 0,
+    "words": 5
+  },
+  {
+    "num": 58,
+    "whitespace": 92.7,
+    "classes": "layout-callout|ultracompact|compact",
+    "headings": 1,
+    "paragraphs": 0,
+    "lists": 1,
+    "images": 0,
+    "words": 14
+  },
+  {
+    "num": 89,
+    "whitespace": 91.3,
+    "classes": "none",
+    "headings": 1,
+    "paragraphs": 0,
+    "lists": 0,
+    "images": 0,
+    "words": 6
+  },
+  {
+    "num": 108,
+    "whitespace": 88.9,
+    "classes": "card-grid|ultracompact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 0,
+    "images": 0,
+    "words": 12
+  },
+  {
+    "num": 170,
+    "whitespace": 88.9,
+    "classes": "card-grid|ultracompact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 0,
+    "images": 0,
+    "words": 12
+  },
+  {
+    "num": 45,
+    "whitespace": 84.4,
+    "classes": "none",
+    "headings": 1,
+    "paragraphs": 0,
+    "lists": 0,
+    "images": 0,
+    "words": 10
+  },
+  {
+    "num": 143,
+    "whitespace": 82.6,
+    "classes": "lead",
+    "headings": 1,
+    "paragraphs": 0,
+    "lists": 0,
+    "images": 0,
+    "words": 8
+  },
+  {
+    "num": 13,
+    "whitespace": 81.6,
+    "classes": "layout-callout|compact",
+    "headings": 1,
+    "paragraphs": 0,
+    "lists": 1,
+    "images": 0,
+    "words": 10
+  },
+  {
+    "num": 88,
+    "whitespace": 81.5,
+    "classes": "card-grid|ultracompact|supercompact",
+    "headings": 1,
+    "paragraphs": 5,
+    "lists": 0,
+    "images": 0,
+    "words": 12
+  },
+  {
+    "num": 149,
+    "whitespace": 81.1,
+    "classes": "layout-callout|ultracompact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 0,
+    "images": 0,
+    "words": 11
+  },
+  {
+    "num": 150,
+    "whitespace": 80.3,
+    "classes": "card-grid|supercompact",
+    "headings": 4,
+    "paragraphs": 0,
+    "lists": 3,
+    "images": 0,
+    "words": 13
+  },
+  {
+    "num": 33,
+    "whitespace": 79.9,
+    "classes": "layout-callout|compact",
+    "headings": 1,
+    "paragraphs": 0,
+    "lists": 1,
+    "images": 0,
+    "words": 11
+  },
+  {
+    "num": 37,
+    "whitespace": 79.9,
+    "classes": "two-column|compact",
+    "headings": 3,
+    "paragraphs": 0,
+    "lists": 2,
+    "images": 0,
+    "words": 9
+  },
+  {
+    "num": 79,
+    "whitespace": 79.6,
+    "classes": "two-column|supercompact",
+    "headings": 3,
+    "paragraphs": 5,
+    "lists": 2,
+    "images": 0,
+    "words": 18
+  },
+  {
+    "num": 165,
+    "whitespace": 78.8,
+    "classes": "two-column|compact",
+    "headings": 4,
+    "paragraphs": 0,
+    "lists": 3,
+    "images": 0,
+    "words": 10
+  },
+  {
+    "num": 160,
+    "whitespace": 78.6,
+    "classes": "layout-horizontal-right|supercompact",
+    "headings": 1,
+    "paragraphs": 2,
+    "lists": 0,
+    "images": 1,
+    "words": 12
+  },
+  {
+    "num": 73,
+    "whitespace": 78.5,
+    "classes": "two-column|ultracompact",
+    "headings": 3,
+    "paragraphs": 3,
+    "lists": 2,
+    "images": 0,
+    "words": 14
+  },
+  {
+    "num": 20,
+    "whitespace": 78.5,
+    "classes": "layout-callout|compact",
+    "headings": 1,
+    "paragraphs": 0,
+    "lists": 1,
+    "images": 0,
+    "words": 11
+  },
+  {
+    "num": 47,
+    "whitespace": 77.9,
+    "classes": "layout-callout|compact",
+    "headings": 1,
+    "paragraphs": 0,
+    "lists": 1,
+    "images": 0,
+    "words": 12
+  },
+  {
+    "num": 163,
+    "whitespace": 77.8,
+    "classes": "card-grid|supercompact",
+    "headings": 4,
+    "paragraphs": 3,
+    "lists": 0,
+    "images": 0,
+    "words": 7
+  },
+  {
+    "num": 74,
+    "whitespace": 77.3,
+    "classes": "two-column|compact",
+    "headings": 3,
+    "paragraphs": 1,
+    "lists": 2,
+    "images": 0,
+    "words": 16
+  },
+  {
+    "num": 115,
+    "whitespace": 77.3,
+    "classes": "title",
+    "headings": 2,
+    "paragraphs": 0,
+    "lists": 0,
+    "images": 0,
+    "words": 10
+  },
+  {
+    "num": 43,
+    "whitespace": 74.9,
+    "classes": "two-column|compact",
+    "headings": 1,
+    "paragraphs": 4,
+    "lists": 4,
+    "images": 0,
+    "words": 53
+  },
+  {
+    "num": 29,
+    "whitespace": 74.3,
+    "classes": "two-column|compact",
+    "headings": 3,
+    "paragraphs": 6,
+    "lists": 0,
+    "images": 0,
+    "words": 27
+  },
+  {
+    "num": 134,
+    "whitespace": 72.9,
+    "classes": "layout-horizontal-right|supercompact",
+    "headings": 1,
+    "paragraphs": 6,
+    "lists": 1,
+    "images": 1,
+    "words": 14
+  },
+  {
+    "num": 35,
+    "whitespace": 72.9,
+    "classes": "two-column|compact",
+    "headings": 4,
+    "paragraphs": 3,
+    "lists": 0,
+    "images": 0,
+    "words": 27
+  },
+  {
+    "num": 25,
+    "whitespace": 72.2,
+    "classes": "layout-horizontal-right|supercompact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 13
+  },
+  {
+    "num": 84,
+    "whitespace": 72.1,
+    "classes": "two-column|compact",
+    "headings": 4,
+    "paragraphs": 4,
+    "lists": 4,
+    "images": 0,
+    "words": 13
+  },
+  {
+    "num": 162,
+    "whitespace": 71.9,
+    "classes": "card-grid|supercompact",
+    "headings": 5,
+    "paragraphs": 4,
+    "lists": 0,
+    "images": 0,
+    "words": 9
+  },
+  {
+    "num": 135,
+    "whitespace": 71.8,
+    "classes": "layout-horizontal-right|supercompact",
+    "headings": 1,
+    "paragraphs": 6,
+    "lists": 0,
+    "images": 1,
+    "words": 13
+  },
+  {
+    "num": 52,
+    "whitespace": 71.8,
+    "classes": "layout-horizontal-right|supercompact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 11
+  },
+  {
+    "num": 124,
+    "whitespace": 71.5,
+    "classes": "layout-horizontal-right|supercompact",
+    "headings": 1,
+    "paragraphs": 2,
+    "lists": 0,
+    "images": 1,
+    "words": 13
+  },
+  {
+    "num": 41,
+    "whitespace": 71.5,
+    "classes": "two-column|compact",
+    "headings": 4,
+    "paragraphs": 1,
+    "lists": 2,
+    "images": 2,
+    "words": 14
+  },
+  {
+    "num": 123,
+    "whitespace": 71.3,
+    "classes": "layout-horizontal-left|supercompact",
+    "headings": 1,
+    "paragraphs": 4,
+    "lists": 0,
+    "images": 1,
+    "words": 8
+  },
+  {
+    "num": 136,
+    "whitespace": 71.3,
+    "classes": "card-grid|supercompact",
+    "headings": 4,
+    "paragraphs": 3,
+    "lists": 0,
+    "images": 0,
+    "words": 23
+  },
+  {
+    "num": 139,
+    "whitespace": 70.8,
+    "classes": "card-grid|supercompact",
+    "headings": 5,
+    "paragraphs": 4,
+    "lists": 0,
+    "images": 0,
+    "words": 10
+  },
+  {
+    "num": 122,
+    "whitespace": 70.8,
+    "classes": "card-grid|supercompact",
+    "headings": 5,
+    "paragraphs": 4,
+    "lists": 1,
+    "images": 0,
+    "words": 10
+  },
+  {
+    "num": 129,
+    "whitespace": 70.3,
+    "classes": "layout-horizontal-right|supercompact",
+    "headings": 1,
+    "paragraphs": 5,
+    "lists": 1,
+    "images": 1,
+    "words": 16
+  },
+  {
+    "num": 3,
+    "whitespace": 70.3,
+    "classes": "layout-horizontal-left|supercompact",
+    "headings": 1,
+    "paragraphs": 2,
+    "lists": 0,
+    "images": 1,
+    "words": 10
+  },
+  {
+    "num": 50,
+    "whitespace": 70.2,
+    "classes": "layout-horizontal-left|ultracompact|compact",
+    "headings": 1,
+    "paragraphs": 2,
+    "lists": 0,
+    "images": 1,
+    "words": 20
+  },
+  {
+    "num": 145,
+    "whitespace": 70.0,
+    "classes": "card-grid|compact",
+    "headings": 4,
+    "paragraphs": 3,
+    "lists": 0,
+    "images": 0,
+    "words": 15
+  },
+  {
+    "num": 49,
+    "whitespace": 69.9,
+    "classes": "two-column|ultracompact",
+    "headings": 4,
+    "paragraphs": 0,
+    "lists": 2,
+    "images": 0,
+    "words": 18
+  },
+  {
+    "num": 128,
+    "whitespace": 69.8,
+    "classes": "layout-horizontal-right|supercompact",
+    "headings": 1,
+    "paragraphs": 5,
+    "lists": 1,
+    "images": 1,
+    "words": 14
+  },
+  {
+    "num": 80,
+    "whitespace": 69.3,
+    "classes": "layout-horizontal-left|supercompact",
+    "headings": 2,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 11
+  },
+  {
+    "num": 131,
+    "whitespace": 69.2,
+    "classes": "layout-callout|supercompact",
+    "headings": 1,
+    "paragraphs": 4,
+    "lists": 0,
+    "images": 0,
+    "words": 9
+  },
+  {
+    "num": 23,
+    "whitespace": 69.1,
+    "classes": "layout-horizontal-left|compact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 24
+  },
+  {
+    "num": 7,
+    "whitespace": 68.7,
+    "classes": "layout-horizontal-right|compact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 7
+  },
+  {
+    "num": 38,
+    "whitespace": 68.6,
+    "classes": "layout-horizontal-right|compact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 9
+  },
+  {
+    "num": 26,
+    "whitespace": 68.4,
+    "classes": "layout-horizontal-left|supercompact",
+    "headings": 2,
+    "paragraphs": 3,
+    "lists": 2,
+    "images": 2,
+    "words": 8
+  },
+  {
+    "num": 106,
+    "whitespace": 68.4,
+    "classes": "card-grid|compact",
+    "headings": 1,
+    "paragraphs": 2,
+    "lists": 2,
+    "images": 9,
+    "words": 16
+  },
+  {
+    "num": 28,
+    "whitespace": 67.5,
+    "classes": "layout-horizontal-left|supercompact",
+    "headings": 1,
+    "paragraphs": 4,
+    "lists": 2,
+    "images": 1,
+    "words": 21
+  },
+  {
+    "num": 15,
+    "whitespace": 67.5,
+    "classes": "layout-horizontal-left|compact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 9
+  },
+  {
+    "num": 60,
+    "whitespace": 67.4,
+    "classes": "layout-horizontal-right|compact",
+    "headings": 1,
+    "paragraphs": 2,
+    "lists": 1,
+    "images": 1,
+    "words": 14
+  },
+  {
+    "num": 146,
+    "whitespace": 67.3,
+    "classes": "layout-horizontal-right|supercompact",
+    "headings": 1,
+    "paragraphs": 2,
+    "lists": 1,
+    "images": 1,
+    "words": 16
+  },
+  {
+    "num": 77,
+    "whitespace": 67.2,
+    "classes": "layout-horizontal-left|compact",
+    "headings": 1,
+    "paragraphs": 2,
+    "lists": 0,
+    "images": 1,
+    "words": 7
+  },
+  {
+    "num": 76,
+    "whitespace": 67.0,
+    "classes": "card-grid|compact",
+    "headings": 5,
+    "paragraphs": 4,
+    "lists": 0,
+    "images": 0,
+    "words": 13
+  },
+  {
+    "num": 118,
+    "whitespace": 67.0,
+    "classes": "card-grid|compact",
+    "headings": 5,
+    "paragraphs": 4,
+    "lists": 0,
+    "images": 0,
+    "words": 9
+  },
+  {
+    "num": 6,
+    "whitespace": 66.7,
+    "classes": "layout-horizontal-left",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 26
+  },
+  {
+    "num": 141,
+    "whitespace": 66.4,
+    "classes": "card-grid|compact",
+    "headings": 4,
+    "paragraphs": 3,
+    "lists": 2,
+    "images": 0,
+    "words": 15
+  },
+  {
+    "num": 133,
+    "whitespace": 66.4,
+    "classes": "layout-horizontal-right|compact",
+    "headings": 3,
+    "paragraphs": 1,
+    "lists": 2,
+    "images": 1,
+    "words": 11
+  },
+  {
+    "num": 5,
+    "whitespace": 66.3,
+    "classes": "layout-horizontal-left|compact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 13
+  },
+  {
+    "num": 121,
+    "whitespace": 66.2,
+    "classes": "layout-horizontal-right|supercompact",
+    "headings": 1,
+    "paragraphs": 5,
+    "lists": 3,
+    "images": 1,
+    "words": 12
+  },
+  {
+    "num": 168,
+    "whitespace": 65.9,
+    "classes": "card-grid|compact",
+    "headings": 5,
+    "paragraphs": 0,
+    "lists": 4,
+    "images": 0,
+    "words": 18
+  },
+  {
+    "num": 71,
+    "whitespace": 65.7,
+    "classes": "layout-callout",
+    "headings": 1,
+    "paragraphs": 0,
+    "lists": 1,
+    "images": 0,
+    "words": 20
+  },
+  {
+    "num": 147,
+    "whitespace": 65.7,
+    "classes": "card-grid|supercompact",
+    "headings": 5,
+    "paragraphs": 4,
+    "lists": 3,
+    "images": 0,
+    "words": 15
+  },
+  {
+    "num": 83,
+    "whitespace": 65.6,
+    "classes": "two-column|compact",
+    "headings": 5,
+    "paragraphs": 9,
+    "lists": 1,
+    "images": 0,
+    "words": 25
+  },
+  {
+    "num": 112,
+    "whitespace": 65.2,
+    "classes": "card-grid|ultracompact",
+    "headings": 5,
+    "paragraphs": 1,
+    "lists": 3,
+    "images": 4,
+    "words": 37
+  },
+  {
+    "num": 22,
+    "whitespace": 64.7,
+    "classes": "layout-horizontal-left|supercompact",
+    "headings": 2,
+    "paragraphs": 3,
+    "lists": 2,
+    "images": 2,
+    "words": 10
+  },
+  {
+    "num": 65,
+    "whitespace": 64.6,
+    "classes": "layout-horizontal-left|compact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 2,
+    "images": 1,
+    "words": 6
+  },
+  {
+    "num": 14,
+    "whitespace": 64.0,
+    "classes": "layout-horizontal-right|compact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 2,
+    "images": 1,
+    "words": 17
+  },
+  {
+    "num": 99,
+    "whitespace": 63.8,
+    "classes": "two-column",
+    "headings": 3,
+    "paragraphs": 2,
+    "lists": 3,
+    "images": 0,
+    "words": 14
+  },
+  {
+    "num": 34,
+    "whitespace": 63.0,
+    "classes": "layout-horizontal-right|compact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 22
+  },
+  {
+    "num": 39,
+    "whitespace": 62.9,
+    "classes": "layout-horizontal-left",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 6
+  },
+  {
+    "num": 40,
+    "whitespace": 62.4,
+    "classes": "layout-horizontal-right",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 1,
+    "images": 1,
+    "words": 7
+  },
+  {
+    "num": 17,
+    "whitespace": 61.9,
+    "classes": "layout-horizontal-right|compact",
+    "headings": 1,
+    "paragraphs": 1,
+    "lists": 2,
+    "images": 3,
+    "words": 9
+  },
+  {
+    "num": 105,
+    "whitespace": 61.9,
+    "classes": "card-grid|compact",
+    "headings": 3,
+    "paragraphs": 0,
+    "lists": 2,
+    "images": 12,
+    "words": 19
+  },
+  {
+    "num": 97,
+    "whitespace": 60.4,
+    "classes": "card-grid|ultracompact",
+    "headings": 4,
+    "paragraphs": 6,
+    "lists": 0,
+    "images": 3,
+    "words": 20
+  }
+]

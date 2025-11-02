@@ -1,0 +1,452 @@
+[
+  {
+    "num": 44,
+    "whitespace": 95.4,
+    "current_layout": "(none)",
+    "new_layout": "two-column",
+    "rationale": "Checklist with 13 items needs two-column layout",
+    "priority": 1,
+    "action": "add_two_column"
+  },
+  {
+    "num": 58,
+    "whitespace": 92.7,
+    "current_layout": "layout-callout ultracompact compact",
+    "new_layout": "layout-callout (add content)",
+    "rationale": "Only 14 words - too sparse",
+    "priority": 1,
+    "action": "add_content"
+  },
+  {
+    "num": 108,
+    "whitespace": 88.9,
+    "current_layout": "card-grid ultracompact",
+    "new_layout": "two-column",
+    "rationale": "Checklist with 12 items better in two-column than card-grid",
+    "priority": 2,
+    "action": "change_to_two_column"
+  },
+  {
+    "num": 170,
+    "whitespace": 88.9,
+    "current_layout": "card-grid ultracompact",
+    "new_layout": "card-grid (add content)",
+    "rationale": "Only 12 words - too sparse",
+    "priority": 2,
+    "action": "add_content"
+  },
+  {
+    "num": 143,
+    "whitespace": 82.6,
+    "current_layout": "lead",
+    "new_layout": "(remove lead - has too much content)",
+    "rationale": "Lead slide with 8 words and 5 headings is too dense",
+    "priority": 2,
+    "action": "remove_lead"
+  },
+  {
+    "num": 13,
+    "whitespace": 81.6,
+    "current_layout": "layout-callout compact",
+    "new_layout": "layout-callout (add content)",
+    "rationale": "Only 10 words - too sparse",
+    "priority": 2,
+    "action": "add_content"
+  },
+  {
+    "num": 88,
+    "whitespace": 81.5,
+    "current_layout": "card-grid ultracompact supercompact",
+    "new_layout": "two-column",
+    "rationale": "Only 0 sections - two-column more appropriate than card-grid",
+    "priority": 2,
+    "action": "change_to_two_column"
+  },
+  {
+    "num": 149,
+    "whitespace": 81.1,
+    "current_layout": "layout-callout ultracompact",
+    "new_layout": "layout-callout (add content)",
+    "rationale": "Only 11 words - too sparse",
+    "priority": 2,
+    "action": "add_content"
+  },
+  {
+    "num": 150,
+    "whitespace": 80.3,
+    "current_layout": "card-grid supercompact",
+    "new_layout": "card-grid (add content)",
+    "rationale": "Only 13 words - too sparse",
+    "priority": 2,
+    "action": "add_content"
+  },
+  {
+    "num": 33,
+    "whitespace": 79.9,
+    "current_layout": "layout-callout compact",
+    "new_layout": "layout-callout (add content)",
+    "rationale": "Only 11 words - too sparse",
+    "priority": 3,
+    "action": "add_content"
+  },
+  {
+    "num": 37,
+    "whitespace": 79.9,
+    "current_layout": "two-column compact",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Has 1 image - horizontal layout better",
+    "priority": 3,
+    "action": "change_to_horizontal"
+  },
+  {
+    "num": 79,
+    "whitespace": 79.6,
+    "current_layout": "two-column supercompact",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Has 1 image - horizontal layout better",
+    "priority": 3,
+    "action": "change_to_horizontal"
+  },
+  {
+    "num": 165,
+    "whitespace": 78.8,
+    "current_layout": "two-column compact",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Has 1 image - horizontal layout better",
+    "priority": 3,
+    "action": "change_to_horizontal"
+  },
+  {
+    "num": 73,
+    "whitespace": 78.5,
+    "current_layout": "two-column ultracompact",
+    "new_layout": "(none)",
+    "rationale": "Single topic - remove two-column",
+    "priority": 3,
+    "action": "remove_layout"
+  },
+  {
+    "num": 20,
+    "whitespace": 78.5,
+    "current_layout": "layout-callout compact",
+    "new_layout": "layout-callout (add content)",
+    "rationale": "Only 11 words - too sparse",
+    "priority": 3,
+    "action": "add_content"
+  },
+  {
+    "num": 47,
+    "whitespace": 77.9,
+    "current_layout": "layout-callout compact",
+    "new_layout": "layout-callout (add content)",
+    "rationale": "Only 12 words - too sparse",
+    "priority": 3,
+    "action": "add_content"
+  },
+  {
+    "num": 163,
+    "whitespace": 77.8,
+    "current_layout": "card-grid supercompact",
+    "new_layout": "two-column",
+    "rationale": "Only 1 sections - two-column more appropriate than card-grid",
+    "priority": 3,
+    "action": "change_to_two_column"
+  },
+  {
+    "num": 115,
+    "whitespace": 77.3,
+    "current_layout": "title",
+    "new_layout": "two-column",
+    "rationale": "Checklist with 8 items needs two-column layout",
+    "priority": 3,
+    "action": "add_two_column"
+  },
+  {
+    "num": 43,
+    "whitespace": 74.9,
+    "current_layout": "two-column compact",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Has 1 image - horizontal layout better",
+    "priority": 3,
+    "action": "change_to_horizontal"
+  },
+  {
+    "num": 29,
+    "whitespace": 74.3,
+    "current_layout": "two-column compact",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Has 1 image - horizontal layout better",
+    "priority": 3,
+    "action": "change_to_horizontal"
+  },
+  {
+    "num": 134,
+    "whitespace": 72.9,
+    "current_layout": "layout-horizontal-right supercompact",
+    "new_layout": "two-column or (none)",
+    "rationale": "Horizontal layout but no image found",
+    "priority": 3,
+    "action": "change_to_two_column"
+  },
+  {
+    "num": 35,
+    "whitespace": 72.9,
+    "current_layout": "two-column compact",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Has 1 image - horizontal layout better",
+    "priority": 3,
+    "action": "change_to_horizontal"
+  },
+  {
+    "num": 162,
+    "whitespace": 71.9,
+    "current_layout": "card-grid supercompact",
+    "new_layout": "two-column",
+    "rationale": "Only 1 sections - two-column more appropriate than card-grid",
+    "priority": 3,
+    "action": "change_to_two_column"
+  },
+  {
+    "num": 135,
+    "whitespace": 71.8,
+    "current_layout": "layout-horizontal-right supercompact",
+    "new_layout": "two-column or (none)",
+    "rationale": "Horizontal layout but no image found",
+    "priority": 3,
+    "action": "change_to_two_column"
+  },
+  {
+    "num": 124,
+    "whitespace": 71.5,
+    "current_layout": "layout-horizontal-right supercompact",
+    "new_layout": "two-column or (none)",
+    "rationale": "Horizontal layout but no image found",
+    "priority": 3,
+    "action": "change_to_two_column"
+  },
+  {
+    "num": 41,
+    "whitespace": 71.5,
+    "current_layout": "two-column compact",
+    "new_layout": "layout-horizontal-left",
+    "rationale": "Has 1 image - horizontal layout better",
+    "priority": 3,
+    "action": "change_to_horizontal"
+  },
+  {
+    "num": 123,
+    "whitespace": 71.3,
+    "current_layout": "layout-horizontal-left supercompact",
+    "new_layout": "two-column or (none)",
+    "rationale": "Horizontal layout but no image found",
+    "priority": 3,
+    "action": "change_to_two_column"
+  },
+  {
+    "num": 139,
+    "whitespace": 70.8,
+    "current_layout": "card-grid supercompact",
+    "new_layout": "two-column",
+    "rationale": "Only 1 sections - two-column more appropriate than card-grid",
+    "priority": 3,
+    "action": "change_to_two_column"
+  },
+  {
+    "num": 122,
+    "whitespace": 70.8,
+    "current_layout": "card-grid supercompact",
+    "new_layout": "card-grid (add content)",
+    "rationale": "Only 10 words - too sparse",
+    "priority": 3,
+    "action": "add_content"
+  },
+  {
+    "num": 129,
+    "whitespace": 70.3,
+    "current_layout": "layout-horizontal-right supercompact",
+    "new_layout": "two-column",
+    "rationale": "Checklist with 8 items needs two-column layout",
+    "priority": 3,
+    "action": "add_two_column"
+  },
+  {
+    "num": 145,
+    "whitespace": 70.0,
+    "current_layout": "card-grid compact",
+    "new_layout": "card-grid (add content)",
+    "rationale": "Only 15 words - too sparse",
+    "priority": 3,
+    "action": "add_content"
+  },
+  {
+    "num": 49,
+    "whitespace": 69.9,
+    "current_layout": "two-column ultracompact",
+    "new_layout": "(none)",
+    "rationale": "Single topic - remove two-column",
+    "priority": 3,
+    "action": "remove_layout"
+  },
+  {
+    "num": 80,
+    "whitespace": 69.3,
+    "current_layout": "layout-horizontal-left supercompact",
+    "new_layout": "two-column",
+    "rationale": "Checklist with 8 items needs two-column layout",
+    "priority": 3,
+    "action": "add_two_column"
+  },
+  {
+    "num": 131,
+    "whitespace": 69.2,
+    "current_layout": "layout-callout supercompact",
+    "new_layout": "layout-callout (add content)",
+    "rationale": "Only 9 words - too sparse",
+    "priority": 3,
+    "action": "add_content"
+  },
+  {
+    "num": 38,
+    "whitespace": 68.6,
+    "current_layout": "layout-horizontal-right compact",
+    "new_layout": "two-column or (none)",
+    "rationale": "Horizontal layout but no image found",
+    "priority": 3,
+    "action": "change_to_two_column"
+  },
+  {
+    "num": 106,
+    "whitespace": 68.4,
+    "current_layout": "card-grid compact",
+    "new_layout": "card-grid (add content)",
+    "rationale": "Only 16 words - too sparse",
+    "priority": 3,
+    "action": "add_content"
+  },
+  {
+    "num": 136,
+    "whitespace": 71.3,
+    "current_layout": "card-grid supercompact",
+    "new_layout": "two-column or card-grid",
+    "rationale": "3 sections - borderline (manual review suggested)",
+    "priority": 5,
+    "action": "review_manual"
+  },
+  {
+    "num": 89,
+    "whitespace": 91.3,
+    "current_layout": "(none)",
+    "new_layout": "(none - default is fine)",
+    "rationale": "Simple content - default layout OK",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 45,
+    "whitespace": 84.4,
+    "current_layout": "(none)",
+    "new_layout": "(none - default is fine)",
+    "rationale": "Simple content - default layout OK",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 160,
+    "whitespace": 78.6,
+    "current_layout": "layout-horizontal-right supercompact",
+    "new_layout": "layout-horizontal-right supercompact (keep)",
+    "rationale": "Appropriate for 1 image + text",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 74,
+    "whitespace": 77.3,
+    "current_layout": "two-column compact",
+    "new_layout": "two-column (keep)",
+    "rationale": "Appropriate for content",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 25,
+    "whitespace": 72.2,
+    "current_layout": "layout-horizontal-right supercompact",
+    "new_layout": "layout-horizontal-right supercompact (keep)",
+    "rationale": "Appropriate for 1 image + text",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 84,
+    "whitespace": 72.1,
+    "current_layout": "two-column compact",
+    "new_layout": "two-column (keep)",
+    "rationale": "Checklist already in two-column",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 52,
+    "whitespace": 71.8,
+    "current_layout": "layout-horizontal-right supercompact",
+    "new_layout": "layout-horizontal-right supercompact (keep)",
+    "rationale": "Appropriate for 1 image + text",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 3,
+    "whitespace": 70.3,
+    "current_layout": "layout-horizontal-left supercompact",
+    "new_layout": "layout-horizontal-left supercompact (keep)",
+    "rationale": "Appropriate for 1 image + text",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 50,
+    "whitespace": 70.2,
+    "current_layout": "layout-horizontal-left ultracompact compact",
+    "new_layout": "layout-horizontal-left ultracompact compact (keep)",
+    "rationale": "Appropriate for 1 image + text",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 128,
+    "whitespace": 69.8,
+    "current_layout": "layout-horizontal-right supercompact",
+    "new_layout": "layout-horizontal-right supercompact (keep)",
+    "rationale": "Appropriate for 1 image + text",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 23,
+    "whitespace": 69.1,
+    "current_layout": "layout-horizontal-left compact",
+    "new_layout": "layout-horizontal-left compact (keep)",
+    "rationale": "Appropriate for 1 image + text",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 7,
+    "whitespace": 68.7,
+    "current_layout": "layout-horizontal-right compact",
+    "new_layout": "layout-horizontal-right compact (keep)",
+    "rationale": "Appropriate for 1 image + text",
+    "priority": 99,
+    "action": "keep"
+  },
+  {
+    "num": 26,
+    "whitespace": 68.4,
+    "current_layout": "layout-horizontal-left supercompact",
+    "new_layout": "layout-horizontal-left supercompact (keep)",
+    "rationale": "Appropriate for 1 image + text",
+    "priority": 99,
+    "action": "keep"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-02",
+  "total_analyzed": 50,
+  "implemented": 24,
+  "needs_content": 12,
+  "needs_review": 1,
+  "skipped_lead": 13,
+  "changes_by_type": {
+    "add_two_column": 3,
+    "change_to_two_column": 9,
+    "remove_lead": 1,
+    "change_to_horizontal": 7,
+    "remove_layout": 1
+  },
+  "implemented_slides": [
+    44,
+    108,
+    143,
+    88,
+    37,
+    79,
+    165,
+    73,
+    163,
+    115,
+    43,
+    29,
+    134,
+    35,
+    162,
+    135,
+    124,
+    41,
+    123,
+    139,
+    129
+  ],
+  "avg_whitespace_before": 76.87619047619049,
+  "expected_improvement": 11.876190476190487
+}
