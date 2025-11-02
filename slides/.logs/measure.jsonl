@@ -1,0 +1,17 @@
+{"timestamp": "2025-11-02T03:50:06.661225-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:07.358689-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:08.119424-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:08.841250-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:09.679218-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:10.482197-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:11.240420-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:18.053820-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:26.549184-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:44.108062-06:00", "level": "INFO", "message": "Starting measure process: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:44.113046-06:00", "level": "INFO", "message": "Loaded thresholds: {'density': [0.012, 0.018], 'whitespace': [0.15, 0.4]}", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:50.793215-06:00", "level": "INFO", "message": "Starting measure process: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:50.798733-06:00", "level": "INFO", "message": "Loaded thresholds: {'density': [0.012, 0.018], 'whitespace': [0.15, 0.4]}", "step": "measure"}
+{"timestamp": "2025-11-02T03:50:55.404114-06:00", "level": "ERROR", "message": "Playwright error: 1 validation error for SlideMetrics\nwhitespace_ratio\n  Value error, whitespace_ratio must be between 0 and 1 [type=value_error, input_value=-0.10545454545454547, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error", "step": "measure"}
+{"timestamp": "2025-11-02T03:51:07.596985-06:00", "level": "INFO", "message": "Starting measure process: /home/cuzic/ai-dev-yodoq/slides/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T03:51:07.602773-06:00", "level": "INFO", "message": "Loaded thresholds: {'density': [0.012, 0.018], 'whitespace': [0.15, 0.4]}", "step": "measure"}
+{"timestamp": "2025-11-02T03:51:12.023699-06:00", "level": "ERROR", "message": "Playwright error: 1 validation error for SlideMetrics\nwhitespace_ratio\n  Value error, whitespace_ratio must be between 0 and 1 [type=value_error, input_value=-0.10545454545454547, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error", "step": "measure"}

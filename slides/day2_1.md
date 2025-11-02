@@ -57,7 +57,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-timeline compact -->
+<!-- _class: layout-timeline supercompact -->
 
 # 2日目のゴール：既存システムへの高品質な機能追加
 
@@ -101,7 +101,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # リバースエンジニアリングとは
 
@@ -124,7 +124,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # リバースエンジニアリングの第一歩
 
@@ -143,7 +143,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -199,7 +199,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left compact -->
 
 # リバースエンジニアリング → 網羅的テスト生成（重要）
 
@@ -226,7 +226,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # 既存機能のフィットギャップ分析
 
@@ -245,7 +245,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # 影響範囲調査の手法
 
@@ -294,7 +294,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-comparison compact -->
+<!-- _class: layout-comparison supercompact -->
 
 # テストシナリオとテストコードの違い
 
@@ -333,7 +333,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # テストシナリオ → テストコードの順序
 
@@ -350,7 +350,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # デグレ防止の重要性
 
@@ -374,7 +374,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # テストシナリオの分類
 
@@ -397,7 +397,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # テストシナリオ作成の実例
 
@@ -426,7 +426,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # テストコード基礎（復習）
 
@@ -458,7 +458,7 @@ AIは局所変更のみ見る→全体影響見落とし→デグレ
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # テストシナリオからテストコードへ
 
@@ -477,7 +477,7 @@ Given-When-Then形式で記述
 
 ---
 
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">💡</div>
 

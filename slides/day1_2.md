@@ -67,7 +67,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-horizontal-left ultracompact -->
+<!-- _class: layout-horizontal-left ultracompact compact -->
 
 # Phase分け戦略
 
@@ -79,7 +79,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # タスク粒度（30分〜2時間）
 
@@ -171,7 +171,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-callout ultracompact -->
+<!-- _class: layout-callout ultracompact compact -->
 
 <div class="icon">⚡</div>
 
@@ -187,7 +187,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-timeline supercompact -->
+<!-- _class: layout-timeline compact -->
 
 # 実装の標準ワークフロー
 
@@ -228,7 +228,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right compact -->
 
 # TDD/BDD統合ワークフロー
 
@@ -284,7 +284,7 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-code-focus ultracompact -->
+<!-- _class: layout-code-focus ultracompact compact -->
 
 # セキュアなコードの指示方法
 
@@ -491,7 +491,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left compact -->
 
 # テストカバレッジ80%ルール
 
@@ -559,7 +559,7 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # Living Documentation（AIの外部メモリ）
 
@@ -687,13 +687,13 @@ Playwrightテストを作成」
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead supercompact -->
 
 ## Part 2 全体のまとめ
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+<!-- _class: card-grid ultracompact supercompact -->
 
 # Part 2のキーポイント
 

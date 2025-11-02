@@ -451,6 +451,428 @@ section.layout-split-vertical ul {
 }
 
 /* ========================================
+   レイアウト別コンパクト設定 (オーバーフロー対策)
+   ======================================== */
+
+/* Lead + compact (6 slides) */
+section.lead.compact {
+  font-size: 28px;
+  padding: 50px 80px;
+}
+section.lead.compact h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+section.lead.compact p {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+/* Lead + supercompact */
+section.lead.supercompact {
+  font-size: 24px;
+  padding: 40px 70px;
+}
+section.lead.supercompact h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+section.lead.supercompact p {
+  margin: 12px 0;
+  line-height: 1.4;
+}
+
+/* card-grid + compact (5 slides) */
+section.card-grid.compact {
+  gap: 15px;
+  padding: 30px 50px;
+}
+section.card-grid.compact > :not(h1) {
+  padding: 15px;
+  font-size: 15px;
+}
+section.card-grid.compact h1 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+section.card-grid.compact h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+section.card-grid.compact ul {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+section.card-grid.compact li {
+  margin-bottom: 2px;
+}
+
+/* card-grid + supercompact (2 slides) */
+section.card-grid.supercompact {
+  gap: 10px;
+  padding: 25px 40px;
+}
+section.card-grid.supercompact > :not(h1) {
+  padding: 12px;
+  font-size: 13px;
+}
+section.card-grid.supercompact h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+section.card-grid.supercompact h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+section.card-grid.supercompact ul {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+section.card-grid.supercompact li {
+  margin-bottom: 1px;
+  line-height: 1.3;
+}
+
+/* layout-horizontal-right + compact (5 slides) */
+section.layout-horizontal-right.compact {
+  grid-template-columns: 42% 58%;
+  gap: 15px;
+  padding: 30px 50px;
+}
+section.layout-horizontal-right.compact > :not(h1):not(img) {
+  font-size: 16px;
+}
+section.layout-horizontal-right.compact h1 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+section.layout-horizontal-right.compact li {
+  margin-bottom: 3px;
+}
+section.layout-horizontal-right.compact ul,
+section.layout-horizontal-right.compact ol {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* layout-horizontal-right + supercompact (1 slide) */
+section.layout-horizontal-right.supercompact {
+  grid-template-columns: 40% 60%;
+  gap: 12px;
+  padding: 25px 40px;
+}
+section.layout-horizontal-right.supercompact > :not(h1):not(img) {
+  font-size: 14px;
+}
+section.layout-horizontal-right.supercompact h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+section.layout-horizontal-right.supercompact li {
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+section.layout-horizontal-right.supercompact ul,
+section.layout-horizontal-right.supercompact ol {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+/* layout-horizontal-right (no compact - 1 slide) */
+section.layout-horizontal-right:not(.compact):not(.supercompact):not(.ultracompact) {
+  padding: 35px 55px;
+}
+
+/* layout-diagram-only + compact (3 slides) */
+section.layout-diagram-only.compact img {
+  max-height: 80vh;
+}
+section.layout-diagram-only.compact {
+  padding: 30px 50px;
+}
+section.layout-diagram-only.compact h1 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+/* two-column + supercompact (2 slides) */
+section.two-column.supercompact {
+  column-gap: 30px;
+  font-size: 13px;
+  padding: 30px 50px;
+}
+section.two-column.supercompact h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+section.two-column.supercompact h2 {
+  font-size: 17px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+section.two-column.supercompact li {
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+/* two-column + compact (1 slide) */
+section.two-column.compact {
+  column-gap: 35px;
+  font-size: 15px;
+  padding: 30px 50px;
+}
+section.two-column.compact h1 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+section.two-column.compact h2 {
+  font-size: 19px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+/* layout-callout + compact (2 slides) */
+section.layout-callout.compact {
+  padding: 50px;
+}
+section.layout-callout.compact h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+section.layout-callout.compact .message {
+  font-size: 28px;
+  padding: 35px;
+  margin-bottom: 25px;
+}
+section.layout-callout.compact .icon {
+  font-size: 70px;
+  margin-bottom: 25px;
+}
+section.layout-callout.compact ul {
+  font-size: 18px;
+  padding: 25px 40px;
+}
+
+/* layout-callout + supercompact (1 slide) */
+section.layout-callout.supercompact {
+  padding: 40px;
+}
+section.layout-callout.supercompact h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+section.layout-callout.supercompact .message {
+  font-size: 24px;
+  padding: 30px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+section.layout-callout.supercompact .icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+section.layout-callout.supercompact ul {
+  font-size: 16px;
+  padding: 20px 35px;
+}
+
+/* layout-callout + ultracompact (1 slide) */
+section.layout-callout.ultracompact {
+  padding: 35px;
+}
+section.layout-callout.ultracompact h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+section.layout-callout.ultracompact .message {
+  font-size: 20px;
+  padding: 25px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+section.layout-callout.ultracompact .icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+section.layout-callout.ultracompact ul {
+  font-size: 14px;
+  padding: 18px 30px;
+}
+
+/* layout-horizontal-left + supercompact (2 slides) */
+section.layout-horizontal-left.supercompact {
+  grid-template-columns: 58% 42%;
+  gap: 12px;
+  padding: 25px 40px;
+}
+section.layout-horizontal-left.supercompact > :not(h1):not(img) {
+  font-size: 14px;
+}
+section.layout-horizontal-left.supercompact h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+section.layout-horizontal-left.supercompact li {
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+section.layout-horizontal-left.supercompact ul,
+section.layout-horizontal-left.supercompact ol {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+/* layout-horizontal-left + ultracompact (1 slide) */
+section.layout-horizontal-left.ultracompact {
+  grid-template-columns: 60% 40%;
+  gap: 10px;
+  padding: 20px 35px;
+}
+section.layout-horizontal-left.ultracompact > :not(h1):not(img) {
+  font-size: 12px;
+}
+section.layout-horizontal-left.ultracompact h1 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+section.layout-horizontal-left.ultracompact li {
+  margin-bottom: 1px;
+  line-height: 1.2;
+}
+section.layout-horizontal-left.ultracompact ul,
+section.layout-horizontal-left.ultracompact ol {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* layout-horizontal-left + compact (1 slide) */
+section.layout-horizontal-left.compact {
+  grid-template-columns: 56% 44%;
+  gap: 15px;
+  padding: 30px 50px;
+}
+section.layout-horizontal-left.compact > :not(h1):not(img) {
+  font-size: 16px;
+}
+section.layout-horizontal-left.compact h1 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+section.layout-horizontal-left.compact li {
+  margin-bottom: 3px;
+}
+
+/* layout-timeline + compact (2 slides) */
+section.layout-timeline.compact {
+  padding: 30px 50px;
+}
+section.layout-timeline.compact h1 {
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+section.layout-timeline.compact .timeline {
+  margin-top: 50px;
+}
+section.layout-timeline.compact .step-number {
+  width: 70px;
+  height: 70px;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+section.layout-timeline.compact .step h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+section.layout-timeline.compact .step ul {
+  font-size: 13px;
+}
+
+/* layout-timeline + supercompact (1 slide) */
+section.layout-timeline.supercompact {
+  padding: 25px 40px;
+}
+section.layout-timeline.supercompact h1 {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+section.layout-timeline.supercompact .timeline {
+  margin-top: 40px;
+}
+section.layout-timeline.supercompact .step-number {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+section.layout-timeline.supercompact .step h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+section.layout-timeline.supercompact .step ul {
+  font-size: 12px;
+  padding-left: 15px;
+}
+
+/* layout-code-focus + ultracompact (1 slide) */
+section.layout-code-focus.ultracompact {
+  padding: 25px;
+  gap: 15px;
+}
+section.layout-code-focus.ultracompact h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+section.layout-code-focus.ultracompact pre {
+  font-size: 14px;
+  padding: 20px;
+  max-height: 400px;
+}
+section.layout-code-focus.ultracompact .notes {
+  gap: 15px;
+  font-size: 13px;
+}
+section.layout-code-focus.ultracompact .notes > div {
+  padding: 15px;
+}
+
+/* layout-comparison + supercompact (1 slide) */
+section.layout-comparison.supercompact {
+  padding: 30px;
+  gap: 15px;
+}
+section.layout-comparison.supercompact h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+section.layout-comparison.supercompact > div:nth-of-type(1),
+section.layout-comparison.supercompact > div:nth-of-type(3) {
+  padding: 20px;
+  font-size: 13px;
+}
+section.layout-comparison.supercompact > div:nth-of-type(2) {
+  font-size: 38px;
+}
+section.layout-comparison.supercompact li {
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+/* Default slides without layout class (1 slide) */
+section:not([class*="layout-"]):not(.lead):not(.compact):not(.supercompact):not(.ultracompact):not(.card-grid):not(.two-column):not(.three-column) {
+  padding: 35px 55px;
+}
+
+/* Lead slides without compact (1 slide) */
+section.lead:not(.compact):not(.supercompact):not(.ultracompact) {
+  font-size: 32px;
+  padding: 60px 90px;
+}
+section.lead:not(.compact):not(.supercompact):not(.ultracompact) h1 {
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+
+/* ========================================
    基本スタイル設定
    ======================================== */
 
