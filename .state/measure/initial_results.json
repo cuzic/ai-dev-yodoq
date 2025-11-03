@@ -1779,10 +1779,10 @@
     {
       "slide_number": 85,
       "slide_id": "85",
-      "slide_classes": "lead compact",
+      "slide_classes": "lead supercompact",
       "viewport_overflow_px": 0.0,
       "safe_area_invasion_px": 0.0,
-      "text_density": 0.5717359754774306,
+      "text_density": 0.4959004720052083,
       "violations": [],
       "severity": "OK"
     },
@@ -2549,10 +2549,10 @@
     {
       "slide_number": 102,
       "slide_id": "102",
-      "slide_classes": "card-grid supercompact",
+      "slide_classes": "card-grid ultracompact",
       "viewport_overflow_px": 0.0,
       "safe_area_invasion_px": 0.0,
-      "text_density": 0.29364881727430553,
+      "text_density": 0.23489149305555557,
       "violations": [],
       "severity": "OK"
     },
@@ -2659,10 +2659,10 @@
     {
       "slide_number": 109,
       "slide_id": "109",
-      "slide_classes": "lead supercompact",
+      "slide_classes": "lead ultracompact",
       "viewport_overflow_px": 0.0,
       "safe_area_invasion_px": 0.0,
-      "text_density": 0.035105387369791664,
+      "text_density": 0.031211344401041667,
       "violations": [],
       "severity": "OK"
     },
@@ -2742,10 +2742,10 @@
     {
       "slide_number": 112,
       "slide_id": "112",
-      "slide_classes": "card-grid supercompact",
+      "slide_classes": "card-grid ultracompact",
       "viewport_overflow_px": 0.0,
       "safe_area_invasion_px": 0.0,
-      "text_density": 0.23907063802083334,
+      "text_density": 0.19957953559027777,
       "violations": [],
       "severity": "OK"
     },
@@ -3210,10 +3210,10 @@
     {
       "slide_number": 117,
       "slide_id": "117",
-      "slide_classes": "layout-horizontal-right supercompact",
+      "slide_classes": "layout-horizontal-right ultracompact",
       "viewport_overflow_px": 0.0,
       "safe_area_invasion_px": 0.0,
-      "text_density": 0.1383761935763889,
+      "text_density": 0.11349758572048611,
       "violations": [],
       "severity": "OK"
     },
@@ -3474,10 +3474,10 @@
     {
       "slide_number": 125,
       "slide_id": "125",
-      "slide_classes": "layout-callout supercompact",
+      "slide_classes": "layout-callout ultracompact",
       "viewport_overflow_px": 0.0,
       "safe_area_invasion_px": 0.0,
-      "text_density": 0.1383761935763889,
+      "text_density": 0.11147189670138889,
       "violations": [],
       "severity": "OK"
     },
@@ -3819,10 +3819,10 @@
     {
       "slide_number": 132,
       "slide_id": "132",
-      "slide_classes": "card-grid supercompact",
+      "slide_classes": "card-grid ultracompact",
       "viewport_overflow_px": 0.0,
       "safe_area_invasion_px": 0.0,
-      "text_density": 0.5328729926215278,
+      "text_density": 0.434842529296875,
       "violations": [],
       "severity": "OK"
     },
@@ -5222,10 +5222,10 @@
     {
       "slide_number": 160,
       "slide_id": "160",
-      "slide_classes": "layout-diagram-only supercompact",
+      "slide_classes": "layout-diagram-only ultracompact",
       "viewport_overflow_px": 0.0,
       "safe_area_invasion_px": 0.0,
-      "text_density": 0.16583116319444444,
+      "text_density": 0.1394382052951389,
       "violations": [],
       "severity": "OK"
     },

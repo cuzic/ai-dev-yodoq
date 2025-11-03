@@ -33,7 +33,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # 昨日の演習での気づき共有
 
@@ -143,7 +143,7 @@ node_modules、.git、dist、*.log除外
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right ultracompact -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -278,7 +278,7 @@ AI局所変更のみ→全体影響見落とし
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: layout-callout ultracompact -->
 
 <div class="icon">📝</div>
 
@@ -424,7 +424,7 @@ AI局所変更のみ→全体影響見落とし
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # テストコード基礎（復習）
 

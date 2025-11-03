@@ -716,9 +716,9 @@ paginate: true
 **必須項目:** Phase・タスク名・所要時間・依存・完了条件
 
 **なぜ必要:**
-曖昧な計画→AI勝手解釈、明確なフォーマット→一貫出力
+曖昧な計画→AI勝手解釈、明確→一貫出力
 
-**進捗管理:** ステータス可視化（未着手・進行中・完了）
+**進捗管理:** ステータス可視化
 
 **チーム共有:** Markdown形式でGit管理
 
@@ -1301,7 +1301,7 @@ theme: ai-seminar
 paginate: true
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead supercompact -->
 
 ## Day 1-3
 # まとめ + 演習
@@ -1611,7 +1611,7 @@ TDD理解不足→Red-Green-Refactor厳守
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # 演習成功チェックリスト②
 
@@ -1707,7 +1707,7 @@ AI活用3原則、要件定義、設計
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead ultracompact -->
 
 ## 2日目への準備
 
@@ -1774,7 +1774,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # 昨日の演習での気づき共有
 
@@ -1884,7 +1884,7 @@ node_modules、.git、dist、*.log除外
 
 ---
 
-<!-- _class: layout-horizontal-right supercompact -->
+<!-- _class: layout-horizontal-right ultracompact -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -2019,7 +2019,7 @@ AI局所変更のみ→全体影響見落とし
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: layout-callout ultracompact -->
 
 <div class="icon">📝</div>
 
@@ -2165,7 +2165,7 @@ AI局所変更のみ→全体影響見落とし
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # テストコード基礎（復習）
 
@@ -2711,7 +2711,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only ultracompact -->
 
 # 2日間の総まとめ
 
