@@ -3,22 +3,16 @@ marp: true
 theme: ai-seminar
 paginate: true
 ---
-
-<!-- _class: lead compact -->
-
-# AI活用研修：新規開発編
-
-## 2日間で学ぶ、生産性を劇的に向上させる体系的アプローチ
-
-AI駆動開発で開発期間を大幅短縮
-
 ---
 
-<!-- _class: layout-diagram-only -->
-
 # 本日の目標
-
-![本日の目標](./assets/diagrams-web/slide_002_本日の目標.svg)
+- **1日目のゴール:** 5-STEPフローを理解し、新規開発の基本を習得
+- **タイムテーブル:** 午前2時間（Part 1）+ 午後2時間（Part 2）+ 演習2時間（Part 3）
+- **再現可能な開発手法の習得:**
+  - プロンプトパターンの習得（成功するAIへの指示方法）
+  - 5-STEPフロー（要件定義→設計→タスク分解→実装→品質担保→リファクタリング）
+  - AI制約への対応（Jagged Intelligence、Reward Hacking、忘れっぽさ）
+- **効果:** 明日から実務で使える、チーム展開可能
 
 ---
 
@@ -26,35 +20,23 @@ AI駆動開発で開発期間を大幅短縮
 
 # AI活用の3原則
 
-![AI活用の3原則](./assets/diagrams/diagram_01_ai_principles.svg)
+![AI活用の3原則](./assets/diagrams-web/diagram_01_ai_principles.svg)
 
-**Jagged Intelligence:** 得意（コード生成・テスト・設計）、苦手（ビジネス要件・判断）
-**Trust but Verify:** AIにもエラーあり、AI自己レビューで品質向上
-**Guardrails:** ドキュメント駆動、受入条件で手戻り防止
+- **Jagged Intelligence**: 得意（コード生成・テスト）、苦手（設計・セキュリティ）
+- **Trust but Verify**: エラー率10-60%、AI自己レビューで40-60%向上
+- **Guardrails**: ドキュメント駆動、受入条件で手戻り防止
 
 ---
 
-<!-- _class: layout-comparison -->
+<!-- _class: layout-horizontal-left -->
 
 # Vibe Coding vs Production Engineering
 
-<div>
+![3つのアプローチ比較](./assets/diagrams-web/diagram_22_vibe_vs_production.svg)
 
-### Vibe Coding
-速い（30分〜1時間）、品質バラバラ、プロトタイプ向き
-
-</div>
-
-<div>VS</div>
-
-<div>
-
-### Production Engineering
-構造化、品質保証、本番向き
-
-</div>
-
-**結論**: Vibe Coding with Guardrails で速さと品質を両立
+- **Vibe Coding**: 速い（30分〜1時間）、品質バラバラ、プロトタイプ向き
+- **Production Engineering**: 構造化、品質保証、本番向き
+- **Vibe Coding with Guardrails**: 速さと品質両立、設計書で導く
 
 ---
 
@@ -62,7 +44,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # 開発者の役割変化
 
-![開発者の役割変化](./assets/diagrams/diagram_02_role_change.svg)
+![開発者の役割変化](./assets/diagrams-web/diagram_02_role_change.svg)
 
 - **従来：運転手** - コード1行ずつ、全実装詳細把握
 - **AI時代：ナビゲーター** - 方向指示、AIが実装
@@ -76,14 +58,15 @@ AI駆動開発で開発期間を大幅短縮
 
 # 5-STEPフロー全体像
 
-![5-STEPフロー](./assets/diagrams/diagram_03_5step_flow.svg)
+![5-STEPフロー](./assets/diagrams-web/diagram_03_5step_flow.svg)
 
 - **STEP1: 要件定義** - 何を作るか明確化（Guardrails構築）
 - **STEP2: 設計** - どう作るか定義（AI外部メモリ）
 - **STEP3: タスク分解** - 全体像を小さく分割（忘れっぽさ対策）
 - **STEP4: 実装** - 小さく作る・TDD・AI自己レビュー
-- **STEP5: 品質担保＆ドキュメント反映** - Trust but Verify自動化、Living Documentation
-- **効果:** 手戻り防止、品質保証、開発期間短縮
+- **STEP5: 品質担保** - Trust but Verify自動化
+- **STEP6: リファクタリング** - Living Documentation
+- **効果:** 手戻りなし、品質保証、開発期間1/3短縮
 
 ---
 
@@ -91,7 +74,7 @@ AI駆動開発で開発期間を大幅短縮
 
 # AIの制約①忘れっぽい（セッション制約）
 
-![AIの外部メモリ](./assets/diagrams/diagram_04_ai_memory.svg)
+![AIの外部メモリ](./assets/diagrams-web/diagram_04_ai_memory.svg)
 
 - **セッション内のみ記憶**: ブラウザ閉じる→全忘却、20万トークン超過→古い情報忘却
 - **問題**: 同じバグ繰り返し、成功方法忘却
@@ -99,44 +82,34 @@ AI駆動開発で開発期間を大幅短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
-
 # AIの制約②Reward Hacking（手抜き問題）
-
-![Reward Hacking問題と対策](./assets/diagrams/diagram_39_reward_hacking_examples.svg)
+- **問題:**
+  - AIは「楽な解決策」を選びがち
+  - タスク完了優先、セキュリティ・品質は二の次
+- **具体例:**
+  - パスワード平文保存、エラーハンドリング省略
+- **対策:**
+  - 明確な制約を与える（bcrypt、環境変数、バリデーション）
+  - AI自己レビュー必須化
+  - 実装後「このコードをレビューして」
+- **効果:**
+  - バグ検出率40-60%向上、追加コストほぼゼロ
 
 ---
-
-<!-- _class: two-column supercompact -->
 
 # 環境準備
-
-## 必須ツール
-
-**Claude Code**
-AI開発環境、プロジェクト全体文脈理解
-
-**GitHub**
-バージョン管理、頻繁commit、AI暴走から回復
-
-**VS Code**
-エディタ、Mermaid Preview、図の即座確認
-
-## 推奨
-
-**Dev Container**
-環境統一化、再現性、安全性
-
-## セットアップ
-Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
+- **必須ツール:**
+  - Claude Code（AI開発環境、プロジェクト全体を扱うAIアシスタント）
+  - GitHub（バージョン管理、頻繁なコミットで暴走対策）
+  - VS Code（エディタ、Mermaid Preview拡張推奨）
+- **推奨ツール:**
+  - Dev Container（環境統一化、dangerously-skip-permissionsモードの安全利用）
+- **なぜこれらが必要か:**
+  - Claude Code：プロジェクト全体の文脈を理解、複数ファイル一括操作
+  - GitHub：頻繁なコミットでAIの暴走から回復可能
+  - Dev Container：環境の再現性、実験の安全性
 
 ---
-
-<!-- _class: layout-diagram-only -->
-
-# セキュリティベストプラクティス（補足）
-
-![セキュリティベストプラクティス](./assets/diagrams/diagram_23_security_best_practices.svg)
 
 ---
 
@@ -146,20 +119,17 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: layout-callout -->
-
-<div class="icon">💡</div>
-
 # Claude Code とは
-
-<div class="message">
-プロジェクト全体を扱うAI開発アシスタント
-</div>
-
-- プロジェクト全体の文脈を理解（複数ファイルの関係性を把握）
-- 単一ファイル編集ではなく、関連ファイルを一括操作
-- Git統合で安全性を確保（コミット履歴、ロールバック可能）
-- **効果**: プロジェクト全体の一貫性を保ちながら開発
+- **概要:** プロジェクト全体を扱うAI開発アシスタント、ターミナルから直接コード生成・修正・テスト
+- **なぜClaude Codeが重要か:**
+  - プロジェクト全体の文脈を理解（複数ファイルの関係性を把握）
+  - 単一ファイル編集ではなく、関連ファイルを一括操作
+  - Git統合で安全性を確保（コミット履歴、ロールバック可能）
+- **他ツールとの違い:**
+  - ChatGPT: 単一会話、ファイル手動アップロード、コンテキスト限定的
+  - Cursor: エディタ内、部分編集、ファイル単位
+  - Claude Code: プロジェクト全体、複数ファイル一括、Git統合、長期文脈保持
+- **効果:** プロジェクト全体の一貫性を保ちながら開発
 
 ---
 
@@ -167,7 +137,7 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 # セットアップ
 
-![.claudeignoreの重要性](./assets/diagrams/diagram_29_claudeignore_importance.svg)
+![.claudeignoreの重要性](./assets/diagrams-web/diagram_29_claudeignore_importance.svg)
 
 - **インストール:** `npm install -g @anthropic-ai/claude-code`
 - **APIキー取得:** https://console.anthropic.com
@@ -182,20 +152,48 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 # 4つのモード比較
 
-![Claude Codeモード比較](./assets/diagrams/diagram_28_claude_code_modes.svg)
+![Claude Codeモード比較](./assets/diagrams-web/diagram_28_claude_code_modes.svg)
 
-- **通常:** 毎回確認、最も安全
-- **YOLO（Shift+Tab）:** 自動実行、Git管理済み推奨
-- **プラン（Shift+Tab×2）:** 計画→確認→実行
-- **dangerously-skip:** 全スキップ（超危険）
+- **通常モード:** 毎回確認 (y/n)、最も安全
+- **YOLOモード（Shift+Tab）:** 自動実行、生産性3-5倍、Git管理済み推奨
+- **プランモード（Shift+Tab×2）:** 計画→確認→実行、大規模タスク向き
+- **dangerously-skip-permissions:** 全確認スキップ（超危険）
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: three-column -->
+
+# モード詳細と使い分け
+
+**通常モード（デフォルト）**
+- 毎回確認 (y/n)、初心者向け、安全第一
+
+**YOLOモード（Shift+Tab）**
+- 自動実行、生産性3-5倍
+- 条件: Git管理済み、タスク明確
+- 使用例: プロトタイプ、新機能開発
+
+**プランモード（Shift+Tab×2）**
+- 計画→確認→実行の3段階
+- 大規模タスク、複雑なリファクタリング向き
+
+**dangerously-skip-permissionsモード**
+- 全確認スキップ（超危険）
+- 用途: CI/CD、デモ、最高速開発
+- Dev Container推奨: コンテナ内→安全化
+
+---
 
 # よくある問題と対処法
-
-![よくある問題と対処法](./assets/diagrams-web/slide_017_よくある問題と対処法.svg)
+- **「ファイルが多すぎる」:**
+  - 原因: node_modules等を読もうとする
+  - 対処: .claudeignore設定
+- **「トークン制限」:**
+  - 原因: コンテキスト満杯
+  - 対処: `/compact`、タスク分割、新セッション
+- **「AIが間違った方向」:**
+  - 原因: 曖昧な指示
+  - 対処: `n`で止める、明確に再指示、プランモード活用
 
 ---
 
@@ -203,14 +201,16 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 # 効率的な指示の出し方
 
-![プロンプトパターン（良い例vs悪い例）](./assets/diagrams/diagram_30_prompt_patterns.svg)
+![プロンプトパターン（良い例vs悪い例）](./assets/diagrams-web/diagram_30_prompt_patterns.svg)
 
-- **❌ 悪い:** 「ログイン機能作って」
-- **✅ 良い:**
-  - 制約明示（bcrypt、環境変数）
-  - 段階的（1機能ずつ）
-  - 質問促す/AI自己レビュー
-- **サイクル:** 指示→実装→レビュー→修正
+- **❌ 悪い指示:** 「ログイン機能を作って」
+- **✅ 良い指示:**
+  - 制約を明示（bcrypt、環境変数、バリデーション、レート制限）
+  - 段階的に進める（1機能ずつ）
+  - 質問を促す（「確認したいことはある？」）
+  - 自己レビュー依頼（実装後必ず）
+- **毎回のサイクル:**
+  - 指示 → 実装 → AI自己レビュー → 修正 → テスト → コミット
 
 ---
 
@@ -222,48 +222,41 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: layout-callout -->
-
-<div class="icon">📋</div>
-
 # STEP1 要件定義とは
-
-<div class="message">
-「何を作るか」を明確化し、AIへのGuardrailsを構築
-</div>
-
-- AIはJagged Intelligence（技術実装は得意だがビジネス要件の解釈は苦手）
-- Reward Hacking→曖昧な仕様だと手抜き実装
-- 明確な要件＝AIが道を外れない境界線
-- **成果物**: docs/requirements.md（ユーザーストーリー、機能一覧、受け入れ基準）
+- **目的:** 「何を作るか」を明確化
+- **なぜ最初に要件定義が必要か（Guardrails）**
+  - AIはJagged Intelligence→設計判断が苦手
+  - Reward Hacking→曖昧な仕様だと手抜き実装
+  - 明確な要件＝AIが道を外れない境界線
+- **成果物:**
+  - 要件定義ドキュメント（docs/requirements.md）
+  - ユーザーストーリー、機能一覧、受け入れ基準
+- **効果:** 後工程の手戻り防止
 
 ---
-
-<!-- _class: layout-diagram-only -->
 
 # AIに質問させる手法
-
-![AIに質問させる手法](./assets/diagrams-web/slide_022_AIに質問させる手法.svg)
+- **問題:** AIは「良きに計らう」傾向（Jagged Intelligence）
+  - ビジネスロジック・設計判断は苦手
+  - 勝手に推測して間違った方向に進む
+- **解決策:** AIに質問させる
+  - 「実装前に確認したいことはある？」
+  - AIが選択肢を提示（例：セッション認証 vs JWT）
+  - 対話で仕様を固める
+- **効果:** 曖昧さ排除、人間が判断、AIが実装
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
-
 # 要件の引き出し方（文字起こしアプローチ）
-
-![文字起こし→AI抽出フロー](./assets/diagrams/diagram_40_transcript_approach.svg)
-
-## 🎯 なぜこの手法が強力か
-
-**顧客の言葉をそのまま記録:**
-- 解釈のズレゼロ
-- 「言った/言わない」解消
-- 本当のニーズ把握
-
-**AIが要件構造化:**
-- 漏れ・ヌケ防止
-- 自動優先順位付け
-- **不明点リスト**自動生成
+- **文字起こし→AI抽出（チーム・顧客案件向け）**
+  - 顧客の言葉をそのまま記録→解釈のズレなし
+  - AIが要件構造化→漏れ・ヌケ防止
+- **ワークフロー:**
+  1. 録音（Zoom/Google Meet）
+  2. 文字起こし（Whisper API/Google Docs音声入力）
+  3. 「この文字起こしから要件を抽出して」
+  4. AI出力: ユーザーストーリー、機能一覧、**不明点リスト**
+- **実践例:** CRM要望「営業が顧客管理、スマホ対応、Excel同時編集問題解決」→ AI抽出: Must（顧客CRUD、モバイル対応）、不明点（項目定義？ステータス？）→ クライアント確認
 
 ---
 
@@ -271,22 +264,28 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 # MoSCoW 優先順位付け
 
-![MoSCoW優先順位](./assets/diagrams/diagram_05_moscow.svg)
+![MoSCoW優先順位](./assets/diagrams-web/diagram_05_moscow.svg)
 
 - **Must（必須）:** プロダクト成立に不可欠な機能 → Phase 1 (MVP)
 - **Should（重要）:** あるべきだが、なくても動く → Phase 2
 - **Could（あれば良い）:** あると嬉しい → Phase 3
 - **Won't（今回はやらない）:** 将来的には考える、スコープ外
 - **原則:** Mustは全体の20〜30%に絞る（欲張らない）
-- **効果:** Phase分けで段階的リリース、開発期間短縮
+- **効果:** Phase分けで段階的リリース、開発期間1/3短縮
 
 ---
 
-<!-- _class: layout-diagram-only -->
-
 # MoSCoW実践例（ToDoアプリ）
-
-![MoSCoW実践例（ToDoアプリ）](./assets/diagrams/diagram_47_moscow_example.svg)
+- **Must（Phase 1: MVP、必須機能のみ）:**
+  - タスク追加・完了・削除（コア機能）
+  - ユーザー登録・ログイン・パスワードハッシュ化（セキュリティ必須）
+- **Should（Phase 2: 重要機能）:**
+  - カテゴリ分類・優先度・期限設定・編集
+- **Could（Phase 3: あれば嬉しい）:**
+  - タグ・検索・ダークモード・並び替え
+- **Won't（今回はスコープ外）:**
+  - タスク共有・チーム機能・リマインダー・カレンダー連携
+- **効果:** Mustのみに集中→開発期間を1/3に短縮
 
 ---
 
@@ -294,12 +293,15 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 # ユーザーストーリーマッピング
 
-![ユーザーストーリーマッピング](./assets/diagrams/diagram_31_user_story_mapping.svg)
+![ユーザーストーリーマッピング](./assets/diagrams-web/diagram_31_user_story_mapping.svg)
 
 - **フォーマット:** `<誰が> <何をしたい> <なぜ>`
-- **例:** タスク追加（忘れないため）
-- **旅:** 1.管理 2.整理 3.進捗確認
-- **効果:** AIが本質的価値を実装
+- **例:** ユーザーとして、タスクを追加したい（忘れないため）
+- **ユーザーの旅:**
+  1. タスク管理（追加・完了・削除）
+  2. タスク整理（カテゴリ・優先度）
+  3. 進捗確認（完了数・期限）
+- **効果:** AIが「なぜ」を理解→本質的な価値を実装
 
 ---
 
@@ -307,79 +309,67 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 # 非機能要件
 
-![非機能要件チェックリスト](./assets/diagrams/diagram_32_nonfunctional_requirements.svg)
+![非機能要件チェックリスト](./assets/diagrams-web/diagram_32_nonfunctional_requirements.svg)
 
-## 🎯 重要性
-
-**本番では不可欠:**
-- 性能/セキュリティ/拡張性
-
-**AIは明示必須:**
-- 非機能要件 = Guardrails
+- **なぜ非機能要件が重要か:**
+  - 機能要件だけでは本番で使えない（性能・セキュリティ・拡張性不足）
+  - AIは非機能要件を明示しないと考慮しない（Reward Hacking）
+- **パフォーマンス:** 1000件まで快適、レスポンス200ms以内、N+1クエリ禁止
+- **セキュリティ:** JWT認証、bcryptハッシュ化、HTTPS必須、OWASP Top 10対応
+- **スケーラビリティ:** 同時接続100人、将来1000人対応可能な設計
+- **モバイル対応:** レスポンシブデザイン必須、タッチ操作最適化
+- **AIへの指示:** 「非機能要件も満たして実装」と明示
 
 ---
-
-<!-- _class: layout-diagram-only -->
 
 # エラー・エッジケース・制約の洗い出し
-
-![エラー・エッジケース・制約の洗い出し](./assets/diagrams/diagram_45_error_edge_constraint.svg)
+- **なぜ重要か:** 本番障害の80%がエッジケース、AIが最も見落とすポイント
+- **3つの観点:**
+  - **エラーケース:** パスワード間違い、ネットワークエラー
+  - **エッジケース:** パスワード長0/128文字、SQL injection、XSS
+  - **制約条件:** 同時接続数、対応ブラウザ、レスポンス時間
+- **AIへの依頼:** 「ログイン機能のエラー・エッジケース・制約を洗い出して」
+- **効果:** 異常系も網羅→本番障害を80%削減
 
 ---
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-
-<!-- _class: layout-horizontal-left -->
 
 # 受け入れ基準（Given-When-Then）
-
-![Given-When-Then形式](./assets/diagrams/diagram_33_given_when_then.svg)
-
-**正常系:**
-- Given: 登録済みユーザー | When: 正しいメール・パスワードでログイン | Then: トークン発行、ダッシュボードへリダイレクト
-
-**異常系:**
-- Given: 登録済みユーザー | When: 間違ったパスワードでログイン | Then: エラーメッセージ、5回失敗でロック
-
-**効果:** 「完成の定義」を明確化
+- **正常系:**
+  - Given: 登録済みユーザー
+  - When: 正しいメール・パスワードでログイン
+  - Then: トークン発行、ダッシュボードへリダイレクト
+- **異常系:**
+  - Given: 登録済みユーザー
+  - When: 間違ったパスワードでログイン
+  - Then: エラーメッセージ、5回失敗でロック
+- **効果:** 「完成の定義」を明確化
 
 ---
-
-<!-- _class: two-column compact -->
 
 # プロトタイプ駆動開発（Vibe Coding）
-
-## 従来のアプローチ
-
-文章 → 実装 → 「イメージと違う」
-
-## Vibe Coding
-
-ビジュアルで確認しながら調整
-
-**ツール:** Claude Code（Thymeleaf/HTML/Bootstrap）
-
-**指示例:**
-```
-「ToDoアプリのプロトタイプをThymeleafで作って。
-タスク追加フォーム、一覧表示、削除ボタン。Bootstrap使用」
-```
-
-**ステップ:** 確認 → 修正指示 → 即座に反映 → OK!
-
-**メリット:** クライアントとの認識合わせが簡単
+- **従来:** 文章 → 実装 → 「イメージと違う」
+- **Vibe Coding:** ビジュアルで確認しながら調整
+- **ツール:** Claude Code（Thymeleaf/HTML/Bootstrap）
+- **指示例:**
+  ```
+  「ToDoアプリのプロトタイプをThymeleafで作って。
+  タスク追加フォーム、一覧表示、削除ボタン。Bootstrap使用」
+  ```
+- **ステップ:** 確認 → 修正指示 → 即座に反映 → OK!
+- **メリット:** クライアントとの認識合わせが簡単
 
 ---
 
-<!-- _class: layout-diagram-only -->
-
 # STEP1のまとめ
-
-![STEP1のまとめ](./assets/diagrams-web/slide_031_STEP1のまとめ.svg)
+- **要件定義の流れ（6ステップ）:**
+  1. 要件引き出し（AIに質問させる、文字起こしアプローチ）
+  2. 整理（MoSCoW優先順位付け、Mustは20-30%に絞る）
+  3. 構造化（ユーザーストーリーマッピング、ジャーニーマップ）
+  4. 非機能要件定義（性能・セキュリティ・拡張性）
+  5. エッジケース洗い出し・受け入れ基準作成（Given-When-Then）
+  6. 可視化（Vibe Codingプロトタイプ）→ 文書化（docs/requirements.md）
+- **なぜこの順序か:** 曖昧さを段階的に排除、AIへのGuardrails構築
+- **効果:** 後工程の手戻り防止、開発期間1/3短縮
 
 ---
 
@@ -391,33 +381,24 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: layout-callout -->
-
-<div class="icon">📐</div>
-
 # STEP2 設計ドキュメントとは
-
-<div class="message">
-「どのように作るか」を明確にする設計図＝AIの外部メモリ
-</div>
-
-- AIは忘れっぽい→設計意図忘却
-- Reward Hacking→手抜き実装
-- **Spec-Driven Development**: Spec-First へ
+- **目的:** 「どのように作るか」を明確にする設計図
+- **なぜ設計書が必要か（Guardrails + 忘れっぽさ対策）**
+  - AIは忘れっぽい→セッション超えると設計意図を忘れる
+  - Reward Hacking→設計がないと手抜き実装
+  - 設計書＝AIが何度でも参照できる道しるべ
+- **Spec-Driven Development:**
+  - Code-First → Spec-First へ
+  - 設計書がAIのガードレール
+- **効果:** AIが設計に従って実装、一貫性のある構造
 
 ---
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
 
 <!-- _class: layout-horizontal-right -->
 
 # 設計ドキュメントの構造
 
-![設計ドキュメントの7要素](./assets/diagrams/diagram_06_spec_structure.svg)
+![設計ドキュメントの7要素](./assets/diagrams-web/diagram_06_spec_structure.svg)
 
 - **1. 技術スタック:** フロント・バック・DB・ライブラリ（選定理由含む）
 - **2. システムアーキテクチャ:** 3層構造、Mermaid図で可視化
@@ -429,40 +410,24 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: two-column compact -->
-
 # Tech Stack Setup
-
-## なぜ最初に固めるか
-
-後から変更すると大幅な手戻り
-
-## 例
-
-**フロント:** Thymeleaf/JSP
-**バック:** Spring Boot
-**DB:** PostgreSQL/MySQL
-**認証:** Spring Security+JWT
-**日付:** Java 8 Date/Time API (標準ライブラリ)
-**テスト:** JUnit 5+Mockito
-
-## 重要
-
-選定理由も明記→技術的判断の根拠を残す
+- **最初に固める理由:** 後から変更すると大幅な手戻り
+- **例:**
+  - フロントエンド: Thymeleaf / JSP
+  - バックエンド: Spring Boot
+  - データベース: PostgreSQL / MySQL
+  - 認証: Spring Security + JWT
+  - 日付処理: Java 8 Date/Time API（理由: 標準ライブラリ）
+  - テスト: JUnit 5 + Mockito
+- **選定理由も明記:** 技術的判断の根拠を残す
 
 ---
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
 
 <!-- _class: layout-horizontal-left -->
 
 # データベーススキーマ設計
 
-![ER図の例](./assets/diagrams/diagram_07_er_diagram.svg)
+![ER図の例](./assets/diagrams-web/diagram_07_er_diagram.svg)
 
 - **なぜスキーマ定義が必要か**
   - 後から変更すると影響範囲が非常に大きい
@@ -471,30 +436,19 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
   - AIが正確なSQL・ORM実装ができる
   - カラム名・型・制約の一貫性が保たれる
   - マイグレーションの自動生成が可能
+- **AIへの指示:** テーブル構造を明確に文書化
 
 ---
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: two-column -->
 
 # API仕様の明確化
-
-## なぜAPI仕様が必要か
-
-- 仕様がないとAIがエンドポイントを勝手に決める
-- フロントとバックで認識齟齬が発生
-
-## API仕様で得られる効果
-
-- フロントエンドとバックエンドの並行開発が可能
-- AIが仕様通りのエンドポイントを実装
-- バリデーション・エラーハンドリングの一貫性
-- 後からのAPI変更時に影響範囲が明確
+- **なぜAPI仕様が必要か**
+  - 仕様がないとAIがエンドポイントを勝手に決める
+  - フロントとバックで認識齟齬が発生
+- **API仕様で得られる効果**
+  - フロントエンドとバックエンドの並行開発が可能
+  - AIが仕様通りのエンドポイントを実装
+  - バリデーション・エラーハンドリングの一貫性
+  - 後からのAPI変更時に影響範囲が明確
 
 ---
 
@@ -502,7 +456,7 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 # Mermaid記法とSVG生成でビジュアル化
 
-![Mermaid vs SVG使い分け](./assets/diagrams/diagram_41_mermaid_vs_svg.svg)
+![Mermaid vs SVG使い分け](./assets/diagrams-web/diagram_41_mermaid_vs_svg.svg)
 
 - **Mermaid**: テキストで図描画、Git管理可、AI自動生成、GitHub/VS Code表示
 - **SVG生成magic word**: 「SVGで書いて」→AI生成→即可視化、記法不要
@@ -514,24 +468,18 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 # ER図が開発をスムーズにする理由
 
-![ER図からコード生成](./assets/diagrams/diagram_08_er_to_code.svg)
+![ER図からコード生成](./assets/diagrams-web/diagram_08_er_to_code.svg)
 
 - **AIの実装**: CREATE TABLE自動生成、JOIN処理、外部キー、ORMモデル
 - **人間の恩恵**: 全体像一目把握、リレーション検証、正規化問題発見
 
 ---
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
 
 <!-- _class: layout-horizontal-right -->
 
 # シーケンス図がAI実装を助ける理由
 
-![シーケンス図の例（ログインフロー）](./assets/diagrams/diagram_09_sequence_login.svg)
+![シーケンス図の例（ログインフロー）](./assets/diagrams-web/diagram_09_sequence_login.svg)
 
 - **AIの実装**: 処理順序理解→正確コードフロー、エラー処理タイミング、依存関係、トランザクション境界
 - **図なしの問題**: 処理順序推測ミス、ロールバック漏れ
@@ -539,79 +487,72 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: two-column compact -->
-
 # 受け入れ条件の詳細化
-
-## なぜ受け入れ条件が必要か
-
-- AIは「タスク完了」を優先し、品質は二の次
-- 明確な合格基準がないと手抜き実装になる
-- 受け入れ条件 = AIの自己採点基準
-
-## Given-When-Then形式の効果
-
-- AIがテストケースを自動生成できる
-- 実装が仕様を満たしているか自己チェック可能
-- 異常系・エッジケースも明示できる
-
-## 具体化の重要性
-
-❌ 「バリデーション」だけでは曖昧
-✅ 「パスワードは8文字以上、大文字小文字数字を含む」と明示
+- **なぜ受け入れ条件が必要か**
+  - AIは「タスク完了」を優先し、品質は二の次
+  - 明確な合格基準がないと手抜き実装になる
+  - 受け入れ条件 = AIの自己採点基準
+- **Given-When-Then形式の効果**
+  - AIがテストケースを自動生成できる
+  - 実装が仕様を満たしているか自己チェック可能
+  - 異常系・エッジケースも明示できる
+- **具体化の重要性**
+  - 「バリデーション」だけでは曖昧
+  - 「パスワードは8文字以上、大文字小文字数字を含む」と明示
+  - AIは具体的な条件をそのままコード化できる
 
 ---
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-
-<!-- _class: layout-diagram-only -->
 
 # STEP2のまとめ
-
-![STEP2のまとめ](./assets/diagrams/diagram_46_step2_summary.svg)
+- **設計の流れ（7ステップ）:**
+  1. Tech Stack Setup（最初に固める、選定理由も明記）
+  2. システムアーキテクチャ（Mermaid/SVG図で可視化）
+  3. データベーススキーマ設計（ER図、正規化）
+  4. API仕様定義（エンドポイント・パラメータ・レスポンス）
+  5. 受入条件詳細化（Given-When-Then、具体化）
+  6. セキュリティ設計（認証・認可・入力検証・環境変数）
+  7. docs/spec.md 作成（全てを集約）
+- **なぜこの順序か:** 技術スタック確定→全体構造→詳細設計の順で手戻り最小化
+- **AIへの指示:** 「spec.mdに厳密に従って実装して」
+- **効果:** AIが一貫性のある実装を行う、設計書＝Guardrails
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: three-column -->
 
 ## Part 1 振り返りチェックリスト
 
 **AI活用の基本:**
-- [ ] 3原則説明可能
-- [ ] Reward Hacking対策実践
+- [ ] AI活用の3原則を説明できる
+- [ ] Reward Hacking対策を実践できる
 
 **Claude Code:**
-- [ ] セットアップ完了
-- [ ] 3モード使い分け
-- [ ] 効率的指示実践
+- [ ] セットアップができる
+- [ ] 3つのモードを使い分けられる
+- [ ] 効率的な指示の出し方を実践できる
 
 **STEP1 要件定義:**
-- [ ] AI質問手法活用
-- [ ] MoSCoW優先順位付け
-- [ ] エラー・エッジケース洗い出し
-- [ ] 受入基準作成
+- [ ] AIに質問させる手法を使える
+- [ ] MoSCoW優先順位付けができる
+- [ ] エラー・エッジケースを洗い出せる
+- [ ] 受け入れ基準を書ける
 
 **STEP2 設計ドキュメント:**
-- [ ] Spec-Driven理解
-- [ ] Tech Stack Setup固定
-- [ ] Mermaid設計図作成
-- [ ] 受入条件詳細化
+- [ ] Spec-Driven Developmentを理解
+- [ ] Tech Stack Setupを最初に固める
+- [ ] Mermaid記法で設計図を作成できる
+- [ ] 受け入れ条件を詳細化できる
 
 ---
 
 **Part 1 終了 - 昼休憩（12:00-13:00）**
+
+**スライド数: 35枚**
 ---
 marp: true
 theme: ai-seminar
 paginate: true
 ---
-
-# Day 1-2: タスク分解 + 実装 + 品質担保 + リファクタリング (13:00-14:50)
-
 ---
 
 <!-- _class: lead -->
@@ -620,76 +561,60 @@ paginate: true
 
 ---
 
-<!-- _class: layout-callout -->
-
-<div class="icon">📋</div>
-
 # STEP3 タスク分解とは
-
-<div class="message">
-大きな機能を実装可能な小さなタスクに分解 = AIの思考を言語化
-</div>
-
-- AIは忘れっぽい→全体像を把握しづらい
-- Reward Hacking→いきなり実装すると手抜きしがち
-- **計画書＝AIの思考を可視化**して、人間が軌道修正できる
-- **効果**: 実装前に方向性確認、手戻り防止、開発リスク最小化
+- 大きな機能を実装可能な小さなタスクに分解
+- **なぜタスク分解が必要か（AIの思考を言語化）**
+  - AIは忘れっぽい→全体像を把握しづらい
+  - Reward Hacking→いきなり実装すると手抜きしがち
+  - 計画書＝AIの思考を可視化、人間が軌道修正できる
+- **効果:** 実装前に「あっ、そっちじゃない」が言える
 
 ---
-
-<!-- _class: layout-diagram-only compact -->
 
 # タスク分解 = AIの思考を言語化（重要）
-
-![タスク分解_AIの思考を言語化重要](./assets/diagrams-web/slide_004_タスク分解_AIの思考を言語化重要.svg)
+- **AIに計画を立てさせる理由**
+  - Trust but Verify→エラー率10-60%、実装前に確認必須
+  - AIが「何をしようとしているか」を事前に把握
+  - 人間の頭の中を整理するのと同じく、AIの思考も整理が必要
+- **プロンプト例:** 「この設計書に基づいて、タスク一覧を作成して」
 
 ---
 
-<!-- _class: two-column -->
-
-# 計画書作成による可視化
-
-## 早期の軌道修正
-
-- 計画段階で修正する方が効率的
-- コスト削減・時間短縮
-
-## Guardrails
-
-- AIが道を外れたら計画書で元に戻す
-- 手戻りコスト削減
-
-## プロンプト例
-
-```
-「設計書に基づいて
-実装タスク一覧を作成。
-
-- Phase分けして
-- 各30分〜2時間で完了
-- 依存関係を明示
-- 完了条件を具体的に」
-```
+# 計画書作成による可視化（重要）
+- **早い段階での軌道修正が可能**
+  - 実装後に修正するより、計画段階で修正する方が効率的
+  - コスト削減・時間短縮の効果
+- **Guardrailsとしての計画書**
+  - AIが道を外れたら、計画書で元に戻せる
+  - 手戻りコストを大幅に削減
 
 ---
 
 <!-- _class: layout-horizontal-left -->
 
-# Phase分け戦略
+# Phase分け戦略（Phase 1-4）
 
-![Phase分け戦略](./assets/diagrams/diagram_10_phase_breakdown.svg)
+![Phase分け戦略](./assets/diagrams-web/diagram_10_phase_breakdown.svg)
 
-**なぜ:** 依存関係複雑化防止、早期問題発見
-**Phase 1:** DB接続・認証・基本CRUD | **Phase 2:** ビジネスロジック・主要API | **Phase 3:** 検索・フィルタ・通知 | **Phase 4:** 最適化・E2Eテスト
-**効果:** リスク最小化、確実な進捗
+- **なぜPhase分けが必要か**
+  - 全部一度に作ると依存関係が複雑化→AIが混乱（忘れっぽい）
+  - 段階的に作れば各Phaseで動作確認→早期問題発見
+- **Phase 1（基盤）:** DB接続・認証基盤・基本CRUD
+- **Phase 2（コア機能）:** ビジネスロジック・主要API
+- **Phase 3（拡張機能）:** 検索・フィルタ・通知
+- **Phase 4（仕上げ）:** パフォーマンス最適化・E2Eテスト
+- **効果:** リスク最小化、確実な進捗
 
 ---
 
-<!-- _class: layout-diagram-only -->
-
 # タスク粒度（30分〜2時間）
-
-![タスク粒度30分2時間](./assets/diagrams-web/slide_007_タスク粒度30分2時間.svg)
+- **なぜ適切な粒度が重要か**
+  - 大きすぎるタスク：進捗が見えない、AIが全体像を見失う
+  - 小さすぎるタスク：管理コストが増大、オーバーヘッド
+- **適切な粒度:** 30分〜2時間、1日で3-5タスク程度
+- **粒度の判断基準:** 1回のコミットで完結できるか？
+- **例:** 「ユーザー登録API実装」は適切、「バックエンド全部」は大きすぎ
+- **効果:** モチベーション維持、問題の早期発見
 
 ---
 
@@ -697,145 +622,91 @@ paginate: true
 
 # 依存関係の可視化
 
-![タスク依存関係グラフ](./assets/diagrams/diagram_35_dependency_graph.svg)
+![タスク依存関係グラフ](./assets/diagrams-web/diagram_35_dependency_graph.svg)
 
-- **なぜ必要:** 順序間違い→手戻り、AIは順序判断苦手
-- **並行可能:** フロント・バック同時
-- **順序必須:** DB設計→マイグレ→API
-- **AI指示:** 「依存関係明示してタスク一覧作成」
-- **効果:** 効率化、手戻り防止
+- **なぜ依存関係の可視化が必要か**
+  - 順序を間違えると手戻りが発生（DB未作成でAPI実装できない）
+  - AIは依存関係の判断が苦手（Jagged Intelligence）
+- **並行作業可能なタスク:** フロントとバックを同時進行
+- **順序が必要なタスク:** DB設計→マイグレーション→API実装
+- **AIへの指示:** 「依存関係を明示してタスク一覧を作成して」
+- **効果:** 効率的なスケジューリング、手戻り防止
 
 ---
 
-<!-- _class: layout-horizontal-left ultracompact -->
+<!-- _class: layout-horizontal-left -->
 
 # タスク一覧テンプレート
 
-![タスク一覧テンプレート](./assets/diagrams/diagram_34_task_list_template.svg)
+![タスク一覧テンプレート](./assets/diagrams-web/diagram_34_task_list_template.svg)
 
-**必須項目:** Phase・タスク名・所要時間・依存・完了条件
-
-**なぜ必要:**
-曖昧な計画→AI勝手解釈、明確→一貫出力
-
-**進捗管理:** ステータス可視化
-
-**チーム共有:** Markdown形式でGit管理
-
-**AI指示:** 「このテンプレートでタスク一覧作成」
+- **必須項目:** Phase・タスク名・所要時間・依存関係・完了条件
+- **なぜテンプレート化が必要か**
+  - 曖昧な計画→AIが勝手に解釈（Jagged Intelligence）
+  - 明確なフォーマット→AIが一貫した出力
+- **進捗管理:** 一覧表でステータス可視化（未着手・進行中・完了）
+- **チーム共有:** Markdown形式でGit管理、誰でも参照可能
+- **AIへの指示:** 「このテンプレートでタスク一覧を作成して」
 
 ---
-
-<!-- _class: two-column compact -->
 
 # AI活用でタスク自動生成
-
-## プロンプト例
-
-```
-「この設計書に基づいて、
-タスク一覧を作成して。
-Phase分けして、
-各タスクは30分〜2時間で
-完了できるようにして」
-```
-
-## AIが自動生成する項目
-
-- Phase
-- タスク名
-- 所要時間
-- 依存関係
-- 完了条件
-
-## 人間の役割
-
-- レビュー
-- 調整
-- 優先順位づけ
-
-## 生産性向上
-
-計画作成時間が
-**数時間 → 数分**に短縮
-
-**Trust but Verify:**
-AI生成後、必ず人間が確認・調整
+- **プロンプト例:** 「この設計書に基づいて、タスク一覧を作成して。Phase分けして、各タスクは30分〜2時間で完了できるようにして」
+- **AIが自動生成する項目:** Phase・タスク名・所要時間・依存関係・完了条件
+- **人間の役割:** レビュー・調整・優先順位づけ
+- **生産性向上:** 計画作成時間が数時間→数分に短縮
+- **Trust but Verify:** AI生成後、必ず人間が確認・調整
 
 ---
-
-<!-- _class: layout-diagram-only -->
 
 # STEP3のまとめ
-
-![STEP3のまとめ](./assets/diagrams-web/slide_011_STEP3のまとめ.svg)
+- **タスク分解＝AIの思考を言語化:** 計画を可視化、人間が軌道修正できる
+- **Phase分け戦略:** 段階的な開発でリスク最小化
+- **適切な粒度:** 30分〜2時間で1タスク、進捗が見える
+- **依存関係の明示:** 手戻り防止、効率的なスケジューリング
+- **AI活用:** 計画作成時間を大幅短縮、人間はレビューに集中
 
 ---
 
 ---
 
-<!-- _class: lead ultracompact -->
+<!-- _class: lead -->
 
 ## STEP4: 実装（40分）
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: card-grid -->
 
-<div class="icon">⚡</div>
+# 実装の3原則（AIの制約に対応）
 
-# 実装の3原則
+### ①小さく作る（Increment）
+- **理由:** AIは忘れっぽいので小刻みに
+- **方法:** 1タスク30分〜2時間で完了
+- **効果:** 常に動く状態を維持、問題を早期発見
 
-<div class="message">
-小さく作る・TDD・AI自己レビュー
-</div>
+### ②テスト駆動（TDD/BDD）
+- **理由:** Trust but Verify、AIが自己完結
+- **方法:** Red-Green-Refactorサイクル
+- **効果:** AIが自動でテスト→修正を繰り返す
 
-**①小さく作る** - AIは忘れっぽい、常に動く状態維持
-
-**②テスト駆動** - Trust but Verify、AI自己完結
-
-**③AI自己レビュー** - 手抜き検出、40-60%バグ自動検出
+### ③AI自己レビュー必須
+- **理由:** Reward Hacking対策、手抜き検出
+- **方法:** 「このコードをレビューして」と毎回指示
+- **効果:** 40-60%のバグを自動検出
 
 ---
 
-<!-- _class: layout-timeline -->
-
 # 実装の標準ワークフロー
-
-<div class="timeline">
-  <div class="step">
-    <div class="step-number">1</div>
-    <h3>タスク選択</h3>
-  </div>
-  <div class="step">
-    <div class="step-number">2</div>
-    <h3>テスト作成</h3>
-    <p>Red</p>
-  </div>
-  <div class="step">
-    <div class="step-number">3</div>
-    <h3>実装</h3>
-    <p>Green</p>
-  </div>
-  <div class="step">
-    <div class="step-number">4</div>
-    <h3>レビュー</h3>
-    <p>Refactor</p>
-  </div>
-  <div class="step">
-    <div class="step-number">5</div>
-    <h3>修正</h3>
-  </div>
-  <div class="step">
-    <div class="step-number">6</div>
-    <h3>確認</h3>
-    <p>E2E</p>
-  </div>
-  <div class="step">
-    <div class="step-number">7</div>
-    <h3>コミット</h3>
-  </div>
-</div>
+- **1タスクごとのサイクル:**
+  1. タスク選択（タスク一覧から次のタスクを選ぶ）
+  2. テスト作成（Red：失敗するテストを書く）
+  3. 実装（Green：最小実装でテストを通す）
+  4. AI自己レビュー（「このコードをレビューして」）
+  5. 修正（レビュー指摘事項を修正）
+  6. 動作確認（実際に動かして確認）
+  7. コミット（Git管理）
+- **このサイクルを繰り返す:** 1タスク完了→次のタスク
 
 ---
 
@@ -843,14 +714,15 @@ AI生成後、必ず人間が確認・調整
 
 # TDD/BDD統合ワークフロー
 
-![TDD Red-Green-Refactorサイクル](./assets/diagrams/diagram_11_tdd_cycle.svg)
+![TDD Red-Green-Refactorサイクル](./assets/diagrams-web/diagram_11_tdd_cycle.svg)
 
-**なぜTDD/BDD:**
-- テストなし→無限ループ | テストあり→AI自己完結
-**Red:** 失敗するテスト先書き（仕様定義）
-**Green:** 最小実装でテスト通過
-**Refactor:** 安心してリファクタリング
-**BDD (Given-When-Then):** 人間が読める仕様書
+- **なぜTDD/BDDが必要か**
+  - テストなし→AIが作る→人間が手動テスト→エラー→修正（無限ループ）
+  - テストあり→AIが作る→自動テスト→エラー→AI自己修正（自己完結）
+- **Red（失敗するテストを書く）:** テストが仕様を定義
+- **Green（最小実装）:** テストを通す最小コード
+- **Refactor（改善）:** テストが保証するから安心してリファクタリング
+- **BDD形式（Given-When-Then）:** 人間が読める仕様書になる
 
 ---
 
@@ -858,7 +730,7 @@ AI生成後、必ず人間が確認・調整
 
 # AIにTDD/BDDで実装させる
 
-![Given-When-Then構造](./assets/diagrams/diagram_33_given_when_then.svg)
+![Given-When-Then構造](./assets/diagrams-web/diagram_33_given_when_then.svg)
 
 - **プロンプト例:** 「POST /api/register を TDD で実装して。Given-When-Then形式のテストを書き、正常系・異常系をカバー」
 - **AIが自動で行うこと:**
@@ -874,12 +746,12 @@ AI生成後、必ず人間が確認・調整
 
 # セキュリティベストプラクティス（重要）
 
-![セキュリティベストプラクティス](./assets/diagrams/diagram_23_security_best_practices.svg)
+![セキュリティベストプラクティス](./assets/diagrams-web/diagram_23_security_best_practices.svg)
 
 - **なぜセキュリティが後回しになるか（Reward Hacking）**
   - AIは「タスク完了」を最優先→セキュリティは二の次
   - 平文保存、ハードコーディングで「とりあえず動く」を選ぶ
-  - セキュリティ知識はあるが、明示しないと省略する
+  - Jagged Intelligence→セキュリティ判断が苦手
 - **対策：明確な制約を設定（Guardrails）**
   - パスワード→BCrypt、APIキー→環境変数
   - JWT秘密鍵→環境変数、入力値→@Valid必須
@@ -887,35 +759,30 @@ AI生成後、必ず人間が確認・調整
 
 ---
 
-<!-- _class: layout-diagram-only -->
-
 # パスワード・JWT認証の実装
-
-![パスワードJWT認証の実装](./assets/diagrams-web/slide_020_パスワードJWT認証の実装.svg)
-
----
-
-<!-- _class: layout-code-focus -->
-
-# セキュアなコードの指示方法
-
-```
-「ユーザー登録API実装。必須:
-BCrypt、JWT秘密鍵環境変数、.env使用、
-.gitignore追加、@Validバリデ、
-レート制限、エラー一般化」
-```
-
-**なぜ:** AI暗黙前提理解不可
-**効果:** 明確な制約＝安全実装
+- **❌NG例（Reward Hacking）:** 平文保存、ハードコーディング、「とりあえず動く」
+- **✅ベストプラクティス:** BCryptハッシュ化、環境変数管理
+- **登録時:** passwordEncoder.encode() でハッシュ化して保存
+- **ログイン時:** passwordEncoder.matches() で比較
+- **JWT発行:** @Value("${jwt.secret}") で環境変数から秘密鍵取得
+- **プロンプトに明記:** 「BCryptとJWT環境変数必須」と指定しないとAIは手抜き
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+# セキュアなコードの指示方法（重要）
+- **なぜ明確な指示が必要か**
+  - AIは暗黙の前提を理解できない（Jagged Intelligence）
+  - セキュリティ要件は明示しないと実装されない
+- **プロンプト例:** 「ユーザー登録APIを実装。BCrypt、環境変数、@Valid、レート制限、Spring Security、HTTPS、エラーメッセージ一般化」
+- 明確な制約＝AIが安全な実装を行う
+
+---
+
+<!-- _class: layout-horizontal-left -->
 
 # インクリメンタル開発とは
 
-![インクリメンタル開発タイムライン](./assets/diagrams/diagram_24_incremental_timeline.svg)
+![インクリメンタル開発タイムライン](./assets/diagrams-web/diagram_24_incremental_timeline.svg)
 
 - **なぜ小さく作るべきか（AIは忘れっぽい対策）**
   - 全部一度に作る→完成まで動かない→問題発見が遅れる
@@ -924,31 +791,15 @@ BCrypt、JWT秘密鍵環境変数、.env使用、
 
 ---
 
-<!-- _class: layout-timeline -->
-
 # インクリメンタル実装の実例
-
-<div class="timeline">
-  <div class="step">
-    <div class="step-number">1</div>
-    <h3>一覧表示</h3>
-    <p>API実装→テスト→動作確認→コミット</p>
-  </div>
-  <div class="step">
-    <div class="step-number">2</div>
-    <h3>新規作成</h3>
-    <p>API実装→テスト→動作確認→コミット</p>
-  </div>
-  <div class="step">
-    <div class="step-number">3</div>
-    <h3>完了チェック</h3>
-    <p>API実装→テスト→動作確認→コミット</p>
-  </div>
-</div>
-
-**各Incrementで:** 動作確認→テスト実行→AI自己レビュー→コミット
-
-**効果:** 常に動く状態を維持、問題を早期発見
+- **Increment 1: 一覧表示**
+  - タスク一覧取得API実装→テスト→動作確認→コミット
+- **Increment 2: 新規作成**
+  - タスク作成API実装→テスト→動作確認→コミット
+- **Increment 3: 完了チェック**
+  - タスク完了API実装→テスト→動作確認→コミット
+- **各Incrementで:** 動作確認→テスト実行→AI自己レビュー→コミット
+- **効果:** 常に動く状態を維持、問題を早期発見
 
 ---
 
@@ -956,22 +807,24 @@ BCrypt、JWT秘密鍵環境変数、.env使用、
 
 # AI自己レビュー必須化（重要）
 
-![AI自己レビューフロー](./assets/diagrams/diagram_25_ai_self_review_flow.svg)
+![AI自己レビューフロー](./assets/diagrams-web/diagram_25_ai_self_review_flow.svg)
 
 - **なぜAI自己レビューが重要か（Trust but Verify）**
-  - AIにもエラーあり→自己レビューで多くを検出
+  - AIのエラー率10-60%→自己レビューで40-60%検出
   - Reward Hacking→実装後に手抜きチェック
-  - Reward Hackingで省略されるため、セキュリティ観点での検証必須
+  - Jagged Intelligence→セキュリティ判断が苦手なので必須
 - 実装後必ず：「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」
 - 追加コストほぼゼロで品質大幅向上
 
 ---
 
-<!-- _class: layout-diagram-only -->
-
 # STEP4のまとめ
-
-![STEP4のまとめ](./assets/diagrams-web/slide_025_STEP4のまとめ.svg)
+- **実装の3原則（AIの制約への対応）**
+  - ①小さく作る→AIは忘れっぽい対策
+  - ②テスト駆動→Trust but Verify自動化、AIが自己完結
+  - ③AI自己レビュー必須→Reward Hacking対策、手抜き検出
+- **セキュリティファースト:** BCrypt・環境変数・@Valid必須
+- **インクリメンタル開発:** 常に動く状態を維持、早期問題発見
 
 ---
 
@@ -979,571 +832,416 @@ BCrypt、JWT秘密鍵環境変数、.env使用、
 
 <!-- _class: lead -->
 
-## STEP5: 品質担保＆ドキュメント反映（40分）
+## STEP5: 品質担保（30分）
 
 ---
 
-<!-- _class: layout-callout supercompact -->
-
-<div class="icon">✅</div>
-
-# STEP5 品質担保＆ドキュメント反映とは
-
-<div class="message">
-Trust but Verify自動化 + Living Documentation
-</div>
-
-- **品質担保（Trust but Verify）:** AIにもエラーあり→検証なしでは本番投入不可
-- **ドキュメント反映（Living Documentation）:** AIは忘れっぽい→外部メモリ化が必須
-- **TDDとAI活用の相乗効果:** テストがあれば→AIが自分でバグに気づき→自分で修正→自己完結
-- **効果:** 品質保証の自動化、知見の蓄積、次セッションでの再利用
+# STEP5 品質担保とは
+- **なぜ品質担保が必要か（Trust but Verify）**
+  - AIのエラー率10-60%→検証なしでは本番投入不可
+  - 人間が全部検証するのは非効率→自動化が鍵
+- **TDDとAI活用の相乗効果**
+  - テストがあれば→AIが自分でバグに気づき→自分で修正→自己完結
+  - テストなし→人間が手動確認→エラー報告→修正依頼（非効率）
+- **効果:** AIが自分で品質を保証できる、人間の負担が劇的に軽減
 
 ---
 
-<!-- _class: layout-comparison supercompact -->
-
-# テスト駆動開発とAI活用の相乗効果
-
-<div>
-
-### TDDなし
-
-人間が実行 → エラー確認 → コピペ → AI伝達
-
-**無限ループ**
-
-</div>
-
-<div>VS</div>
-
-<div>
-
-### TDDあり
-
-AIが自動テスト実行 → エラー検知 → 修正
-
-**自己完結**
-
-</div>
-
-**結論:** テストがあれば、AIが自分でバグに気づき自分で修正、生産性が飛躍的に向上
+# テスト駆動開発とAI活用の相乗効果（重要）
+- **なぜTDDとAIが相性抜群か**
+  - テストがあれば、AIが自分でバグに気づき自分で修正
+  - Trust（AI実装）→ Verify（テスト実行）→ 修正を自動化
+- **TDDなし:** 人間が実行→エラー確認→コピペ→AI伝達の無限ループ
+- **TDDあり:** AIが自動でテスト実行→エラー検知→修正
+- 生産性が飛躍的に向上
 
 ---
-
-<!-- _class: lead supercompact -->
 
 # E2Eテスト重視の戦略
-
-## なぜE2Eか
-
-- **実装詳細テスト**→リファクタリングで壊れる
-- **E2Eテスト**→ユーザー体験を保証
-
----
-
-<!-- _class: card-grid ultracompact -->
-
-# Playwright活用
-
-### なぜPlaywrightか
-- ユーザー視点自動化
-- 実ブラウザ動作確認
-- AI自動生成可能
-
-### プロンプト例
-「ログイン→ダッシュボードの
-Playwrightテスト作成」
-
-### 効果
-UIバグ・統合問題自動検出
+- **なぜE2Eテストを重視すべきか**
+  - 実装詳細のテスト→リファクタリングで壊れる
+  - E2Eテスト→ユーザー体験を検証、リファクタリングに強い
+- 本当の価値（ユーザー体験）を保証
 
 ---
 
-<!-- _class: two-column -->
+# Playwright によるE2Eテスト
+- **なぜPlaywrightか**
+  - ユーザー視点のテスト自動化、実ブラウザで動作確認
+  - AIが自動でテストコード生成可能
+- **プロンプト例:** 「ログイン→ダッシュボード表示のPlaywrightテストを作成して」
+- **AIが生成:** ブラウザ起動→ログインフォーム入力→送信→画面遷移確認
+- **本番環境と同じ条件:** 実際のユーザー体験を検証
+- **効果:** UIバグ・統合問題を自動検出
+
+---
 
 # ビジュアルリグレッションテスト
-
-## なぜビジュアルテストが必要か
-
-- コードは正しくても見た目が崩れる場合がある
-- 人間の目視確認は漏れが発生しやすい
+- **なぜビジュアルテストが必要か**
+  - コードは正しくても見た目が崩れる場合がある
+  - 人間の目視確認は漏れが発生しやすい
 - スクリーンショット比較で自動検出、差分があれば警告
-
-## MCP関連ツール
-
-**なぜMCPが必要か:**
-- AIのカットオフ問題→古いライブラリ情報で実装してしまう
-- **Context 7**: 2万以上の最新公式ドキュメントを参照
-- **Serena**: 大規模プロジェクト高速検索
-- **Browser DevTools**: コンソールエラー自動キャプチャ
 
 ---
 
-<!-- _class: layout-diagram-only -->
+# MCP関連ツール
+- **なぜMCPが必要か**
+  - AIのカットオフ問題→古いライブラリ情報で実装してしまう
+  - Context 7：2万以上の最新公式ドキュメントを参照
+- Serena：大規模プロジェクト高速検索、Browser DevTools：コンソールエラー自動キャプチャ
+
+---
+
+<!-- _class: three-column -->
 
 # AI自己レビュー4種類の使い分け
 
-![AI自己レビュー4種類の使い分け](./assets/diagrams-web/slide_035_AI自己レビュー4種類の使い分け.svg)
+**なぜ観点別レビューが必要か**
+- 一般レビューだけでは専門的な問題を見落とす
+- 観点別で検出率60%→90%に向上
+
+**①一般**
+- 実装直後（毎回必須）
+- ロジックエラー、エッジケース、命名規則
+
+**②セキュリティ**
+- 認証・データ処理時
+- SQL injection、XSS、CSRF、平文パスワード
+
+**③パフォーマンス**
+- DB操作・大量データ処理時
+- N+1問題、インデックス欠如、メモリリーク
+
+**④テスト**
+- テストコード作成後
+- テストカバレッジ、境界値、モック不備
 
 ---
 
-<!-- _class: card-grid -->
-
-# AI自己レビューの4つの観点
-
-### ①一般レビュー（毎回必須）
-**検出:** ロジックエラー、エッジケース見落とし、命名規則違反
-
-### ②セキュリティ特化
-**検出:** SQLi・XSS・CSRF・平文PW・ハードコーディング
-
-### ③パフォーマンス特化
-**検出:** N+1クエリ、無駄な全件取得、キャッシュ未活用
-
-### ④テストカバレッジ
-**検出:** テストケース漏れ、異常系不足、境界値未検証
+# AI自己レビュー①一般レビュー
+- **プロンプト:** 「このコードをレビューして。セキュリティ・エラー処理・エッジケース・ベストプラクティスをチェック」
+- **検出:** ロジックエラー、エッジケース見落とし（null、空配列）、命名規則違反
+- **効果:** バグ検出率40-60%向上
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
-
-# テストカバレッジ80%ルール
-
-![テストカバレッジ80%ルール](./assets/diagrams/diagram_26_test_coverage_80_rule.svg)
-
-**なぜ80%:** 100%非現実的（Getter/Setter不要）、80%で主要機能とエッジケースをカバー
-**残り20%:** リスク低い箇所
-**効果:** カバレッジ向上、リファクタリング安全性確保
+# AI自己レビュー②セキュリティ特化
+- **プロンプト:** 「OWASP Top 10でセキュリティレビュー。SQL injection・XSS・CSRF・機密情報・認証認可・バリデーションをチェック」
+- **検出:** SQL injection、XSS、CSRF、平文パスワード、ハードコーディングされたAPIキー
+- **効果:** 脆弱性を80%削減
 
 ---
-<!-- _class: two-column -->
 
-<!-- _class: two-column -->
+# AI自己レビュー③パフォーマンス特化
+- **プロンプト:** 「パフォーマンスレビュー。N+1クエリ・メモリリーク・キャッシュ・インデックス・非同期処理をチェック」
+- **検出:** N+1クエリ、無駄な全件取得、キャッシュ未活用
+- **効果:** レスポンス時間50-80%改善
 
-<!-- _class: two-column -->
+---
 
+<!-- _class: layout-horizontal-left -->
 
-<!-- _class: layout-comparison -->
+# AI自己レビュー④テストカバレッジ
+
+![テストカバレッジ80%ルール](./assets/diagrams-web/diagram_26_test_coverage_80_rule.svg)
+
+- **プロンプト:** 「テストレビュー。エッジケース・異常系・境界値・独立性・Given-When-Thenをチェック」
+- **検出:** テストケース漏れ（null、空文字、MAX値）、異常系不足
+- **効果:** カバレッジ80%→95%
+
+---
 
 # 自己レビューの実例
-
-<div>
-
-### Before（初回実装）
-
-- 平文パスワード比較（セキュリティ脆弱）
-- APIキーハードコーディング（Git漏洩リスク）
-- バリデーションなし（不正入力で例外）
-
-</div>
-
-<div>→</div>
-
-<div>
-
-### After（自己レビュー後）
-
-- BCrypt比較
-- 環境変数管理
-- @Valid入力値検証
-- レート制限
-- @ControllerAdviceエラーハンドリング
-
-</div>
-
-**改善率:** 多くのバグ検出、追加コストほぼゼロ
+- **Before（AIの初回実装）:**
+  - 平文パスワード比較（セキュリティ脆弱）
+  - APIキーハードコーディング（Git漏洩リスク）
+  - バリデーションなし（不正入力で例外）
+- **After（AI自己レビュー後）:**
+  - BCrypt比較、環境変数管理、@Valid入力値検証
+  - レート制限、@ControllerAdviceエラーハンドリング
+- **改善率:** 40-60%のバグ検出、追加コストほぼゼロ
 
 ---
-
-<!-- _class: two-column supercompact -->
-
-# リファクタリング（内部品質向上）
-
-## なぜ必要か
-
-**Reward Hacking対策:**
-- AIは「動く」を優先
-- コピペで重複生成
-
-## 3つの観点
-
-**①重複削除** - 保守コスト削減
-
-**②パターン適用**
-- if-else→Strategy
-- 生成→Factory
-
-**③ライブラリ活用** - 再発明回避
-
-**AI指示:** 「不要・冗長・重複コード指摘」
-
----
-
-<!-- _class: layout-horizontal-left supercompact -->
-
-# Living Documentation
-## AIの外部メモリ
-
-![Living Documentation](./assets/diagrams/diagram_36_living_documentation.svg)
-
-## なぜ必要か
-
-- **AIは忘れっぽい** → セッション超えると全て忘れる
-- **Living** → 実装と同期、常に信頼できる
-- **ドキュメント＝AIの外部メモリ**
-
----
-
-<!-- _class: layout-diagram-only ultracompact -->
-
-# ドキュメント自動生成Before/After
-
-![ドキュメント自動生成Before/After](./assets/diagrams/diagram_43_doc_automation_before_after.svg)
-
----
-
-<!-- _class: card-grid ultracompact -->
-
-# Living Documentation 3種類
-
-### architecture.md
-システム全体像、構成・ディレクトリ、設計判断理由
-
-**効果:** AIが全体像把握
-
-### README.md
-セットアップ手順、使い方、トラブルシューティング
-
-**効果:** 誰でもすぐ開発開始
-
-### CLAUDE.md
-成功プロンプトパターン、ハマった点と回避策
-
-**効果:** 再現性確保、失敗繰り返さない
-
----
-
-<!-- _class: two-column ultracompact -->
-
-# 計画図面 vs 完成図面
-
-## 計画図面（設計書）
-作る前、理想設計、AIへのGuardrails
-
-## 完成図面（as-built）
-作った後、実際の結果、次セッション参照
-
-## 必ず差分が生まれる
-実装知見を記録
-
-**例:** 変更理由、ハマった点と回避策
-
-## Living Documentation
-実装と同期
-
----
-
-<!-- _class: two-column -->
-
-# 頻繁なコミット（重要）
-
-## なぜ頻繁なコミットが必要か
-
-**AIの暴走対策:**
-- 間違った方向に進んだらすぐに戻れる
-
-**実験の安全性:**
-- 失敗してもリスクゼロ
-
-**引き継ぎ可能性:**
-- 履歴があれば誰でも状況を把握できる
-
-## コミット頻度
-
-- 1機能完了→コミット
-- テスト通過→コミット
-
-## コミットメッセージ
-
-明確な変更内容を記録
-
----
-
-<!-- _class: layout-diagram-only ultracompact -->
 
 # STEP5のまとめ
+- **TDDとAI活用の相乗効果:** AIが自己完結、人間の負担が劇的に軽減
+- **E2Eテスト重視:** Playwright・ビジュアルリグレッション
+- **AI自己レビュー4種類:** 一般・セキュリティ・パフォーマンス・テスト
+- **観点別レビュー:** 検出率60%→90%に向上
+- **Trust but Verify自動化:** テストとレビューでAIの品質を保証
 
-![STEP5のまとめ](./assets/diagrams-web/slide_041_STEP5のまとめ.svg)
+---
+
+---
+
+<!-- _class: lead -->
+
+## STEP6: リファクタリングとドキュメント反映（5分）
+
+---
+
+# STEP6 リファクタリングとドキュメント反映とは
+- **なぜこのステップが必要か**
+  - Reward Hacking→動くコード≠良いコード、粗い実装になりがち
+  - AIは忘れっぽい→ドキュメント化しないと次のセッションで全て忘れる
+- **リファクタリング（内部品質向上）:**
+  - 重複削除・デザインパターン適用・ライブラリ活用
+- **Living Documentation（AIの外部メモリ）:**
+  - 実装と同期したドキュメント、AIが過去の知見を参照できる
+- **効果:** 保守性向上、技術的負債の早期解消、知見の蓄積
+
+---
+
+<!-- _class: layout-horizontal-right -->
+
+# AIによるリファクタリング①重複コード削除
+
+![TDDでのリファクタリングタイミング](./assets/diagrams-web/diagram_27_refactoring_timing_in_tdd.svg)
+
+- **なぜリファクタリングが必要か（Reward Hacking対策）**
+  - AIは「とりあえず動く」を優先→コピペで重複コード生成
+  - Jagged Intelligence→最適化判断が苦手
+- **AIへの指示:** 「不要・冗長・重複コードを指摘して」
+- **効果:** 保守コスト削減、バグリスク低減
+
+---
+
+# AIによるリファクタリング②デザインパターン適用
+- **なぜデザインパターンが重要か**
+  - 巨大なif-else文→拡張困難、テスト困難
+  - パターン適用→各処理が独立、拡張容易
+- **AIが提案:** if-else→Strategy、オブジェクト生成→Factory
+- **効果:** プロが設計したような構造に
+
+---
+
+# AIによるリファクタリング③ライブラリ活用
+- **なぜ車輪の再発明を避けるべきか**
+  - 自前実装→バグリスク、メンテナンスコスト
+  - ライブラリ→エッジケーステスト済み、セキュリティパッチ自動適用
+- **AIへの指示:** 「既存ライブラリを使ってリファクタリングして」
+- **効果:** 実装時間短縮、品質向上
+
+---
+
+<!-- _class: layout-horizontal-left -->
+
+# Living Documentation
+
+![Living Documentation構造](./assets/diagrams-web/diagram_36_living_documentation.svg)
+
+- **なぜLiving Documentationが必要か（AIは忘れっぽい）**
+  - AIはセッション超えると全て忘れる→ドキュメント＝AIの外部メモリ
+  - 従来：実装と乖離→誰も信用しない
+  - Living：実装と同期→常に信頼できる
+- **効果:** 次のセッションのAIが過去の知見を参照、同じ失敗を繰り返さない
+
+---
+
+# 計画図面 vs 完成図面（重要）
+- **なぜ両方が必要か**
+  - 計画図面（設計書）：作る前の理想
+  - 完成図面（as-built）：実際に作った結果
+  - 必ず差分が生まれる（実装中の発見・変更）
+- **実装で得られた知見を記録:** 判断理由、ハマった点、回避策
+- **効果:** AIが正確にメンテナンス・拡張できる
+
+---
+
+# ドキュメント種類
+- **①architecture.md:** システム全体像（構成・ディレクトリ・設計判断）
+- **②README.md:** セットアップ手順・使い方
+- **③CLAUDE.md:** 成功したプロンプトパターン蓄積
+- **なぜ3種類必要か:** 全体像・導入・再現性の3軸でAIを支援
+- **活用:** 「architecture.mdを生成して」でAI自動生成
+
+---
+
+# 頻繁なコミット（重要）
+- **なぜ頻繁なコミットが必要か**
+  - AIの暴走対策：間違った方向に進んだらすぐに戻れる
+  - 実験の安全性：失敗してもリスクゼロ
+  - 引き継ぎ可能性：履歴があれば誰でも状況を把握できる
+- **コミット頻度:** 1機能完了→コミット、テスト通過→コミット
+
+---
+
+# STEP6のまとめ
+- **リファクタリング3つの観点:** 重複削除・デザインパターン・ライブラリ活用
+- **Living Documentation:** 実装と同期、AIの外部メモリとして機能
+- **3種類のドキュメント:** architecture.md・README.md・CLAUDE.md
+- **計画図面vs完成図面:** 実装で得られた知見を記録
+- **頻繁なコミット:** AIの暴走対策、実験の安全性、引き継ぎ可能性
+
+---
+
+---
+
+<!-- _class: lead -->
+
+## Part 2 全体のまとめ
 
 ---
 
 <!-- _class: card-grid -->
 
-# Part 2 全体のまとめ：キーポイント
+# Part 2のキーポイント
 
-### ①計画可視化
-タスク分解で思考言語化
+### ①計画の可視化（STEP3）
+タスク分解でAIの思考を言語化、早期軌道修正
 
-### ②セキュリティ
-BCrypt・環境変数・@Valid明示
+### ②セキュリティファースト（STEP4）
+BCrypt・環境変数・@Valid、明示しないとAIは手抜き
 
-### ③TDD自己完結
-テストでAI自動デバッグ
+### ③TDDでAI自己完結（STEP4-5）
+テストがあれば、AIが自分でデバッグ・修正
 
-### ④自己レビュー
-観点別で検出率向上
+### ④AI自己レビュー必須（STEP5）
+観点別レビューで検出率60%→90%
 
-### ⑤リファクタ&Doc
-負債解消、知見蓄積
+### ⑤リファクタリング＆ドキュメント（STEP6）
+技術的負債の早期解消、Living Documentationで知見蓄積
 ---
 marp: true
 theme: ai-seminar
 paginate: true
 ---
+---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead -->
 
-## Day 1-3
-# まとめ + 演習
-(15:00-17:00)
+## まとめ（5分）
 
 ---
 
-<!-- _class: layout-diagram-only -->
-
-# 1日目の振り返り（5分）
-
-![5-STEPフロー全体](./assets/diagrams/diagram_03_5step_flow.svg)
-
-## 🎯 5-STEPフロー全体の確認
-
-**STEP1: 要件定義** → **STEP2: 設計** → **STEP3: タスク分解** → **STEP4: 実装** → **STEP5: 品質担保** → **STEP6: リファクタリング＆ドキュメント**
-
-## 🔑 成功の鍵
-各ステップを確実に実行（飛ばさない・急がば回れ・AIの制約を理解）
+# 1日目の振り返り
+- **5-STEPフロー全体の確認**
+  - 要件定義 → 設計 → タスク分解 → 実装 → 品質担保 → リファクタリング＆ドキュメント
+- 各ステップを確実に実行することが成功の鍵
 
 ---
-
-<!-- _class: layout-comparison compact -->
 
 # よくある失敗①いきなりコード
-
-<div>
-
-## ❌ なぜ失敗するか
-
-**Jagged Intelligence（能力のギザギザ）:**
-- コード生成・技術設計は人間超え、だがビジネス要件の解釈は苦手
-- 曖昧な要件のまま実装開始
-- 勝手に推測して間違った方向
-
-**Reward Hacking:**
-- 手抜きで「とりあえず動く」を選択
-- セキュリティ・品質は二の次
-
-**結果:**
-- 何度も作り直し
-- 手戻り多発
-- 時間がかかる
-
-</div>
-
-<div class="separator">VS</div>
-
-<div>
-
-## ✅ 正しいアプローチ
-
-**急がば回れ:**
-前工程を丁寧にやることが結果的に最速
-
-**STEP1-2で曖昧さを排除:**
-- 要件定義で「何を作るか」を明確化
-- 設計で「どう作るか」を明確化
-- Guardrails設定
-
-## 📊 効果
-
-✅ 手戻りゼロ
-✅ 実装スピード大幅向上
-✅ 品質の安定化
-
-</div>
+- **なぜ失敗するか（Jagged Intelligence + Reward Hacking）**
+  - AIは設計判断が苦手→曖昧なまま実装開始
+  - Reward Hacking→手抜きで「とりあえず動く」を選択
+  - 結果：何度も作り直し
+- **急がば回れ：前工程を丁寧にやることが結果的に最速**
+- STEP1-2で曖昧さを排除（Guardrails設定）
 
 ---
-
-<!-- _class: layout-callout -->
-
-<div class="icon">⚠️</div>
 
 # よくある失敗②AI自己レビュースキップ
-
-<div class="message">
-
-**なぜ失敗するか（Trust but Verify原則違反）**
-- AIにもエラーあり→検証なしは危険
-- Reward Hacking→明示されない品質要件を省略してしまう
-
-**「このコードをレビューして」の習慣化で品質改善**
+- **なぜ失敗するか（Trust but Verify原則違反）**
+  - AIのエラー率10-60%→検証なしは危険
+  - Reward Hacking + Jagged Intelligence→セキュリティ・品質が二の次
+- **「このコードをレビューして」の習慣化で40-60%改善**
 - 追加コストほぼゼロ
 
-</div>
-
 ---
-
-<!-- _class: layout-callout -->
-
-<div class="icon">⚠️</div>
 
 # よくある失敗③リファクタリング後回し
-
-<div class="message">
-
-**なぜ失敗するか（Reward Hacking）**
-- AIは「タスク完了」優先→リファクタリングは後回し
-- 「動くからいいや」で放置→技術的負債が蓄積
-
-**テストがあれば安心してリファクタリングできる**
+- **なぜ失敗するか（Reward Hacking）**
+  - AIは「タスク完了」優先→リファクタリングは後回し
+  - 「動くからいいや」で放置→技術的負債が蓄積
+- テストがあれば安心してリファクタリングできる
 - 早期解消が重要
 
-</div>
-
 ---
-
-<!-- _class: layout-diagram-only compact -->
 
 # 1日目のキーメッセージ
-
-![1日目のキーメッセージ](./assets/diagrams/diagram_48_day1_key_messages.svg)
+- **①曖昧さの徹底排除（Guardrails）**
+  - Jagged Intelligence対策：AIの弱点を補う
+- **②AIの思考可視化（タスク分解）**
+  - AIは忘れっぽい→計画で全体像を把握
+- **③TDDによる自己完結（Trust but Verify自動化）**
+  - テストがあればAIが自己完結
+- **④リファクタリング＆知見の蓄積（Living Documentation）**
+  - AIは忘れっぽい→ドキュメント＝外部メモリ
+- これら4つを実践することで、AIとの協業効率が飛躍的に向上
 
 ---
-
-<!-- _class: lead supercompact -->
-
-## 演習課題の説明（TODOアプリ）
-
----
-
-<!-- _class: card-grid supercompact -->
 
 # 演習課題の説明（TODOアプリ）
-
-### 🎯 課題内容
-
-**TODOアプリを5-STEPで開発**
-
-**フロー:** 1.要件定義 2.設計 3.タスク分解 4.実装 5.品質担保 6.リファクタ＆Doc
-
-**技術:** Spring Boot、DB、バリデーション、TDD/BDD
-
-### 📋 要件
-
-**機能:** 追加・編集・削除・一覧
-
-**品質:** BCrypt・環境変数・バリデーション・カバレッジ80%+
-
-### ⏰ 時間（115分）
-
-Setup10、STEP1-2:20、STEP3:15、STEP4:30、STEP5:40
+- TODOアプリを5-STEPで開発
+- 要件定義 → 設計 → タスク分解 → 実装 → 品質担保 → リファクタリング＆ドキュメント反映を体験
+- Spring Boot ベース
 
 ---
 
-<!-- _class: lead compact -->
+---
+
+<!-- _class: lead -->
 
 ## 演習（115分 ≒ 2時間）
 
 ---
 
-<!-- _class: lead ultracompact -->
+<!-- _class: two-column -->
 
-# 演習の目的
+# 演習の目的と課題
 
-5-STEPフロー実践、AI駆動開発の効果体感、前工程の重要性・TDD・AI自己レビュー効果実感
+### 演習の目的
+- 5-STEPフロー実践
+- AI駆動開発の効果体感
+- 前工程の重要性・TDD・AI自己レビュー効果実感
 
----
+### 課題：TODOアプリ開発（Spring Boot）
 
-<!-- _class: card-grid supercompact -->
-
-# 課題：TODOアプリ開発
-
-### 要件
+**要件:**
 - タスク追加・編集・削除・一覧
 - Spring Boot、DB連携、バリデーション
 
-### なぜTODOアプリ？
-シンプルだが実用的、CRUD網羅
-
-### 目標
-2時間で5-STEP全体体験
+**なぜTODOアプリ？**
+- シンプルだが実用的、CRUD網羅
+- 2時間で5-STEP全体体験可能
 
 ---
 
-<!-- _class: layout-timeline -->
+<!-- _class: two-column -->
 
-# 演習の進め方（時間配分）
+### 演習の進め方（時間配分）
 
-<div class="timeline">
+#### 15:05-15:15（10分）：環境セットアップ
+- Claude Code環境確認、プロジェクト作成
+- 課題要件確認
 
-<div class="step">
-<div class="step-number">1</div>
-<h3>環境セットアップ</h3>
-<p><strong>15:05-15:15（10分）</strong></p>
-<p>Claude Code環境確認、プロジェクト作成、課題要件確認</p>
-</div>
+#### 15:15-15:35（20分）：STEP1-2 要件・設計
+- AIに質問させて仕様確定
+- 要件定義（ユーザーストーリー、エッジケース）
+- 設計（Tech Stack、DBスキーマ、API仕様）
+- ゴール: 曖昧さ完全排除
 
-<div class="step">
-<div class="step-number">2</div>
-<h3>STEP1-2 要件・設計</h3>
-<p><strong>15:15-15:35（20分）</strong></p>
-<p>AIに質問させて仕様確定、曖昧さ完全排除</p>
-</div>
+#### 15:35-15:50（15分）：STEP3 タスク分解
+- タスク一覧作成（Phase分け、30分〜2時間粒度）
+- ゴール: AI思考の可視化
 
-<div class="step">
-<div class="step-number">3</div>
-<h3>STEP3 タスク分解</h3>
-<p><strong>15:35-15:50（15分）</strong></p>
-<p>タスク一覧作成、AI思考の可視化</p>
-</div>
+#### 15:50-16:40（50分）：STEP4-5 実装・品質
+- TDD（Red-Green-Refactor）
+- インクリメンタル開発、セキュリティチェック
+- AI自己レビュー
+- ゴール: AI自己完結の体感
 
-<div class="step">
-<div class="step-number">4</div>
-<h3>STEP4 実装</h3>
-<p><strong>15:50-16:20（30分）</strong></p>
-<p>TDD、AI自己レビュー、AI自己完結の体感</p>
-</div>
-
-<div class="step">
-<div class="step-number">5</div>
-<h3>STEP5 品質担保</h3>
-<p><strong>16:20-17:00（40分）</strong></p>
-<p>テスト実行、リファクタリング、ドキュメント生成</p>
-</div>
-
-</div>
+#### 16:40-17:00（20分）：STEP6 リファクタリング
+- コード改善、ドキュメント生成
+- ゴール: Living Documentation
 
 ---
 
-<!-- _class: card-grid supercompact -->
-
-# 演習のゴール
-
-### 5-STEPの流れ体験
-各ステップの重要性と効果を実感
-
-### AIとの対話習得
-効果的なプロンプトとレビュー手法
-
-### TDDの効果実感
-Red-Green-Refactorサイクルの威力
-
-### リファクタリング体験
-テスト安心感と継続的改善
-
-### セキュア実装の重要性
-ベストプラクティス適用
+### 演習のゴール
+- **5-STEPの流れを体験する**
+- **AIとの対話方法を習得する**
+- **TDDの効果を実感する**
+- **リファクタリングによる品質向上を体験する**
+- **セキュアな実装の重要性を理解する**
 
 ### 講師サポート
-各自ペースで進行、つまずいたら質問、相談・共有OK
+- 各自のペースで進める（全ステップ完了は必須ではない）
+- つまずいたら挙手して講師に質問
+- 他の参加者と相談・情報共有OK
+- 成功したプロンプトの共有を推奨
+
+---
 
 ---
 
@@ -1553,43 +1251,45 @@ Red-Green-Refactorサイクルの威力
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: three-column -->
 
 # つまずきポイントと対処法
 
-### ① 要件曖昧で手が止まる
-AIに質問させてない→「曖昧な点質問して」
+### ① 要件が曖昧で手が止まる
+- **原因：** AIに質問させていない
+- **対処法：** 「曖昧な点を質問して」→AIが逆質問
 
-### ② いきなり実装
-前工程忘れ→STEP1-2必須、急がば回れ
+### ② いきなり実装を始める
+- **原因：** 前工程の重要性を忘れている
+- **対処法：** STEP1-2必須実施、急がば回れ
 
-### ③ テスト後回し
-TDD理解不足→Red-Green-Refactor厳守
+### ③ テストを後回しにする
+- **原因：** TDD重要性の理解不足
+- **対処法：** Red-Green-Refactorサイクル厳守
 
-### ④ AI自己レビュースキップ
-時間ない感覚→数秒で多バグ検出、時間節約
+### ④ AI自己レビューをスキップ
+- **原因：** 時間がないと感じる
+- **対処法：** 数秒で40-60%バグ検出、時間節約
 
 ### ⑤ トークン制限エラー
-.claudeignore不十分→除外設定、/compact実行
+- **原因：** .claudeignore不十分
+- **対処法：** node_modules等除外、/compact実行
 
-### ⑥ AI間違った方向
-受入条件不明確→こまめ確認・軌道修正
+### ⑥ AIが間違った方向に進む
+- **原因：** 受け入れ条件が不明確
+- **対処法：** こまめに確認・軌道修正
 
 ---
 
-<!-- _class: lead supercompact -->
+---
+
+<!-- _class: lead -->
 
 ## 演習成功のチェックリスト
 
 ---
-<!-- _class: two-column -->
 
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: card-grid compact -->
+<!-- _class: three-column -->
 
 # 演習成功のチェックリスト①
 
@@ -1611,690 +1311,549 @@ TDD理解不足→Red-Green-Refactor厳守
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+<!-- _class: three-column -->
 
-# 演習成功チェックリスト②
+# 演習成功のチェックリスト②
 
-**STEP4: 実装**
-- ✅ TDD/BDD (Red-Green-Refactor)
+### STEP4-5: 実装・品質担保
+- ✅ TDD/BDD実装（Red-Green-Refactor）
 - ✅ Given-When-Then形式テスト
-- ✅ インクリメンタル開発、頻繁commit
-- ✅ 環境変数管理、入力値バリデーション
+- ✅ インクリメンタル開発
+- ✅ 環境変数で秘密情報管理
+- ✅ 入力値バリデーション
 - ✅ AI自己レビュー実施
+- ✅ カバレッジ80%以上
+- ✅ 頻繁にコミット
 
-**STEP5: 品質担保＆Doc**
-- ✅ カバレッジ80%+、E2Eテスト
-- ✅ AI観点別レビュー4観点
+### STEP6: リファクタリング＆ドキュメント
+- ✅ 冗長・重複コード削除
 - ✅ リファクタリング実施
-- ✅ Doc生成 (arch/README/CLAUDE)
+- ✅ architecture.md生成
+- ✅ README.md作成
+- ✅ 知見を記録
 
 ---
 
-<!-- _class: lead compact -->
+---
+
+<!-- _class: lead -->
 
 ## 演習で体感できること
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: two-column -->
 
 # 演習で体感できること
 
-### ①前工程の重要性
-丁寧にやる→スムーズ、省略→迷う・手戻り
+### ① 前工程の重要性
+- **STEP1-2丁寧実施：** スムーズ、手戻り少、完成早い
+- **STEP1-2省略：** 迷う、手戻り多発、遅い
 
-### ②TDDの威力
-テストあり→AI自己完結、なし→無限ループ
+### ② TDDの威力
+- **テストなし：** 人間実行→エラー確認→コピペ→AI伝達→修正（無限ループ）
+- **テストあり：** AI自動テスト→検知→修正→成功（自己完結）
 
-### ③AI自己レビュー効果
-数秒で多数バグ検出、コストゼロ
+### ③ AI自己レビューの効果
+- **Before：** バグだらけ
+- **After：** 40-60%バグ検出・修正
+- **追加コスト：** ほぼゼロ（数秒）
 
-### ④インクリメンタル開発
-小さく→常に動作確認、全部→不安
+### ④ インクリメンタル開発の安心感
+- **全部一度：** 動くまで不安、原因特定困難
+- **小さく作る：** 常に動作確認、原因特定容易、進捗見える
 
-### ⑤Living Documentation
-AIが参照可能、忘れない、間違い防止
+### ⑤ Living Documentationの価値
+- **ドキュメントなし：** AIが忘れる、同じ間違い繰り返す
+- **ドキュメントあり：** AI参照可能、間違い防止、引き継ぎ容易
 
 ---
 
-<!-- _class: lead compact -->
+---
+
+<!-- _class: lead -->
 
 ## 演習の成果物
 
 ---
 
-<!-- _class: layout-code-focus compact -->
-
 # 成果物：ディレクトリ構成
 
 ```
-project/
-├── docs/     # 要件・設計
+プロジェクトディレクトリ/
+├── docs/               # 要件・設計・タスク・完成図面
 ├── src/
-│   ├── main/ # 本番
-│   └── test/ # テスト
+│   ├── main/java/      # 本番コード
+│   └── test/java/      # テストコード
 ├── README.md
 ├── .env.example
 └── .gitignore
 ```
 
-**📄 Doc:** Given-When-Then、エッジケース網羅
-**💻 Code:** カバレッジ80%+、セキュリティ、環境変数
+---
+
+<!-- _class: two-column -->
+
+# 成果物：品質基準
+
+**ドキュメント品質**
+- 曖昧さがない（誰が読んでも同じ解釈）
+- 受け入れ条件が明確（Given-When-Then形式）
+- エラー・エッジケースを網羅
+- 設計判断の理由を記録
+
+**コード品質**
+- テストカバレッジ80%以上
+- セキュリティベストプラクティス適用
+- 環境変数で秘密情報管理
+- リファクタリング済み
 
 ---
 
-<!-- _class: lead compact -->
+---
+
+<!-- _class: lead -->
 
 ## 1日目全体の振り返り
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+<!-- _class: two-column -->
 
 # 1日目全体の振り返り
 
-### 午前: 基礎
-AI活用3原則、要件定義、設計
+### 午前（Part 1）で学んだこと
+- AI活用の3原則
+- Claude Codeの使い方
+- STEP1: 要件定義（曖昧さ排除）
+- STEP2: 設計ドキュメント（Spec-Driven）
 
-### 午後前半: 実践
-タスク分解、実装、品質担保
+### 午後前半（Part 2）で学んだこと
+- STEP3: タスク分解（AI思考言語化）
+- STEP4: 実装（小さく・TDD・AI自己レビュー）
+- STEP5: 品質担保（TDDとAI相乗効果）
+- STEP6: リファクタリング＆ドキュメント
 
-### 午後後半: 演習
-5-STEPフロー、TDD、Living Doc
+### 午後後半（Part 3）で体験したこと
+- 5-STEPフロー全体実践
+- 前工程の重要性、TDDの威力
+- AI自己レビュー効果
+- Living Documentationの価値
 
 ### キーメッセージ
-曖昧さ排除、AI思考可視化、急がば回れ
+1. **曖昧さ徹底排除:** STEP1-2を丁寧に
+2. **AI思考可視化:** STEP3で計画作成
+3. **TDD自己完結:** STEP4-5でAI自律
+4. **知見蓄積:** STEP6でドキュメント化
+5. **急がば回れ:** 前工程が結果的に最速
 
 ---
 
-<!-- _class: lead ultracompact -->
+---
+
+<!-- _class: lead -->
 
 ## 2日目への準備
 
----
-
-<!-- _class: card-grid compact -->
-
-# 2日目への準備
-
-### 📅 2日目の内容（予告）
-
-**既存システム改修:**
-- リバースエンジニアリング（既存コードから仕様読み解き）
+### 2日目の内容（予告）
+- リバースエンジニアリング（既存コードから仕様を読み解く）
 - テストシナリオ一覧作成（モレ・ヌケ防止）
-- デグレ防止（既存機能保証）
-- 機能追加（実プロジェクトベース）
+- デグレ防止（既存機能が壊れないことを保証）
+- 既存システムへの機能追加（実プロジェクトベース）
 
-**1日目との違い:**
-1日目は新規開発、2日目は既存改修（理解→追加）
+### 1日目の復習推奨項目
+- 5-STEPフローの各ステップの目的
+- TDD/BDDのRed-Green-Refactorサイクル
+- AI自己レビューの4つの観点
+- Living Documentationの概念
+- セキュリティベストプラクティス
 
-### 📚 1日目の復習推奨
-
-**重要概念:**
-✅ 5-STEPフロー各ステップ目的 ✅ AI制約（Jagged Intelligence、Reward Hacking、忘れっぽさ） ✅ Trust but Verify原則
-
-**実践手法:**
-✅ TDD/BDD Red-Green-Refactor ✅ AI自己レビュー4観点 ✅ Living Documentation ✅ セキュリティベストプラクティス
-
-### 🏠 宿題（任意）
-
-**Lv1:** TODOアプリ機能追加 **Lv2:** 自分のプロジェクトで5-STEP実践 **Lv3:** AI自己レビュー習慣化、成功プロンプトをCLAUDE.mdに記録
+### 宿題（任意）
+- 演習で作成したTODOアプリに機能追加してみる
+- 自分のプロジェクトで5-STEPフローを試してみる
+- AI自己レビューを習慣化してみる
 ---
 marp: true
 theme: ai-seminar
 paginate: true
 ---
+---
 
-<!-- _class: title supercompact -->
+<!-- _class: lead -->
 
-# Day 2-1: 振り返り + リバースエンジニアリング + テストシナリオ + テストコード基礎
-
-## (10:00-12:00)
+## 1日目の振り返り（10分）
 
 ---
 
-<!-- _class: card-grid -->
-
-# 5-STEPフローの復習（10分）
-
-### STEP1: 要件定義
-**Guardrails、曖昧さの排除**
-
-### STEP2: 設計ドキュメント
-**外部記憶としてのドキュメント化**
-
-### STEP3: タスク分解
-**計画の可視化で手戻り防止**
-
-### STEP4: 実装
-**小さく作る・TDD・自己レビュー**
-
-### STEP5: 品質担保＆ドキュメント反映
-**Trust but Verify自動化、外部メモリ更新**
+### 5-STEPフローの復習（AI制約への対応）
+- STEP1: 要件定義（Guardrails、曖昧さの排除）
+- STEP2: 設計ドキュメント（Guardrails、AIは忘れっぽい対策）
+- STEP3: タスク分解（AIの思考を言語化、全体像把握）
+- STEP4: 実装（小さく作る・TDD・AI自己レビュー必須）
+- STEP5: 品質担保（Trust but Verify自動化）
+- STEP6: リファクタリング＆ドキュメント（Living Documentation＝外部メモリ）
 
 ---
 
-<!-- _class: card-grid ultracompact -->
-
-# 昨日の演習での気づき共有
-
-### 前工程の重要性を実感
-**Guardrails設定で実装スムーズ**
-
-### TDDでAIが自己完結
-**テスト実行→修正→成功を自動化**
-
-### AI自己レビューの効果
-**ゼロコストで品質向上**
-
-### インクリメンタル開発の安心感
-**小さく確実に進め手戻り防止**
+### 昨日の演習での気づき共有
+- 前工程の重要性を実感（Guardrails設定の効果）
+- TDDでAIが自己完結する様子を体験（Trust but Verify自動化）
+- AI自己レビューの効果を確認（エラー率10-60%→40-60%検出）
+- インクリメンタル開発の安心感（AIは忘れっぽい対策）
 
 ---
-<!-- _class: two-column -->
 
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: layout-timeline -->
-
-# 2日目のゴール：既存システムへの高品質な機能追加
-
-<div class="timeline">
-
-<div class="step">
-<div class="step-number">1</div>
-<h3>リバースエンジニアリング</h3>
-<p><strong>30分</strong></p>
-<p>既存コードから仕様読み解き</p>
-</div>
-
-<div class="step">
-<div class="step-number">2</div>
-<h3>フィットギャップ分析<br>＆影響範囲調査</h3>
-<p><strong>20分</strong></p>
-<p>追加開発範囲明確化</p>
-</div>
-
-<div class="step">
-<div class="step-number">3</div>
-<h3>テストシナリオ作成</h3>
-<p><strong>30分</strong></p>
-<p>既存・新機能・デグレ防止網羅</p>
-</div>
-
-<div class="step">
-<div class="step-number">4</div>
-<h3>テストコード実装<br>＋機能追加</h3>
-<p><strong>60分</strong></p>
-<p>TDD、AI自己レビュー</p>
-</div>
-
-</div>
+### 2日目のゴール
+- **既存システムへの機能追加を高品質に行う**
+- **リバースエンジニアリング**：既存コードから仕様を読み解く
+- **テストシナリオ作成**：モレ・ヌケ防止
+- **デグレ防止**：既存機能が壊れないことを保証
 
 ---
-<!-- _class: two-column -->
 
-<!-- _class: lead compact -->
+---
 
-## STEP1: リバースエンジニアリング（30分）
+<!-- _class: lead -->
+
+## リバースエンジニアリング（50分）
 
 ---
 
 <!-- _class: layout-horizontal-right -->
 
-# リバースエンジニアリングとは
+### リバースエンジニアリングとは
 
-![リバースエンジニアリングのプロセス](./assets/diagrams/diagram_12_reverse_engineering.svg)
+![リバースエンジニアリングのプロセス](./assets/diagrams-web/diagram_12_reverse_engineering.svg)
 
-**既存コードから仕様を読み解く技術**
-
-**なぜ必要か:**
-- AIは過去実装を記憶できない
-- 仕様書なしで推測実装→デグレ
-
-**基本原則:**
-- コードが真実を語る
-- ドキュメント化で次開発に活用
-
-**効果:**
-- 仕様正確把握
-- デグレ防止
-- 適切な機能追加
+- **既存コードから仕様を読み解く技術**
+- **なぜ必要か:** AIは過去実装を記憶できない、仕様書なしで推測実装→デグレ
+- **基本原則:** コードが真実を語る、ドキュメント化で次開発に活用
+- **効果:** 仕様正確把握、デグレ防止、適切な機能追加
 
 ---
 
-<!-- _class: card-grid ultracompact -->
-
-# リバースエンジニアリングの第一歩
-
-### ソースコード読み込み
-プロジェクトルートで`claude`実行
-
-### .claudeignoreで除外
-node_modules、.git、dist、*.log除外
-
-### AI指示例
-「プロジェクト構造」「主要ファイル役割」
-
-### 効果
-全体像把握、Doc生成準備
+### リバースエンジニアリングの第一歩
+- **ソースコード読み込み**
+  - Claude Codeでプロジェクト全体を読み込む
+  - プロジェクトルートで`claude`コマンド実行→自動的に全ファイルスキャン
+- **.claudeignoreで不要ファイルを除外（重要）**
+  - node_modules、.git、ビルド成果物、ログファイルを除外
+  - トークン消費を最小化（コスト削減＋AIの集中力維持）
+  - 例: `echo "node_modules/\ndist/\n.git/\n*.log" > .claudeignore`
+- **AIへの指示例:**
+  - 「このプロジェクトの構造を教えて」
+  - 「主要なファイルとその役割をリストアップして」
+  - 「アーキテクチャパターンは何を使っている？」
+- **効果:** プロジェクト全体像の把握、次のステップ（ドキュメント生成）への準備
 
 ---
-
-<!-- _class: layout-horizontal-right ultracompact -->
-
-# AIの制約を理解する（Jagged Intelligence）
-
-![Jagged Intelligence実例](./assets/diagrams/diagram_38_jagged_intelligence_examples.svg)
-
-**得意:** コード生成、パターン認識、テスト生成
-
-**不得意:** ビジネス判断、設計判断、全体影響判断
-
-**対策:** 明確な指示とGuardrails
-
----
-
-<!-- _class: layout-horizontal-right -->
-
-# ドキュメント自動生成（Guardrails構築）
-
-![文字起こしアプローチ（トライアル知識の共有）](./assets/diagrams/diagram_40_transcript_approach.svg)
-
-**APIドキュメント (OpenAPI):** 仕様明確化、API整合性保証
-**DB定義書:** 正確SQL生成、デグレ防止
-**JavaDoc/コメント:** 設計意図伝達、適切拡張
-**インデックス (README/architecture.md):** 全体像把握、一貫性確保
-**自動生成:** 「OpenAPI仕様書を生成」「テーブル定義書を生成」
-
----
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: layout-callout -->
-
-<div class="icon">📋</div>
-
-# 仕様書がない場合の対処法
-
-<div class="message">
-
-**問題:** ドキュメントがない既存システムへの機能追加
-- AIが仕様を推測→デグレ、不整合が発生
-- どこに何があるか分からない→影響範囲の判断不可
-
-**対策①: 内部仕様書の作成（技術視点）**
-- AIへの指示: 「このプロジェクトの内部仕様書を作成して」
-- 出力: アーキテクチャパターン、技術スタック、ディレクトリ構成、実装詳細
-- ファイル: docs/architecture.md に保存
-
-**対策②: 要件定義書相当の作成（ユーザー視点）**
-- AIへの指示: 「このシステムの要件定義書を作成して」
-- 出力: ユーザーストーリー、機能一覧、ビジネスロジック、画面フロー
-- ファイル: docs/requirements.md に保存
-
-**効果:** AIに既存システムの仕様を理解させる、新機能との整合性を保つ
-
-</div>
 
 ---
 
 <!-- _class: layout-horizontal-left -->
 
-# リバースエンジニアリング → 網羅的テスト生成（重要）
+### AIの制約を理解する（Jagged Intelligence）
 
-![リバースエンジニアリングから網羅的テスト生成](./assets/diagrams/diagram_44_reverse_to_comprehensive_test.svg)
+![Jagged Intelligence実例](./assets/diagrams-web/diagram_38_jagged_intelligence_examples.svg)
 
-### ❌ 従来（コード追認）
-既存コード→直接テスト生成→実装済みのみカバー
-**問題:** 既存バグ追認、エッジケース見落とし
-
-### ✅ リバースエンジニアリング
-既存コード→要件定義書逆生成→網羅的テストシナリオ
-**効果:** あるべき仕様に基づくテスト、未実装検出
-
-### 💡 核心的価値
-「あるべき姿」に基づいたテスト、AIが網羅的に生成（正常系・異常系・境界値）、既存バグ・仕様外動作を発見
+- **AIの得意・不得意を理解**
+  - 得意: コード生成、パターン認識、テスト生成
+  - 不得意: ビジネス判断、設計判断、全体への影響判断
+- **対策: 明確な指示とGuardrails**
 
 ---
-
-<!-- _class: lead compact -->
-
-## STEP2: フィットギャップ分析＆影響範囲調査
-
-### （20分）
 
 ---
 
 <!-- _class: layout-horizontal-right -->
 
-# 既存機能のフィットギャップ分析
+### ドキュメント自動生成（Guardrails構築）
 
-![フィットギャップ分析](./assets/diagrams/diagram_18_fit_gap_analysis.svg)
+![文字起こしアプローチ（トライアル知識の共有）](./assets/diagrams-web/diagram_40_transcript_approach.svg)
 
-**目的:** 既存vs新機能比較、追加開発範囲明確化
-
-**分析:**
-- **Fit:** そのまま使える機能
-- **Gap:** 新規実装、拡張箇所
-- **Impact:** 既存への影響
-
-**指示:** 「既存○○と新規△△のフィットギャップ分析」
-
-**効果:** 工数見積もり、効率的実装計画
+- **APIドキュメント（OpenAPI）:** 仕様明確化、既存API整合性保証
+- **DB定義書:** 正確なSQL生成、デグレ防止
+- **JavaDoc/コメント:** 設計意図伝達、適切な拡張
+- **インデックス（README/architecture.md）:** 全体像把握、一貫性確保
+- **自動生成:** 「OpenAPI仕様書を生成」「テーブル定義書を生成」
 
 ---
 
-<!-- _class: two-column ultracompact -->
-
-# 影響範囲調査の手法
-
-![影響範囲調査の可視化](./assets/diagrams/diagram_13_impact_analysis.svg)
-
-**なぜ必要:**
-AI局所変更のみ→全体影響見落とし
-
-**調査項目:**
-変更ファイル、影響テーブル、連鎖影響、テスト箇所
-
-**AI指示:**
-「影響範囲調査。ファイル/テーブル/連鎖影響リスト」
-
-**効果:**
-デグレ防止、安全追加
-
----
-<!-- _class: two-column -->
-
-<!-- _class: lead compact -->
-
-## STEP3: テストシナリオ一覧作成（30分）
+### 仕様書がない場合の対処法
+- **問題:** ドキュメントがない既存システムへの機能追加
+  - AIが仕様を推測→デグレ、不整合が発生
+  - どこに何があるか分からない→影響範囲の判断不可
+- **対策①: 内部仕様書の作成（技術視点）**
+  - AIへの指示: 「このプロジェクトの内部仕様書を作成して」
+  - 出力: アーキテクチャパターン、技術スタック、ディレクトリ構成、実装詳細
+  - ファイル: docs/architecture.md に保存
+- **対策②: 要件定義書相当の作成（ユーザー視点）**
+  - AIへの指示: 「このシステムの要件定義書を作成して」
+  - 出力: ユーザーストーリー、機能一覧、ビジネスロジック、画面フロー
+  - ファイル: docs/requirements.md に保存
+- **効果:** AIに既存システムの仕様を理解させる、新機能との整合性を保つ
 
 ---
 
-<!-- _class: layout-callout ultracompact -->
+---
 
-<div class="icon">📝</div>
+<!-- _class: layout-horizontal-right -->
 
-# テストシナリオとは
+### 既存機能のフィットギャップ分析
 
-<div class="message">
+![フィットギャップ分析](./assets/diagrams-web/diagram_18_fit_gap_analysis.svg)
 
-**「何をテストすべきか」の一覧（Guardrails）**
-
-**なぜ必要:** テストコード生成は得意、シナリオ網羅性は苦手
-
-**役割:** AIへのGuardrails、抜け漏れ防止
-
-**重要:** 実装前に作成
-
-</div>
+- **目的:** 既存vs新機能比較、追加開発範囲明確化
+- **分析項目:**
+  - **Fit:** そのまま使える機能、流用コード
+  - **Gap:** 新規実装、既存拡張、修正箇所
+  - **Impact:** 既存への影響、連鎖的変更
+- **AIへの指示:** 「既存○○と新規△△のフィットギャップ分析」
+- **効果:** 工数見積もり、リスク管理、効率的実装計画
 
 ---
 
-<!-- _class: layout-comparison -->
+---
 
-# テストシナリオとテストコードの違い
+<!-- _class: layout-horizontal-right -->
 
-<div>
+### 影響範囲調査の手法
 
-## テストシナリオ：企画書（What）
+![影響範囲調査の可視化](./assets/diagrams-web/diagram_13_impact_analysis.svg)
 
-**「何をテストするか」を記述**
-
-**人間が読みやすい形式**
-- Markdown、Excelなど
-
-**ビジネス要件との対応が明確**
-
-**レビューが容易**
-
-</div>
-
-<div class="separator">VS</div>
-
-<div>
-
-## テストコード：実装物（How）
-
-**「どうテストするか」を記述**
-
-**実行可能なコード**
-- JUnit、Mockitoなど
-
-**CI/CDで自動実行**
-
-**関係性:**
-シナリオ（設計図）→ コード（実装）
-
-</div>
+- **なぜ必要:** AIは局所変更のみ見る→全体影響見落とし→デグレ
+- **調査項目:**
+  - **変更ファイル:** Controller/Service/Repository/Entity/View
+  - **影響テーブル:** カラム追加、制約/インデックス変更
+  - **連鎖影響:** 他機能、API呼び出し元、画面表示
+  - **テスト箇所:** 単体/統合/E2Eテスト
+- **AIへの指示:** 「影響範囲調査。ファイル/テーブル/連鎖影響リストアップ」
+- **効果:** デグレ防止、テストシナリオ基礎、安全な追加
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+---
 
-# テストシナリオ → テストコードの順序
-
-![テストシナリオからテストコードへの流れ](./assets/diagrams/diagram_14_scenario_to_code.svg)
-
-### テストシナリオを先に作成（Guardrails構築）
-- 全体像を把握→AIは忘れっぽい対策
-- モレ・ヌケを防止→Jagged Intelligence対策
-- 明確な指針＝AIへのGuardrails
-
-### テストコードを実装
-- シナリオに基づいてAIが自動生成
-- 確実にカバー
+### 高品質なテストを作るには仕様の可視化が前提
+- **仕様不明確の問題（Guardrails不足）**
+  - 仕様不明→AIが推測でテスト作成→モレ・ヌケ発生
+  - Jagged Intelligence→テスト設計判断が苦手
+- リバースエンジニアリングで仕様を明確化（Guardrails構築）
+- 明確な仕様に基づいてテストシナリオを作成
 
 ---
 
-<!-- _class: two-column -->
-
-# デグレ防止の重要性
-
-![Reward Hacking実例](./assets/diagrams/diagram_39_reward_hacking_examples.svg)
-
-**既存機能が壊れていないことを保証（Trust but Verify）**
-
-**なぜデグレ:**
-- AI忘れっぽい→既存仕様忘却
-- 全体影響判断不可
-- 新機能優先で既存軽視
-
-**影響:**
-本番障害、信頼喪失、修正コスト増
-
-**対策:**
-既存主要シナリオをテストに含める、自動テストで継続検証
-
-**効果:**
-安心追加、品質保証、障害防止
-
 ---
-<!-- _class: layout-horizontal-right ultracompact -->
 
-# テストシナリオの分類
+<!-- _class: lead -->
 
-![テストシナリオの4分類](./assets/diagrams/diagram_15_test_classification.svg)
-
-**正常系:** 想定入力→期待結果
-
-**異常系:** 不正入力→エラー処理
-
-**境界値:** 0/MAX/MIN確認
-
-**例外処理:** ネットワーク/DB/タイムアウト
-
-**効果:** 全観点網羅
+## テストシナリオ一覧作成（40分）
 
 ---
 
-<!-- _class: card-grid supercompact -->
-
-# テストシナリオ作成の実例
-
-### ①既存機能（デグレ防止）
-**目的:** 既存機能動作確認
-**対象:** 主要機能Happy Path
-**例:** ログイン、ユーザー登録、一覧、検索
-
-### ②新機能（品質担保）
-**目的:** 新機能仕様通り動作確認
-**対象:** 正常系・異常系・境界値・例外
-**例:** パスワードリセット全テストケース
-
-### ③デグレ防止（連携確認）
-**目的:** 既存と新機能の連携確認
-**対象:** インターフェース、データ整合性
-**例:** ユーザー管理とパスワードリセット連携
+### テストシナリオとは
+- **「何をテストすべきか」の一覧（Guardrails）**
+- **なぜ必要か**
+  - Jagged Intelligence→AIはテスト設計判断が苦手（見落とし多発）
+  - シナリオなし→AIが推測でテスト作成→モレ・ヌケ、重複、偏り
+  - シナリオあり→網羅的にテスト生成、品質担保
+- **テストシナリオの役割:**
+  - AIへのテスト設計のGuardrails（何をテストするか明示）
+  - テストケースの抜け漏れ防止（正常系・異常系・境界値を網羅）
+  - レビューのしやすさ（人間が確認しやすい形式）
+- **重要:** 実装前に作成（実装後だと実装に引きずられる）
+- **効果:** 高品質なテスト、バグ検出率向上、デグレ防止
 
 ---
 
-<!-- _class: lead compact -->
+---
 
-## STEP4: テストコード実装＋機能追加（60分）
-
-### テストコード基礎（復習）
+### テストシナリオとテストコードの違い
+- **テストシナリオ：企画書（What）**
+  - 「何をテストするか」を記述（例: 「ログイン機能の正常系」）
+  - 人間が読みやすい形式（Markdown、Excelなど）
+  - ビジネス要件との対応が明確
+  - レビューが容易（ステークホルダーも確認可能）
+- **テストコード：実装物（How）**
+  - 「どうテストするか」を記述（例: `@Test void testLoginSuccess() {...}`）
+  - 実行可能なコード（JUnit、Mockitoなど）
+  - CI/CDで自動実行
+- **関係性:** テストシナリオ（設計図）→ テストコード（実装）
+- **効果:** テストシナリオで全体像把握→AIがテストコード自動生成
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+---
 
-# テストコード基礎（復習）
+<!-- _class: layout-horizontal-right -->
 
-### TDD/BDD
-**Red-Green-Refactorサイクル**
-- **Red**: 失敗テスト先書き
-- **Green**: 最小実装でテスト通過
-- **Refactor**: 品質向上
+### テストシナリオ → テストコードの順序
 
-### Given-When-Then形式
-**テスト構造化**
-- **Given**: データ準備（前提条件）
-- **When**: メソッド実行
-- **Then**: 期待結果アサーション
+![テストシナリオからテストコードへの流れ](./assets/diagrams-web/diagram_14_scenario_to_code.svg)
 
-### テスト独立性
-**各テスト独立実行可能**
-- 順序依存NG
-- 副作用NG
-- @BeforeEach/@AfterEachで初期化
-
-### テストカバレッジ
-**80%以上目標**
-- 100%非現実的
-- 重要ロジック優先
-
-### 効果
-品質保証、リファクタリング安全性、ドキュメント価値
+- **テストシナリオを先に作成（Guardrails構築）**
+  - 全体像を把握→AIは忘れっぽい対策
+  - モレ・ヌケを防止→Jagged Intelligence対策
+  - 明確な指針＝AIへのGuardrails
+- **テストコードを実装**
+  - シナリオに基づいてAIが自動生成
+  - 確実にカバー
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+---
 
-# テストシナリオからテストコードへ
+<!-- _class: layout-horizontal-right -->
 
-### なぜ必要
-網羅性確保
+### デグレ防止の重要性
 
-### プロセス
-1シナリオ→1テスト
+![Reward Hacking実例](./assets/diagrams-web/diagram_39_reward_hacking_examples.svg)
 
-### 指示
-「JUnitテスト生成」
-
-### 効果
-網羅実装
+- **既存機能が壊れていないことを保証（Trust but Verify）**
+- **なぜデグレ:** AI忘れっぽい→既存仕様忘却、全体影響判断不可、新機能優先で既存軽視
+- **影響:** 本番障害、信頼喪失、修正コスト増
+- **対策:** 既存主要シナリオをテストに含める、自動テストで継続検証
+- **効果:** 安心追加、品質保証、障害防止
 
 ---
 
-<!-- _class: layout-callout -->
+---
 
-<div class="icon">💡</div>
+<!-- _class: layout-horizontal-right -->
 
-# テストコードの構造（Given-When-Then）
+### テストシナリオの分類
 
-<div class="message">
+![テストシナリオの4分類](./assets/diagrams-web/diagram_15_test_classification.svg)
 
-**なぜGiven-When-Then形式が重要か:**
-- テストの意図が明確になる
-- AIがテストシナリオからテストコードを自動生成できる
-- 人間が読んでも理解しやすく、仕様書としても機能する
-
-**各セクションの役割:**
-- **Given:** 前提条件（AIがセットアップコード生成）
-- **When:** 実行する操作（AIがメソッド呼び出し生成）
-- **Then:** 期待する結果（AIがアサーション生成）
-
-</div>
+- **正常系（Happy Path）:** 想定入力→期待結果（最重要、最頻使用）
+- **異常系（Error Handling）:** 不正入力→エラー処理確認（本番障害多発箇所）
+- **境界値（Boundary）:** 0/MAX/MIN確認（バグ多発ポイント）
+- **例外処理（Exception）:** ネットワーク/DB/タイムアウトエラー確認
+- **効果:** 全観点網羅→本番障害大幅削減
 
 ---
 
 <!-- _class: card-grid -->
 
-# テストカバレッジの考え方（80%以上）
+# テストシナリオ作成の実例
 
-### なぜ80%以上が目標か
-**現実的な品質目標**
-- 100%は非現実的（Getter/Setterまでテスト不要）
-- 80%で主要な機能とエッジケースをカバー
-- 残り20%はリスクの低い箇所
+### ①既存機能（デグレ防止）
+- **目的:** 既存機能動作確認
+- **対象:** 主要機能Happy Path
+- **例:** ログイン、ユーザー登録、一覧、検索
 
-### カバレッジツールの価値（Trust but Verify）
-**AIのエラーを可視化**
-- AIが見落としたテストケースを発見
-- AIのエラーを可視化
-- 不足箇所を可視化→AIに追加テスト生成を依頼
+### ②新機能（品質担保）
+- **目的:** 新機能仕様通り動作確認
+- **対象:** 正常系・異常系・境界値・例外
+- **例:** パスワードリセット全テストケース
 
-### 効果
-リファクタリング時の安全性確保、デグレ防止の証拠
+### ③デグレ防止（連携確認）
+- **目的:** 既存と新機能の連携確認
+- **対象:** インターフェース、データ整合性
+- **例:** ユーザー管理とパスワードリセット連携
 
 ---
 
-<!-- _class: layout-callout -->
+---
 
-<div class="icon">🤖</div>
+<!-- _class: lead -->
 
-# AIによるテストコード自動生成
+## テストコード基礎（20分）
 
-<div class="message">
+---
 
-**テストシナリオがあることの重要性（Guardrails）:**
-- シナリオなし: AIが推測で作る（Jagged Intelligence）→漏れ発生
-- シナリオあり: 明確な指針→AIが網羅的に生成→漏れなし
+<!-- _class: two-column -->
 
-**AIへの指示方法:**
-- 「このテストシナリオ一覧に基づいて、JUnitテストコードを生成して」
-- AIがシナリオを1つずつテストメソッドに変換
-- Given-When-Then形式で自動生成
+# テストコード基礎（復習）
 
-**人間の役割（Trust but Verify）:**
-- テストシナリオの作成（全体像の把握）
-- 生成されたテストコードのレビュー
-- 不足しているケースの追加指示
+### TDD/BDD
+- **Red**: 失敗するテスト先書き
+- **Green**: 最小実装でテスト通過
+- **Refactor**: 品質向上（重複削除、可読性）
 
-</div>
+### Given-When-Then形式
+- **Given**: テストデータ準備（前提条件）
+- **When**: テスト対象メソッド実行
+- **Then**: 期待結果アサーション
+
+### テストの独立性
+- 各テスト独立実行可能（順序依存NG）
+  - 他のテストに影響を与えない（副作用NG）
+  - @BeforeEach、@AfterEachで初期化・クリーンアップ
+- **テストカバレッジ**
+  - 80%以上を目標（100%は非現実的）
+  - 重要なビジネスロジックを優先
+- **効果:** 品質保証、リファクタリングの安全性、ドキュメントとしての価値
+
+---
+
+<!-- _class: two-column -->
+
+# テストシナリオからテストコードへ
+
+### なぜシナリオから始める？
+- 全体像把握→モレ・ヌケ防止
+- 設計書としてAIがコード生成
+- 人間がレビューしやすい
+
+### 変換プロセス
+1. シナリオ1つ→テストメソッド1つ
+2. Given-When-Then形式で記述
+3. トレーサビリティ確保
+
+### AIへの指示
+「このテストシナリオ一覧に基づいてJUnitテストコード生成」
+
+### 効果
+漏れなく実装、品質担保、保守性向上
+
+---
+
+### テストコードの構造（Given-When-Then）
+- **なぜGiven-When-Then形式が重要か**
+  - テストの意図が明確になる
+  - AIがテストシナリオからテストコードを自動生成できる
+  - 人間が読んでも理解しやすく、仕様書としても機能する
+- **各セクションの役割**
+  - Given: 前提条件（AIがセットアップコード生成）
+  - When: 実行する操作（AIがメソッド呼び出し生成）
+  - Then: 期待する結果（AIがアサーション生成）
+
+---
+
+### テストカバレッジの考え方（80%以上）
+- **なぜ80%以上が目標か**
+  - 100%は非現実的（Getter/Setterまでテスト不要）
+  - 80%で主要な機能とエッジケースをカバー
+  - 残り20%はリスクの低い箇所
+- **カバレッジツールの価値（Trust but Verify）**
+  - AIが見落としたテストケースを発見
+  - AIのエラー率10-60%を可視化
+  - 不足箇所を可視化→AIに追加テスト生成を依頼
+- リファクタリング時の安全性確保、デグレ防止の証拠
+
+---
+
+### AIによるテストコード自動生成
+- **テストシナリオがあることの重要性（Guardrails）**
+  - シナリオなし: AIが推測で作る（Jagged Intelligence）→漏れ発生
+  - シナリオあり: 明確な指針→AIが網羅的に生成→漏れなし
+- **AIへの指示方法**
+  - 「このテストシナリオ一覧に基づいて、JUnitテストコードを生成して」
+  - AIがシナリオを1つずつテストメソッドに変換
+  - Given-When-Then形式で自動生成
+- **人間の役割（Trust but Verify）**
+  - テストシナリオの作成（全体像の把握）
+  - 生成されたテストコードのレビュー
+  - 不足しているケースの追加指示
 ---
 marp: true
 theme: ai-seminar
 paginate: true
 ---
-<!-- _class: lead ultracompact -->
-
-## Day 2-2
-# 実践演習 + 成果発表 + まとめ
-(13:00-17:00)
-
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: lead -->
 
 ## 実践演習の説明（10分）
 
@@ -2304,404 +1863,306 @@ paginate: true
 
 # 3つの演習課題から選択
 
-### ①マスター追加（商品カテゴリマスタCRUD）
-CREATE TABLE、CRUD機能実装、外部キー関連付け
-**難易度: 中**（デグレリスク低）
+### ①マスター追加（商品カテゴリマスタのCRUD）
+- 新しいマスタテーブル追加（CREATE TABLE）
+- CRUD機能実装（Controller、Service、Repository、Entity、View）
+- 既存マスタとの関連付け（外部キー）
+- **難易度: 中**（デグレリスク低）
 
-### ②項目追加（顧客に電話番号カラム）
-ALTER TABLE、関連画面・API修正、バリデーション追加
-**難易度: 高**（影響大、デグレリスク高）
+### ②項目追加（顧客に電話番号カラム追加）
+- 既存テーブルへのカラム追加（ALTER TABLE）
+- 関連画面・API修正（登録、更新、一覧、詳細）
+- バリデーション追加（電話番号形式チェック）
+- **難易度: 高**（影響大、デグレリスク高）
 
 ### ③検索条件追加（日付範囲指定検索）
-WHERE句拡張、UI・API・SQL修正、境界値処理
-**難易度: 中**（既存検索への影響あり）
+- 既存検索への条件追加（WHERE句拡張）
+- UI・API・SQL修正（日付ピッカー、パラメータ、クエリ）
+- 境界値処理（開始日・終了日チェック）
+- **難易度: 中**（既存検索への影響あり）
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+---
 
-# 演習の進め方（ワークフロー）
+<!-- _class: layout-horizontal-right -->
 
-![演習ワークフロー](./assets/diagrams/diagram_17_workshop_workflow.svg)
+### 演習の進め方（ワークフロー）
 
-**保守開発の4ステップワークフロー:**
-- **STEP1: リバースエンジニアリング（30分）** 仕様把握、Doc自動生成
-- **STEP2: フィットギャップ分析＆影響範囲調査（20分）** 追加開発範囲明確化
-- **STEP3: テストシナリオ作成（30分）** 既存・新機能・デグレ防止網羅
-- **STEP4: テストコード実装＋機能追加（60分）** TDD、AI自己レビュー、Doc反映
+![演習ワークフロー](./assets/diagrams-web/diagram_17_workshop_workflow.svg)
+
+- **STEP1: リバースエンジニアリング（30分）** 仕様把握、影響範囲調査
+- **STEP2: テストシナリオ作成（30分）** 正常/異常/境界値網羅
+- **STEP3: テストコード実装（30分）** JUnit/Given-When-Then
+- **STEP4: 実装（60分）** TDD、Red-Green-Refactor、AI自己レビュー
+- **STEP5: ドキュメント反映（10分）** Living Documentation
 - **効果:** 体系的高品質追加、実務再現可能
 
 ---
 
-<!-- _class: card-grid -->
+---
 
-# 演習のゴール
+<!-- _class: two-column -->
 
-### リバースエンジニアリング手法の習得
-**既存コードから仕様読解**
+### 演習のゴール
+
+#### リバースエンジニアリング手法の習得
+- 既存コードから仕様読解
 - AIに「内部仕様書を作成して」と指示
 - ドキュメント不在でも対応可能
 
-### テストシナリオ作成でモレ・ヌケ防止
-**正常系・異常系・境界値網羅**
+#### テストシナリオ作成でモレ・ヌケ防止
+- 正常系・異常系・境界値網羅
 - AIがシナリオ→テストコード自動生成
 - 品質担保の仕組み化
 
-### デグレを防ぐ実装手法の体得
-**既存機能のテストシナリオ作成**
+#### デグレを防ぐ実装手法の体得
+- 既存機能のテストシナリオ作成
 - デグレ防止テスト自動化
 - 安心して機能追加できる体制構築
 
-### 効果
-実務で即実践、保守開発の生産性・品質向上
+**効果:** 実務で即実践、保守開発の生産性・品質向上
 
 ---
-
-<!-- _class: lead compact -->
-
-## 実践演習（3時間）
-
----
-
-<!-- _class: layout-callout ultracompact -->
-
-<div class="icon">🔍</div>
-
-# STEP1: リバースエンジニアリング（30分）
-
-<div class="message">
-
-**AI指示**: 「内部仕様書作成」
-**出力**: 技術スタック、アーキ、DB/API → docs/architecture.md
-**効果**: 全体像把握、整合性保証
-
-</div>
-
----
-
-<!-- _class: card-grid compact -->
-
-# STEP2: フィットギャップ分析＆影響範囲調査（20分）
-
-### 既存機能の理解
-- テーブル/API/画面定義・遷移図
-- ロジック機能説明
-
-### 影響範囲調査
-- 変更ファイル、影響テーブル、連鎖、テスト箇所
-- **AI:** 「電話番号追加の影響範囲調査」
-
-### フィットギャップ分析
-- 現状→要件比較→Fit/Gap明確化
-- **出力:** Fit=既存CRUD、Gap=カラム/バリデ/画面
-
----
-
-<!-- _class: lead compact -->
-
-## STEP3: テストシナリオ一覧作成（30分）
-
----
-
-<!-- _class: layout-callout -->
-
-<div class="icon">✅</div>
-
-# 既存機能のテストシナリオ作成
-
-<div class="message">
-
-**目的:** 既存機能が壊れていないことを保証（デグレ防止）
-
-**対象:** 既存機能の主要な機能（ログイン、ユーザー登録、一覧、検索など）
-
-**観点:** 正常系・異常系・境界値
-
-**AI指示:** 「既存のログイン機能のテストシナリオを作成。正常系、異常系、境界値含む」
-
-**出力:** Markdown形式
-
-**効果:** デグレ防止、安心変更
-
-</div>
-
----
-
-<!-- _class: card-grid supercompact -->
-
-# 新機能のテストシナリオ作成
-
-### 目的
-新機能が仕様通り動作することを保証
-
-### 対象：全テストケース
-正常系・異常系・境界値・例外処理を網羅
-
-### AI指示
-「〇〇機能のテストシナリオ作成」
-「正常系、異常系、境界値、例外を網羅」
-
-### 出力形式
-Given-When-Then形式
-
-### 効果
-品質担保、バグ検出率向上
-
----
-
-<!-- _class: layout-horizontal-right ultracompact -->
-
-# デグレ防止のテストシナリオ
-
-![デグレ防止の3層構造](./assets/diagrams/diagram_16_regression_prevention.svg)
-
-**目的:** 既存と新機能の連携確認
-
-**対象:**
-既存機能、インターフェース、データ整合性
-
-**具体例:**
-既存登録動作、データ表示、新規保存
-
-**AI指示:** 連携テストシナリオ作成
-
-**効果:** デグレゼロ
-
----
-
-<!-- _class: layout-horizontal-left ultracompact -->
-
-# デグレ発生メカニズムとTDDによる予防
-
-![デグレ発生メカニズムとTDD予防](./assets/diagrams/diagram_42_regression_mechanism.svg)
-
-### デグレが起きる3つの原因
-AIは忘れっぽい、影響範囲判断不可、新機能優先
-
-### TDD予防
-テストあれば→AI自動検証、デグレ大幅削減
-
-### 効果
-安心機能追加、品質保証
 
 ---
 
 <!-- _class: lead -->
 
-## STEP4: テストコード実装＋機能追加（60分）
-
----
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: layout-timeline -->
-
-# テストコード実装（30分）
-
-<div class="timeline">
-
-<div class="step">
-<div class="step-number">1</div>
-<h3>AIへの指示</h3>
-<p>「このテストシナリオ一覧に基づいて、JUnitテストコードを生成して」</p>
-<p>「Given-When-Then形式で、Mockitoを使ってモックを作成して」</p>
-</div>
-
-<div class="step">
-<div class="step-number">2</div>
-<h3>生成されるテストコード</h3>
-<p>シナリオ1つ→1テストメソッド</p>
-<p>Given-When-Then構造化</p>
-</div>
-
-<div class="step">
-<div class="step-number">3</div>
-<h3>テストカバレッジ目標</h3>
-<p>80%以上</p>
-<p>JaCoCoで確認</p>
-</div>
-
-<div class="step">
-<div class="step-number">4</div>
-<h3>効果</h3>
-<p>自動テスト</p>
-<p>CI/CD統合</p>
-<p>継続的品質保証</p>
-</div>
-
-</div>
-
----
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: layout-timeline -->
-
-# 機能追加実装：TDDで実装（30分）
-
-<div class="timeline">
-
-<div class="step">
-<div class="step-number">R</div>
-<h3>Red</h3>
-<p><strong>失敗するテストを書く</strong></p>
-<p>テストシナリオ→テストコード作成</p>
-<p>実装がないので当然失敗</p>
-</div>
-
-<div class="step">
-<div class="step-number">G</div>
-<h3>Green</h3>
-<p><strong>最小実装</strong></p>
-<p>テストが通る最小限のコード実装</p>
-<p>「このテストが通るように実装して」</p>
-</div>
-
-<div class="step">
-<div class="step-number">R</div>
-<h3>Refactor</h3>
-<p><strong>改善</strong></p>
-<p>重複削除、可読性向上、最適化</p>
-<p>「このコードをリファクタリングして」</p>
-</div>
-
-<div class="step">
-<div class="step-number">✓</div>
-<h3>AI自己レビュー</h3>
-<p><strong>必須</strong></p>
-<p>各ステップで「このコードをレビューして」</p>
-<p>セキュリティ、エラー処理、エッジケース、ベストプラクティスチェック</p>
-</div>
-
-</div>
+## 実践演習（3時間）
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: three-column -->
 
-# テスト実行・デバッグ
+### 前半：既存システムの分析（70分）
 
-### 全テスト実行
-**一括実行**
+#### リバースエンジニアリング
+- **AI指示:** 「内部仕様書作成」「要件定義書作成」
+- **出力:** 技術スタック、アーキテクチャ、DB/API仕様
+- **保存先:** docs/architecture.md、requirements.md
+- **効果:** 全体像把握、整合性保証
+
+#### 既存機能の理解
+- **テーブル:** 「全テーブル定義をMarkdown出力」
+- **API:** 「全エンドポイントをOpenAPI出力」
+- **画面:** 「画面一覧と遷移図作成」
+- **ビジネスロジック:** 「○○機能を説明」
+
+#### 影響範囲調査
+- **目的:** 変更箇所・影響把握、デグレ防止
+- **調査項目:** 変更ファイル、影響テーブル、連鎖影響、テスト箇所
+- **AI指示:** 「電話番号カラム追加の影響範囲調査」
+
+#### フィットギャップ分析
+- **目的:** 追加開発範囲明確化
+- **プロセス:** 現状確認→要件比較→Fit/Gap明確化
+- **AI指示:** 「顧客管理と電話番号追加のフィットギャップ分析」
+- **出力例:** Fit=既存CRUD流用、Gap=カラム追加/バリデーション/画面修正
+
+---
+
+---
+
+### 中盤：テストシナリオ一覧作成 + テストコード実装（60分）
+
+---
+
+#### 既存機能のテストシナリオ作成
+- **目的:** 既存機能が壊れていないことを保証（デグレ防止）
+- **対象:** 既存機能の主要な機能をカバー
+  - ログイン、ユーザー登録、データ一覧、検索など
+  - よく使われる機能を優先
+- **観点:** 正常系・異常系・境界値
+- **AIへの指示:**
+  - 「既存のログイン機能のテストシナリオを作成して」
+  - 「正常系、異常系、境界値を含めて」
+- **出力形式:** Markdown形式でテストシナリオ一覧
+- **効果:** デグレ防止、安心して変更可能
+
+---
+
+<!-- _class: two-column -->
+
+#### 新機能のテストシナリオ作成
+
+**目的:** 新機能が仕様通り動作することを保証
+
+**対象:** 新規追加機能の全テストケース
+- 正常系: 期待通りの動作確認
+- 異常系: エラーハンドリング確認
+- 境界値: 0、MAX、MINでの動作確認
+- 例外処理: ネットワーク、DB接続エラー
+
+**AIへの指示:**
+- 「電話番号カラム追加機能のテストシナリオを作成して」
+- 「正常系、異常系、境界値、例外処理を網羅して」
+
+**出力形式:** Given-When-Then形式でシナリオ記述
+
+**効果:** 新機能の品質担保、バグ検出率向上
+
+---
+
+<!-- _class: layout-horizontal-right -->
+
+#### デグレ防止のテストシナリオ
+
+![デグレ防止の3層構造](./assets/diagrams-web/diagram_16_regression_prevention.svg)
+
+- **目的:** 既存と新機能の連携確認
+- **対象:** 既存機能動作確認、インターフェース、データ整合性
+- **具体例（電話番号追加）:** 既存顧客登録動作、既存データ表示、新規登録保存
+- **AI指示:** 「顧客管理と電話番号カラムの連携テストシナリオ作成」
+- **効果:** デグレゼロ、シームレス統合
+
+---
+
+<!-- _class: layout-horizontal-left -->
+
+#### デグレ発生メカニズムとTDDによる予防
+
+![デグレ発生メカニズムとTDD予防](./assets/diagrams-web/diagram_42_regression_mechanism.svg)
+
+- **デグレが起きる3つの原因**
+  - AIは忘れっぽい→既存仕様を忘れる
+  - Jagged Intelligence→影響範囲を判断できない
+  - Reward Hacking→新機能優先、既存機能軽視
+- **TDDによる予防**
+  - テストがあれば→AIが自動で検証
+  - デグレ率30-50%→0-5%に削減
+- **効果:** 安心して機能追加、品質保証
+
+---
+
+<!-- _class: three-column -->
+
+#### テストコード実装
+
+**AIへの指示:**
+- 「このテストシナリオ一覧に基づいて、JUnitテストコードを生成して」
+- 「Given-When-Then形式で、Mockitoを使ってモックを作成して」
+
+**生成されるテストコード:**
+- シナリオ1つ→1テストメソッド
+- Given（前提条件）: @BeforeEach、テストデータ準備
+- When（実行）: テスト対象メソッド呼び出し
+- Then（検証）: assertEquals、assertThrows
+
+**テストカバレッジ目標:** 80%以上
+- JaCoCoで確認
+- 不足箇所特定→追加テスト作成
+
+**効果:** 自動テスト、CI/CD統合、継続的品質保証
+
+---
+
+---
+
+### 後半：機能追加実装 + ドキュメント反映（30分）
+
+---
+
+<!-- _class: two-column -->
+
+#### TDDで実装
+
+**Red（失敗するテストを書く）**
+- テストシナリオ→テストコード作成
+- 実装がないので当然失敗
+
+**Green（最小実装）**
+- テストが通る最小限のコード実装
+- 「このテストが通るように実装して」
+
+**Refactor（改善）**
+- 重複削除、可読性向上、最適化
+- 「このコードをリファクタリングして」
+
+**AI自己レビュー必須**
+- 各ステップで「このコードをレビューして」
+- セキュリティ、エラー処理、エッジケース、ベストプラクティスチェック
+
+**効果:** 高品質、バグ率低下、保守性向上
+
+---
+
+<!-- _class: two-column -->
+
+#### テスト実行・デバッグ
+
+**全テスト実行**
 - `mvn test` または `./gradlew test` で一括実行
 - CI/CDで自動実行
 
-### テスト失敗箇所の修正
-**AIに依頼**
+**テスト失敗箇所の修正**
 - 失敗エラーメッセージをAIに渡す
 - 「このテスト失敗を修正して」
 
-### AIが自己完結してデバッグ
-**自動デバッグサイクル**
+**AIが自己完結してデバッグ**
 - エラーログ解析→原因特定→修正コード生成→再テスト
 
-### テストカバレッジ確認
-**不足箇所の特定**
+**テストカバレッジ確認**
 - JaCoCo確認（`mvn jacoco:report`）
 - 80%未満箇所特定→追加テスト
 
-### 効果
-自動デバッグ、品質担保、継続的改善
-
----
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-
-<!-- _class: layout-horizontal-right compact -->
-
-# ドキュメント反映
-
-![ドキュメント自動生成Before/After](./assets/diagrams/diagram_43_doc_automation_before_after.svg)
-
-**architecture.md更新:** テーブル、API、画面記録
-**README.md更新:** セットアップ、使い方記録
-**知見の記録:** ハマった点、解決方法、ベストプラクティス
-**Living Documentation:** ドキュメント＝AIの外部メモリ
-**効果:** 知見蓄積、チーム共有、再現可能な開発
+**効果:** 自動デバッグ、品質担保、継続的改善
 
 ---
 
-<!-- _class: lead supercompact -->
+<!-- _class: layout-horizontal-right -->
+
+#### ドキュメント反映
+
+![ドキュメント自動生成Before/After](./assets/diagrams-web/diagram_43_doc_automation_before_after.svg)
+
+- **architecture.md更新:** テーブル、API、画面記録
+  - AI指示: 「変更内容をarchitecture.mdに反映して」
+- **README.md更新:** セットアップ、使い方記録
+  - AI指示: 「新機能の使い方をREADME.mdに追加」
+- **知見の記録:** ハマった点、解決方法、ベストプラクティス
+- **Living Documentation:** ドキュメント＝AIの外部メモリ
+- **効果:** 知見蓄積、チーム共有、再現可能な開発
+
+---
+
+---
+
+<!-- _class: lead -->
 
 ## 成果発表・ディスカッション（20分）
 
 ---
 
-<!-- _class: two-column -->
-
-# 代表者2-3名の成果発表
-
-### 選択した課題と実装内容
-どの課題を選んだか、何を実装したか
-
-### リバースエンジニアリングで分かったこと
-既存システムの構造、特徴、課題
-
-### テストシナリオ作成での工夫
-どのような観点でシナリオを作成したか
-
-### 実装での工夫
-TDD、AI自己レビュー、デグレ防止の実践
+### 代表者2-3名の成果発表
+- 選択した課題と実装内容
+- リバースエンジニアリングで分かったこと
+- テストシナリオ作成での工夫
+- 実装での工夫
 
 ---
 
-<!-- _class: two-column -->
-
-# つまづいたポイント共有
-
-### どこでつまづいたか
-具体的なつまづきポイント
-
-### どう解決したか
-解決方法、使ったプロンプト
-
-### 学んだこと
-この経験から得た学び
+### つまづいたポイント共有
+- どこでつまづいたか
+- どう解決したか
+- 学んだこと
 
 ---
 
-<!-- _class: card-grid ultracompact -->
-
-# うまくいったポイント共有
-
-### リバースエンジニアリング
-効果的AI指示
-
-### テストシナリオ作成
-網羅手法
-
-### AI活用方法
-生産性プロンプト
-
-### デグレ防止の工夫
-既存機能保護
+### うまくいったポイント共有
+- リバースエンジニアリングの成功事例
+- テストシナリオ作成の工夫
+- AIの活用方法
+- デグレ防止の工夫
 
 ---
 
-<!-- _class: card-grid ultracompact -->
+### 全体ディスカッション
+- 他の参加者からの質問
+- 講師からのフィードバック
+- ベストプラクティスの共有
 
-# 全体ディスカッション
-
-### 参加者質問
-実装・解決方法
-
-### 講師フィードバック
-良い点・改善点
-
-### ベストプラクティス
-成功事例・プロンプト
+---
 
 ---
 
@@ -2711,118 +2172,133 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-diagram-only ultracompact -->
+<!-- _class: image-top-compact -->
 
 # 2日間の総まとめ
 
-![2日間の学習構造](./assets/diagrams/diagram_20_2day_summary.svg)
+![2日間の学習構造](./assets/diagrams-web/diagram_20_2day_summary.svg)
 
 ### 1日目：新規開発の5-STEP
-STEP1-2: 要件・設計（Guardrails、曖昧さ排除）| STEP3: タスク分解（AI思考言語化）| STEP4: 実装（TDD、AI自己レビュー）| STEP5: 品質担保＆Doc
+- STEP1-2: 要件・設計（Guardrails、曖昧さ排除）
+- STEP3: タスク分解（AI思考言語化）
+- STEP4-5: 実装・品質（TDD、AI自己レビュー、Trust but Verify）
+- STEP6: リファクタリング（Living Documentation）
 
-### 2日目：保守開発の4ステップ
-1.リバースエンジニアリング 2.フィットギャップ分析＆影響範囲調査 3.テストシナリオ作成 4.テストコード実装＋機能追加
+### 2日目：保守開発
+- リバースエンジニアリング（既存仕様読解）
+- テストシナリオ作成（モレ・ヌケ防止）
+- デグレ防止（既存機能保証）
 
 ---
 
-<!-- _class: card-grid -->
+---
 
-# 実務での活用ポイント
+### 実務での活用ポイント
 
-### 曖昧さを排除
+#### 曖昧さを排除
 - STEP1-2を丁寧に実施
-- AIに質問させる手法活用
+- AIに質問させる手法を活用
 - 受け入れ条件を明確化
 
-### AIの思考を可視化
-- タスク分解で計画作成
-- 早期の軌道修正
+#### AIの思考を可視化
+- タスク分解で計画を作成
+- 早い段階での軌道修正
 - 計画図面と完成図面
 
-### TDDで品質担保
-- Red-Green-Refactor
+#### TDDで品質担保
+- Red-Green-Refactorサイクル
 - AIの自己完結性向上
-- カバレッジ80%以上
+- テストカバレッジ80%以上
 
-### 知見を蓄積
+#### 知見を蓄積
 - Living Documentation
-- architecture.md、README
-- CLAUDE.mdにプロンプト蓄積
+- architecture.md、README.md
+- プロンプトパターンの蓄積（CLAUDE.md）
+
+---
 
 ---
 
 <!-- _class: layout-horizontal-right -->
 
-# よくある失敗と対策
+### よくある失敗と対策
 
-![よくある失敗パターンと対策](./assets/diagrams/diagram_19_common_failures.svg)
+![よくある失敗パターンと対策](./assets/diagrams-web/diagram_19_common_failures.svg)
 
-### ①いきなりコード
-- **失敗:** STEP1-2スキップ→何度も作り直し
-- **対策:** 前工程丁寧に（10分要件+15分設計）
+#### ①いきなりコード
+- 失敗: STEP1-2スキップ→何度も作り直し
+- 対策: 前工程丁寧に（10分要件+15分設計）
 
-### ②セキュリティ後回し
-- **失敗:** 本番脆弱性（平文、SQLi、XSS）
-- **対策:** 最初から要件明記（bcrypt、HTTPS、OWASP）
+#### ②セキュリティ後回し
+- 失敗: 本番脆弱性（平文、SQLi、XSS）
+- 対策: 最初から要件明記（bcrypt、HTTPS、OWASP）
 
-### ③レビュースキップ
-- **失敗:** バグ多発
-- **対策:** 「このコードをレビューして」習慣化→多くのバグ検出
+#### ③レビュースキップ
+- 失敗: バグ多発
+- 対策: 「このコードをレビューして」習慣化→40-60%バグ検出
 
-### ④タスク大きすぎ
-- **対策:** 30分〜2時間粒度、Gitコミット単位
+#### ④タスク大きすぎ
+- 対策: 30分〜2時間粒度、Gitコミット単位
 
-### ⑤ドキュメント未更新
-- **対策:** Living Documentation習慣化
+#### ⑤ドキュメント未更新
+- 対策: Living Documentation習慣化
 
 ---
 
-<!-- _class: card-grid -->
+---
 
-# 実務で明日から実践（Top 5）
+<!-- _class: two-column -->
 
-①**AI自己レビュー**: 「コードをレビューして」習慣化
-②**受入条件**: Given-When-Then形式で曖昧さ排除
-③**環境変数**: .envで秘密管理、.env.exampleコミット
-④**頻繁commit**: 1機能→即コミット、AI暴走防止
-⑤**テスト先行**: シナリオ→コード、モレヌケ防止
+### 実務で明日から実践できること（Top 5）
+
+#### ①AI自己レビューの習慣化
+- 実装後必ず「このコードをレビューして」
+- バグ検出率40-60%向上
+
+#### ②受け入れ条件の明確化
+- Given-When-Then形式
+- 曖昧さ排除→AI制約対策
+
+#### ③環境変数管理の徹底
+- .envで秘密情報管理
+- .env.exampleをGitコミット
+
+#### ④頻繁なコミット
+- 1機能完了→コミット
+- AI暴走対策
+
+#### ⑤テストシナリオを先に作る
+- シナリオ→テストコード
+- モレ・ヌケ防止
+
+---
 
 ---
 
 <!-- _class: layout-horizontal-right -->
 
-# 今後の学習ロードマップ
+### 今後の学習ロードマップ
 
-![学習ロードマップ](./assets/diagrams/diagram_21_learning_roadmap.svg)
+![学習ロードマップ](./assets/diagrams-web/diagram_21_learning_roadmap.svg)
 
-### ステップ1: 小プロジェクト3つ
-TODO/メモ/簡易ECなど、5-STEP実践、TDD習慣化
+#### ステップ1: 小プロジェクト3つ
+- TODO/メモ/簡易ECなど、5-STEP実践、TDD習慣化
 
-### ステップ2: 中規模プロジェクト
-複数テーブル・画面、認証・認可、E2Eテスト
+#### ステップ2: 中規模プロジェクト
+- 複数テーブル・画面、認証・認可、E2Eテスト
 
-### ステップ3: 既存リファクタリング
-リバースエンジニアリング、デグレ防止、技術的負債解消
+#### ステップ3: 既存リファクタリング
+- リバースエンジニアリング、デグレ防止、技術的負債解消
 
-### ステップ4: チーム開発
-5-STEP運用、プロンプト共有、Living Documentation浸透
+#### ステップ4: チーム開発
+- 5-STEP運用、プロンプト共有、Living Documentation浸透
 
 ---
 
-<!-- _class: layout-callout -->
+---
 
-<div class="icon">❓</div>
-
-# 質疑応答
-
-<div class="message">
-
-**2日間の学びについての質問**
-
-**実務での適用についての相談**
-
-**今後の学習方針についてのアドバイス**
-
-**その他、AIを活用した開発全般について**
-
-</div>
+### 質疑応答
+- 2日間の学びについての質問
+- 実務での適用についての相談
+- 今後の学習方針についてのアドバイス
+- その他、AIを活用した開発全般について
