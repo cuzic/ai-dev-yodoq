@@ -1,0 +1,38 @@
+slide_num,action,current_layout,new_layout,priority
+44,add_two_column,(none),two-column,1
+58,add_content,layout-callout ultracompact compact,layout-callout (add content),1
+108,change_to_two_column,card-grid ultracompact,two-column,2
+170,add_content,card-grid ultracompact,card-grid (add content),2
+143,remove_lead,lead,(remove lead - has too much content),2
+13,add_content,layout-callout compact,layout-callout (add content),2
+88,change_to_two_column,card-grid ultracompact supercompact,two-column,2
+149,add_content,layout-callout ultracompact,layout-callout (add content),2
+150,add_content,card-grid supercompact,card-grid (add content),2
+33,add_content,layout-callout compact,layout-callout (add content),3
+37,change_to_horizontal,two-column compact,layout-horizontal-left,3
+79,change_to_horizontal,two-column supercompact,layout-horizontal-left,3
+165,change_to_horizontal,two-column compact,layout-horizontal-left,3
+73,remove_layout,two-column ultracompact,(none),3
+20,add_content,layout-callout compact,layout-callout (add content),3
+47,add_content,layout-callout compact,layout-callout (add content),3
+163,change_to_two_column,card-grid supercompact,two-column,3
+115,add_two_column,title,two-column,3
+43,change_to_horizontal,two-column compact,layout-horizontal-left,3
+29,change_to_horizontal,two-column compact,layout-horizontal-left,3
+134,change_to_two_column,layout-horizontal-right supercompact,two-column or (none),3
+35,change_to_horizontal,two-column compact,layout-horizontal-left,3
+162,change_to_two_column,card-grid supercompact,two-column,3
+135,change_to_two_column,layout-horizontal-right supercompact,two-column or (none),3
+124,change_to_two_column,layout-horizontal-right supercompact,two-column or (none),3
+41,change_to_horizontal,two-column compact,layout-horizontal-left,3
+123,change_to_two_column,layout-horizontal-left supercompact,two-column or (none),3
+139,change_to_two_column,card-grid supercompact,two-column,3
+122,add_content,card-grid supercompact,card-grid (add content),3
+129,add_two_column,layout-horizontal-right supercompact,two-column,3
+145,add_content,card-grid compact,card-grid (add content),3
+49,remove_layout,two-column ultracompact,(none),3
+80,add_two_column,layout-horizontal-left supercompact,two-column,3
+131,add_content,layout-callout supercompact,layout-callout (add content),3
+38,change_to_two_column,layout-horizontal-right compact,two-column or (none),3
+106,add_content,card-grid compact,card-grid (add content),3
+136,review_manual,card-grid supercompact,two-column or card-grid,5

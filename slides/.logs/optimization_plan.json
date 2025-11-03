@@ -1,0 +1,353 @@
+[
+  {
+    "slide": 41,
+    "title": "受け入れ条件の詳細化",
+    "current_class": "two-column",
+    "file": "slides/day1_1.md",
+    "overflow_px": 1740,
+    "budget_usage": 31.6,
+    "budget_total": 665,
+    "current_chars": 210,
+    "priority_score": 100,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 73,
+    "title": "E2Eテスト重視の戦略",
+    "current_class": "two-column",
+    "file": "slides/day1_2.md",
+    "overflow_px": 540,
+    "budget_usage": 28.0,
+    "budget_total": 665,
+    "current_chars": 186,
+    "priority_score": 100,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 81,
+    "title": "ドキュメント自動生成Before/After",
+    "current_class": "layout-diagram-only",
+    "file": "slides/day1_2.md",
+    "overflow_px": 579,
+    "budget_usage": 72.7,
+    "budget_total": 150,
+    "current_chars": 109,
+    "priority_score": 100,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 167,
+    "title": "2日間の総まとめ",
+    "current_class": "layout-diagram-only",
+    "file": "slides/day2_2.md",
+    "overflow_px": 40,
+    "budget_usage": 162.7,
+    "budget_total": 150,
+    "current_chars": 244,
+    "priority_score": 90,
+    "actions": [
+      "Minor content adjustment",
+      "Reduce content by ~62%"
+    ]
+  },
+  {
+    "slide": 99,
+    "title": "演習の目的と課題",
+    "current_class": "two-column",
+    "file": "slides/day1_3.md",
+    "overflow_px": 403,
+    "budget_usage": 27.2,
+    "budget_total": 665,
+    "current_chars": 181,
+    "priority_score": 80,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 139,
+    "title": "テストシナリオからテストコードへ",
+    "current_class": "two-column",
+    "file": "slides/day2_1.md",
+    "overflow_px": 305,
+    "budget_usage": 19.2,
+    "budget_total": 665,
+    "current_chars": 128,
+    "priority_score": 80,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 155,
+    "title": "デグレ発生メカニズムとTDDによる予防",
+    "current_class": "layout-horizontal-left",
+    "file": "slides/day2_2.md",
+    "overflow_px": 392,
+    "budget_usage": 40.4,
+    "budget_total": 570,
+    "current_chars": 230,
+    "priority_score": 80,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 165,
+    "title": "全体ディスカッション",
+    "current_class": "two-column",
+    "file": "slides/day2_2.md",
+    "overflow_px": 363,
+    "budget_usage": 12.5,
+    "budget_total": 665,
+    "current_chars": 83,
+    "priority_score": 80,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 91,
+    "title": "1日目の振り返り",
+    "current_class": "layout-diagram-only",
+    "file": "slides/day1_3.md",
+    "overflow_px": 0,
+    "budget_usage": 146.0,
+    "budget_total": 150,
+    "current_chars": 219,
+    "priority_score": 70,
+    "actions": [
+      "Reduce content by ~46%"
+    ]
+  },
+  {
+    "slide": 100,
+    "title": "演習の進め方（時間配分）",
+    "current_class": "layout-timeline",
+    "file": "slides/day1_3.md",
+    "overflow_px": 0,
+    "budget_usage": 125.4,
+    "budget_total": 595,
+    "current_chars": 746,
+    "priority_score": 70,
+    "actions": [
+      "Reduce content by ~25%"
+    ]
+  },
+  {
+    "slide": 95,
+    "title": "1日目のキーメッセージ",
+    "current_class": "layout-diagram-only",
+    "file": "slides/day1_3.md",
+    "overflow_px": 122,
+    "budget_usage": 51.3,
+    "budget_total": 150,
+    "current_chars": 77,
+    "priority_score": 50,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 104,
+    "title": "演習成功のチェックリスト",
+    "current_class": "lead",
+    "file": "slides/day1_3.md",
+    "overflow_px": 140,
+    "budget_usage": 4.4,
+    "budget_total": 270,
+    "current_chars": 12,
+    "priority_score": 50,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 112,
+    "title": "1日目全体の振り返り",
+    "current_class": "two-column",
+    "file": "slides/day1_3.md",
+    "overflow_px": 128,
+    "budget_usage": 74.3,
+    "budget_total": 665,
+    "current_chars": 494,
+    "priority_score": 50,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 122,
+    "title": "リバースエンジニアリングの第一歩",
+    "current_class": "card-grid",
+    "file": "slides/day2_1.md",
+    "overflow_px": 240,
+    "budget_usage": 26.6,
+    "budget_total": 680,
+    "current_chars": 181,
+    "priority_score": 50,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 135,
+    "title": "テストシナリオの分類",
+    "current_class": "two-column",
+    "file": "slides/day2_1.md",
+    "overflow_px": 122,
+    "budget_usage": 39.4,
+    "budget_total": 665,
+    "current_chars": 262,
+    "priority_score": 50,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 143,
+    "title": "Day 2-2: 実践演習 + 成果発表 + まとめ (13:00-17:00)",
+    "current_class": "normal",
+    "file": "slides/day2_2.md",
+    "overflow_px": 231,
+    "budget_usage": 4.7,
+    "budget_total": 855,
+    "current_chars": 40,
+    "priority_score": 50,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 149,
+    "title": "STEP1: リバースエンジニアリング（30分）",
+    "current_class": "layout-callout",
+    "file": "slides/day2_2.md",
+    "overflow_px": 212,
+    "budget_usage": 29.3,
+    "budget_total": 560,
+    "current_chars": 164,
+    "priority_score": 50,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 164,
+    "title": "うまくいったポイント共有",
+    "current_class": "card-grid",
+    "file": "slides/day2_2.md",
+    "overflow_px": 214,
+    "budget_usage": 15.0,
+    "budget_total": 680,
+    "current_chars": 102,
+    "priority_score": 50,
+    "actions": [
+      "Apply compact class"
+    ]
+  },
+  {
+    "slide": 82,
+    "title": "Living Documentation 3種類",
+    "current_class": "card-grid",
+    "file": "slides/day1_2.md",
+    "overflow_px": 72,
+    "budget_usage": 33.8,
+    "budget_total": 680,
+    "current_chars": 230,
+    "priority_score": 20,
+    "actions": [
+      "Minor content adjustment"
+    ]
+  },
+  {
+    "slide": 118,
+    "title": "昨日の演習での気づき共有",
+    "current_class": "card-grid",
+    "file": "slides/day2_1.md",
+    "overflow_px": 60,
+    "budget_usage": 19.3,
+    "budget_total": 680,
+    "current_chars": 131,
+    "priority_score": 20,
+    "actions": [
+      "Minor content adjustment"
+    ]
+  },
+  {
+    "slide": 123,
+    "title": "AIの制約を理解する（Jagged Intelligence）",
+    "current_class": "two-column",
+    "file": "slides/day2_1.md",
+    "overflow_px": 39,
+    "budget_usage": 28.7,
+    "budget_total": 665,
+    "current_chars": 191,
+    "priority_score": 20,
+    "actions": [
+      "Minor content adjustment"
+    ]
+  },
+  {
+    "slide": 137,
+    "title": "STEP4: テストコード実装＋機能追加（60分）",
+    "current_class": "lead compact",
+    "file": "slides/day2_1.md",
+    "overflow_px": 77,
+    "budget_usage": 10.2,
+    "budget_total": 363,
+    "current_chars": 37,
+    "priority_score": 20,
+    "actions": [
+      "Minor content adjustment"
+    ]
+  },
+  {
+    "slide": 138,
+    "title": "テストコード基礎（復習）",
+    "current_class": "card-grid compact",
+    "file": "slides/day2_1.md",
+    "overflow_px": 98,
+    "budget_usage": 38.9,
+    "budget_total": 945,
+    "current_chars": 368,
+    "priority_score": 20,
+    "actions": [
+      "Minor content adjustment"
+    ]
+  },
+  {
+    "slide": 148,
+    "title": "実践演習（3時間）",
+    "current_class": "lead compact",
+    "file": "slides/day2_2.md",
+    "overflow_px": 86,
+    "budget_usage": 2.5,
+    "budget_total": 363,
+    "current_chars": 9,
+    "priority_score": 20,
+    "actions": [
+      "Minor content adjustment"
+    ]
+  },
+  {
+    "slide": 150,
+    "title": "STEP2: フィットギャップ分析＆影響範囲調査（20分）",
+    "current_class": "card-grid",
+    "file": "slides/day2_2.md",
+    "overflow_px": 100,
+    "budget_usage": 26.0,
+    "budget_total": 680,
+    "current_chars": 177,
+    "priority_score": 20,
+    "actions": [
+      "Minor content adjustment"
+    ]
+  }
+]

@@ -594,7 +594,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only ultracompact -->
 
 # ドキュメント自動生成Before/After
 
@@ -602,72 +602,44 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # Living Documentation 3種類
 
-### ①architecture.md
+### architecture.md
+システム全体像、構成・ディレクトリ、設計判断理由
 
-**内容:**
-- システム全体像
-- 構成・ディレクトリ
-- 設計判断の理由
+**効果:** AIが全体像把握
 
-**効果:**
-- 次のセッションのAIが全体像を把握
+### README.md
+セットアップ手順、使い方、トラブルシューティング
 
-### ②README.md
+**効果:** 誰でもすぐ開発開始
 
-**内容:**
-- セットアップ手順
-- 使い方
-- トラブルシューティング
+### CLAUDE.md
+成功プロンプトパターン、ハマった点と回避策
 
-**効果:**
-- 誰でもすぐに開発開始できる
-
-### ③CLAUDE.md
-
-**内容:**
-- 成功したプロンプトパターン蓄積
-- ハマった点と回避策
-
-**効果:**
-- 再現性の確保、同じ失敗を繰り返さない
+**効果:** 再現性確保、失敗繰り返さない
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column supercompact -->
 
-# 計画図面 vs 完成図面（重要）
+# 計画図面 vs 完成図面
 
 ## 計画図面（設計書）
-
-**タイミング:** 作る前
-
-**内容:** 理想の設計
-
-**目的:** AIへのGuardrails
+作る前、理想設計、AIへのGuardrails
 
 ## 完成図面（as-built）
-
-**タイミング:** 作った後
-
-**内容:** 実際に作った結果
-
-**目的:** 次のセッションでの参照
+作った後、実際の結果、次セッション参照
 
 ## 必ず差分が生まれる
+実装知見を記録
 
-実装で得られた知見を記録
+**例:** 変更理由、ハマった点と回避策
 
-**例:**
-- 「○○は△△の理由で××に変更」
-- 「□□で30分ハマった、回避策は…」
-
-## Living Documentationとして更新
-
-実装と同期したドキュメント
+## Living Documentation
+実装と同期
 
 ---
 
@@ -697,7 +669,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # STEP5のまとめ
 
