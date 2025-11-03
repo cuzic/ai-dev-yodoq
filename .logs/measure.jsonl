@@ -1,0 +1,7 @@
+{"timestamp": "2025-11-02T13:42:26.264541-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T13:44:00.070310-06:00", "level": "INFO", "message": "Starting measure process: /home/cuzic/ai-dev-yodoq/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T13:44:00.081722-06:00", "level": "INFO", "message": "Loaded thresholds: {'density': [0.012, 0.018], 'whitespace': [0.15, 0.4]}", "step": "measure"}
+{"timestamp": "2025-11-02T13:44:07.172019-06:00", "level": "INFO", "message": "Scorecard saved: /home/cuzic/ai-dev-yodoq/optimize/scorecard.json", "step": "measure"}
+{"timestamp": "2025-11-02T17:17:57.550697-06:00", "level": "INFO", "message": "Starting measure process: /home/cuzic/ai-dev-yodoq/render/slides.html", "step": "measure"}
+{"timestamp": "2025-11-02T17:17:57.558799-06:00", "level": "INFO", "message": "Loaded thresholds: {'density': [0.012, 0.018], 'whitespace': [0.15, 0.4]}", "step": "measure"}
+{"timestamp": "2025-11-02T17:18:02.720189-06:00", "level": "ERROR", "message": "Playwright error: 1 validation error for SlideMetrics\nwhitespace_ratio\n  Value error, whitespace_ratio must be between 0 and 1 [type=value_error, input_value=-0.10545454545454547, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error", "step": "measure"}

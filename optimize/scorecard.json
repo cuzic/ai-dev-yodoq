@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "thresholds": {
+    "density": [
+      0.012,
+      0.018
+    ],
+    "whitespace": [
+      0.15,
+      0.4
+    ]
+  },
+  "slides": []
+}

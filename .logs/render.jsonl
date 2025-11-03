@@ -1,0 +1,4 @@
+{"timestamp": "2025-11-02T13:42:40.609868-06:00", "level": "ERROR", "message": "Input file not found: /home/cuzic/ai-dev-yodoq/build/slides.marp.md", "step": "render"}
+{"timestamp": "2025-11-02T13:43:42.379930-06:00", "level": "INFO", "message": "Starting render process: /home/cuzic/ai-dev-yodoq/build/slides.marp.md", "step": "render"}
+{"timestamp": "2025-11-02T13:43:42.386249-06:00", "level": "WARNING", "message": "Theme file not found, using default theme", "step": "render"}
+{"timestamp": "2025-11-02T13:43:44.028224-06:00", "level": "ERROR", "message": "External tool error (marp-cli): Not available", "step": "render"}
