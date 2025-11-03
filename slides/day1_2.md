@@ -669,7 +669,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only ultracompact -->
 
 # STEP5のまとめ
 

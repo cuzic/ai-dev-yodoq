@@ -3,7 +3,7 @@ marp: true
 theme: ai-seminar
 paginate: true
 ---
-<!-- _class: lead supercompact -->
+<!-- _class: lead ultracompact -->
 
 ## Day 2-2
 # 実践演習 + 成果発表 + まとめ
@@ -186,7 +186,7 @@ Given-When-Then形式
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left ultracompact -->
 
 # デグレ発生メカニズムとTDDによる予防
 
@@ -394,16 +394,16 @@ TDD、AI自己レビュー、デグレ防止の実践
 # うまくいったポイント共有
 
 ### リバースエンジニアリング
-効果的だったAI指示
+効果的AI指示
 
 ### テストシナリオ作成
-網羅性を高める方法
+網羅手法
 
 ### AI活用方法
-生産性向上プロンプト
+生産性プロンプト
 
 ### デグレ防止の工夫
-既存機能を守るテスト
+既存機能保護
 
 ---
 
@@ -412,13 +412,13 @@ TDD、AI自己レビュー、デグレ防止の実践
 # 全体ディスカッション
 
 ### 参加者質問
-実装の工夫、解決方法
+実装・解決方法
 
 ### 講師フィードバック
-良かった点、改善ポイント
+良い点・改善点
 
 ### ベストプラクティス
-成功事例、効果的プロンプト
+成功事例・プロンプト
 
 ---
 

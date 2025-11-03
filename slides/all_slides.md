@@ -575,37 +575,31 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 ![STEP2のまとめ](./assets/diagrams/diagram_46_step2_summary.svg)
 
 ---
-<!-- _class: two-column -->
 
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 ## Part 1 振り返りチェックリスト
 
 **AI活用の基本:**
-- [ ] AI活用の3原則を説明できる
-- [ ] Reward Hacking対策を実践できる
+- [ ] 3原則説明可能
+- [ ] Reward Hacking対策実践
 
 **Claude Code:**
-- [ ] セットアップができる
-- [ ] 3つのモードを使い分けられる
-- [ ] 効率的な指示の出し方を実践できる
+- [ ] セットアップ完了
+- [ ] 3モード使い分け
+- [ ] 効率的指示実践
 
 **STEP1 要件定義:**
-- [ ] AIに質問させる手法を使える
-- [ ] MoSCoW優先順位付けができる
-- [ ] エラー・エッジケースを洗い出せる
-- [ ] 受け入れ基準を書ける
+- [ ] AI質問手法活用
+- [ ] MoSCoW優先順位付け
+- [ ] エラー・エッジケース洗い出し
+- [ ] 受入基準作成
 
 **STEP2 設計ドキュメント:**
-- [ ] Spec-Driven Developmentを理解
-- [ ] Tech Stack Setupを最初に固める
-- [ ] Mermaid記法で設計図を作成できる
-- [ ] 受け入れ条件を詳細化できる
+- [ ] Spec-Driven理解
+- [ ] Tech Stack Setup固定
+- [ ] Mermaid設計図作成
+- [ ] 受入条件詳細化
 
 ---
 
@@ -1281,7 +1275,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: layout-diagram-only supercompact -->
+<!-- _class: layout-diagram-only ultracompact -->
 
 # STEP5のまとめ
 
@@ -2004,7 +1998,7 @@ node_modules、.git、dist、*.log除外
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: two-column ultracompact -->
 
 # 影響範囲調査の手法
 
@@ -2219,17 +2213,17 @@ AI局所変更のみ→全体影響見落とし
 
 # テストシナリオからテストコードへ
 
-### なぜシナリオから？
-全体像把握→モレ・ヌケ防止
+### なぜ必要
+網羅性確保
 
-### 変換プロセス
-シナリオ1つ→テストメソッド1つ
+### プロセス
+1シナリオ→1テスト
 
-### AI指示
-「シナリオからJUnitテスト生成」
+### 指示
+「JUnitテスト生成」
 
 ### 効果
-漏れなく実装、品質担保
+網羅実装
 
 ---
 
@@ -2304,7 +2298,7 @@ marp: true
 theme: ai-seminar
 paginate: true
 ---
-<!-- _class: lead supercompact -->
+<!-- _class: lead ultracompact -->
 
 ## Day 2-2
 # 実践演習 + 成果発表 + まとめ
@@ -2487,7 +2481,7 @@ Given-When-Then形式
 
 ---
 
-<!-- _class: layout-horizontal-left supercompact -->
+<!-- _class: layout-horizontal-left ultracompact -->
 
 # デグレ発生メカニズムとTDDによる予防
 
@@ -2695,16 +2689,16 @@ TDD、AI自己レビュー、デグレ防止の実践
 # うまくいったポイント共有
 
 ### リバースエンジニアリング
-効果的だったAI指示
+効果的AI指示
 
 ### テストシナリオ作成
-網羅性を高める方法
+網羅手法
 
 ### AI活用方法
-生産性向上プロンプト
+生産性プロンプト
 
 ### デグレ防止の工夫
-既存機能を守るテスト
+既存機能保護
 
 ---
 
@@ -2713,13 +2707,13 @@ TDD、AI自己レビュー、デグレ防止の実践
 # 全体ディスカッション
 
 ### 参加者質問
-実装の工夫、解決方法
+実装・解決方法
 
 ### 講師フィードバック
-良かった点、改善ポイント
+良い点・改善点
 
 ### ベストプラクティス
-成功事例、効果的プロンプト
+成功事例・プロンプト
 
 ---
 

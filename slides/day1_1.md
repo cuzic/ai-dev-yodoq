@@ -575,37 +575,31 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 ![STEP2のまとめ](./assets/diagrams/diagram_46_step2_summary.svg)
 
 ---
-<!-- _class: two-column -->
 
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: two-column compact -->
+<!-- _class: two-column supercompact -->
 
 ## Part 1 振り返りチェックリスト
 
 **AI活用の基本:**
-- [ ] AI活用の3原則を説明できる
-- [ ] Reward Hacking対策を実践できる
+- [ ] 3原則説明可能
+- [ ] Reward Hacking対策実践
 
 **Claude Code:**
-- [ ] セットアップができる
-- [ ] 3つのモードを使い分けられる
-- [ ] 効率的な指示の出し方を実践できる
+- [ ] セットアップ完了
+- [ ] 3モード使い分け
+- [ ] 効率的指示実践
 
 **STEP1 要件定義:**
-- [ ] AIに質問させる手法を使える
-- [ ] MoSCoW優先順位付けができる
-- [ ] エラー・エッジケースを洗い出せる
-- [ ] 受け入れ基準を書ける
+- [ ] AI質問手法活用
+- [ ] MoSCoW優先順位付け
+- [ ] エラー・エッジケース洗い出し
+- [ ] 受入基準作成
 
 **STEP2 設計ドキュメント:**
-- [ ] Spec-Driven Developmentを理解
-- [ ] Tech Stack Setupを最初に固める
-- [ ] Mermaid記法で設計図を作成できる
-- [ ] 受け入れ条件を詳細化できる
+- [ ] Spec-Driven理解
+- [ ] Tech Stack Setup固定
+- [ ] Mermaid設計図作成
+- [ ] 受入条件詳細化
 
 ---
 
