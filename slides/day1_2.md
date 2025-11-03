@@ -31,7 +31,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # タスク分解 = AIの思考を言語化（重要）
 
@@ -305,7 +305,7 @@ BCrypt、JWT秘密鍵環境変数、.env使用、
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # インクリメンタル開発とは
 
@@ -499,7 +499,7 @@ UIバグ・統合問題自動検出
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # テストカバレッジ80%ルール
 
@@ -617,7 +617,7 @@ UIバグ・統合問題自動検出
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: two-column ultracompact -->
 
 # 計画図面 vs 完成図面
 

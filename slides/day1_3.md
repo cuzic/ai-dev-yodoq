@@ -4,7 +4,7 @@ theme: ai-seminar
 paginate: true
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## Day 1-3
 # まとめ + 演習
@@ -314,7 +314,7 @@ TDD理解不足→Red-Green-Refactor厳守
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # 演習成功チェックリスト②
 
@@ -410,7 +410,7 @@ AI活用3原則、要件定義、設計
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead supercompact -->
 
 ## 2日目への準備
 

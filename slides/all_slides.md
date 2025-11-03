@@ -637,7 +637,7 @@ paginate: true
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # タスク分解 = AIの思考を言語化（重要）
 
@@ -911,7 +911,7 @@ BCrypt、JWT秘密鍵環境変数、.env使用、
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # インクリメンタル開発とは
 
@@ -1105,7 +1105,7 @@ UIバグ・統合問題自動検出
 
 ---
 
-<!-- _class: layout-horizontal-left compact -->
+<!-- _class: layout-horizontal-left supercompact -->
 
 # テストカバレッジ80%ルール
 
@@ -1223,7 +1223,7 @@ UIバグ・統合問題自動検出
 
 ---
 
-<!-- _class: two-column supercompact -->
+<!-- _class: two-column ultracompact -->
 
 # 計画図面 vs 完成図面
 
@@ -1301,7 +1301,7 @@ theme: ai-seminar
 paginate: true
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## Day 1-3
 # まとめ + 演習
@@ -1611,7 +1611,7 @@ TDD理解不足→Red-Green-Refactor厳守
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # 演習成功チェックリスト②
 
@@ -1707,7 +1707,7 @@ AI活用3原則、要件定義、設計
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead supercompact -->
 
 ## 2日目への準備
 
@@ -1774,7 +1774,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # 昨日の演習での気づき共有
 
@@ -1866,7 +1866,7 @@ paginate: true
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # リバースエンジニアリングの第一歩
 
@@ -1876,15 +1876,15 @@ paginate: true
 ### .claudeignoreで除外
 node_modules、.git、dist、*.log除外
 
-### AIへの指示例
-「プロジェクト構造を教えて」「主要ファイルの役割は？」
+### AI指示例
+「プロジェクト構造」「主要ファイル役割」
 
 ### 効果
-全体像把握、ドキュメント生成準備
+全体像把握、Doc生成準備
 
 ---
 
-<!-- _class: layout-horizontal-right compact -->
+<!-- _class: layout-horizontal-right supercompact -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -2019,7 +2019,7 @@ AI局所変更のみ→全体影響見落とし
 
 ---
 
-<!-- _class: layout-callout compact -->
+<!-- _class: layout-callout supercompact -->
 
 <div class="icon">📝</div>
 
@@ -2165,35 +2165,35 @@ AI局所変更のみ→全体影響見落とし
 
 ---
 
-<!-- _class: card-grid compact -->
+<!-- _class: card-grid supercompact -->
 
 # テストコード基礎（復習）
 
 ### TDD/BDD
 **Red-Green-Refactorサイクル**
-- **Red**: 失敗するテスト先書き
+- **Red**: 失敗テスト先書き
 - **Green**: 最小実装でテスト通過
-- **Refactor**: 品質向上（重複削減、可読性）
+- **Refactor**: 品質向上
 
 ### Given-When-Then形式
-**テストの構造化**
-- **Given**: テストデータ準備（前提条件）
-- **When**: テスト対象メソッド実行
+**テスト構造化**
+- **Given**: データ準備（前提条件）
+- **When**: メソッド実行
 - **Then**: 期待結果アサーション
 
-### テストの独立性
+### テスト独立性
 **各テスト独立実行可能**
 - 順序依存NG
-- 他のテストに影響を与えない（副作用NG）
-- @BeforeEach、@AfterEachで初期化・クリーンアップ
+- 副作用NG
+- @BeforeEach/@AfterEachで初期化
 
 ### テストカバレッジ
-**80%以上を目標**
-- 100%は非現実的
-- 重要なビジネスロジックを優先
+**80%以上目標**
+- 100%非現実的
+- 重要ロジック優先
 
 ### 効果
-品質保証、リファクタリングの安全性、ドキュメントとしての価値
+品質保証、リファクタリング安全性、ドキュメント価値
 
 ---
 
@@ -2711,7 +2711,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # 2日間の総まとめ
 

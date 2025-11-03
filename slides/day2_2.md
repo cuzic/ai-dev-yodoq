@@ -428,7 +428,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-diagram-only compact -->
+<!-- _class: layout-diagram-only supercompact -->
 
 # 2日間の総まとめ
 
