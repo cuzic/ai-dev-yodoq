@@ -305,7 +305,7 @@ BCrypt、JWT秘密鍵環境変数、.env使用、
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # インクリメンタル開発とは
 
@@ -435,21 +435,21 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # Playwright活用
 
 ### なぜPlaywrightか
-- ユーザー視点の自動化
-- 実ブラウザで動作確認
-- AIが自動生成可能
+- ユーザー視点自動化
+- 実ブラウザ動作確認
+- AI自動生成可能
 
 ### プロンプト例
 「ログイン→ダッシュボードの
-Playwrightテストを作成」
+Playwrightテスト作成」
 
 ### 効果
-UIバグ・統合問題を自動検出
+UIバグ・統合問題自動検出
 
 ---
 
@@ -498,14 +498,8 @@ UIバグ・統合問題を自動検出
 **検出:** テストケース漏れ、異常系不足、境界値未検証
 
 ---
-<!-- _class: layout-horizontal-left -->
 
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # テストカバレッジ80%ルール
 
@@ -602,7 +596,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # Living Documentation 3種類
 

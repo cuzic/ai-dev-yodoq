@@ -247,7 +247,7 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 要件の引き出し方（文字起こしアプローチ）
 
@@ -257,13 +257,13 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 **顧客の言葉をそのまま記録:**
 - 解釈のズレゼロ
-- 「言った/言わない」問題の解消
-- 顧客の本当のニーズを捉える
+- 「言った/言わない」解消
+- 本当のニーズ把握
 
 **AIが要件構造化:**
 - 漏れ・ヌケ防止
-- 自動で優先順位付け
-- **不明点リスト**も自動生成
+- 自動優先順位付け
+- **不明点リスト**自動生成
 
 ---
 
@@ -349,7 +349,7 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # プロトタイプ駆動開発（Vibe Coding）
 
@@ -429,7 +429,7 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # Tech Stack Setup
 
@@ -911,7 +911,7 @@ BCrypt、JWT秘密鍵環境変数、.env使用、
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # インクリメンタル開発とは
 
@@ -1041,21 +1041,21 @@ AIが自動テスト実行 → エラー検知 → 修正
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # Playwright活用
 
 ### なぜPlaywrightか
-- ユーザー視点の自動化
-- 実ブラウザで動作確認
-- AIが自動生成可能
+- ユーザー視点自動化
+- 実ブラウザ動作確認
+- AI自動生成可能
 
 ### プロンプト例
 「ログイン→ダッシュボードの
-Playwrightテストを作成」
+Playwrightテスト作成」
 
 ### 効果
-UIバグ・統合問題を自動検出
+UIバグ・統合問題自動検出
 
 ---
 
@@ -1104,14 +1104,8 @@ UIバグ・統合問題を自動検出
 **検出:** テストケース漏れ、異常系不足、境界値未検証
 
 ---
-<!-- _class: layout-horizontal-left -->
 
-<!-- _class: layout-horizontal-left -->
-
-<!-- _class: layout-horizontal-left -->
-
-
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # テストカバレッジ80%ルール
 
@@ -1208,7 +1202,7 @@ UIバグ・統合問題を自動検出
 
 ---
 
-<!-- _class: card-grid supercompact -->
+<!-- _class: card-grid ultracompact -->
 
 # Living Documentation 3種類
 
@@ -1583,7 +1577,7 @@ TDD理解不足→Red-Green-Refactor厳守
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead supercompact -->
 
 ## 演習成功のチェックリスト
 
@@ -1617,7 +1611,7 @@ TDD理解不足→Red-Green-Refactor厳守
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # 演習成功チェックリスト②
 
@@ -1713,7 +1707,7 @@ AI活用3原則、要件定義、設計
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## 2日目への準備
 
@@ -1890,7 +1884,7 @@ node_modules、.git、dist、*.log除外
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -2024,14 +2018,8 @@ AI局所変更のみ→全体影響見落とし
 ## STEP3: テストシナリオ一覧作成（30分）
 
 ---
-<!-- _class: two-column -->
 
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">📝</div>
 
@@ -2090,7 +2078,7 @@ AI局所変更のみ→全体影響見落とし
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # テストシナリオ → テストコードの順序
 
@@ -2330,17 +2318,17 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 演習の進め方（ワークフロー）
 
 ![演習ワークフロー](./assets/diagrams/diagram_17_workshop_workflow.svg)
 
 **保守開発の4ステップワークフロー:**
-- **STEP1: リバースエンジニアリング（30分）** 仕様把握、ドキュメント自動生成
-- **STEP2: フィットギャップ分析＆影響範囲調査（20分）** 追加開発範囲の明確化
-- **STEP3: テストシナリオ作成（30分）** 既存機能・新機能・デグレ防止を網羅
-- **STEP4: テストコード実装＋機能追加（60分）** TDD、Red-Green-Refactor、AI自己レビュー、ドキュメント反映
+- **STEP1: リバースエンジニアリング（30分）** 仕様把握、Doc自動生成
+- **STEP2: フィットギャップ分析＆影響範囲調査（20分）** 追加開発範囲明確化
+- **STEP3: テストシナリオ作成（30分）** 既存・新機能・デグレ防止網羅
+- **STEP4: テストコード実装＋機能追加（60分）** TDD、AI自己レビュー、Doc反映
 - **効果:** 体系的高品質追加、実務再現可能
 
 ---
@@ -2375,7 +2363,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: layout-callout ultracompact -->
 
 <div class="icon">🔍</div>
 
@@ -2723,7 +2711,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # 2日間の総まとめ
 

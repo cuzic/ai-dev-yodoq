@@ -247,7 +247,7 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: layout-horizontal-left -->
+<!-- _class: layout-horizontal-left compact -->
 
 # 要件の引き出し方（文字起こしアプローチ）
 
@@ -257,13 +257,13 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 **顧客の言葉をそのまま記録:**
 - 解釈のズレゼロ
-- 「言った/言わない」問題の解消
-- 顧客の本当のニーズを捉える
+- 「言った/言わない」解消
+- 本当のニーズ把握
 
 **AIが要件構造化:**
 - 漏れ・ヌケ防止
-- 自動で優先順位付け
-- **不明点リスト**も自動生成
+- 自動優先順位付け
+- **不明点リスト**自動生成
 
 ---
 
@@ -349,7 +349,7 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # プロトタイプ駆動開発（Vibe Coding）
 
@@ -429,7 +429,7 @@ Claude Code、GitHub、VS Code + Mermaid、Dev Container推奨
 
 ---
 
-<!-- _class: two-column -->
+<!-- _class: two-column compact -->
 
 # Tech Stack Setup
 

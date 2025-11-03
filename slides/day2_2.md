@@ -35,17 +35,17 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # 演習の進め方（ワークフロー）
 
 ![演習ワークフロー](./assets/diagrams/diagram_17_workshop_workflow.svg)
 
 **保守開発の4ステップワークフロー:**
-- **STEP1: リバースエンジニアリング（30分）** 仕様把握、ドキュメント自動生成
-- **STEP2: フィットギャップ分析＆影響範囲調査（20分）** 追加開発範囲の明確化
-- **STEP3: テストシナリオ作成（30分）** 既存機能・新機能・デグレ防止を網羅
-- **STEP4: テストコード実装＋機能追加（60分）** TDD、Red-Green-Refactor、AI自己レビュー、ドキュメント反映
+- **STEP1: リバースエンジニアリング（30分）** 仕様把握、Doc自動生成
+- **STEP2: フィットギャップ分析＆影響範囲調査（20分）** 追加開発範囲明確化
+- **STEP3: テストシナリオ作成（30分）** 既存・新機能・デグレ防止網羅
+- **STEP4: テストコード実装＋機能追加（60分）** TDD、AI自己レビュー、Doc反映
 - **効果:** 体系的高品質追加、実務再現可能
 
 ---
@@ -80,7 +80,7 @@ WHERE句拡張、UI・API・SQL修正、境界値処理
 
 ---
 
-<!-- _class: layout-callout supercompact -->
+<!-- _class: layout-callout ultracompact -->
 
 <div class="icon">🔍</div>
 
@@ -428,7 +428,7 @@ TDD、AI自己レビュー、デグレ防止の実践
 
 ---
 
-<!-- _class: layout-diagram-only -->
+<!-- _class: layout-diagram-only compact -->
 
 # 2日間の総まとめ
 

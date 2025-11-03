@@ -280,7 +280,7 @@ TDD理解不足→Red-Green-Refactor厳守
 
 ---
 
-<!-- _class: lead compact -->
+<!-- _class: lead supercompact -->
 
 ## 演習成功のチェックリスト
 
@@ -314,7 +314,7 @@ TDD理解不足→Red-Green-Refactor厳守
 
 ---
 
-<!-- _class: card-grid -->
+<!-- _class: card-grid compact -->
 
 # 演習成功チェックリスト②
 
@@ -410,7 +410,7 @@ AI活用3原則、要件定義、設計
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead compact -->
 
 ## 2日目への準備
 

@@ -143,7 +143,7 @@ node_modules、.git、dist、*.log除外
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # AIの制約を理解する（Jagged Intelligence）
 
@@ -277,14 +277,8 @@ AI局所変更のみ→全体影響見落とし
 ## STEP3: テストシナリオ一覧作成（30分）
 
 ---
-<!-- _class: two-column -->
 
-<!-- _class: two-column -->
-
-<!-- _class: two-column -->
-
-
-<!-- _class: layout-callout -->
+<!-- _class: layout-callout compact -->
 
 <div class="icon">📝</div>
 
@@ -343,7 +337,7 @@ AI局所変更のみ→全体影響見落とし
 
 ---
 
-<!-- _class: layout-horizontal-right -->
+<!-- _class: layout-horizontal-right compact -->
 
 # テストシナリオ → テストコードの順序
 
